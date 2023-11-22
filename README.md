@@ -27,7 +27,7 @@ https://raw.githubusercontent.com/wudongdefeng/free/main/nodes/v2rayshare.txt
 ```
 
 ```
-https://gh.api.99988866.xyz/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/nodefree.txt
+https://raw.githubusercontent.com/wudongdefeng/free/main/nodes/nodefree.txt
 ```
 
 ## 免责声明
