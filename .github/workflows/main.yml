@@ -1,0 +1,54 @@
+name: Daily Update
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 2-5 * * *" # 每天, 时区+8
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Python
+        run: python main.py
+
+      - name: Git Commit Push Action
+        uses: GuillaumeFalourd/git-commit-push@v1.3
+        with:
+          # Committer's email address
+          email: ${{ github.actor }}@users.noreply.github.com
+          # Committer's username
+          name: ${{ github.actor }}
+          # Commit message
+          commit_message: "Daliy Update by Bot"
+          # Branch to push the changes back to
+          target_branch: ${{ github.ref }}
+          # Files to add separated by space
+          files: .
+          # Repository url to push the code to
+          remote_repository: origin
+          # Token used to push the code
+          access_token: ${{ github.token }}
+          # Whether to perform force push
+          force: 0
+          # Whether to allow empty commit
+          empty: 1
+          # Whether to use --tags
+          tags: 0
+
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@v2.0.5
