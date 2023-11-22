@@ -15,15 +15,15 @@ https://nodefree.org
 ## v2ray订阅链接(镜像网站加速):
 
 ```
-https://gh.api.99988866.xyz/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/yudou66.txt
+https://raw.githubusercontent.com/wudongdefeng/free/main/nodes/yudou66.txt
 ```
 
 ```
-https://gh.api.99988866.xyz/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/blues.txt
+https://raw.githubusercontent.com/wudongdefeng/free/main/nodes/blues.txt
 ```
 
 ```
-https://gh.api.99988866.xyz/https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/v2rayshare.txt
+https://raw.githubusercontent.com/wudongdefeng/free/main/nodes/v2rayshare.txt
 ```
 
 ```
