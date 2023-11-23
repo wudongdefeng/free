@@ -935,8 +935,8 @@ def main():
         except: out += '0'
         out += '\n'
     out += f"\n总计,,{len(merged)}\n"
-    print("本次生成" + str({len(merged)} + "个节点")
-    wxPush("本次生成" + str({len(merged)} + "个节点")
+    print("本次生成" + str({len(merged)} + "个节点"))
+    wxPush("本次生成" + str({len(merged)} + "个节点"))
     open("list_result.csv",'w').write(out)
   
     print("写出完成！")
