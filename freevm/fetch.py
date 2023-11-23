@@ -807,7 +807,7 @@ def main():
             len(merged)+len(unknown),f"个。{unsupports} 个节点不被 V2Ray 支持。")
     print(f"本次生成" + str(len(merged) + len(unknown)) + "个节点")
     line_count = 0
-    with open("list_raw.txt", 'w', encoding="utf-8") as f:      
+    with open("list_raw.txt", 'r', encoding="utf-8") as f:      
         for _ in f:  # 遍历文件的每一行
             line_count += 1
     with open("list_raw.txt",'w') as f:
