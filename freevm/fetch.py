@@ -804,7 +804,7 @@ def main():
         txt += p+'\n'
     print(f"共有 {len(merged)-unsupports} 个正常节点，{len(unknown)} 个无法解析的节点，共",
             len(merged)+len(unknown),f"个。{unsupports} 个节点不被 V2Ray 支持。")
-
+  
     with open("list_raw.txt",'w') as f:
         f.write(txt)
     with open("list.txt",'w') as f:
@@ -933,9 +933,28 @@ def main():
         out += '\n'
     out += f"\n总计,,{len(merged)}\n"
     open("list_result.csv",'w').write(out)
-
+  
     print("写出完成！")
-
+    result = []
+    result.append({            
+            'content': "本次共抓取{len(merged)}个节点数"
+        })
+    return result
+def weixin_push(result):
+    wx_push_token = requests.post(url='https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=%s&corpsecret=%s'%(wxid,wxsecret),data="").json()['access_token']
+    wx_push_data = {
+            "agentid":1000008,
+            "msgtype":"text",
+            "touser":"@all",
+            "text":{
+                    "content":result
+            },
+            "safe":0
+        }
+    requests.post('https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=%s'%wx_push_token,json=wx_push_data)
 if __name__ == '__main__':
     from dynamic import AUTOURLS, AUTOFETCH
     main()
+    wxid = os.environ['wxid']
+    wxsecret = os.environ['wxsecret']    
+    weixin_push(main())   
