@@ -942,7 +942,7 @@ def main():
     print("写出完成！")
     
     # 判断内容是否等于1114
-    if line_count != len(merged):
+    if line_count != len(merged)-unsupports:
         print("本次生成" + str(len(merged)) + "个节点")
         wxPush("本次生成" + str(len(merged)) + "个节点")        
     else:
