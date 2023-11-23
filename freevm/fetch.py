@@ -942,13 +942,12 @@ def main():
     with open("total", "r") as f:
         # 读取第一行内容
         first_line = f.readline().strip()
-    
+        print(first_line) 
     # 判断内容是否等于1114
     if first_line != len(merged):
         print("本次生成" + str(len(merged)) + "个节点")
         wxPush("本次生成" + str(len(merged)) + "个节点")
-        with open("total",'w') as f:
-            f.truncate(0)
+        with open("total",'w') as f:            
             f.write(str(len(merged)))
     else:
         print("本次没有更新")
