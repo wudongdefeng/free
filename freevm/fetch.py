@@ -79,7 +79,8 @@ FAKE_IPS = "8.8.8.8; 8.8.4.4; 1.1.1.1; 1.0.0.1; 4.2.2.2; 4.2.2.1; 114.114.114.11
 FAKE_DOMAINS = ".google.com .github.com".split()
 
 FETCH_TIMEOUT = (6, 5)
-
+wxid = os.environ['wxid']
+wxsecret = os.environ['wxsecret']    
 BANNED_WORDS = b64decodes('5rOV6L2uIOi9ruWtkCDova4g57uDIOawlCDlip8=').split()
 
 # !!! JUST FOR DEBUGING !!!
@@ -804,7 +805,7 @@ def main():
         txt += p+'\n'
     print(f"共有 {len(merged)-unsupports} 个正常节点，{len(unknown)} 个无法解析的节点，共",
             len(merged)+len(unknown),f"个。{unsupports} 个节点不被 V2Ray 支持。")
-  
+    weixin_push("本次生成"+len(merged)+len(unknown)+"个节点")
     with open("list_raw.txt",'w') as f:
         f.write(txt)
     with open("list.txt",'w') as f:
@@ -935,11 +936,8 @@ def main():
     open("list_result.csv",'w').write(out)
   
     print("写出完成！")
-    result = []
-    result.append({            
-            'content': "本次共抓取{len(merged)}个节点数"
-        })
-    return result
+    print("本次共抓取{len(merged)}个节点数")
+    
 def weixin_push(result):
     wx_push_token = requests.post(url='https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=%s&corpsecret=%s'%(wxid,wxsecret),data="").json()['access_token']
     wx_push_data = {
@@ -955,6 +953,3 @@ def weixin_push(result):
 if __name__ == '__main__':
     from dynamic import AUTOURLS, AUTOFETCH
     main()
-    wxid = os.environ['wxid']
-    wxsecret = os.environ['wxsecret']    
-    weixin_push(main())   
