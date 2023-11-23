@@ -939,15 +939,15 @@ def main():
   
     print("写出完成！")
     # 打开文件
-    with open("total", "r") as file:
+    with open("total", "r") as file1:
     # 读取第一行内容
-        first_line = file.readline().strip()
+        first_line = file1.readline().strip()
     
     # 判断内容是否等于1114
     if first_line != len(merged):
         print("本次生成" + str(len(merged)) + "个节点")
         wxPush("本次生成" + str(len(merged)) + "个节点")
-        file.truncate(0)
+        file1.truncate(0)
         open("total",'w').write(str(len(merged)))
     else:
         print("本次没有更新")
