@@ -807,7 +807,10 @@ def main():
             len(merged)+len(unknown),f"个。{unsupports} 个节点不被 V2Ray 支持。")
     print(f"本次生成" + str(len(merged) + len(unknown)) + "个节点")
     
-
+    with open("list_raw.txt", 'w', encoding="utf-8") as f:
+        line_count = 0
+        for _ in f:  # 遍历文件的每一行
+            line_count += 1
     with open("list_raw.txt",'w') as f:
         f.write(txt)
     with open("list.txt",'w') as f:
@@ -910,9 +913,6 @@ def main():
                 conf['proxy-groups'].append(disp)
                 ctg_selects.append(disp['name'])
     with open("list.yml", 'w', encoding="utf-8") as f:
-        line_count = 0
-        for _ in f:  # 遍历文件的每一行
-            line_count += 1
         f.write(yaml.dump(conf, allow_unicode=True).replace('!!str ',''))
     with open("snippets/nodes.yml", 'w', encoding="utf-8") as f:
         f.write(yaml.dump({'proxies': conf['proxies']}, allow_unicode=True).replace('!!str ',''))
