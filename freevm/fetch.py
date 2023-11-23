@@ -944,7 +944,7 @@ def main():
         first_line = file.readline().strip()
     
     # 判断内容是否等于1114
-    if first_line == len(merged):
+    if first_line != len(merged):
         print("本次生成" + str(len(merged)) + "个节点")
         wxPush("本次生成" + str(len(merged)) + "个节点")
         file.truncate(0)
