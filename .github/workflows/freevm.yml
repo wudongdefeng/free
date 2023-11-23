@@ -38,7 +38,11 @@ jobs:
     
     - name: 执行任务
       run: cd freevm && python ./fetch.py
-      
+      env:              
+        wxid: ${{ secrets.wxid }}
+        wxsecret: ${{ secrets.wxsecret }}
+        TZ: Asia/Shanghai
+        
     - name: 提交更改
       run: |                 
         git config --local user.email "actions@github.com"
