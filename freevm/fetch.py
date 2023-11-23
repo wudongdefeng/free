@@ -935,11 +935,13 @@ def main():
         except: out += '0'
         out += '\n'
     out += f"\n总计,,{len(merged)}\n"
-    
+    open("list_result.csv",'w').write(out)
+  
+    print("写出完成！")
     # 打开文件
     with open("total", "r") as file:
     # 读取第一行内容
-    first_line = file.readline().strip()
+        first_line = file.readline().strip()
     
     # 判断内容是否等于1114
     if first_line == len(merged):
@@ -952,9 +954,7 @@ def main():
        
 
     
-    open("list_result.csv",'w').write(out)
-  
-    print("写出完成！")
+
     
     
 def wxPush(message):
