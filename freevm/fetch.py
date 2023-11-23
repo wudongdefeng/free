@@ -910,6 +910,9 @@ def main():
                 conf['proxy-groups'].append(disp)
                 ctg_selects.append(disp['name'])
     with open("list.yml", 'w', encoding="utf-8") as f:
+        line_count = 0
+        for _ in f:  # 遍历文件的每一行
+            line_count += 1
         f.write(yaml.dump(conf, allow_unicode=True).replace('!!str ',''))
     with open("snippets/nodes.yml", 'w', encoding="utf-8") as f:
         f.write(yaml.dump({'proxies': conf['proxies']}, allow_unicode=True).replace('!!str ',''))
@@ -938,17 +941,11 @@ def main():
     open("list_result.csv",'w').write(out)
   
     print("写出完成！")
-    # 打开文件
-    with open("total", "r") as f:
-        # 读取第一行内容
-        first_line = f.readline()
-        print(first_line) 
+    
     # 判断内容是否等于1114
-    if first_line != len(merged):
+    if line_count != len(merged):
         print("本次生成" + str(len(merged)) + "个节点")
-        wxPush("本次生成" + str(len(merged)) + "个节点")
-        with open("total",'w') as f:            
-            f.write(str(len(merged)))
+        wxPush("本次生成" + str(len(merged)) + "个节点")        
     else:
         print("本次没有更新")
        
