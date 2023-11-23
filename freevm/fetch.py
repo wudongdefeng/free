@@ -805,7 +805,8 @@ def main():
         txt += p+'\n'
     print(f"共有 {len(merged)-unsupports} 个正常节点，{len(unknown)} 个无法解析的节点，共",
             len(merged)+len(unknown),f"个。{unsupports} 个节点不被 V2Ray 支持。")
-    weixin_push("本次生成"+len(merged)+len(unknown)+"个节点")
+    weixin_push("本次生成" + str(len(merged) + len(unknown)) + "个节点")
+
     with open("list_raw.txt",'w') as f:
         f.write(txt)
     with open("list.txt",'w') as f:
