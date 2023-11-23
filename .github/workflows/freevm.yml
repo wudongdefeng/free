@@ -26,8 +26,16 @@ jobs:
         cache: 'pip'
     - name: 设置时区
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
-    - name: 安装依赖
-      run: cd freevm && pip install -r requirements.txt
+      
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        cd freevm && pip install -r requirements.txt
+        
+    - name: Run Python
+      run: python main.py
+    
     - name: 执行任务
       run: cd freevm && python ./fetch.py
       
