@@ -935,8 +935,21 @@ def main():
         except: out += '0'
         out += '\n'
     out += f"\n总计,,{len(merged)}\n"
-    print("本次生成" + str(len(merged)) + "个节点")
-    wxPush("本次生成" + str(len(merged)) + "个节点")
+    
+    # 打开文件
+    with open("total", "r") as file:
+    # 读取第一行内容
+    first_line = file.readline().strip()
+    
+    # 判断内容是否等于1114
+    if first_line == len(merged):
+        wxPush("本次生成" + str(len(merged)) + "个节点")
+        file.truncate(0)
+        open("total",'w').write(str(len(merged)))
+    else:
+        print("本次生成" + str(len(merged)) + "个节点")
+
+    
     open("list_result.csv",'w').write(out)
   
     print("写出完成！")
