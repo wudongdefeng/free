@@ -948,7 +948,7 @@ def main():
         print("本次生成" + str(len(merged)) + "个节点")
         wxPush("本次生成" + str(len(merged)) + "个节点")
         file1.truncate(0)
-        open("total",'w').write(str(len(merged)))
+        file1.write(str(len(merged)))
     else:
         print("本次没有更新")
        
