@@ -805,7 +805,7 @@ def main():
         txt += p+'\n'
     print(f"共有 {len(merged)-unsupports} 个正常节点，{len(unknown)} 个无法解析的节点，共",
             len(merged)+len(unknown),f"个。{unsupports} 个节点不被 V2Ray 支持。")
-    print(f"本次生成" + str(len(merged) + len(unknown)) + "个节点")
+    
     line_count = 0
     with open("list_raw.txt", 'r', encoding="utf-8") as f:      
         for _ in f:  # 遍历文件的每一行
@@ -942,9 +942,9 @@ def main():
     print("写出完成！")
     
     # 判断内容是否等于1114
-    if line_count != len(merged)-unsupports:
-        print("本次生成" + str(len(merged)) + "个节点")
-        wxPush("本次生成" + str(len(merged)) + "个节点")        
+    if line_count != len(merged)+len(unknown):
+        print("本次生成" + str(len(merged)+len(unknown)) + "个节点")
+        wxPush("本次生成" + str(len(merged)+len(unknown)) + "个节点")        
     else:
         print("本次没有更新")
        
