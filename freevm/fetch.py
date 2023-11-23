@@ -79,8 +79,8 @@ FAKE_IPS = "8.8.8.8; 8.8.4.4; 1.1.1.1; 1.0.0.1; 4.2.2.2; 4.2.2.1; 114.114.114.11
 FAKE_DOMAINS = ".google.com .github.com".split()
 
 FETCH_TIMEOUT = (6, 5)
-wxid = os.environ['wxid']
-wxsecret = os.environ['wxsecret']    
+corpid = os.environ['wxid']
+corpsecret = os.environ['wxsecret']    
 BANNED_WORDS = b64decodes('5rOV6L2uIOi9ruWtkCDova4g57uDIOawlCDlip8=').split()
 
 # !!! JUST FOR DEBUGING !!!
@@ -806,7 +806,7 @@ def main():
     print(f"共有 {len(merged)-unsupports} 个正常节点，{len(unknown)} 个无法解析的节点，共",
             len(merged)+len(unknown),f"个。{unsupports} 个节点不被 V2Ray 支持。")
     print(f"本次生成" + str(len(merged) + len(unknown)) + "个节点")
-    weixin_push("本次生成" + str(len(merged) + len(unknown)) + "个节点")
+    
 
     with open("list_raw.txt",'w') as f:
         f.write(txt)
@@ -935,23 +935,36 @@ def main():
         except: out += '0'
         out += '\n'
     out += f"\n总计,,{len(merged)}\n"
+    print("本次生成" + str({len(merged)} + "个节点")
+    wxPush("本次生成" + str({len(merged)} + "个节点")
     open("list_result.csv",'w').write(out)
   
     print("写出完成！")
     
     
-def weixin_push(result):
-    wx_push_token = requests.post(url='https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=%s&corpsecret=%s'%(wxid,wxsecret),data="").json()['access_token']
-    wx_push_data = {
-            "agentid":1000008,
-            "msgtype":"text",
-            "touser":"@all",
-            "text":{
-                    "content":result
-            },
-            "safe":0
-        }
-    requests.post('https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=%s'%wx_push_token,json=wx_push_data)
+def wxPush(message):
+    token_url = 'https://qyapi.weixin.qq.com/cgi-bin/gettoken?' + 'corpid=' + corpid + '&corpsecret=' + corpsecret
+    req_url = 'https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token='
+    resp = requests.get(token_url).json()
+    access_token = resp['access_token']
+    data = {
+        "touser": "@all",
+        "toparty": "@all",
+        "totag": "@all",
+        "msgtype": "text",
+        "agentid": agentid,
+        "text": {
+            "content": message
+        },
+        "safe": 0,
+        "enable_id_trans": 0,
+        "enable_duplicate_check": 0,
+        "duplicate_check_interval": 1800
+    }
+    data = json.dumps(data)
+    req_urls = req_url + access_token
+    res = requests.post(url=req_urls, data=data)
+    print(res.text)
 if __name__ == '__main__':
     from dynamic import AUTOURLS, AUTOFETCH
     main()
