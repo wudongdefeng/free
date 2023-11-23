@@ -952,7 +952,7 @@ def wxPush(message):
         "toparty": "@all",
         "totag": "@all",
         "msgtype": "text",
-        "agentid": agentid,
+        "agentid": 1000007,
         "text": {
             "content": message
         },
