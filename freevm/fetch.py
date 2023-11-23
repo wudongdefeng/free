@@ -941,7 +941,7 @@ def main():
     # 打开文件
     with open("total", "r") as f:
         # 读取第一行内容
-        first_line = f.readline().strip()
+        first_line = f.readline()
         print(first_line) 
     # 判断内容是否等于1114
     if first_line != len(merged):
