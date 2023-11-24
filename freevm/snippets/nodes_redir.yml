@@ -8,43 +8,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 4a923b7d-7f20-4e8a-81e3-1e7eaf9cc504
-- alterId: 64
-  cipher: auto
-  name: 0,1,2,3,4,6,9,13,19,20,24,26,27,32|🇬🇧 _CN_中国->🇬🇧_GB_英国
+- name: 1,23|_CN_->_US__2
   network: tcp
-  port: '43526'
-  server: 112.29.94.23
-  tls: false
-  type: vmess
-  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
-- alterId: 0
-  cipher: auto
-  name: 23|_SG_->_US_
-  network: ws
-  port: 80
-  server: 8.222.198.105
+  password: 6f3e21c9-2be0-41c3-809a-1fe0546f6fe9
+  port: 10837
+  server: other.kunlun-ppg.com
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
-  ws-opts:
-    headers:
-      host: warp.chigua.tk
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1,24|_US_->_GB_
-  network: ws
-  port: 80
-  server: ld2.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      host: ld2.shabijichang.com
-    path: /
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 23|_US_->_IN_
@@ -59,41 +31,10 @@ proxies:
     headers:
       host: mm2.shabijichang.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 0,2,3,4,6,13,20,24,27|🇺🇸 _US_美国->🇬🇧_GB_英国
-  network: ws
-  port: '80'
-  server: ld2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: ld2.shabijichang.com
-    path: /
 - name: 1,23|_CN_->_US__3
   network: tcp
   password: 6f3e21c9-2be0-41c3-809a-1fe0546f6fe9
   port: 10850
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: 1,23|_CN_->_US__1
-  network: tcp
-  password: 6f3e21c9-2be0-41c3-809a-1fe0546f6fe9
-  port: 10838
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: 1,23|_CN_->_US__2
-  network: tcp
-  password: 6f3e21c9-2be0-41c3-809a-1fe0546f6fe9
-  port: 10837
   server: other.kunlun-ppg.com
   skip-cert-verify: true
   sni: alibaba-node.cn
@@ -109,6 +50,52 @@ proxies:
   type: vmess
   uuid: a0ca0796-3f90-4908-8f78-8f5922908dd8
   ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: 23|_SG_->_US_
+  network: ws
+  port: 80
+  server: 8.222.198.105
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  ws-opts:
+    headers:
+      host: warp.chigua.tk
+    path: /
+- name: 1,23|_CN_->_US__1
+  network: tcp
+  password: 6f3e21c9-2be0-41c3-809a-1fe0546f6fe9
+  port: 10838
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 1,24|_US_->_GB_
+  network: ws
+  port: 80
+  server: ld2.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: ld2.shabijichang.com
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 0,1,2,3,4,6,9,13,19,20,24,26,27,32|🇬🇧 _CN_中国->🇬🇧_GB_英国
+  network: tcp
+  port: '43526'
+  server: 112.29.94.23
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
 - name: 1,23|_CN_->_UA_
   network: tcp
   password: 6f3e21c9-2be0-41c3-809a-1fe0546f6fe9
@@ -118,3 +105,16 @@ proxies:
   sni: alibaba-node.cn
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 0,2,3,4,6,13,20,24,27|🇺🇸 _US_美国->🇬🇧_GB_英国
+  network: ws
+  port: '80'
+  server: ld2.shabijichang.com
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: ld2.shabijichang.com
+    path: /
