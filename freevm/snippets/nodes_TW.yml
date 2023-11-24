@@ -1,4 +1,63 @@
 proxies:
+- cipher: chacha20-ietf
+  name: 25|🇹🇼 台湾|浏览器输入 翻墙.com
+  obfs: plain
+  obfs-param: 48d3854984.microsoft.com
+  password: renzhecloud
+  port: 3025
+  protocol: auth_aes128_sha1
+  protocol-param: 54984:89iw22e0jvl
+  server: bs3.jymzffbquawl.com
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 19|TW-114.37.154.29-235
+  network: ws
+  port: 443
+  server: b24.ntbq.dynu.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 92848f4e-a7af-4c58-aa42-c24e89345d5b
+  ws-headers:
+    Host: b24.ntbq.dynu.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 19|TW-61.228.174.189-213
+  network: ws
+  port: 443
+  server: b22.ntbq.dynu.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 92848f4e-a7af-4c58-aa42-c24e89345d5b
+  ws-headers:
+    Host: b22.ntbq.dynu.net
+  ws-path: /b22
+- alterId: 0
+  cipher: auto
+  name: 19|TW-61.228.170.25-149
+  network: ws
+  port: 443
+  server: nbq13.ntbq.dynu.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f2f304d9-cb53-4d7f-a76c-3f396f1f5512
+  ws-headers:
+    Host: nbq13.ntbq.dynu.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 9|台湾_112411001
+  network: tcp
+  port: '1521'
+  server: 013.AP.POP.node-for-smallairport.win
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7c42c0c1-ec73-4878-a522-dab84459e52b
 - alterId: 0
   cipher: auto
   name: 19|TW-36.232.135.194-224
@@ -12,6 +71,20 @@ proxies:
   ws-headers:
     Host: tc12.kq1.dynu.net
   ws-path: /vbub2
+- alterId: 0
+  cipher: auto
+  name: 12,15,20,24,27|台湾省台北市 中华电信
+  network: ws
+  port: 443
+  server: nbq13.ntbq.dynu.net
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: f2f304d9-cb53-4d7f-a76c-3f396f1f5512
+  ws-opts:
+    headers:
+      Host: nbq13.ntbq.dynu.net
+    path: /b13
 - cipher: aes-256-gcm
   name: 25|🇹🇼 台湾2|@ripaojiedian
   password: d7570e231c78
@@ -29,52 +102,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 9|台湾_112411001
-  network: tcp
-  port: '1521'
-  server: 013.AP.POP.node-for-smallairport.win
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7c42c0c1-ec73-4878-a522-dab84459e52b
-- alterId: 0
-  cipher: auto
-  name: 19|TW-114.37.154.29-235
-  network: ws
-  port: 443
-  server: b24.ntbq.dynu.net
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 92848f4e-a7af-4c58-aa42-c24e89345d5b
-  ws-headers:
-    Host: b24.ntbq.dynu.net
-  ws-path: /
-- cipher: chacha20-ietf
-  name: 25|🇹🇼 台湾|浏览器输入 翻墙.com
-  obfs: plain
-  obfs-param: 48d3854984.microsoft.com
-  password: renzhecloud
-  port: 3025
-  protocol: auth_aes128_sha1
-  protocol-param: 54984:89iw22e0jvl
-  server: bs3.jymzffbquawl.com
-  type: ssr
-- alterId: 0
-  cipher: auto
-  name: 19|TW-61.228.170.25-149
-  network: ws
-  port: 443
-  server: nbq13.ntbq.dynu.net
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f2f304d9-cb53-4d7f-a76c-3f396f1f5512
-  ws-headers:
-    Host: nbq13.ntbq.dynu.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: 19|TW-36.232.142.22-223
   network: ws
   port: 443
@@ -86,30 +113,3 @@ proxies:
   ws-headers:
     Host: tc11.twtc.dynu.net
   ws-path: /vbub1
-- alterId: 0
-  cipher: auto
-  name: 10,12,15,20,24,27|台湾省台北市 中华电信
-  network: ws
-  port: 443
-  server: nbq13.ntbq.dynu.net
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: f2f304d9-cb53-4d7f-a76c-3f396f1f5512
-  ws-opts:
-    headers:
-      Host: nbq13.ntbq.dynu.net
-    path: /b13
-- alterId: 0
-  cipher: auto
-  name: 19|TW-61.228.174.189-213
-  network: ws
-  port: 443
-  server: b22.ntbq.dynu.net
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 92848f4e-a7af-4c58-aa42-c24e89345d5b
-  ws-headers:
-    Host: b22.ntbq.dynu.net
-  ws-path: /b22
