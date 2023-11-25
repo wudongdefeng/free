@@ -79,8 +79,7 @@ FAKE_IPS = "8.8.8.8; 8.8.4.4; 1.1.1.1; 1.0.0.1; 4.2.2.2; 4.2.2.1; 114.114.114.11
 FAKE_DOMAINS = ".google.com .github.com".split()
 
 FETCH_TIMEOUT = (6, 5)
-corpid = os.environ['wxid']
-corpsecret = os.environ['wxsecret']    
+
 BANNED_WORDS = b64decodes('5rOV6L2uIOi9ruWtkCDova4g57uDIOawlCDlip8=').split()
 
 # !!! JUST FOR DEBUGING !!!
@@ -805,11 +804,7 @@ def main():
         txt += p+'\n'
     print(f"共有 {len(merged)-unsupports} 个正常节点，{len(unknown)} 个无法解析的节点，共",
             len(merged)+len(unknown),f"个。{unsupports} 个节点不被 V2Ray 支持。")
-    
-    line_count = 0
-    with open("list_raw.txt", 'r', encoding="utf-8") as f:      
-        for _ in f:  # 遍历文件的每一行
-            line_count += 1
+
     with open("list_raw.txt",'w') as f:
         f.write(txt)
     with open("list.txt",'w') as f:
@@ -938,44 +933,9 @@ def main():
         out += '\n'
     out += f"\n总计,,{len(merged)}\n"
     open("list_result.csv",'w').write(out)
-  
+
     print("写出完成！")
-    
-    # 判断内容是否等于1114
-    if line_count != len(merged)+len(unknown)-unsupports:
-        print("本次生成" + str(len(merged)+len(unknown)-unsupports) + "个节点")
-        wxPush("本次生成" + str(len(merged)+len(unknown)-unsupports) + "个节点")        
-    else:
-        print("本次没有更新")
-       
 
-    
-
-    
-    
-def wxPush(message):
-    token_url = 'https://qyapi.weixin.qq.com/cgi-bin/gettoken?' + 'corpid=' + corpid + '&corpsecret=' + corpsecret
-    req_url = 'https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token='
-    resp = requests.get(token_url).json()
-    access_token = resp['access_token']
-    data = {
-        "touser": "@all",
-        "toparty": "@all",
-        "totag": "@all",
-        "msgtype": "text",
-        "agentid": 1000007,
-        "text": {
-            "content": message
-        },
-        "safe": 0,
-        "enable_id_trans": 0,
-        "enable_duplicate_check": 0,
-        "duplicate_check_interval": 1800
-    }
-    data = json.dumps(data)
-    req_urls = req_url + access_token
-    res = requests.post(url=req_urls, data=data)
-    print(res.text)
 if __name__ == '__main__':
     from dynamic import AUTOURLS, AUTOFETCH
     main()
