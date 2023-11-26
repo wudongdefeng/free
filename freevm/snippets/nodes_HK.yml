@@ -1,99 +1,19 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: '12,15,20,24,25,26,27|香港 阿里云 #1'
-  network: ws
-  port: '443'
-  server: n1699974613.aaigefm.cn
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 98e145b7-35ff-4309-aa5e-fd6107f199eb
-  ws-opts:
-    headers:
-      Host: n1699974613.aaigefm.cn
-    path: /
-- alterId: 1
-  cipher: auto
-  name: 20|🇭🇰 香港(油管:破解资源君2.0)
-  network: ws
-  port: '50205'
-  server: data-hk-v2.shwjfkw.cn
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-hk-v2.shwjfkw.cn
-    path: /hls/cctv5phd.m3u8
-- alterId: 0
-  cipher: auto
-  name: 24,28|12|HK_speednode_0030
-  network: ws
-  port: 443
-  server: 47.242.109.138
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9dc41e4b-53a8-a442-e911-4bc5f490f2cd
-  ws-opts:
-    headers:
-      Host: ''
-    path: /myblog
-- alterId: 0
-  cipher: auto
-  name: 9,24|香港_112620004
-  network: ws
-  port: '80'
-  server: 45.126.127.113
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 057177db-f003-40dc-a14b-488e8ceefcaa
-  ws-opts:
-    headers:
-      Host: ''
-    path: /zingfast.vn
-- cipher: chacha20-ietf-poly1305
-  name: 25,28|🇭🇰 香港3|@ripaojiedian
-  password: a58024d9-e277-49df-91aa-2fdad751f76d
-  port: 20001
-  server: service.ouluyun9803.com
-  tfo: false
-  type: ss
-- alterId: 64
-  cipher: auto
-  name: 14|香港_【YouTube-VV科技】
-  network: tcp
-  port: 34417
-  server: 156.245.8.247
-  tls: false
-  type: vmess
-  uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0
 - cipher: aes-128-gcm
-  name: 25|🇭🇰 香港KT1|@ripaojiedian
+  name: 25|🇭🇰 香港K|浏览器输入 翻墙.com
   password: a-wym4ovY4Yw
-  plugin: obfs
+  plugin: v2ray-plugin
   plugin-opts:
     host: ''
-    mode: http
-  port: 80
-  server: 8.210.85.62
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 20297
+  server: 223.95.40.85
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 19|HK-94.74.100.2-105
-  network: ws
-  port: 13080
-  server: 94.74.100.2
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 140ec92e-a28f-429e-8e0e-e73de00b5f8e
-  ws-headers:
-    Host: chunchuan.changding.tech
-  ws-path: /vm-tls0?ed=2048
 - alterId: 0
   cipher: auto
   name: 12,20,24|香港华为云 3
@@ -108,9 +28,56 @@ proxies:
     headers:
       Host: chunchuan.changding.tech
     path: /vm-tls0?ed=2048
+- alterId: 64
+  cipher: auto
+  name: 14|香港_【YouTube-VV科技】
+  network: tcp
+  port: 34417
+  server: 156.245.8.247
+  tls: false
+  type: vmess
+  uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0
 - alterId: 0
   cipher: auto
-  name: 12,15,20,24,27|香港阿里云 2
+  name: 19|HK-94.74.100.2-176
+  network: ws
+  port: 13080
+  server: 94.74.100.2
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 140ec92e-a28f-429e-8e0e-e73de00b5f8e
+  ws-headers:
+    Host: chunchuan.changding.tech
+  ws-path: /vm-tls0?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '10,12,15,20,24,25,26,27|香港 阿里云 #1'
+  network: ws
+  port: '443'
+  server: n1700303376.izwhvan.cn
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: ee65c32d-afc8-4d54-b91e-b334354fa5c2
+  ws-opts:
+    headers:
+      Host: n1700303376.izwhvan.cn
+    path: /
+- cipher: aes-128-gcm
+  name: 25|🇭🇰 香港KT1|@ripaojiedian
+  password: a-wym4ovY4Yw
+  plugin: obfs
+  plugin-opts:
+    host: ''
+    mode: http
+  port: 80
+  server: 8.210.85.62
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 10,12,15,20,24,27|香港 阿里云
   network: ws
   port: 443
   server: n1700303374.aaigefm.cn
@@ -138,6 +105,18 @@ proxies:
 - alterId: 0
   cipher: auto
   grpc-opts:
+    grpc-service-name: xg_grpctow.yunjisuan.cf
+  name: 27|HK-香港 02 | grpc | 倍率x5
+  network: grpc
+  port: '15834'
+  server: xg_grpctow.yunjisuan.cf
+  servername: xg_grpctow.yunjisuan.cf
+  tls: true
+  type: vmess
+  uuid: c75b345e-bb05-4a44-88e1-ca026ffe965d
+- alterId: 0
+  cipher: auto
+  grpc-opts:
     grpc-service-name: xg_grpcone.yunjisuan.cf
   name: 27|HK-香港 01 | grpc | 倍率x5
   network: grpc
@@ -147,6 +126,59 @@ proxies:
   tls: true
   type: vmess
   uuid: c75b345e-bb05-4a44-88e1-ca026ffe965d
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: xg_grpcthree.yunjisuan.cf
+  name: 27|HK-香港 03 | grpc | 倍率x5
+  network: grpc
+  port: '15835'
+  server: xg_grpcthree.yunjisuan.cf
+  servername: xg_grpcthree.yunjisuan.cf
+  tls: true
+  type: vmess
+  uuid: c75b345e-bb05-4a44-88e1-ca026ffe965d
+- alterId: 0
+  cipher: auto
+  name: 19|HK-199.15.76.35-174
+  network: ws
+  port: 443
+  server: 199.15.76.35
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 140ec92e-a28f-429e-8e0e-e73de00b5f8e
+  ws-headers:
+    Host: hk-300.changding.tech
+  ws-path: /changding-tls1?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '12,15,20,24,25,26,27|香港 阿里云 #2'
+  network: ws
+  port: '443'
+  server: n1699974613.aaigefm.cn
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 98e145b7-35ff-4309-aa5e-fd6107f199eb
+  ws-opts:
+    headers:
+      Host: n1699974613.aaigefm.cn
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 9,24|香港_112620004
+  network: ws
+  port: '80'
+  server: 45.126.127.113
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 057177db-f003-40dc-a14b-488e8ceefcaa
+  ws-opts:
+    headers:
+      Host: ''
+    path: /zingfast.vn
 - alterId: 0
   cipher: auto
   name: 24|12|[vmess]香港1-流媒体解锁
@@ -163,83 +195,31 @@ proxies:
     path: apple
 - alterId: 0
   cipher: auto
-  name: '14|香港_【YouTube-VV科技】 #1'
+  name: 24,28|12|HK_speednode_0030
   network: ws
-  port: 80
-  server: 103.160.204.12
-  tls: false
-  type: vmess
-  uuid: 21d60b8c-cd9d-4cbc-9a68-b29ce7d28ed8
-  ws-opts:
-    headers:
-      Host: 18.wyhkaa0.gq
-    path: /TG:@hkaa0
-- alterId: 0
-  cipher: auto
-  name: 10,12,15,20,24,25,26,27|香港 阿里云
-  network: ws
-  port: '443'
-  server: n1700303376.izwhvan.cn
+  port: 443
+  server: 47.242.109.138
   servername: ''
   tls: true
   type: vmess
-  uuid: ee65c32d-afc8-4d54-b91e-b334354fa5c2
+  uuid: 9dc41e4b-53a8-a442-e911-4bc5f490f2cd
   ws-opts:
     headers:
-      Host: n1700303376.izwhvan.cn
-    path: /
-- alterId: 0
+      Host: ''
+    path: /myblog
+- alterId: 1
   cipher: auto
-  grpc-opts:
-    grpc-service-name: xg_grpcthree.yunjisuan.cf
-  name: 27|HK-香港 03 | grpc | 倍率x5
-  network: grpc
-  port: '15835'
-  server: xg_grpcthree.yunjisuan.cf
-  servername: xg_grpcthree.yunjisuan.cf
-  tls: true
-  type: vmess
-  uuid: c75b345e-bb05-4a44-88e1-ca026ffe965d
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: xg_grpctow.yunjisuan.cf
-  name: 27|HK-香港 02 | grpc | 倍率x5
-  network: grpc
-  port: '15834'
-  server: xg_grpctow.yunjisuan.cf
-  servername: xg_grpctow.yunjisuan.cf
-  tls: true
-  type: vmess
-  uuid: c75b345e-bb05-4a44-88e1-ca026ffe965d
-- cipher: aes-128-gcm
-  name: 25|🇭🇰 香港K|浏览器输入 翻墙.com
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: true
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 20297
-  server: 223.95.40.85
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 19|HK-199.15.76.35-103
+  name: 20|🇭🇰 香港(油管:破解资源君2.0)
   network: ws
-  port: 443
-  server: 199.15.76.35
-  skip-cert-verify: true
-  tls: true
+  port: '50205'
+  server: data-hk-v2.shwjfkw.cn
+  tls: false
   type: vmess
-  uuid: 140ec92e-a28f-429e-8e0e-e73de00b5f8e
-  ws-headers:
-    Host: hk-300.changding.tech
-  ws-path: /changding-tls1?ed=2048
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-hk-v2.shwjfkw.cn
+    path: /hls/cctv5phd.m3u8
 - alterId: 64
   cipher: auto
   name: '14|香港_【YouTube-VV科技】 #2'
@@ -253,3 +233,16 @@ proxies:
     headers:
       Host: www.92873889.xyz
     path: /path/1693018744512
+- alterId: 0
+  cipher: auto
+  name: '14|香港_【YouTube-VV科技】 #1'
+  network: ws
+  port: 80
+  server: 103.160.204.12
+  tls: false
+  type: vmess
+  uuid: 21d60b8c-cd9d-4cbc-9a68-b29ce7d28ed8
+  ws-opts:
+    headers:
+      Host: 18.wyhkaa0.gq
+    path: /TG:@hkaa0
