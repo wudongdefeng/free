@@ -14,6 +14,70 @@ proxies:
   ws-path: /b11
 - alterId: 0
   cipher: auto
+  name: 12,20,24,28|台湾省桃园市中华电信 7
+  network: ws
+  port: '443'
+  server: b21.ntbq.dynu.net
+  tls: true
+  type: vmess
+  uuid: b979cbad-64a2-4d71-9244-ff3b78557f2b
+  ws-opts:
+    headers:
+      Host: b21.ntbq.dynu.net
+    path: /b21
+- alterId: 0
+  cipher: auto
+  name: 19|TW-1.164.137.231-081
+  network: ws
+  port: 443
+  server: nbq12.ntbq.dynu.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b979cbad-64a2-4d71-9244-ff3b78557f2b
+  ws-headers:
+    Host: nbq12.ntbq.dynu.net
+  ws-path: /b12
+- alterId: 0
+  cipher: auto
+  name: 19|TW-61.228.140.108-193
+  network: ws
+  port: 443
+  server: b21.ntbq.dynu.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b979cbad-64a2-4d71-9244-ff3b78557f2b
+  ws-headers:
+    Host: b21.ntbq.dynu.net
+  ws-path: /b21
+- cipher: aes-256-gcm
+  name: 25|🇹🇼 台湾3|@ripaojiedian 2
+  password: 6cb1057882ee
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: fn600mtw001.testnewline.xyz
+    mode: websocket
+    mux: true
+    path: /fsamyrpso
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: fn600mtw001.testnewline.xyz
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 15,19,20,24,27|github.com/freefq - 台湾省高雄市中华电信...
+  network: tcp
+  port: 41332
+  server: v94.topman8846.cc
+  servername: v94.topman8846.cc
+  tls: true
+  type: vmess
+  uuid: d2a1cd29-9ac2-3165-a082-cf09cdd3bf50
+- alterId: 0
+  cipher: auto
   name: 12,15,20,24,27|台湾省桃园市中华电信 3
   network: ws
   port: 443
@@ -40,26 +104,6 @@ proxies:
     path: /b22
 - alterId: 0
   cipher: auto
-  name: 24,26,27|14|🇹🇼 台湾3|@ripaojiedian
-  network: tcp
-  port: 41332
-  server: 36.238.149.222
-  servername: v94.topman8846.cc
-  tls: true
-  type: vmess
-  uuid: d2a1cd29-9ac2-3165-a082-cf09cdd3bf50
-- alterId: 0
-  cipher: auto
-  name: 10,15,19,20,24|台湾省 中华电信(HiNet)
-  network: tcp
-  port: 41332
-  server: v94.topman8846.cc
-  servername: v94.topman8846.cc
-  tls: true
-  type: vmess
-  uuid: d2a1cd29-9ac2-3165-a082-cf09cdd3bf50
-- alterId: 0
-  cipher: auto
   name: 24,26,27|15|台湾|浏览器输入 翻墙.com
   network: ws
   port: '443'
@@ -72,45 +116,6 @@ proxies:
     headers:
       Host: ''
     path: /b22
-- alterId: 0
-  cipher: auto
-  name: 19|TW-61.228.140.108-193
-  network: ws
-  port: 443
-  server: b21.ntbq.dynu.net
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b979cbad-64a2-4d71-9244-ff3b78557f2b
-  ws-headers:
-    Host: b21.ntbq.dynu.net
-  ws-path: /b21
-- alterId: 0
-  cipher: auto
-  name: 19|TW-1.164.137.231-081
-  network: ws
-  port: 443
-  server: nbq12.ntbq.dynu.net
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b979cbad-64a2-4d71-9244-ff3b78557f2b
-  ws-headers:
-    Host: nbq12.ntbq.dynu.net
-  ws-path: /b12
-- alterId: 0
-  cipher: auto
-  name: 12,20,24,27,28|台湾省桃园市中华电信 7
-  network: ws
-  port: '443'
-  server: b21.ntbq.dynu.net
-  tls: true
-  type: vmess
-  uuid: b979cbad-64a2-4d71-9244-ff3b78557f2b
-  ws-opts:
-    headers:
-      Host: b21.ntbq.dynu.net
-    path: /b21
 - alterId: 0
   cipher: auto
   name: 24|12|TW-板桥2-3
@@ -126,9 +131,19 @@ proxies:
     path: /b23
 - alterId: 0
   cipher: auto
-  name: 12,15,20,24,27|台湾省 中华电信(HiNet)数据中心
+  name: 24,26,27|14|🇹🇼 台湾3|@ripaojiedian
+  network: tcp
+  port: 41332
+  server: 36.238.149.222
+  servername: v94.topman8846.cc
+  tls: true
+  type: vmess
+  uuid: d2a1cd29-9ac2-3165-a082-cf09cdd3bf50
+- alterId: 0
+  cipher: auto
+  name: 10,12,15,20,24,27|台湾省 中华电信(HiNet)数据中心
   network: ws
-  port: '443'
+  port: 443
   server: nbq12.ntbq.dynu.net
   tls: true
   type: vmess
@@ -137,18 +152,3 @@ proxies:
     headers:
       Host: nbq12.ntbq.dynu.net
     path: /b12
-- cipher: aes-256-gcm
-  name: 25|🇹🇼 台湾3|@ripaojiedian 2
-  password: 6cb1057882ee
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: fn600mtw001.testnewline.xyz
-    mode: websocket
-    mux: true
-    path: /fsamyrpso
-    skip-cert-verify: false
-    tls: true
-  port: 443
-  server: fn600mtw001.testnewline.xyz
-  tfo: false
-  type: ss
