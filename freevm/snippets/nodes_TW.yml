@@ -1,23 +1,26 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 10,12,15,24,27|台湾省新北市 中华电信
-  network: ws
+- cipher: aes-256-gcm
+  name: 25|🇹🇼 台湾3|@ripaojiedian 2
+  password: 6cb1057882ee
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: fn600mtw001.testnewline.xyz
+    mode: websocket
+    mux: true
+    path: /fsamyrpso
+    skip-cert-verify: false
+    tls: true
   port: 443
-  server: b23.ntbq.dynu.net
-  tls: true
-  type: vmess
-  uuid: 3feeacfc-dee3-47a1-8f0c-4079220f4bc2
-  ws-opts:
-    headers:
-      Host: b23.ntbq.dynu.net
-    path: /b23
+  server: fn600mtw001.testnewline.xyz
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 10,12,15,24,25,27|台湾省新竹市 中华电信
+  name: 12,15,24,25,27|台湾省中华电信(HiNet)数据中心 6
   network: ws
   port: 443
   server: b22.ntbq.dynu.net
+  servername: ''
   tls: true
   type: vmess
   uuid: 3feeacfc-dee3-47a1-8f0c-4079220f4bc2
@@ -41,31 +44,6 @@ proxies:
     path: /b11
 - alterId: 0
   cipher: auto
-  name: 24,26,27|14|🇹🇼 台湾3|@ripaojiedian
-  network: tcp
-  port: 41332
-  server: 36.238.149.222
-  servername: v94.topman8846.cc
-  tls: true
-  type: vmess
-  uuid: d2a1cd29-9ac2-3165-a082-cf09cdd3bf50
-- cipher: aes-256-gcm
-  name: 25|🇹🇼 台湾3|@ripaojiedian 2
-  password: 6cb1057882ee
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: fn600mtw001.testnewline.xyz
-    mode: websocket
-    mux: true
-    path: /fsamyrpso
-    skip-cert-verify: false
-    tls: true
-  port: 443
-  server: fn600mtw001.testnewline.xyz
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
   name: 19|TW-36.226.157.235-085
   network: ws
   port: 443
@@ -77,6 +55,20 @@ proxies:
   ws-headers:
     Host: b23.ntbq.dynu.net
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 12,15,24,27|台湾省新竹市中华电信 7
+  network: ws
+  port: 443
+  server: b23.ntbq.dynu.net
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 3feeacfc-dee3-47a1-8f0c-4079220f4bc2
+  ws-opts:
+    headers:
+      Host: b23.ntbq.dynu.net
+    path: /b23
 - alterId: 0
   cipher: auto
   name: 24,26,27|15|台湾|浏览器输入 翻墙.com
@@ -104,3 +96,13 @@ proxies:
   ws-headers:
     Host: b22.ntbq.dynu.net
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 24,26,27|14|🇹🇼 台湾3|@ripaojiedian
+  network: tcp
+  port: 41332
+  server: 36.238.149.222
+  servername: v94.topman8846.cc
+  tls: true
+  type: vmess
+  uuid: d2a1cd29-9ac2-3165-a082-cf09cdd3bf50
