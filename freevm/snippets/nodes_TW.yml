@@ -1,17 +1,18 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 19|TW-36.226.157.235-085
+  name: 10,12,15,24,25,27|台湾省新竹市 中华电信
   network: ws
   port: 443
-  server: b23.ntbq.dynu.net
-  skip-cert-verify: true
+  server: b22.ntbq.dynu.net
+  servername: ''
   tls: true
   type: vmess
   uuid: 3feeacfc-dee3-47a1-8f0c-4079220f4bc2
-  ws-headers:
-    Host: b23.ntbq.dynu.net
-  ws-path: /
+  ws-opts:
+    headers:
+      Host: b22.ntbq.dynu.net
+    path: /b22
 - alterId: 0
   cipher: auto
   name: 15,24|github.com/freefq - 台湾省中华电信(Hi...
@@ -28,6 +29,19 @@ proxies:
     path: /b11
 - alterId: 0
   cipher: auto
+  name: 19|TW-118.167.77.140-084
+  network: ws
+  port: 443
+  server: b22.ntbq.dynu.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3feeacfc-dee3-47a1-8f0c-4079220f4bc2
+  ws-headers:
+    Host: b22.ntbq.dynu.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 24,26,27|15|台湾|浏览器输入 翻墙.com
   network: ws
   port: '443'
@@ -42,17 +56,41 @@ proxies:
     path: /b22
 - alterId: 0
   cipher: auto
-  name: 19|TW-118.167.77.140-084
+  name: 12,24,27|台湾省新竹市中华电信 7
   network: ws
   port: 443
-  server: b22.ntbq.dynu.net
+  server: b23.ntbq.dynu.net
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 3feeacfc-dee3-47a1-8f0c-4079220f4bc2
+  ws-opts:
+    headers:
+      Host: b23.ntbq.dynu.net
+    path: /b23
+- alterId: 0
+  cipher: auto
+  name: 19|TW-36.226.157.235-085
+  network: ws
+  port: 443
+  server: b23.ntbq.dynu.net
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 3feeacfc-dee3-47a1-8f0c-4079220f4bc2
   ws-headers:
-    Host: b22.ntbq.dynu.net
+    Host: b23.ntbq.dynu.net
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 24,26,27|14|🇹🇼 台湾3|@ripaojiedian
+  network: tcp
+  port: 41332
+  server: 36.238.149.222
+  servername: v94.topman8846.cc
+  tls: true
+  type: vmess
+  uuid: d2a1cd29-9ac2-3165-a082-cf09cdd3bf50
 - cipher: aes-256-gcm
   name: 25|🇹🇼 台湾3|@ripaojiedian 2
   password: 6cb1057882ee
@@ -68,40 +106,3 @@ proxies:
   server: fn600mtw001.testnewline.xyz
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 24,26,27|14|🇹🇼 台湾3|@ripaojiedian
-  network: tcp
-  port: 41332
-  server: 36.238.149.222
-  servername: v94.topman8846.cc
-  tls: true
-  type: vmess
-  uuid: d2a1cd29-9ac2-3165-a082-cf09cdd3bf50
-- alterId: 0
-  cipher: auto
-  name: 12,15,24,25,27|台湾省中华电信(HiNet)数据中心 6
-  network: ws
-  port: 443
-  server: b22.ntbq.dynu.net
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 3feeacfc-dee3-47a1-8f0c-4079220f4bc2
-  ws-opts:
-    headers:
-      Host: b22.ntbq.dynu.net
-    path: /b22
-- alterId: 0
-  cipher: auto
-  name: 10,12,24,27|台湾省新北市 中华电信
-  network: ws
-  port: 443
-  server: b23.ntbq.dynu.net
-  tls: true
-  type: vmess
-  uuid: 3feeacfc-dee3-47a1-8f0c-4079220f4bc2
-  ws-opts:
-    headers:
-      Host: b23.ntbq.dynu.net
-    path: /b23
