@@ -1,20 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 10,15,20,24,25,26,27,28|台湾省彰化县 中华电信
-  network: ws
-  port: '443'
-  server: tc11.twtc.dynu.net
-  tls: true
-  type: vmess
-  uuid: b0912b17-b2d2-4c53-9d53-710f6c88251a
-  ws-opts:
-    headers:
-      Host: tc11.twtc.dynu.net
-    path: /vbub1
-- alterId: 0
-  cipher: auto
-  name: 10,15,24,25,26,27|台湾省台北市 中华电信
+  name: 15,24,25,26,27|github.com/freefq - 台湾省台北市中华电信...
   network: ws
   port: 443
   server: b24.ntbq.dynu.net
@@ -26,21 +13,33 @@ proxies:
     headers:
       Host: b24.ntbq.dynu.net
     path: /b24
-- 12|TW-板桥1-1 - 麻雀加速器 Sparrow〖电报：@c...: None
-  alterId: 0
+- alterId: 0
   cipher: auto
-  name: 28|TW_speednode_0108
+  name: 15,20,24,25,26,27,28|github.com/freefq - 台湾省彰化县中华电信...
   network: ws
   port: 443
-  server: nbq11.ntbq.dynu.net
+  server: tc11.twtc.dynu.net
   servername: ''
   tls: true
   type: vmess
-  uuid: 4727ad0a-4b52-4b01-bb36-8b43ef15d11c
+  uuid: 54f3bbea-3524-40db-b576-7cf02aea4562
   ws-opts:
     headers:
-      Host: nbq11.ntbq.dynu.net
-    path: /b11
+      Host: tc11.twtc.dynu.net
+    path: /vbub1
+- alterId: 0
+  cipher: auto
+  name: 19|TW-36.233.235.237-208
+  network: ws
+  port: 443
+  server: tc11.twtc.dynu.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b0912b17-b2d2-4c53-9d53-710f6c88251a
+  ws-headers:
+    Host: tc11.twtc.dynu.net
+  ws-path: /vbub1
 - cipher: chacha20-ietf-poly1305
   name: 25|🇹🇼 台湾3|@ripaojiedian
   password: 4d1e8cd03847
@@ -69,16 +68,18 @@ proxies:
   ws-headers:
     Host: b24.ntbq.dynu.net
   ws-path: /
-- alterId: 0
+- 12|TW-板桥1-1 - 麻雀加速器 Sparrow〖电报：@c...: None
+  alterId: 0
   cipher: auto
-  name: 19|TW-36.233.235.237-208
+  name: 28|TW_speednode_0108
   network: ws
   port: 443
-  server: tc11.twtc.dynu.net
-  skip-cert-verify: true
+  server: nbq11.ntbq.dynu.net
+  servername: ''
   tls: true
   type: vmess
-  uuid: b0912b17-b2d2-4c53-9d53-710f6c88251a
-  ws-headers:
-    Host: tc11.twtc.dynu.net
-  ws-path: /vbub1
+  uuid: 4727ad0a-4b52-4b01-bb36-8b43ef15d11c
+  ws-opts:
+    headers:
+      Host: nbq11.ntbq.dynu.net
+    path: /b11
