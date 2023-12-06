@@ -1,20 +1,33 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,2,3,4,20,24|🇺🇸 _US_美国->🇬🇧_GB_英国 #1'
+  name: '0,2,3,4,20,24,27,32|🇺🇸 _US_美国->🇬🇧_GB_英国 #2'
   network: ws
-  port: '2052'
-  server: family.mgtajhiz.ir
+  port: '80'
+  server: ld2.shabijichang.com
   tls: false
   type: vmess
-  uuid: 544f2e93-51b0-4d47-fd72-e7d858021bbd
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
   ws-opts:
     headers:
-      Host: family.mgtajhiz.ir
+      Host: ld2.shabijichang.com
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,24,27|_US_->_GB__3
+  name: 0,2,3,4,6,10,12,13,20,24,27|🇭🇰 _HK_香港->🇺🇸_US_美国
+  network: ws
+  port: '80'
+  server: cm1.xn-w1yu8o.xyz
+  tls: false
+  type: vmess
+  uuid: a5319baa-e846-43c7-91c2-d67a1e307c8b
+  ws-opts:
+    headers:
+      Host: icu2.mac2win.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1,24|_US_->_GB__3
   network: ws
   port: 80
   server: ld2.shabijichang.com
@@ -26,6 +39,24 @@ proxies:
     headers:
       host: ld2.shabijichang.com
     path: /
+- name: 23|_CN_->_UA_
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10845
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- name: 23|_CN_->_US__2
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10838
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 1,9,24|_US_->_GB__2
@@ -39,83 +70,6 @@ proxies:
   ws-opts:
     headers:
       host: family.mgtajhiz.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 23|_SG_->_US_
-  network: ws
-  port: 80
-  server: 8.222.198.105
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
-  ws-opts:
-    headers:
-      host: warp.chigua.tk
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0,2,3,4,6,13,20,24,27|🇺🇸 _US_美国->🇫🇷_FR_法国
-  network: ws
-  port: '2082'
-  server: fr-01.jikuai.xyz
-  tls: false
-  type: vmess
-  uuid: 5d3e67f9-b611-4076-9136-cc64fd234806
-  ws-opts:
-    headers:
-      Host: fr-01.jikuai.xyz
-    path: /
-- name: 23|_CN_->_US__3
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10850
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 1,24|_HK_->_US_
-  network: ws
-  port: 80
-  server: cm1.xn-w1yu8o.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: a5319baa-e846-43c7-91c2-d67a1e307c8b
-  ws-opts:
-    headers:
-      host: icu2.mac2win.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1,24|_US_->_FR_
-  network: ws
-  port: 2082
-  server: fr-01.jikuai.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5d3e67f9-b611-4076-9136-cc64fd234806
-  ws-opts:
-    headers:
-      host: fr-01.jikuai.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '0,2,3,4,10,20,24,32|🇺🇸 _US_美国->🇬🇧_GB_英国 #2'
-  network: ws
-  port: '80'
-  server: ld2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: ld2.shabijichang.com
     path: /
 - alterId: 0
   cipher: auto
@@ -133,58 +87,58 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,24|_US_->_GB__1
+  name: 1,24|_HK_->_US_
   network: ws
-  port: 2052
-  server: 104.21.33.130
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 544f2e93-51b0-4d47-fd72-e7d858021bbd
-  ws-opts:
-    headers:
-      host: family.mgtajhiz.ir
-    path: /
-- name: 23|_CN_->_UA_
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10845
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 0,2,3,4,6,12,13,20,24,27|🇭🇰 _HK_香港->🇺🇸_US_美国
-  network: ws
-  port: '80'
+  port: 80
   server: cm1.xn-w1yu8o.xyz
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: a5319baa-e846-43c7-91c2-d67a1e307c8b
   ws-opts:
     headers:
-      Host: icu2.mac2win.top
+      host: icu2.mac2win.top
     path: /
-- name: 23|_CN_->_US__1
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10837
-  server: other.kunlun-ppg.com
+- alterId: 0
+  cipher: auto
+  name: 0,2,3,4,6,13,20,24,27|🇺🇸 _US_美国->🇫🇷_FR_法国
+  network: ws
+  port: '2082'
+  server: fr-01.jikuai.xyz
+  tls: false
+  type: vmess
+  uuid: 5d3e67f9-b611-4076-9136-cc64fd234806
+  ws-opts:
+    headers:
+      Host: fr-01.jikuai.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1,24|_US_->_FR_
+  network: ws
+  port: 2082
+  server: fr-01.jikuai.xyz
   skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: 23|_CN_->_US__2
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10838
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
+  tls: false
+  type: vmess
+  uuid: 5d3e67f9-b611-4076-9136-cc64fd234806
+  ws-opts:
+    headers:
+      host: fr-01.jikuai.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '0,2,3,4,20,24|🇺🇸 _US_美国->🇬🇧_GB_英国 #1'
+  network: ws
+  port: '2052'
+  server: family.mgtajhiz.ir
+  tls: false
+  type: vmess
+  uuid: 544f2e93-51b0-4d47-fd72-e7d858021bbd
+  ws-opts:
+    headers:
+      Host: family.mgtajhiz.ir
+    path: /
 - alterId: 0
   cipher: auto
   name: 0,2,3,4,9,20,24|🇺🇸 _US_美国->🇬🇧_GB_英国
@@ -198,3 +152,49 @@ proxies:
     headers:
       Host: family.mgtajhiz.ir
     path: /
+- alterId: 0
+  cipher: auto
+  name: 23|_SG_->_US_
+  network: ws
+  port: 80
+  server: 8.222.198.105
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  ws-opts:
+    headers:
+      host: warp.chigua.tk
+    path: /
+- name: 23|_CN_->_US__3
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10850
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 1,24|_US_->_GB__1
+  network: ws
+  port: 2052
+  server: 104.21.33.130
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 544f2e93-51b0-4d47-fd72-e7d858021bbd
+  ws-opts:
+    headers:
+      host: family.mgtajhiz.ir
+    path: /
+- name: 23|_CN_->_US__1
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10837
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
