@@ -1,21 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 9|台湾_120620029
-  network: ws
-  port: '80'
-  server: 80412c42-0fb8-6b74-1eb8-d58b05e67e50.nachoneko.ltd
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0876403d-5467-4d9f-8d85-23d520e22e94
-  ws-opts:
-    headers:
-      Host: 80412c42-0fb8-6b74-1eb8-d58b05e67e50.nachoneko.ltd
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10,12,15,20,24,27|台湾省新竹市 中华电信
+  name: 12,15,20,24,27|台湾省新竹市 中华电信
   network: ws
   port: '443'
   server: b21.ntbq.dynu.net
@@ -26,19 +12,6 @@ proxies:
     headers:
       Host: b21.ntbq.dynu.net
     path: /b21
-- alterId: 0
-  cipher: auto
-  name: 10,12,15,20,24,25,26,27,28|台湾省台北市 中华电信
-  network: ws
-  port: '443'
-  server: b22.ntbq.dynu.net
-  tls: true
-  type: vmess
-  uuid: d607492b-9880-4788-8ace-f6c066e3e3c4
-  ws-opts:
-    headers:
-      Host: b22.ntbq.dynu.net
-    path: /b22
 - alterId: 0
   cipher: auto
   name: 19|TW-36.232.133.145-168
@@ -54,7 +27,33 @@ proxies:
   ws-path: /vbub2
 - alterId: 0
   cipher: auto
-  name: 12,15,20,24,27,28|台湾省新北市中华电信 56
+  name: 19|TW-36.232.172.34-162
+  network: ws
+  port: 443
+  server: tc11.twtc.dynu.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e5640ff5-eef4-443c-9608-d4397ba5320e
+  ws-headers:
+    Host: tc11.twtc.dynu.net
+  ws-path: /vbub1
+- alterId: 0
+  cipher: auto
+  name: '12,20,24,25,26,27,28|台湾省台北市 中华电信 #2'
+  network: ws
+  port: '443'
+  server: b22.ntbq.dynu.net
+  tls: true
+  type: vmess
+  uuid: d607492b-9880-4788-8ace-f6c066e3e3c4
+  ws-opts:
+    headers:
+      Host: b22.ntbq.dynu.net
+    path: /b22
+- alterId: 0
+  cipher: auto
+  name: 10,12,15,20,24,27,28|台湾省新北市 中华电信
   network: ws
   port: '443'
   server: nbq13.ntbq.dynu.net
@@ -67,7 +66,117 @@ proxies:
     path: /b13
 - alterId: 0
   cipher: auto
-  name: 24,28|12|TW-板桥2-4 - 麻雀加速器 Sparrow〖电报...
+  name: 19|TW-36.226.154.248-190
+  network: ws
+  port: 443
+  server: b21.ntbq.dynu.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e854e7dd-350e-43d2-bdf2-95d839d8dd46
+  ws-headers:
+    Host: b21.ntbq.dynu.net
+  ws-path: /b21
+- alterId: 0
+  cipher: auto
+  name: 19|TW-36.226.150.132-181
+  network: ws
+  port: 443
+  server: b22.ntbq.dynu.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 28e08966-170c-4b59-8756-14dfad41157a
+  ws-headers:
+    Host: b22.ntbq.dynu.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '10,24,27|台湾省台北市 中华电信 #1'
+  network: ws
+  port: '443'
+  server: b23.ntbq.dynu.net
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: e854e7dd-350e-43d2-bdf2-95d839d8dd46
+  ws-opts:
+    headers:
+      Host: b23.ntbq.dynu.net
+    path: /b23
+- alterId: 0
+  cipher: auto
+  name: '12,15,24,27,28|台湾省 中华电信(HiNet)数据中心 #1'
+  network: ws
+  port: 443
+  server: nbq12.ntbq.dynu.net
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 28e08966-170c-4b59-8756-14dfad41157a
+  ws-opts:
+    headers:
+      Host: nbq12.ntbq.dynu.net
+    path: /b12
+- alterId: 0
+  cipher: auto
+  name: 10,12,15,20,24,27,28|台湾省南投县 中华电信
+  network: ws
+  port: '443'
+  server: tc11.twtc.dynu.net
+  tls: true
+  type: vmess
+  uuid: e5640ff5-eef4-443c-9608-d4397ba5320e
+  ws-opts:
+    headers:
+      Host: tc11.twtc.dynu.net
+    path: /vbub1
+- cipher: chacha20-ietf-poly1305
+  name: 25|🇹🇼 台湾3|@ripaojiedian
+  password: 4d1e8cd03847
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: wtw1000mline004.chilines.club
+    mode: websocket
+    mux: true
+    path: /wlkldrkdzet
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: wtw1000mline004.chilines.club
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 12,15,20,24,27,28|台湾省台中市中华电信 29
+  network: ws
+  port: '443'
+  server: tc12.twtc.dynu.net
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: e5640ff5-eef4-443c-9608-d4397ba5320e
+  ws-opts:
+    headers:
+      Host: tc12.twtc.dynu.net
+    path: /vbub2
+- alterId: 0
+  cipher: auto
+  name: 12,15,24,27|台湾省新北市中华电信 46
+  network: ws
+  port: 443
+  server: nbq13.ntbq.dynu.net
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 28e08966-170c-4b59-8756-14dfad41157a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /b13
+- alterId: 0
+  cipher: auto
+  name: 10,24,28|台湾省台北市 中华电信
   network: ws
   port: '443'
   server: b24.ntbq.dynu.net
@@ -97,130 +206,6 @@ proxies:
     path: /b11
 - alterId: 0
   cipher: auto
-  name: 10,12,15,24,27|台湾省新北市 中华电信
-  network: ws
-  port: 443
-  server: nbq13.ntbq.dynu.net
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 28e08966-170c-4b59-8756-14dfad41157a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /b13
-- alterId: 0
-  cipher: auto
-  name: 12,15,20,24,27,28|台湾省台中市中华电信 29
-  network: ws
-  port: '443'
-  server: tc12.twtc.dynu.net
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: e5640ff5-eef4-443c-9608-d4397ba5320e
-  ws-opts:
-    headers:
-      Host: tc12.twtc.dynu.net
-    path: /vbub2
-- alterId: 0
-  cipher: auto
-  name: 19|TW-36.232.172.34-162
-  network: ws
-  port: 443
-  server: tc11.twtc.dynu.net
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e5640ff5-eef4-443c-9608-d4397ba5320e
-  ws-headers:
-    Host: tc11.twtc.dynu.net
-  ws-path: /vbub1
-- alterId: 0
-  cipher: auto
-  name: 19|TW-36.226.150.132-181
-  network: ws
-  port: 443
-  server: b22.ntbq.dynu.net
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 28e08966-170c-4b59-8756-14dfad41157a
-  ws-headers:
-    Host: b22.ntbq.dynu.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 10,12,15,24,27,28|台湾省花莲县 中华电信
-  network: ws
-  port: 443
-  server: nbq12.ntbq.dynu.net
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: e5640ff5-eef4-443c-9608-d4397ba5320e
-  ws-opts:
-    headers:
-      Host: nbq12.ntbq.dynu.net
-    path: /b12
-- alterId: 0
-  cipher: auto
-  name: '10,24|台湾省台北市 中华电信 #1'
-  network: ws
-  port: '443'
-  server: b23.ntbq.dynu.net
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: e854e7dd-350e-43d2-bdf2-95d839d8dd46
-  ws-opts:
-    headers:
-      Host: b23.ntbq.dynu.net
-    path: /b23
-- alterId: 0
-  cipher: auto
-  name: 19|TW-36.226.154.248-190
-  network: ws
-  port: 443
-  server: b21.ntbq.dynu.net
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e854e7dd-350e-43d2-bdf2-95d839d8dd46
-  ws-headers:
-    Host: b21.ntbq.dynu.net
-  ws-path: /b21
-- alterId: 0
-  cipher: auto
-  name: 12,15,20,24,27,28|台湾省南投县 中华电信
-  network: ws
-  port: '443'
-  server: tc11.twtc.dynu.net
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: e5640ff5-eef4-443c-9608-d4397ba5320e
-  ws-opts:
-    headers:
-      Host: tc11.twtc.dynu.net
-    path: /vbub1
-- cipher: chacha20-ietf-poly1305
-  name: 25|🇹🇼 台湾3|@ripaojiedian
-  password: 4d1e8cd03847
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: wtw1000mline004.chilines.club
-    mode: websocket
-    mux: true
-    path: /wlkldrkdzet
-    skip-cert-verify: false
-    tls: true
-  port: 443
-  server: wtw1000mline004.chilines.club
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
   name: 19|TW-1.164.132.253-171
   network: ws
   port: 443
@@ -245,3 +230,30 @@ proxies:
   ws-headers:
     Host: nbq13.ntbq.dynu.net
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 9|台湾_120620029
+  network: ws
+  port: '80'
+  server: 80412c42-0fb8-6b74-1eb8-d58b05e67e50.nachoneko.ltd
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0876403d-5467-4d9f-8d85-23d520e22e94
+  ws-opts:
+    headers:
+      Host: 80412c42-0fb8-6b74-1eb8-d58b05e67e50.nachoneko.ltd
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10|台湾省 中华电信(HiNet)数据中心
+  network: ws
+  port: 443
+  server: nbq11.ntbq.dynu.net
+  tls: true
+  type: vmess
+  uuid: e854e7dd-350e-43d2-bdf2-95d839d8dd46
+  ws-opts:
+    headers:
+      Host: ''
+    path: /b11
