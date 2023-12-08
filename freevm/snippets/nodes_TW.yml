@@ -1,21 +1,10 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 24|12|🔒 VM-TCP-NA 🇹🇼 TW-210.61.20...
-  network: tcp
-  port: '44473'
-  server: 210.61.206.225
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 083aee22-f7ae-4305-ef9a-532482d5a709
-- alterId: 0
-  cipher: auto
-  name: 15,24|github.com/freefq - 台湾省台北市中华电信...
+  name: 10,15,24,27|台湾省台北市 中华电信
   network: ws
   port: 443
   server: b23.ntbq.dynu.net
-  servername: ''
   tls: true
   type: vmess
   uuid: 8e53b838-e5a4-45fb-94c2-f5dd7f7f729a
@@ -25,7 +14,7 @@ proxies:
     path: /b23
 - alterId: 0
   cipher: auto
-  name: 10|台湾省台北市 UCloud
+  name: 27|台湾省台北市 UCloud
   network: ws
   port: '443'
   server: 123.58.197.70
@@ -33,6 +22,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|12|🔒 VM-WS-NA 🇹🇼 TW-103.159.20...
+  network: ws
+  port: '31945'
+  server: 103.159.206.35
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
   ws-opts:
     headers:
       Host: ''
@@ -63,16 +66,7 @@ proxies:
   uuid: 32c29370-cff3-49be-a565-b3f16dfbb85d
 - alterId: 0
   cipher: auto
-  name: 24|12|🇹🇼|TW|台湾|@wxgqlfx|63
-  network: tcp
-  port: 10001
-  server: 45.121.48.193
-  tls: false
-  type: vmess
-  uuid: 420026d3-474b-47e3-b26b-23a22aa1f4f4
-- alterId: 0
-  cipher: auto
-  name: 10,24|台湾省高雄市 中华电信
+  name: 24,27|12|🔒 VM-TCP-NA 🇹🇼 TW-210.61.20...
   network: tcp
   port: '21433'
   server: 210.61.206.229
@@ -82,21 +76,7 @@ proxies:
   uuid: 39d39017-f955-4b10-b269-d166ec6b17c9
 - alterId: 0
   cipher: auto
-  name: 24|12|🔒 VM-WS-NA 🇹🇼 TW-103.159.20...
-  network: ws
-  port: '31945'
-  server: 103.159.206.35
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10,15,24|台湾省台北市 中华电信
+  name: 15,24,27|github.com/freefq - 台湾省台北市中华电信...
   network: ws
   port: 443
   server: b21.ntbq.dynu.net
@@ -108,6 +88,25 @@ proxies:
     headers:
       Host: b21.ntbq.dynu.net
     path: /b21
+- alterId: 0
+  cipher: auto
+  name: 24|12|🇹🇼|TW|台湾|@wxgqlfx|63
+  network: tcp
+  port: 10001
+  server: 45.121.48.193
+  tls: false
+  type: vmess
+  uuid: 420026d3-474b-47e3-b26b-23a22aa1f4f4
+- alterId: 0
+  cipher: auto
+  name: 10,24|台湾省高雄市 中华电信
+  network: tcp
+  port: '44473'
+  server: 210.61.206.225
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 083aee22-f7ae-4305-ef9a-532482d5a709
 - alterId: 0
   cipher: auto
   name: 15,24,25,26,27|github.com/freefq - 台湾省中华电信 15
