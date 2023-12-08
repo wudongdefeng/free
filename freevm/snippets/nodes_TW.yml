@@ -1,64 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 24|12|🔒 VM-WS-NA 🇹🇼 TW-103.159.20...
-  network: ws
-  port: '31945'
-  server: 103.159.206.35
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '10,24|台湾省高雄市 中华电信 #1'
-  network: tcp
-  port: '44473'
-  server: 210.61.206.225
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 083aee22-f7ae-4305-ef9a-532482d5a709
-- alterId: 0
-  cipher: auto
-  name: 27|台湾省台北市 UCloud
-  network: ws
-  port: '443'
-  server: 123.58.197.70
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24,27|12|🔒 VM-TCP-NA 🇹🇼 TW-210.61.20...
-  network: tcp
-  port: '21433'
-  server: 210.61.206.229
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 39d39017-f955-4b10-b269-d166ec6b17c9
-- alterId: 0
-  cipher: auto
-  name: 10,24|台湾省高雄市 中华电信
-  network: tcp
-  port: '18206'
-  server: 210.61.206.196
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 32c29370-cff3-49be-a565-b3f16dfbb85d
-- alterId: 0
-  cipher: auto
   name: 15,24,27|github.com/freefq - 台湾省台北市中华电信...
   network: ws
   port: 443
@@ -73,13 +15,57 @@ proxies:
     path: /b21
 - alterId: 0
   cipher: auto
-  name: 24|12|🇹🇼|TW|台湾|@wxgqlfx|63
+  name: 19|TW-114.37.154.191-176
+  network: ws
+  port: 443
+  server: b23.ntbq.dynu.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8e53b838-e5a4-45fb-94c2-f5dd7f7f729a
+  ws-headers:
+    Host: b23.ntbq.dynu.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 10,15,24,25,26,27|台湾省 中华电信
+  network: ws
+  port: 443
+  server: b22.ntbq.dynu.net
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 8e53b838-e5a4-45fb-94c2-f5dd7f7f729a
+  ws-opts:
+    headers:
+      Host: b22.ntbq.dynu.net
+    path: /b22
+- alterId: 0
+  cipher: auto
+  name: 19|TW-114.37.119.223-167
+  network: ws
+  port: 443
+  server: b22.ntbq.dynu.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8e53b838-e5a4-45fb-94c2-f5dd7f7f729a
+  ws-headers:
+    Host: b22.ntbq.dynu.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 19,20,24,27|TW-210.61.206.196-238
   network: tcp
-  port: 10001
-  server: 45.121.48.193
+  port: 18206
+  server: 210.61.206.196
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 420026d3-474b-47e3-b26b-23a22aa1f4f4
+  uuid: 32c29370-cff3-49be-a565-b3f16dfbb85d
+  ws-headers:
+    Host: 210.61.206.196
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   name: 25|🇹🇼 台湾3|@ripaojiedian
   password: 4d1e8cd03847
@@ -111,15 +97,69 @@ proxies:
     path: /b23
 - alterId: 0
   cipher: auto
-  name: 15,24,25,26,27|github.com/freefq - 台湾省中华电信 15
+  name: 24|12|🔒 VM-WS-NA 🇹🇼 TW-103.159.20...
+  network: ws
+  port: '31945'
+  server: 103.159.206.35
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|12|🇹🇼|TW|台湾|@wxgqlfx|63
+  network: tcp
+  port: 10001
+  server: 45.121.48.193
+  tls: false
+  type: vmess
+  uuid: 420026d3-474b-47e3-b26b-23a22aa1f4f4
+- alterId: 0
+  cipher: auto
+  name: 10|台湾省台北市 UCloud
+  network: tcp
+  port: 19588
+  server: 152.32.167.166
+  tls: false
+  type: vmess
+  uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
+- alterId: 0
+  cipher: auto
+  name: 19|TW-61.228.180.26-170
   network: ws
   port: 443
-  server: b22.ntbq.dynu.net
-  servername: ''
+  server: b21.ntbq.dynu.net
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 8e53b838-e5a4-45fb-94c2-f5dd7f7f729a
-  ws-opts:
-    headers:
-      Host: b22.ntbq.dynu.net
-    path: /b22
+  ws-headers:
+    Host: b21.ntbq.dynu.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 19,20,24,27|TW-210.61.206.225-259
+  network: tcp
+  port: 44473
+  server: 210.61.206.225
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 083aee22-f7ae-4305-ef9a-532482d5a709
+  ws-headers:
+    Host: 210.61.206.225
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 24|12|🔒 VM-TCP-NA 🇹🇼 TW-210.61.20...
+  network: tcp
+  port: '21433'
+  server: 210.61.206.229
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 39d39017-f955-4b10-b269-d166ec6b17c9
