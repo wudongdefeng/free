@@ -1,45 +1,48 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 1,24|_CA_->_US_
+  name: 1,24|_US_->_FR_
+  network: ws
+  port: 2086
+  server: cp2.colacloud.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7d4c1cc0-1382-4fd1-915b-362c59e77ad6
+  ws-opts:
+    headers:
+      host: cf-nls.colacloud.site
+    path: /sssddd
+- name: 23|_CN_->_US__1
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10837
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 0,24|🇯🇵 _JP_日本->🇺🇸_US_美国
+  network: tcp
+  port: '30501'
+  server: dir01.netorigins2u.site
+  tls: true
+  type: vmess
+  uuid: 922eeb53-8f01-3d66-8b5d-02052a5fd392
+- alterId: 0
+  cipher: auto
+  name: 2,4,20,24|🇨🇦_CA_加拿大->🇺🇸_US_美国
   network: ws
   port: 80
   server: 23.227.38.35
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 3091067b-9bce-4e1f-9f77-a41daff54268
   ws-opts:
     headers:
-      host: us3.889611.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 23|_SG_->_US_
-  network: ws
-  port: 80
-  server: 8.222.198.105
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
-  ws-opts:
-    headers:
-      host: warp.chigua.tk
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 23|_US_->_IN_
-  network: ws
-  port: 80
-  server: mm2.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      host: mm2.shabijichang.com
+      Host: us3.889611.com
     path: /
 - alterId: 0
   cipher: auto
@@ -55,25 +58,73 @@ proxies:
     headers:
       host: er3.889611.com
     path: /
+- name: 23|_CN_->_UA_
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10845
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 2,3,4,20,24|🇺🇸_US_美国->🇹🇷_TR_土耳其
+  name: '24,32|12,19|🇳🇱_NL_荷兰->🇫🇷_FR_法国_24 #1'
   network: ws
   port: 80
-  server: 162.159.200.1
+  server: eu-2.0rd.net
   tls: false
   type: vmess
-  uuid: 3091067b-9bce-4e1f-9f77-a41daff54268
+  uuid: ee80a700-9295-11ee-b833-205c6d5f5d78
+  ws-opts:
+    path: /7tx2lbmf
+- alterId: 0
+  cipher: auto
+  name: 3,24,32|🇳🇱 _GT_危地马拉->🇳🇱_NL_荷兰
+  network: ws
+  port: '443'
+  server: 181.174.80.182
+  tls: true
+  type: vmess
+  uuid: 71617e43-2715-4f7c-8db3-a5c854e2f188
   ws-opts:
     headers:
-      Host: tr3.889611.com
+      Host: teletv.onthewifi.com
+    path: /MEHDI
+- alterId: 0
+  cipher: auto
+  name: 1,24|_US_->_GB__5
+  network: ws
+  port: 80
+  server: 162.159.142.243
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c0b72149-1064-400f-acb4-ec9fa76c78aa
+  ws-opts:
+    headers:
+      host: uk3.889611.com
     path: /
 - alterId: 0
   cipher: auto
-  name: 2,4,20,24|🇩🇪_DE_德国->🇳🇱_NL_荷兰
+  name: 1,24|_DE_->_NL_
   network: ws
   port: 443
   server: 92.223.124.26
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 71617e43-2715-4f7c-8db3-a5c854e2f188
+  ws-opts:
+    headers:
+      host: teletv.onthewifi.com
+    path: /MEHDI
+- alterId: 0
+  cipher: auto
+  name: 3,24,32|🇩🇪 _DE_德国->🇳🇱_NL_荷兰
+  network: ws
+  port: '443'
+  server: 92.223.124.31
   tls: true
   type: vmess
   uuid: 71617e43-2715-4f7c-8db3-a5c854e2f188
@@ -92,148 +143,18 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 1,24|_US_->_RU__2
+  name: 23|_US_->_IN_
   network: ws
   port: 80
-  server: 162.159.142.204
+  server: mm2.shabijichang.com
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3091067b-9bce-4e1f-9f77-a41daff54268
-  ws-opts:
-    headers:
-      host: er3.889611.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24|12|德国 -> 中国China Telecom
-  network: ws
-  port: 8880
-  server: 217.160.45.31
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4e186678-fcca-4325-e4bc-b2916bdf6708
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- name: 23|_CN_->_UA_
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10845
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 3,24,32|🇭🇰 _HK_香港->🇮🇳_IN_印度
-  network: ws
-  port: '80'
-  server: cm3.xn-w1yu8o.xyz
-  tls: false
-  type: vmess
-  uuid: e759eadc-8e71-47b0-874e-871e3d8dc31e
-  ws-opts:
-    headers:
-      Host: icu3.mac2win.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 2,4,20,24,32|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
-  network: ws
-  port: 80
-  server: 162.159.142.201
-  tls: false
-  type: vmess
-  uuid: c0b72149-1064-400f-acb4-ec9fa76c78aa
-  ws-opts:
-    headers:
-      Host: er3.889611.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 2,3,4,20,24,32|🇺🇸_US_美国->🇬🇧_GB_英国
-  network: ws
-  port: 80
-  server: 162.159.142.241
-  tls: false
-  type: vmess
-  uuid: c0b72149-1064-400f-acb4-ec9fa76c78aa
-  ws-opts:
-    headers:
-      Host: uk3.889611.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1,24|_US_->_GB__1
-  network: ws
-  port: 80
-  server: 162.159.142.241
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c0b72149-1064-400f-acb4-ec9fa76c78aa
-  ws-opts:
-    headers:
-      host: uk3.889611.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1,24|_US_->_FR_
-  network: ws
-  port: 2086
-  server: cp2.colacloud.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7d4c1cc0-1382-4fd1-915b-362c59e77ad6
-  ws-opts:
-    headers:
-      host: cf-nls.colacloud.site
-    path: /sssddd
-- alterId: 0
-  cipher: auto
-  name: 1,24|_US_->_GB__2
-  network: ws
-  port: 80
-  server: 162.159.142.244
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c0b72149-1064-400f-acb4-ec9fa76c78aa
-  ws-opts:
-    headers:
-      host: uk3.889611.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0,6,13,24,27|🇺🇸 _US_美国->🇮🇳_IN_印度
-  network: ws
-  port: '80'
-  server: mm3.shabijichang.com
   tls: false
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
   ws-opts:
     headers:
-      Host: mm3.shabijichang.com
+      host: mm2.shabijichang.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 3,24,32|🇩🇪 _DE_德国->🇳🇱_NL_荷兰
-  network: ws
-  port: '443'
-  server: 92.223.124.31
-  tls: true
-  type: vmess
-  uuid: 71617e43-2715-4f7c-8db3-a5c854e2f188
-  ws-opts:
-    headers:
-      Host: teletv.onthewifi.com
-    path: /MEHDI
 - alterId: 0
   cipher: auto
   name: '2,3,4,20,24,32|🇺🇸_US_美国->🇬🇧_GB_英国 #4'
@@ -249,23 +170,59 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2,4,9,20,24|🇺🇸_US_美国->🇫🇷_FR_法国
+  name: 24,32|19|🇺🇸_US_美国->🇮🇳_IN_印度_46
   network: ws
-  port: 2086
+  port: 80
+  server: cfzl2.freeapp.buzz
+  tls: false
+  type: vmess
+  uuid: e759eadc-8e71-47b0-874e-871e3d8dc31e
+  ws-opts:
+    headers:
+      Host: icu3.mac2win.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1,24|_US_->_GB__2
+  network: ws
+  port: 80
+  server: 162.159.142.244
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c0b72149-1064-400f-acb4-ec9fa76c78aa
+  ws-opts:
+    headers:
+      host: uk3.889611.com
+    path: /
+- name: 23|_CN_->_US__2
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10838
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 24,32|19|🇺🇸_US_美国->🇧🇷_BR_巴西_33
+  network: ws
+  port: 80
   server: cp2.colacloud.site
   tls: false
   type: vmess
   uuid: 7d4c1cc0-1382-4fd1-915b-362c59e77ad6
   ws-opts:
     headers:
-      Host: cf-nls.colacloud.site
+      Host: cf-bxs.colacloud.site
     path: /sssddd
 - alterId: 0
   cipher: auto
-  name: 1,24|_US_->_GB__5
+  name: 1,24|_US_->_GB__4
   network: ws
   port: 80
-  server: 162.159.142.243
+  server: 162.159.142.245
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -276,30 +233,82 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24,32|19|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_2_39
+  name: 2,3,4,20,24,32|🇺🇸_US_美国->🇬🇧_GB_英国
   network: ws
   port: 80
-  server: 162.159.142.203
+  server: 162.159.142.241
   tls: false
   type: vmess
   uuid: c0b72149-1064-400f-acb4-ec9fa76c78aa
   ws-opts:
     headers:
-      Host: er3.889611.com
+      Host: uk3.889611.com
+    path: /
+- alterId: 1
+  cipher: auto
+  name: '2,4,9,20,24|🇺🇸_US_美国->🇬🇧_GB_英国 #5'
+  network: ws
+  port: 443
+  server: e691d61a-f.3nvx.com
+  tls: true
+  type: vmess
+  uuid: 74dd674d-35fa-4f75-8b05-0f276e15c091
+  ws-opts:
+    headers:
+      Host: e691d61a-f.3nvx.com
+    path: /assets
+- alterId: 0
+  cipher: auto
+  name: 1,24|_US_->_GB__3
+  network: ws
+  port: 80
+  server: 162.159.142.242
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c0b72149-1064-400f-acb4-ec9fa76c78aa
+  ws-opts:
+    headers:
+      host: uk3.889611.com
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,24|_DE_->_NL_
+  name: 0,6,10,12,13,20,24,27|🇭🇰 _HK_香港->🇺🇸_US_美国
+  network: ws
+  port: '80'
+  server: nice2.xn-w1yu8o.xyz
+  tls: false
+  type: vmess
+  uuid: a5319baa-e846-43c7-91c2-d67a1e307c8b
+  ws-opts:
+    headers:
+      Host: icu2.mac2win.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '2,4,20,24,32|🇺🇸_US_美国->🇬🇧_GB_英国 #3'
+  network: ws
+  port: 80
+  server: 162.159.142.245
+  tls: false
+  type: vmess
+  uuid: c0b72149-1064-400f-acb4-ec9fa76c78aa
+  ws-opts:
+    headers:
+      Host: uk3.889611.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 2,4,20,24|🇩🇪_DE_德国->🇳🇱_NL_荷兰
   network: ws
   port: 443
   server: 92.223.124.26
-  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 71617e43-2715-4f7c-8db3-a5c854e2f188
   ws-opts:
     headers:
-      host: teletv.onthewifi.com
+      Host: teletv.onthewifi.com
     path: /MEHDI
 - alterId: 1
   cipher: auto
@@ -317,26 +326,58 @@ proxies:
     path: /assets
 - alterId: 0
   cipher: auto
-  name: 6,13,24,27|🇯🇵_JP_日本->🇺🇸_US_美国
-  network: ''
-  port: 30501
-  server: dir01.netorigins2u.site
-  tls: true
-  type: vmess
-  uuid: 922eeb53-8f01-3d66-8b5d-02052a5fd392
-- alterId: 0
-  cipher: auto
-  name: 1,24|_US_->_GB__4
+  name: 23|_SG_->_US_
   network: ws
   port: 80
-  server: 162.159.142.245
+  server: 8.222.198.105
   skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  ws-opts:
+    headers:
+      host: warp.chigua.tk
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1,24|_CA_->_US_
+  network: ws
+  port: 80
+  server: 23.227.38.35
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3091067b-9bce-4e1f-9f77-a41daff54268
+  ws-opts:
+    headers:
+      host: us3.889611.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1,24|_US_->_RU__2
+  network: ws
+  port: 80
+  server: 162.159.142.204
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3091067b-9bce-4e1f-9f77-a41daff54268
+  ws-opts:
+    headers:
+      host: er3.889611.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24,32|19|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_2_39
+  network: ws
+  port: 80
+  server: 162.159.142.203
   tls: false
   type: vmess
   uuid: c0b72149-1064-400f-acb4-ec9fa76c78aa
   ws-opts:
     headers:
-      host: uk3.889611.com
+      Host: er3.889611.com
     path: /
 - alterId: 0
   cipher: auto
@@ -347,6 +388,54 @@ proxies:
   tls: false
   type: vmess
   uuid: 3091067b-9bce-4e1f-9f77-a41daff54268
+  ws-opts:
+    headers:
+      Host: er3.889611.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 2,4,9,20,24|🇺🇸_US_美国->🇫🇷_FR_法国
+  network: ws
+  port: 2086
+  server: cp2.colacloud.site
+  tls: false
+  type: vmess
+  uuid: 7d4c1cc0-1382-4fd1-915b-362c59e77ad6
+  ws-opts:
+    headers:
+      Host: cf-nls.colacloud.site
+    path: /sssddd
+- alterId: 0
+  cipher: auto
+  name: 2,3,4,20,24|🇺🇸_US_美国->🇹🇷_TR_土耳其
+  network: ws
+  port: 80
+  server: 162.159.200.1
+  tls: false
+  type: vmess
+  uuid: 3091067b-9bce-4e1f-9f77-a41daff54268
+  ws-opts:
+    headers:
+      Host: tr3.889611.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 6,13,24,27|🇯🇵_JP_日本->🇺🇸_US_美国
+  network: ''
+  port: 30501
+  server: dir01.netorigins2u.site
+  tls: true
+  type: vmess
+  uuid: 922eeb53-8f01-3d66-8b5d-02052a5fd392
+- alterId: 0
+  cipher: auto
+  name: 2,4,20,24,32|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
+  network: ws
+  port: 80
+  server: 162.159.142.201
+  tls: false
+  type: vmess
+  uuid: c0b72149-1064-400f-acb4-ec9fa76c78aa
   ws-opts:
     headers:
       Host: er3.889611.com
@@ -366,10 +455,23 @@ proxies:
     path: /r8ykwif5rffiqJeJ49zLka7PbhWz3wiHs8cSeiRyZL
 - alterId: 0
   cipher: auto
-  name: 24,32|19|🇺🇸_US_美国->🇮🇳_IN_印度_46
+  name: 0,6,13,24,27|🇺🇸 _US_美国->🇮🇳_IN_印度
   network: ws
-  port: 80
-  server: cfzl2.freeapp.buzz
+  port: '80'
+  server: mm3.shabijichang.com
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: mm3.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 3,24,32|🇭🇰 _HK_香港->🇮🇳_IN_印度
+  network: ws
+  port: '80'
+  server: cm3.xn-w1yu8o.xyz
   tls: false
   type: vmess
   uuid: e759eadc-8e71-47b0-874e-871e3d8dc31e
@@ -379,17 +481,30 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 3,24,32|🇳🇱 _GT_危地马拉->🇳🇱_NL_荷兰
+  name: '2,3,4,20,24,32|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦 #1'
   network: ws
-  port: '443'
-  server: 181.174.80.182
-  tls: true
+  port: 80
+  server: 162.159.142.204
+  tls: false
   type: vmess
-  uuid: 71617e43-2715-4f7c-8db3-a5c854e2f188
+  uuid: 3091067b-9bce-4e1f-9f77-a41daff54268
   ws-opts:
     headers:
-      Host: teletv.onthewifi.com
-    path: /MEHDI
+      Host: er3.889611.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '2,4,20,24,32|🇺🇸_US_美国->🇬🇧_GB_英国 #2'
+  network: ws
+  port: 80
+  server: 162.159.142.242
+  tls: false
+  type: vmess
+  uuid: c0b72149-1064-400f-acb4-ec9fa76c78aa
+  ws-opts:
+    headers:
+      Host: uk3.889611.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 1,24|_US_->_TR_
@@ -406,36 +521,30 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '24,32|12,19|🇳🇱_NL_荷兰->🇫🇷_FR_法国_24 #1'
+  name: 1,24|_US_->_GB__1
   network: ws
   port: 80
-  server: eu-2.0rd.net
-  tls: false
-  type: vmess
-  uuid: ee80a700-9295-11ee-b833-205c6d5f5d78
-  ws-opts:
-    path: /7tx2lbmf
-- name: 23|_CN_->_US__1
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10837
-  server: other.kunlun-ppg.com
+  server: 162.159.142.241
   skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 0,6,12,13,20,24,27|🇭🇰 _HK_香港->🇺🇸_US_美国
-  network: ws
-  port: '80'
-  server: nice2.xn-w1yu8o.xyz
   tls: false
   type: vmess
-  uuid: a5319baa-e846-43c7-91c2-d67a1e307c8b
+  uuid: c0b72149-1064-400f-acb4-ec9fa76c78aa
   ws-opts:
     headers:
-      Host: icu2.mac2win.top
+      host: uk3.889611.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0,6,13,20,24,27|🇺🇸 _US_美国->🇱🇹_LT_立陶宛
+  network: ws
+  port: '8080'
+  server: moon.chanell.mci.v-x4ssd.space
+  tls: false
+  type: vmess
+  uuid: 97bba5ca-185c-4e6a-ac64-96e920d4eeda
+  ws-opts:
+    headers:
+      Host: moon.chanell.mci.v-x4ssd.space
     path: /
 - alterId: 0
   cipher: auto
@@ -452,124 +561,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24,32|19|🇺🇸_US_美国->🇧🇷_BR_巴西_33
+  name: 24|12|德国 -> 中国China Telecom
   network: ws
-  port: 80
-  server: cp2.colacloud.site
+  port: 8880
+  server: 217.160.45.31
+  servername: ''
   tls: false
   type: vmess
-  uuid: 7d4c1cc0-1382-4fd1-915b-362c59e77ad6
+  uuid: 4e186678-fcca-4325-e4bc-b2916bdf6708
   ws-opts:
     headers:
-      Host: cf-bxs.colacloud.site
-    path: /sssddd
-- alterId: 0
-  cipher: auto
-  name: '2,3,4,20,24,32|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦 #1'
-  network: ws
-  port: 80
-  server: 162.159.142.204
-  tls: false
-  type: vmess
-  uuid: 3091067b-9bce-4e1f-9f77-a41daff54268
-  ws-opts:
-    headers:
-      Host: er3.889611.com
-    path: /
-- alterId: 1
-  cipher: auto
-  name: '2,4,9,20,24|🇺🇸_US_美国->🇬🇧_GB_英国 #5'
-  network: ws
-  port: 443
-  server: e691d61a-f.3nvx.com
-  tls: true
-  type: vmess
-  uuid: 74dd674d-35fa-4f75-8b05-0f276e15c091
-  ws-opts:
-    headers:
-      Host: e691d61a-f.3nvx.com
-    path: /assets
-- alterId: 0
-  cipher: auto
-  name: 0,6,13,20,24,27|🇺🇸 _US_美国->🇱🇹_LT_立陶宛
-  network: ws
-  port: '8080'
-  server: moon.chanell.mci.v-x4ssd.space
-  tls: false
-  type: vmess
-  uuid: 97bba5ca-185c-4e6a-ac64-96e920d4eeda
-  ws-opts:
-    headers:
-      Host: moon.chanell.mci.v-x4ssd.space
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 2,4,20,24|🇨🇦_CA_加拿大->🇺🇸_US_美国
-  network: ws
-  port: 80
-  server: 23.227.38.35
-  tls: false
-  type: vmess
-  uuid: 3091067b-9bce-4e1f-9f77-a41daff54268
-  ws-opts:
-    headers:
-      Host: us3.889611.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '2,4,20,24,32|🇺🇸_US_美国->🇬🇧_GB_英国 #3'
-  network: ws
-  port: 80
-  server: 162.159.142.245
-  tls: false
-  type: vmess
-  uuid: c0b72149-1064-400f-acb4-ec9fa76c78aa
-  ws-opts:
-    headers:
-      Host: uk3.889611.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0,24|🇯🇵 _JP_日本->🇺🇸_US_美国
-  network: tcp
-  port: '30501'
-  server: dir01.netorigins2u.site
-  tls: true
-  type: vmess
-  uuid: 922eeb53-8f01-3d66-8b5d-02052a5fd392
-- alterId: 0
-  cipher: auto
-  name: '2,4,20,24,32|🇺🇸_US_美国->🇬🇧_GB_英国 #2'
-  network: ws
-  port: 80
-  server: 162.159.142.242
-  tls: false
-  type: vmess
-  uuid: c0b72149-1064-400f-acb4-ec9fa76c78aa
-  ws-opts:
-    headers:
-      Host: uk3.889611.com
-    path: /
-- name: 23|_CN_->_US__2
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10838
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 1,24|_US_->_GB__3
-  network: ws
-  port: 80
-  server: 162.159.142.242
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c0b72149-1064-400f-acb4-ec9fa76c78aa
-  ws-opts:
-    headers:
-      host: uk3.889611.com
-    path: /
+      Host: ''
+    path: ''
