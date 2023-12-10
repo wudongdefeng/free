@@ -1,26 +1,8 @@
 proxies:
-- name: 1|_KR_->_AU__1
-  network: tcp
-  password: 57edfecf-5694-4a34-8072-54a4f0636a62
-  port: 40005
-  server: frontend.kuangbiaoyun.com
-  skip-cert-verify: true
-  sni: frontend.kuangbiaoyun.com
-  type: trojan
-  udp: true
-- name: 23|_CN_->_UA_
+- name: 23|_CN_->_US__1
   network: tcp
   password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10845
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: 23|_CN_->_US__3
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10850
+  port: 10837
   server: other.kunlun-ppg.com
   skip-cert-verify: true
   sni: alibaba-node.cn
@@ -32,6 +14,38 @@ proxies:
   port: 40005
   server: 146.56.179.67
   skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 23|_CN_->_US__2
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10838
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 23|_US_->_IN_
+  network: ws
+  port: 80
+  server: mm2.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: mm2.shabijichang.com
+    path: /
+- name: 1|_KR_->_US__1
+  network: tcp
+  password: 57edfecf-5694-4a34-8072-54a4f0636a62
+  port: 40007
+  server: frontend.kuangbiaoyun.com
+  skip-cert-verify: true
+  sni: frontend.kuangbiaoyun.com
   type: trojan
   udp: true
 - alterId: 0
@@ -50,7 +64,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24,27|14|🇺🇸_US_美国->🇱🇺_LU_卢森堡_由快嘴科技提供...
+  name: 0,2,3,4,6,13,20,24,27,31|🇺🇸 _US_美国->🇱🇹_LT_立陶宛
+  network: ws
+  port: '8080'
+  server: moon.chanell.mci.v-x4ssd.space
+  tls: false
+  type: vmess
+  uuid: 6ad7afd7-6958-478e-9fff-88f16f9a2008
+  ws-opts:
+    headers:
+      Host: moon.chanell.mci.v-x4ssd.space
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24,27|12|🇺🇸_US_美国->🇱🇺_LU_卢森堡_由快嘴科技提供...
   network: ws
   port: 443
   server: 56c5d2b1-575f-4718-ad37-4cb1fb0d44dc.asoul-ava.top
@@ -61,32 +88,38 @@ proxies:
     headers:
       Host: 56c5d2b1-575f-4718-ad37-4cb1fb0d44dc.asoul-ava.top
     path: /azumase.ren
-- name: 23|_CN_->_US__1
+- name: 1|_KR_->_AU__1
+  network: tcp
+  password: 57edfecf-5694-4a34-8072-54a4f0636a62
+  port: 40005
+  server: frontend.kuangbiaoyun.com
+  skip-cert-verify: true
+  sni: frontend.kuangbiaoyun.com
+  type: trojan
+  udp: true
+- name: 23|_CN_->_US__3
   network: tcp
   password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10837
+  port: 10850
   server: other.kunlun-ppg.com
   skip-cert-verify: true
   sni: alibaba-node.cn
   type: trojan
   udp: true
-- name: 23|_CN_->_US__2
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10838
-  server: other.kunlun-ppg.com
+- alterId: 0
+  cipher: auto
+  name: 1,12,24|_US_->_LT_
+  network: ws
+  port: 8080
+  server: moon.chanell.mci.v-x4ssd.space
   skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: 1|_KR_->_US__2
-  network: tcp
-  password: cc05b267-2e17-4e73-92f0-2cf603aa5997
-  port: 40007
-  server: 146.56.179.67
-  skip-cert-verify: true
-  type: trojan
-  udp: true
+  tls: false
+  type: vmess
+  uuid: 6ad7afd7-6958-478e-9fff-88f16f9a2008
+  ws-opts:
+    headers:
+      host: moon.chanell.mci.v-x4ssd.space
+    path: /
 - alterId: 0
   cipher: auto
   name: 0,3,6,13,24,27,31|🇺🇸 _US_美国->🇬🇧_GB_英国
@@ -100,53 +133,20 @@ proxies:
     headers:
       Host: ld2.shabijichang.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 23|_US_->_IN_
-  network: ws
-  port: 80
-  server: mm2.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      host: mm2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1,12,24,27|_US_->_LT_
-  network: ws
-  port: 8080
-  server: moon.chanell.mci.v-x4ssd.space
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 6ad7afd7-6958-478e-9fff-88f16f9a2008
-  ws-opts:
-    headers:
-      host: moon.chanell.mci.v-x4ssd.space
-    path: /
-- name: 1|_KR_->_US__1
+- name: 1|_KR_->_US__2
   network: tcp
-  password: 57edfecf-5694-4a34-8072-54a4f0636a62
+  password: cc05b267-2e17-4e73-92f0-2cf603aa5997
   port: 40007
-  server: frontend.kuangbiaoyun.com
+  server: 146.56.179.67
   skip-cert-verify: true
-  sni: frontend.kuangbiaoyun.com
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 0,2,3,4,6,13,20,24,27,31|🇺🇸 _US_美国->🇱🇹_LT_立陶宛
-  network: ws
-  port: '8080'
-  server: moon.chanell.mci.v-x4ssd.space
-  tls: false
-  type: vmess
-  uuid: 6ad7afd7-6958-478e-9fff-88f16f9a2008
-  ws-opts:
-    headers:
-      Host: moon.chanell.mci.v-x4ssd.space
-    path: /
+- name: 23|_CN_->_UA_
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10845
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
