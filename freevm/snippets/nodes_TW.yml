@@ -1,16 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 9|台湾_121120007
-  network: tcp
-  port: '19588'
-  server: 152.32.167.166
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
-- alterId: 0
-  cipher: auto
   name: 9|台湾_121120037
   network: ws
   port: '80'
@@ -23,30 +13,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: 9|台湾_121120002
-  network: ''
-  port: '10001'
-  server: 45.121.48.196
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
-- alterId: 0
-  cipher: auto
-  name: 24|12|TW台湾(mibei77.com 米贝节点分享)
-  network: ws
-  port: '443'
-  server: 80.240.113.8
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 15eaa579-cf84-4792-8612-3f76fb1b6315
-  ws-opts:
-    headers:
-      Host: software.myftp.biz
-    path: /@FORWARDV2RAY
 - alterId: 0
   cipher: auto
   name: 28|TW_speednode_0042
@@ -64,62 +30,17 @@ proxies:
     path: /b24
 - alterId: 0
   cipher: auto
-  name: 12,27,28|台湾省 中华电信(HiNet)数据中心
+  name: 19|TW-118.167.75.48-268
   network: ws
   port: 443
   server: b22.ntbq.dynu.net
-  servername: ''
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 445405e7-8cb2-4a0f-be48-7714c8f233e2
-  ws-opts:
-    headers:
-      Host: b22.ntbq.dynu.net
-    path: /b22
-- alterId: 0
-  cipher: auto
-  name: 9|台湾_121120003
-  network: ws
-  port: '31945'
-  server: 103.159.206.35
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-opts:
-    headers:
-      Host: 103.159.206.35
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 9,24|台湾_121120015
-  network: ''
-  port: '19588'
-  server: 152.32.167.166
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
-- alterId: 0
-  cipher: auto
-  name: 9,24|台湾_121120008
-  network: tcp
-  port: '10001'
-  server: 45.121.48.196
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
-- alterId: 0
-  cipher: auto
-  name: 9|台湾_121120001
-  network: ''
-  port: '10001'
-  server: 45.121.48.193
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 420026d3-474b-47e3-b26b-23a22aa1f4f4
+  ws-headers:
+    Host: b22.ntbq.dynu.net
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 9,24|台湾_121120006
@@ -136,8 +57,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 9|台湾_121120009
-  network: tcp
+  name: 9|台湾_121120001
+  network: ''
   port: '10001'
   server: 45.121.48.193
   servername: ''
@@ -146,31 +67,42 @@ proxies:
   uuid: 420026d3-474b-47e3-b26b-23a22aa1f4f4
 - alterId: 0
   cipher: auto
-  name: 24|10|台湾省新北市 中华电信
+  name: 9|台湾_121120003
   network: ws
-  port: 443
-  server: nbq13.ntbq.dynu.net
+  port: '31945'
+  server: 103.159.206.35
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  ws-opts:
+    headers:
+      Host: 103.159.206.35
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|12|TW台湾(mibei77.com 米贝节点分享)
+  network: ws
+  port: '443'
+  server: 80.240.113.8
   servername: ''
   tls: true
   type: vmess
-  uuid: 445405e7-8cb2-4a0f-be48-7714c8f233e2
+  uuid: 15eaa579-cf84-4792-8612-3f76fb1b6315
   ws-opts:
     headers:
-      Host: nbq13.ntbq.dynu.net
-    path: /b13
+      Host: software.myftp.biz
+    path: /@FORWARDV2RAY
 - alterId: 0
   cipher: auto
-  name: 19|TW-118.167.75.48-268
-  network: ws
-  port: 443
-  server: b22.ntbq.dynu.net
-  skip-cert-verify: true
-  tls: true
+  name: 9,24|台湾_121120008
+  network: tcp
+  port: '10001'
+  server: 45.121.48.196
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 445405e7-8cb2-4a0f-be48-7714c8f233e2
-  ws-headers:
-    Host: b22.ntbq.dynu.net
-  ws-path: /
+  uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
 - cipher: chacha20-ietf-poly1305
   name: 25|🇹🇼 台湾3|@ripaojiedian
   password: 4d1e8cd03847
@@ -188,15 +120,55 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 24|10|台湾省台北市 中华电信
+  name: 9|台湾_121120007
+  network: tcp
+  port: '19588'
+  server: 152.32.167.166
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
+- alterId: 0
+  cipher: auto
+  name: 12,24,28|台湾省 中华电信(HiNet)数据中心
   network: ws
   port: 443
-  server: nbq12.ntbq.dynu.net
+  server: b22.ntbq.dynu.net
   servername: ''
   tls: true
   type: vmess
   uuid: 445405e7-8cb2-4a0f-be48-7714c8f233e2
   ws-opts:
     headers:
-      Host: nbq12.ntbq.dynu.net
-    path: /b12
+      Host: b22.ntbq.dynu.net
+    path: /b22
+- alterId: 0
+  cipher: auto
+  name: 9|台湾_121120009
+  network: tcp
+  port: '10001'
+  server: 45.121.48.193
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 420026d3-474b-47e3-b26b-23a22aa1f4f4
+- alterId: 0
+  cipher: auto
+  name: 9|台湾_121120002
+  network: ''
+  port: '10001'
+  server: 45.121.48.196
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
+- alterId: 0
+  cipher: auto
+  name: 9,24|台湾_121120015
+  network: ''
+  port: '19588'
+  server: 152.32.167.166
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
