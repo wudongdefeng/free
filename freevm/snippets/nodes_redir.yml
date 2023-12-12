@@ -1,21 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 23|_US_->_IN_
-  network: ws
-  port: 80
-  server: mm2.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      host: mm2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 23|_SG_->_US_
+  name: 25|_SG_->_US_
   network: ws
   port: 80
   server: 8.222.198.105
@@ -29,35 +15,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,2,4,19,20,24|_IR_->_DE_
-  network: tcp
-  port: 58339
-  server: 31.47.45.104
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 78b9909f-289d-4cff-9f05-73644dcc92a9
-- name: 23|_CN_->_US__3
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10850
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: 23|_CN_->_UA_
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10845
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 0,3,24|🇺🇸 _US_美国->🇬🇧_GB_英国
+  name: 0,3,26|🇺🇸 _US_美国->🇬🇧_GB_英国
   network: ws
   port: '2052'
   server: family.mgtajhiz.ir
@@ -68,7 +26,7 @@ proxies:
     headers:
       Host: family.mgtajhiz.ir
     path: /
-- name: 23|_CN_->_US__2
+- name: 25|_CN_->_US__2
   network: tcp
   password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
   port: 10838
@@ -77,19 +35,10 @@ proxies:
   sni: alibaba-node.cn
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 0,1,2,3,4,6,13,19,20,24,27|🇫🇷 _IR_伊朗->🇫🇷_FR_法国
-  network: tcp
-  port: '58768'
-  server: 81.12.27.2
-  tls: false
-  type: vmess
-  uuid: 324d3868-cfef-4bd4-ab44-1776a406635f
-- name: 23|_CN_->_US__1
+- name: 25|_CN_->_UA_
   network: tcp
   password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10837
+  port: 10845
   server: other.kunlun-ppg.com
   skip-cert-verify: true
   sni: alibaba-node.cn
@@ -104,3 +53,54 @@ proxies:
   sni: frontend.kuangbiaoyun.com
   type: trojan
   udp: true
+- name: 25|_CN_->_US__3
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10850
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 0,1,2,3,4,8,15,21,22,26,29|🇫🇷 _IR_伊朗->🇫🇷_FR_法国
+  network: tcp
+  port: '58768'
+  server: 81.12.27.2
+  tls: false
+  type: vmess
+  uuid: 324d3868-cfef-4bd4-ab44-1776a406635f
+- alterId: 0
+  cipher: auto
+  name: 25|_US_->_IN_
+  network: ws
+  port: 80
+  server: mm2.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: mm2.shabijichang.com
+    path: /
+- name: 25|_CN_->_US__1
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10837
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 1,2,4,21,22,26|_IR_->_DE_
+  network: tcp
+  port: 58339
+  server: 31.47.45.104
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 78b9909f-289d-4cff-9f05-73644dcc92a9
