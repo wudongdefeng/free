@@ -1,6 +1,33 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 0,2,3,4,8,15,22,26,29|🇺🇸 _US_美国->🇬🇧_GB_英国
+  network: ws
+  port: '80'
+  server: ld2.shabijichang.com
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: ld2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 25|_US_->_IN_
+  network: ws
+  port: 80
+  server: mm2.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: mm2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 1,26|_US_->_GB_
   network: ws
   port: 80
@@ -51,19 +78,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 0,2,3,4,8,15,22,26,29|🇺🇸 _US_美国->🇬🇧_GB_英国
-  network: ws
-  port: '80'
-  server: ld2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      Host: ld2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: 25|_SG_->_US_
   network: ws
   port: 80
@@ -75,18 +89,4 @@ proxies:
   ws-opts:
     headers:
       host: warp.chigua.tk
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 25|_US_->_IN_
-  network: ws
-  port: 80
-  server: mm2.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      host: mm2.shabijichang.com
     path: /
