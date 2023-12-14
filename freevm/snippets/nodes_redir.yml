@@ -1,4 +1,27 @@
 proxies:
+- name: '25|_CN_->_US__1 #1'
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10837
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 25|_SG_->_US_
+  network: ws
+  port: 80
+  server: 8.222.198.105
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  ws-opts:
+    headers:
+      host: warp.chigua.tk
+    path: /
 - name: 1,25|_CN_->_US__2
   network: tcp
   password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68
@@ -8,19 +31,6 @@ proxies:
   sni: alibaba-node.cn
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 26,33|20|🇺🇸_US_美国->🇩🇪_DE_德国_2_39
-  network: ws
-  port: 8880
-  server: 162.159.134.234
-  tls: false
-  type: vmess
-  uuid: 2f1435e0-a3e6-40c7-bc4f-05f5befeb789
-  ws-opts:
-    headers:
-      Host: free.1alphaomega.org
-    path: /
 - name: 1,25|_CN_->_US__1
   network: tcp
   password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68
@@ -30,51 +40,10 @@ proxies:
   sni: alibaba-node.cn
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 0,2,3,4,11,14,17,22,26,29|🇺🇸 _US_美国->🇱🇹_LT_立陶宛
-  network: ws
-  port: '8080'
-  server: cloud.dragonrzm.sbs
-  tls: false
-  type: vmess
-  uuid: ce0d5151-7734-4189-b6ae-eb58e9af5603
-  ws-opts:
-    headers:
-      Host: cloud.dragonrzm.sbs
-    path: /
-- name: 1|_CA_->_US_
-  network: tcp
-  password: 57edfecf-5694-4a34-8072-54a4f0636a62
-  port: 40007
-  server: frontend.kuangbiaoyun.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 26|1|_US_->_GB_
-  network: ws
-  port: 80
-  server: ld2.shabijichang.com
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    path: /
 - name: 1|_CN_->_AT_
   network: tcp
   password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68
   port: 10848
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: 1,25|_CN_->_UA_
-  network: tcp
-  password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68
-  port: 10845
   server: other.kunlun-ppg.com
   skip-cert-verify: true
   sni: alibaba-node.cn
@@ -110,6 +79,28 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 0,2,3,4,11,12,14,17,22,26,29|🇺🇸 _US_美国->🇱🇹_LT_立陶宛
+  network: ws
+  port: '8080'
+  server: cloud.dragonrzm.sbs
+  tls: false
+  type: vmess
+  uuid: ce0d5151-7734-4189-b6ae-eb58e9af5603
+  ws-opts:
+    headers:
+      Host: cloud.dragonrzm.sbs
+    path: /
+- name: 1,25|_CN_->_UA_
+  network: tcp
+  password: 4de2e68e-3ffa-46a6-82f1-002ef5baab68
+  port: 10845
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
   name: 8,15,26,29|🇺🇸_US_美国->🇬🇧_GB_英国
   network: ws
   port: 80
@@ -123,24 +114,22 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|_SG_->_US_
+  name: 26,33|19|🇺🇸_US_美国->🇩🇪_DE_德国_2_39
   network: ws
-  port: 80
-  server: 8.222.198.105
-  skip-cert-verify: true
+  port: 8880
+  server: 162.159.134.234
   tls: false
   type: vmess
-  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  uuid: 2f1435e0-a3e6-40c7-bc4f-05f5befeb789
   ws-opts:
     headers:
-      host: warp.chigua.tk
+      Host: free.1alphaomega.org
     path: /
-- name: '25|_CN_->_US__1 #1'
+- name: 1|_CA_->_US_
   network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10837
-  server: other.kunlun-ppg.com
+  password: 57edfecf-5694-4a34-8072-54a4f0636a62
+  port: 40007
+  server: frontend.kuangbiaoyun.com
   skip-cert-verify: true
-  sni: alibaba-node.cn
   type: trojan
   udp: true
