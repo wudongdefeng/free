@@ -1,18 +1,14 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 12|台湾省新北市 中华电信
-  network: ws
-  port: '443'
-  server: b12.spwvpn.link
+  name: 11,26|台湾_121320007
+  network: tcp
+  port: '19588'
+  server: 152.32.167.166
   servername: ''
-  tls: true
+  tls: false
   type: vmess
-  uuid: 44c8ddcc-5d3c-44b1-9250-eff4c8e2b903
-  ws-opts:
-    headers:
-      Host: b12.spwvpn.link
-    path: /b12
+  uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
   name: 11|台湾_121320001
@@ -29,6 +25,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 29|台湾-优化2
+  network: ws
+  port: '16616'
+  server: m.cnmjcn.com
+  tls: false
+  type: vmess
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  ws-opts:
+    headers:
+      Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 21|TW-114.34.238.4-138
   network: ws
   port: 443
@@ -40,44 +49,6 @@ proxies:
   ws-headers:
     Host: b13.spwvpn.link
   ws-path: /b13
-- alterId: 0
-  cipher: auto
-  name: 26,29|14|-0563-TW【ccbaohe.com〗 永久免费节...
-  network: ws
-  port: 443
-  server: nbq13.ntbq.dynu.net
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 14327f86-7734-4d5b-9561-b58ad95cbcfb
-  ws-opts:
-    headers:
-      Host: nbq13.ntbq.dynu.net
-    path: /b13
-- alterId: 0
-  cipher: auto
-  name: '14,17,22,26,29|台湾省新北市 中华电信 #2'
-  network: ws
-  port: '443'
-  server: b13.spwvpn.link
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 44c8ddcc-5d3c-44b1-9250-eff4c8e2b903
-  ws-opts:
-    headers:
-      Host: b13.spwvpn.link
-    path: /b13
-- alterId: 0
-  cipher: auto
-  name: 11,26|台湾_121320008
-  network: tcp
-  port: '10001'
-  server: 45.121.48.196
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
 - alterId: 0
   cipher: auto
   name: 11,26|台湾_121320006
@@ -94,43 +65,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 14,17,22,26,29|台湾省花莲县中华电信 1
-  network: ws
-  port: '443'
-  server: nb21.ntbq.dynu.net
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 44c8ddcc-5d3c-44b1-9250-eff4c8e2b903
-  ws-opts:
-    headers:
-      Host: nb21.ntbq.dynu.net
-    path: /b21
-- alterId: 0
-  cipher: auto
-  name: 11|台湾_121320002
-  network: ''
-  port: '10001'
-  server: 45.121.48.196
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
-- alterId: 0
-  cipher: auto
-  name: 29|台湾-优化
-  network: ws
-  port: '16616'
-  server: yes.cnmjcn.net
-  tls: false
-  type: vmess
-  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
-  ws-opts:
-    headers:
-      Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: 21,22|TW-1.171.185.162-034
   network: tcp
   port: 224
@@ -142,45 +76,33 @@ proxies:
   ws-headers:
     Host: hinet1261.gfwisbest.xyz
   ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: 27,30|🇹🇼 台湾3|@ripaojiedian
-  password: 4d1e8cd03847
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: wtw1000mline004.chilines.club
-    mode: websocket
-    mux: true
-    path: /wlkldrkdzet
-    skip-cert-verify: false
-    tls: true
-  port: 443
-  server: wtw1000mline004.chilines.club
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
-  name: '26|14|台湾(yudou66.com 玉豆免费节点) #1'
+  name: 21|TW-114.34.238.4-150
+  network: ws
+  port: 443
+  server: b12.spwvpn.link
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 44c8ddcc-5d3c-44b1-9250-eff4c8e2b903
+  ws-headers:
+    Host: b12.spwvpn.link
+  ws-path: /b12
+- alterId: 0
+  cipher: auto
+  name: 12,14,17,22,26,29|台湾省新北市 中华电信
   network: ws
   port: '443'
-  server: nb24.ntbq.dynu.net
+  server: b13.spwvpn.link
   servername: ''
   tls: true
   type: vmess
   uuid: 44c8ddcc-5d3c-44b1-9250-eff4c8e2b903
   ws-opts:
     headers:
-      Host: nb24.ntbq.dynu.net
-    path: /b24
-- alterId: 0
-  cipher: auto
-  name: 11,26|台湾_121320007
-  network: tcp
-  port: '19588'
-  server: 152.32.167.166
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
+      Host: b13.spwvpn.link
+    path: /b13
 - alterId: 0
   cipher: auto
   name: 26,29|14|2-🇹🇼 Taiwan 01
@@ -197,6 +119,30 @@ proxies:
     path: /b22
 - alterId: 0
   cipher: auto
+  name: 11|台湾_121320011
+  network: ''
+  port: '19588'
+  server: 152.32.167.166
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
+- alterId: 0
+  cipher: auto
+  name: 26,29|14|-0563-TW【ccbaohe.com〗 永久免费节...
+  network: ws
+  port: 443
+  server: nbq13.ntbq.dynu.net
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 14327f86-7734-4d5b-9561-b58ad95cbcfb
+  ws-opts:
+    headers:
+      Host: nbq13.ntbq.dynu.net
+    path: /b13
+- alterId: 0
+  cipher: auto
   name: 21|TW-61.228.129.23-134
   network: ws
   port: 443
@@ -208,29 +154,6 @@ proxies:
   ws-headers:
     Host: nb21.ntbq.dynu.net
   ws-path: /b21
-- alterId: 0
-  cipher: auto
-  name: 11|台湾_121320011
-  network: ''
-  port: '19588'
-  server: 152.32.167.166
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
-- alterId: 0
-  cipher: auto
-  name: 21|TW-114.34.238.4-150
-  network: ws
-  port: 443
-  server: b12.spwvpn.link
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 44c8ddcc-5d3c-44b1-9250-eff4c8e2b903
-  ws-headers:
-    Host: b12.spwvpn.link
-  ws-path: /b12
 - alterId: 0
   cipher: auto
   name: 21|TW-114.34.238.4-168
@@ -258,3 +181,79 @@ proxies:
     headers:
       Host: b11.spwvpn.link
     path: /b11
+- cipher: chacha20-ietf-poly1305
+  name: 27,30|🇹🇼 台湾3|@ripaojiedian
+  password: 4d1e8cd03847
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: wtw1000mline004.chilines.club
+    mode: websocket
+    mux: true
+    path: /wlkldrkdzet
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: wtw1000mline004.chilines.club
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 29|台湾-优化
+  network: ws
+  port: '16616'
+  server: yes.cnmjcn.net
+  tls: false
+  type: vmess
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  ws-opts:
+    headers:
+      Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 11|台湾_121320002
+  network: ''
+  port: '10001'
+  server: 45.121.48.196
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
+- alterId: 0
+  cipher: auto
+  name: 12,26|台湾省台北市 中华电信
+  network: ws
+  port: '443'
+  server: nb24.ntbq.dynu.net
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 44c8ddcc-5d3c-44b1-9250-eff4c8e2b903
+  ws-opts:
+    headers:
+      Host: nb24.ntbq.dynu.net
+    path: /b24
+- alterId: 0
+  cipher: auto
+  name: 11,26|台湾_121320008
+  network: tcp
+  port: '10001'
+  server: 45.121.48.196
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
+- alterId: 0
+  cipher: auto
+  name: 14,17,22,26,29|台湾省花莲县中华电信 1
+  network: ws
+  port: '443'
+  server: nb21.ntbq.dynu.net
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 44c8ddcc-5d3c-44b1-9250-eff4c8e2b903
+  ws-opts:
+    headers:
+      Host: nb21.ntbq.dynu.net
+    path: /b21
