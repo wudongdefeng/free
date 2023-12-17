@@ -1,13 +1,15 @@
 proxies:
-- name: 23|_CN_->_US__3
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10850
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 24|1|_US_->_DE_
+  network: ws
+  port: 2087
+  server: 104.19.154.92
+  tls: true
+  type: vmess
+  uuid: 8fada9c0-c348-4465-aade-ff0311454178
+  ws-opts:
+    path: /kqlqqv
 - name: 23|_CN_->_UA_
   network: tcp
   password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
@@ -17,20 +19,28 @@ proxies:
   sni: alibaba-node.cn
   type: trojan
   udp: true
+- name: 23|_CN_->_US__2
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10838
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 23|_SG_->_US_
+  name: 20,24|🇺🇸 _US_美国->🇩🇪_DE_德国
   network: ws
-  port: 80
-  server: 8.222.198.105
-  skip-cert-verify: true
-  tls: false
+  port: '2087'
+  server: 104.19.154.92
+  tls: true
   type: vmess
-  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  uuid: 8fada9c0-c348-4465-aade-ff0311454178
   ws-opts:
     headers:
-      host: warp.chigua.tk
-    path: /
+      Host: pAnel159.moOkomeILz.homes
+    path: /kqlqqv
 - alterId: 0
   cipher: auto
   name: 23|_US_->_IN_
@@ -45,29 +55,29 @@ proxies:
     headers:
       host: mm2.shabijichang.com
     path: /
-- name: 23|_CN_->_US__2
+- alterId: 0
+  cipher: auto
+  name: 23|_SG_->_US_
+  network: ws
+  port: 80
+  server: 8.222.198.105
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  ws-opts:
+    headers:
+      host: warp.chigua.tk
+    path: /
+- name: 23|_CN_->_US__3
   network: tcp
   password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10838
+  port: 10850
   server: other.kunlun-ppg.com
   skip-cert-verify: true
   sni: alibaba-node.cn
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 1,24|_US_->_DE_
-  network: ws
-  port: 2087
-  server: 104.19.154.92
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8fada9c0-c348-4465-aade-ff0311454178
-  ws-opts:
-    headers:
-      host: pAnel159.moOkomeILz.homes
-    path: /kqlqqv
 - alterId: 0
   cipher: auto
   name: 24,31|18|🇺🇸_US_美国->🇳🇱_NL_荷兰_由快嘴科技提供：...
@@ -90,16 +100,3 @@ proxies:
   sni: alibaba-node.cn
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 2,4,20,24|🇺🇸_US_美国->🇩🇪_DE_德国
-  network: ws
-  port: 2087
-  server: 104.19.154.92
-  tls: true
-  type: vmess
-  uuid: 8fada9c0-c348-4465-aade-ff0311454178
-  ws-opts:
-    headers:
-      Host: pAnel159.moOkomeILz.homes
-    path: /kqlqqv
