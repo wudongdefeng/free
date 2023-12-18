@@ -1,4 +1,76 @@
 proxies:
+- cipher: aes-256-cfb
+  name: 19|FR-141.95.125.11-008
+  password: asdKkaskJKfnsa
+  port: 443
+  server: 141.95.125.11
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|FR-51.158.195.96-018
+  password: asdKkaskJKfnsa
+  port: 443
+  server: 51.158.195.96
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 19|FR-146.59.92.219-056
+  network: ws
+  port: 2096
+  server: 146.59.92.219
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aca71b13-ec8a-466d-c28f-43516d3cf246
+  ws-headers:
+    Host: 146.59.92.219
+  ws-path: /
+- cipher: aes-256-cfb
+  name: 19|FR-135.125.172.139-015
+  password: asdKkaskJKfnsa
+  port: 443
+  server: 135.125.172.139
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|FR-51.158.195.96-016
+  password: asdKkaskJKfnsa
+  port: 80
+  server: 51.158.195.96
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|FR-51.158.195.96-022
+  password: asdKkaskJKfnsa
+  port: 110
+  server: 51.158.195.96
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 19|FR-185.231.205.80-290
+  password: MGQwNTgw
+  port: 1443
+  server: 185.231.205.80
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 18|🇫🇷_FR_法国_oneclickvpnkeys
+  network: tcp
+  port: '443'
+  server: 135.125.134.177
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d4734bd8-906b-4426-b9ff-9dbc388d56da
+- alterId: 64
+  cipher: auto
+  name: 14|法国_【YouTube-VV科技】
+  network: ws
+  port: 443
+  server: 156.249.18.25
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.49291261.xyz
+    path: /path/1693992821776
 - alterId: 0
   cipher: auto
   name: 18|🇫🇷_FR_法国_free4allVPN
@@ -15,6 +87,19 @@ proxies:
     path: /nimvws
 - alterId: 0
   cipher: auto
+  name: 19|FR-195.154.77.190-065
+  network: ws
+  port: 2082
+  server: 195.154.77.190
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 36fa45db-2d4a-4295-a1fe-223836989878
+  ws-headers:
+    Host: 195.154.77.190
+  ws-path: /pineapple
+- alterId: 0
+  cipher: auto
   name: 27|🇫🇷FR-51.15.19.206-8829
   network: ws
   port: 2086
@@ -27,15 +112,53 @@ proxies:
     headers:
       Host: ''
     path: /k487e2od
-- name: 23|_FR_
+- alterId: 0
+  cipher: auto
+  name: 24|12|🔒 VM-TCP-NA 🇫🇷 FR-51.77.103...
   network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 35.181.201.102
+  port: '22919'
+  server: 51.77.103.107
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f300b3e0-3293-4c3c-a902-0538d997b3dd
+- alterId: 0
+  cipher: auto
+  name: 9,24|法国_121320070
+  network: tcp
+  port: '29776'
+  server: 146.59.147.250
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 82447abf-dcb9-408a-9ca6-79e0a7698d08
+- alterId: 0
+  cipher: auto
+  name: 19|FR-51.77.158.169-055
+  network: ws
+  port: 2096
+  server: 51.77.158.169
   skip-cert-verify: true
-  sni: trj.rollingnext.co.uk
-  type: trojan
-  udp: true
+  tls: false
+  type: vmess
+  uuid: c92fd902-b5d3-4208-bb48-630b1c7babea
+  ws-headers:
+    Host: 51.77.158.169
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 18|🇫🇷_FR_法国_fnet00
+  network: ws
+  port: '80'
+  server: fd.shabijichang.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4732350b-14a1-421e-985a-155a78e9ae80
+  ws-opts:
+    headers:
+      Host: bl.shabijichang.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 9|法国_121320069
@@ -46,33 +169,21 @@ proxies:
   tls: false
   type: vmess
   uuid: 82447abf-dcb9-408a-9ca6-79e0a7698d08
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 18|🇫🇷_FR_法国_oneclickvpnkeys
+- name: 23|_FR_
   network: tcp
-  port: '443'
-  server: 135.125.134.177
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d4734bd8-906b-4426-b9ff-9dbc388d56da
-- alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - st22.fast20gaming.sbs
-    method: GET
-    path:
-    - /
-  name: 28|FR_speednode_0048
-  network: http
-  port: 22919
-  server: st22.fast20gaming.sbs
+  password: telegram-id-directvpn
+  port: 22222
+  server: 35.181.201.102
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f300b3e0-3293-4c3c-a902-0538d997b3dd
+  sni: trj.rollingnext.co.uk
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|FR-135.125.172.153-000
+  password: asdKkaskJKfnsa
+  port: 443
+  server: 135.125.172.153
+  type: ss
 - alterId: 0
   cipher: auto
   name: 24|12|法国 - 巴黎 - Online S.A.S.
@@ -89,89 +200,22 @@ proxies:
     path: /sssddd
 - alterId: 0
   cipher: auto
-  name: 19|FR-146.59.92.219-056
-  network: ws
-  port: 2096
-  server: 146.59.92.219
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: aca71b13-ec8a-466d-c28f-43516d3cf246
-  ws-headers:
-    Host: 146.59.92.219
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 19|FR-195.154.77.190-065
-  network: ws
-  port: 2082
-  server: 195.154.77.190
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 36fa45db-2d4a-4295-a1fe-223836989878
-  ws-headers:
-    Host: 195.154.77.190
-  ws-path: /pineapple
-- cipher: chacha20-ietf-poly1305
-  name: 19|FR-185.231.205.80-290
-  password: MGQwNTgw
-  port: 1443
-  server: 185.231.205.80
-  type: ss
-- cipher: aes-256-cfb
-  name: 19|FR-51.158.195.96-016
-  password: asdKkaskJKfnsa
-  port: 80
-  server: 51.158.195.96
-  type: ss
-- cipher: aes-256-cfb
-  name: 19,28|FR-135.125.172.139-015
-  password: asdKkaskJKfnsa
-  port: 443
-  server: 135.125.172.139
-  type: ss
-- cipher: aes-256-cfb
-  name: 19,28|FR-51.158.195.96-018
-  password: asdKkaskJKfnsa
-  port: 443
-  server: 51.158.195.96
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 9,24|法国_121320070
-  network: tcp
-  port: '29776'
-  server: 146.59.147.250
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 82447abf-dcb9-408a-9ca6-79e0a7698d08
-- cipher: aes-256-cfb
-  name: 19|FR-141.95.125.11-008
-  password: asdKkaskJKfnsa
-  port: 443
-  server: 141.95.125.11
-  type: ss
-- cipher: aes-256-cfb
-  name: 19,28|FR-135.125.172.153-000
-  password: asdKkaskJKfnsa
-  port: 443
-  server: 135.125.172.153
-  type: ss
-- alterId: 64
-  cipher: auto
-  name: 14|法国_【YouTube-VV科技】
-  network: ws
-  port: 443
-  server: 156.249.18.25
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
+  http-opts:
     headers:
-      Host: www.49291261.xyz
-    path: /path/1693992821776
+      Host:
+      - st22.fast20gaming.sbs
+    method: GET
+    path:
+    - /
+  name: 28|FR_speednode_0050
+  network: http
+  port: 22919
+  server: st22.fast20gaming.sbs
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f300b3e0-3293-4c3c-a902-0538d997b3dd
 - alterId: 0
   cipher: auto
   name: 18|🇫🇷_FR_法国_CollectorDonate
@@ -182,49 +226,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 2c4a17e8-ff59-42a2-989c-e5d67753ffef
-  ws-opts:
-    headers:
-      Host: bl.shabijichang.com
-    path: /
-- cipher: aes-256-cfb
-  name: 19,28|FR-51.158.195.96-022
-  password: asdKkaskJKfnsa
-  port: 110
-  server: 51.158.195.96
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 19|FR-51.77.158.169-055
-  network: ws
-  port: 2096
-  server: 51.77.158.169
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c92fd902-b5d3-4208-bb48-630b1c7babea
-  ws-headers:
-    Host: 51.77.158.169
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 24|12|🔒 VM-TCP-NA 🇫🇷 FR-51.77.103...
-  network: tcp
-  port: '22919'
-  server: 51.77.103.107
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f300b3e0-3293-4c3c-a902-0538d997b3dd
-- alterId: 0
-  cipher: auto
-  name: 18|🇫🇷_FR_法国_fnet00
-  network: ws
-  port: '80'
-  server: fd.shabijichang.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4732350b-14a1-421e-985a-155a78e9ae80
   ws-opts:
     headers:
       Host: bl.shabijichang.com
