@@ -1,43 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 9|台湾_121320006
-  network: ws
-  port: '443'
-  server: 123.58.197.70
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 9,24|台湾_121320008
-  network: tcp
-  port: '10001'
-  server: 45.121.48.196
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
-- alterId: 0
-  cipher: auto
-  name: 12,20,24|台湾省桃园市中华电信 3
-  network: ws
-  port: '443'
-  server: nb11.ntbq.dynu.net
-  tls: true
-  type: vmess
-  uuid: cd8fd89b-096f-49a0-afe4-908734e32a99
-  ws-opts:
-    headers:
-      Host: nb11.ntbq.dynu.net
-    path: /b11
-- alterId: 0
-  cipher: auto
   name: 9|台湾_121320011
   network: ''
   port: '19588'
@@ -46,6 +9,19 @@ proxies:
   tls: false
   type: vmess
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
+- alterId: 0
+  cipher: auto
+  name: 19|TW-118.165.40.77-327
+  network: ws
+  port: 443
+  server: nb11.ntbq.dynu.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: cd8fd89b-096f-49a0-afe4-908734e32a99
+  ws-headers:
+    Host: nb11.ntbq.dynu.net
+  ws-path: /b11
 - cipher: chacha20-ietf-poly1305
   name: 25,28|🇹🇼 台湾3|@ripaojiedian
   password: 4d1e8cd03847
@@ -63,8 +39,34 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 9|台湾_121320002
-  network: ''
+  name: 12,20,24|台湾省桃园市中华电信 3
+  network: ws
+  port: '443'
+  server: nb11.ntbq.dynu.net
+  tls: true
+  type: vmess
+  uuid: cd8fd89b-096f-49a0-afe4-908734e32a99
+  ws-opts:
+    headers:
+      Host: nb11.ntbq.dynu.net
+    path: /b11
+- alterId: 0
+  cipher: auto
+  name: 12,24|台湾省桃园市 中华电信
+  network: ws
+  port: 443
+  server: nb11.ntbq.dynu.net
+  tls: true
+  type: vmess
+  uuid: cd8fd89b-096f-49a0-afe4-908734e32a99
+  ws-opts:
+    headers:
+      Host: ''
+    path: /b11
+- alterId: 0
+  cipher: auto
+  name: 9,24|台湾_121320008
+  network: tcp
   port: '10001'
   server: 45.121.48.196
   servername: ''
@@ -97,27 +99,25 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 12,24|台湾省桃园市 中华电信
+  name: 9|台湾_121320006
   network: ws
-  port: 443
-  server: nb11.ntbq.dynu.net
-  tls: true
+  port: '443'
+  server: 123.58.197.70
+  servername: ''
+  tls: false
   type: vmess
-  uuid: cd8fd89b-096f-49a0-afe4-908734e32a99
+  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
   ws-opts:
     headers:
       Host: ''
-    path: /b11
+    path: /
 - alterId: 0
   cipher: auto
-  name: 19|TW-118.165.40.77-327
-  network: ws
-  port: 443
-  server: nb11.ntbq.dynu.net
-  skip-cert-verify: true
-  tls: true
+  name: 9|台湾_121320002
+  network: ''
+  port: '10001'
+  server: 45.121.48.196
+  servername: ''
+  tls: false
   type: vmess
-  uuid: cd8fd89b-096f-49a0-afe4-908734e32a99
-  ws-headers:
-    Host: nb11.ntbq.dynu.net
-  ws-path: /b11
+  uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
