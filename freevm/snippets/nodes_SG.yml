@@ -1,4 +1,23 @@
 proxies:
+- cipher: aes-256-cfb
+  name: 19|SG-103.172.116.6-1335
+  password: kSPmvwdFzGMMW5pY
+  port: 9007
+  server: 103.172.116.6
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 19,20|SG-139.99.90.122-0254
+  network: tcp
+  port: 443
+  server: 139.99.90.122
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c0156451-4efb-45e2-84fc-8d315c4650db
+  ws-headers:
+    Host: 139.99.90.122
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 22,24|【BGP】新加坡 05 | 1x SG
@@ -8,49 +27,59 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: ee58b441-b1ff-4dc4-be1c-a21a87532487
-- alterId: 0
-  cipher: auto
-  name: 19|SG-129.150.44.64-112
-  network: ws
-  port: 46075
-  server: 129.150.44.64
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: da257e73-f02b-45ab-9916-7baf154c47a3
-  ws-headers:
-    Host: 129.150.44.64
-  ws-path: /jhndsmlanj11223
+  uuid: 36ddbd69-7d57-4fe4-b4a5-1b6af04fed7a
+- cipher: aes-256-gcm
+  name: 19|SG-139.99.68.21-0747
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 139.99.68.21
+  type: ss
 - cipher: aes-256-cfb
-  name: 28|SG_speednode_0084
+  name: 28|SG_speednode_0086
   password: amazonskr05
   port: 443
-  server: 13.250.125.29
+  server: 52.77.251.235
+  tfo: false
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 9|新加坡_121320009
-  network: tcp
+  name: 9|新加坡_121320036
+  network: ''
   port: '12681'
   server: 8.219.59.63
   servername: ''
   tls: false
   type: vmess
   uuid: cc58cbdc-c36f-42f4-9254-8f4fc564246b
+- cipher: aes-256-cfb
+  name: 19|SG-81.90.188.58-0202
+  password: '!!str 3135771619'
+  port: 50000
+  server: 81.90.188.58
+  type: ss
+- cipher: aes-256-cfb
+  name: 28|SG_speednode_0080
+  password: amazonskr05
+  port: 443
+  server: 52.221.191.251
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '20|🇸🇬 新加坡(油管:破解资源君) #1'
+  name: 27|🇸🇬SG-146.190.99.71-8993
   network: ws
-  port: '443'
-  server: 162.159.128.7
-  tls: true
+  port: 21378
+  server: 146.190.99.71
+  servername: media-exp1.licdn.com
+  tls: false
   type: vmess
-  uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
+  uuid: f9819b76-b627-4635-a9c5-c54c46a9db10
   ws-opts:
     headers:
-      Host: sg-gcore.sharecentre.online
-    path: /shirker
+      Host: ''
+    path: /Shalana
 - alterId: 0
   cipher: auto
   name: 20,28|🇸🇬 新加坡7-wap
@@ -66,57 +95,47 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 19|SG-15.235.147.186-123
+  name: 28|SG_speednode_0087
   network: ws
   port: 80
-  server: 15.235.147.186
+  server: sg04.xpoti.online
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 6fea1649-425b-4092-bf53-29792152c925
-  ws-headers:
-    Host: 15.235.147.186
-  ws-path: /sshkit/Ertusg86/635014638c264/
-- alterId: 64
-  cipher: auto
-  name: 19|SG-159.223.94.156-192
-  network: ws
-  port: 80
-  server: 159.223.94.156
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
-  ws-headers:
-    Host: 159.223.94.156
-  ws-path: /anti13.zingfast.vn
-- alterId: 0
-  cipher: auto
-  name: '20|🇸🇬 新加坡(油管:破解资源君) #3'
-  network: ws
-  port: '443'
-  server: cacerts.digicert.com
-  tls: true
-  type: vmess
-  uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8
+  udp: true
+  uuid: e3d42691-56ee-4ee5-ab1d-2f0f105d2f30
   ws-opts:
     headers:
-      Host: gcoresg.sylu.cyou
-    path: /Falling42gcoresgnode
+      Host: sg04.xpoti.online
+    path: /
 - cipher: aes-256-cfb
-  name: 28|SG_speednode_0081
+  name: 28|SG_speednode_0085
   password: amazonskr05
   port: 443
-  server: 3.1.81.236
+  server: 13.250.30.209
+  tfo: false
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 28|SG_speednode_0082
-  password: amazonskr05
-  port: 443
-  server: 13.213.1.132
+- alterId: 0
+  cipher: auto
+  name: 24,27|12|🔒 VM-WS-NA 🇸🇬 SG-146.190.99...
+  network: ws
+  port: '21378'
+  server: 146.190.99.71
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f9819b76-b627-4635-a9c5-c54c46a9db10
+  ws-opts:
+    headers:
+      Host: media-exp1.licdn.com
+    path: /Shalana
+- cipher: chacha20-ietf-poly1305
+  name: 19|SG-81.90.189.41-0200
+  password: G!yBwPWH3Vao
+  port: 811
+  server: 81.90.189.41
   type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 9|新加坡_121320090
@@ -144,326 +163,11 @@ proxies:
     headers:
       Host: sg1.awslcn.info
     path: /
-- alterId: 0
-  cipher: auto
-  name: 19|SG-15.235.147.186-104
-  network: ws
-  port: 80
-  server: sg-lb.vhax.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 6fea1649-425b-4092-bf53-29792152c925
-  ws-headers:
-    Host: zoom.us
-  ws-path: /sshkit/Ertusg86/635014638c264/
-- cipher: aes-256-cfb
-  name: 28|SG_speednode_0080
-  password: amazonskr05
-  port: 443
-  server: 52.221.191.251
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 22,24|【BGP】新加坡 06 | 1x SG
-  network: tcp
-  port: '31211'
-  server: 1c7s2g06.mcfront.xyz
-  servername: sg06.lovemc.xyz
-  tls: true
-  type: vmess
-  uuid: ee58b441-b1ff-4dc4-be1c-a21a87532487
-- alterId: 0
-  cipher: auto
-  name: 11,24|🇸🇬新加坡04
-  network: tcp
-  port: '36201'
-  server: 9s5g04.abzoones.xyz
-  servername: sg04.abpilot.xyz
-  tls: true
-  type: vmess
-  uuid: 9914623e-9bc5-4e07-bc1d-e609b87e2f89
-- alterId: 0
-  cipher: auto
-  name: 11,24|🇸🇬新加坡06
-  network: tcp
-  port: '36211'
-  server: 9s5g06.abzoones.xyz
-  servername: sg06.abpilot.xyz
-  tls: true
-  type: vmess
-  uuid: 9914623e-9bc5-4e07-bc1d-e609b87e2f89
-- alterId: 0
-  cipher: auto
-  name: 9|新加坡_121320001
-  network: ''
-  port: '30327'
-  server: 8.222.239.7
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b313e670-bfd4-4b62-d314-0d296e363192
-- cipher: aes-256-cfb
-  name: 28|SG_speednode_0086
-  password: amazonskr05
-  port: 443
-  server: 52.77.251.235
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 14|新加坡_【YouTube-VV科技】
-  network: ws
-  port: 2082
-  server: 8.222.197.251
-  tls: false
-  type: vmess
-  uuid: 6db5d855-657d-4ede-9023-e594bb936d90
-  ws-opts:
-    headers:
-      Host: hostodo.galenet.online
-    path: /hostodo
-- alterId: 0
-  cipher: auto
-  name: 9|新加坡_121320039
-  network: tcp
-  port: '30327'
-  server: 8.222.239.7
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b313e670-bfd4-4b62-d314-0d296e363192
-- alterId: 0
-  cipher: auto
-  name: 22,24|【BGP】新加坡 04 | 1x SG
-  network: tcp
-  port: '31201'
-  server: 1c7s2g04.mcfront.xyz
-  servername: sg04.lovemc.xyz
-  tls: true
-  type: vmess
-  uuid: ee58b441-b1ff-4dc4-be1c-a21a87532487
-- cipher: aes-256-cfb
-  name: 19|SG-54.251.168.143-188
-  password: amazonskr05
-  port: 443
-  server: 54.251.168.143
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 20|🇸🇬 新加坡(油管:破解资源君)
-  network: ws
-  port: '80'
-  server: 157.230.36.235
-  tls: false
-  type: vmess
-  uuid: b484d576-b3e3-4ac5-b108-88a300dfe7e3
-  ws-opts:
-    headers:
-      Host: ''
-    path: /graphql
-- cipher: chacha20-ietf
-  name: 25,28|🇸🇬 新加坡R|@ripaojiedian
-  obfs: plain
-  obfs-param: 511df45641.microsoft.com
-  password: jFa4F1
-  port: 6706
-  protocol: auth_aes128_sha1
-  protocol-param: 45641:1119_jE165t
-  server: cm03.newcome.xyz
-  type: ssr
-- alterId: 0
-  cipher: auto
-  name: 19|SG-157.230.36.235-027
-  network: ws
-  port: 80
-  server: 157.230.36.235
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b484d576-b3e3-4ac5-b108-88a300dfe7e3
-  ws-headers:
-    Host: 157.230.36.235
-  ws-path: /graphql
-- alterId: 0
-  cipher: auto
-  name: 9|新加坡_121320036
-  network: ''
-  port: '12681'
-  server: 8.219.59.63
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cc58cbdc-c36f-42f4-9254-8f4fc564246b
-- alterId: 0
-  cipher: auto
-  name: '20|🇸🇬 新加坡(油管:破解资源君) #5'
-  network: ws
-  port: '80'
-  server: 157.230.36.235
-  tls: false
-  type: vmess
-  uuid: b484d576-b3e3-4ac5-b108-88a300dfe7e3
-  ws-opts:
-    headers:
-      Host: 157.230.36.235
-    path: /graphql
-- alterId: 0
-  cipher: auto
-  name: 9|新加坡_121320037
-  network: ws
-  port: '46998'
-  server: 8.219.59.222
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5c9bed1a-716b-43e7-c807-9e0758186360
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 27|🇸🇬SG-146.190.99.71-8993
-  network: ws
-  port: 21378
-  server: 146.190.99.71
-  servername: media-exp1.licdn.com
-  tls: false
-  type: vmess
-  uuid: f9819b76-b627-4635-a9c5-c54c46a9db10
-  ws-opts:
-    headers:
-      Host: ''
-    path: /Shalana
 - cipher: aes-256-cfb
   name: 28|SG_speednode_0079
   password: amazonskr05
   port: 443
   server: 18.142.250.63
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 9|新加坡_121320038
-  network: ''
-  port: '32969'
-  server: 8.219.240.120
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 95249020-fbb7-4592-efce-6ad3954c3fad
-- alterId: 0
-  cipher: auto
-  name: 28|SG_speednode_0087
-  network: ws
-  port: 80
-  server: sg04.xpoti.online
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e3d42691-56ee-4ee5-ab1d-2f0f105d2f30
-  ws-opts:
-    headers:
-      Host: sg04.xpoti.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24,27|12|🔒 VM-WS-NA 🇸🇬 SG-146.190.99...
-  network: ws
-  port: '21378'
-  server: 146.190.99.71
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f9819b76-b627-4635-a9c5-c54c46a9db10
-  ws-opts:
-    headers:
-      Host: media-exp1.licdn.com
-    path: /Shalana
-- alterId: 0
-  cipher: auto
-  name: 11,24|🇸🇬新加坡05
-  network: tcp
-  port: '36206'
-  server: 9s5g05.abzoones.xyz
-  servername: sg05.abpilot.xyz
-  tls: true
-  type: vmess
-  uuid: 9914623e-9bc5-4e07-bc1d-e609b87e2f89
-- alterId: 0
-  cipher: auto
-  name: 20,27,28|🇸🇬 新加坡03{优化2|V2ray}
-  network: ws
-  port: '25221'
-  server: sg1.awslcn.info
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-opts:
-    headers:
-      Host: sg1.awslcn.info
-    path: /
-- cipher: aes-256-cfb
-  name: 19|SG-13.213.46.196-186
-  password: amazonskr05
-  port: 443
-  server: 13.213.46.196
-  type: ss
-- cipher: aes-256-cfb
-  name: 28|SG_speednode_0083
-  password: amazonskr05
-  port: 443
-  server: 18.141.204.149
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '20|🇸🇬 新加坡(油管:破解资源君) #4'
-  network: ws
-  port: '443'
-  server: 162.159.128.7
-  tls: true
-  type: vmess
-  uuid: 82d5ea73-8002-4319-cd3c-29d1560bd290
-  ws-opts:
-    headers:
-      Host: xjp4h.mayaa.ml
-    path: /dsadsa1dsadsa33434
-- alterId: 0
-  cipher: auto
-  name: 9,24|新加坡_121320008
-  network: tcp
-  port: '32969'
-  server: 8.219.240.120
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 95249020-fbb7-4592-efce-6ad3954c3fad
-- alterId: 0
-  cipher: auto
-  name: 20,28|🇸🇬 新加坡6-wap
-  network: ws
-  port: '25282'
-  server: sg1.awslcn.info
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-opts:
-    headers:
-      Host: sg1.awslcn.info
-    path: /
-- cipher: aes-256-cfb
-  name: 28|SG_speednode_0085
-  password: amazonskr05
-  port: 443
-  server: 13.250.30.209
-  tfo: false
   type: ss
   udp: true
 - alterId: 0
@@ -480,16 +184,504 @@ proxies:
     headers:
       Host: ''
     path: /
+- cipher: aes-256-cfb
+  name: 19|SG-51.79.223.96-0353
+  password: '!!str 4415934295'
+  port: 50004
+  server: 51.79.223.96
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 19|SG-81.90.189.41-0204
+  password: G!yBwPWH3Vao
+  port: 809
+  server: 81.90.189.41
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '20|🇸🇬 新加坡(油管:破解资源君) #2'
+  name: 20|SG_183 |22.90Mb
   network: ws
-  port: '443'
-  server: 162.159.135.42
-  tls: true
+  port: '16549'
+  server: sg207.hkaa0.tk
+  tls: false
   type: vmess
-  uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8
+  uuid: b19ff921-9863-4196-8cee-a37f77a05237
   ws-opts:
     headers:
-      Host: gcoresg.sylu.cyou
-    path: /Falling42gcoresgnode
+      Host: sg207.hkaa0.tk
+    path: /hkaa0
+- alterId: 0
+  cipher: auto
+  name: 19|SG-129.150.47.142-0322
+  network: ws
+  port: 22624
+  server: 129.150.47.142
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e9b33627-c7b7-4bbf-a6f6-2fa50c0d7bf0
+  ws-headers:
+    Host: 129.150.47.142
+  ws-path: /
+- cipher: aes-256-cfb
+  name: 19|SG-103.172.116.5-1340
+  password: UWZQeLRWnkqgkseq
+  port: 9032
+  server: 103.172.116.5
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 9|新加坡_121320038
+  network: ''
+  port: '32969'
+  server: 8.219.240.120
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 95249020-fbb7-4592-efce-6ad3954c3fad
+- alterId: 0
+  cipher: auto
+  name: 22,24|【BGP】新加坡 04 | 1x SG
+  network: tcp
+  port: '31201'
+  server: 1c7s2g04.mcfront.xyz
+  servername: sg04.lovemc.xyz
+  tls: true
+  type: vmess
+  uuid: 36ddbd69-7d57-4fe4-b4a5-1b6af04fed7a
+- cipher: chacha20-ietf-poly1305
+  name: 19|SG-81.90.189.41-0201
+  password: G!yBwPWH3Vao
+  port: 801
+  server: 81.90.189.41
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 11,24|🇸🇬新加坡04
+  network: tcp
+  port: '36201'
+  server: 9s5g04.abzoones.xyz
+  servername: sg04.abpilot.xyz
+  tls: true
+  type: vmess
+  uuid: 3a9f8f78-9e6f-42b5-9bae-798f2fdcc4c3
+- alterId: 0
+  cipher: auto
+  name: 19|SG-138.2.66.153-0334
+  network: ws
+  port: 10011
+  server: 138.2.66.153
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 04235a12-7668-46f0-c9f1-def54682c8ef
+  ws-headers:
+    Host: 138.2.66.153
+  ws-path: /
+- cipher: aes-256-cfb
+  name: 19|SG-103.172.116.5-1261
+  password: UkXRsXvR6buDMG2Y
+  port: 9001
+  server: 103.172.116.5
+  type: ss
+- cipher: aes-256-cfb
+  name: 28|SG_speednode_0082
+  password: amazonskr05
+  port: 443
+  server: 13.213.1.132
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 19|SG-103.172.116.6-1247
+  password: UWZQeLRWnkqgkseq
+  port: 9032
+  server: 103.172.116.6
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|SG-103.172.116.5-1283
+  password: ueLXVkvh4hckhErQ
+  port: 9060
+  server: 103.172.116.5
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|SG-103.172.116.6-0253
+  password: XPtzA9sCug3SPR4c
+  port: 9025
+  server: 103.172.116.6
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 9|新加坡_121320037
+  network: ws
+  port: '46998'
+  server: 8.219.59.222
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5c9bed1a-716b-43e7-c807-9e0758186360
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- cipher: aes-256-cfb
+  name: 19|SG-103.172.116.6-1289
+  password: TPqX8edgbAURcAMb
+  port: 9079
+  server: 103.172.116.6
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|SG-103.172.116.6-1271
+  password: 9XwYyZsK8SNzQDtY
+  port: 9059
+  server: 103.172.116.6
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20,28|🇸🇬 新加坡01{优化2|V2ray}
+  network: ws
+  port: '25245'
+  server: sg1.awslcn.info
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      Host: sg1.awslcn.info
+    path: /
+- cipher: aes-256-cfb
+  name: 19|SG-103.172.116.5-1284
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 103.172.116.5
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|SG-51.79.166.171-1546
+  password: '!!str 4415934295'
+  port: 50004
+  server: 51.79.166.171
+  type: ss
+- cipher: aes-256-cfb
+  name: 28|SG_speednode_0084
+  password: amazonskr05
+  port: 443
+  server: 13.250.125.29
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 19|SG-8.214.33.158-1726
+  network: ws
+  port: 80
+  server: 8.214.33.158
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef
+  ws-headers:
+    Host: 8.214.33.158
+  ws-path: /
+- cipher: chacha20-ietf
+  name: 25,28|🇸🇬 新加坡R|@ripaojiedian
+  obfs: plain
+  obfs-param: 511df45641.microsoft.com
+  password: jFa4F1
+  port: 6706
+  protocol: auth_aes128_sha1
+  protocol-param: 45641:1119_jE165t
+  server: cm03.newcome.xyz
+  type: ssr
+- cipher: aes-256-cfb
+  name: 19|SG-103.172.116.6-1288
+  password: c3NtHJ5ujV2tGDfj
+  port: 9084
+  server: 103.172.116.6
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 9|新加坡_121320039
+  network: tcp
+  port: '30327'
+  server: 8.222.239.7
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b313e670-bfd4-4b62-d314-0d296e363192
+- cipher: aes-256-cfb
+  name: 19|SG-103.172.116.6-1290
+  password: HSZuyJQcWe8dxNdF
+  port: 9043
+  server: 103.172.116.6
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 19|SG-81.90.189.41-0205
+  password: G!yBwPWH3Vao
+  port: 806
+  server: 81.90.189.41
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|SG-103.172.116.5-1334
+  password: ZpNDDKRu9MagNvaf
+  port: 9015
+  server: 103.172.116.5
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|SG-54.251.168.143-1756
+  password: amazonskr05
+  port: 443
+  server: 54.251.168.143
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 9,24|新加坡_121320008
+  network: tcp
+  port: '32969'
+  server: 8.219.240.120
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 95249020-fbb7-4592-efce-6ad3954c3fad
+- alterId: 0
+  cipher: auto
+  name: 19|SG-15.235.147.186-0332
+  network: ws
+  port: 80
+  server: 15.235.147.186
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 6fea1649-425b-4092-bf53-29792152c925
+  ws-headers:
+    Host: 15.235.147.186
+  ws-path: /sshkit/Ertusg86/635014638c264/
+- alterId: 0
+  cipher: auto
+  name: 11,24|🇸🇬新加坡05
+  network: tcp
+  port: '36206'
+  server: 9s5g05.abzoones.xyz
+  servername: sg05.abpilot.xyz
+  tls: true
+  type: vmess
+  uuid: 3a9f8f78-9e6f-42b5-9bae-798f2fdcc4c3
+- cipher: aes-256-cfb
+  name: 19|SG-51.79.241.247-0351
+  password: '!!str 4415934295'
+  port: 50004
+  server: 51.79.241.247
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: 19|SG-159.223.94.156-1760
+  network: ws
+  port: 80
+  server: 159.223.94.156
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
+  ws-headers:
+    Host: 159.223.94.156
+  ws-path: /anti13.zingfast.vn
+- cipher: aes-256-cfb
+  name: 19|SG-103.172.116.5-1285
+  password: aLpQtfEZe445QyHk
+  port: 9098
+  server: 103.172.116.5
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|SG-103.172.116.6-1323
+  password: bf7v334KKDV3YDhH
+  port: 9070
+  server: 103.172.116.6
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 14|新加坡_【YouTube-VV科技】
+  network: ws
+  port: 2082
+  server: 8.222.197.251
+  tls: false
+  type: vmess
+  uuid: 6db5d855-657d-4ede-9023-e594bb936d90
+  ws-opts:
+    headers:
+      Host: hostodo.galenet.online
+    path: /hostodo
+- cipher: aes-256-cfb
+  name: 28|SG_speednode_0083
+  password: amazonskr05
+  port: 443
+  server: 18.141.204.149
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 20,28|🇸🇬 新加坡03{优化2|V2ray}
+  network: ws
+  port: '25221'
+  server: sg1.awslcn.info
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      Host: sg1.awslcn.info
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 19|SG-217.197.161.138-0745
+  password: G!yBwPWH3Vao
+  port: 800
+  server: 217.197.161.138
+  type: ss
+- cipher: aes-256-cfb
+  name: 28|SG_speednode_0081
+  password: amazonskr05
+  port: 443
+  server: 3.1.81.236
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 20,28|🇸🇬 新加坡6-wap
+  network: ws
+  port: '25282'
+  server: sg1.awslcn.info
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      Host: sg1.awslcn.info
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19,20|SG-139.99.91.95-0255
+  network: tcp
+  port: 443
+  server: 139.99.91.95
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c0156451-4efb-45e2-84fc-8d315c4650db
+  ws-headers:
+    Host: 1002hk1326.tfzhc.top
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 11,24|🇸🇬新加坡06
+  network: tcp
+  port: '36211'
+  server: 9s5g06.abzoones.xyz
+  servername: sg06.abpilot.xyz
+  tls: true
+  type: vmess
+  uuid: 3a9f8f78-9e6f-42b5-9bae-798f2fdcc4c3
+- alterId: 0
+  cipher: auto
+  name: 22,24|【BGP】新加坡 06 | 1x SG
+  network: tcp
+  port: '31211'
+  server: 1c7s2g06.mcfront.xyz
+  servername: sg06.lovemc.xyz
+  tls: true
+  type: vmess
+  uuid: 36ddbd69-7d57-4fe4-b4a5-1b6af04fed7a
+- cipher: aes-256-cfb
+  name: 19|SG-103.172.116.5-1348
+  password: UTJA57ypk2XKQpnm
+  port: 9033
+  server: 103.172.116.5
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 19|SG-217.197.161.136-0746
+  password: G!yBwPWH3Vao
+  port: 810
+  server: 217.197.161.136
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 9|新加坡_121320001
+  network: ''
+  port: '30327'
+  server: 8.222.239.7
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b313e670-bfd4-4b62-d314-0d296e363192
+- cipher: aes-256-cfb
+  name: 19|SG-103.172.116.5-1243
+  password: c3NtHJ5ujV2tGDfj
+  port: 9084
+  server: 103.172.116.5
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|SG-13.213.46.196-1754
+  password: amazonskr05
+  port: 443
+  server: 13.213.46.196
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|SG_182 |21.24Mb
+  network: ws
+  port: '1018'
+  server: sg202.hkaa0.tk
+  tls: false
+  type: vmess
+  uuid: bdf798f4-a990-4743-e9b2-9c78ba58fb04
+  ws-opts:
+    headers:
+      Host: sg202.hkaa0.tk
+    path: /hkaa0
+- alterId: 0
+  cipher: auto
+  name: 19,20|SG-168.138.171.65-0329
+  network: tcp
+  port: 443
+  server: 168.138.171.65
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c
+  ws-headers:
+    Host: 168.138.171.65
+  ws-path: /
+- cipher: aes-256-cfb
+  name: 19|SG-103.172.116.6-1732
+  password: rpgbNnU9rDDU4aWZ
+  port: 9094
+  server: 103.172.116.6
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|SG-165.232.169.142-0786
+  password: 1e5111699c45496da84112f35db665c4
+  port: 29332
+  server: 165.232.169.142
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 9|新加坡_121320009
+  network: tcp
+  port: '12681'
+  server: 8.219.59.63
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cc58cbdc-c36f-42f4-9254-8f4fc564246b
+- cipher: aes-256-cfb
+  name: 19|SG-103.172.116.5-1286
+  password: wjTugX3ZtHMB9c3Z
+  port: 9057
+  server: 103.172.116.5
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 19|SG-81.90.189.41-0203
+  password: G!yBwPWH3Vao
+  port: 800
+  server: 81.90.189.41
+  type: ss
+- cipher: aes-256-cfb
+  name: 19|SG-103.172.116.9-1245
+  password: f8npKgNzdkss2ytn
+  port: 9088
+  server: 103.172.116.9
+  type: ss
