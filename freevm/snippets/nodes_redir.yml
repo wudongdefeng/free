@@ -1,48 +1,30 @@
 proxies:
-- name: 23|_CN_->_UA_
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10845
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 64
-  cipher: auto
-  name: 24,31|18|🇺🇸_US_美国->🇳🇱_NL_荷兰_由快嘴科技提供;...
-  network: ws
-  port: 30000
-  server: 156.225.67.210
-  tls: true
-  type: vmess
-  uuid: 6fa560d4-35c5-4968-adfc-812c52878b84
-  ws-opts:
-    headers:
-      Host: www.47303496.xyz
-    path: /path/1702961716738
 - alterId: 0
   cipher: auto
-  name: 2,4,20,24|🇺🇸_US_美国->🇦🇺_AU_澳大利亚
+  name: '2,4,20,24,28,31|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
   network: ws
-  port: 2082
-  server: au-01.jikuai.xyz
+  port: 25239
+  server: us1.awslcn.info
   tls: false
   type: vmess
-  uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   ws-opts:
     headers:
-      Host: au-01.jikuai.xyz
+      Host: us1.awslcn.info
     path: /
-- name: '23|_CN_->_US__1 #1'
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10837
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: '2,4,12,20,24,27,31|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  network: ws
+  port: 443
+  server: hexsen.com
+  tls: true
+  type: vmess
+  uuid: de04add9-5c68-8bab-950c-08cd5320df18
+  ws-opts:
+    headers:
+      Host: us.king361.cf
+    path: /argo-vmess?ed=2048
 - name: '23|_CN_->_US__2 #1'
   network: tcp
   password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
@@ -50,92 +32,6 @@ proxies:
   server: other.kunlun-ppg.com
   skip-cert-verify: true
   sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 2,4,16,20,24,27,31|🇨🇳_CN_中国->🇺🇸_US_美国
-  network: ws
-  port: 25257
-  server: us2.awslcn.info
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-opts:
-    headers:
-      Host: us2.awslcn.info
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 23|_SG_->_US_
-  network: ws
-  port: 80
-  server: 8.222.198.105
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
-  ws-opts:
-    headers:
-      host: warp.chigua.tk
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1,24|_US_->_AU_
-  network: ws
-  port: 2082
-  server: au-01.jikuai.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0
-  ws-opts:
-    headers:
-      host: au-01.jikuai.xyz
-    path: /
-- name: 1,28|_HK_->_US_
-  network: tcp
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  port: 443
-  server: us01.trojanyyds.xyz
-  skip-cert-verify: true
-  sni: us01.trojanyyds.xyz
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 1,24,31|_CN_->_MX_
-  network: ws
-  port: 25284
-  server: cu.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-opts:
-    headers:
-      host: cu.awslcn.info
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 2,4,20,24|🇺🇸_US_美国->🇩🇪_DE_德国
-  network: ws
-  port: 80
-  server: 104.21.91.52
-  tls: false
-  type: vmess
-  uuid: cf9277a9-7661-4b06-865d-b7c239deb26b
-  ws-opts:
-    headers:
-      Host: ee2.xv2ray.net
-    path: /vmess
-- name: 1|_HK_->_RU_
-  network: tcp
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  port: 443
-  server: ru01.trojanyyds.xyz
-  skip-cert-verify: true
-  sni: ru01.trojanyyds.xyz
   type: trojan
   udp: true
 - alterId: 0
@@ -154,31 +50,17 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 1,17,24|_CN_->_US__1
+  name: 2,4,16,20,24,27,31|🇨🇳_CN_中国->🇺🇸_US_美国
   network: ws
   port: 25257
   server: us2.awslcn.info
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   ws-opts:
     headers:
-      host: us2.awslcn.info
+      Host: us2.awslcn.info
     path: /
-- alterId: 0
-  cipher: auto
-  name: '2,4,12,20,24,27,31|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
-  network: ws
-  port: 443
-  server: hexsen.com
-  tls: true
-  type: vmess
-  uuid: de04add9-5c68-8bab-950c-08cd5320df18
-  ws-opts:
-    headers:
-      Host: us.king361.cf
-    path: /argo-vmess?ed=2048
 - alterId: 0
   cipher: auto
   name: 0,3,6,9,13,20,24,27|🇺🇸 _US_美国->🇬🇧_GB_英国
@@ -194,32 +76,31 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,24|_CN_->_US__2
+  name: 1,17,24|_CN_->_US__1
   network: ws
-  port: 443
-  server: hexsen.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: de04add9-5c68-8bab-950c-08cd5320df18
-  ws-opts:
-    headers:
-      host: us.king361.cf
-    path: /argo-vmess?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 1,24|_CN_->_US__3
-  network: ws
-  port: 25239
-  server: us1.awslcn.info
+  port: 25257
+  server: us2.awslcn.info
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   ws-opts:
     headers:
-      host: us1.awslcn.info
+      host: us2.awslcn.info
     path: /
+- alterId: 0
+  cipher: auto
+  name: 2,4,20,24|🇺🇸_US_美国->🇩🇪_DE_德国
+  network: ws
+  port: 80
+  server: 104.21.91.52
+  tls: false
+  type: vmess
+  uuid: cf9277a9-7661-4b06-865d-b7c239deb26b
+  ws-opts:
+    headers:
+      Host: ee2.xv2ray.net
+    path: /vmess
 - name: 1|_CN_->_GB_
   network: tcp
   password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
@@ -230,17 +111,27 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 2,4,20,24|🇨🇳_CN_中国->🇲🇽_MX_墨西哥
+  name: 1,24|_US_->_AU_
   network: ws
-  port: 25284
-  server: cu.awslcn.info
+  port: 2082
+  server: au-01.jikuai.xyz
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0
   ws-opts:
     headers:
-      Host: cu.awslcn.info
+      host: au-01.jikuai.xyz
     path: /
+- name: '23|_CN_->_US__1 #1'
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10837
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 1,24|_CN_->_RU_
@@ -257,16 +148,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,4,20,24,28,31|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
+  name: 23|_SG_->_US_
   network: ws
-  port: 25239
-  server: us1.awslcn.info
+  port: 80
+  server: 8.222.198.105
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
   ws-opts:
     headers:
-      Host: us1.awslcn.info
+      host: warp.chigua.tk
     path: /
 - alterId: 0
   cipher: auto
@@ -281,15 +173,60 @@ proxies:
     headers:
       Host: cm1.awslcn.info
     path: /
-- name: '23|_CN_->_US__3 #1'
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10850
-  server: other.kunlun-ppg.com
+- alterId: 0
+  cipher: auto
+  name: 2,4,20,24|🇺🇸_US_美国->🇦🇺_AU_澳大利亚
+  network: ws
+  port: 2082
+  server: au-01.jikuai.xyz
+  tls: false
+  type: vmess
+  uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0
+  ws-opts:
+    headers:
+      Host: au-01.jikuai.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1,24|_CN_->_US__3
+  network: ws
+  port: 25239
+  server: us1.awslcn.info
   skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      host: us1.awslcn.info
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 24,31|18|🇺🇸_US_美国->🇳🇱_NL_荷兰_由快嘴科技提供;...
+  network: ws
+  port: 30000
+  server: 156.225.67.210
+  tls: true
+  type: vmess
+  uuid: 6fa560d4-35c5-4968-adfc-812c52878b84
+  ws-opts:
+    headers:
+      Host: www.47303496.xyz
+    path: /path/1702961716738
+- alterId: 0
+  cipher: auto
+  name: 1,24|_CN_->_US__2
+  network: ws
+  port: 443
+  server: hexsen.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: de04add9-5c68-8bab-950c-08cd5320df18
+  ws-opts:
+    headers:
+      host: us.king361.cf
+    path: /argo-vmess?ed=2048
 - alterId: 0
   cipher: auto
   name: 23|_US_->_IN_
@@ -304,3 +241,66 @@ proxies:
     headers:
       host: mm2.shabijichang.com
     path: /
+- name: 1|_HK_->_RU_
+  network: tcp
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  port: 443
+  server: ru01.trojanyyds.xyz
+  skip-cert-verify: true
+  sni: ru01.trojanyyds.xyz
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 1,24,31|_CN_->_MX_
+  network: ws
+  port: 25284
+  server: cu.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      host: cu.awslcn.info
+    path: /
+- name: 23|_CN_->_UA_
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10845
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 2,4,20,24|🇨🇳_CN_中国->🇲🇽_MX_墨西哥
+  network: ws
+  port: 25284
+  server: cu.awslcn.info
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      Host: cu.awslcn.info
+    path: /
+- name: '23|_CN_->_US__3 #1'
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10850
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- name: 1,28|_HK_->_US_
+  network: tcp
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  port: 443
+  server: us01.trojanyyds.xyz
+  skip-cert-verify: true
+  sni: us01.trojanyyds.xyz
+  type: trojan
+  udp: true
