@@ -1,4 +1,30 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 23|_US_->_IN_
+  network: ws
+  port: 80
+  server: mm2.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: mm2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1,2,4,24,31|_CN_->_MX_
+  network: ws
+  port: 25284
+  server: cu.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    path: /
 - name: 1|_US_->_DE_
   network: ws
   password: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c
@@ -14,17 +40,75 @@ proxies:
     path: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c-trojan
 - alterId: 0
   cipher: auto
-  name: '2,4,20,24,31|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
+  name: 0,3,9,24,27|🇺🇸 _US_美国->🇬🇧_GB_英国
   network: ws
-  port: 25257
-  server: us2.awslcn.info
+  port: '2052'
+  server: 104.21.33.130
+  tls: false
+  type: vmess
+  uuid: 544f2e93-51b0-4d47-fd72-e7d858021bbd
+  ws-opts:
+    headers:
+      Host: family.mgtajhiz.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 20|🇲🇽 _CN_中国->🇲🇽_MX_墨西哥
+  network: ws
+  port: '25284'
+  server: cu.awslcn.info
   tls: false
   type: vmess
   uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   ws-opts:
     headers:
-      Host: us2.awslcn.info
+      Host: cu.awslcn.info
     path: /
+- alterId: 0
+  cipher: auto
+  name: 0,3,6,13,24,27|🇺🇸 _CN_中国->🇺🇸_US_美国
+  network: ws
+  port: '443'
+  server: hexsen.com
+  tls: true
+  type: vmess
+  uuid: de04add9-5c68-8bab-950c-08cd5320df18
+  ws-opts:
+    headers:
+      Host: us.king361.cf
+    path: /argo-vmess?ed=2048
+- name: '23|_CN_->_US__1 #1'
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10837
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 1,24|_CN_->_CA__2
+  network: ws
+  port: 16648
+  server: m.cnmjcn.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  ws-opts:
+    headers:
+      host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+    path: /
+- name: 1|_HK_->_US_
+  network: tcp
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  port: 443
+  server: us01.trojanyyds.xyz
+  skip-cert-verify: true
+  sni: us01.trojanyyds.xyz
+  type: trojan
+  udp: true
 - name: '23|_CN_->_US__3 #1'
   network: tcp
   password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
@@ -49,30 +133,31 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2,4,20,24|🇨🇳_CN_中国->🇺🇸_US_美国
+  name: 23|_SG_->_US_
   network: ws
-  port: 25256
-  server: us1.awslcn.info
+  port: 80
+  server: 8.222.198.105
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  ws-opts:
+    headers:
+      host: warp.chigua.tk
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '2,4,20,24,31|🇨🇳_CN_中国->🇺🇸_US_美国 #2'
+  network: ws
+  port: 25257
+  server: us2.awslcn.info
   tls: false
   type: vmess
   uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   ws-opts:
     headers:
-      Host: us1.awslcn.info
+      Host: us2.awslcn.info
     path: /
-- alterId: 0
-  cipher: auto
-  name: 0,3,6,13,24,27|🇺🇸 _CN_中国->🇺🇸_US_美国
-  network: ws
-  port: '443'
-  server: hexsen.com
-  tls: true
-  type: vmess
-  uuid: de04add9-5c68-8bab-950c-08cd5320df18
-  ws-opts:
-    headers:
-      Host: us.king361.cf
-    path: /argo-vmess?ed=2048
 - name: 1|_CA_->_US_
   network: tcp
   password: 57edfecf-5694-4a34-8072-54a4f0636a62
@@ -82,32 +167,63 @@ proxies:
   sni: frontend.kuangbiaoyun.com
   type: trojan
   udp: true
+- name: '23|_CN_->_US__2 #1'
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10838
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 1,24|_CN_->_CA__2
+  name: 0,2,3,4,6,10,13,20,24,27,31|🇨🇦 _CN_中国->🇨🇦_CA_加拿大
   network: ws
-  port: 16648
-  server: m.cnmjcn.com
-  skip-cert-verify: true
+  port: '16648'
+  server: t.cnmjcn.cyou
   tls: false
   type: vmess
   uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
   ws-opts:
     headers:
-      host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+      Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
     path: /
 - alterId: 0
   cipher: auto
-  name: 2,4,20,24,31|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦
+  name: 1,24|_CN_->_RU_
   network: ws
   port: 25230
   server: cm1.awslcn.info
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   ws-opts:
     headers:
-      Host: cm1.awslcn.info
+      host: cm1.awslcn.info
+    path: /
+- name: 23|_CN_->_UA_
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10845
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '0,2,3,4,6,13,20,24,27,31|🇨🇦 _CN_中国->🇨🇦_CA_加拿大 #1'
+  network: ws
+  port: '16648'
+  server: m.cnmjcn.com
+  tls: false
+  type: vmess
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  ws-opts:
+    headers:
+      Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
     path: /
 - alterId: 0
   cipher: auto
@@ -125,45 +241,60 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,24|_CN_->_CA__1
+  name: 2,4,20,24,31|🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦
   network: ws
-  port: 16648
-  server: t.cnmjcn.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
-  ws-opts:
-    headers:
-      host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '0,2,3,4,6,10,13,20,24,27,31|🇨🇦 _CN_中国->🇨🇦_CA_加拿大 #1'
-  network: ws
-  port: '16648'
-  server: m.cnmjcn.com
-  tls: false
-  type: vmess
-  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
-  ws-opts:
-    headers:
-      Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1,24|_CN_->_US__2
-  network: ws
-  port: 25239
-  server: us1.awslcn.info
-  skip-cert-verify: true
+  port: 25230
+  server: cm1.awslcn.info
   tls: false
   type: vmess
   uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   ws-opts:
     headers:
-      host: us1.awslcn.info
+      Host: cm1.awslcn.info
     path: /
+- alterId: 0
+  cipher: auto
+  name: 2,4,20,24|🇨🇳_CN_中国->🇺🇸_US_美国
+  network: ws
+  port: 25256
+  server: us1.awslcn.info
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      Host: us1.awslcn.info
+    path: /
+- name: 1|_CN_->_SK_
+  network: tcp
+  password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
+  port: 17728
+  server: gbs.pptv-tv.store
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 0,3,6,13,24,27|🇺🇸 _US_美国->🇩🇪_DE_德国
+  network: ws
+  port: '8443'
+  server: skk.moe
+  tls: true
+  type: vmess
+  uuid: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c
+  ws-opts:
+    headers:
+      Host: vm.restia.love
+    path: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c-vm
+- name: 1|_HK_->_RU_
+  network: tcp
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  port: 443
+  server: ru01.trojanyyds.xyz
+  skip-cert-verify: true
+  sni: ru01.trojanyyds.xyz
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 1,24|_CN_->_US__3
@@ -178,162 +309,31 @@ proxies:
     headers:
       host: us2.awslcn.info
     path: /
-- name: '23|_CN_->_US__1 #1'
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10837
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: 1|_HK_->_US_
-  network: tcp
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  port: 443
-  server: us01.trojanyyds.xyz
-  skip-cert-verify: true
-  sni: us01.trojanyyds.xyz
-  type: trojan
-  udp: true
-- name: '23|_CN_->_US__2 #1'
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10838
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 20|🇲🇽 _CN_中国->🇲🇽_MX_墨西哥
+  name: 1,24|_CN_->_CA__1
   network: ws
-  port: '25284'
-  server: cu.awslcn.info
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-opts:
-    headers:
-      Host: cu.awslcn.info
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0,3,6,13,24,27|🇺🇸 _US_美国->🇩🇪_DE_德国
-  network: ws
-  port: '8443'
-  server: skk.moe
-  tls: true
-  type: vmess
-  uuid: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c
-  ws-opts:
-    headers:
-      Host: vm.restia.love
-    path: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c-vm
-- alterId: 0
-  cipher: auto
-  name: 0,3,9,24,27|🇺🇸 _US_美国->🇬🇧_GB_英国
-  network: ws
-  port: '2052'
-  server: 104.21.33.130
-  tls: false
-  type: vmess
-  uuid: 544f2e93-51b0-4d47-fd72-e7d858021bbd
-  ws-opts:
-    headers:
-      Host: family.mgtajhiz.ir
-    path: /
-- name: 23|_CN_->_UA_
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10845
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 23|_SG_->_US_
-  network: ws
-  port: 80
-  server: 8.222.198.105
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
-  ws-opts:
-    headers:
-      host: warp.chigua.tk
-    path: /
-- name: 1|_HK_->_RU_
-  network: tcp
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  port: 443
-  server: ru01.trojanyyds.xyz
-  skip-cert-verify: true
-  sni: ru01.trojanyyds.xyz
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 23|_US_->_IN_
-  network: ws
-  port: 80
-  server: mm2.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      host: mm2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0,2,3,4,6,13,20,24,27,31|🇨🇦 _CN_中国->🇨🇦_CA_加拿大
-  network: ws
-  port: '16648'
+  port: 16648
   server: t.cnmjcn.cyou
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
   ws-opts:
     headers:
-      Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
-    path: /
-- name: 1|_CN_->_SK_
-  network: tcp
-  password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
-  port: 17728
-  server: gbs.pptv-tv.store
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 1,2,4,24,31|_CN_->_MX_
-  network: ws
-  port: 25284
-  server: cu.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-opts:
+      host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,24|_CN_->_RU_
+  name: 1,24|_CN_->_US__2
   network: ws
-  port: 25230
-  server: cm1.awslcn.info
+  port: 25239
+  server: us1.awslcn.info
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   ws-opts:
     headers:
-      host: cm1.awslcn.info
+      host: us1.awslcn.info
     path: /
