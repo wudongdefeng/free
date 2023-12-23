@@ -1,14 +1,35 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 24|12|德国 - 法兰克福 - Global Internet...
-  network: tcp
-  port: 20404
-  server: 81.12.27.3
-  servername: ''
+  http-opts:
+    headers:
+      Host:
+      - khanfari.sanol.xyz
+    method: GET
+    path:
+    - /
+  name: 28|FR_speednode_0042
+  network: http
+  port: 8088
+  server: khanfari.sanol.xyz
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 2825cac3-6acc-4468-ad31-b6d3a3e8fe6e
+  udp: true
+  uuid: 26b934a2-a7f9-4186-94be-d90691a89cbd
+- alterId: 0
+  cipher: auto
+  name: '20|🇫🇷 法国(油管:破解资源君) #1'
+  network: ws
+  port: '2082'
+  server: 8.218.3.12
+  tls: false
+  type: vmess
+  uuid: 36fa45db-2d4a-4295-a1fe-223836989878
+  ws-opts:
+    headers:
+      Host: PineApple.CLOUDFLARE.QUEST
+    path: /pineapple
 - name: 23|_FR_
   network: tcp
   password: telegram-id-directvpn
@@ -32,6 +53,30 @@ proxies:
       Host: PineApple.CLOUDFLARE.QUEST
     path: /pineapple
 - alterId: 0
+  cipher: aes-128-gcm
+  name: 18|🇫🇷_FR_法国_oneclickvpnkeys
+  network: tcp
+  port: '443'
+  server: 135.125.134.177
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d4734bd8-906b-4426-b9ff-9dbc388d56da
+- alterId: 0
+  cipher: auto
+  name: 18|🇫🇷_FR_法国_fnet00
+  network: ws
+  port: '80'
+  server: fd.shabijichang.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4732350b-14a1-421e-985a-155a78e9ae80
+  ws-opts:
+    headers:
+      Host: bl.shabijichang.com
+    path: /
+- alterId: 0
   cipher: auto
   name: 19|FR-51.77.158.169-098
   network: ws
@@ -46,8 +91,8 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 9|法国_121320069
-  network: ''
+  name: 9,24|法国_121320070
+  network: tcp
   port: '29776'
   server: 146.59.147.250
   servername: ''
@@ -56,17 +101,14 @@ proxies:
   uuid: 82447abf-dcb9-408a-9ca6-79e0a7698d08
 - alterId: 0
   cipher: auto
-  name: '20|🇫🇷 法国(油管:破解资源君) #1'
-  network: ws
-  port: '2082'
-  server: 8.218.3.12
+  name: 9|法国_121320069
+  network: ''
+  port: '29776'
+  server: 146.59.147.250
+  servername: ''
   tls: false
   type: vmess
-  uuid: 36fa45db-2d4a-4295-a1fe-223836989878
-  ws-opts:
-    headers:
-      Host: PineApple.CLOUDFLARE.QUEST
-    path: /pineapple
+  uuid: 82447abf-dcb9-408a-9ca6-79e0a7698d08
 - alterId: 64
   cipher: auto
   name: 14|法国_【YouTube-VV科技】
@@ -82,32 +124,24 @@ proxies:
     path: /path/1693992821776
 - alterId: 0
   cipher: auto
-  name: 18|🇫🇷_FR_法国_free4allVPN
-  network: ws
-  port: '443'
-  server: phosphorylative.aurorainiceland.com
-  servername: phosphorylative.aurorainiceland.com
-  tls: true
-  type: vmess
-  uuid: 6388bd92-6cbc-4b72-a9a6-931f071d0ffa
-  ws-opts:
-    headers:
-      Host: phosphorylative.aurorainiceland.com
-    path: /nimvws
-- alterId: 0
-  cipher: auto
-  name: 18|🇫🇷_FR_法国_fnet00
-  network: ws
-  port: '80'
-  server: fd.shabijichang.com
+  name: 24|12|德国 - 法兰克福 - Global Internet...
+  network: tcp
+  port: 20404
+  server: 81.12.27.3
   servername: ''
   tls: false
   type: vmess
-  uuid: 4732350b-14a1-421e-985a-155a78e9ae80
-  ws-opts:
-    headers:
-      Host: bl.shabijichang.com
-    path: /
+  uuid: 2825cac3-6acc-4468-ad31-b6d3a3e8fe6e
+- alterId: 0
+  cipher: auto
+  name: 24|12|🔒 VM-TCP-NA 🇫🇷 FR-145.239.2...
+  network: tcp
+  port: '8088'
+  server: 145.239.24.180
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 26b934a2-a7f9-4186-94be-d90691a89cbd
 - alterId: 0
   cipher: auto
   name: 20|🇫🇷 法国(油管:破解资源君)
@@ -137,39 +171,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - khanfari.sanol.xyz
-    method: GET
-    path:
-    - /
-  name: 28|FR_speednode_0042
-  network: http
-  port: 8088
-  server: khanfari.sanol.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 26b934a2-a7f9-4186-94be-d90691a89cbd
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 18|🇫🇷_FR_法国_oneclickvpnkeys
-  network: tcp
+  name: 18|🇫🇷_FR_法国_free4allVPN
+  network: ws
   port: '443'
-  server: 135.125.134.177
-  servername: ''
-  tls: false
+  server: phosphorylative.aurorainiceland.com
+  servername: phosphorylative.aurorainiceland.com
+  tls: true
   type: vmess
-  uuid: d4734bd8-906b-4426-b9ff-9dbc388d56da
-- alterId: 0
-  cipher: auto
-  name: 9,24|法国_121320070
-  network: tcp
-  port: '29776'
-  server: 146.59.147.250
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 82447abf-dcb9-408a-9ca6-79e0a7698d08
+  uuid: 6388bd92-6cbc-4b72-a9a6-931f071d0ffa
+  ws-opts:
+    headers:
+      Host: phosphorylative.aurorainiceland.com
+    path: /nimvws
