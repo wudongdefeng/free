@@ -1,6 +1,48 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 20|🇭🇰 香港05{优化1|V2ray}
+  network: ws
+  port: '25244'
+  server: hk1.awslcn.info
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      Host: hk1.awslcn.info
+    path: /
+- cipher: aes-256-gcm
+  name: 19|HK-50.114.159.250-214
+  password: bI51Uc7CL6
+  port: 6666
+  server: 50.114.159.250
+  type: ss
+- alterId: 1
+  cipher: auto
+  name: 20|🇭🇰 香港(油管:破解资源君2.0)
+  network: ws
+  port: '50205'
+  server: data-hk-v2.shwjfkw.cn
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-hk-v2.shwjfkw.cn
+    path: /hls/cctv5phd.m3u8
+- alterId: 0
+  cipher: auto
+  name: 9|香港_121320008
+  network: tcp
+  port: '59638'
+  server: 91.149.236.70
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
+- alterId: 0
+  cipher: auto
   name: '14|香港_【YouTube-VV科技】 #1'
   network: ws
   port: 80
@@ -12,12 +54,16 @@ proxies:
     headers:
       Host: 18.wyhkaa0.gq
     path: /TG:@hkaa0
-- cipher: aes-256-gcm
-  name: 19|HK-47.243.108.41-298
-  password: rUx8mqUsI0
-  port: 10841
-  server: 47.243.108.41
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 9|香港_121320022
+  network: tcp
+  port: '16399'
+  server: 115.126.50.111
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0a824660-8b17-4665-d2b4-a86c7f15d32a
 - alterId: 64
   cipher: auto
   name: 14|香港_【YouTube-VV科技】
@@ -27,28 +73,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0
-- cipher: aes-256-gcm
-  name: 19|HK-50.114.159.250-214
-  password: bI51Uc7CL6
-  port: 6666
-  server: 50.114.159.250
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 25,28|🇭🇰 香港KT2|@ripaojiedian
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: true
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 1.65.215.179
-  tfo: false
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 9|香港_121320027
+  network: ''
+  port: '59638'
+  server: 91.149.236.70
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
   name: 9|香港_121320001
@@ -59,28 +93,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 0a824660-8b17-4665-d2b4-a86c7f15d32a
-- alterId: 0
-  cipher: auto
-  name: 27|🇭🇰/HK/香港/15
-  network: tcp
-  port: '53003'
-  server: cctv.iepl01.yuntiair365.top
-  tls: false
-  type: vmess
-  uuid: 40db85f1-223f-374f-a49a-dbc9736c430f
-- alterId: 0
-  cipher: auto
-  name: 19|HK-47.242.76.125-188
-  network: ws
-  port: 45631
-  server: 47.242.76.125
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f17d1a99-5b3a-43da-e59a-ad55cba85c27
-  ws-headers:
-    Host: 47.242.76.125
-  ws-path: /
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 25|🇭🇰 香港KT1|@ripaojiedian
@@ -92,6 +104,12 @@ proxies:
   port: 80
   server: 47.76.190.214
   tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  name: 19|HK-47.243.108.41-298
+  password: rUx8mqUsI0
+  port: 10841
+  server: 47.243.108.41
   type: ss
 - alterId: 0
   cipher: auto
@@ -120,9 +138,25 @@ proxies:
     headers:
       Host: www.92873889.xyz
     path: /path/1693018744512
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 25,28|🇭🇰 香港KT2|@ripaojiedian
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 1.65.215.179
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 9,12,15,20,24|香港_121320012
+  name: 9,10,12,15,20,24,27|香港_121320012
   network: ws
   port: '45631'
   server: 47.242.76.125
@@ -134,59 +168,38 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 1
-  cipher: auto
-  name: 20|🇭🇰 香港(油管:破解资源君2.0)
-  network: ws
-  port: '50205'
-  server: data-hk-v2.shwjfkw.cn
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-hk-v2.shwjfkw.cn
-    path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: 9|香港_121320008
+  name: 27|🇭🇰/HK/香港/15
   network: tcp
-  port: '59638'
-  server: 91.149.236.70
-  servername: ''
+  port: '53003'
+  server: cctv.iepl01.yuntiair365.top
   tls: false
   type: vmess
-  uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
+  uuid: 40db85f1-223f-374f-a49a-dbc9736c430f
 - alterId: 0
   cipher: auto
-  name: 20|🇭🇰 香港05{优化1|V2ray}
+  name: 19|HK-47.242.76.125-188
   network: ws
-  port: '25244'
-  server: hk1.awslcn.info
+  port: 45631
+  server: 47.242.76.125
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f17d1a99-5b3a-43da-e59a-ad55cba85c27
+  ws-headers:
+    Host: 47.242.76.125
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20,27|🇭🇰 香港02{优化2|V2ray}
+  network: ws
+  port: '25242'
+  server: hk2.awslcn.info
   tls: false
   type: vmess
   uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   ws-opts:
     headers:
-      Host: hk1.awslcn.info
+      Host: hk2.awslcn.info
     path: /
-- alterId: 0
-  cipher: auto
-  name: 9|香港_121320027
-  network: ''
-  port: '59638'
-  server: 91.149.236.70
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
-- alterId: 0
-  cipher: auto
-  name: 9|香港_121320022
-  network: tcp
-  port: '16399'
-  server: 115.126.50.111
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0a824660-8b17-4665-d2b4-a86c7f15d32a
