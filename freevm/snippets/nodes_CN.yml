@@ -1,18 +1,30 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 12,15,20,24,27|广东省广州市移动 26
+  name: 19|CN-183.236.51.21-425
   network: ws
-  port: '25258'
-  server: cm.awslcn.info
-  servername: ''
+  port: 25244
+  server: hk1.awslcn.info
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-opts:
-    headers:
-      Host: cm.awslcn.info
-    path: /
+  ws-headers:
+    Host: hk1.awslcn.info
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-426
+  network: ws
+  port: 25246
+  server: sg1.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: sg1.awslcn.info
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 19|CN-183.236.51.21-444
@@ -28,46 +40,10 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 19|CN-183.236.51.21-432
+  name: 12,15,20,24,27|广东省广州市移动 10
   network: ws
-  port: 25221
-  server: sg1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: sg1.awslcn.info
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN-183.236.51.21-427
-  network: ws
-  port: 25270
-  server: sg1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: sg1.awslcn.info
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  name: 16,17,27|TG:@hkaa0▓中国
-  network: tcp
-  port: 52629
-  server: 120.233.43.37
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '10,12,20|广东省广州市 移动 #4'
-  network: ws
-  port: '25275'
+  port: '25258'
   server: cm1.awslcn.info
-  servername: ''
   tls: false
   type: vmess
   uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
@@ -75,19 +51,90 @@ proxies:
     headers:
       Host: cm1.awslcn.info
     path: /
+- alterId: 0
+  cipher: auto
+  name: 19|CN-116.163.29.181-439
+  network: ws
+  port: 25277
+  server: cu.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: cu.awslcn.info
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 19|CN-220.205.37.10-515
+  network: ws
+  port: 16618
+  server: yes.cnmjcn.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  ws-headers:
+    Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 19,25|CN-183.233.187.230-478
+  password: 057bf3ac-fda1-44c3-aa8e-07eed7ddc5b6
+  port: 20001
+  server: service.ouluyun9803.com
+  type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 28|CN_speednode_0017
+  name: 28|CN_speednode_0024
   password: Paofu
   plugin: obfs
   plugin-opts:
     host: d42f56951.microsoft.com
     mode: http
-  port: 1174
+  port: 1184
   server: yd-02.paofunlink.com
   tfo: false
   type: ss
   udp: true
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 28|CN_speednode_0025
+  password: Paofu
+  plugin: obfs
+  plugin-opts:
+    host: d42f56951.microsoft.com
+    mode: http
+  port: 5983
+  server: yd-06.paofunlink.com
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 19|CN-111.47.212.135-020
+  network: ws
+  port: 16648
+  server: t.cnmjcn.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  ws-headers:
+    Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 19|CN-103.184.44.15-052
+  network: ws
+  port: 443
+  server: 1.1808.cf
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  ws-headers:
+    Host: v2.chigua.tk
+  ws-path: /vmess
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 28|CN_speednode_0013
@@ -103,48 +150,49 @@ proxies:
   udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 28|CN_speednode_0023
+  name: 28|CN_speednode_0017
   password: Paofu
   plugin: obfs
   plugin-opts:
     host: d42f56951.microsoft.com
     mode: http
-  port: 1182
+  port: 1174
   server: yd-02.paofunlink.com
   tfo: false
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 19|CN-220.205.37.10-381
+  name: 12,15,20,24,27|广东省广州市移动 26
   network: ws
-  port: 16626
-  server: yes.cnmjcn.net
+  port: '25258'
+  server: cm.awslcn.info
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      Host: cm.awslcn.info
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|CN-116.163.29.181-447
+  network: ws
+  port: 25285
+  server: cu.awslcn.info
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   ws-headers:
-    Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+    Host: cu.awslcn.info
   ws-path: /
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 28|CN_speednode_0019
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: d42f56951.microsoft.com
-    mode: http
-  port: 1194
-  server: yd-02.paofunlink.com
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 19|CN-183.236.51.21-429
+  name: 19|CN-183.236.51.21-431
   network: ws
-  port: 25243
+  port: 25245
   server: sg1.awslcn.info
   skip-cert-verify: true
   tls: false
@@ -155,36 +203,150 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 0,3,24|_CN_中国
+  name: 19|CN-183.236.51.21-441
   network: ws
-  port: '47551'
-  server: 159.75.178.50
+  port: 25285
+  server: cm1.awslcn.info
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 2500a228-8c00-4934-81e0-22281c015a33
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 19|CN-183.233.187.235-232
-  password: 057bf3ac-fda1-44c3-aa8e-07eed7ddc5b6
-  port: 50005
-  server: service.ouluyun9803.com
-  type: ss
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: cm1.awslcn.info
+  ws-path: /
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 28|CN_speednode_0027
+  name: 28|CN_speednode_0021
   password: Paofu
   plugin: obfs
   plugin-opts:
     host: d42f56951.microsoft.com
     mode: http
-  port: 5986
-  server: yd-07.paofunlink.com
+  port: 1191
+  server: yd-05.paofunlink.com
   tfo: false
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-424
+  network: ws
+  port: 25242
+  server: hk2.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: hk2.awslcn.info
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 19|CN-116.163.29.181-454
+  network: ws
+  port: 25239
+  server: us1.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: us1.awslcn.info
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-436
+  network: ws
+  port: 25216
+  server: cm.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: cm.awslcn.info
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-445
+  network: ws
+  port: 25286
+  server: cm1.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: cm1.awslcn.info
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 19|CN-116.163.29.181-433
+  network: ws
+  port: 25279
+  server: cu.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: cu.awslcn.info
+  ws-path: /
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 28|CN_speednode_0015
+  password: Paofu
+  plugin: obfs
+  plugin-opts:
+    host: d42f56951.microsoft.com
+    mode: http
+  port: 5982
+  server: yd-01.paofunlink.com
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 64
+  cipher: auto
+  name: '14|中国_【YouTube-VV科技】 #1'
+  network: tcp
+  port: 40702
+  server: 120.226.50.93
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-449
+  network: ws
+  port: 25230
+  server: cm1.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: cm1.awslcn.info
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 28|CN_speednode_0008
+  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
+  port: 19511
+  server: 120.233.43.24
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-471
+  network: ws
+  port: 25233
+  server: cm.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: cm.awslcn.info
+  ws-path: /
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 28|CN_speednode_0020
@@ -200,80 +362,35 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 19|CN-116.163.29.181-461
+  name: '10,12,20|广东省广州市 移动 #1'
   network: ws
-  port: 25276
-  server: cu.awslcn.info
-  skip-cert-verify: true
+  port: '25233'
+  server: cm1.awslcn.info
   tls: false
   type: vmess
   uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: cu.awslcn.info
-  ws-path: /
+  ws-opts:
+    headers:
+      Host: cm1.awslcn.info
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 19,25|CN-183.233.187.230-478
-  password: 057bf3ac-fda1-44c3-aa8e-07eed7ddc5b6
-  port: 20001
-  server: service.ouluyun9803.com
+  name: 28|CN_speednode_0007
+  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
+  port: 19591
+  server: 120.232.234.221
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 19|CN-110.72.101.149-236
-  network: ws
-  port: 16616
-  server: yes.cnmjcn.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
-  ws-headers:
-    Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN-183.236.51.21-435
-  network: ws
-  port: 25228
-  server: cm.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: cm.awslcn.info
-  ws-path: /
+  udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 28|CN_speednode_0022
+  name: 28|CN_speednode_0018
   password: Paofu
   plugin: obfs
   plugin-opts:
     host: d42f56951.microsoft.com
     mode: http
-  port: 1183
+  port: 1192
   server: yd-02.paofunlink.com
   tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|CN-116.163.29.181-451
-  network: ws
-  port: 25256
-  server: us1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: us1.awslcn.info
-  ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: 28|CN_speednode_0005
-  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-  port: 19511
-  server: nc.cn2.go002.xyz
   type: ss
   udp: true
 - alterId: 1
@@ -290,47 +407,63 @@ proxies:
     Host: data-hk-v2.shwjfkw.cn
   ws-path: /hls/cctv5phd.m3u8
 - cipher: chacha20-ietf-poly1305
-  name: 28|CN_speednode_0004
-  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-  port: 19511
-  server: 120.232.234.221
+  name: 19|CN-183.233.187.235-232
+  password: 057bf3ac-fda1-44c3-aa8e-07eed7ddc5b6
+  port: 50005
+  server: service.ouluyun9803.com
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 19|CN-220.205.37.10-381
+  network: ws
+  port: 16626
+  server: yes.cnmjcn.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  ws-headers:
+    Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-443
+  network: ws
+  port: 25218
+  server: cm1.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: cm1.awslcn.info
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-428
+  network: ws
+  port: 25282
+  server: sg1.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: sg1.awslcn.info
+  ws-path: /
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 28|CN_speednode_0010
+  password: Paofu
+  plugin: obfs
+  plugin-opts:
+    host: d42f56951.microsoft.com
+    mode: http
+  port: 5980
+  server: yd-01.paofunlink.com
+  tfo: false
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|CN-116.163.29.181-434
-  network: ws
-  port: 25281
-  server: cu.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: cu.awslcn.info
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN-183.236.51.21-468
-  network: ws
-  port: 25275
-  server: cm.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: cm.awslcn.info
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 27|🇨🇳/CN/中国/28
-  network: tcp
-  port: '44361'
-  server: zjxc.pmxu.link
-  tls: false
-  type: vmess
-  uuid: f4f025a5-84d9-3d1d-b064-42301c12d708
 - alterId: 0
   cipher: auto
   name: 19|CN-116.163.29.181-462
@@ -346,45 +479,124 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 19|CN-103.184.44.15-052
+  name: 19|CN-183.236.51.21-453
   network: ws
-  port: 443
-  server: 1.1808.cf
+  port: 25240
+  server: cm.awslcn.info
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   ws-headers:
-    Host: v2.chigua.tk
-  ws-path: /vmess
-- cipher: chacha20-ietf-poly1305
-  name: 28|CN_speednode_0008
-  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-  port: 19511
-  server: 120.233.43.24
+    Host: cm.awslcn.info
+  ws-path: /
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 28|CN_speednode_0016
+  password: Paofu
+  plugin: obfs
+  plugin-opts:
+    host: d42f56951.microsoft.com
+    mode: http
+  port: 1190
+  server: yd-05.paofunlink.com
+  tfo: false
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 28|CN_speednode_0011
+  password: Paofu
+  plugin: obfs
+  plugin-opts:
+    host: d42f56951.microsoft.com
+    mode: http
+  port: 5989
+  server: yd-07.paofunlink.com
+  tfo: false
   type: ss
   udp: true
 - alterId: 64
   cipher: auto
-  name: '14|中国_【YouTube-VV科技】 #1'
+  name: 14|中国_【YouTube-VV科技】
   network: tcp
-  port: 40702
+  port: 42055
   server: 120.226.50.93
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-429
+  network: ws
+  port: 25243
+  server: sg1.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: sg1.awslcn.info
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '10,12,20|广东省广州市 移动 #2'
+  network: ws
+  port: '25285'
+  server: cm1.awslcn.info
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      Host: cm1.awslcn.info
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 19,25|CN-183.233.187.235-257
-  password: 057bf3ac-fda1-44c3-aa8e-07eed7ddc5b6
-  port: 50003
-  server: service.ouluyun9803.com
+  name: 19,25|CN-119.96.222.11-416
+  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
+  port: 19551
+  server: nc.ct1.go002.xyz
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 19|CN-183.233.187.230-258
-  password: 057bf3ac-fda1-44c3-aa8e-07eed7ddc5b6
-  port: 26667
-  server: service.ouluyun9803.com
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-472
+  network: ws
+  port: 25233
+  server: cm1.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: cm1.awslcn.info
+  ws-path: /
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 28|CN_speednode_0009
+  password: Paofu
+  plugin: obfs
+  plugin-opts:
+    host: d42f56951.microsoft.com
+    mode: http
+  port: 5984
+  server: yd-06.paofunlink.com
+  tfo: false
   type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-452
+  network: ws
+  port: 25241
+  server: cm1.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: cm1.awslcn.info
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   name: 28|CN_speednode_0006
   password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
@@ -392,11 +604,443 @@ proxies:
   server: 120.232.234.221
   type: ss
   udp: true
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 28|CN_speednode_0026
+  password: Paofu
+  plugin: obfs
+  plugin-opts:
+    host: d42f56951.microsoft.com
+    mode: http
+  port: 1180
+  server: yd-05.paofunlink.com
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 19|CN-183.236.51.21-472
+  name: 19|CN-183.236.51.21-450
   network: ws
-  port: 25233
+  port: 25240
+  server: cm1.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: cm1.awslcn.info
+  ws-path: /
+- cipher: chacha20-ietf
+  name: 19|CN-120.240.236.122-001
+  obfs: plain
+  obfsparam: 5d3ee46961.microsoft.com
+  password: jFa4F1
+  port: 7701
+  protocol: auth_aes128_sha1
+  protoparam: 46961:1210-Tha
+  server: cm01.newcome.xyz
+  type: ssr
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 28|CN_speednode_0022
+  password: Paofu
+  plugin: obfs
+  plugin-opts:
+    host: d42f56951.microsoft.com
+    mode: http
+  port: 1183
+  server: yd-02.paofunlink.com
+  tfo: false
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 28|CN_speednode_0014
+  password: Paofu
+  plugin: obfs
+  plugin-opts:
+    host: d42f56951.microsoft.com
+    mode: http
+  port: 5985
+  server: yd-06.paofunlink.com
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-470
+  network: ws
+  port: 25232
+  server: cm.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: cm.awslcn.info
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: 16,17,27|TG:@hkaa0▓中国
+  network: tcp
+  port: 52629
+  server: 120.233.43.37
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 27|🇨🇳/CN/中国/28
+  network: tcp
+  port: '44361'
+  server: zjxc.pmxu.link
+  tls: false
+  type: vmess
+  uuid: f4f025a5-84d9-3d1d-b064-42301c12d708
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-427
+  network: ws
+  port: 25270
+  server: sg1.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: sg1.awslcn.info
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 28|CN_speednode_0004
+  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
+  port: 19511
+  server: 120.232.234.221
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 28|CN_speednode_0005
+  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
+  port: 19511
+  server: nc.cn2.go002.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-438
+  network: ws
+  port: 25218
+  server: cm.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: cm.awslcn.info
+  ws-path: /
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 28|CN_speednode_0027
+  password: Paofu
+  plugin: obfs
+  plugin-opts:
+    host: d42f56951.microsoft.com
+    mode: http
+  port: 5986
+  server: yd-07.paofunlink.com
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '12,20|广东省广州市 移动 #6'
+  network: ws
+  port: '25243'
+  server: sg1.awslcn.info
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      Host: sg1.awslcn.info
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 19|CN-117.149.247.11-275
+  password: 8e949d75-3510-4678-8593-3c5032dd931a
+  port: 30818
+  server: wqfuinwqffq.dfcloud.xyz
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 19,25|CN-183.233.187.235-257
+  password: 057bf3ac-fda1-44c3-aa8e-07eed7ddc5b6
+  port: 50003
+  server: service.ouluyun9803.com
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-467
+  network: ws
+  port: 25232
+  server: cm1.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: cm1.awslcn.info
+  ws-path: /
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 28|CN_speednode_0019
+  password: Paofu
+  plugin: obfs
+  plugin-opts:
+    host: d42f56951.microsoft.com
+    mode: http
+  port: 1194
+  server: yd-02.paofunlink.com
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 10,20|广东省广州市 移动
+  network: ws
+  port: '25232'
+  server: cm1.awslcn.info
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      Host: cm1.awslcn.info
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-448
+  network: ws
+  port: 25257
+  server: us2.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: us2.awslcn.info
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20,24,31|🇨🇳 湖南省 联通
+  network: ws
+  port: '16626'
+  server: yes.cnmjcn.net
+  tls: false
+  type: vmess
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  ws-opts:
+    headers:
+      Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|CN-116.163.29.181-446
+  network: ws
+  port: 25286
+  server: cu.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: cu.awslcn.info
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-432
+  network: ws
+  port: 25221
+  server: sg1.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: sg1.awslcn.info
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 0,1,2,3,4,24|_CN_中国
+  network: ws
+  port: '47551'
+  server: 159.75.178.50
+  tls: false
+  type: vmess
+  uuid: 2500a228-8c00-4934-81e0-22281c015a33
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|CN-120.233.43.33-021
+  network: ws
+  port: 16648
+  server: m.cnmjcn.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  ws-headers:
+    Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 19|CN-183.233.187.230-258
+  password: 057bf3ac-fda1-44c3-aa8e-07eed7ddc5b6
+  port: 26667
+  server: service.ouluyun9803.com
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-435
+  network: ws
+  port: 25228
+  server: cm.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: cm.awslcn.info
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 19|CN-116.163.29.181-461
+  network: ws
+  port: 25276
+  server: cu.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: cu.awslcn.info
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-430
+  network: ws
+  port: 25283
+  server: sg1.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: sg1.awslcn.info
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '10,12,20|广东省广州市 移动 #5'
+  network: ws
+  port: '25275'
+  server: cm1.awslcn.info
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      Host: cm1.awslcn.info
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '10,12,20|广东省广州市 移动 #3'
+  network: ws
+  port: '25286'
+  server: cm1.awslcn.info
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      Host: cm1.awslcn.info
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 28|CN_speednode_0028
+  password: 1456835b-69ad-426e-8fec-7ea73233a524
+  port: 43340
+  server: others.proxy.kk-proxy.pro
+  type: ss
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 28|CN_speednode_0023
+  password: Paofu
+  plugin: obfs
+  plugin-opts:
+    host: d42f56951.microsoft.com
+    mode: http
+  port: 1182
+  server: yd-02.paofunlink.com
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 19|CN-111.47.212.135-284
+  network: ws
+  port: 16616
+  server: t.cnmjcn.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  ws-headers:
+    Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '10,20|广东省广州市 移动 #4'
+  network: ws
+  port: '25282'
+  server: sg1.awslcn.info
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-opts:
+    headers:
+      Host: sg1.awslcn.info
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-468
+  network: ws
+  port: 25275
+  server: cm.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: cm.awslcn.info
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-469
+  network: ws
+  port: 25275
+  server: cm1.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  ws-headers:
+    Host: cm1.awslcn.info
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 19|CN-183.236.51.21-423
+  network: ws
+  port: 25258
   server: cm1.awslcn.info
   skip-cert-verify: true
   tls: false
@@ -420,9 +1064,9 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 19|CN-116.163.29.181-454
+  name: 19|CN-116.163.29.181-451
   network: ws
-  port: 25239
+  port: 25256
   server: us1.awslcn.info
   skip-cert-verify: true
   tls: false
@@ -433,56 +1077,17 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 19|CN-183.236.51.21-437
+  name: 19|CN-110.72.101.149-236
   network: ws
-  port: 25242
-  server: hk1.awslcn.info
+  port: 16616
+  server: yes.cnmjcn.net
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
   ws-headers:
-    Host: hk1.awslcn.info
+    Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN-183.236.51.21-436
-  network: ws
-  port: 25216
-  server: cm.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: cm.awslcn.info
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN-183.236.51.21-426
-  network: ws
-  port: 25246
-  server: sg1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: sg1.awslcn.info
-  ws-path: /
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 28|CN_speednode_0011
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: d42f56951.microsoft.com
-    mode: http
-  port: 5989
-  server: yd-07.paofunlink.com
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 19|CN-183.236.51.21-442
@@ -498,68 +1103,16 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 19|CN-183.236.51.21-453
+  name: 19|CN-116.163.29.181-463
   network: ws
-  port: 25240
-  server: cm.awslcn.info
+  port: 25228
+  server: cu.awslcn.info
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   ws-headers:
-    Host: cm.awslcn.info
-  ws-path: /
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 28|CN_speednode_0018
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: d42f56951.microsoft.com
-    mode: http
-  port: 1192
-  server: yd-02.paofunlink.com
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|CN-183.236.51.21-425
-  network: ws
-  port: 25244
-  server: hk1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: hk1.awslcn.info
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 20,24,31|🇨🇳 湖南省 联通
-  network: ws
-  port: '16626'
-  server: yes.cnmjcn.net
-  tls: false
-  type: vmess
-  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
-  ws-opts:
-    headers:
-      Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN-183.236.51.21-430
-  network: ws
-  port: 25283
-  server: sg1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: sg1.awslcn.info
+    Host: cu.awslcn.info
   ws-path: /
 - cipher: rc4-md5
   client-fingerprint: chrome
@@ -574,401 +1127,11 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 28|CN_speednode_0024
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: d42f56951.microsoft.com
-    mode: http
-  port: 1184
-  server: yd-02.paofunlink.com
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 19|CN-183.236.51.21-471
+  name: 19|CN-116.163.29.181-434
   network: ws
-  port: 25233
-  server: cm.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: cm.awslcn.info
-  ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: 28|CN_speednode_0028
-  password: 1456835b-69ad-426e-8fec-7ea73233a524
-  port: 43340
-  server: others.proxy.kk-proxy.pro
-  type: ss
-- alterId: 64
-  cipher: auto
-  name: 14|中国_【YouTube-VV科技】
-  network: tcp
-  port: 42055
-  server: 120.226.50.93
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 19|CN-183.236.51.21-467
-  network: ws
-  port: 25232
-  server: cm1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: cm1.awslcn.info
-  ws-path: /
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 28|CN_speednode_0014
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: d42f56951.microsoft.com
-    mode: http
-  port: 5985
-  server: yd-06.paofunlink.com
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|CN-116.163.29.181-463
-  network: ws
-  port: 25228
-  server: cu.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: cu.awslcn.info
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN-116.163.29.181-447
-  network: ws
-  port: 25285
-  server: cu.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: cu.awslcn.info
-  ws-path: /
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 28|CN_speednode_0021
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: d42f56951.microsoft.com
-    mode: http
-  port: 1191
-  server: yd-05.paofunlink.com
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|CN-111.47.212.135-020
-  network: ws
-  port: 16648
-  server: t.cnmjcn.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
-  ws-headers:
-    Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
-  ws-path: /
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 28|CN_speednode_0025
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: d42f56951.microsoft.com
-    mode: http
-  port: 5983
-  server: yd-06.paofunlink.com
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|CN-183.236.51.21-443
-  network: ws
-  port: 25218
-  server: cm1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: cm1.awslcn.info
-  ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: 19|CN-117.149.247.11-275
-  password: 8e949d75-3510-4678-8593-3c5032dd931a
-  port: 30818
-  server: wqfuinwqffq.dfcloud.xyz
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 19|CN-183.236.51.21-424
-  network: ws
-  port: 25242
-  server: hk2.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: hk2.awslcn.info
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN-183.236.51.21-431
-  network: ws
-  port: 25245
-  server: sg1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: sg1.awslcn.info
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN-183.236.51.21-450
-  network: ws
-  port: 25240
-  server: cm1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: cm1.awslcn.info
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN-220.205.37.10-515
-  network: ws
-  port: 16618
-  server: yes.cnmjcn.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
-  ws-headers:
-    Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN-183.236.51.21-470
-  network: ws
-  port: 25232
-  server: cm.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: cm.awslcn.info
-  ws-path: /
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 28|CN_speednode_0016
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: d42f56951.microsoft.com
-    mode: http
-  port: 1190
-  server: yd-05.paofunlink.com
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|CN-183.236.51.21-428
-  network: ws
-  port: 25282
-  server: sg1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: sg1.awslcn.info
-  ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: 28|CN_speednode_0007
-  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-  port: 19591
-  server: 120.232.234.221
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|CN-116.163.29.181-446
-  network: ws
-  port: 25286
-  server: cu.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: cu.awslcn.info
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN-183.236.51.21-441
-  network: ws
-  port: 25285
-  server: cm1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: cm1.awslcn.info
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '10,12,20|广东省广州市 移动 #1'
-  network: ws
-  port: '25285'
-  server: cm1.awslcn.info
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-opts:
-    headers:
-      Host: cm1.awslcn.info
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '10,12,20|广东省广州市 移动 #2'
-  network: ws
-  port: '25286'
-  server: cm1.awslcn.info
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-opts:
-    headers:
-      Host: cm1.awslcn.info
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 12,15,20,24,27|广东省广州市移动 10
-  network: ws
-  port: '25258'
-  server: cm1.awslcn.info
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-opts:
-    headers:
-      Host: cm1.awslcn.info
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN-183.236.51.21-445
-  network: ws
-  port: 25286
-  server: cm1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: cm1.awslcn.info
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN-120.233.43.33-021
-  network: ws
-  port: 16648
-  server: m.cnmjcn.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
-  ws-headers:
-    Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN-183.236.51.21-452
-  network: ws
-  port: 25241
-  server: cm1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: cm1.awslcn.info
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN-183.236.51.21-469
-  network: ws
-  port: 25275
-  server: cm1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: cm1.awslcn.info
-  ws-path: /
-- cipher: chacha20-ietf
-  name: 19|CN-120.240.236.122-001
-  obfs: plain
-  obfsparam: 5d3ee46961.microsoft.com
-  password: jFa4F1
-  port: 7701
-  protocol: auth_aes128_sha1
-  protoparam: 46961:1210-Tha
-  server: cm01.newcome.xyz
-  type: ssr
-- alterId: 0
-  cipher: auto
-  name: 19|CN-116.163.29.181-439
-  network: ws
-  port: 25277
-  server: cu.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: cu.awslcn.info
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN-116.163.29.181-433
-  network: ws
-  port: 25279
+  port: 25281
   server: cu.awslcn.info
   skip-cert-verify: true
   tls: false
@@ -992,150 +1155,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 19|CN-183.236.51.21-438
+  name: 19|CN-183.236.51.21-437
   network: ws
-  port: 25218
-  server: cm.awslcn.info
+  port: 25242
+  server: hk1.awslcn.info
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   ws-headers:
-    Host: cm.awslcn.info
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 19|CN-183.236.51.21-449
-  network: ws
-  port: 25230
-  server: cm1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: cm1.awslcn.info
-  ws-path: /
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 28|CN_speednode_0015
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: d42f56951.microsoft.com
-    mode: http
-  port: 5982
-  server: yd-01.paofunlink.com
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 10,12,20|广东省广州市 移动
-  network: ws
-  port: '25243'
-  server: sg1.awslcn.info
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-opts:
-    headers:
-      Host: sg1.awslcn.info
-    path: /
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 28|CN_speednode_0026
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: d42f56951.microsoft.com
-    mode: http
-  port: 1180
-  server: yd-05.paofunlink.com
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|CN-183.236.51.21-448
-  network: ws
-  port: 25257
-  server: us2.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: us2.awslcn.info
-  ws-path: /
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 28|CN_speednode_0009
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: d42f56951.microsoft.com
-    mode: http
-  port: 5984
-  server: yd-06.paofunlink.com
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|CN-111.47.212.135-284
-  network: ws
-  port: 16616
-  server: t.cnmjcn.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
-  ws-headers:
-    Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
-  ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: 19,25|CN-119.96.222.11-416
-  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-  port: 19551
-  server: nc.ct1.go002.xyz
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '10,12,20|广东省广州市 移动 #3'
-  network: ws
-  port: '25233'
-  server: cm1.awslcn.info
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-opts:
-    headers:
-      Host: cm1.awslcn.info
-    path: /
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 28|CN_speednode_0010
-  password: Paofu
-  plugin: obfs
-  plugin-opts:
-    host: d42f56951.microsoft.com
-    mode: http
-  port: 5980
-  server: yd-01.paofunlink.com
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 19|CN-183.236.51.21-423
-  network: ws
-  port: 25258
-  server: cm1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  ws-headers:
-    Host: cm1.awslcn.info
+    Host: hk1.awslcn.info
   ws-path: /
