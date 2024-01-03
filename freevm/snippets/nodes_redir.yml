@@ -1,30 +1,39 @@
 proxies:
-- name: 1|_CN_->_GI_
-  network: tcp
-  password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
-  port: 17728
-  server: gbs.pptv-tv.store
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 1,24|_US_->_DE_
+  name: 0,24|🇺🇸 _US_美国->🇬🇧_GB_英国
   network: ws
-  port: 2087
-  server: 104.21.69.44
-  skip-cert-verify: true
-  tls: true
+  port: '80'
+  server: 162.159.142.244
+  tls: false
   type: vmess
-  uuid: 8fada9c0-c348-4465-aade-ff0311454178
+  uuid: b7c3855f-e549-4fce-8439-ea44d5392f8d
   ws-opts:
     headers:
-      host: pAnel159.moOkomeILz.homes
-    path: /@FreeVPNHomes@FreeVPNHomes
+      Host: uk3.889611.com
+    path: /
+- name: 23|_CN_->_US__1
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10837
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
 - name: 23|_CN_->_US__3
   network: tcp
   password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
   port: 10850
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- name: 23|_CN_->_US__2
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10838
   server: other.kunlun-ppg.com
   skip-cert-verify: true
   sni: alibaba-node.cn
@@ -46,20 +55,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6,13,24,27|🇺🇸_US_美国->🇨🇦_CA_加拿大
-  network: ws
-  port: 80
-  server: 162.159.142.212
-  tls: false
-  type: vmess
-  uuid: b7c3855f-e549-4fce-8439-ea44d5392f8d
-  ws-opts:
-    headers:
-      Host: ca3.889611.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 2,3,4,6,13,15,24,27|🇺🇸_US_美国->🇩🇪_DE_德国
+  name: 2,3,4,6,13,15,20,24,27|🇺🇸_US_美国->🇩🇪_DE_德国
   network: ws
   port: 2087
   server: 104.21.69.44
@@ -70,19 +66,6 @@ proxies:
     headers:
       Host: pAnel159.moOkomeILz.homes
     path: /@FreeVPNHomes@FreeVPNHomes
-- alterId: 0
-  cipher: auto
-  name: 0,24|🇺🇸 _US_美国->🇹🇷_TR_土耳其
-  network: ws
-  port: '80'
-  server: 162.159.142.202
-  tls: false
-  type: vmess
-  uuid: b7c3855f-e549-4fce-8439-ea44d5392f8d
-  ws-opts:
-    headers:
-      Host: tr3.889611.com
-    path: /
 - alterId: 0
   cipher: auto
   name: 1,24|_CN_->_IN_
@@ -99,16 +82,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,24|🇺🇸 _US_美国->🇨🇿_CZ_捷克
+  name: 6,13,24,27|🇺🇸_US_美国->🇨🇦_CA_加拿大
   network: ws
-  port: '80'
-  server: 162.159.200.1
+  port: 80
+  server: 162.159.142.212
   tls: false
   type: vmess
   uuid: b7c3855f-e549-4fce-8439-ea44d5392f8d
   ws-opts:
     headers:
-      Host: tr3.889611.com
+      Host: ca3.889611.com
     path: /
 - name: 23|_CN_->_UA_
   network: tcp
@@ -119,9 +102,36 @@ proxies:
   sni: alibaba-node.cn
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 1,24|_US_->_DE_
+  network: ws
+  port: 2087
+  server: 104.21.69.44
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8fada9c0-c348-4465-aade-ff0311454178
+  ws-opts:
+    headers:
+      host: pAnel159.moOkomeILz.homes
+    path: /@FreeVPNHomes@FreeVPNHomes
+- alterId: 0
+  cipher: auto
+  name: 0,24|🇺🇸 _US_美国->🇹🇷_TR_土耳其
+  network: ws
+  port: '80'
+  server: 162.159.142.202
+  tls: false
+  type: vmess
+  uuid: b7c3855f-e549-4fce-8439-ea44d5392f8d
+  ws-opts:
+    headers:
+      Host: tr3.889611.com
+    path: /
 - alterId: 64
   cipher: auto
-  name: 0,1,2,3,4,24|🇩🇪 _CN_中国->🇩🇪_DE_德国
+  name: 0,1,2,3,4,19,20,24|🇩🇪 _CN_中国->🇩🇪_DE_德国
   network: tcp
   port: '52707'
   server: 183.237.20.148
@@ -155,34 +165,24 @@ proxies:
     headers:
       host: warp.chigua.tk
     path: /
-- name: 23|_CN_->_US__2
+- name: 1|_CN_->_GI_
   network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10838
-  server: other.kunlun-ppg.com
+  password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
+  port: 17728
+  server: gbs.pptv-tv.store
   skip-cert-verify: true
-  sni: alibaba-node.cn
   type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  name: 0,24|🇺🇸 _US_美国->🇬🇧_GB_英国
+  name: 0,24|🇺🇸 _US_美国->🇨🇿_CZ_捷克
   network: ws
   port: '80'
-  server: 162.159.142.244
+  server: 162.159.200.1
   tls: false
   type: vmess
   uuid: b7c3855f-e549-4fce-8439-ea44d5392f8d
   ws-opts:
     headers:
-      Host: uk3.889611.com
+      Host: tr3.889611.com
     path: /
-- name: 23|_CN_->_US__1
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10837
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
