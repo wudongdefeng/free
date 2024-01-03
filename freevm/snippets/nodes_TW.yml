@@ -1,34 +1,31 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 9|台湾_121320007
-  network: tcp
-  port: '19588'
-  server: 152.32.167.166
+  name: 9,12,15,20,24,27|台湾_121320006
+  network: ws
+  port: '443'
+  server: 123.58.197.70
   servername: ''
   tls: false
   type: vmess
-  uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
+  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
-  name: 9|台湾_121320011
-  network: ''
-  port: '19588'
-  server: 152.32.167.166
-  servername: ''
+  name: 19|TW-123.58.197.70-166
+  network: ws
+  port: 443
+  server: 123.58.197.70
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
-- alterId: 0
-  cipher: auto
-  name: 9|台湾_121320002
-  network: ''
-  port: '10001'
-  server: 45.121.48.196
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
+  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
+  ws-headers:
+    Host: 123.58.197.70
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 19|TW-103.159.206.35-165
@@ -44,8 +41,38 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 9,12,15,19,20,24,27|台湾_121320008
+  name: 9,10,12,15,19,20,24,27|台湾_121320008
   network: tcp
+  port: '10001'
+  server: 45.121.48.196
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
+- alterId: 0
+  cipher: auto
+  name: 9|台湾_121320011
+  network: ''
+  port: '19588'
+  server: 152.32.167.166
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
+- alterId: 0
+  cipher: auto
+  name: 12,19,20,24|台湾省南投县中华电信 23
+  network: tcp
+  port: '6122'
+  server: c12.twtc.dynu.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e27ab70e-7444-470c-a0fc-e49ec09ac02d
+- alterId: 0
+  cipher: auto
+  name: 9|台湾_121320002
+  network: ''
   port: '10001'
   server: 45.121.48.196
   servername: ''
@@ -68,41 +95,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 9,12,15,20,24,27|台湾_121320006
-  network: ws
-  port: '443'
-  server: 123.58.197.70
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 12,19,20,24|台湾省南投县中华电信 23
+  name: 9|台湾_121320007
   network: tcp
-  port: '6122'
-  server: c12.twtc.dynu.net
+  port: '19588'
+  server: 152.32.167.166
   servername: ''
   tls: false
   type: vmess
-  uuid: e27ab70e-7444-470c-a0fc-e49ec09ac02d
-- alterId: 0
-  cipher: auto
-  name: 19|TW-123.58.197.70-166
-  network: ws
-  port: 443
-  server: 123.58.197.70
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
-  ws-headers:
-    Host: 123.58.197.70
-  ws-path: /
+  uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 25|🇹🇼 台湾|@ripaojiedian
