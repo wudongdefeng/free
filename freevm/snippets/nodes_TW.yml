@@ -1,8 +1,8 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 9,10,12,15,19,20,24,27|台湾_121320008
-  network: tcp
+  name: 9|台湾_121320002
+  network: ''
   port: '10001'
   server: 45.121.48.196
   servername: ''
@@ -11,16 +11,26 @@ proxies:
   uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
 - alterId: 0
   cipher: auto
-  name: 19,20,24|TW-45.121.48.172-263
+  name: 12,15,19,20,24,27|台湾省南投县中华电信 23
   network: tcp
-  port: 10001
-  server: 45.121.48.172
+  port: '6122'
+  server: c12.twtc.dynu.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e27ab70e-7444-470c-a0fc-e49ec09ac02d
+- alterId: 0
+  cipher: auto
+  name: 19|TW-123.58.197.70-302
+  network: ws
+  port: 443
+  server: 123.58.197.70
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: dba51a2e-a788-43b7-9ac4-9f7cc1255f15
+  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
   ws-headers:
-    Host: 45.121.48.172
+    Host: 123.58.197.70
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -34,35 +44,22 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 19,20,24|TW-1.164.149.40-183
-  network: tcp
-  port: 5643
-  server: b11.ntbq.dynu.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e6967991-7b0a-4d1a-a37b-5eb3b78d4c15
-  ws-headers:
-    Host: b11.ntbq.dynu.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 9|台湾_121320001
+  name: 9,12,20,24,27|台湾_121320006
   network: ws
-  port: '31945'
-  server: 103.159.206.35
+  port: '443'
+  server: 123.58.197.70
   servername: ''
   tls: false
   type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
   ws-opts:
     headers:
-      Host: 103.159.206.35
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: 9|台湾_121320002
-  network: ''
+  name: 9,12,15,19,20,24,27|台湾_121320008
+  network: tcp
   port: '10001'
   server: 45.121.48.196
   servername: ''
@@ -81,43 +78,23 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 19,20|TW-36.232.133.28-182
+  name: 24|10|台湾省中华电信(HiNet)数据中心 8
   network: tcp
-  port: 6899
-  server: c11.twtc.dynu.net
-  skip-cert-verify: true
+  port: 5643
+  server: b11.ntbq.dynu.net
+  servername: ''
   tls: false
   type: vmess
   uuid: e6967991-7b0a-4d1a-a37b-5eb3b78d4c15
-  ws-headers:
-    Host: c11.twtc.dynu.net
-  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 19,20,24|TW-61.228.188.24-299
+  name: 24|10|台湾省  50
   network: tcp
-  port: 4443
-  server: nb24.ntbq.dynu.net
-  skip-cert-verify: true
+  port: '10001'
+  server: 45.121.48.172
   tls: false
   type: vmess
-  uuid: 4c698ff1-ab96-4ce3-8c3a-e23ced87b441
-  ws-headers:
-    Host: nb24.ntbq.dynu.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 19|TW-103.159.206.35-241
-  network: ws
-  port: 31945
-  server: 103.159.206.35
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-headers:
-    Host: 103.159.206.35
-  ws-path: /
+  uuid: dba51a2e-a788-43b7-9ac4-9f7cc1255f15
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 25|🇹🇼 台湾|@ripaojiedian
@@ -128,38 +105,28 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 9,10,12,20,24,27|台湾_121320006
+  name: 9|台湾_121320001
   network: ws
-  port: '443'
-  server: 123.58.197.70
+  port: '31945'
+  server: 103.159.206.35
   servername: ''
   tls: false
   type: vmess
-  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
   ws-opts:
     headers:
-      Host: ''
+      Host: 103.159.206.35
     path: /
 - alterId: 0
   cipher: auto
-  name: 12,15,24,27|台湾省南投县中华电信 23
-  network: tcp
-  port: '6122'
-  server: c12.twtc.dynu.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e27ab70e-7444-470c-a0fc-e49ec09ac02d
-- alterId: 0
-  cipher: auto
-  name: 19|TW-123.58.197.70-440
+  name: 19|TW-103.159.206.35-251
   network: ws
-  port: 443
-  server: 123.58.197.70
+  port: 31945
+  server: 103.159.206.35
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
   ws-headers:
-    Host: 123.58.197.70
+    Host: 103.159.206.35
   ws-path: /
