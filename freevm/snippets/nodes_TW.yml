@@ -1,18 +1,41 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 9|台湾_121320011
-  network: ''
-  port: '19588'
-  server: 152.32.167.166
+  name: 9|台湾_121320001
+  network: ws
+  port: '31945'
+  server: 103.159.206.35
   servername: ''
   tls: false
   type: vmess
-  uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  ws-opts:
+    headers:
+      Host: 103.159.206.35
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 12,15,24|台湾省 v2rayfree.eu.org
+  network: tcp
+  port: 10001
+  server: 45.121.48.172
+  tls: false
+  type: vmess
+  uuid: dba51a2e-a788-43b7-9ac4-9f7cc1255f15
 - alterId: 0
   cipher: auto
   name: 9|台湾_121320002
   network: ''
+  port: '10001'
+  server: 45.121.48.196
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
+- alterId: 0
+  cipher: auto
+  name: 9,12,15,19,20,24,27|台湾_121320008
+  network: tcp
   port: '10001'
   server: 45.121.48.196
   servername: ''
@@ -34,31 +57,14 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 19|TW-123.58.197.70-166
-  network: ws
-  port: 443
-  server: 123.58.197.70
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
-  ws-headers:
-    Host: 123.58.197.70
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 9,20,24|台湾_121320006
-  network: ws
-  port: '443'
-  server: 123.58.197.70
+  name: 9|台湾_121320011
+  network: ''
+  port: '19588'
+  server: 152.32.167.166
   servername: ''
   tls: false
   type: vmess
-  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
   name: 19|TW-103.159.206.35-165
@@ -74,18 +80,31 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 9|台湾_121320001
+  name: 9,20|台湾_121320006
   network: ws
-  port: '31945'
-  server: 103.159.206.35
+  port: '443'
+  server: 123.58.197.70
   servername: ''
   tls: false
   type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
   ws-opts:
     headers:
-      Host: 103.159.206.35
+      Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 19|TW-123.58.197.70-166
+  network: ws
+  port: 443
+  server: 123.58.197.70
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4ca0196c-05e7-45eb-9036-692c201f45fb
+  ws-headers:
+    Host: 123.58.197.70
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 9|台湾_121320007
@@ -96,22 +115,3 @@ proxies:
   tls: false
   type: vmess
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
-- alterId: 0
-  cipher: auto
-  name: 9,12,15,19,20,24,27|台湾_121320008
-  network: tcp
-  port: '10001'
-  server: 45.121.48.196
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
-- alterId: 0
-  cipher: auto
-  name: 12|台湾省 v2rayfree.eu.org
-  network: tcp
-  port: 10001
-  server: 45.121.48.172
-  tls: false
-  type: vmess
-  uuid: dba51a2e-a788-43b7-9ac4-9f7cc1255f15
