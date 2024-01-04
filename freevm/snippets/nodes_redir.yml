@@ -1,13 +1,50 @@
 proxies:
-- name: 24|_CN_->_UA_
+- name: 24|_CN_->_US__1
   network: tcp
   password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10845
+  port: 10837
   server: other.kunlun-ppg.com
   skip-cert-verify: true
   sni: alibaba-node.cn
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 24|_SG_->_US_
+  network: ws
+  port: 80
+  server: 8.222.198.105
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  ws-opts:
+    headers:
+      host: warp.chigua.tk
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1,25|_US_->_DE__2
+  network: ws
+  port: 2083
+  server: 2bbiozh7wbc.servecounterstrike.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9e9b80f1-5555-4f7d-a209-d23b9d9dc047
+  ws-opts:
+    headers:
+      host: PAneljadid.mookoMEilz.homes
+    path: /snsk
+- alterId: 64
+  cipher: auto
+  name: 0,1,2,3,4,6,20,21,25,28,30,31,34|🇩🇪 _CN_中国->🇩🇪_DE_德国
+  network: tcp
+  port: '52707'
+  server: 183.237.20.148
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 25,28,30,34|17,21|🇺🇸_US_美国->🇩🇪_DE_德国_2_22 ...
@@ -21,28 +58,15 @@ proxies:
     headers:
       Host: psnsisnsidbbh.libraryriazi.sbs
     path: /
-- alterId: 64
-  cipher: auto
-  name: 0,1,2,3,4,6,20,21,25,28,30,31,34|🇩🇪 _CN_中国->🇩🇪_DE_德国
+- name: 24|_CN_->_UA_
   network: tcp
-  port: '52707'
-  server: 183.237.20.148
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '0,2,3,4,6,21,25,28,31|🇺🇸 _US_美国->🇩🇪_DE_德国 #1'
-  network: ws
-  port: '2083'
-  server: 2bbiozh7wbc.servecounterstrike.com
-  tls: true
-  type: vmess
-  uuid: 9e9b80f1-5555-4f7d-a209-d23b9d9dc047
-  ws-opts:
-    headers:
-      Host: PAneljadid.mookoMEilz.homes
-    path: /snsk
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10845
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 25,28,30,34|17,21|🇺🇸_US_美国->🇩🇪_DE_德国_由快嘴科技...
@@ -58,23 +82,10 @@ proxies:
     path: /@FreeVPNHomes@FreeVPNHomes
 - alterId: 0
   cipher: auto
-  name: 25,28,30,34|17,21|🇺🇸_US_美国->🇩🇪_DE_德国_4_25 ...
-  network: ws
-  port: 2087
-  server: 104.21.69.44
-  tls: true
-  type: vmess
-  uuid: 8fada9c0-c348-4465-aade-ff0311454178
-  ws-opts:
-    headers:
-      Host: pAnel159.moOkomeILz.homes
-    path: /@FreeVPNHomes@FreeVPNHomes
-- alterId: 0
-  cipher: auto
-  name: 1,25|_US_->_DE__2
+  name: 1,25|_US_->_DE__1
   network: ws
   port: 2083
-  server: 2bbiozh7wbc.servecounterstrike.com
+  server: 104.19.154.92
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -83,6 +94,20 @@ proxies:
     headers:
       host: PAneljadid.mookoMEilz.homes
     path: /snsk
+- alterId: 0
+  cipher: auto
+  name: 24|_US_->_IN_
+  network: ws
+  port: 80
+  server: mm2.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: mm2.shabijichang.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 25,28,30,34|17,21|🇺🇸_US_美国->🇩🇪_DE_德国_3_24 ...
@@ -98,27 +123,30 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|_SG_->_US_
+  name: '0,2,3,4,6,21,25,28,31|🇺🇸 _US_美国->🇩🇪_DE_德国 #1'
   network: ws
-  port: 80
-  server: 8.222.198.105
-  skip-cert-verify: true
-  tls: false
+  port: '2083'
+  server: 2bbiozh7wbc.servecounterstrike.com
+  tls: true
   type: vmess
-  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  uuid: 9e9b80f1-5555-4f7d-a209-d23b9d9dc047
   ws-opts:
     headers:
-      host: warp.chigua.tk
-    path: /
-- name: 24|_CN_->_US__2
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10838
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
+      Host: PAneljadid.mookoMEilz.homes
+    path: /snsk
+- alterId: 0
+  cipher: auto
+  name: 25,28,30,34|17,21|🇺🇸_US_美国->🇩🇪_DE_德国_4_25 ...
+  network: ws
+  port: 2087
+  server: 104.21.69.44
+  tls: true
+  type: vmess
+  uuid: 8fada9c0-c348-4465-aade-ff0311454178
+  ws-opts:
+    headers:
+      Host: pAnel159.moOkomeILz.homes
+    path: /@FreeVPNHomes@FreeVPNHomes
 - alterId: 0
   cipher: auto
   name: 0,2,3,4,6,21,25,28,31|🇺🇸 _US_美国->🇩🇪_DE_德国
@@ -132,20 +160,15 @@ proxies:
     headers:
       Host: PAneljadid.mookoMEilz.homes
     path: /snsk
-- alterId: 0
-  cipher: auto
-  name: 1,25|_US_->_DE__1
-  network: ws
-  port: 2083
-  server: 104.19.154.92
+- name: 24|_CN_->_US__2
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10838
+  server: other.kunlun-ppg.com
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9e9b80f1-5555-4f7d-a209-d23b9d9dc047
-  ws-opts:
-    headers:
-      host: PAneljadid.mookoMEilz.homes
-    path: /snsk
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
 - name: 24|_CN_->_US__3
   network: tcp
   password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
@@ -155,26 +178,3 @@ proxies:
   sni: alibaba-node.cn
   type: trojan
   udp: true
-- name: 24|_CN_->_US__1
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10837
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 24|_US_->_IN_
-  network: ws
-  port: 80
-  server: mm2.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      host: mm2.shabijichang.com
-    path: /
