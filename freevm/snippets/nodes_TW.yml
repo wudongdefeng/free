@@ -1,16 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 10|台湾_121320008
-  network: tcp
-  port: '10001'
-  server: 45.121.48.196
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
-- alterId: 0
-  cipher: auto
   name: 20|TW-123.58.197.70-269
   network: ws
   port: 443
@@ -24,8 +14,18 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 10|台湾_121320011
-  network: ''
+  name: 13,20,21,25|台湾省彰化县 中华电信
+  network: tcp
+  port: 6122
+  server: c12.twtc.dynu.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4c3ea3ee-2e5e-420b-b81b-8e66f6726003
+- alterId: 0
+  cipher: auto
+  name: 10|台湾_121320007
+  network: tcp
   port: '19588'
   server: 152.32.167.166
   servername: ''
@@ -34,8 +34,45 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 10|台湾_121320007
+  name: 10|台湾_121320008
   network: tcp
+  port: '10001'
+  server: 45.121.48.196
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
+- alterId: 0
+  cipher: auto
+  name: 20|TW-103.159.206.35-224
+  network: ws
+  port: 31945
+  server: 103.159.206.35
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  ws-headers:
+    Host: 103.159.206.35
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 10|台湾_121320001
+  network: ws
+  port: '31945'
+  server: 103.159.206.35
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  ws-opts:
+    headers:
+      Host: 103.159.206.35
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10|台湾_121320011
+  network: ''
   port: '19588'
   server: 152.32.167.166
   servername: ''
@@ -58,29 +95,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 20|TW-103.159.206.35-224
-  network: ws
-  port: 31945
-  server: 103.159.206.35
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-headers:
-    Host: 103.159.206.35
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 13,20,21,25|台湾省彰化县 中华电信
-  network: tcp
-  port: 6122
-  server: c12.twtc.dynu.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4c3ea3ee-2e5e-420b-b81b-8e66f6726003
-- alterId: 0
-  cipher: auto
   name: 10|台湾_121320002
   network: ''
   port: '10001'
@@ -89,17 +103,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
-- alterId: 0
-  cipher: auto
-  name: 10|台湾_121320001
-  network: ws
-  port: '31945'
-  server: 103.159.206.35
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-opts:
-    headers:
-      Host: 103.159.206.35
-    path: /
