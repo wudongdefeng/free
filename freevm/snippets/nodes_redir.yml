@@ -1,4 +1,13 @@
 proxies:
+- name: 24|_CN_->_US__2
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10838
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 0,7,11,13,14,16,21,25,28|🇺🇸 _US_美国->🇺🇦_UA_乌克兰
@@ -14,17 +23,18 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2,3,4,6,13,21,25,28,30|🇺🇸_US_美国->🇬🇧_GB_英国
+  name: 24|_US_->_IN_
   network: ws
   port: 80
-  server: 104.17.110.63
+  server: mm2.shabijichang.com
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: f9ab87c5-c542-4c10-a486-b59c91550787
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
   ws-opts:
     headers:
-      Host: PARspacK51.eSMAIlkOrEA.sHoP
-    path: /?ed=2048
+      host: mm2.shabijichang.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 1,25|_US_->_GB_
@@ -39,6 +49,104 @@ proxies:
     headers:
       host: PARspacK51.eSMAIlkOrEA.sHoP
     path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 0,7,11,13,14,21,25,28|🇺🇸 _US_美国->🇦🇺_AU_澳大利亚
+  network: ws
+  port: '8080'
+  server: cover.mac2win.top
+  tls: false
+  type: vmess
+  uuid: 54d4d640-731c-4572-d0d4-e8a617816470
+  ws-opts:
+    headers:
+      Host: icu4.mac2win.top
+    path: /
+- name: 24|_CN_->_US__3
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10850
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 0,2,3,4,6,21,25,28,30|🇺🇸 _US_美国->🇩🇪_DE_德国
+  network: ws
+  port: '2083'
+  server: 2bbiozh7wbc.servecounterstrike.com
+  tls: true
+  type: vmess
+  uuid: 9e9b80f1-5555-4f7d-a209-d23b9d9dc047
+  ws-opts:
+    headers:
+      Host: PAneljadid.mookoMEilz.homes
+    path: /snsk
+- alterId: 0
+  cipher: auto
+  name: 2,3,4,6,13,21,25,28,30|🇺🇸_US_美国->🇬🇧_GB_英国
+  network: ws
+  port: 80
+  server: 104.17.110.63
+  tls: false
+  type: vmess
+  uuid: f9ab87c5-c542-4c10-a486-b59c91550787
+  ws-opts:
+    headers:
+      Host: PARspacK51.eSMAIlkOrEA.sHoP
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 1,25|_US_->_DE__2
+  network: ws
+  port: 2083
+  server: 2bbiozh7wbc.servecounterstrike.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9e9b80f1-5555-4f7d-a209-d23b9d9dc047
+  ws-opts:
+    headers:
+      host: PAneljadid.mookoMEilz.homes
+    path: /snsk
+- alterId: 0
+  cipher: auto
+  name: 1,25|_US_->_DE__1
+  network: ws
+  port: 2083
+  server: 104.19.154.92
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9e9b80f1-5555-4f7d-a209-d23b9d9dc047
+  ws-opts:
+    headers:
+      host: PAneljadid.mookoMEilz.homes
+    path: /snsk
+- name: 24|_CN_->_US__1
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10837
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '0,2,3,4,6,21,25,28,30|🇺🇸 _US_美国->🇩🇪_DE_德国 #1'
+  network: ws
+  port: '2083'
+  server: 104.19.154.92
+  tls: true
+  type: vmess
+  uuid: 9e9b80f1-5555-4f7d-a209-d23b9d9dc047
+  ws-opts:
+    headers:
+      Host: PAneljadid.mookoMEilz.homes
+    path: /snsk
 - name: 24|_CN_->_UA_
   network: tcp
   password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
@@ -62,111 +170,3 @@ proxies:
     headers:
       host: warp.chigua.tk
     path: /
-- name: 24|_CN_->_US__3
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10850
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: 24|_CN_->_US__1
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10837
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 1,25|_US_->_DE__1
-  network: ws
-  port: 2083
-  server: 104.19.154.92
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9e9b80f1-5555-4f7d-a209-d23b9d9dc047
-  ws-opts:
-    headers:
-      host: PAneljadid.mookoMEilz.homes
-    path: /snsk
-- alterId: 0
-  cipher: auto
-  name: 0,2,3,4,6,21,25,28,30|🇺🇸 _US_美国->🇩🇪_DE_德国
-  network: ws
-  port: '2083'
-  server: 2bbiozh7wbc.servecounterstrike.com
-  tls: true
-  type: vmess
-  uuid: 9e9b80f1-5555-4f7d-a209-d23b9d9dc047
-  ws-opts:
-    headers:
-      Host: PAneljadid.mookoMEilz.homes
-    path: /snsk
-- alterId: 0
-  cipher: auto
-  name: 0,7,13,14,21,25,28|🇺🇸 _US_美国->🇦🇺_AU_澳大利亚
-  network: ws
-  port: '8080'
-  server: cover.mac2win.top
-  tls: false
-  type: vmess
-  uuid: 54d4d640-731c-4572-d0d4-e8a617816470
-  ws-opts:
-    headers:
-      Host: icu4.mac2win.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1,25|_US_->_DE__2
-  network: ws
-  port: 2083
-  server: 2bbiozh7wbc.servecounterstrike.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9e9b80f1-5555-4f7d-a209-d23b9d9dc047
-  ws-opts:
-    headers:
-      host: PAneljadid.mookoMEilz.homes
-    path: /snsk
-- alterId: 0
-  cipher: auto
-  name: 24|_US_->_IN_
-  network: ws
-  port: 80
-  server: mm2.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      host: mm2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '0,2,3,4,6,21,25,28,30|🇺🇸 _US_美国->🇩🇪_DE_德国 #1'
-  network: ws
-  port: '2083'
-  server: 104.19.154.92
-  tls: true
-  type: vmess
-  uuid: 9e9b80f1-5555-4f7d-a209-d23b9d9dc047
-  ws-opts:
-    headers:
-      Host: PAneljadid.mookoMEilz.homes
-    path: /snsk
-- name: 24|_CN_->_US__2
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10838
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
