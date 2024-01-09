@@ -1,4 +1,10 @@
 proxies:
+- cipher: aes-256-cfb
+  name: 18|FR-51.159.111.208-020
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.159.111.208
+  type: ss
 - alterId: 0
   cipher: auto
   name: 8|法国_121320069
@@ -11,18 +17,27 @@ proxies:
   uuid: 82447abf-dcb9-408a-9ca6-79e0a7698d08
 - alterId: 0
   cipher: auto
-  name: 17|🇫🇷_FR_法国_fnet00
+  name: 18|FR-51.91.39.11-137
   network: ws
-  port: '80'
-  server: fd.shabijichang.com
+  port: 34140
+  server: kom5649l.sbs
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ccfc884c-896e-4280-a11e-c6a3bb6e9fe9
+  ws-headers:
+    Host: kom5649l.sbs
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 8|法国_121320070
+  network: tcp
+  port: '29776'
+  server: 146.59.147.250
   servername: ''
   tls: false
   type: vmess
-  uuid: 4732350b-14a1-421e-985a-155a78e9ae80
-  ws-opts:
-    headers:
-      Host: bl.shabijichang.com
-    path: /
+  uuid: 82447abf-dcb9-408a-9ca6-79e0a7698d08
 - alterId: 0
   cipher: auto
   name: 23,24|13|🇫🇷 法国|频道:@ripaojiedian
@@ -35,46 +50,6 @@ proxies:
   ws-opts:
     headers:
       Host: fr-01.jikuai.xyz
-    path: /
-- cipher: aes-256-cfb
-  name: 18|FR-195.154.169.198-011
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 195.154.169.198
-  type: ss
-- cipher: aes-256-cfb
-  name: 18|FR-51.159.111.208-023
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.159.111.208
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 17|🇫🇷_FR_法国_free4allVPN
-  network: ws
-  port: '443'
-  server: phosphorylative.aurorainiceland.com
-  servername: phosphorylative.aurorainiceland.com
-  tls: true
-  type: vmess
-  uuid: 6388bd92-6cbc-4b72-a9a6-931f071d0ffa
-  ws-opts:
-    headers:
-      Host: phosphorylative.aurorainiceland.com
-    path: /nimvws
-- alterId: 0
-  cipher: auto
-  name: 23,25,26|14|法国|频道:@ripaojiedian
-  network: ws
-  port: '2082'
-  server: fr-01.jikuai.xyz
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2108facb-cddc-4c62-88b3-26c79f308d2e
-  ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -90,54 +65,28 @@ proxies:
     headers:
       Host: bl.shabijichang.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 18|FR-193.70.85.191-044
-  network: ws
-  port: 80
-  server: 193.70.85.191
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ed579687-5171-46ad-a89a-bd06af52705d
-  ws-headers:
-    Host: Irancell.ir
-  ws-path: /vmess
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 17|🇫🇷_FR_法国_oneclickvpnkeys
-  network: tcp
-  port: '443'
-  server: 135.125.134.177
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d4734bd8-906b-4426-b9ff-9dbc388d56da
-- cipher: aes-256-gcm
-  name: 18|FR-51.158.150.168-019
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 51.158.150.168
-  type: ss
 - cipher: aes-256-cfb
-  name: 18,27|FR-195.154.185.174-017
+  name: 18,27|FR-195.154.185.174-001
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.185.174
   type: ss
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 13|法国_【YouTube-VV科技】
-  network: ws
-  port: 443
-  server: 156.249.18.25
-  tls: true
+  name: 23|11|🔒 VM-TCP-NA 🇫🇷 FR-141.94.86...
+  network: tcp
+  port: '10050'
+  server: 141.94.86.92
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.49291261.xyz
-    path: /path/1693992821776
+  uuid: 9b3b40c1-3b11-4094-8553-a02f2e01f24c
+- cipher: aes-256-cfb
+  name: 18|FR-195.154.169.198-007
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.169.198
+  type: ss
 - name: 22|_FR_
   network: tcp
   password: telegram-id-directvpn
@@ -155,11 +104,98 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 8|法国_121320070
-  network: tcp
-  port: '29776'
-  server: 146.59.147.250
+  name: 23,25,26|14|法国|频道:@ripaojiedian
+  network: ws
+  port: '2082'
+  server: fr-01.jikuai.xyz
   servername: ''
   tls: false
   type: vmess
-  uuid: 82447abf-dcb9-408a-9ca6-79e0a7698d08
+  uuid: 2108facb-cddc-4c62-88b3-26c79f308d2e
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 17|🇫🇷_FR_法国_oneclickvpnkeys
+  network: tcp
+  port: '443'
+  server: 135.125.134.177
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d4734bd8-906b-4426-b9ff-9dbc388d56da
+- alterId: 0
+  cipher: auto
+  name: 18|FR-51.91.39.11-140
+  network: ws
+  port: 34140
+  server: 51.91.39.11
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ccfc884c-896e-4280-a11e-c6a3bb6e9fe9
+  ws-headers:
+    Host: 51.91.39.11
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 18|FR-193.70.85.191-037
+  network: ws
+  port: 80
+  server: 193.70.85.191
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ed579687-5171-46ad-a89a-bd06af52705d
+  ws-headers:
+    Host: Irancell.ir
+  ws-path: /vmess
+- cipher: aes-256-cfb
+  name: 18,27|FR-51.15.27.48-023
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.27.48
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 17|🇫🇷_FR_法国_free4allVPN
+  network: ws
+  port: '443'
+  server: phosphorylative.aurorainiceland.com
+  servername: phosphorylative.aurorainiceland.com
+  tls: true
+  type: vmess
+  uuid: 6388bd92-6cbc-4b72-a9a6-931f071d0ffa
+  ws-opts:
+    headers:
+      Host: phosphorylative.aurorainiceland.com
+    path: /nimvws
+- alterId: 0
+  cipher: auto
+  name: 17|🇫🇷_FR_法国_fnet00
+  network: ws
+  port: '80'
+  server: fd.shabijichang.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4732350b-14a1-421e-985a-155a78e9ae80
+  ws-opts:
+    headers:
+      Host: bl.shabijichang.com
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 13|法国_【YouTube-VV科技】
+  network: ws
+  port: 443
+  server: 156.249.18.25
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.49291261.xyz
+    path: /path/1693992821776
