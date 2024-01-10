@@ -9,21 +9,39 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 19|🇫🇷_FR_法国_oneclickvpnkeys
-  network: tcp
+  cipher: auto
+  name: 19|🇫🇷_FR_法国_free4allVPN
+  network: ws
   port: '443'
-  server: 135.125.134.177
+  server: phosphorylative.aurorainiceland.com
+  servername: phosphorylative.aurorainiceland.com
+  tls: true
+  type: vmess
+  uuid: 6388bd92-6cbc-4b72-a9a6-931f071d0ffa
+  ws-opts:
+    headers:
+      Host: phosphorylative.aurorainiceland.com
+    path: /nimvws
+- alterId: 0
+  cipher: auto
+  name: 10|法国_121320070
+  network: tcp
+  port: '29776'
+  server: 146.59.147.250
   servername: ''
   tls: false
   type: vmess
-  uuid: d4734bd8-906b-4426-b9ff-9dbc388d56da
-- cipher: aes-256-cfb
-  name: 20|FR-51.159.111.208-215
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.159.111.208
-  type: ss
+  uuid: 82447abf-dcb9-408a-9ca6-79e0a7698d08
+- alterId: 0
+  cipher: auto
+  name: 10|法国_121320069
+  network: ''
+  port: '29776'
+  server: 146.59.147.250
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 82447abf-dcb9-408a-9ca6-79e0a7698d08
 - alterId: 0
   cipher: auto
   name: 19|🇫🇷_FR_法国_CollectorDonate
@@ -38,6 +56,44 @@ proxies:
     headers:
       Host: bl.shabijichang.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: 25|13|🔒 VM-TCP-NA 🇫🇷 FR-141.94.86...
+  network: tcp
+  port: '10050'
+  server: 141.94.86.92
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9b3b40c1-3b11-4094-8553-a02f2e01f24c
+- cipher: aes-256-cfb
+  name: 20|FR-195.154.185.174-211
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.185.174
+  type: ss
+- name: 1|_FR_
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.38.208.28
+  skip-cert-verify: true
+  sni: trj.rollingnext.co.uk
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 20|FR-51.77.212.145-024
+  network: ws
+  port: 80
+  server: 51.77.212.145
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5f6e42bb-2fd1-478b-8f0f-e52b2d6f7652
+  ws-headers:
+    Host: 51.77.212.145
+  ws-path: /vmess
 - alterId: 64
   cipher: auto
   name: 15|法国_【YouTube-VV科技】
@@ -57,29 +113,12 @@ proxies:
   port: 4444
   server: 145.239.6.202
   type: ss
-- name: 20,26,29|FR-13.38.208.28-000
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.38.208.28
-  skip-cert-verify: true
-  sni: trj.rollingnext.co.uk
-  type: trojan
 - cipher: aes-256-cfb
-  name: 20|FR-195.154.185.174-205
+  name: 20|FR-51.159.111.208-221
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 195.154.185.174
+  server: 51.159.111.208
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 25|13|🔒 VM-TCP-NA 🇫🇷 FR-141.94.86...
-  network: tcp
-  port: '10050'
-  server: 141.94.86.92
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9b3b40c1-3b11-4094-8553-a02f2e01f24c
 - alterId: 0
   cipher: auto
   name: 28|法国1
@@ -94,28 +133,41 @@ proxies:
       Host: fr.wumaojichang.com
     path: /
 - alterId: 0
-  cipher: auto
-  name: 10|法国_121320070
+  cipher: aes-128-gcm
+  name: 19|🇫🇷_FR_法国_oneclickvpnkeys
   network: tcp
-  port: '29776'
-  server: 146.59.147.250
+  port: '443'
+  server: 135.125.134.177
   servername: ''
   tls: false
   type: vmess
-  uuid: 82447abf-dcb9-408a-9ca6-79e0a7698d08
+  uuid: d4734bd8-906b-4426-b9ff-9dbc388d56da
 - alterId: 0
   cipher: auto
-  name: 20|FR-92.223.55.4-240
+  name: 28|法国2
   network: ws
-  port: 443
-  server: 92.223.55.4
-  skip-cert-verify: true
-  tls: true
+  port: '2086'
+  server: go.wumaojichang.com
+  tls: false
   type: vmess
-  uuid: 8dbd3db3-c530-4ec0-a929-be4da535f663
+  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
+  ws-opts:
+    headers:
+      Host: fr.wumaojichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 20|FR-193.70.85.191-025
+  network: ws
+  port: 80
+  server: 193.70.85.191
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ed579687-5171-46ad-a89a-bd06af52705d
   ws-headers:
-    Host: soft99.gotdns.ch
-  ws-path: /@forwardv2ray
+    Host: 193.70.85.191
+  ws-path: /vmess
 - alterId: 0
   cipher: auto
   name: 19|🇫🇷_FR_法国_fnet00
@@ -130,49 +182,23 @@ proxies:
     headers:
       Host: bl.shabijichang.com
     path: /
-- name: 1|_FR_
-  network: tcp
+- name: 20,26,29|FR-13.38.208.28-000
   password: telegram-id-privatevpns
   port: 22222
   server: 13.38.208.28
   skip-cert-verify: true
   sni: trj.rollingnext.co.uk
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 28|法国6
+  name: 20|FR-92.223.55.4-246
   network: ws
-  port: '2086'
-  server: go.wumaojichang.com
-  tls: false
-  type: vmess
-  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
-  ws-opts:
-    headers:
-      Host: fr.wumaojichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|法国_121320069
-  network: ''
-  port: '29776'
-  server: 146.59.147.250
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 82447abf-dcb9-408a-9ca6-79e0a7698d08
-- alterId: 0
-  cipher: auto
-  name: 19|🇫🇷_FR_法国_free4allVPN
-  network: ws
-  port: '443'
-  server: phosphorylative.aurorainiceland.com
-  servername: phosphorylative.aurorainiceland.com
+  port: 443
+  server: 92.223.55.4
+  skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 6388bd92-6cbc-4b72-a9a6-931f071d0ffa
-  ws-opts:
-    headers:
-      Host: phosphorylative.aurorainiceland.com
-    path: /nimvws
+  uuid: 8dbd3db3-c530-4ec0-a929-be4da535f663
+  ws-headers:
+    Host: soft99.gotdns.ch
+  ws-path: /@forwardv2ray
