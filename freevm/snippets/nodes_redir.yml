@@ -1,9 +1,98 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 28|🇭🇰 香港 02-中转
+  name: 28|🇺🇸美国 01-中转
   network: ws
-  port: '21031'
+  port: '21000'
+  server: us.lianjianode.cc
+  tls: false
+  type: vmess
+  uuid: 5f915245-7006-4f95-805e-ec4f9f3d9c60
+  ws-opts:
+    headers:
+      Host: us1.luodi.xyz
+    path: /usa
+- name: 24|_CN_->_US__1
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10837
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 28|🇯🇵 日本 03-中转
+  network: ws
+  port: '21012'
+  server: jp.lianjianode.cc
+  tls: false
+  type: vmess
+  uuid: 5f915245-7006-4f95-805e-ec4f9f3d9c60
+  ws-opts:
+    headers:
+      Host: jp1.luodi.xyz
+    path: /japan
+- alterId: 0
+  cipher: auto
+  name: 1,25|_US_->_HK_
+  network: ws
+  port: 2086
+  server: go.wumaojichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
+  ws-opts:
+    headers:
+      host: au.wumaojichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇸🇬新加坡 02-中转
+  network: ws
+  port: '21021'
+  server: sg.lianjianode.cc
+  tls: false
+  type: vmess
+  uuid: 5f915245-7006-4f95-805e-ec4f9f3d9c60
+  ws-opts:
+    headers:
+      Host: sg1.luodi.xyz
+    path: /singapore
+- alterId: 0
+  cipher: auto
+  name: 1,25|_US_->_FR_
+  network: ws
+  port: 2086
+  server: fr.wumaojichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
+  ws-opts:
+    headers:
+      host: fr.wumaojichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇭🇰 香港 03-中转
+  network: ws
+  port: '21032'
+  server: hk.lianjianode.cc
+  tls: false
+  type: vmess
+  uuid: 5f915245-7006-4f95-805e-ec4f9f3d9c60
+  ws-opts:
+    headers:
+      Host: hk1.luodi.xyz
+    path: /hongkong
+- alterId: 0
+  cipher: auto
+  name: 28|🇭🇰 香港 04-中转
+  network: ws
+  port: '21033'
   server: hk.lianjianode.cc
   tls: false
   type: vmess
@@ -21,182 +110,15 @@ proxies:
   sni: alibaba-node.cn
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|🇺🇸美国 02-中转
-  network: ws
-  port: '34175'
-  server: us.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: 5f915245-7006-4f95-805e-ec4f9f3d9c60
-  ws-opts:
-    headers:
-      Host: us1.luodi.xyz
-    path: /usa
-- name: 24|_CN_->_UA_
+- name: 24|_CN_->_US__3
   network: tcp
   password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10845
+  port: 10850
   server: other.kunlun-ppg.com
   skip-cert-verify: true
   sni: alibaba-node.cn
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|🇯🇵 日本 04-中转
-  network: ws
-  port: '21013'
-  server: jp.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: 5f915245-7006-4f95-805e-ec4f9f3d9c60
-  ws-opts:
-    headers:
-      Host: jp1.luodi.xyz
-    path: /japan
-- alterId: 0
-  cipher: auto
-  name: 28|🇯🇵 日本 03-中转
-  network: ws
-  port: '21012'
-  server: jp.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: 5f915245-7006-4f95-805e-ec4f9f3d9c60
-  ws-opts:
-    headers:
-      Host: jp1.luodi.xyz
-    path: /japan
-- alterId: 0
-  cipher: auto
-  name: 28|🇯🇵 日本 01-中转
-  network: ws
-  port: '21010'
-  server: jp.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: 5f915245-7006-4f95-805e-ec4f9f3d9c60
-  ws-opts:
-    headers:
-      Host: jp1.luodi.xyz
-    path: /japan
-- alterId: 0
-  cipher: auto
-  name: 28|🇭🇰香港 01-中转
-  network: ws
-  port: '21030'
-  server: hk.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: 5f915245-7006-4f95-805e-ec4f9f3d9c60
-  ws-opts:
-    headers:
-      Host: hk1.luodi.xyz
-    path: /hongkong
-- alterId: 0
-  cipher: auto
-  name: 28|🇯🇵日本 02-中转
-  network: ws
-  port: '21011'
-  server: jp.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: 5f915245-7006-4f95-805e-ec4f9f3d9c60
-  ws-opts:
-    headers:
-      Host: jp1.luodi.xyz
-    path: /japan
-- alterId: 0
-  cipher: auto
-  name: 1,25|_US_->_FR_
-  network: ws
-  port: 2086
-  server: fr.wumaojichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
-  ws-opts:
-    headers:
-      host: fr.wumaojichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24|_SG_->_US_
-  network: ws
-  port: 80
-  server: 8.222.198.105
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
-  ws-opts:
-    headers:
-      host: warp.chigua.tk
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🇸🇬新加坡 01-中转
-  network: ws
-  port: '21020'
-  server: sg.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: 5f915245-7006-4f95-805e-ec4f9f3d9c60
-  ws-opts:
-    headers:
-      Host: sg1.luodi.xyz
-    path: /singapore
-- alterId: 0
-  cipher: auto
-  name: 0,2,3,4,25,28,30|🇭🇰 _US_美国->🇭🇰_HK_香港
-  network: ws
-  port: '2086'
-  server: go.wumaojichang.com
-  tls: false
-  type: vmess
-  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
-  ws-opts:
-    headers:
-      Host: au.wumaojichang.com
-    path: /
-- name: 24|_CN_->_US__1
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10837
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 6,7,13,14,16,21,25,28|🇺🇸_US_美国->🇺🇦_UA_乌克兰
-  network: ws
-  port: 80
-  server: 104.17.2.183
-  tls: false
-  type: vmess
-  uuid: f256a3ae-0f85-4a1d-d0cd-2d0b4b73f4f1
-  ws-opts:
-    headers:
-      Host: v3ra3do.wakeuptimerap.shop
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0,2,3,4,25,28,30|🇺🇸 _US_美国->🇫🇷_FR_法国
-  network: ws
-  port: '2086'
-  server: fr.wumaojichang.com
-  tls: false
-  type: vmess
-  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
-  ws-opts:
-    headers:
-      Host: fr.wumaojichang.com
-    path: /
 - alterId: 0
   cipher: auto
   name: 24|_US_->_IN_
@@ -213,20 +135,72 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|🇸🇬新加坡 02-中转
+  name: 28|🇯🇵 日本 01-中转
   network: ws
-  port: '21021'
-  server: sg.lianjianode.cc
+  port: '21010'
+  server: jp.lianjianode.cc
   tls: false
   type: vmess
   uuid: 5f915245-7006-4f95-805e-ec4f9f3d9c60
   ws-opts:
     headers:
-      Host: sg1.luodi.xyz
-    path: /singapore
+      Host: jp1.luodi.xyz
+    path: /japan
 - alterId: 0
   cipher: auto
-  name: '7,11,14,25,28|🇺🇸_US_美国->🇺🇦_UA_乌克兰 #1'
+  name: 0,2,3,4,25,28,30|🇭🇰 _US_美国->🇭🇰_HK_香港
+  network: ws
+  port: '2086'
+  server: go.wumaojichang.com
+  tls: false
+  type: vmess
+  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
+  ws-opts:
+    headers:
+      Host: au.wumaojichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 6,7,13,14,16,21,25,28|🇺🇸_US_美国->🇺🇦_UA_乌克兰
+  network: ws
+  port: 80
+  server: 104.17.2.183
+  tls: false
+  type: vmess
+  uuid: f256a3ae-0f85-4a1d-d0cd-2d0b4b73f4f1
+  ws-opts:
+    headers:
+      Host: v3ra3do.wakeuptimerap.shop
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇯🇵 日本 04-中转
+  network: ws
+  port: '21013'
+  server: jp.lianjianode.cc
+  tls: false
+  type: vmess
+  uuid: 5f915245-7006-4f95-805e-ec4f9f3d9c60
+  ws-opts:
+    headers:
+      Host: jp1.luodi.xyz
+    path: /japan
+- alterId: 0
+  cipher: auto
+  name: 0,2,3,4,25,28,30|🇺🇸 _US_美国->🇫🇷_FR_法国
+  network: ws
+  port: '2086'
+  server: fr.wumaojichang.com
+  tls: false
+  type: vmess
+  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
+  ws-opts:
+    headers:
+      Host: fr.wumaojichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '7,14,25,28|🇺🇸_US_美国->🇺🇦_UA_乌克兰 #1'
   network: ws
   port: 80
   server: glasco.fx-trader.shop
@@ -239,45 +213,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,25|_US_->_HK_
+  name: 28|🇺🇸美国 02-中转
   network: ws
-  port: 2086
-  server: go.wumaojichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
-  ws-opts:
-    headers:
-      host: au.wumaojichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🇭🇰 香港 04-中转
-  network: ws
-  port: '21033'
-  server: hk.lianjianode.cc
-  tls: false
-  type: vmess
-  uuid: 5f915245-7006-4f95-805e-ec4f9f3d9c60
-  ws-opts:
-    headers:
-      Host: hk1.luodi.xyz
-    path: /hongkong
-- name: 24|_CN_->_US__3
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10850
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|🇺🇸美国 01-中转
-  network: ws
-  port: '21000'
+  port: '34175'
   server: us.lianjianode.cc
   tls: false
   type: vmess
@@ -288,9 +226,9 @@ proxies:
     path: /usa
 - alterId: 0
   cipher: auto
-  name: 28|🇭🇰 香港 03-中转
+  name: 28|🇭🇰香港 01-中转
   network: ws
-  port: '21032'
+  port: '21030'
   server: hk.lianjianode.cc
   tls: false
   type: vmess
@@ -299,3 +237,65 @@ proxies:
     headers:
       Host: hk1.luodi.xyz
     path: /hongkong
+- name: 24|_CN_->_UA_
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10845
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 28|🇭🇰 香港 02-中转
+  network: ws
+  port: '21031'
+  server: hk.lianjianode.cc
+  tls: false
+  type: vmess
+  uuid: 5f915245-7006-4f95-805e-ec4f9f3d9c60
+  ws-opts:
+    headers:
+      Host: hk1.luodi.xyz
+    path: /hongkong
+- alterId: 0
+  cipher: auto
+  name: 24|_SG_->_US_
+  network: ws
+  port: 80
+  server: 8.222.198.105
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  ws-opts:
+    headers:
+      host: warp.chigua.tk
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇯🇵日本 02-中转
+  network: ws
+  port: '21011'
+  server: jp.lianjianode.cc
+  tls: false
+  type: vmess
+  uuid: 5f915245-7006-4f95-805e-ec4f9f3d9c60
+  ws-opts:
+    headers:
+      Host: jp1.luodi.xyz
+    path: /japan
+- alterId: 0
+  cipher: auto
+  name: 28|🇸🇬新加坡 01-中转
+  network: ws
+  port: '21020'
+  server: sg.lianjianode.cc
+  tls: false
+  type: vmess
+  uuid: 5f915245-7006-4f95-805e-ec4f9f3d9c60
+  ws-opts:
+    headers:
+      Host: sg1.luodi.xyz
+    path: /singapore
