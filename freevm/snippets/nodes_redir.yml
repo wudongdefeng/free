@@ -1,17 +1,64 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 24|_US_->_IN_
+  name: 24|_SG_->_US_
   network: ws
   port: 80
-  server: mm2.shabijichang.com
+  server: 8.222.198.105
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
   ws-opts:
     headers:
-      host: mm2.shabijichang.com
+      host: warp.chigua.tk
+    path: /
+- name: 24|_CN_->_US__3
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10850
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: mahanvip.mahantu.top
+  name: 1|_US_->_DE_
+  network: grpc
+  password: Mahanvpn
+  port: 443
+  server: 104.17.186.227
+  skip-cert-verify: false
+  sni: mahanvip.mahantu.top
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 0,2,3,4,6,7,14,21,25,28,30|🇺🇸 _US_美国->🇨🇦_CA_加拿大
+  network: ws
+  port: '80'
+  server: 162.159.200.3
+  tls: false
+  type: vmess
+  uuid: b2d821b2-f727-4e67-898d-1a29bf41ee0d
+  ws-opts:
+    headers:
+      Host: ca3.889611.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '0,2,3,4,6,7,14,21,25,28,30|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #1'
+  network: ws
+  port: '80'
+  server: 162.159.200.4
+  tls: false
+  type: vmess
+  uuid: b2d821b2-f727-4e67-898d-1a29bf41ee0d
+  ws-opts:
+    headers:
+      Host: ca3.889611.com
     path: /
 - name: 24|_CN_->_UA_
   network: tcp
@@ -24,18 +71,39 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 1,25|_LY_->_TR_
+  name: 0,2,3,4,6,7,14,21,25,28,30|🇺🇸 _US_美国->🇺🇦_UA_乌克兰
   network: ws
-  port: 80
+  port: '80'
+  server: 104.17.2.183
+  tls: false
+  type: vmess
+  uuid: f256a3ae-0f85-4a1d-d0cd-2d0b4b73f4f1
+  ws-opts:
+    headers:
+      Host: v3ra3do.wakeuptimerap.shop
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0,2,3,4,6,7,11,14,21,25,28,30|🇹🇷 _LY_利比亚->🇹🇷_TR_土耳其
+  network: ws
+  port: '80'
   server: 197.215.140.234
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: b82493e3-07b4-4cf2-b585-965575cfeb32
   ws-opts:
     headers:
-      host: softiri.serveirc.com
+      Host: softiri.serveirc.com
     path: /@forwardv2ray
+- name: 24|_CN_->_US__1
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10837
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 1,25|_US_->_CA__1
@@ -66,111 +134,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,2,3,4,6,7,21,25,28,30|🇺🇸 _US_美国->🇨🇦_CA_加拿大
-  network: ws
-  port: '80'
-  server: 162.159.200.3
-  tls: false
-  type: vmess
-  uuid: b2d821b2-f727-4e67-898d-1a29bf41ee0d
-  ws-opts:
-    headers:
-      Host: ca3.889611.com
-    path: /
-- name: 24|_CN_->_US__1
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10837
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 24|_SG_->_US_
-  network: ws
-  port: 80
-  server: 8.222.198.105
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
-  ws-opts:
-    headers:
-      host: warp.chigua.tk
-    path: /
-- name: 24|_CN_->_US__3
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10850
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: 24|_CN_->_US__2
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10838
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mahanvip.mahantu.top
-  name: 1|_US_->_DE_
-  network: grpc
-  password: Mahanvpn
-  port: 443
-  server: 104.17.186.227
-  skip-cert-verify: false
-  sni: mahanvip.mahantu.top
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 0,2,3,4,6,7,21,25,28,30|🇹🇷 _LY_利比亚->🇹🇷_TR_土耳其
-  network: ws
-  port: '80'
-  server: 197.215.140.234
-  tls: false
-  type: vmess
-  uuid: b82493e3-07b4-4cf2-b585-965575cfeb32
-  ws-opts:
-    headers:
-      Host: softiri.serveirc.com
-    path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: 7,13,16,21,25,28|🇸🇪_SE_瑞典->🇳🇱_NL_荷兰
-  network: ws
-  port: 8880
-  server: 185.146.173.27
-  tls: false
-  type: vmess
-  uuid: 8ec29f7f-edee-4065-bec5-b31d10c2d7e4
-  ws-opts:
-    headers:
-      Host: telegram.shadowbrowse.online
-    path: /main
-- alterId: 0
-  cipher: auto
-  name: 14,28|🇺🇸_US_美国->🇫🇷_FR_法国
-  network: ws
-  port: 443
-  server: hexsen.com
-  tls: true
-  type: vmess
-  uuid: de04add9-5c68-8bab-950c-08cd5320df18
-  ws-opts:
-    headers:
-      Host: sources-routines-switching-palmer.trycloudflare.com
-    path: /argo-vmess?ed=2048
-- alterId: 0
-  cipher: auto
   name: 1,25|_US_->_CA__2
   network: ws
   port: 80
@@ -185,27 +148,51 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,2,3,4,6,7,21,25,28,30|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #1'
+  name: 7,11,13,14,16,21,25,28|🇸🇪_SE_瑞典->🇳🇱_NL_荷兰
   network: ws
-  port: '80'
-  server: 162.159.200.4
+  port: 8880
+  server: 185.146.173.27
   tls: false
   type: vmess
-  uuid: b2d821b2-f727-4e67-898d-1a29bf41ee0d
+  uuid: 8ec29f7f-edee-4065-bec5-b31d10c2d7e4
   ws-opts:
     headers:
-      Host: ca3.889611.com
-    path: /
+      Host: telegram.shadowbrowse.online
+    path: /main
 - alterId: 0
   cipher: auto
-  name: 0,2,3,4,6,7,21,25,28,30|🇺🇸 _US_美国->🇺🇦_UA_乌克兰
+  name: 1,25|_LY_->_TR_
   network: ws
-  port: '80'
-  server: 104.17.2.183
+  port: 80
+  server: 197.215.140.234
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: f256a3ae-0f85-4a1d-d0cd-2d0b4b73f4f1
+  uuid: b82493e3-07b4-4cf2-b585-965575cfeb32
   ws-opts:
     headers:
-      Host: v3ra3do.wakeuptimerap.shop
+      host: softiri.serveirc.com
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 24|_US_->_IN_
+  network: ws
+  port: 80
+  server: mm2.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: mm2.shabijichang.com
     path: /
+- name: 24|_CN_->_US__2
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10838
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
