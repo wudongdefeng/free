@@ -1,26 +1,54 @@
 proxies:
-- name: 24|_CN_->_US__1
+- alterId: 0
+  cipher: auto
+  name: '0,2,3,4,6,7,21,25,28,30|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #1'
+  network: ws
+  port: '80'
+  server: 162.159.200.4
+  tls: false
+  type: vmess
+  uuid: b2d821b2-f727-4e67-898d-1a29bf41ee0d
+  ws-opts:
+    headers:
+      Host: ca3.889611.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1,25|_LY_->_TR_
+  network: ws
+  port: 80
+  server: 197.215.140.234
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b82493e3-07b4-4cf2-b585-965575cfeb32
+  ws-opts:
+    headers:
+      host: softiri.serveirc.com
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 1,25|_US_->_CA__2
+  network: ws
+  port: 80
+  server: 162.159.200.4
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b2d821b2-f727-4e67-898d-1a29bf41ee0d
+  ws-opts:
+    headers:
+      host: ca3.889611.com
+    path: /
+- name: 24|_CN_->_UA_
   network: tcp
   password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10837
+  port: 10845
   server: other.kunlun-ppg.com
   skip-cert-verify: true
   sni: alibaba-node.cn
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 7,11,13,16,21,25,28|🇸🇪_SE_瑞典->🇳🇱_NL_荷兰
-  network: ws
-  port: 8880
-  server: 185.146.173.27
-  tls: false
-  type: vmess
-  uuid: 8ec29f7f-edee-4065-bec5-b31d10c2d7e4
-  ws-opts:
-    headers:
-      Host: telegram.shadowbrowse.online
-    path: /main
 - alterId: 0
   cipher: auto
   name: 24|_US_->_IN_
@@ -46,26 +74,44 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '0,2,3,4,6,7,21,25,28,30|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #1'
+  name: 7,13,16,21,25,28|🇸🇪_SE_瑞典->🇳🇱_NL_荷兰
   network: ws
-  port: '80'
-  server: 162.159.200.4
+  port: 8880
+  server: 185.146.173.27
   tls: false
   type: vmess
-  uuid: b2d821b2-f727-4e67-898d-1a29bf41ee0d
+  uuid: 8ec29f7f-edee-4065-bec5-b31d10c2d7e4
   ws-opts:
     headers:
-      Host: ca3.889611.com
-    path: /
-- name: 24|_CN_->_US__3
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10850
-  server: other.kunlun-ppg.com
+      Host: telegram.shadowbrowse.online
+    path: /main
+- alterId: 0
+  cipher: auto
+  name: 0,2,3,4,6,7,21,25,28,30|🇹🇷 _LY_利比亚->🇹🇷_TR_土耳其
+  network: ws
+  port: '80'
+  server: 197.215.140.234
+  tls: false
+  type: vmess
+  uuid: b82493e3-07b4-4cf2-b585-965575cfeb32
+  ws-opts:
+    headers:
+      Host: softiri.serveirc.com
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 24|_SG_->_US_
+  network: ws
+  port: 80
+  server: 8.222.198.105
   skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
+  tls: false
+  type: vmess
+  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  ws-opts:
+    headers:
+      host: warp.chigua.tk
+    path: /
 - grpc-opts:
     grpc-service-name: mahanvip.mahantu.top
   name: 1|_US_->_DE_
@@ -80,18 +126,40 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 1,25|_LY_->_TR_
+  name: 25|6|🇦🇺_AU_澳大利亚->🇦🇪_AE_阿联酋
+  network: ws
+  port: 13914
+  server: 202.139.228.24
+  tls: true
+  type: vmess
+  uuid: a3dfbdd6-7e01-4735-9973-e3dd056c129e
+  ws-opts:
+    headers:
+      Host: db.changding.tech
+    path: /vm-tls1-tls1?ed=2048
+- name: 24|_CN_->_US__1
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10837
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 1,25|_US_->_UA_
   network: ws
   port: 80
-  server: 197.215.140.234
+  server: 104.17.2.183
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: b82493e3-07b4-4cf2-b585-965575cfeb32
+  uuid: f256a3ae-0f85-4a1d-d0cd-2d0b4b73f4f1
   ws-opts:
     headers:
-      host: softiri.serveirc.com
-    path: /@forwardv2ray
+      host: v3ra3do.wakeuptimerap.shop
+    path: /
 - alterId: 0
   cipher: auto
   name: 0,2,3,4,6,7,21,25,28,30|🇺🇸 _US_美国->🇨🇦_CA_加拿大
@@ -119,20 +187,15 @@ proxies:
     headers:
       host: ca3.889611.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 1,25|_US_->_UA_
-  network: ws
-  port: 80
-  server: 104.17.2.183
+- name: 24|_CN_->_US__3
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10850
+  server: other.kunlun-ppg.com
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f256a3ae-0f85-4a1d-d0cd-2d0b4b73f4f1
-  ws-opts:
-    headers:
-      host: v3ra3do.wakeuptimerap.shop
-    path: /
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 14,28|🇺🇸_US_美国->🇫🇷_FR_法国
@@ -158,67 +221,4 @@ proxies:
   ws-opts:
     headers:
       Host: v3ra3do.wakeuptimerap.shop
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0,2,3,4,6,7,21,25,28,30|🇹🇷 _LY_利比亚->🇹🇷_TR_土耳其
-  network: ws
-  port: '80'
-  server: 197.215.140.234
-  tls: false
-  type: vmess
-  uuid: b82493e3-07b4-4cf2-b585-965575cfeb32
-  ws-opts:
-    headers:
-      Host: softiri.serveirc.com
-    path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: 25|6|🇦🇺_AU_澳大利亚->🇦🇪_AE_阿联酋
-  network: ws
-  port: 13914
-  server: 202.139.228.24
-  tls: true
-  type: vmess
-  uuid: a3dfbdd6-7e01-4735-9973-e3dd056c129e
-  ws-opts:
-    headers:
-      Host: db.changding.tech
-    path: /vm-tls1-tls1?ed=2048
-- name: 24|_CN_->_UA_
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10845
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 24|_SG_->_US_
-  network: ws
-  port: 80
-  server: 8.222.198.105
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
-  ws-opts:
-    headers:
-      host: warp.chigua.tk
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1,25|_US_->_CA__2
-  network: ws
-  port: 80
-  server: 162.159.200.4
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b2d821b2-f727-4e67-898d-1a29bf41ee0d
-  ws-opts:
-    headers:
-      host: ca3.889611.com
     path: /
