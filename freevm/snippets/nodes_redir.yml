@@ -1,36 +1,4 @@
 proxies:
-- name: 24|_CN_->_US__3
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10850
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: 24|_CN_->_UA_
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10845
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 1,25|_US_->_DE_
-  network: ws
-  port: 443
-  server: tgju.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 562ae412-d7b5-4f1e-dd0d-82e073193b21
-  ws-opts:
-    headers:
-      host: cdn.pokerad.fun
-    path: /fa
 - alterId: 0
   cipher: auto
   name: 2,25|🇺🇸_US_美国->🇨🇦_CA_加拿大
@@ -46,6 +14,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 24|_US_->_IN_
+  network: ws
+  port: 80
+  server: mm2.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: mm2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 2,25|🇺🇸_US_美国->🇺🇦_UA_乌克兰
   network: ws
   port: 80
@@ -57,9 +39,18 @@ proxies:
     headers:
       Host: v3ra3do.wakeuptimerap.shop
     path: /
+- name: 24|_CN_->_US__3
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10850
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 0,3,4,6,7,11,14,21,25,28,30|🇺🇸 _US_美国->🇩🇪_DE_德国
+  name: 0,3,4,6,7,14,21,25,28,30|🇺🇸 _US_美国->🇩🇪_DE_德国
   network: ws
   port: '443'
   server: tgju.org
@@ -70,15 +61,6 @@ proxies:
     headers:
       Host: cdn.pokerad.fun
     path: /fa
-- name: 24|_CN_->_US__2
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10838
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
 - name: 24|_CN_->_US__1
   network: tcp
   password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
@@ -117,18 +99,49 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|_SG_->_US_
+  name: 1,25|_US_->_DE_
   network: ws
-  port: 80
-  server: 8.222.198.105
+  port: 443
+  server: tgju.org
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
-  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  uuid: 562ae412-d7b5-4f1e-dd0d-82e073193b21
   ws-opts:
     headers:
-      host: warp.chigua.tk
-    path: /
+      host: cdn.pokerad.fun
+    path: /fa
+- name: 24|_CN_->_UA_
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10845
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 7,14,25,28|🇮🇶_IQ_伊拉克->🇹🇷_TR_土耳其
+  network: ws
+  port: 443
+  server: 130.193.166.2
+  tls: true
+  type: vmess
+  uuid: 7682b778-b64b-408b-8fb2-61d7c7fc43e5
+  ws-opts:
+    headers:
+      Host: soft8989.redirectme.net
+    path: /@forwardv2ray
+- name: 24|_CN_->_US__2
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10838
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 0,3,4,6,7,14,21,25,28,30|🇭🇰 _SC_塞舌尔->🇭🇰_HK_香港
@@ -144,28 +157,15 @@ proxies:
     path: /changding-tls1?ed=2048
 - alterId: 0
   cipher: auto
-  name: 24|_US_->_IN_
+  name: 24|_SG_->_US_
   network: ws
   port: 80
-  server: mm2.shabijichang.com
+  server: 8.222.198.105
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
   ws-opts:
     headers:
-      host: mm2.shabijichang.com
+      host: warp.chigua.tk
     path: /
-- alterId: 0
-  cipher: auto
-  name: 7,14,25,28|🇮🇶_IQ_伊拉克->🇹🇷_TR_土耳其
-  network: ws
-  port: 443
-  server: 130.193.166.2
-  tls: true
-  type: vmess
-  uuid: 7682b778-b64b-408b-8fb2-61d7c7fc43e5
-  ws-opts:
-    headers:
-      Host: soft8989.redirectme.net
-    path: /@forwardv2ray
