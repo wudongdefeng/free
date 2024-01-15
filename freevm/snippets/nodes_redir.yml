@@ -1,48 +1,4 @@
 proxies:
-- name: 24|_CN_->_US__2
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10838
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: 24|_CN_->_US__3
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10850
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 6,21,25,28|🇺🇸_US_美国->🇩🇪_DE_德国
-  network: ws
-  port: 443
-  server: tgju.org
-  tls: true
-  type: vmess
-  uuid: 562ae412-d7b5-4f1e-dd0d-82e073193b21
-  ws-opts:
-    headers:
-      Host: cdn.pokerad.fun
-    path: /fa
-- alterId: 0
-  cipher: auto
-  name: '2,25|🇺🇸_US_美国->🇨🇦_CA_加拿大 #1'
-  network: ws
-  port: 80
-  server: 162.159.200.4
-  tls: false
-  type: vmess
-  uuid: b2d821b2-f727-4e67-898d-1a29bf41ee0d
-  ws-opts:
-    headers:
-      Host: ca3.889611.com
-    path: /
 - alterId: 0
   cipher: auto
   name: 24|_SG_->_US_
@@ -59,56 +15,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2,6,7,13,14,16,21,25,28|🇱🇾_LY_利比亚->🇹🇷_TR_土耳其
+  name: '2,25|🇺🇸_US_美国->🇨🇦_CA_加拿大 #1'
   network: ws
   port: 80
-  server: 197.215.140.234
+  server: 162.159.200.4
   tls: false
   type: vmess
-  uuid: b82493e3-07b4-4cf2-b585-965575cfeb32
+  uuid: b2d821b2-f727-4e67-898d-1a29bf41ee0d
   ws-opts:
     headers:
-      Host: softiri.serveirc.com
-    path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: 6,21,25,28|🇸🇨_SC_塞舌尔->🇭🇰_HK_香港
-  network: ws
-  port: 56120
-  server: 156.251.226.142
-  tls: true
-  type: vmess
-  uuid: a3dfbdd6-7e01-4735-9973-e3dd056c129e
-  ws-opts:
-    headers:
-      Host: hk-300.changding.tech
-    path: /changding-tls1?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 24|_US_->_IN_
-  network: ws
-  port: 80
-  server: mm2.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      host: mm2.shabijichang.com
+      Host: ca3.889611.com
     path: /
-- name: 24|_CN_->_US__1
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10837
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 0,3,4,7,13,14,16,21,25,28,30|🇺🇸 _US_美国->🇳🇱_NL_荷兰
+  name: 0,3,4,7,11,13,14,16,21,25,28,30|🇺🇸 _US_美国->🇳🇱_NL_荷兰
   network: ws
   port: '80'
   server: 104.21.79.143
@@ -119,42 +39,9 @@ proxies:
     headers:
       Host: periodically-microwave-firms-abc.trycloudflare.com
     path: ae8e857abf1d?ed=2048
-- name: 1|_US_->_RU_
-  network: ws
-  password: gviRoLVUKA5kBX2M0gJSvg
-  port: 2083
-  server: cdn-16.cdn2cdn.com
-  skip-cert-verify: true
-  sni: cdn16.cdn2cdn.com
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
-  name: 2,7,14,25,28|🇺🇸_US_美国->🇺🇦_UA_乌克兰
-  network: ws
-  port: 80
-  server: 104.17.2.183
-  tls: false
-  type: vmess
-  uuid: f256a3ae-0f85-4a1d-d0cd-2d0b4b73f4f1
-  ws-opts:
-    headers:
-      Host: v3ra3do.wakeuptimerap.shop
-    path: /
-- name: 24|_CN_->_UA_
-  network: tcp
-  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
-  port: 10845
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 0,3,4,7,13,14,16,21,25,28,30|🇺🇸 _US_美国->🇺🇦_UA_乌克兰
+  name: 0,3,4,7,11,13,14,21,25,28,30|🇺🇸 _US_美国->🇺🇦_UA_乌克兰
   network: ws
   port: '80'
   server: glasco.fx-trader.shop
@@ -165,20 +52,6 @@ proxies:
     headers:
       Host: v3ra3do.wakeuptimerap.shop
     path: /
-- alterId: 0
-  cipher: auto
-  name: 1,25|_US_->_NL__1
-  network: ws
-  port: 80
-  server: 104.21.79.143
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 8b745f74-c322-48c0-b27c-cb6a1d871e86
-  ws-opts:
-    headers:
-      host: periodically-microwave-firms-abc.trycloudflare.com
-    path: ae8e857abf1d?ed=2048
 - alterId: 0
   cipher: auto
   name: '0,3,4,7,14,25,28,30|🇺🇸 _US_美国->🇳🇱_NL_荷兰 #1'
@@ -192,6 +65,28 @@ proxies:
     headers:
       Host: periodically-microwave-firms-abc.trycloudflare.com
     path: ae8e857abf1d?ed=2048
+- name: 24|_CN_->_US__3
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10850
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 2,6,7,11,13,14,21,25,28|🇱🇾_LY_利比亚->🇹🇷_TR_土耳其
+  network: ws
+  port: 80
+  server: 197.215.140.234
+  tls: false
+  type: vmess
+  uuid: b82493e3-07b4-4cf2-b585-965575cfeb32
+  ws-opts:
+    headers:
+      Host: softiri.serveirc.com
+    path: /@forwardv2ray
 - alterId: 0
   cipher: auto
   name: 1,25|_US_->_NL__2
@@ -208,6 +103,43 @@ proxies:
     path: ae8e857abf1d?ed=2048
 - alterId: 0
   cipher: auto
+  name: 24|_US_->_IN_
+  network: ws
+  port: 80
+  server: mm2.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      host: mm2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1,25|_US_->_NL__1
+  network: ws
+  port: 80
+  server: 104.21.79.143
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 8b745f74-c322-48c0-b27c-cb6a1d871e86
+  ws-opts:
+    headers:
+      host: periodically-microwave-firms-abc.trycloudflare.com
+    path: ae8e857abf1d?ed=2048
+- name: 24|_CN_->_UA_
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10845
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
   name: 2,25|🇺🇸_US_美国->🇨🇦_CA_加拿大
   network: ws
   port: 80
@@ -218,6 +150,61 @@ proxies:
   ws-opts:
     headers:
       Host: ca3.889611.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 6,21,25,28|🇸🇨_SC_塞舌尔->🇭🇰_HK_香港
+  network: ws
+  port: 56120
+  server: 156.251.226.142
+  tls: true
+  type: vmess
+  uuid: a3dfbdd6-7e01-4735-9973-e3dd056c129e
+  ws-opts:
+    headers:
+      Host: hk-300.changding.tech
+    path: /changding-tls1?ed=2048
+- name: 24|_CN_->_US__2
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10838
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- name: 24|_CN_->_US__1
+  network: tcp
+  password: cb9c8687-b85d-4f43-88a3-4829e3ec27eb
+  port: 10837
+  server: other.kunlun-ppg.com
+  skip-cert-verify: true
+  sni: alibaba-node.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 2,7,14,25,28|🇺🇸_US_美国->🇺🇦_UA_乌克兰
+  network: ws
+  port: 80
+  server: 104.17.2.183
+  tls: false
+  type: vmess
+  uuid: f256a3ae-0f85-4a1d-d0cd-2d0b4b73f4f1
+  ws-opts:
+    headers:
+      Host: v3ra3do.wakeuptimerap.shop
+    path: /
+- name: 1|_US_->_RU_
+  network: ws
+  password: gviRoLVUKA5kBX2M0gJSvg
+  port: 2083
+  server: cdn-16.cdn2cdn.com
+  skip-cert-verify: true
+  sni: cdn16.cdn2cdn.com
+  type: trojan
+  udp: true
+  ws-opts:
     path: /
 - alterId: 0
   cipher: auto
@@ -233,3 +220,16 @@ proxies:
     headers:
       host: v3ra3do.wakeuptimerap.shop
     path: /
+- alterId: 0
+  cipher: auto
+  name: 6,21,25,28|🇺🇸_US_美国->🇩🇪_DE_德国
+  network: ws
+  port: 443
+  server: tgju.org
+  tls: true
+  type: vmess
+  uuid: 562ae412-d7b5-4f1e-dd0d-82e073193b21
+  ws-opts:
+    headers:
+      Host: cdn.pokerad.fun
+    path: /fa
