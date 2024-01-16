@@ -97,12 +97,19 @@ proxies:
   ws-headers:
     Host: 162.19.224.175
   ws-path: /vmess
-- cipher: aes-256-gcm
-  name: 20|FR-51.15.13.210-207
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 51.15.13.210
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|CLOUDFRONT-13.226.120.0-210
+  network: ws
+  port: 80
+  server: ap-northeast-anycast.lnaspiring.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: a0b63317-33b5-4197-8ea0-f11e96d19767
+  ws-headers:
+    Host: jpli.edge.233.tw
+  ws-path: /geg/45?ed=2048
 - name: 24|_FR_
   network: tcp
   password: telegram-id-directvpn
