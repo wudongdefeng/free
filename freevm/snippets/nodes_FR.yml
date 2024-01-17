@@ -35,16 +35,20 @@ proxies:
   uuid: 82447abf-dcb9-408a-9ca6-79e0a7698d08
 - alterId: 0
   cipher: auto
-  name: '13,25,28|法国 国际航空电讯集团公司(SITA) #1'
+  name: '13,20,21,25,28|法国 国际航空电讯集团公司(SITA) #1'
   network: tcp
   port: 8080
   server: 57.129.16.96
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: d059bdd0-5dfc-5496-9ac1-025dffb1520b
+  ws-headers:
+    Host: 57.129.16.96
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 13,16,25,28,29|speednode_0119
+  name: 13,16,21,25,28,29|speednode_0119
   network: ws
   port: 10000
   server: 51.77.200.55
@@ -134,6 +138,19 @@ proxies:
   ws-headers:
     Host: 162.19.224.175
   ws-path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 20|FR-51.77.200.55-252
+  network: ws
+  port: 10000
+  server: 51.77.200.55
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b5463c84-b511-11ee-92bb-2b2f059bf022
+  ws-headers:
+    Host: 51.77.200.55
+  ws-path: /vpnjantit
 - alterId: 0
   cipher: auto
   name: 21|🇫🇷 法国(油管:破解资源君)
