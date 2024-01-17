@@ -69,14 +69,27 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 11,16,25|13|↙️32@oneclickvpnkeys
+  name: 11|台湾省新竹市 中华电信
+  network: tcp
+  port: 2024
+  server: b23.ntbq.dynu.net
+  tls: false
+  type: vmess
+  uuid: 2e2a2655-0ac1-4b1d-a777-de98bea4aa0a
+- alterId: 0
+  cipher: auto
+  name: 16,20,21,25|13|↙️32@oneclickvpnkeys
   network: tcp
   port: '2024'
   server: 114.37.130.69
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 2e2a2655-0ac1-4b1d-a777-de98bea4aa0a
+  ws-headers:
+    Host: 114.37.130.69
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '20,21|🇨🇳 台湾(油管:破解资源君) #1'
@@ -90,12 +103,6 @@ proxies:
   ws-headers:
     Host: hinet1261.gfwisbest.xyz
   ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: 20|TW-114.45.78.88-227
-  password: 2e2a2655-0ac1-4b1d-a777-de98bea4aa0a
-  port: 4303
-  server: 114.45.78.88
-  type: ss
 - alterId: 0
   cipher: auto
   name: '25,26,27,28|台湾2|@ripaojiedian #1'
