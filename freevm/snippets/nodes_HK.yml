@@ -180,6 +180,31 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
+  name: 25|13|🔒 VM-TCP-NA 🇭🇰 HK-34.92.50....
+  network: tcp
+  port: '26389'
+  server: 34.92.50.99
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3415f6ed-0880-43bb-85aa-d6c064cc968c
+- alterId: 64
+  cipher: auto
+  name: '25,26,27,28|香港4|@ripaojiedian #1'
+  network: ws
+  port: '443'
+  server: 202.79.171.239
+  servername: www.46130221.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: fb3583a3-7717-4fe5-9146-3301861f9f41
+  ws-opts:
+    headers:
+      Host: www.46130221.xyz
+    path: /path/143534141104
+- alterId: 0
+  cipher: auto
   name: '25,27,28|香港2|@ripaojiedian #1'
   network: tcp
   port: '10241'
@@ -226,28 +251,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 28|香港 - TLS加密 - 1X
-  network: ws
-  port: '443'
-  server: A011.STANDARD-NODES-CHICKENFARMS.TOP
-  tls: true
-  type: vmess
-  uuid: e6cdc6e9-0faf-4aeb-b8b3-a1350f64f4a2
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: 28|香港 - 1X  - B
-  network: tcp
-  port: '18692'
-  server: A002.STANDARD-NODES-CHICKENFARMS.TOP
-  tls: false
-  type: vmess
-  uuid: e6cdc6e9-0faf-4aeb-b8b3-a1350f64f4a2
-- alterId: 0
-  cipher: auto
   name: 28|🇭🇰HK-18.162.130.19-3522
   network: ws
   port: 80
@@ -260,3 +263,25 @@ proxies:
     headers:
       Host: hk02.xpoti.online
     path: /
+- alterId: 0
+  cipher: auto
+  name: 28|香港 - 1X  - B
+  network: tcp
+  port: '18692'
+  server: A002.STANDARD-NODES-CHICKENFARMS.TOP
+  tls: false
+  type: vmess
+  uuid: e6cdc6e9-0faf-4aeb-b8b3-a1350f64f4a2
+- alterId: 0
+  cipher: auto
+  name: 28|香港 - TLS加密 - 1X
+  network: ws
+  port: '443'
+  server: A011.STANDARD-NODES-CHICKENFARMS.TOP
+  tls: true
+  type: vmess
+  uuid: e6cdc6e9-0faf-4aeb-b8b3-a1350f64f4a2
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
