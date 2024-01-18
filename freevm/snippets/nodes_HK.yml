@@ -53,6 +53,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
+- alterId: 32
+  cipher: auto
+  name: 11|香港 Simcentric网络公司
+  network: ws
+  port: 80
+  server: hrgdvpn.flycdnedc55.vip
+  tls: false
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: ''
+    path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: 13,20,21,25|11|香港阿里云 8
@@ -103,30 +116,17 @@ proxies:
     path: /path/1693018744512
 - alterId: 0
   cipher: auto
-  name: 20|HK-219.76.13.180-023
+  name: 20|HK-207.46.147.148-131
   network: ws
   port: 443
-  server: 219.76.13.180
+  server: fullaccesstohongkongnet.azurewebsites.net
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
+  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
   ws-headers:
-    Host: clash6.ssr-free.xyz
-  ws-path: /dongtaiwang.com
-- alterId: 1
-  cipher: auto
-  name: 21|🇭🇰 香港(油管:破解资源君2.0)
-  network: ws
-  port: '50205'
-  server: data-hk-v2.shwjfkw.cn
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-hk-v2.shwjfkw.cn
-    path: /hls/cctv5phd.m3u8
+    Host: fullaccesstohongkongnet.azurewebsites.net
+  ws-path: /ws
 - alterId: 0
   cipher: auto
   name: 21|🇭🇰 香港(油管:破解资源君)
@@ -145,14 +145,40 @@ proxies:
   name: '21|🇭🇰 香港(油管:破解资源君) #1'
   network: ws
   port: '443'
-  server: zfc.windowsupdate1.com
+  server: cf-lt.sharecentre.online
   tls: true
   type: vmess
-  uuid: 790e30dd-e84c-4d04-8219-2499d70e4718
+  uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
   ws-opts:
     headers:
-      Host: hkhgc.guolicheng.cyou
-    path: /guolicheng/hkhgc?ed=2048
+      Host: hk-gcore.sharecentre.online
+    path: /shirker
+- alterId: 0
+  cipher: auto
+  name: '21|🇭🇰 香港(油管:破解资源君) #2'
+  network: ws
+  port: '443'
+  server: fullaccesstohongkongnet.azurewebsites.net
+  tls: true
+  type: vmess
+  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
+  ws-opts:
+    headers:
+      Host: fullaccesstohongkongnet.azurewebsites.net
+    path: /ws
+- alterId: 1
+  cipher: auto
+  name: 21|🇭🇰 香港(油管:破解资源君2.0)
+  network: ws
+  port: '50205'
+  server: data-hk-v2.shwjfkw.cn
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-hk-v2.shwjfkw.cn
+    path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
   name: '25,27,28|香港2|@ripaojiedian #1'
@@ -213,6 +239,37 @@ proxies:
   port: 36999
   server: a3ca.e2s.buzz
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 28|【直连】香港 - 4 - A Group
+  network: tcp
+  port: '38752'
+  server: 00000000000000000000000000000000000000000000000000000000000032.agroup-node-for-bigairport.sbs
+  tls: false
+  type: vmess
+  uuid: 843764ed-637a-4085-856e-72c507df3447
+- alterId: 0
+  cipher: auto
+  name: 28|【直连】香港 - 1 - A Group
+  network: tcp
+  port: '38751'
+  server: 00000000000000000000000000000000000000000000000000000000000021.agroup-node-for-bigairport.sbs
+  tls: false
+  type: vmess
+  uuid: 843764ed-637a-4085-856e-72c507df3447
+- alterId: 0
+  cipher: auto
+  name: 28|🇭🇰HK|VMS|1x-3
+  network: ws
+  port: '80'
+  server: 26.namesilo123.top
+  tls: false
+  type: vmess
+  uuid: c92caa39-eda5-4c57-bafd-df3501854f24
+  ws-opts:
+    headers:
+      Host: hk112.sanfen003.top
+    path: /grdhhgrdhhhhhhj?ed=2048
 - alterId: 32
   cipher: auto
   name: 28|🇭🇰HK-182.16.1.194-10817
@@ -242,10 +299,10 @@ proxies:
     path: /grdhhgrdhhhhhhj?ed=2048
 - alterId: 0
   cipher: auto
-  name: 28|🇭🇰HK|VMS|1x-3
+  name: 28|🇭🇰HK|VMS|1x-1
   network: ws
-  port: '80'
-  server: 26.namesilo123.top
+  port: '8880'
+  server: 7.namesilo123.top
   tls: false
   type: vmess
   uuid: c92caa39-eda5-4c57-bafd-df3501854f24
@@ -253,33 +310,6 @@ proxies:
     headers:
       Host: hk112.sanfen003.top
     path: /grdhhgrdhhhhhhj?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 28|【直连】香港 - 1 - A Group
-  network: tcp
-  port: '38751'
-  server: 00000000000000000000000000000000000000000000000000000000000021.agroup-node-for-bigairport.sbs
-  tls: false
-  type: vmess
-  uuid: 843764ed-637a-4085-856e-72c507df3447
-- alterId: 0
-  cipher: auto
-  name: 28|【直连】香港 - 3 - A Group
-  network: tcp
-  port: '38751'
-  server: 00000000000000000000000000000000000000000000000000000000000031.agroup-node-for-bigairport.sbs
-  tls: false
-  type: vmess
-  uuid: 843764ed-637a-4085-856e-72c507df3447
-- alterId: 0
-  cipher: auto
-  name: 28|【直连】香港 - 4 - A Group
-  network: tcp
-  port: '38752'
-  server: 00000000000000000000000000000000000000000000000000000000000032.agroup-node-for-bigairport.sbs
-  tls: false
-  type: vmess
-  uuid: 843764ed-637a-4085-856e-72c507df3447
 - alterId: 0
   cipher: auto
   name: 28|【直连】香港 - 2 - A Group
@@ -304,14 +334,10 @@ proxies:
     path: /grdhhgrdhhhhhhj?ed=2048
 - alterId: 0
   cipher: auto
-  name: 28|🇭🇰HK|VMS|1x-1
-  network: ws
-  port: '8880'
-  server: 7.namesilo123.top
+  name: 28|【直连】香港 - 3 - A Group
+  network: tcp
+  port: '38751'
+  server: 00000000000000000000000000000000000000000000000000000000000031.agroup-node-for-bigairport.sbs
   tls: false
   type: vmess
-  uuid: c92caa39-eda5-4c57-bafd-df3501854f24
-  ws-opts:
-    headers:
-      Host: hk112.sanfen003.top
-    path: /grdhhgrdhhhhhhj?ed=2048
+  uuid: 843764ed-637a-4085-856e-72c507df3447
