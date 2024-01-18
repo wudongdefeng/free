@@ -69,20 +69,6 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: '11,16,20,21,25,28|github.com/freefq - 台湾省台中市中华电信... #1'
-  network: tcp
-  port: '6122'
-  server: c12.twtc.dynu.net
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 60ab817e-0566-44cb-becd-6b51698d5672
-  ws-headers:
-    Host: c12.twtc.dynu.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: 13,20,21,25|11|台湾省台北市 中华电信
   network: tcp
   port: 4443
@@ -125,11 +111,24 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '16,20,21,25,28|github.com/freefq - 台湾省新北市中华电信... #1'
+  name: '16,20,21,25,27,28|github.com/freefq - 台湾省台中市中华电信... #1'
+  network: tcp
+  port: '6122'
+  server: c12.twtc.dynu.net
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 60ab817e-0566-44cb-becd-6b51698d5672
+  ws-headers:
+    Host: c12.twtc.dynu.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20,21|🇨🇳 github.com/freefq - 台湾省新北市中...
   network: tcp
   port: '12002'
   server: nb22.ntbq.dynu.net
-  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -137,21 +136,6 @@ proxies:
   ws-headers:
     Host: nb22.ntbq.dynu.net
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '25,26,27,28|台湾2|@ripaojiedian #1'
-  network: ws
-  port: '2052'
-  server: cfcdn1.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f0df1cd4-5a87-482a-9f19-218a393d6f9c
-  ws-opts:
-    headers:
-      Host: tw1bQiWSE4x.fzbqfrse.xyz
-    path: /video/GQ2qE5Us9g
 - cipher: aes-128-gcm
   name: 26|🇹🇼 台湾KT|@ripaojiedian
   password: oiwym4ovI4Yb
@@ -164,13 +148,17 @@ proxies:
     skip-cert-verify: true
     tls: false
   port: 443
-  server: 122.118.169.169
+  server: 122.118.171.6
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 26|🇹🇼 台湾|@ripaojiedian
-  password: 99e39047-9298-404e-b632-1867f7ed1b37
-  port: 7773
-  server: b13.ntbq.dynu.net
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: a1e5cc7:108142
+    mode: tls
+  port: 2377
+  server: 125.227.83.24
   type: ss
 - alterId: 0
   cipher: auto

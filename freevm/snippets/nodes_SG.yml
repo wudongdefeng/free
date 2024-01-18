@@ -110,7 +110,7 @@ proxies:
   servername: sg04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: e9029233-9efd-4c75-8aaf-152ae36eb0b8
+  uuid: 02044c9c-0185-46df-8c16-2665e7e5350f
 - alterId: 0
   cipher: auto
   name: 12,25|10|🇸🇬新加坡05
@@ -120,7 +120,7 @@ proxies:
   servername: sg05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: e9029233-9efd-4c75-8aaf-152ae36eb0b8
+  uuid: 02044c9c-0185-46df-8c16-2665e7e5350f
 - alterId: 0
   cipher: auto
   name: 12,25|10|🇸🇬新加坡06
@@ -130,7 +130,7 @@ proxies:
   servername: sg06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: e9029233-9efd-4c75-8aaf-152ae36eb0b8
+  uuid: 02044c9c-0185-46df-8c16-2665e7e5350f
 - alterId: 0
   cipher: auto
   name: 13,21,25|11|新加坡Amazon数据中心 13
@@ -307,7 +307,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 78f9cbc8-145b-4595-8a46-cac7580ee4a8
+  uuid: 0b238faa-c7b4-4962-a58d-ee7e82b6e4ea
 - alterId: 0
   cipher: auto
   name: 23,25|14|【BGP】新加坡 05 | 1x SG
@@ -317,7 +317,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 78f9cbc8-145b-4595-8a46-cac7580ee4a8
+  uuid: 0b238faa-c7b4-4962-a58d-ee7e82b6e4ea
 - alterId: 0
   cipher: auto
   name: 23,25|14|【BGP】新加坡 06 | 1x SG
@@ -327,20 +327,42 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 78f9cbc8-145b-4595-8a46-cac7580ee4a8
+  uuid: 0b238faa-c7b4-4962-a58d-ee7e82b6e4ea
 - alterId: 0
   cipher: auto
-  name: 25|13|🇸🇬 𝐒𝐊𝐘𝐇𝐓 𝐒𝐈𝐍𝐆𝐀𝐏𝐎𝐑𝐄 🇸🇬
-  network: ws
-  port: 80
-  server: sg.vpndata.vn
+  name: 25|13|【直连】狮城 - 2 - A Group
+  network: tcp
+  port: '38756'
+  server: 00000000000000000000000000000000000000000000000000000000000026.agroup-node-for-bigairport.sbs
   tls: false
   type: vmess
-  uuid: fbccfed7-1aeb-416a-a4fd-7af1747f9f3b
+  uuid: 843764ed-637a-4085-856e-72c507df3447
+- alterId: 0
+  cipher: auto
+  name: 25|13|🔒 VM-WS-NONE 🇸🇬 SG-178.128....
+  network: ws
+  port: 46198
+  server: 178.128.31.223
+  tls: false
+  type: vmess
+  uuid: ac0686e9-6361-43c0-b73a-87e8ba20d6a6
   ws-opts:
     headers:
-      Host: lienquan.garena.vn
-    path: /VPNDATA.xYx
+      Host: m.youtube.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '25|13|🔒 VM-WS-NONE 🇸🇬 SG-178.128.... #1'
+  network: ws
+  port: 30734
+  server: 178.128.31.223
+  tls: false
+  type: vmess
+  uuid: 7a558a8e-4e14-4574-84d4-a486d866165a
+  ws-opts:
+    headers:
+      Host: media-exp1.licdn.com
+    path: /king master
 - alterId: 0
   cipher: auto
   name: 25,28|🇸🇬SG-146.190.89.218-8860
@@ -357,46 +379,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|13|[7]› [🇸🇬] -  Singapore 2
-  network: ws
-  port: 80
-  server: sg3.uudai4g.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 054c82f7-9b61-4223-86a4-c231e9fafcf0
-  ws-opts:
-    headers:
-      Host: ''
-    path: /uudai4g.com
-- alterId: 0
-  cipher: auto
-  name: 25|13|🔒 VM-WS-NONE 🇸🇬 SG-178.128....
-  network: ws
-  port: 30734
-  server: 178.128.31.223
-  tls: false
-  type: vmess
-  uuid: 7a558a8e-4e14-4574-84d4-a486d866165a
-  ws-opts:
-    headers:
-      Host: media-exp1.licdn.com
-    path: /king master
-- alterId: 0
-  cipher: auto
-  name: '25|13|🔒 VM-WS-NONE 🇸🇬 SG-178.128.... #1'
-  network: ws
-  port: 46198
-  server: 178.128.31.223
-  tls: false
-  type: vmess
-  uuid: ac0686e9-6361-43c0-b73a-87e8ba20d6a6
-  ws-opts:
-    headers:
-      Host: m.youtube.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: '25|13|🔒 VM-WS-NONE 🇸🇬 SG-178.128.... #2'
   network: ws
   port: 25125
@@ -408,32 +390,24 @@ proxies:
     headers:
       Host: android.googleapis.com
     path: /
+- cipher: aes-128-gcm
+  name: 26|🇸🇬 新加坡|@ripaojiedian
+  password: f3882346f62347359ae4343f9185f7ea
+  port: 46054
+  server: any.hmbiplc-02.com
+  type: ss
 - cipher: aes-256-cfb
   name: 26|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 43.201.100.232
+  server: 57.181.27.179
   type: ss
 - cipher: aes-256-cfb
   name: 26|🇸🇬 狮城特殊2|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 18.142.250.63
+  server: 3.112.128.205
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 28|🇸🇬SG-206.238.236.36-3534
-  network: ws
-  port: 2052
-  server: 206.238.236.36
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: mysan2.jaquay22.workers.dev
-    path: /afrhms16v.bestxray.buzz/linkws
 - alterId: 0
   cipher: auto
   name: 28|🇸🇬SG-213.35.113.150-0983
@@ -450,18 +424,18 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|🇸🇬SG-146.190.89.218-2015
+  name: 28|🇸🇬SG-206.238.236.36-3534
   network: ws
-  port: 2023
-  server: 146.190.89.218
+  port: 2052
+  server: 206.238.236.36
   servername: ''
   tls: false
   type: vmess
-  uuid: 45b2d123-3246-4e55-a0d7-506cd14d1c54
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
   ws-opts:
     headers:
-      Host: imo.im
-    path: /
+      Host: mysan2.jaquay22.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
 - alterId: 0
   cipher: auto
   name: 28|🇸🇬SG-194.233.81.125-7395
@@ -476,3 +450,17 @@ proxies:
     headers:
       Host: sg-v.sshmax.xyz
     path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 28|🇸🇬SG-146.190.89.218-2015
+  network: ws
+  port: 2023
+  server: 146.190.89.218
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 45b2d123-3246-4e55-a0d7-506cd14d1c54
+  ws-opts:
+    headers:
+      Host: imo.im
+    path: /
