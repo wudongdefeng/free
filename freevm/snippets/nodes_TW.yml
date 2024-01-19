@@ -69,7 +69,7 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 11,16,20,21,25|13|TW-板桥2-3(TCP) - 麻雀加速器 Sparr...
+  name: '11,16,20,21,25,28|github.com/freefq - 台湾省新北市中华电信... #1'
   network: tcp
   port: '2024'
   server: b23.ntbq.dynu.net
@@ -83,34 +83,52 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '11,16,25,27,28|台湾|@ripaojiedian #1'
-  network: tcp
-  port: '4443'
-  server: nb24.ntbq.dynu.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b6fdc502-3ae5-47a7-9fa4-3fa7febb76c4
-- alterId: 0
-  cipher: auto
-  name: 11,16,25|13|【电报：@ccbaohe|免费机场节点 2
-  network: tcp
-  port: 12002
-  server: nb22.ntbq.dynu.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b6cd1e64-484a-431a-90c2-41bb0d579ee6
-- alterId: 0
-  cipher: auto
-  name: '11,16,25|13|【电报：@ccbaohe|免费机场节点 #1'
+  name: '16,20,21,25,28|github.com/freefq - 台湾省台中市中华电信... #3'
   network: tcp
   port: '6122'
   server: c12.twtc.dynu.net
   servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 867b8e57-9355-40dc-a696-9ca2518b091e
+  ws-headers:
+    Host: c12.twtc.dynu.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '16,20,21,25,28|github.com/freefq - 台湾省台北市中华电信... #6'
+  network: tcp
+  port: 12002
+  server: nb22.ntbq.dynu.net
+  servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: b6cd1e64-484a-431a-90c2-41bb0d579ee6
+  ws-headers:
+    Host: nb22.ntbq.dynu.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '16,20,21,25,27,28|github.com/freefq - 台湾省台北市中华电信... #7'
+  network: tcp
+  port: '4443'
+  server: nb24.ntbq.dynu.net
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 8907aeec-189d-48d9-b557-fb242a4d8127
+  ws-headers:
+    Host: nb24.ntbq.dynu.net
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 20|TW-220.141.155.55-154
+  password: b6cd1e64-484a-431a-90c2-41bb0d579ee6
+  port: 2203
+  server: 220.141.155.55
+  type: ss
 - cipher: aes-128-gcm
   name: 26|🇹🇼 台湾KT|@ripaojiedian
   password: oiwym4ovI4Yb
@@ -125,6 +143,45 @@ proxies:
   port: 443
   server: 122.118.172.100
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 28|🇹🇼TW|VMS|1x-1
+  network: ws
+  port: '8080'
+  server: hkg6.namesilo123.top
+  tls: false
+  type: vmess
+  uuid: c92caa39-eda5-4c57-bafd-df3501854f24
+  ws-opts:
+    headers:
+      Host: tw.sanfen003.top
+    path: /grdhhgrdhhhhhhj?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 28|🇹🇼TW|VMS|1x-3
+  network: ws
+  port: '8880'
+  server: hkg7.namesilo123.top
+  tls: false
+  type: vmess
+  uuid: c92caa39-eda5-4c57-bafd-df3501854f24
+  ws-opts:
+    headers:
+      Host: tw.sanfen003.top
+    path: /grdhhgrdhhhhhhj?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 28|🇹🇼TW|VMS|1x-2
+  network: ws
+  port: '80'
+  server: hkg4.namesilo123.top
+  tls: false
+  type: vmess
+  uuid: c92caa39-eda5-4c57-bafd-df3501854f24
+  ws-opts:
+    headers:
+      Host: tw.sanfen003.top
+    path: /grdhhgrdhhhhhhj?ed=2048
 - alterId: 0
   cipher: auto
   name: 28|🇹🇼TW-103.159.206.35-0365
@@ -144,33 +201,7 @@ proxies:
   name: 28|🇹🇼TW|VMS|1x-4
   network: ws
   port: '2082'
-  server: 12.namesilo123.top
-  tls: false
-  type: vmess
-  uuid: c92caa39-eda5-4c57-bafd-df3501854f24
-  ws-opts:
-    headers:
-      Host: tw.sanfen003.top
-    path: /grdhhgrdhhhhhhj?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 28|🇹🇼TW|VMS|1x-2
-  network: ws
-  port: '80'
-  server: 7.namesilo123.top
-  tls: false
-  type: vmess
-  uuid: c92caa39-eda5-4c57-bafd-df3501854f24
-  ws-opts:
-    headers:
-      Host: tw.sanfen003.top
-    path: /grdhhgrdhhhhhhj?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 28|🇹🇼TW|VMS|1x-1
-  network: ws
-  port: '8080'
-  server: 12.namesilo123.top
+  server: hkg8.namesilo123.top
   tls: false
   type: vmess
   uuid: c92caa39-eda5-4c57-bafd-df3501854f24
