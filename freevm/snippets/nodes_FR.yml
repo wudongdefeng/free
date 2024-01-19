@@ -1,10 +1,4 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 1,20|FR-195.154.169.198-005
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 195.154.169.198
-  type: ss
 - alterId: 0
   cipher: auto
   name: 10|法国_121320069
@@ -90,7 +84,13 @@ proxies:
     headers:
       Host: bl.shabijichang.com
     path: /
-- name: '24|_FR_ #1'
+- cipher: aes-256-cfb
+  name: 20|FR-195.154.169.198-005
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.169.198
+  type: ss
+- name: 24|_FR_
   network: tcp
   password: telegram-id-directvpn
   port: 22222
@@ -111,10 +111,10 @@ proxies:
   uuid: ce76d32e-3bc7-4a4f-bf2c-abddb893bed7
 - alterId: 0
   cipher: auto
-  name: 28|[vmess]法国2 1.25x
+  name: 28|[vmess]法国1 1.25x
   network: ws
   port: '8880'
-  server: go.snangua.com
+  server: fr-01.snangua.com
   tls: false
   type: vmess
   uuid: 56aeb7f5-0d8e-4985-96a6-62b47958e825
@@ -124,10 +124,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|[vmess]法国1 1.25x
+  name: 28|[vmess]法国2 1.25x
   network: ws
   port: '8880'
-  server: fr-01.snangua.com
+  server: go.snangua.com
   tls: false
   type: vmess
   uuid: 56aeb7f5-0d8e-4985-96a6-62b47958e825
