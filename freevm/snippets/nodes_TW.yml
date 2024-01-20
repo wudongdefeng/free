@@ -69,20 +69,6 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 13,20,21,25|13,15|↪️j@oneclickvpnkeys
-  network: tcp
-  port: '2024'
-  server: b23.ntbq.dynu.net
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 8907aeec-189d-48d9-b557-fb242a4d8127
-  ws-headers:
-    Host: b23.ntbq.dynu.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: '13,16,20,21,25,27,28|台湾2|@ripaojiedian #1'
   network: tcp
   port: '6122'
@@ -97,7 +83,21 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 13,20,21,25|13,15|TW-板桥2-2(TCP) - 麻雀加速器 Sp...
+  name: 20,21,25|13,15|↪️j@oneclickvpnkeys
+  network: tcp
+  port: '2024'
+  server: b23.ntbq.dynu.net
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 8907aeec-189d-48d9-b557-fb242a4d8127
+  ws-headers:
+    Host: b23.ntbq.dynu.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20,21,25|13,15|TW-板桥2-2(TCP) - 麻雀加速器 Sp...
   network: tcp
   port: 12002
   server: nb22.ntbq.dynu.net
@@ -109,9 +109,15 @@ proxies:
   ws-headers:
     Host: nb22.ntbq.dynu.net
   ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 20|TW-36.232.143.214-212
+  password: 328a09ac-02a6-4b3e-871c-2f0e0c644d82
+  port: 3234
+  server: 36.232.143.214
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 13,20,21,25|13,15|TW-板桥2-4(TCP) - 麻雀加速器 Sp...
+  name: 20,21,25|13,15|TW-板桥2-4(TCP) - 麻雀加速器 Sp...
   network: tcp
   port: '4443'
   server: nb24.ntbq.dynu.net
@@ -123,12 +129,6 @@ proxies:
   ws-headers:
     Host: nb24.ntbq.dynu.net
   ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: 20|TW-36.232.143.214-212
-  password: 328a09ac-02a6-4b3e-871c-2f0e0c644d82
-  port: 3234
-  server: 36.232.143.214
-  type: ss
 - alterId: 0
   cipher: auto
   name: 25|15|🔒 VM-TCP-NA 🇹🇼 TW-114.37.11...
