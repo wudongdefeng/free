@@ -319,39 +319,116 @@ proxies:
   uuid: cd0132fe-95f7-4854-bb56-9da6bb711eae
 - alterId: 0
   cipher: auto
-  name: '20,21|🇺🇸 美国(油管:破解资源君) #25'
-  network: tcp
-  port: '7058'
-  server: c26s4.jamjams3.net
+  name: 20|JP-138.2.35.81-047
+  network: ws
+  port: 80
+  server: 138.2.35.81
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 147591bc-585a-423f-877e-41f89c9601b6
+  uuid: a0733fc9-457e-498d-c363-9ec774a74946
   ws-headers:
-    Host: c26s4.jamjams3.net
+    Host: 138.2.35.81
+  ws-path: /jun
+- alterId: 0
+  cipher: auto
+  name: 20|JP-138.2.52.176-048
+  network: ws
+  port: 24429
+  server: 138.2.52.176
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 8d5ca59e-8e3e-4a10-e023-53cfcd87a72a
+  ws-headers:
+    Host: 138.2.52.176
   ws-path: /
+- cipher: aes-256-gcm
+  name: 20|JP-85.208.108.60-062
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|JP-85.208.108.60-063
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 85.208.108.60
+  type: ss
 - cipher: aes-256-cfb
-  name: 20|JP-54.199.83.239-150
+  name: 20|JP-54.199.83.239-178
   password: doub.io
   port: 2333
   server: 54.199.83.239
   type: ss
 - alterId: 0
   cipher: auto
-  name: 20|JP-141.147.179.76-161
+  name: 21|🇯🇵 日本(油管:破解资源君)
   network: ws
-  port: 443
-  server: cdn.176386.com
-  skip-cert-verify: true
-  tls: true
+  port: '80'
+  server: 138.2.35.81
+  tls: false
   type: vmess
-  uuid: 3b89f882-0c3f-4144-811d-91fce7ab3c05
-  ws-headers:
-    Host: h186-fr2.kxnn.eu.org
-  ws-path: /D26xvdqUdCpvvPTz4R
+  uuid: a0733fc9-457e-498d-c363-9ec774a74946
+  ws-opts:
+    headers:
+      Host: ''
+    path: /jun
 - alterId: 0
   cipher: auto
-  name: 21|🇯🇵 日本(油管:破解资源君)
+  name: '21|🇯🇵 日本(油管:破解资源君) #1'
+  network: ws
+  port: '24429'
+  server: 138.2.52.176
+  tls: false
+  type: vmess
+  uuid: 8d5ca59e-8e3e-4a10-e023-53cfcd87a72a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '21|🇯🇵 日本(油管:破解资源君) #2'
+  network: ws
+  port: '80'
+  server: jp80-4.sanfen001.pics
+  tls: false
+  type: vmess
+  uuid: 901811ef-d025-4673-a851-4a12fb90c61c
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /zh-cn
+- alterId: 0
+  cipher: auto
+  name: '21|🇯🇵 日本(油管:破解资源君) #3'
+  network: ws
+  port: '443'
+  server: jp1.sanfen001.pics
+  tls: true
+  type: vmess
+  uuid: 901811ef-d025-4673-a851-4a12fb90c61c
+  ws-opts:
+    headers:
+      Host: www.microsoft.com
+    path: /zh-cn
+- alterId: 0
+  cipher: auto
+  name: '21|🇯🇵 日本(油管:破解资源君) #4'
+  network: ws
+  port: '2001'
+  server: jp2.sanfen001.pics
+  tls: true
+  type: vmess
+  uuid: 901811ef-d025-4673-a851-4a12fb90c61c
+  ws-opts:
+    headers:
+      Host: aws.amazon.com
+    path: /cn
+- alterId: 0
+  cipher: auto
+  name: '21|🇯🇵 日本(油管:破解资源君) #5'
   network: ws
   port: '443'
   server: cf-lt.sharecentre.online
@@ -364,34 +441,11 @@ proxies:
     path: /shirker
 - alterId: 0
   cipher: auto
-  name: 21|🇯🇵 日本东京 Oracle Cloud
-  network: ws
-  port: '443'
-  server: cdn.176386.com
-  tls: true
-  type: vmess
-  uuid: 3b89f882-0c3f-4144-811d-91fce7ab3c05
-  ws-opts:
-    headers:
-      Host: h186-fr2.kxnn.eu.org
-    path: /D26xvdqUdCpvvPTz4R
-- alterId: 0
-  cipher: auto
   name: 23,25|16|【BGP】日本 04  | 1x JP
   network: tcp
   port: '31116'
   server: 6w7j3p04.m1k2s.xyz
   servername: jp04.lovemc.xyz
-  tls: true
-  type: vmess
-  uuid: ee0576a2-f222-4895-bbfc-7945ba5156ca
-- alterId: 0
-  cipher: auto
-  name: 23,25|16|【BGP】日本 05  | 1x JP
-  network: tcp
-  port: '31106'
-  server: 6w7j3p05.m1k2s.xyz
-  servername: jp05.lovemc.xyz
   tls: true
   type: vmess
   uuid: ee0576a2-f222-4895-bbfc-7945ba5156ca
