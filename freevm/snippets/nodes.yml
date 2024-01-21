@@ -96,7 +96,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,11,13,21,25,28,30|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #14'
+  name: '0,3,4,6,7,13,21,25,28,30|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #14'
   network: ws
   port: '80'
   server: 162.159.200.4
@@ -713,7 +713,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 10,13,20,21,25|13|美国 加利福尼亚州圣何塞Egihosting公司
+  name: '10,11,13,20,21,25,28|美国 加利福尼亚州圣何塞Egihosting公司 #2'
   network: tcp
   port: 13487
   server: 205.164.28.103
@@ -947,7 +947,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,17,18,28|TG频道:@hkaa0|德国 #1'
+  name: 10,17,18,28|🇩🇪DE-217.160.45.31-0344
   network: ws
   port: 8880
   server: 217.160.45.31
@@ -957,6 +957,8 @@ proxies:
   type: vmess
   uuid: 4e186678-fcca-4325-e4bc-b2916bdf6708
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -1774,9 +1776,9 @@ proxies:
     path: /526-dekDP6Otf
 - alterId: 0
   cipher: auto
-  name: '10,28|美国 CloudFlare节点 #9'
+  name: 10|未知_121320121
   network: ws
-  port: 80
+  port: '80'
   server: 104.18.202.232
   servername: ''
   tls: false
@@ -4361,53 +4363,46 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  name: 11|利比亚 V2CROSS.COM
+  name: '11,28|美国 CloudFlare节点 #7'
   network: ws
   port: 80
-  server: 197.215.140.235
-  tls: false
-  type: vmess
-  uuid: f21bcdb6-5dc6-4c4b-9a34-3b185f6747c4
-  ws-opts:
-    headers:
-      Host: tabyan205.serveftp.com
-    path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #1'
-  network: ws
-  port: 8880
-  server: 104.19.166.183
-  tls: false
-  type: vmess
-  uuid: 27c7e182-88bf-4fc6-bbdd-83453061f47f
-  ws-opts:
-    headers:
-      Host: us6gzxQRrE4.fzbqfrse.xyz
-    path: /video/bYdJ7Vc2We
-- alterId: 0
-  cipher: auto
-  name: '11,13,21,25|13|美国 CloudFlare节点 #3'
-  network: ws
-  port: '8080'
-  server: 172.67.212.171
-  tls: false
-  type: vmess
-  uuid: 7b6ddff4-8f18-4e27-de82-a33cfeebfa01
-  ws-opts:
-    headers:
-      Host: eu5.openxai.link
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '11,28|台湾省新北市 中华电信 #1'
-  network: tcp
-  port: '4443'
-  server: 36.226.147.157
+  server: very.sadnugget.shop
   servername: ''
   tls: false
   type: vmess
-  uuid: b6fdc502-3ae5-47a7-9fa4-3fa7febb76c4
+  uuid: a5324503-04bd-4ce4-a47a-e969d605a5a6
+  ws-opts:
+    headers:
+      Host: vay.nuggetsecure.buzz
+    path: /main
+- alterId: 0
+  cipher: auto
+  name: '11,16,20,21,25,28|台湾省新北市 中华电信 #1'
+  network: tcp
+  port: 2024
+  server: b23.ntbq.dynu.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2358c269-178a-43c0-a208-c6cc52d398f9
+  ws-headers:
+    Host: b23.ntbq.dynu.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 11,25,28,29|KZ_speednode_0400
+  network: ws
+  port: 80
+  server: 92.46.108.106
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b82493e3-07b4-4cf2-b585-965575cfeb32
+  ws-opts:
+    headers:
+      Host: softiri.serveirc.com
+    path: /@forwardv2ray
 - alterId: 0
   cipher: auto
   name: 12,25|12|🇯🇵日本04
@@ -4680,7 +4675,7 @@ proxies:
   uuid: caab5411-39f9-4f20-97ad-3965af5cab7e
 - alterId: 0
   cipher: auto
-  name: '13,20,21,25,28|台湾省桃园市 中华电信 #1'
+  name: 13,20,21,25|13,14|github.com/freefq - 台湾省桃...
   network: tcp
   port: 21353
   server: 1.162.139.104
@@ -4707,9 +4702,22 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 13,16,20,21,25|13,20|baipaovpn台湾省新北市
+  name: '13,21,25|13|美国 CloudFlare节点 #3'
+  network: ws
+  port: '8080'
+  server: 172.67.212.171
+  tls: false
+  type: vmess
+  uuid: 7b6ddff4-8f18-4e27-de82-a33cfeebfa01
+  ws-opts:
+    headers:
+      Host: eu5.openxai.link
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '13,16,20,21,25,28|github.com/freefq - 台湾省新北市中华电信... #3'
   network: tcp
-  port: '2024'
+  port: 2024
   server: 61.228.149.88
   servername: ''
   skip-cert-verify: true
@@ -4721,7 +4729,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '13,16,21,25,26,27,28|github.com/freefq - 美国CloudFla... #7'
+  name: '13,16,21,25,26,27,28|新加坡3|@ripaojiedian #1'
   network: ws
   port: '80'
   server: 104.17.25.1
@@ -4736,7 +4744,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 13,21,25,28|github.com/freefq - 广东省移动 9
+  name: 13,21,25|13,14|github.com/freefq - 广东省移...
   network: ws
   port: '20401'
   server: data-us-v1.shwjfkw.cn
@@ -5977,19 +5985,6 @@ proxies:
     headers:
       Host: www.20973848.xyz
     path: /path/1693992821776
-- alterId: 0
-  cipher: auto
-  name: 16,20,21,25|6|-https://t.me/MrXbin-481
-  network: tcp
-  port: 2024
-  server: b23.ntbq.dynu.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 2358c269-178a-43c0-a208-c6cc52d398f9
-  ws-headers:
-    Host: b23.ntbq.dynu.net
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: '16,25,26,27,28|韩国2|@ripaojiedian #1'
@@ -8780,7 +8775,7 @@ proxies:
     path: /fr-unlimitxxx
 - alterId: 0
   cipher: auto
-  name: '21,25,28|github.com/freefq - 美国CloudFla... #5'
+  name: 21,25|14|github.com/freefq - 美国Cloud...
   network: ws
   port: '80'
   server: www.speedtest.net
@@ -8794,7 +8789,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 21,25,28|德国 V2CROSS.COM
+  name: 21,25|14,15|德国
   network: ws
   port: '443'
   server: 92.223.124.36
@@ -8834,7 +8829,7 @@ proxies:
     path: /look
 - alterId: 64
   cipher: auto
-  name: '21,28|未命名 #7'
+  name: '21,28|未命名 #5'
   network: ws
   port: 80
   server: 159.223.94.156
@@ -8889,14 +8884,14 @@ proxies:
     path: /VPNDATA.VPN
 - alterId: 0
   cipher: auto
-  name: 21,25|15|免费梯子https://t.me/mftizi
+  name: 21,25,28|🇯🇵日本高速接入点-05
   network: ws
   port: '2052'
   server: cfcdn3.sanfencdn9.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 27c7e182-88bf-4fc6-bbdd-83453061f47f
+  uuid: 4082b3aa-9ac1-4fc6-95d9-ff6abfc714c3
   ws-opts:
     headers:
       Host: wtywwcrzjp5.yofnhkfc.xyz
@@ -9288,21 +9283,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 25,29|KZ_speednode_0400
-  network: ws
-  port: 80
-  server: 92.46.108.106
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b82493e3-07b4-4cf2-b585-965575cfeb32
-  ws-opts:
-    headers:
-      Host: softiri.serveirc.com
-    path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
   h2-opts: {}
   http-opts: {}
   name: 25,29|CA_speednode_0001
@@ -9589,7 +9569,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '25,28|美国 CloudFlare节点 #12'
+  name: 25|15|🔒 VM-WS-TLS 🇺🇸 US-172.67.13...
   network: ws
   port: '443'
   server: 172.67.131.108
@@ -9632,7 +9612,7 @@ proxies:
     path: /video/34kKXbLM
 - alterId: 0
   cipher: auto
-  name: '25,26,27,28|美国 CloudFlare节点 #11'
+  name: 25,26,27,28|🇯🇵日本高速接入点-06
   network: ws
   port: '2052'
   server: cfcdn3.sanfencdn9.com
@@ -9640,7 +9620,7 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 27c7e182-88bf-4fc6-bbdd-83453061f47f
+  uuid: 4082b3aa-9ac1-4fc6-95d9-ff6abfc714c3
   ws-opts:
     headers:
       Host: kvjqqknzjp6.yofnhkfc.xyz
@@ -9865,81 +9845,17 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: 28|🇸🇬SG-13.215.161.65-0774
+  name: 28|🇺🇸US-80.92.205.112-0144
   network: ws
-  port: 40000
-  server: ml2.333210.xyz
-  servername: a.189.cn
-  tls: false
-  type: vmess
-  uuid: 892e4ff3-f8bb-42ac-9bd5-e103f235fc78
-  ws-opts:
-    headers:
-      Host: ml2.333210.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🇻🇳VN-103.27.237.185-8892
-  network: ws
-  port: 80
-  server: vn2.4gchill.com
-  servername: dl.ks.freefiremobile.com
-  tls: false
-  type: vmess
-  uuid: 67d5296e-a2ee-4a9f-89e6-365da540c55d
-  ws-opts:
-    headers:
-      Host: vn2.4gchill.com
-    path: /4gchill.com
-- alterId: 0
-  cipher: auto
-  name: 28|[vmess]澳洲1 1.25x
-  network: ws
-  port: '8880'
-  server: au-01.snangua.com
-  tls: false
-  type: vmess
-  uuid: 56aeb7f5-0d8e-4985-96a6-62b47958e825
-  ws-opts:
-    headers:
-      Host: au-01.snangua.com
-    path: /
-- cipher: aes-256-cfb
-  name: 28|8J%2BHuPCfh6xTRy0xMDMuMTcyLjEx...
-  obfs: plain
-  obfs-param: Tm9uZQ%3D%3D
-  password: U6qnYRhfyDmn8sgn
-  port: '9041'
-  protocol: origin
-  protocol-param: ''
-  server: 103.172.116.90
-  type: ssr
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-173.245.58.65-1823
-  network: ws
-  port: 80
-  server: 173.245.58.65
+  port: 443
+  server: 80.92.205.112
   servername: ''
   tls: false
   type: vmess
-  uuid: a5324503-04bd-4ce4-a47a-e969d605a5a6
+  uuid: 4c90ba75-230b-4f8b-bbff-8efa0eb0415f
   ws-opts:
     headers:
-      Host: vay.nuggetsecure.buzz
-    path: /main
-- alterId: 0
-  cipher: auto
-  name: 28|[vmess]美国1 1.25x
-  network: ws
-  port: '8880'
-  server: us-01.snangua.com
-  tls: false
-  type: vmess
-  uuid: 56aeb7f5-0d8e-4985-96a6-62b47958e825
-  ws-opts:
-    headers:
-      Host: us-01.snangua.com
+      Host: 80.92.205.112
     path: /
 - alterId: 0
   cipher: auto
@@ -9957,7 +9873,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|[vmess]剩余流量：0
+  name: 28|[vmess]距离下次重置剩余：17 天
   network: ws
   port: '8880'
   server: go.snangua.com
@@ -9970,169 +9886,67 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|🏁RELAY-104.21.71.88-0167
+  name: 28|🇸🇬新加坡高速接入点-02
   network: ws
-  port: 80
-  server: fr1e-unmetered.v2freevpn.com
-  servername: ''
+  port: '2052'
+  server: cfcdn2.sanfencdn9.com
   tls: false
   type: vmess
-  uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
+  uuid: 4082b3aa-9ac1-4fc6-95d9-ff6abfc714c3
   ws-opts:
     headers:
-      Host: fr1e-unmetered.v2freevpn.com
-    path: /v133PDXkklxLEcOvD
-- alterId: 64
+      Host: rpmlybgzsg2.yofnhkfc.xyz
+    path: /video/3YKfzGw4
+- cipher: aes-256-cfb
+  name: 28|8J%2BHufCfh7dUUi00NS44OS41Mi42...
+  obfs: plain
+  obfs-param: ''
+  password: p9z5BVADH2YFs3MN
+  port: '9040'
+  protocol: origin
+  protocol-param: ''
+  server: 45.89.52.66
+  type: ssr
+- alterId: 0
   cipher: auto
-  name: '28|未命名 #4'
+  name: 28|🇯🇵日本高速接入点-04
+  network: ws
+  port: '80'
+  server: cfcdn3.sanfencdn9.com
+  tls: false
+  type: vmess
+  uuid: 4082b3aa-9ac1-4fc6-95d9-ff6abfc714c3
+  ws-opts:
+    headers:
+      Host: agzbjszujp4.yofnhkfc.xyz
+    path: /video/ibCT6z55
+- alterId: 0
+  cipher: auto
+  name: 28|🇸🇬新加坡高速接入点-01
+  network: ws
+  port: '2052'
+  server: cfcdn2.sanfencdn9.com
+  tls: false
+  type: vmess
+  uuid: 4082b3aa-9ac1-4fc6-95d9-ff6abfc714c3
+  ws-opts:
+    headers:
+      Host: 7nAi74jJsg1.yofnhkfc.xyz
+    path: /video/c9efxRCi
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-104.21.30.254-1798
   network: ws
   port: 443
-  server: aaaa.wxx.gay
-  tls: true
-  type: vmess
-  uuid: 8237ec34-143a-11ee-8019-000017022008
-  ws-opts:
-    headers:
-      Host: ''
-    path: /look
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-104.21.91.73-1364
-  network: ws
-  port: 443
-  server: 104.21.91.73
+  server: nina.bond
   servername: ''
-  tls: true
-  type: vmess
-  uuid: 45f63e92-f782-4cac-84b8-e61cb5a5bfd0
-  ws-opts:
-    headers:
-      Host: adenc35.fixedlfoat.top
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 28|🇻🇳VN-103.252.94.224-1373
-  network: ws
-  port: 80
-  server: bs2.loadingip.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5278f5d3-f001-4459-94b6-7e0915238998
-  ws-opts:
-    headers:
-      Host: bs2.loadingip.com
-    path: /bs
-- alterId: 0
-  cipher: auto
-  name: 28|[vmess]日本1 1.25x
-  network: ws
-  port: '8880'
-  server: jp-01.snangua.com
-  tls: false
-  type: vmess
-  uuid: 56aeb7f5-0d8e-4985-96a6-62b47958e825
-  ws-opts:
-    headers:
-      Host: jp-01.snangua.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🇿🇦ZA-129.151.164.152-0777
-  network: ws
-  port: 55600
-  server: 129.151.164.152
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e30f8588-2555-48b8-c354-c8e63f57232d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🇰🇷KR-43.201.253.222-7411
-  network: ws
-  port: 26540
-  server: 43.201.253.222
-  servername: 43.201.253.222
-  tls: false
-  type: vmess
-  uuid: c841c903-7657-41f7-bf55-b41dd9456179
-  ws-opts:
-    headers:
-      Host: ''
-    path: /c841c903-7657-41f7-bf55-b41dd9456179
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-104.21.44.64-5079
-  network: ws
-  port: 443
-  server: 104.21.44.64
-  servername: kellie.makeup
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: kellie.makeup
+      Host: nina.bond
     path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 28|🇺🇸US-66.181.33.108-3863
-  network: ws
-  port: 22666
-  server: 66.181.33.108
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f096c70-478a-4fef-b29f-0f14d6a06583
-  ws-opts:
-    headers:
-      Host: ''
-    path: /a?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 28|🇸🇬SG-15.235.152.84-8846
-  network: ws
-  port: 80
-  server: sg.vpndata.vn
-  servername: lienquan.garena.vn
-  tls: false
-  type: vmess
-  uuid: fbccfed7-1aeb-416a-a4fd-7af1747f9f3b
-  ws-opts:
-    headers:
-      Host: sg.vpndata.vn
-    path: /VPNDATA.xYx
-- alterId: 0
-  cipher: auto
-  name: 28|🇸🇬SG-15.235.152.84-1808
-  network: ws
-  port: 80
-  server: sg.vpndata.vn
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: fbccfed7-1aeb-416a-a4fd-7af1747f9f3b
-  ws-opts:
-    headers:
-      Host: lienquan.garena.vn
-    path: /VPNDATA.xYx
-- alterId: 64
-  cipher: auto
-  name: '28|未命名 #5'
-  network: ws
-  port: 443
-  server: hkd1.quickerlink.xyz
-  tls: true
-  type: vmess
-  uuid: 3853a2ab-6bec-4503-89b9-d3cbcc6b69c9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /h6jr23x9h3lqiitg
 - alterId: 64
   cipher: auto
   name: 28|🇺🇸US-142.171.237.214-1946
@@ -10149,126 +9963,95 @@ proxies:
     path: /path/221312281009
 - alterId: 0
   cipher: auto
-  name: 28|[vmess]日本2 1.25x
-  network: ws
-  port: '8880'
-  server: go.snangua.com
-  tls: false
-  type: vmess
-  uuid: 56aeb7f5-0d8e-4985-96a6-62b47958e825
-  ws-opts:
-    headers:
-      Host: jp-01.snangua.com
-    path: /
-- cipher: aes-256-cfb
-  name: 28|8J%2BHq%2FCfh7dGUi01MS4xNTkuMT...
-  obfs: plain
-  obfs-param: ''
-  password: f8f7aCzcPKbsF8p3
-  port: '989'
-  protocol: origin
-  protocol-param: ''
-  server: 51.159.111.208
-  type: ssr
-- alterId: 0
-  cipher: auto
-  name: 28|🇪🇸ES-176.120.74.142-0765
-  network: ws
-  port: 443
-  server: 176.120.74.142
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 75695f5a-b6af-44f4-9983-ae250b53ff9c
-  ws-opts:
-    headers:
-      Host: internet.life.com.by
-    path: /
-- cipher: aes-256-cfb
-  name: 28|8J%2BHufCfh7dUUi00NS44OS41Mi42...
-  obfs: plain
-  obfs-param: ''
-  password: p9z5BVADH2YFs3MN
-  port: '9040'
-  protocol: origin
-  protocol-param: ''
-  server: 45.89.52.66
-  type: ssr
-- alterId: 0
-  cipher: auto
-  name: 28|[vmess]法国2 1.25x
-  network: ws
-  port: '8880'
-  server: go.snangua.com
-  tls: false
-  type: vmess
-  uuid: 56aeb7f5-0d8e-4985-96a6-62b47958e825
-  ws-opts:
-    headers:
-      Host: fr-01.snangua.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-198.41.195.22-0148
+  name: 28|🇯🇵JP-172.233.75.28-8838
   network: ws
   port: 80
-  server: very.sadnugget.shop
-  servername: ''
+  server: ANH99.5GTOCDOCAO.COM
+  servername: lienquan.garena.vn
   tls: false
   type: vmess
-  uuid: a5324503-04bd-4ce4-a47a-e969d605a5a6
+  uuid: eb9e8a52-0fec-4a10-8d16-af3b32874933
   ws-opts:
     headers:
-      Host: vay.nuggetsecure.buzz
-    path: /main
+      Host: ANH99.5GTOCDOCAO.COM
+    path: /5gtocdocao.com
 - alterId: 0
   cipher: auto
-  name: 28|🏁RELAY-162.159.128.232-1309
+  name: 28|距离下次重置剩余：1 天
   network: ws
-  port: 443
-  server: hexsen.com
-  servername: ''
-  tls: true
+  port: '2052'
+  server: cfcdn1.sanfencdn9.com
+  tls: false
   type: vmess
-  uuid: de04add9-5c68-8bab-950c-08cd5320df18
+  uuid: 4082b3aa-9ac1-4fc6-95d9-ff6abfc714c3
   ws-opts:
     headers:
-      Host: us.king361.cf
-    path: /argo-vmess?ed=2048
+      Host: us1cPZiz8nb.fzbqfrse.xyz
+    path: /video/6VBhAkCtV4/
 - cipher: aes-256-cfb
-  name: '28|8J%2BHuPCfh6xTRy0xMDMuMTcyLjEx... #1'
-  obfs: plain
-  obfs-param: Tm9uZQ%3D%3D
-  password: BwcAUZk8hUFAkDGN
-  port: '9031'
+  name: 28|8J%2BHr%2FCfh7VKUC01Ny4xODAuNT...
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: eAokbaDN6
+  port: '8081'
   protocol: origin
   protocol-param: ''
-  server: 103.172.116.90
+  server: jp-am48-6.eqnode.net
   type: ssr
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 28|🏁RELAY-172.67.235.237-1751
+  name: '28|未命名 #4'
   network: ws
   port: 443
-  server: 172.67.235.237
+  server: aaaa.wxx.gay
+  tls: true
+  type: vmess
+  uuid: 8237ec34-143a-11ee-8019-000017022008
+  ws-opts:
+    headers:
+      Host: ''
+    path: /look
+- alterId: 0
+  cipher: auto
+  name: 28|🇻🇳VN-103.27.237.185-8892
+  network: ws
+  port: 80
+  server: vn2.4gchill.com
+  servername: dl.ks.freefiremobile.com
+  tls: false
+  type: vmess
+  uuid: 67d5296e-a2ee-4a9f-89e6-365da540c55d
+  ws-opts:
+    headers:
+      Host: vn2.4gchill.com
+    path: /4gchill.com
+- alterId: 0
+  cipher: auto
+  name: 28|🇩🇪DE-130.162.47.123-11561
+  network: ws
+  port: 6854
+  server: 130.162.47.123
   servername: ''
   tls: true
   type: vmess
-  uuid: f24bba0f-8656-44f8-b21e-a0e3a190c4c5
+  uuid: b5f7e932-f730-4ad2-b425-40977b9db332
   ws-opts:
     headers:
-      Host: www.31000oooowe2.bf
-    path: /df97b21e-3943-4865-af18-b5ea9676b037
-- cipher: aes-128-cfb
-  name: 28|8J%2BHuvCfh7hVUy0xNTYuMTQ2LjM4...
-  obfs: plain
-  obfs-param: ''
-  password: shadowsocks
-  port: '443'
-  protocol: origin
-  protocol-param: ''
-  server: 156.146.38.163
-  type: ssr
+      Host: ''
+    path: /zBLPou
+- alterId: 0
+  cipher: auto
+  name: 28|🇺🇸美国高速接入点-03
+  network: ws
+  port: '2052'
+  server: cfcdn1.sanfencdn9.com
+  tls: false
+  type: vmess
+  uuid: 4082b3aa-9ac1-4fc6-95d9-ff6abfc714c3
+  ws-opts:
+    headers:
+      Host: us3AJ8biuQx.fzbqfrse.xyz
+    path: /video/QXjZG5u4F2
 - alterId: 0
   cipher: auto
   name: 28|🇺🇸US-129.146.113.254-0703
@@ -10285,18 +10068,214 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|🇺🇸US-80.92.205.112-0144
+  name: 28|[vmess]法国1 1.25x
   network: ws
-  port: 443
-  server: 80.92.205.112
+  port: '8880'
+  server: fr-01.snangua.com
+  tls: false
+  type: vmess
+  uuid: 56aeb7f5-0d8e-4985-96a6-62b47958e825
+  ws-opts:
+    headers:
+      Host: fr-01.snangua.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇺🇸美国高速接入点-05
+  network: ws
+  port: '8080'
+  server: cfcdn1.sanfencdn9.com
+  tls: false
+  type: vmess
+  uuid: 4082b3aa-9ac1-4fc6-95d9-ff6abfc714c3
+  ws-opts:
+    headers:
+      Host: us5PhAx6xsj.fzbqfrse.xyz
+    path: /video/f8ZKTGaGoC/
+- alterId: 0
+  cipher: auto
+  name: 28|[vmess]澳洲2 1.25x
+  network: ws
+  port: '8880'
+  server: go.snangua.com
+  tls: false
+  type: vmess
+  uuid: 56aeb7f5-0d8e-4985-96a6-62b47958e825
+  ws-opts:
+    headers:
+      Host: au-01.snangua.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|[vmess]日本1 1.25x
+  network: ws
+  port: '8880'
+  server: jp-01.snangua.com
+  tls: false
+  type: vmess
+  uuid: 56aeb7f5-0d8e-4985-96a6-62b47958e825
+  ws-opts:
+    headers:
+      Host: jp-01.snangua.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇸🇬SG-13.215.161.65-0774
+  network: ws
+  port: 40000
+  server: ml2.333210.xyz
+  servername: a.189.cn
+  tls: false
+  type: vmess
+  uuid: 892e4ff3-f8bb-42ac-9bd5-e103f235fc78
+  ws-opts:
+    headers:
+      Host: ml2.333210.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇯🇵日本高速接入点-01
+  network: ws
+  port: '80'
+  server: cfcdn3.sanfencdn9.com
+  tls: false
+  type: vmess
+  uuid: 4082b3aa-9ac1-4fc6-95d9-ff6abfc714c3
+  ws-opts:
+    headers:
+      Host: oA5FSz9Tjp1.yofnhkfc.xyz
+    path: /video/P7EExoE2
+- alterId: 0
+  cipher: auto
+  name: 28|台湾高速接入点-01
+  network: ws
+  port: '2052'
+  server: cfcdn1.sanfencdn9.com
+  tls: false
+  type: vmess
+  uuid: 4082b3aa-9ac1-4fc6-95d9-ff6abfc714c3
+  ws-opts:
+    headers:
+      Host: tw1bQiWSE4x.fzbqfrse.xyz
+    path: /video/GQ2qE5Us9g
+- alterId: 0
+  cipher: auto
+  name: 28|[vmess]美国1 1.25x
+  network: ws
+  port: '8880'
+  server: us-01.snangua.com
+  tls: false
+  type: vmess
+  uuid: 56aeb7f5-0d8e-4985-96a6-62b47958e825
+  ws-opts:
+    headers:
+      Host: us-01.snangua.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇺🇸美国高速接入点-07
+  network: ws
+  port: '2086'
+  server: cfcdn1.sanfencdn9.com
+  tls: false
+  type: vmess
+  uuid: 4082b3aa-9ac1-4fc6-95d9-ff6abfc714c3
+  ws-opts:
+    headers:
+      Host: us77SmSk86j.fzbqfrse.xyz
+    path: /video/Z7qdcrAGRw
+- alterId: 0
+  cipher: auto
+  name: 28|🇺🇸US-66.181.33.108-3863
+  network: ws
+  port: 22666
+  server: 66.181.33.108
   servername: ''
   tls: false
   type: vmess
-  uuid: 4c90ba75-230b-4f8b-bbff-8efa0eb0415f
+  uuid: 9f096c70-478a-4fef-b29f-0f14d6a06583
   ws-opts:
     headers:
-      Host: 80.92.205.112
+      Host: ''
+    path: /a?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-104.21.91.73-1364
+  network: ws
+  port: 443
+  server: 104.21.91.73
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 45f63e92-f782-4cac-84b8-e61cb5a5bfd0
+  ws-opts:
+    headers:
+      Host: adenc35.fixedlfoat.top
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-162.159.128.232-1309
+  network: ws
+  port: 443
+  server: hexsen.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: de04add9-5c68-8bab-950c-08cd5320df18
+  ws-opts:
+    headers:
+      Host: us.king361.cf
+    path: /argo-vmess?ed=2048
+- cipher: aes-256-cfb
+  name: 28|8J%2BHuPCfh6xTRy0xMDMuMTcyLjEx...
+  obfs: plain
+  obfs-param: Tm9uZQ%3D%3D
+  password: BwcAUZk8hUFAkDGN
+  port: '9031'
+  protocol: origin
+  protocol-param: ''
+  server: 103.172.116.90
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 28|🇯🇵日本高速接入点-02
+  network: ws
+  port: '80'
+  server: cfcdn3.sanfencdn9.com
+  tls: false
+  type: vmess
+  uuid: 4082b3aa-9ac1-4fc6-95d9-ff6abfc714c3
+  ws-opts:
+    headers:
+      Host: GWYp69Yujp2.yofnhkfc.xyz
+    path: /video/VDXcaM7r
+- alterId: 0
+  cipher: auto
+  name: 28|🇿🇦ZA-129.151.164.152-0777
+  network: ws
+  port: 55600
+  server: 129.151.164.152
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e30f8588-2555-48b8-c354-c8e63f57232d
+  ws-opts:
+    headers:
+      Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇺🇸美国高速接入点-08
+  network: ws
+  port: '2095'
+  server: cfcdn1.sanfencdn9.com
+  tls: false
+  type: vmess
+  uuid: 4082b3aa-9ac1-4fc6-95d9-ff6abfc714c3
+  ws-opts:
+    headers:
+      Host: us82pRzxDMb.fzbqfrse.xyz
+    path: /video/qYZue4zaWS
 - alterId: 0
   cipher: auto
   name: 28|🇬🇧GB-95.164.69.27-0179
@@ -10313,45 +10292,45 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 28|🏁RELAY-104.21.30.254-1798
+  name: 28|🇪🇸ES-176.120.74.142-0765
   network: ws
   port: 443
-  server: nina.bond
+  server: 176.120.74.142
   servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: nina.bond
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 28|🇩🇪DE-130.162.47.123-11559
-  network: ws
-  port: 6854
-  server: 130.162.47.123
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: b5f7e932-f730-4ad2-b425-40977b9db332
-  ws-opts:
-    headers:
-      Host: ''
-    path: /zBLPou
-- alterId: 0
-  cipher: auto
-  name: 28|[vmess]澳洲2 1.25x
-  network: ws
-  port: '8880'
-  server: go.snangua.com
   tls: false
   type: vmess
-  uuid: 56aeb7f5-0d8e-4985-96a6-62b47958e825
+  uuid: 75695f5a-b6af-44f4-9983-ae250b53ff9c
   ws-opts:
     headers:
-      Host: au-01.snangua.com
+      Host: internet.life.com.by
     path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇻🇳VN-103.252.94.224-1373
+  network: ws
+  port: 80
+  server: bs2.loadingip.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5278f5d3-f001-4459-94b6-7e0915238998
+  ws-opts:
+    headers:
+      Host: bs2.loadingip.com
+    path: /bs
+- alterId: 0
+  cipher: auto
+  name: 28|🇺🇸美国高速接入点-02
+  network: ws
+  port: '2052'
+  server: cfcdn1.sanfencdn9.com
+  tls: false
+  type: vmess
+  uuid: 4082b3aa-9ac1-4fc6-95d9-ff6abfc714c3
+  ws-opts:
+    headers:
+      Host: us2jdgv5GC7.fzbqfrse.xyz
+    path: /video/DDC4btA8wc/
 - alterId: 64
   cipher: auto
   name: '28|未命名 #6'
@@ -10367,6 +10346,182 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
+  name: 28|🇸🇬SG-15.235.152.84-1808
+  network: ws
+  port: 80
+  server: sg.vpndata.vn
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fbccfed7-1aeb-416a-a4fd-7af1747f9f3b
+  ws-opts:
+    headers:
+      Host: lienquan.garena.vn
+    path: /VPNDATA.xYx
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-173.245.58.65-1823
+  network: ws
+  port: 80
+  server: 173.245.58.65
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a5324503-04bd-4ce4-a47a-e969d605a5a6
+  ws-opts:
+    headers:
+      Host: vay.nuggetsecure.buzz
+    path: /main
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-104.21.71.88-0167
+  network: ws
+  port: 80
+  server: fr1e-unmetered.v2freevpn.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
+  ws-opts:
+    headers:
+      Host: fr1e-unmetered.v2freevpn.com
+    path: /v133PDXkklxLEcOvD
+- alterId: 64
+  cipher: auto
+  name: '28|未命名 #7'
+  network: ws
+  port: 443
+  server: hkd1.quickerlink.xyz
+  tls: true
+  type: vmess
+  uuid: 3853a2ab-6bec-4503-89b9-d3cbcc6b69c9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /h6jr23x9h3lqiitg
+- alterId: 0
+  cipher: auto
+  name: 28|[vmess]澳洲1 1.25x
+  network: ws
+  port: '8880'
+  server: au-01.snangua.com
+  tls: false
+  type: vmess
+  uuid: 56aeb7f5-0d8e-4985-96a6-62b47958e825
+  ws-opts:
+    headers:
+      Host: au-01.snangua.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇸🇬新加坡高速接入点-03
+  network: ws
+  port: '2052'
+  server: cfcdn2.sanfencdn9.com
+  tls: false
+  type: vmess
+  uuid: 4082b3aa-9ac1-4fc6-95d9-ff6abfc714c3
+  ws-opts:
+    headers:
+      Host: jpafzyhfsg3.yofnhkfc.xyz
+    path: /video/u4eCZTxW
+- alterId: 0
+  cipher: auto
+  name: 28|[vmess]日本2 1.25x
+  network: ws
+  port: '8880'
+  server: go.snangua.com
+  tls: false
+  type: vmess
+  uuid: 56aeb7f5-0d8e-4985-96a6-62b47958e825
+  ws-opts:
+    headers:
+      Host: jp-01.snangua.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇸🇬SG-15.235.152.84-8846
+  network: ws
+  port: 80
+  server: sg.vpndata.vn
+  servername: lienquan.garena.vn
+  tls: false
+  type: vmess
+  uuid: fbccfed7-1aeb-416a-a4fd-7af1747f9f3b
+  ws-opts:
+    headers:
+      Host: sg.vpndata.vn
+    path: /VPNDATA.xYx
+- alterId: 0
+  cipher: auto
+  name: 28|🇰🇷KR-43.201.253.222-7411
+  network: ws
+  port: 26540
+  server: 43.201.253.222
+  servername: 43.201.253.222
+  tls: false
+  type: vmess
+  uuid: c841c903-7657-41f7-bf55-b41dd9456179
+  ws-opts:
+    headers:
+      Host: ''
+    path: /c841c903-7657-41f7-bf55-b41dd9456179
+- alterId: 0
+  cipher: auto
+  name: 28|[vmess]法国2 1.25x
+  network: ws
+  port: '8880'
+  server: go.snangua.com
+  tls: false
+  type: vmess
+  uuid: 56aeb7f5-0d8e-4985-96a6-62b47958e825
+  ws-opts:
+    headers:
+      Host: fr-01.snangua.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-104.21.44.64-5079
+  network: ws
+  port: 443
+  server: 104.21.44.64
+  servername: kellie.makeup
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kellie.makeup
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 28|🇯🇵日本高速接入点-03
+  network: ws
+  port: '80'
+  server: cfcdn3.sanfencdn9.com
+  tls: false
+  type: vmess
+  uuid: 4082b3aa-9ac1-4fc6-95d9-ff6abfc714c3
+  ws-opts:
+    headers:
+      Host: 6Sn8mFtTjp3.yofnhkfc.xyz
+    path: /video/X37qXHip
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-172.67.235.237-1751
+  network: ws
+  port: 443
+  server: 172.67.235.237
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: f24bba0f-8656-44f8-b21e-a0e3a190c4c5
+  ws-opts:
+    headers:
+      Host: www.31000oooowe2.bf
+    path: /df97b21e-3943-4865-af18-b5ea9676b037
+- alterId: 0
+  cipher: auto
   name: 28|🇬🇧GB-95.164.69.27-0142
   network: ws
   port: 80
@@ -10379,43 +10534,36 @@ proxies:
     headers:
       Host: ''
     path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 28|🇯🇵JP-172.233.75.28-8838
-  network: ws
-  port: 80
-  server: ANH99.5GTOCDOCAO.COM
-  servername: lienquan.garena.vn
-  tls: false
-  type: vmess
-  uuid: eb9e8a52-0fec-4a10-8d16-af3b32874933
-  ws-opts:
-    headers:
-      Host: ANH99.5GTOCDOCAO.COM
-    path: /5gtocdocao.com
 - cipher: aes-256-cfb
-  name: 28|8J%2BHr%2FCfh7VKUC01Ny4xODAuNT...
-  obfs: tls1.2_ticket_auth
+  name: 28|8J%2BHq%2FCfh7dGUi01MS4xNTkuMT...
+  obfs: plain
   obfs-param: ''
-  password: eAokbaDN6
-  port: '8081'
+  password: f8f7aCzcPKbsF8p3
+  port: '989'
   protocol: origin
   protocol-param: ''
-  server: jp-am48-6.eqnode.net
+  server: 51.159.111.208
   type: ssr
-- alterId: 0
-  cipher: auto
-  name: 28|[vmess]法国1 1.25x
-  network: ws
-  port: '8880'
-  server: fr-01.snangua.com
-  tls: false
-  type: vmess
-  uuid: 56aeb7f5-0d8e-4985-96a6-62b47958e825
-  ws-opts:
-    headers:
-      Host: fr-01.snangua.com
-    path: /
+- cipher: aes-128-cfb
+  name: 28|8J%2BHuvCfh7hVUy0xNTYuMTQ2LjM4...
+  obfs: plain
+  obfs-param: ''
+  password: shadowsocks
+  port: '443'
+  protocol: origin
+  protocol-param: ''
+  server: 156.146.38.163
+  type: ssr
+- cipher: aes-256-cfb
+  name: '28|8J%2BHuPCfh6xTRy0xMDMuMTcyLjEx... #1'
+  obfs: plain
+  obfs-param: Tm9uZQ%3D%3D
+  password: U6qnYRhfyDmn8sgn
+  port: '9041'
+  protocol: origin
+  protocol-param: ''
+  server: 103.172.116.90
+  type: ssr
 - client-fingerprint: chrome
   name: 29|CN_speednode_0376
   port: 17070
