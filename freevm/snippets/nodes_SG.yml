@@ -110,7 +110,7 @@ proxies:
   servername: sg04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7fa6cdf8-a793-4bb4-91d3-f70c8bcddeff
+  uuid: edc143f3-92a5-4079-a5a3-325c7d227fb2
 - alterId: 0
   cipher: auto
   name: 12,25|12|🇸🇬新加坡05
@@ -120,7 +120,7 @@ proxies:
   servername: sg05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7fa6cdf8-a793-4bb4-91d3-f70c8bcddeff
+  uuid: edc143f3-92a5-4079-a5a3-325c7d227fb2
 - alterId: 0
   cipher: auto
   name: 12,25|12|🇸🇬新加坡06
@@ -130,7 +130,7 @@ proxies:
   servername: sg06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7fa6cdf8-a793-4bb4-91d3-f70c8bcddeff
+  uuid: edc143f3-92a5-4079-a5a3-325c7d227fb2
 - alterId: 0
   cipher: auto
   name: 15|新加坡_【YouTube-VV科技】
@@ -243,7 +243,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 770e4bd3-b468-4c5b-bf43-beadbdfd6565
+  uuid: 2d33fe3c-5106-4229-8b74-f441dc744755
 - alterId: 0
   cipher: auto
   name: 23,25|16|【BGP】新加坡 05 | 1x SG
@@ -253,7 +253,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 770e4bd3-b468-4c5b-bf43-beadbdfd6565
+  uuid: 2d33fe3c-5106-4229-8b74-f441dc744755
 - alterId: 0
   cipher: auto
   name: 23,25|16|【BGP】新加坡 06 | 1x SG
@@ -263,7 +263,7 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 770e4bd3-b468-4c5b-bf43-beadbdfd6565
+  uuid: 2d33fe3c-5106-4229-8b74-f441dc744755
 - alterId: 0
   cipher: auto
   name: 25|15|🔒 VM-TCP-NA 🇸🇬 SG-8.219.80....
@@ -274,6 +274,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 0c0c1706-19cb-4c87-a8d9-70059699efa3
+- alterId: 0
+  cipher: auto
+  name: 25|15|【直连】狮城 - 1 - A Group
+  network: tcp
+  port: '38755'
+  server: 00000000000000000000000000000000000000000000000000000000000025.agroup-node-for-bigairport.sbs
+  tls: false
+  type: vmess
+  uuid: 843764ed-637a-4085-856e-72c507df3447
 - alterId: 0
   cipher: auto
   name: 25|15|🔒 VM-WS-NA 🇸🇬 SG-45.76.144....
@@ -317,15 +326,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 28|新加坡 - 1X  - A
-  network: tcp
-  port: '18695'
-  server: A005.STANDARD-NODES-CHICKENFARMS.TOP
-  tls: false
-  type: vmess
-  uuid: 8924bcb2-666b-4f49-9bfe-f896cb0270a0
-- alterId: 0
-  cipher: auto
   name: 28|新加坡代理1|支持chatGPT
   network: ws
   port: '443'
@@ -339,17 +339,13 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 28|新加坡 - TLS加密 - 1X
-  network: ws
-  port: '443'
-  server: A015.STANDARD-NODES-CHICKENFARMS.TOP
-  tls: true
+  name: 28|新加坡 - 1X  - A
+  network: tcp
+  port: '18695'
+  server: A005.STANDARD-NODES-CHICKENFARMS.TOP
+  tls: false
   type: vmess
   uuid: 8924bcb2-666b-4f49-9bfe-f896cb0270a0
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
 - alterId: 0
   cipher: auto
   name: 28|新加坡 - 1X  - B
@@ -373,3 +369,16 @@ proxies:
     headers:
       Host: www.46130221.xyz
     path: /path/143534141104
+- alterId: 0
+  cipher: auto
+  name: 28|新加坡 - TLS加密 - 1X
+  network: ws
+  port: '443'
+  server: A015.STANDARD-NODES-CHICKENFARMS.TOP
+  tls: true
+  type: vmess
+  uuid: 8924bcb2-666b-4f49-9bfe-f896cb0270a0
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
