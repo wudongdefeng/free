@@ -69,7 +69,30 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 13,20,21,25|6,13|台湾省中华电信 2
+  name: '11,28|台湾省 中华电信(HiNet)数据中心 #2'
+  network: tcp
+  port: 4443
+  server: 118.167.73.7
+  tls: false
+  type: vmess
+  uuid: ef3841cf-2556-4d9c-ac8d-c0e5e978ab86
+- alterId: 0
+  cipher: auto
+  name: '11,20,21,25,28|台湾省 中华电信(HiNet)数据中心 #3'
+  network: tcp
+  port: 2024
+  server: b23.ntbq.dynu.net
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2358c269-178a-43c0-a208-c6cc52d398f9
+  ws-headers:
+    Host: b23.ntbq.dynu.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '13,16,20,21,25,28|github.com/freefq - 台湾省中华电信(Hi... #1'
   network: tcp
   port: 4443
   server: nb24.ntbq.dynu.net
@@ -77,7 +100,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 232c3a62-f299-4d70-9a97-8b5820b93f1a
+  uuid: 1cc969d3-1df8-4794-a5cc-9231fe0e4710
   ws-headers:
     Host: nb24.ntbq.dynu.net
   ws-path: /
@@ -97,32 +120,18 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '16,20,21,25,28|github.com/freefq - 台湾省南投县中华电信... #1'
-  network: tcp
-  port: 6122
-  server: c12.twtc.dynu.net
+  name: '16,21,25,28|github.com/freefq - 台湾省晟崴科技股份有... #1'
+  network: ws
+  port: '80'
+  server: 3SAO.5GTOCDOCAO.COM
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 2358c269-178a-43c0-a208-c6cc52d398f9
-  ws-headers:
-    Host: c12.twtc.dynu.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '16,20,21,25,28|github.com/freefq - 台湾省中华电信(Hi... #1'
-  network: tcp
-  port: 2024
-  server: b23.ntbq.dynu.net
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 2358c269-178a-43c0-a208-c6cc52d398f9
-  ws-headers:
-    Host: b23.ntbq.dynu.net
-  ws-path: /
+  uuid: eb9e8a52-0fec-4a10-8d16-af3b32874933
+  ws-opts:
+    headers:
+      Host: lienquan.garena.vn
+    path: /5gtocdocao.com
 - alterId: 0
   cipher: auto
   name: 20|TW-111.249.61.172-043
@@ -137,29 +146,28 @@ proxies:
     Host: hinet-d04.whiteconnectb.com
   ws-path: /clientarea
 - alterId: 0
-  cipher: auto
-  name: 25|20|baipaovpn台湾省
+  cipher: aes-128-gcm
+  name: 20,21,25|15|台湾-166.2KB/s
   network: tcp
-  port: '4443'
-  server: 118.167.73.7
-  servername: ''
+  port: 6122
+  server: c12.twtc.dynu.net
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: ef3841cf-2556-4d9c-ac8d-c0e5e978ab86
+  uuid: 2358c269-178a-43c0-a208-c6cc52d398f9
+  ws-headers:
+    Host: c12.twtc.dynu.net
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '25|20|baipaovpn台湾省 #1'
-  network: ws
-  port: '22250'
-  server: 122.118.128.176
+  name: 25|15|台湾【TG：@ccbaohe】定时更新节点订阅 8
+  network: tcp
+  port: 12002
+  server: nb22.ntbq.dynu.net
   servername: ''
   tls: false
   type: vmess
-  uuid: 1dd7315b-b47d-46dd-ab1c-e025a6b2a796
-  ws-opts:
-    headers:
-      Host: aktwv4.cco.icu
-    path: /
+  uuid: 2358c269-178a-43c0-a208-c6cc52d398f9
 - cipher: aes-128-gcm
   name: 26|🇹🇼 台湾KT|@ripaojiedian
   password: oiwym4ovI4Yb

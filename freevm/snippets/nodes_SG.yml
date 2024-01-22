@@ -110,7 +110,7 @@ proxies:
   servername: sg04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 44861d9b-237f-471c-ad29-b8549b9b7368
+  uuid: 59baee76-bc7e-4a65-8752-0fc6c172bb09
 - alterId: 0
   cipher: auto
   name: 12,25|12|🇸🇬新加坡05
@@ -120,7 +120,7 @@ proxies:
   servername: sg05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 44861d9b-237f-471c-ad29-b8549b9b7368
+  uuid: 59baee76-bc7e-4a65-8752-0fc6c172bb09
 - alterId: 0
   cipher: auto
   name: 12,25|12|🇸🇬新加坡06
@@ -130,7 +130,7 @@ proxies:
   servername: sg06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 44861d9b-237f-471c-ad29-b8549b9b7368
+  uuid: 59baee76-bc7e-4a65-8752-0fc6c172bb09
 - alterId: 0
   cipher: auto
   name: 15|新加坡_【YouTube-VV科技】
@@ -243,7 +243,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 788689bc-e4ba-4541-bbd9-2e62f4ba2f5e
+  uuid: abd666fa-e6b3-44de-9361-316e4a12a0c8
 - alterId: 0
   cipher: auto
   name: 23,25|16|【BGP】新加坡 05 | 1x SG
@@ -253,7 +253,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 788689bc-e4ba-4541-bbd9-2e62f4ba2f5e
+  uuid: abd666fa-e6b3-44de-9361-316e4a12a0c8
 - alterId: 0
   cipher: auto
   name: 23,25|16|【BGP】新加坡 06 | 1x SG
@@ -263,7 +263,17 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 788689bc-e4ba-4541-bbd9-2e62f4ba2f5e
+  uuid: abd666fa-e6b3-44de-9361-316e4a12a0c8
+- alterId: 0
+  cipher: auto
+  name: 25|15|🔒 VM-TCP-NA 🇸🇬 SG-8.219.80....
+  network: tcp
+  port: '44279'
+  server: 8.219.80.233
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0c0c1706-19cb-4c87-a8d9-70059699efa3
 - alterId: 0
   cipher: auto
   name: 25|15|🔒 VM-WS-NA 🇸🇬 SG-45.76.144....
@@ -280,29 +290,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|15|🔒 VM-TCP-NA 🇸🇬 SG-8.219.80....
-  network: tcp
-  port: '44279'
-  server: 8.219.80.233
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0c0c1706-19cb-4c87-a8d9-70059699efa3
-- alterId: 0
-  cipher: auto
-  name: '25,26,27,28|新加坡|@ripaojiedian #1'
+  name: '25,26,27,28|新加坡2|@ripaojiedian #1'
   network: ws
-  port: '2052'
-  server: cfcdn2.sanfencdn9.com
+  port: '80'
+  server: 104.17.25.2
   servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: d0a3e08a-d26f-45bd-ba3c-6387f9182633
+  uuid: d6664518-c8e1-42cf-f2c1-d33dcc01a8a6
   ws-opts:
     headers:
-      Host: 7nAi74jJsg1.yofnhkfc.xyz
-    path: /video/c9efxRCi
+      Host: sgvpn.catnipballs.gay
+    path: /
 - cipher: aes-256-cfb
   name: 26|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
@@ -318,15 +318,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 28|新加坡 - 1X  - B
-  network: tcp
-  port: '18696'
-  server: A006.STANDARD-NODES-CHICKENFARMS.TOP
-  tls: false
-  type: vmess
-  uuid: 8924bcb2-666b-4f49-9bfe-f896cb0270a0
-- alterId: 0
-  cipher: auto
   name: 28|新加坡 - 1X  - A
   network: tcp
   port: '18695'
@@ -336,19 +327,6 @@ proxies:
   uuid: 8924bcb2-666b-4f49-9bfe-f896cb0270a0
 - alterId: 0
   cipher: auto
-  name: 28|新加坡 - TLS加密 - 1X
-  network: ws
-  port: '443'
-  server: A015.STANDARD-NODES-CHICKENFARMS.TOP
-  tls: true
-  type: vmess
-  uuid: 8924bcb2-666b-4f49-9bfe-f896cb0270a0
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
   name: 28|新加坡代理1|支持chatGPT
   network: ws
   port: '443'
@@ -356,6 +334,19 @@ proxies:
   tls: true
   type: vmess
   uuid: cea88d38-5d60-45b7-a76e-f673d23b7c97
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 28|新加坡 - TLS加密 - 1X
+  network: ws
+  port: '443'
+  server: A015.STANDARD-NODES-CHICKENFARMS.TOP
+  tls: true
+  type: vmess
+  uuid: 8924bcb2-666b-4f49-9bfe-f896cb0270a0
   ws-opts:
     headers:
       Host: ''
@@ -374,6 +365,15 @@ proxies:
     headers:
       Host: www.46130221.xyz
     path: /path/143534141104
+- alterId: 0
+  cipher: auto
+  name: 28|新加坡 - 1X  - B
+  network: tcp
+  port: '18696'
+  server: A006.STANDARD-NODES-CHICKENFARMS.TOP
+  tls: false
+  type: vmess
+  uuid: 8924bcb2-666b-4f49-9bfe-f896cb0270a0
 - cipher: aes-256-cfb
   name: 29|SG_speednode_0200
   password: FAdUvMJUq5vDgKEq
