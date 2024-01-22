@@ -83,16 +83,20 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '11,13,28|台湾省 中华电信(HiNet)数据中心 #4'
+  name: '13,20,21,28|台湾省 中华电信(HiNet)数据中心 #3'
   network: tcp
   port: 4443
   server: 118.167.73.7
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: ef3841cf-2556-4d9c-ac8d-c0e5e978ab86
+  ws-headers:
+    Host: 118.167.73.7
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '13,20,21,25,28|台湾省 中华电信(HiNet)数据中心 #5'
+  name: '13,20,21,25,28|台湾省 中华电信(HiNet)数据中心 #4'
   network: tcp
   port: 2024
   server: b23.ntbq.dynu.net
@@ -132,32 +136,15 @@ proxies:
     Host: hinet-d04.whiteconnectb.com
   ws-path: /clientarea
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 20,21,25|15|台湾-166.2KB/s
-  network: tcp
-  port: 6122
-  server: c12.twtc.dynu.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 2358c269-178a-43c0-a208-c6cc52d398f9
-  ws-headers:
-    Host: c12.twtc.dynu.net
-  ws-path: /
-- alterId: 0
   cipher: auto
-  name: '20,21,25,27,28|台湾|@ripaojiedian #1'
+  name: '25,27,28|台湾|@ripaojiedian #1'
   network: tcp
   port: '21353'
   server: 1.162.139.104
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: c24b520b-e0c6-4bb0-b951-dd87cc07a518
-  ws-headers:
-    Host: 1.162.139.104
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: 25|15|台湾【TG：@ccbaohe】定时更新节点订阅 8
@@ -165,6 +152,15 @@ proxies:
   port: 12002
   server: nb22.ntbq.dynu.net
   servername: ''
+  tls: false
+  type: vmess
+  uuid: 2358c269-178a-43c0-a208-c6cc52d398f9
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 25|15|台湾-166.2KB/s
+  network: tcp
+  port: 6122
+  server: c12.twtc.dynu.net
   tls: false
   type: vmess
   uuid: 2358c269-178a-43c0-a208-c6cc52d398f9
