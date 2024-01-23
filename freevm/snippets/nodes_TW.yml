@@ -69,20 +69,6 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: '11,20,21,28|台湾省新北市 中华电信 #1'
-  network: tcp
-  port: '4443'
-  server: 61.228.149.57
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ef3841cf-2556-4d9c-ac8d-c0e5e978ab86
-  ws-headers:
-    Host: 61.228.149.57
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: 13,20,21,25|13|台湾省 中华电信(HiNet)数据中心
   network: tcp
   port: 4443
@@ -104,13 +90,13 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: ef3841cf-2556-4d9c-ac8d-c0e5e978ab86
+  uuid: 1cc969d3-1df8-4794-a5cc-9231fe0e4710
   ws-headers:
     Host: b23.ntbq.dynu.net
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '13,16,20,21,25,28|github.com/freefq - 台湾省新北市中华电信... #1'
+  name: '13,16,20,21,25,28|github.com/freefq - 台湾省新北市中华电信... #2'
   network: tcp
   port: 4443
   server: nb24.ntbq.dynu.net
@@ -136,6 +122,20 @@ proxies:
     headers:
       Host: lienquan.garena.vn
     path: /5gtocdocao.com
+- alterId: 0
+  cipher: auto
+  name: '16,20,21,25,28|github.com/freefq - 台湾省新北市中华电信... #3'
+  network: tcp
+  port: '4443'
+  server: 61.228.149.57
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ef3841cf-2556-4d9c-ac8d-c0e5e978ab86
+  ws-headers:
+    Host: 61.228.149.57
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   name: 20,29|TW_speednode_0098
   password: 1cc969d3-1df8-4794-a5cc-9231fe0e4710
@@ -144,18 +144,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 25|15|🔒 VM-TCP-NA 🇹🇼 TW-118.167.7...
+  name: 25|15|台湾【TG：@ccbaohe】定时更新节点订阅 5
   network: tcp
-  port: '2024'
-  server: 118.167.74.229
-  tls: false
-  type: vmess
-  uuid: 2358c269-178a-43c0-a208-c6cc52d398f9
-- alterId: 0
-  cipher: auto
-  name: 25|15|台湾【TG：@ccbaohe】定时更新节点订阅 4
-  network: tcp
-  port: 12002
+  port: '12002'
   server: nb22.ntbq.dynu.net
   servername: ''
   tls: false
@@ -163,24 +154,38 @@ proxies:
   uuid: c64adf03-3bfe-47e0-b38b-870a9f8032e8
 - alterId: 0
   cipher: auto
-  name: 25|15|台湾【TG：@ccbaohe】定时更新节点订阅 5
-  network: tcp
-  port: 6122
-  server: c12.twtc.dynu.net
+  name: 25|15|🔒 VM-WS-NA 🇹🇼 TW-103.159.20...
+  network: ws
+  port: '31945'
+  server: 103.159.206.35
   servername: ''
   tls: false
   type: vmess
-  uuid: 2358c269-178a-43c0-a208-c6cc52d398f9
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: '25,27,28|台湾|@ripaojiedian #1'
   network: tcp
   port: '21353'
-  server: 1.162.139.104
+  server: tw1-vds3.anyhk.co
   servername: ''
   tls: false
   type: vmess
-  uuid: c24b520b-e0c6-4bb0-b951-dd87cc07a518
+  uuid: 71618f91-d149-4b45-91c9-f94dd4e2499a
+- alterId: 0
+  cipher: auto
+  name: 25|20|baipaovpn台湾省新竹市
+  network: tcp
+  port: '12002'
+  server: 114.37.155.245
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ef3841cf-2556-4d9c-ac8d-c0e5e978ab86
 - cipher: aes-128-gcm
   name: 26|🇹🇼 台湾KT|@ripaojiedian
   password: oiwym4ovI4Yb
@@ -193,7 +198,7 @@ proxies:
     skip-cert-verify: true
     tls: false
   port: 443
-  server: 61.224.79.197
+  server: 122.118.169.225
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 29|TW_speednode_0099
