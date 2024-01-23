@@ -69,34 +69,6 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: '11,13,16,20,21,25,28|github.com/freefq - 台湾省新北市中华电信... #3'
-  network: tcp
-  port: '4443'
-  server: nb24.ntbq.dynu.net
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7b039abd-ad30-4ce4-a876-0a97a3ccaf74
-  ws-headers:
-    Host: nb24.ntbq.dynu.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '11,20,21,25,27,28|台湾省桃园市 中华电信 #1'
-  network: tcp
-  port: '21353'
-  server: tw1-vds3.anyhk.co
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 71618f91-d149-4b45-91c9-f94dd4e2499a
-  ws-headers:
-    Host: tw1-vds3.anyhk.co
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: '11,16,20,21,25,28|台湾省 中华电信(HiNet)数据中心 #1'
   network: tcp
   port: 2024
@@ -138,6 +110,20 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  name: '13,16,20,21,25,28|github.com/freefq - 台湾省新北市中华电信... #3'
+  network: tcp
+  port: '4443'
+  server: nb24.ntbq.dynu.net
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7b039abd-ad30-4ce4-a876-0a97a3ccaf74
+  ws-headers:
+    Host: nb24.ntbq.dynu.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 20,21|🇨🇳 台湾省 中华电信(HiNet)数据中心
   network: tcp
   port: '2024'
@@ -148,6 +134,20 @@ proxies:
   uuid: ef3841cf-2556-4d9c-ac8d-c0e5e978ab86
   ws-headers:
     Host: 118.167.66.194
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20,21,25,27,28|台湾省桃园市 中华电信
+  network: tcp
+  port: '21353'
+  server: tw1-vds3.anyhk.co
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 71618f91-d149-4b45-91c9-f94dd4e2499a
+  ws-headers:
+    Host: tw1-vds3.anyhk.co
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -219,17 +219,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 46b341cb-032d-4284-80a9-17a42e071c25
-- cipher: aes-128-gcm
-  name: 29|TW_speednode_0093
-  password: oiwym4ovI4Yb
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: true
-    path: /
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 122.118.169.225
-  type: ss
