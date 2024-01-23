@@ -69,6 +69,15 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
+  name: '11,25,28|台湾省南投县 中华电信 #2'
+  network: tcp
+  port: 6122
+  server: c12.twtc.dynu.net
+  tls: false
+  type: vmess
+  uuid: a209ff8c-d691-496c-8c1f-32d2e995b603
+- alterId: 0
+  cipher: auto
   name: 13,20,21,25|13,20|baipaovpn台湾省南投县
   network: tcp
   port: '6122'
@@ -77,7 +86,7 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 7b039abd-ad30-4ce4-a876-0a97a3ccaf74
+  uuid: e27ab70e-7444-470c-a0fc-e49ec09ac02d
   ws-headers:
     Host: 36.232.158.210
   ws-path: /
@@ -97,10 +106,11 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '20,21,28|TW-板桥2-4(TCP) #1'
+  name: '20,21,25,28|TW-板桥2-4(TCP) #1'
   network: tcp
   port: '4443'
   server: nb24.ntbq.dynu.net
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -110,14 +120,24 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 25|15|🇹🇼|TW|台湾|@wxgqlfx|1
+  name: 25|15|🔒 VM-TCP-NA 🇹🇼 TW-114.37.15...
   network: tcp
-  port: 12002
+  port: '12002'
   server: 114.37.155.245
   servername: ''
   tls: false
   type: vmess
-  uuid: ef3841cf-2556-4d9c-ac8d-c0e5e978ab86
+  uuid: c64adf03-3bfe-47e0-b38b-870a9f8032e8
+- alterId: 0
+  cipher: auto
+  name: '25,28|TW-板桥2-2(TCP) #1'
+  network: tcp
+  port: '12002'
+  server: nb22.ntbq.dynu.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 05f1e2ad-1d21-449b-9bbb-97a8b4662934
 - alterId: 0
   cipher: auto
   name: '25,27,28|台湾|@ripaojiedian #1'
@@ -162,12 +182,3 @@ proxies:
   port: 443
   server: 122.118.169.225
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '28|TW-台中1-2(TCP) #1'
-  network: tcp
-  port: '6122'
-  server: c12.twtc.dynu.net
-  tls: false
-  type: vmess
-  uuid: 6b2e0602-bc1a-4ec3-88da-4238a6955ddd
