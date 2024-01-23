@@ -1,12 +1,11 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,1,3,4,6,21,25,28,30|🇺🇸 _US_美国 #18'
+  name: '0,3,6,21,25,28,30|🇺🇸 _US_美国 #18'
   network: ws
   port: '80'
   server: 94.131.117.159
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 72b3b89a-30c5-4dc7-8b6e-f61218b95eda
@@ -16,10 +15,11 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,11,14,16,21,25,28,30|🇺🇸 _US_美国 #17'
+  name: '0,3,6,7,13,14,16,21,25,28,29,30|🇺🇸 _US_美国 #17'
   network: ws
   port: '80'
   server: 94.131.13.110
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: d3e40d59-b53c-4f4e-8867-bb598be864d2
@@ -29,7 +29,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,21,25,28,30|🇺🇸 _US_美国 #16'
+  name: '0,3,6,21,25,28,30|🇺🇸 _US_美国 #16'
   network: ws
   port: '80'
   server: 162.159.135.221
@@ -54,41 +54,22 @@ proxies:
     headers:
       Host: ''
     path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 1,25|1,15|🇺🇸_US_美国_3
+- name: 1|_US__1
   network: ws
-  port: 80
-  server: 94.131.13.110
-  servername: ''
+  password: f34ec9d8-3ae0-46ba-94e7-a03eaf2af651
+  port: 443
+  server: 89.116.161.133
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d3e40d59-b53c-4f4e-8867-bb598be864d2
+  sni: p1us1.pqjc.buzz
+  type: trojan
+  udp: true
   ws-opts:
     headers:
-      Host: ''
-    path: /vmess
+      host: p1us1.pqjc.buzz
+    path: /pq/us1
 - alterId: 0
   cipher: auto
-  name: 1,25|1|_US__3
-  network: ws
-  port: 80
-  server: 162.159.135.221
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: fa828efe-ff0a-4afd-a4cb-245cf65432ee
-  ws-opts:
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 7,14,25,28,29|US_speednode_0100
+  name: '1,4,7,14,25,28|🇺🇸_US_美国 #15'
   network: http
   port: 13489
   server: 35.87.209.22
@@ -96,6 +77,59 @@ proxies:
   tls: false
   type: vmess
   uuid: 61761e55-dff5-4f94-f75f-b0a4718bba98
+- name: 1|_US__3
+  network: ws
+  password: f34ec9d8-3ae0-46ba-94e7-a03eaf2af651
+  port: 443
+  server: 89.116.180.179
+  skip-cert-verify: true
+  sni: p6us4.pqjc.buzz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: p6us4.pqjc.buzz
+    path: /pq/us4
+- alterId: 0
+  cipher: auto
+  name: 1,4,25,29|IT_speednode_0133
+  network: ws
+  port: 80
+  server: 95.164.46.154
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 431fda16-e0f8-4884-b4fd-965f03f86471
+  ws-opts:
+    path: /vmess
+- name: 1|_US__7
+  network: ws
+  password: f34ec9d8-3ae0-46ba-94e7-a03eaf2af651
+  port: 443
+  server: 167.68.5.183
+  skip-cert-verify: true
+  sni: 6us3.pqjc.buzz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: 6us3.pqjc.buzz
+    path: /pq/us3
+- name: 1|_US__8
+  network: ws
+  password: f34ec9d8-3ae0-46ba-94e7-a03eaf2af651
+  port: 443
+  server: 89.116.180.158
+  skip-cert-verify: true
+  sni: 3us2.pqjc.buzz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: 3us2.pqjc.buzz
+    path: /pq/us2
 - alterId: 0
   cipher: auto
   name: '8,9,25,28|🇺🇸 United States 01 @nodpai #2'
@@ -1852,17 +1886,45 @@ proxies:
   uuid: 37e3fe44-e63c-4988-cff7-d1a27f5f0c09
 - alterId: 0
   cipher: auto
-  name: '11,28|美国 CloudFlare节点 #11'
+  name: '11,13,16,21,25,26,27,28|新加坡|@ripaojiedian #1'
   network: ws
-  port: 443
-  server: 08dfde51-8c5d-4160-8732-0745507cfd5b.cloudflare-gateway.com
-  tls: true
+  port: '2052'
+  server: cfcdn2.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
+  tls: false
   type: vmess
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  uuid: d0a3e08a-d26f-45bd-ba3c-6387f9182633
   ws-opts:
     headers:
-      Host: mikasa.erenyeager.cloudns.biz
-    path: /glweidf.sbs/linkws
+      Host: 7nAi74jJsg1.yofnhkfc.xyz
+    path: /video/c9efxRCi
+- alterId: 0
+  cipher: auto
+  name: '11|美国 CloudFlare节点 #1'
+  network: ws
+  port: 80
+  server: 104.18.202.232
+  tls: false
+  type: vmess
+  uuid: b2c3b2d3-c21c-4a33-b55c-db589d485487
+  ws-opts:
+    headers:
+      Host: worker-falling-leaf-df34.dtdacxjh.workers.dev
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: '11|美国 CloudFlare节点 #2'
+  network: ws
+  port: 8880
+  server: 104.21.73.14
+  tls: false
+  type: vmess
+  uuid: 45f63e92-f782-4cac-84b8-e61cb5a5bfd0
+  ws-opts:
+    headers:
+      Host: yaghoob55freenodes.repaco69437403.workers.dev
+    path: /adenc35.fixedlfoat.top/linkws
 - alterId: 0
   cipher: auto
   name: '11,13,16,21,25,26,27,28|github.com/freefq - 美国CloudFla... #7'
@@ -1892,6 +1954,19 @@ proxies:
     headers:
       Host: eu5.openxai.link
     path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '11|美国 CloudFlare节点 #5'
+  network: ws
+  port: 2082
+  server: 104.18.202.250
+  tls: false
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev
+    path: /nina.bond/linkvws
 - alterId: 0
   cipher: auto
   name: 12,25|12|🇺🇸美国04
@@ -1924,19 +1999,46 @@ proxies:
   uuid: 466c5f58-2eb6-4f44-b315-415fa2490e0e
 - alterId: 0
   cipher: auto
-  name: '13,21,25,26,27,28|日本|@ripaojiedian #1'
+  name: 13|美国 Akamai科技公司CDN网络节点
+  network: ws
+  port: 443
+  server: D029.ADVANCED-NODES-CHICKENFARMS.TOP
+  tls: false
+  type: vmess
+  uuid: f8ece721-95f2-490f-bb5e-9498ddba186e
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: '13,16,21,25,28|github.com/freefq - 美国  9 #1'
+  network: ws
+  port: '2023'
+  server: 146.190.103.39
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8e82b259-dcf8-466c-acd1-02616af34386
+  ws-opts:
+    headers:
+      Host: imo.im
+    path: /FREE-not_for_sale
+- alterId: 0
+  cipher: auto
+  name: '13,16,21,25,26,27,28|韩国2|@ripaojiedian #1'
   network: ws
   port: '80'
-  server: cfcdn3.sanfencdn9.com
+  server: 104.17.25.1
   servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: d0a3e08a-d26f-45bd-ba3c-6387f9182633
+  uuid: 83c19463-f966-4adb-a7d8-b127825ffab2
   ws-opts:
     headers:
-      Host: agzbjszujp4.yofnhkfc.xyz
-    path: /video/ibCT6z55
+      Host: kr.catnipballs.gay
+    path: /
 - alterId: 0
   cipher: auto
   name: '13,16,21,25,28|github.com/freefq - 美国CloudFla... #9'
@@ -1951,21 +2053,6 @@ proxies:
     headers:
       Host: ams.178820225.xyz
     path: /h5e65fd
-- alterId: 0
-  cipher: auto
-  name: '13,16,21,25,26,27,28|新加坡|@ripaojiedian #1'
-  network: ws
-  port: '2052'
-  server: cfcdn2.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d0a3e08a-d26f-45bd-ba3c-6387f9182633
-  ws-opts:
-    headers:
-      Host: 7nAi74jJsg1.yofnhkfc.xyz
-    path: /video/c9efxRCi
 - alterId: 64
   cipher: auto
   name: 15|美国_【YouTube-VV科技】
@@ -2864,35 +2951,6 @@ proxies:
     headers:
       Host: www.20973848.xyz
     path: /path/1693992821776
-- alterId: 0
-  cipher: auto
-  name: '16,21,25,26,27,28|韩国2|@ripaojiedian #1'
-  network: ws
-  port: '80'
-  server: 104.17.25.1
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 83c19463-f966-4adb-a7d8-b127825ffab2
-  ws-opts:
-    headers:
-      Host: kr.catnipballs.gay
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '16,21,25,28|github.com/freefq - 美国  9 #1'
-  network: ws
-  port: '2023'
-  server: 146.190.103.39
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8e82b259-dcf8-466c-acd1-02616af34386
-  ws-opts:
-    headers:
-      Host: imo.im
-    path: /FREE-not_for_sale
 - alterId: 64
   cipher: auto
   name: '17,28|TG频道:@hkaa0|美国 #3'
@@ -3766,6 +3824,21 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
+  name: '21,25,26,27,28|日本|@ripaojiedian #1'
+  network: ws
+  port: '80'
+  server: cfcdn3.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d0a3e08a-d26f-45bd-ba3c-6387f9182633
+  ws-opts:
+    headers:
+      Host: agzbjszujp4.yofnhkfc.xyz
+    path: /video/ibCT6z55
+- alterId: 0
+  cipher: auto
   name: 23,25|16|【BGP】美国 04 | 1x US
   network: tcp
   port: '31501'
@@ -3836,6 +3909,31 @@ proxies:
     headers:
       host: mm3.shabijichang.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: 25,29|LT_speednode_0141
+  network: ws
+  port: 80
+  server: 94.131.13.110
+  servername: internet.life.com.by
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d3e40d59-b53c-4f4e-8867-bb598be864d2
+  ws-opts:
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 25|1|_US__3
+  network: ws
+  port: 80
+  server: 162.159.135.221
+  tls: false
+  type: vmess
+  uuid: fa828efe-ff0a-4afd-a4cb-245cf65432ee
+  ws-opts:
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: 25|7,15|美国【TG：@ccbaohe】定时更新节点订阅 4
@@ -4005,11 +4103,12 @@ proxies:
       Host: ''
     path: ''
 - cipher: chacha20-ietf-poly1305
-  name: 26|🇺🇸 美国2|@ripaojiedian
+  name: 26,29|CN_speednode_0060
   password: cfa17a0d-5e7d-4871-976e-f116e0818123
   port: 20003
   server: service.ouluyun9803.com
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 28|美国代理1
@@ -4023,6 +4122,19 @@ proxies:
     headers:
       Host: ''
     path: ''
+- alterId: 0
+  cipher: auto
+  name: '28|美国 CloudFlare节点 #11'
+  network: ws
+  port: 443
+  server: 08dfde51-8c5d-4160-8732-0745507cfd5b.cloudflare-gateway.com
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: mikasa.erenyeager.cloudns.biz
+    path: /glweidf.sbs/linkws
 - alterId: 0
   cipher: auto
   name: 28|🇺🇸US-66.181.33.108-3777
@@ -4050,10 +4162,10 @@ proxies:
     headers:
       Host: ''
     path: ''
-- delay: 1760
+- client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: mahanvip.mahantu.top
-  name: 29|US_speednode_0101
+  name: 29|US_speednode_0169
   network: grpc
   password: Tel:Mahanvpn-insta:mahan_vpn
   port: 443
@@ -4063,3 +4175,105 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 29|US_speednode_0170
+  network: ws
+  port: 21859
+  server: us.littleqqq.co
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4d097a74-aa1c-4e41-b301-f1f1f8b84e0e
+  ws-opts:
+    headers:
+      Host: www.tmall.com
+    path: /live/UKPZrSI3K7dtNJmn
+- alterId: 0
+  cipher: auto
+  name: 29|US_speednode_0171
+  network: ws
+  port: 8080
+  server: 162.247.153.204
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2dfa54bf-0115-4bb7-a3d5-bd042386f11f
+  ws-opts:
+    headers:
+      Host: 162.247.153.204
+    path: /vmess
+- country: 🇺🇸US
+  grpc-opts:
+    grpc-service-name: 443trojan
+  name: 29|US_speednode_0172
+  network: grpc
+  password: qj1Dz1CJmFQRhWr1SP80aA
+  port: 443
+  server: zula.ir
+  sni: cdn-21.gsmxreality.com
+  tls: true
+  type: trojan
+  udp: true
+- alpn:
+  - h2
+  alterId: 0
+  cipher: chacha20-poly1305
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: Nbs2DSTSkFWe4KVnk9AHQv
+  name: 29|US_speednode_0173
+  network: grpc
+  port: 443
+  server: mtn.cpionline.cc
+  servername: hdfy5c1.foriran.me
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 251780c1-1501-43b3-be2a-d144a20d479a
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: mrX5XBSsE4fQALMA1foaK1hpquM
+  name: 29|US_speednode_0174
+  network: grpc
+  port: 443
+  server: amarfa.ir
+  servername: hdfy7c1.foriran2.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 01596265-168b-46a7-bcb7-25662c7a9546
+- grpc-opts:
+    grpc-service-name: 443trojan
+  name: 29|US_speednode_0176
+  network: grpc
+  password: qj1Dz1CJmFQRhWr1SP80aA
+  port: 443
+  server: 172.67.204.84
+  skip-cert-verify: true
+  sni: cdn-21.gsmxreality.com
+  tls: true
+  type: trojan
+  udp: true
+- alpn:
+  - h2
+  alterId: 0
+  cipher: chacha20-poly1305
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: Nbs2DSTSkFWe4KVnk9AHQv
+  name: 29|US_speednode_0177
+  network: grpc
+  port: 443
+  server: 172.67.183.5
+  servername: hdfy5c1.foriran.me
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 251780c1-1501-43b3-be2a-d144a20d479a
