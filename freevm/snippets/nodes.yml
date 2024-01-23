@@ -27,7 +27,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '0,1,3,4,6,21,25,28,30|🇳🇱 _NL_荷兰 #4'
+  name: '0,1,3,4,6,16,21,25,28,30|🇳🇱 _NL_荷兰 #4'
   network: ws
   port: '80'
   server: 91.242.229.77
@@ -42,7 +42,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,11,13,14,16,21,25,28,30|🇺🇸 _US_美国->🇫🇷_FR_法国 #4'
+  name: '0,3,4,6,7,13,14,16,21,25,28,30|🇺🇸 _US_美国->🇫🇷_FR_法国 #4'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -56,7 +56,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,1,3,4,6,16,21,25,28,30|🇺🇸 _US_美国 #13'
+  name: '0,1,3,4,6,11,16,21,25,28,30|🇺🇸 _US_美国 #13'
   network: ws
   port: '80'
   server: 95.164.46.154
@@ -4107,32 +4107,33 @@ proxies:
   type: vmess
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
-  cipher: aes-128-gcm
-  name: '11,16,21,25,28|github.com/freefq - 美国CloudFla... #7'
+  cipher: auto
+  name: '11,13,16,21,25,26,27,28|github.com/freefq - 美国CloudFla... #8'
   network: ws
-  port: '443'
-  server: 173.245.58.51
-  servername: scale360.colocrossing.sbs
-  tls: true
+  port: '80'
+  server: 104.17.25.1
+  servername: ''
+  skip-cert-verify: false
+  tls: false
   type: vmess
-  uuid: 12d7e57b-9fc8-41e0-9b32-f503dce10c1c
+  uuid: d6664518-c8e1-42cf-f2c1-d33dcc01a8a6
   ws-opts:
     headers:
-      Host: godofwar2020.colocrossing.sbs
-    path: /fdczvws
+      Host: sgvpn.catnipballs.gay
+    path: /
 - alterId: 0
   cipher: auto
-  name: '11,16,20,21,25,28|台湾省 中华电信(HiNet)数据中心 #1'
+  name: '11,13,20,21,25,28|github.com/freefq - 台湾省新北市中华电信... #1'
   network: tcp
-  port: 2024
-  server: b23.ntbq.dynu.net
+  port: '4443'
+  server: nb24.ntbq.dynu.net
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: ef3841cf-2556-4d9c-ac8d-c0e5e978ab86
+  uuid: 7b039abd-ad30-4ce4-a876-0a97a3ccaf74
   ws-headers:
-    Host: b23.ntbq.dynu.net
+    Host: nb24.ntbq.dynu.net
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -4151,63 +4152,6 @@ proxies:
     path: /video/c9efxRCi
 - alterId: 0
   cipher: auto
-  name: '11,16,20,21,25,28|github.com/freefq - 台湾省新竹市中华电信... #1'
-  network: tcp
-  port: '12002'
-  server: nb22.ntbq.dynu.net
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c64adf03-3bfe-47e0-b38b-870a9f8032e8
-  ws-headers:
-    Host: best.servecounterstrike.com
-  ws-path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: '11,13,16,21,25,28|美国 V2CROSS.COM #1'
-  network: ws
-  port: 2023
-  server: 146.190.103.39
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8e82b259-dcf8-466c-acd1-02616af34386
-  ws-opts:
-    headers:
-      Host: imo.im
-    path: /FREE-not_for_sale
-- alterId: 2
-  cipher: auto
-  name: '11,13,16,20,21,25,27,28|github.com/freefq - 广东省广州市移动 2... #1'
-  network: tcp
-  port: '1002'
-  server: 183.236.48.169
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 229ccd44-c56c-3947-88de-849dd70c180d
-  ws-headers:
-    Host: 183.236.48.169
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '11,13,16,21,25,26,27,28|github.com/freefq - 美国CloudFla... #9'
-  network: ws
-  port: '80'
-  server: 104.17.25.1
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d6664518-c8e1-42cf-f2c1-d33dcc01a8a6
-  ws-opts:
-    headers:
-      Host: sgvpn.catnipballs.gay
-    path: /
-- alterId: 0
-  cipher: auto
   name: '11,25,26,27,28|新加坡2|@ripaojiedian #1'
   network: ws
   port: '80'
@@ -4221,6 +4165,61 @@ proxies:
     headers:
       Host: sgvpn.catnipballs.gay
     path: /
+- alterId: 0
+  cipher: auto
+  name: 11,13,21,25,28|github.com/freefq - 越南  17
+  network: ws
+  port: '80'
+  server: 115.79.238.34
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fbccfed7-1aeb-416a-a4fd-7af1747f9f3b
+  ws-opts:
+    headers:
+      Host: skyht2.vpndata.vn
+    path: /VPNDATA.VPN
+- alterId: 0
+  cipher: auto
+  name: 11,20,21,25,28|github.com/freefq - 台湾省新竹市中华电信...
+  network: tcp
+  port: '12002'
+  server: nb22.ntbq.dynu.net
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c64adf03-3bfe-47e0-b38b-870a9f8032e8
+  ws-headers:
+    Host: best.servecounterstrike.com
+  ws-path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: '11,25,28|美国 CloudFlare节点 #7'
+  network: ws
+  port: 2052
+  server: 172.64.174.194
+  tls: false
+  type: vmess
+  uuid: d0a3e08a-d26f-45bd-ba3c-6387f9182633
+  ws-opts:
+    headers:
+      Host: 7nAi74jJsg1.yofnhkfc.xyz
+    path: /video/c9efxRCi
+- alterId: 0
+  cipher: auto
+  name: '11,16,20,21,25,28|台湾省 中华电信(HiNet)数据中心 #1'
+  network: tcp
+  port: 2024
+  server: b23.ntbq.dynu.net
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ef3841cf-2556-4d9c-ac8d-c0e5e978ab86
+  ws-headers:
+    Host: b23.ntbq.dynu.net
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 12,25|12|🇯🇵日本04
@@ -4518,6 +4517,20 @@ proxies:
     headers:
       Host: ''
     path: /vmess
+- alterId: 2
+  cipher: auto
+  name: 13,16,20,21,25,27,28|github.com/freefq - 广东省广州市移动 2...
+  network: tcp
+  port: '1002'
+  server: 183.236.48.169
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 229ccd44-c56c-3947-88de-849dd70c180d
+  ws-headers:
+    Host: 183.236.48.169
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 13,25|13|美国 Akamai科技公司CDN网络节点
@@ -4533,21 +4546,21 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '13,16,21,25,28|github.com/freefq - 越南  17 #1'
+  name: 13,16,21,25,28|美国 V2CROSS.COM
   network: ws
-  port: '80'
-  server: 115.79.238.34
+  port: 2023
+  server: 146.190.103.39
   servername: ''
   tls: false
   type: vmess
-  uuid: fbccfed7-1aeb-416a-a4fd-7af1747f9f3b
+  uuid: 8e82b259-dcf8-466c-acd1-02616af34386
   ws-opts:
     headers:
-      Host: skyht2.vpndata.vn
-    path: /VPNDATA.VPN
+      Host: imo.im
+    path: /FREE-not_for_sale
 - alterId: 0
   cipher: auto
-  name: '13,16,21,25,26,27,28|github.com/freefq - 美国CloudFla... #10'
+  name: '13,21,25,26,27,28|github.com/freefq - 美国CloudFla... #9'
   network: ws
   port: '80'
   server: 104.17.25.1
@@ -4562,7 +4575,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 13,16,21,25,28|西班牙 V2CROSS.COM
+  name: 13,21,25,28|西班牙 V2CROSS.COM
   network: ws
   port: '8002'
   server: 185.214.103.249
@@ -4643,21 +4656,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '13,16,20,21,25,28|github.com/freefq - 台湾省新北市中华电信... #3'
-  network: tcp
-  port: '4443'
-  server: nb24.ntbq.dynu.net
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7b039abd-ad30-4ce4-a876-0a97a3ccaf74
-  ws-headers:
-    Host: nb24.ntbq.dynu.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '13,16,20,21,25,28|github.com/freefq - 韩国蘑菇主机BGP数... #1'
+  name: 13,20,21,25,28|github.com/freefq - 韩国蘑菇主机BGP数...
   network: tcp
   port: '10001'
   server: 103.214.68.57
@@ -5912,9 +5911,25 @@ proxies:
     headers:
       Host: www.20973848.xyz
     path: /path/1693992821776
+- 15|🇺🇸|US|美国|@wxgqlfx|21: None
+  alterId: 0
+  cipher: auto
+  name: 16,25,29|US_speednode_0105
+  network: ws
+  port: 8080
+  server: 162.247.153.204
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2dfa54bf-0115-4bb7-a3d5-bd042386f11f
+  ws-opts:
+    headers:
+      Host: 162.247.153.204
+    path: /vmess
 - alterId: 0
   cipher: aes-128-gcm
-  name: '16,21,25,28|github.com/freefq - 美国CloudFla... #6'
+  name: '16,21,25,28|github.com/freefq - 美国CloudFla... #5'
   network: ws
   port: '443'
   server: 173.245.58.51
@@ -5928,31 +5943,31 @@ proxies:
     path: /ariuvws
 - alterId: 0
   cipher: auto
-  name: '16,21,25,28|github.com/freefq - 美国CloudFla... #11'
+  name: 16,25|15|US_youtube@资源分享师_67
   network: ws
   port: 80
-  server: 104.18.202.232
+  server: cf.178820225.xyz
   tls: false
   type: vmess
-  uuid: b2c3b2d3-c21c-4a33-b55c-db589d485487
+  uuid: 8fa261c0-ae8d-4aee-8f8b-1604b6f78f4a
   ws-opts:
     headers:
-      Host: worker-falling-leaf-df34.dtdacxjh.workers.dev
-    path: /vmess
+      Host: hkv6.178820225.xyz
+    path: /ftuy56ftgyh
 - alterId: 0
-  cipher: auto
-  name: '16,21,25,28|github.com/freefq - 越南  18 #1'
+  cipher: aes-128-gcm
+  name: '16,21,25,28|github.com/freefq - 美国CloudFla... #6'
   network: ws
-  port: 80
-  server: skyht2.vpndata.vn
-  servername: ''
-  tls: false
+  port: '443'
+  server: 173.245.58.51
+  servername: scale360.colocrossing.sbs
+  tls: true
   type: vmess
-  uuid: fbccfed7-1aeb-416a-a4fd-7af1747f9f3b
+  uuid: 12d7e57b-9fc8-41e0-9b32-f503dce10c1c
   ws-opts:
     headers:
-      Host: lienquan.garena.vn
-    path: /VPNDATA.VPN
+      Host: godofwar2020.colocrossing.sbs
+    path: /fdczvws
 - alterId: 0
   cipher: auto
   name: '17,18,28|TG频道:@hkaa0|越南 #1'
@@ -9209,6 +9224,19 @@ proxies:
     path: /fr-unlimitxxx
 - alterId: 0
   cipher: auto
+  name: '21,25,28|github.com/freefq - 美国CloudFla... #10'
+  network: ws
+  port: 80
+  server: 104.18.202.232
+  tls: false
+  type: vmess
+  uuid: b2c3b2d3-c21c-4a33-b55c-db589d485487
+  ws-opts:
+    headers:
+      Host: worker-falling-leaf-df34.dtdacxjh.workers.dev
+    path: /vmess
+- alterId: 0
+  cipher: auto
   name: 21|🇻🇳 github.com/freefq - 越南  18
   network: ws
   port: '80'
@@ -9287,6 +9315,20 @@ proxies:
     headers:
       Host: agzbjszujp4.yofnhkfc.xyz
     path: /video/ibCT6z55
+- alterId: 0
+  cipher: auto
+  name: 21,25,28|github.com/freefq - 越南  18
+  network: ws
+  port: 80
+  server: skyht2.vpndata.vn
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fbccfed7-1aeb-416a-a4fd-7af1747f9f3b
+  ws-opts:
+    headers:
+      Host: lienquan.garena.vn
+    path: /VPNDATA.VPN
 - alterId: 0
   cipher: auto
   name: 21|🇺🇸 美国 Akamai科技公司CDN网络节点
@@ -9757,22 +9799,6 @@ proxies:
     headers:
       host: xray1.freeh1.xyz
     path: /gzogws
-- 15|🇺🇸|US|美国|@wxgqlfx|21: None
-  alterId: 0
-  cipher: auto
-  name: 25,29|US_speednode_0105
-  network: ws
-  port: 8080
-  server: 162.247.153.204
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2dfa54bf-0115-4bb7-a3d5-bd042386f11f
-  ws-opts:
-    headers:
-      Host: 162.247.153.204
-    path: /vmess
 - alterId: 0
   cipher: auto
   name: 25,28|卢森堡 V2CROSS.COM
@@ -10203,19 +10229,6 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '25,28|美国 CloudFlare节点 #8'
-  network: ws
-  port: 2052
-  server: 172.64.174.194
-  tls: false
-  type: vmess
-  uuid: d0a3e08a-d26f-45bd-ba3c-6387f9182633
-  ws-opts:
-    headers:
-      Host: 7nAi74jJsg1.yofnhkfc.xyz
-    path: /video/c9efxRCi
-- alterId: 0
-  cipher: auto
   name: 25|15|🔒 VM-WS-NA 🏴‍☠️ NA-104.21.4...
   network: ws
   port: '8880'
@@ -10406,19 +10419,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 81714cef-9bde-4a08-aa50-d6bc0172d78b
-- alterId: 0
-  cipher: auto
-  name: 25|15|US_youtube@资源分享师_67
-  network: ws
-  port: 80
-  server: cf.178820225.xyz
-  tls: false
-  type: vmess
-  uuid: 8fa261c0-ae8d-4aee-8f8b-1604b6f78f4a
-  ws-opts:
-    headers:
-      Host: hkv6.178820225.xyz
-    path: /ftuy56ftgyh
 - alterId: 0
   cipher: auto
   name: 25|15|US_youtube@资源分享师_118
