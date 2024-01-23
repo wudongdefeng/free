@@ -289,20 +289,6 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 11|日本 V2CROSS.COM
-  network: ws
-  port: '41597'
-  server: 183.181.36.194
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: 12,25|12|🇯🇵日本04
   network: tcp
   port: '36116'
@@ -383,11 +369,24 @@ proxies:
   server: 85.208.108.60
   type: ss
 - cipher: aes-256-cfb
-  name: 20|JP-54.199.83.239-162
+  name: 20|JP-54.199.83.239-148
   password: doub.io
   port: 2333
   server: 54.199.83.239
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|JP-183.181.36.194-170
+  network: ws
+  port: 41597
+  server: 183.181.36.194
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
+  ws-headers:
+    Host: 183.181.36.194
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 21|🇯🇵 日本(油管:破解资源君)
@@ -442,6 +441,19 @@ proxies:
     path: /shirker
 - alterId: 0
   cipher: auto
+  name: 21|🇯🇵 日本 V2CROSS.COM
+  network: ws
+  port: '41597'
+  server: 183.181.36.194
+  tls: false
+  type: vmess
+  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
   name: 23,25|16|【BGP】日本 04  | 1x JP
   network: tcp
   port: '31116'
@@ -465,6 +477,12 @@ proxies:
   password: 69a6375b236941b8bf25ae2252cd7af7
   port: 60283
   server: any.hmbiplc-02.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 26|🇯🇵 日本3|@ripaojiedian
+  password: 432fe02f-b649-4bdc-91d8-f91ae87002f7
+  port: 19444
+  server: zhejiang.52vpn.top
   type: ss
 - cipher: aes-256-cfb
   name: 26|🇯🇵 日本特殊|@ripaojiedian
