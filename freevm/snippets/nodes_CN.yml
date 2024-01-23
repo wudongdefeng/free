@@ -1,18 +1,24 @@
 proxies:
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: '13,20,21,25,27,28|韩国4|@ripaojiedian #1'
+  name: 11,23,25|16|【BGP】新加坡 05 | 1x SG
   network: tcp
-  port: '1002'
-  server: 183.236.48.169
-  servername: ''
-  skip-cert-verify: true
-  tls: false
+  port: '31206'
+  server: 1c7s2g05.m1k2s.xyz
+  servername: sg05.lovemc.xyz
+  tls: true
   type: vmess
-  uuid: 229ccd44-c56c-3947-88de-849dd70c180d
-  ws-headers:
-    Host: 183.236.48.169
-  ws-path: /
+  uuid: fe1bdcb3-bb4f-45e4-a950-e812531f7421
+- alterId: 0
+  cipher: auto
+  name: 11,23,25|16|【BGP】美国 06 | 1x US
+  network: tcp
+  port: '31511'
+  server: 4a2u0a06.m1k2s.xyz
+  servername: us06.lovemc.xyz
+  tls: true
+  type: vmess
+  uuid: fe1bdcb3-bb4f-45e4-a950-e812531f7421
 - alterId: 0
   cipher: auto
   name: '13,16,21,25,28|github.com/freefq - 广东省移动 10 #1'
@@ -74,6 +80,20 @@ proxies:
   port: 19444
   server: zhejiang.52vpn.top
   type: ss
+- alterId: 2
+  cipher: auto
+  name: '20,21,25,27,28|韩国4|@ripaojiedian #1'
+  network: tcp
+  port: '1002'
+  server: 183.236.48.169
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 229ccd44-c56c-3947-88de-849dd70c180d
+  ws-headers:
+    Host: 183.236.48.169
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   name: 20,26|🇯🇵 日本2|@ripaojiedian
   password: cfa17a0d-5e7d-4871-976e-f116e0818123
@@ -99,7 +119,14 @@ proxies:
   port: 30818
   server: wqfuinwqffq.dfcloud.xyz
   type: ss
-- name: 29|CN_speednode_0004
+- client-fingerprint: chrome
+  name: 29|CN_speednode_0002
+  port: 17070
+  server: 106.75.26.66
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- name: 29|CN_speednode_0005
   network: tcp
   password: 17f47376-1c4e-4684-892e-887b21d16573
   port: 10805
@@ -108,7 +135,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: 29|CN_speednode_0005
+- name: 29|CN_speednode_0011
   network: tcp
   password: 17f47376-1c4e-4684-892e-887b21d16573
   port: 10808
@@ -117,44 +144,16 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 29|CN_speednode_0007
-  port: 17070
-  server: 106.75.26.66
-  skip-cert-verify: true
-  type: socks5
-  udp: true
-- name: 29|CN_speednode_0010
-  network: tcp
-  password: 17f47376-1c4e-4684-892e-887b21d16573
-  port: 10801
-  server: 183.236.51.6
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
 - name: 29|CN_speednode_0022
   network: tcp
   password: 17f47376-1c4e-4684-892e-887b21d16573
-  port: 10806
+  port: 10807
   server: 183.236.51.7
   skip-cert-verify: true
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: 29|CN_speednode_0032
-  network: tcp
-  port: 10273
-  server: sg.cm.timoyun.cyou
-  skip-cert-verify: true
-  type: vmess
-  uuid: 274c9678-7634-4628-b53f-9c7abb6bc43b
-- name: 29|CN_speednode_0036
+- name: 29|CN_speednode_0029
   network: tcp
   password: 17f47376-1c4e-4684-892e-887b21d16573
   port: 10804
@@ -163,10 +162,10 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: 29|CN_speednode_0040
+- name: 29|CN_speednode_0032
   network: tcp
   password: 17f47376-1c4e-4684-892e-887b21d16573
-  port: 10807
+  port: 10806
   server: 183.236.51.7
   skip-cert-verify: true
   sni: cloudflare.node-ssl.cdn-alibaba.com
