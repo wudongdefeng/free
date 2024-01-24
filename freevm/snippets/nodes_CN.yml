@@ -1,27 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 11,23,25|16|【BGP】马来西亚 04 | 1x MY
-  network: tcp
-  port: '31887'
-  server: 6e3m6y04.m1k2s.xyz
-  servername: my04.lovemc.xyz
-  tls: true
-  type: vmess
-  uuid: 7aaccb6e-d029-4e26-89d6-5b38615e69aa
-- alterId: 0
-  cipher: auto
-  name: 11,23,25|16|【BGP】韩国 02 | 1x KR
-  network: tcp
-  port: '31401'
-  server: 8l2k1r04.m1k2s.xyz
-  servername: kr04.lovemc.xyz
-  tls: true
-  type: vmess
-  uuid: 7aaccb6e-d029-4e26-89d6-5b38615e69aa
-- alterId: 0
-  cipher: auto
-  name: '13,16,21,25,28|github.com/freefq - 广东省移动 22 #1'
+  name: '11,13,16,21,25,28|github.com/freefq - 广东省移动 22 #1'
   network: ws
   port: '20401'
   server: data-us-v1.shwjfkw.cn
@@ -119,15 +99,9 @@ proxies:
   port: 50002
   server: service.ouluyun9803.com
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20,26|🇯🇵 日本2|@ripaojiedian
-  password: cfa17a0d-5e7d-4871-976e-f116e0818123
-  port: 26668
-  server: service.ouluyun9803.com
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 20|CN-120.233.42.199-254
+  name: 20|CN-120.233.42.199-274
   network: ws
   port: 20401
   server: data-us-v1.shwjfkw.cn
@@ -139,23 +113,53 @@ proxies:
     Host: data-us-v1.shwjfkw.cn
   ws-path: /debian
 - cipher: chacha20-ietf-poly1305
-  name: 20|CN-117.149.247.11-176
+  name: 20|CN-117.149.247.11-188
   password: 8e949d75-3510-4678-8593-3c5032dd931a
   port: 30818
   server: wqfuinwqffq.dfcloud.xyz
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|CN-183.233.187.230-237
-  password: cfa17a0d-5e7d-4871-976e-f116e0818123
-  port: 21003
-  server: service.ouluyun9803.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20,26|🇺🇸 美国2|@ripaojiedian
-  password: cfa17a0d-5e7d-4871-976e-f116e0818123
-  port: 20003
-  server: service.ouluyun9803.com
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20,21,23,25|16|【BGP】马来西亚 04 | 1x MY
+  network: tcp
+  port: '31887'
+  server: 6e3m6y04.m1k2s.xyz
+  servername: my04.lovemc.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 7aaccb6e-d029-4e26-89d6-5b38615e69aa
+  ws-headers:
+    Host: 6e3m6y04.m1k2s.xyz
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20,21,23,25|16|【BGP】韩国 02 | 1x KR
+  network: tcp
+  port: '31401'
+  server: 8l2k1r04.m1k2s.xyz
+  servername: kr04.lovemc.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 7aaccb6e-d029-4e26-89d6-5b38615e69aa
+  ws-headers:
+    Host: 8l2k1r04.m1k2s.xyz
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20,21,23,25|16|【BGP】加拿大 02 | 1x CA
+  network: tcp
+  port: '31701'
+  server: 3d1c4a04.m1k2s.xyz
+  servername: ca04.lovemc.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 7aaccb6e-d029-4e26-89d6-5b38615e69aa
+  ws-headers:
+    Host: 3d1c4a04.m1k2s.xyz
+  ws-path: /
 - client-fingerprint: chrome
   name: 29|CN_speednode_0002
   port: 17070
