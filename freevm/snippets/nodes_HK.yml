@@ -129,15 +129,6 @@ proxies:
     path: /hkaa0
 - alterId: 0
   cipher: auto
-  name: 25|15|🔒 VM-TCP-NONE 🇭🇰 HK-52.184....
-  network: tcp
-  port: 45643
-  server: 52.184.85.135
-  tls: false
-  type: vmess
-  uuid: 988bf7cd-fe3c-4a41-df98-e7fc681a49e2
-- alterId: 0
-  cipher: auto
   name: 25|15|🔒 VM-WS-NONE 🇭🇰 HK-52.184.8...
   network: ws
   port: 14572
@@ -160,8 +151,7 @@ proxies:
   type: vmess
   uuid: e820d6f7-57ef-4575-99da-bcd7d318c742
 - cipher: aes-128-gcm
-  delay: 257
-  name: 26,29|HK_speednode_0090
+  name: 26,29|HK_speednode_0026
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -169,6 +159,7 @@ proxies:
     mode: websocket
     mux: true
     path: ''
+    skip-cert-verify: true
     tls: false
   port: 443
   server: 1.65.223.223
@@ -187,9 +178,9 @@ proxies:
   port: 443
   server: 47.243.59.144
   type: ss
-- alterId: 32
+- alterId: 64
   cipher: auto
-  name: 28|🇭🇰HK-182.16.1.194-10845
+  name: 28|🇭🇰HK-182.16.1.194-10843
   network: ws
   port: 80
   server: hrgdvpn.flycdnedc55.vip
@@ -201,9 +192,32 @@ proxies:
     headers:
       Host: hrgdvpn.flycdnedc55.vip
     path: /opt/video/images
-- cipher: chacha20-ietf-poly1305
-  name: 29|HK_speednode_0091
-  password: fad73183-b730-47ea-a9f2-2dd0565ec43b
-  port: 9999
-  server: 50.114.157.114
+- cipher: aes-128-gcm
+  delay: 2527
+  name: 29|HK_speednode_0025
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: ''
+    tls: false
+  port: 443
+  server: 1.65.139.54
   type: ss
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 29|HK_speednode_0027
+  network: http
+  port: 10241
+  server: 38.147.191.185
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e820d6f7-57ef-4575-99da-bcd7d318c742

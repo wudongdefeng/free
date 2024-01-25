@@ -69,66 +69,63 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: '11,25|20|baipaovpn台湾省 #1'
-  network: tcp
-  port: '12002'
-  server: 118.167.72.107
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4403b75a-24ca-4d06-af15-6e157a0a7361
-- alterId: 0
-  cipher: auto
-  name: '11,25|20|baipaovpn台湾省 #2'
+  name: '11,20,21,25,28|台湾省 中华电信(HiNet)数据中心 #2'
   network: tcp
   port: '4443'
   server: 118.167.67.180
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 4403b75a-24ca-4d06-af15-6e157a0a7361
-- Ltd. - 10: None
-  alterId: 0
+  ws-headers:
+    Host: 118.167.67.180
+  ws-path: /
+- alterId: 0
   cipher: auto
-  country: 🇹🇼TW
-  delay: 964
-  h2-opts: {}
-  http-opts: {}
-  name: 13,16,20,21,25,28,29|TW_speednode_0105
+  name: '11,13,16,20,21,25,28|台湾省南投县 中华电信 #3'
   network: tcp
-  port: 6122
+  port: '6122'
   server: 36.232.158.210
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 7b039abd-ad30-4ce4-a876-0a97a3ccaf74
+  uuid: a209ff8c-d691-496c-8c1f-32d2e995b603
   ws-headers:
     Host: 36.232.158.210
   ws-path: /
-- Ltd. - 4: None
-  Ltd. - 7: None
-  alterId: 0
+- alterId: 0
   cipher: auto
-  country: 🇹🇼TW
-  delay: 865
-  h2-opts: {}
-  http-opts: {}
-  name: 13,16,20,21,25,27,28,29|TW_speednode_0101
+  name: 11,13,16,20,21,25,28|TW-板桥2-3(TCP)
   network: tcp
-  port: 6122
-  server: c12.twtc.dynu.net
+  port: '2024'
+  server: b23.ntbq.dynu.net
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 05f1e2ad-1d21-449b-9bbb-97a8b4662934
   ws-headers:
+    Host: b23.ntbq.dynu.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '13,16,20,21,25,27,28|台湾2|@ripaojiedian #1'
+  network: tcp
+  port: '6122'
+  server: c12.twtc.dynu.net
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: a209ff8c-d691-496c-8c1f-32d2e995b603
+  ws-headers:
     Host: c12.twtc.dynu.net
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '13,16,20,21,25,28|github.com/freefq - 台湾省中华电信(Hi... #7'
+  name: '13,16,20,21,25,28|github.com/freefq - 台湾省中华电信(Hi... #9'
   network: tcp
   port: 2024
   server: 118.167.76.233
@@ -142,42 +139,32 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '13,16,20,21,25,28|github.com/freefq - 台湾省中华电信(Hi... #8'
+  name: '16,20,21,25,28|github.com/freefq - 台湾省中华电信(Hi... #12'
   network: tcp
-  port: 2024
-  server: b23.ntbq.dynu.net
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d9e103fc-741d-459f-9a92-4f59bfb083ef
-  ws-headers:
-    Host: b23.ntbq.dynu.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 16,20,21,25,28|TW-板桥2-2(TCP)
-  network: tcp
-  port: '12002'
+  port: 12002
   server: nb22.ntbq.dynu.net
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 05f1e2ad-1d21-449b-9bbb-97a8b4662934
+  uuid: 4403b75a-24ca-4d06-af15-6e157a0a7361
   ws-headers:
     Host: nb22.ntbq.dynu.net
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 16,25,28|TW-板桥2-4(TCP)
+  name: '16,20,21,25,28|github.com/freefq - 台湾省中华电信(Hi... #10'
   network: tcp
-  port: '4443'
+  port: 4443
   server: nb24.ntbq.dynu.net
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 05f1e2ad-1d21-449b-9bbb-97a8b4662934
+  uuid: b6fdc502-3ae5-47a7-9fa4-3fa7febb76c4
+  ws-headers:
+    Host: nb24.ntbq.dynu.net
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 20,21|🇨🇳 台湾(油管:破解资源君)
@@ -193,15 +180,35 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20,21,25|15|🇹🇼|TW|台湾|@wxgqlfx|55
+  name: 20,21|🇨🇳 台湾省 中华电信(HiNet)数据中心
   network: tcp
   port: '12002'
-  server: 118.167.69.122
-  servername: ''
+  server: 118.167.72.107
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 4403b75a-24ca-4d06-af15-6e157a0a7361
   ws-headers:
-    Host: 118.167.69.122
+    Host: 118.167.72.107
   ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 20,29|TW_speednode_0058
+  password: 05f1e2ad-1d21-449b-9bbb-97a8b4662934
+  port: 7773
+  server: b13.ntbq.dynu.net
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 29|TW_speednode_0057
+  password: 05f1e2ad-1d21-449b-9bbb-97a8b4662934
+  port: 2203
+  server: ty11.twty.dynu.net
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 29|TW_speednode_0056
+  password: 05f1e2ad-1d21-449b-9bbb-97a8b4662934
+  port: 4303
+  server: ty12.twty.dynu.net
+  type: ss
+  udp: true
