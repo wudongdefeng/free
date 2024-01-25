@@ -69,21 +69,34 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: '11,20,21,25,28|台湾省 中华电信(HiNet)数据中心 #2'
+  name: 11,20,21|🇨🇳 台湾省 中华电信(HiNet)数据中心
   network: tcp
-  port: '4443'
-  server: 118.167.67.180
+  port: '12002'
+  server: 118.167.72.107
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4403b75a-24ca-4d06-af15-6e157a0a7361
+  ws-headers:
+    Host: 118.167.72.107
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '11,16,20,21,25,28|github.com/freefq - 台湾省中华电信(Hi... #12'
+  network: tcp
+  port: 12002
+  server: nb22.ntbq.dynu.net
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 4403b75a-24ca-4d06-af15-6e157a0a7361
   ws-headers:
-    Host: 118.167.67.180
+    Host: nb22.ntbq.dynu.net
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '11,13,16,20,21,25,28|台湾省南投县 中华电信 #3'
+  name: '13,16,20,21,25,28|台湾省南投县 中华电信 #2'
   network: tcp
   port: '6122'
   server: 36.232.158.210
@@ -94,20 +107,6 @@ proxies:
   uuid: a209ff8c-d691-496c-8c1f-32d2e995b603
   ws-headers:
     Host: 36.232.158.210
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 11,13,16,20,21,25,28|TW-板桥2-3(TCP)
-  network: tcp
-  port: '2024'
-  server: b23.ntbq.dynu.net
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 05f1e2ad-1d21-449b-9bbb-97a8b4662934
-  ws-headers:
-    Host: b23.ntbq.dynu.net
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -139,17 +138,17 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '16,20,21,25,28|github.com/freefq - 台湾省中华电信(Hi... #12'
+  name: 13,16,20,21,25,28|TW-板桥2-3(TCP)
   network: tcp
-  port: 12002
-  server: nb22.ntbq.dynu.net
+  port: '2024'
+  server: b23.ntbq.dynu.net
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 4403b75a-24ca-4d06-af15-6e157a0a7361
+  uuid: 05f1e2ad-1d21-449b-9bbb-97a8b4662934
   ws-headers:
-    Host: nb22.ntbq.dynu.net
+    Host: b23.ntbq.dynu.net
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -180,16 +179,17 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20,21|🇨🇳 台湾省 中华电信(HiNet)数据中心
+  name: '20,21,25,28|台湾省 中华电信(HiNet)数据中心 #2'
   network: tcp
-  port: '12002'
-  server: 118.167.72.107
+  port: '4443'
+  server: 118.167.67.180
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 4403b75a-24ca-4d06-af15-6e157a0a7361
   ws-headers:
-    Host: 118.167.72.107
+    Host: 118.167.67.180
   ws-path: /
 - cipher: chacha20-ietf-poly1305
   name: 20,29|TW_speednode_0058
