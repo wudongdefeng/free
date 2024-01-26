@@ -296,7 +296,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 20bd25bf-46ba-4e14-9625-b44f875c6ba8
+  uuid: c2e896ec-994c-4c91-8e72-e9bdd9a3425f
 - alterId: 0
   cipher: auto
   name: 12,25|12|🇯🇵日本05
@@ -306,7 +306,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 20bd25bf-46ba-4e14-9625-b44f875c6ba8
+  uuid: c2e896ec-994c-4c91-8e72-e9bdd9a3425f
 - alterId: 0
   cipher: auto
   name: 12,25|12|🇯🇵日本06
@@ -316,7 +316,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 20bd25bf-46ba-4e14-9625-b44f875c6ba8
+  uuid: c2e896ec-994c-4c91-8e72-e9bdd9a3425f
 - cipher: aes-256-cfb
   name: 20|JP-54.199.83.239-156
   password: doub.io
@@ -332,7 +332,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: cb1c7664-73e9-4a31-ab79-e9879ca745f4
+  uuid: f1cd43b3-a458-44cf-8f87-e96f8b04c06f
 - alterId: 0
   cipher: auto
   name: 23,25|16|【BGP】日本 05  | 1x JP
@@ -342,7 +342,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: cb1c7664-73e9-4a31-ab79-e9879ca745f4
+  uuid: f1cd43b3-a458-44cf-8f87-e96f8b04c06f
 - alterId: 0
   cipher: auto
   name: 23,25|16|【BGP】日本 06  | 1x JP
@@ -352,7 +352,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: cb1c7664-73e9-4a31-ab79-e9879ca745f4
+  uuid: f1cd43b3-a458-44cf-8f87-e96f8b04c06f
 - alterId: 64
   cipher: auto
   name: 25|15|🔒 VM-TCP-NA 🇯🇵 JP-140.83.63...
@@ -372,6 +372,20 @@ proxies:
   tls: false
   type: vmess
   uuid: e961894f-8e90-472f-98d3-09402e4be453
+- alterId: 0
+  cipher: auto
+  name: 25|20|baipaovpn日本
+  network: ws
+  port: '62193'
+  server: 198.13.50.210
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a9213d7c-9448-4750-a193-d8a7ae88a843
+  ws-opts:
+    headers:
+      Host: www.tmall.com
+    path: /live/UKPZrSI3K7dtNJmn
 - cipher: aes-128-gcm
   name: 26|🇯🇵 日本KT|@ripaojiedian
   password: g12sQi#ss#&1
@@ -392,10 +406,46 @@ proxies:
   port: 443
   server: 43.207.197.15
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|JP_speednode_0022
-  password: cbd69ae7-f024-4bc1-b7f0-ed7d47fb66c4
-  port: 21853
-  server: jp.doushimeng.com
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 28|🇯🇵JP-172.234.84.16-1854
+  network: ws
+  port: 80
+  server: JAPAN11.5GTOCDOCAO.COM
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: eb9e8a52-0fec-4a10-8d16-af3b32874933
+  ws-opts:
+    headers:
+      Host: JAPAN11.5GTOCDOCAO.COM
+    path: /5gtocdocao.com
+- alterId: 0
+  cipher: auto
+  name: 28|🇯🇵JP-152.69.197.74-5025
+  network: ws
+  port: 12345
+  server: 152.69.197.74
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
+  ws-opts:
+    headers:
+      Host: ''
+    path: /bb
+- alterId: 0
+  cipher: auto
+  name: 29|JP_speednode_0040
+  network: ws
+  port: 62193
+  server: jp.littleqqq.co
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
+  uuid: a9213d7c-9448-4750-a193-d8a7ae88a843
+  ws-opts:
+    headers:
+      Host: www.tmall.com
+    path: /live/UKPZrSI3K7dtNJmn
