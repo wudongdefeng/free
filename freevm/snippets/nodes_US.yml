@@ -15,7 +15,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,11,13,14,16,21,25,28,30|🇺🇸 _US_美国 #24'
+  name: '0,3,4,6,7,13,14,16,21,25,28,30|🇺🇸 _US_美国 #24'
   network: ws
   port: '8080'
   server: 104.31.16.104
@@ -56,7 +56,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,11,21,25,28|乌克兰 V2CROSS.COM #1'
+  name: 0,21,25,28|乌克兰 V2CROSS.COM
   network: ws
   port: '80'
   server: be1-vmess.sshmax.xyz
@@ -1953,13 +1953,48 @@ proxies:
   uuid: 37e3fe44-e63c-4988-cff7-d1a27f5f0c09
 - alterId: 0
   cipher: auto
-  name: '11,28|美国 V2CROSS.COM #3'
-  network: tcp
-  port: 8443
-  server: 45.159.250.78
-  tls: true
+  name: '11,25,26,27,28|新加坡2|@ripaojiedian #1'
+  network: ws
+  port: '80'
+  server: 104.17.25.2
+  servername: ''
+  skip-cert-verify: false
+  tls: false
   type: vmess
-  uuid: f3a14df7-6140-45d7-9b36-9cbac435c0a9
+  uuid: d6664518-c8e1-42cf-f2c1-d33dcc01a8a6
+  ws-opts:
+    headers:
+      Host: sgvpn.catnipballs.gay
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 11,25,29|US_speednode_0212
+  network: ws
+  port: 8080
+  server: www.darkroom.lol
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-opts:
+    headers:
+      Host: www.darkroom.lol
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 11,28|🏁RELAY-172.67.212.171-1940
+  network: ws
+  port: 8080
+  server: 172.67.212.171
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7b6ddff4-8f18-4e27-de82-a33cfeebfa01
+  ws-opts:
+    headers:
+      Host: eu5.openxai.link
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: 12,25|12|🇺🇸美国04
@@ -4374,6 +4409,15 @@ proxies:
     headers:
       Host: www.23168499.xyz
     path: /path/221312281009
+- alterId: 0
+  cipher: auto
+  name: '28|美国 V2CROSS.COM #2'
+  network: tcp
+  port: 8443
+  server: 45.159.250.78
+  tls: true
+  type: vmess
+  uuid: f3a14df7-6140-45d7-9b36-9cbac435c0a9
 - alterId: 0
   cipher: auto
   name: 29|US_speednode_0130
