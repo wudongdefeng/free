@@ -69,7 +69,30 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 13,16,25|13|台湾省 中华电信(HiNet)数据中心
+  name: 11,25|20|baipaovpn台湾省
+  network: tcp
+  port: '6122'
+  server: 125.224.144.24
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e27ab70e-7444-470c-a0fc-e49ec09ac02d
+- alterId: 0
+  cipher: auto
+  name: 11,20,21,25|6,15|🇹🇼|TW|台湾|@wxgqlfx|43
+  network: tcp
+  port: 6122
+  server: c12.twtc.dynu.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e27ab70e-7444-470c-a0fc-e49ec09ac02d
+  ws-headers:
+    Host: c12.twtc.dynu.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 11,13,16,25|13|台湾省 中华电信(HiNet)数据中心
   network: tcp
   port: 4443
   server: 118.167.77.5
@@ -144,19 +167,6 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20,21,25|6,15|🇹🇼|TW|台湾|@wxgqlfx|43
-  network: tcp
-  port: 6122
-  server: c12.twtc.dynu.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e27ab70e-7444-470c-a0fc-e49ec09ac02d
-  ws-headers:
-    Host: c12.twtc.dynu.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: 20,21|🇨🇳 台湾省中华电信(HiNet)数据中心 26
   network: tcp
   port: '2024'
@@ -178,13 +188,3 @@ proxies:
   tls: false
   type: vmess
   uuid: c64adf03-3bfe-47e0-b38b-870a9f8032e8
-- alterId: 0
-  cipher: auto
-  name: 25|20|baipaovpn台湾省
-  network: tcp
-  port: '6122'
-  server: 125.224.144.24
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e27ab70e-7444-470c-a0fc-e49ec09ac02d
