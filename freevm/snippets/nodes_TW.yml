@@ -69,21 +69,7 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 11,21,28|🇻🇳VN-103.118.29.229-1997
-  network: ws
-  port: 80
-  server: 3SAO.5GTOCDOCAO.COM
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: eb9e8a52-0fec-4a10-8d16-af3b32874933
-  ws-opts:
-    headers:
-      Host: lienquan.garena.vn
-    path: /5gtocdocao.com
-- alterId: 0
-  cipher: auto
-  name: 13,25|13|台湾省 中华电信(HiNet)数据中心
+  name: 13,16,25|13|台湾省 中华电信(HiNet)数据中心
   network: tcp
   port: 4443
   server: 118.167.77.5
@@ -103,6 +89,20 @@ proxies:
     headers:
       Host: lienquan.garena.vn
     path: /5gtocdocao.com
+- alterId: 0
+  cipher: auto
+  name: 16,20,21,25|6,15|台湾【TG：@ccbaohe】定时更新节点订阅
+  network: tcp
+  port: '12002'
+  server: nb22.ntbq.dynu.net
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c64adf03-3bfe-47e0-b38b-870a9f8032e8
+  ws-headers:
+    Host: nb22.ntbq.dynu.net
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 20,21|🇨🇳 台湾(油管:破解资源君)
@@ -128,20 +128,6 @@ proxies:
   uuid: e27ab70e-7444-470c-a0fc-e49ec09ac02d
   ws-headers:
     Host: 36.232.158.210
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 20,21,25|6,15|台湾【TG：@ccbaohe】定时更新节点订阅
-  network: tcp
-  port: '12002'
-  server: nb22.ntbq.dynu.net
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c64adf03-3bfe-47e0-b38b-870a9f8032e8
-  ws-headers:
-    Host: nb22.ntbq.dynu.net
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -202,9 +188,3 @@ proxies:
   tls: false
   type: vmess
   uuid: e27ab70e-7444-470c-a0fc-e49ec09ac02d
-- cipher: chacha20-ietf-poly1305
-  name: 29|TW_speednode_0057
-  password: d20b031e-a477-45f1-8bfc-4cbea413a44e
-  port: 2203
-  server: ty11.twty.dynu.net
-  type: ss
