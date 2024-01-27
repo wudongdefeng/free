@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,1,3,4,6,7,8,9,13,14,21,25,28,30|🇬🇧 _GB_英国 #4'
+  name: '0,1,3,4,6,7,8,9,14,21,25,28,30|🇬🇧 _GB_英国 #4'
   network: ws
   port: '443'
   server: 172.99.190.109
@@ -96,7 +96,7 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,14,16,21,25,28,30|🇺🇸 _US_美国 #24'
+  name: '0,3,4,6,7,13,14,16,21,25,28,30|🇺🇸 _US_美国 #24'
   network: ws
   port: '8080'
   server: 104.31.16.104
@@ -191,7 +191,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,4,6,7,14,21,25,28|🇪🇸_ES_西班牙->🇭🇰_HK_香港 #4'
+  name: '0,4,6,7,11,13,14,21,25,28|🇪🇸_ES_西班牙->🇭🇰_HK_香港 #4'
   network: ws
   port: 8002
   server: 185.214.103.249
@@ -217,7 +217,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,13,21,25|1,13,23|🇷🇺_RU_俄罗斯联邦_3
+  name: 1,21,25|1,13,23|🇷🇺_RU_俄罗斯联邦_3
   network: ws
   port: 80
   server: 45.144.2.113
@@ -370,7 +370,10 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: chacha20-poly1305
-  name: 1,25,29|US_speednode_0108
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 1,25,29|US_speednode_0168
   network: ws
   port: 8080
   server: www.crispyrainbow.biz
@@ -4347,7 +4350,7 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  name: '11,13,20,21,25,28|台湾省 中华电信(HiNet)数据中心 #1'
+  name: '11,13,20,21,25,28|台湾省 中华电信(HiNet)数据中心 #4'
   network: tcp
   port: 6122
   server: 125.224.144.24
@@ -4361,56 +4364,47 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '11,28|越南 Viettel公司 #1'
-  network: ws
-  port: '80'
-  server: 125.212.231.79
+  name: 11,13,25,27|台湾3|@ripaojiedian
+  network: tcp
+  port: '6122'
+  server: c12.twtc.dynu.net
   servername: ''
   tls: false
   type: vmess
-  uuid: bb4170c1-509b-4bb8-ac94-37f90f90b84d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /VPNDATA.xYx
+  uuid: 27c6999b-58aa-48b4-b065-786d2badc074
 - alterId: 0
   cipher: auto
-  name: '11,25,28|美国 V2CROSS.COM #1'
-  network: ws
-  port: 8080
-  server: hamrahaval.asan3a.shop
+  name: 11,13,25|20|baipaovpn台湾省新竹市
+  network: tcp
+  port: '2024'
+  server: 114.37.139.157
   servername: ''
   tls: false
   type: vmess
-  uuid: 3a6752b4-8353-4172-85b1-32202116714d
-  ws-opts:
-    headers:
-      Host: asan3.azad1.tech
-    path: /
+  uuid: d20b031e-a477-45f1-8bfc-4cbea413a44e
 - alterId: 0
   cipher: auto
-  name: '11,16,25,28|乌克兰 V2CROSS.COM #3'
+  name: '11,13|美国 CloudFlare节点 #1'
   network: ws
-  port: 80
-  server: 94.131.97.123
-  tls: false
+  port: 443
+  server: cf.fovi.tk
+  servername: ''
+  tls: true
   type: vmess
-  uuid: ef7cfdf6-63e1-4307-bb61-40eb81acb5bd
+  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
   ws-opts:
     headers:
-      Host: cz1-vmess.sshmax.xyz
-    path: /vmess
+      Host: foxlux.fovi.tk
+    path: /eisasqa
 - alterId: 0
   cipher: auto
-  name: '11,25,28|乌克兰 V2CROSS.COM #2'
-  network: ws
-  port: 80
-  server: cz1-vmess.sshmax.xyz
-  tls: false
+  name: '11,13|韩国 蘑菇主机BGP数据中心 #1'
+  network: tcp
+  port: 10001
+  server: 103.214.68.57
+  tls: true
   type: vmess
-  uuid: ef7cfdf6-63e1-4307-bb61-40eb81acb5bd
-  ws-opts:
-    path: /vmess
+  uuid: ebca5f68-bf59-4081-e658-f158839c2f5c
 - alterId: 0
   cipher: auto
   name: 12,25|12|🇯🇵日本04
@@ -4683,141 +4677,18 @@ proxies:
   uuid: dce85d3b-50eb-4ea7-9883-9f7d272ccdc4
 - alterId: 0
   cipher: auto
-  name: 13,21,25|13|台湾省晟崴科技股份有限公司 10
-  network: ws
-  port: '80'
-  server: 103.118.29.229
-  tls: false
-  type: vmess
-  uuid: eb9e8a52-0fec-4a10-8d16-af3b32874933
-  ws-opts:
-    headers:
-      Host: lienquan.garena.vn
-    path: /5gtocdocao.com
-- alterId: 0
-  cipher: auto
-  name: 13,20,21,25|13|伊朗  22
-  network: tcp
-  port: 16767
-  server: es---join.outline-vpn.cloud
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d30a1c51-d37c-4cb8-bee6-8f5cd746f9d7
-  ws-headers:
-    Host: es---join.outline-vpn.cloud
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '13,16,21,25,28|github.com/freefq - 广东省移动 8 #1'
-  network: ws
-  port: '20401'
-  server: data-us-v1.shwjfkw.cn
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-us-v1.shwjfkw.cn
-    path: /debian
-- alterId: 0
-  cipher: auto
-  name: 13,21,25|13|保加利亚 v2rayfree.eu.org
+  name: 13,16,25,28,29|CZ_speednode_0071
   network: ws
   port: 80
-  server: 93.123.17.132
-  tls: false
-  type: vmess
-  uuid: f0028153-2a2d-45fe-b44e-a1a6dbd0c65e
-  ws-opts:
-    headers:
-      Host: saman8888.servecounterstrike.com
-    path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: '13,20,21,25|13|美国 v2rayfree.eu.org #1'
-  network: tcp
-  port: 8443
-  server: 45.159.250.78
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f3a14df7-6140-45d7-9b36-9cbac435c0a9
-  ws-headers:
-    Host: 45.159.250.78
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 13,20,21,25|13|台湾省中华电信(HiNet)数据中心 3
-  network: tcp
-  port: 2024
-  server: b23.ntbq.dynu.net
-  servername: ''
+  server: 94.131.97.123
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: abbc98b1-b53f-45e4-9d01-54a010ead719
-  ws-headers:
-    Host: b23.ntbq.dynu.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 13,21,25|13|丹麦  6
-  network: ws
-  port: '2082'
-  server: 195.85.59.161
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: be9032c5-fca8-4c74-b7b4-0a3445279d32
+  uuid: ef7cfdf6-63e1-4307-bb61-40eb81acb5bd
   ws-opts:
     headers:
-      Host: mgfive_cdn.yunjisuan.cf
-    path: /?ed=1024
-- alterId: 0
-  cipher: auto
-  name: 13,20,21,25|13|伊朗  13
-  network: tcp
-  port: 16767
-  server: 81.12.27.108
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d30a1c51-d37c-4cb8-bee6-8f5cd746f9d7
-  ws-headers:
-    Host: 81.12.27.108
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 13,21,25|13|乌克兰  15
-  network: ws
-  port: '80'
-  server: 91.242.229.77
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 56890326-df58-432d-be1e-67064e2b4355
-  ws-opts:
-    headers:
-      Host: ''
+      Host: cz1-vmess.sshmax.xyz
     path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 13,20,21,25,27|台湾|@ripaojiedian
-  network: tcp
-  port: '4443'
-  server: 118.167.77.5
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d20b031e-a477-45f1-8bfc-4cbea413a44e
-  ws-headers:
-    Host: 118.167.77.5
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: '13,16,21,25,28|新加坡3|@ripaojiedian #1'
@@ -4832,6 +4703,34 @@ proxies:
     headers:
       Host: sgvpn.catnipballs.gay
     path: /
+- alterId: 0
+  cipher: auto
+  name: '13,16,25,28|github.com/freefq - 美国CloudFla... #11'
+  network: ws
+  port: '2082'
+  server: s1c.v2.v001sss.xyz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '13,16,21,25,28|github.com/freefq - 广东省移动 8 #1'
+  network: ws
+  port: '20401'
+  server: data-us-v1.shwjfkw.cn
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-us-v1.shwjfkw.cn
+    path: /debian
 - alterId: 64
   cipher: auto
   name: 15|电报群：t.me/vvkj11
@@ -6037,20 +5936,6 @@ proxies:
     path: /path/1693992821776
 - alterId: 0
   cipher: auto
-  name: '16,25,28|github.com/freefq - 美国CloudFla... #11'
-  network: ws
-  port: '2082'
-  server: s1c.v2.v001sss.xyz
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: '17,18,28|TG频道:@hkaa0|越南 #1'
   network: ws
   port: 80
@@ -6129,8 +6014,8 @@ proxies:
   server: 51.145.68.57
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 18,20|GB-18.170.232.83-252
-  password: u17T3BvpYaaiuW2c
+  name: 18,20,29|GB_speednode_0082
+  password: IvRDQ6bc9yrFraj4
   port: 443
   server: series-a2-mec.samanehha.co
   type: ss
@@ -6174,11 +6059,12 @@ proxies:
   server: 38.68.134.202
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 18,20|GB-3.9.208.68-250
-  password: Bog0ELmMM9DSxDdQ
+  name: 18,20,29|GB_speednode_0080
+  password: egMcU05gndNS96O5
   port: 443
   server: series-a2-me.samanehha.co
   type: ss
+  udp: true
 - name: '18|TG:@hkaa0|_2 #3'
   network: tcp
   password: hJG3wNfsVa
@@ -6430,16 +6316,18 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20,26,29|SG_speednode_0103
-  password: Fn4rFdIWwW
-  port: 42766
-  server: 146.190.105.144
+  country: 🇸🇬SG
+  name: 20,26,29|US_speednode_0153
+  password: 1c9b5b23-3b58-44b7-907d-2c27f2a9af7a
+  port: 443
+  server: 198.58.100.185
+  servername: alibaba-node.cn
   skip-cert-verify: true
-  sni: m.zoom.us
+  sni: 16-163-218-240.nhost.00cdn.com
   tls: false
   type: trojan
   udp: true
-  uuid: 27c6999b-58aa-48b4-b065-786d2badc074
+  uuid: 1d8963ab-0cd8-4091-93ca-4c6a7dbcd1f2
   ws-path: h=%2F%E7%A7%91%E5%B0%BC%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%90%8C%E4%BC%B4
 - alterId: 0
   cipher: auto
@@ -7638,6 +7526,19 @@ proxies:
   ws-headers:
     Host: Dallas.gafn.online
   ws-path: /speedtest
+- alterId: 0
+  cipher: auto
+  name: '20,21,25|13|美国 v2rayfree.eu.org #1'
+  network: tcp
+  port: 8443
+  server: 45.159.250.78
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f3a14df7-6140-45d7-9b36-9cbac435c0a9
+  ws-headers:
+    Host: 45.159.250.78
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   name: 20|CN-183.233.187.230-262
   password: cfa17a0d-5e7d-4871-976e-f116e0818123
@@ -7811,6 +7712,20 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: 20,21,25|13|伊朗  22
+  network: tcp
+  port: 16767
+  server: es---join.outline-vpn.cloud
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d30a1c51-d37c-4cb8-bee6-8f5cd746f9d7
+  ws-headers:
+    Host: es---join.outline-vpn.cloud
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 20|NL-93.123.17.132-240
   network: ws
   port: 80
@@ -7830,6 +7745,20 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: 20,21,25|13|台湾省中华电信(HiNet)数据中心 3
+  network: tcp
+  port: 2024
+  server: b23.ntbq.dynu.net
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: abbc98b1-b53f-45e4-9d01-54a010ead719
+  ws-headers:
+    Host: b23.ntbq.dynu.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 20|RELAY-195.85.59.161-251
   network: ws
   port: 2082
@@ -7842,11 +7771,26 @@ proxies:
     Host: mgfive_cdn.yunjisuan.cf
   ws-path: /?ed=1024
 - cipher: aes-256-gcm
-  name: 20|BR-168.138.141.222-254
-  password: 85262d4b-50eb-4c9e-9803-bf27c5ac773a
+  name: 20,29|BR_speednode_0002
+  password: 0bfba64e-6640-4286-9fc0-b988253cc94f
   port: 7704
   server: 168.138.141.222
   type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 20,21,25|13|伊朗  13
+  network: tcp
+  port: 16767
+  server: 81.12.27.108
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d30a1c51-d37c-4cb8-bee6-8f5cd746f9d7
+  ws-headers:
+    Host: 81.12.27.108
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 20|NL-91.242.229.77-260
@@ -7860,6 +7804,20 @@ proxies:
   ws-headers:
     Host: 91.242.229.77
   ws-path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 20,21,25,27|台湾|@ripaojiedian
+  network: tcp
+  port: '4443'
+  server: 118.167.77.5
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d20b031e-a477-45f1-8bfc-4cbea413a44e
+  ws-headers:
+    Host: 118.167.77.5
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 21|🇷🇺 俄罗斯(油管:破解资源君)
@@ -9647,6 +9605,60 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 21,25|13|台湾省晟崴科技股份有限公司 10
+  network: ws
+  port: '80'
+  server: 103.118.29.229
+  tls: false
+  type: vmess
+  uuid: eb9e8a52-0fec-4a10-8d16-af3b32874933
+  ws-opts:
+    headers:
+      Host: lienquan.garena.vn
+    path: /5gtocdocao.com
+- alterId: 0
+  cipher: auto
+  name: 21,25|13|保加利亚 v2rayfree.eu.org
+  network: ws
+  port: 80
+  server: 93.123.17.132
+  tls: false
+  type: vmess
+  uuid: f0028153-2a2d-45fe-b44e-a1a6dbd0c65e
+  ws-opts:
+    headers:
+      Host: saman8888.servecounterstrike.com
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 21,25|13|丹麦  6
+  network: ws
+  port: '2082'
+  server: 195.85.59.161
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: be9032c5-fca8-4c74-b7b4-0a3445279d32
+  ws-opts:
+    headers:
+      Host: mgfive_cdn.yunjisuan.cf
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 21,25|13|乌克兰  15
+  network: ws
+  port: '80'
+  server: 91.242.229.77
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 56890326-df58-432d-be1e-67064e2b4355
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vmess
+- alterId: 0
+  cipher: auto
   name: 23,25|16|【BGP】日本 04  | 1x JP
   network: tcp
   port: '31116'
@@ -10035,7 +10047,7 @@ proxies:
   delay: 1947
   h2-opts: {}
   http-opts: {}
-  name: 25,29|CA_speednode_0002
+  name: 25,29|CA_speednode_0003
   network: ws
   port: 443
   server: dongtaiwang2.com
@@ -10049,13 +10061,16 @@ proxies:
     path: /gzogws
 - alterId: 0
   cipher: auto
-  name: 25,29|US_speednode_0109
+  h2-opts: {}
+  http-opts: {}
+  name: 25,29|US_speednode_0166
   network: ws
   port: 8080
   server: www.blueberrywindow.online
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   ws-opts:
     headers:
@@ -10072,17 +10087,14 @@ proxies:
   uuid: 892e4ff3-f8bb-42ac-9bd5-e103f235fc78
 - alterId: 0
   cipher: auto
-  name: 25,29|GB_speednode_0099
+  name: 25|6|-https://t.me/MrXbin-67
   network: ws
   port: 443
   server: 93.123.11.11
-  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: b85520c4-e377-4806-bc12-5be674fc4061
   ws-opts:
-    headers:
-      host: yasdl900.redirectme.net
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
@@ -10095,11 +10107,29 @@ proxies:
   uuid: e820d6f7-57ef-4575-99da-bcd7d318c742
 - alterId: 0
   cipher: auto
+  country: 🇲🇩MD
+  h2-opts: {}
+  http-opts: {}
+  name: 25,28,29|CZ_speednode_0070
+  network: ws
+  port: 80
+  server: cz1-vmess.sshmax.xyz
+  servername: cz1-vmess.sshmax.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ef7cfdf6-63e1-4307-bb61-40eb81acb5bd
+  ws-opts:
+    headers:
+      HOST: cz1-vmess.sshmax.xyz
+    path: /vmess
+- alterId: 0
+  cipher: auto
   country: 🇩🇪DE
   delay: 1813
   h2-opts: {}
   http-opts: {}
-  name: 25,29|DE_speednode_0098
+  name: 25,29|DE_speednode_0074
   network: ws
   port: 443
   server: 92.223.124.24
@@ -10112,16 +10142,6 @@ proxies:
     headers:
       HOST: sabziran.serveminecraft.net
     path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: 25,27|台湾3|@ripaojiedian
-  network: tcp
-  port: '6122'
-  server: c12.twtc.dynu.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 27c6999b-58aa-48b4-b065-786d2badc074
 - alterId: 0
   cipher: auto
   name: 25|6|-https://t.me/MrXbin-146
@@ -10405,6 +10425,20 @@ proxies:
     path: /mePGXW6SFZZw2QyAqaYK
 - alterId: 0
   cipher: auto
+  name: 25,28|美国 V2CROSS.COM
+  network: ws
+  port: 8080
+  server: hamrahaval.asan3a.shop
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3a6752b4-8353-4172-85b1-32202116714d
+  ws-opts:
+    headers:
+      Host: asan3.azad1.tech
+    path: /
+- alterId: 0
+  cipher: auto
   name: 25|15|⚡️@DeamNet 🇨🇦Canada
   network: ws
   port: 443
@@ -10521,18 +10555,21 @@ proxies:
       Host: yaghoob55freenodes.repaco69437403.workers.dev
     path: /adenc35.fixedlfoat.top/linkws
 - alterId: 0
-  cipher: auto
-  name: 25|15|🇺🇸_US_美国->🇮🇷_IR_伊朗_3
+  cipher: chacha20-poly1305
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 25,29|US_speednode_0162
   network: ws
   port: 8080
   server: www.darkroom.lol
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -11071,16 +11108,6 @@ proxies:
   uuid: 61761e55-dff5-4f94-f75f-b0a4718bba98
 - alterId: 0
   cipher: auto
-  name: 25|20|baipaovpn台湾省新竹市
-  network: tcp
-  port: '2024'
-  server: 114.37.139.157
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d20b031e-a477-45f1-8bfc-4cbea413a44e
-- alterId: 0
-  cipher: auto
   name: 25|20|baipaovpn乌克兰
   network: ws
   port: '80'
@@ -11108,8 +11135,7 @@ proxies:
   server: 122.118.138.244
   type: ss
 - cipher: aes-128-gcm
-  delay: 591
-  name: 26,29|HK_speednode_0100
+  name: 26,29|HK_speednode_0085
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -11169,14 +11195,18 @@ proxies:
     path: /video/ibCT6z55
 - alterId: 0
   cipher: auto
-  name: 26,27|美国|@ripaojiedian
+  delay: 2854
+  h2-opts: {}
+  http-opts: {}
+  name: 26,27,29|US_speednode_0164
   network: ws
-  port: '8080'
+  port: 8080
   server: www.crispyrainbow.online
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   ws-opts:
     headers:
@@ -11890,6 +11920,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 28|越南 Viettel公司
+  network: ws
+  port: '80'
+  server: 125.212.231.79
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bb4170c1-509b-4bb8-ac94-37f90f90b84d
+  ws-opts:
+    headers:
+      Host: ''
+    path: /VPNDATA.xYx
+- alterId: 0
+  cipher: auto
   name: 28|🏁RELAY-172.67.205.139-0181
   network: ws
   port: 8880
@@ -11957,549 +12001,193 @@ proxies:
       Host: lienquan.garena.vn
     path: /5gtocdocao.com
 - cipher: aes-256-cfb
-  delay: 1214
+  country: 🇦🇱AL
   name: 29|AL_speednode_0001
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 31.171.153.182
   type: ss
-- name: 29|CN_speednode_0055
-  network: tcp
-  password: 325c7b78-d1ba-4969-8b3b-b81054de80a0
-  port: 10802
-  server: tiananmen.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0005
+  password: 91491792-77B1-4ED6-BD01-52DC46B81AD0
+  port: 10029
+  server: taiwan.speed-mitce.top
+  type: ss
   udp: true
-- name: 29|CN_speednode_0004
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10801
-  server: tiananmen.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0005
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10803
-  server: tiananmen.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0006
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10805
-  server: tiananmen.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0054
-  network: tcp
-  password: 325c7b78-d1ba-4969-8b3b-b81054de80a0
-  port: 10804
-  server: tiananmen.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0052
-  network: tcp
-  password: 325c7b78-d1ba-4969-8b3b-b81054de80a0
-  port: 10806
-  server: tiananmen.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0053
-  network: tcp
-  password: 325c7b78-d1ba-4969-8b3b-b81054de80a0
-  port: 10808
-  server: tiananmen.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0010
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10807
-  server: tiananmen.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-128-gcm
+  country: 🇨🇳CN
+  name: 29|CN_speednode_0006
+  password: 91491792-77B1-4ED6-BD01-52DC46B81AD0
+  port: 10024
+  server: hongkong.speed-mitce.top
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇨🇳CN
+  name: 29|CN_speednode_0007
+  password: 91491792-77B1-4ED6-BD01-52DC46B81AD0
+  port: 10030
+  server: taiwan.speed-mitce.top
+  type: ss
+- cipher: aes-128-gcm
+  country: 🇨🇳CN
   name: 29|CN_speednode_0011
+  password: 91491792-77B1-4ED6-BD01-52DC46B81AD0
+  port: 10021
+  server: hongkong.speed-mitce.top
+  type: ss
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: 29|CN_speednode_0015
+  network: ws
+  port: 2082
+  server: 120.233.45.104
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 1405f400-4d72-3cd2-88fc-5bfb9dd9120d
+  ws-opts:
+    headers:
+      host: cache-hk-1.cn-db.top
+    path: /db00
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0017
+  password: 792fb66e-fb2e-4b64-9fb9-3c86668cd741
+  port: 20035
+  server: node.websitea.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 29|CN_speednode_0018
+  network: ws
+  port: 12002
+  server: dnspsdhaitun.ncsuwei.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: be13e68d-b85d-3c5f-95a5-01e5fad49fa5
+  ws-opts:
+    headers:
+      Host: dnspsdhaitun.ncsuwei.top
+    path: /12e884bf-1622-7ceb-3009-7d47fd1322f9a5
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0021
   password: 7a33609f-2e83-415e-b826-b4a71063e9dd
   port: 41800
   server: zf.quanstring.top
   type: ss
-- name: 29|CN_speednode_0012
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10829
-  server: tank.19890604.day
+- client-fingerprint: chrome
+  name: 29|CN_speednode_0022
+  port: 17070
+  server: 106.75.26.66
   skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+  type: socks5
   udp: true
-- name: 29|CN_speednode_0061
-  network: tcp
-  password: 325c7b78-d1ba-4969-8b3b-b81054de80a0
-  port: 10828
-  server: tank.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0014
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10831
-  server: tank.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0063
-  network: tcp
-  password: 325c7b78-d1ba-4969-8b3b-b81054de80a0
-  port: 10832
-  server: tank.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0064
-  network: tcp
-  password: 325c7b78-d1ba-4969-8b3b-b81054de80a0
-  port: 10830
-  server: tank.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0017
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10833
-  server: tank.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0018
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10827
-  server: tank.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0065
-  network: tcp
-  password: 325c7b78-d1ba-4969-8b3b-b81054de80a0
-  port: 10834
-  server: tank.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0020
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10809
-  server: tiananmen.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0056
-  network: tcp
-  password: 325c7b78-d1ba-4969-8b3b-b81054de80a0
-  port: 10810
-  server: tiananmen.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0022
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10840
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0023
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10811
-  server: xijinping.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0072
-  network: tcp
-  password: 325c7b78-d1ba-4969-8b3b-b81054de80a0
-  port: 10812
-  server: xijinping.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0025
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10813
-  server: xijinping.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0073
-  network: tcp
-  password: 325c7b78-d1ba-4969-8b3b-b81054de80a0
-  port: 10835
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0027
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10815
-  server: xijinping.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0069
-  network: tcp
-  password: 325c7b78-d1ba-4969-8b3b-b81054de80a0
-  port: 10818
-  server: xijinping.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0068
-  network: tcp
-  password: 325c7b78-d1ba-4969-8b3b-b81054de80a0
-  port: 10814
-  server: xijinping.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0071
-  network: tcp
-  password: 325c7b78-d1ba-4969-8b3b-b81054de80a0
-  port: 10816
-  server: xijinping.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0031
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10817
-  server: xijinping.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0032
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10836
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0033
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10841
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0034
-  network: tcp
-  password: fd0bdc3a-d4e7-42a3-8400-72db8dee6b71
-  port: 10834
-  server: 183.236.51.6
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: 29|CN_speednode_0035
-  password: 47c97380-6525-46ca-88ef-d23866fc904c
-  port: 36999
-  server: 58.247.255.217
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0027
+  password: 792fb66e-fb2e-4b64-9fb9-3c86668cd741
+  port: 20036
+  server: node.websitea.xyz
   type: ss
-- name: 29|CN_speednode_0080
-  network: tcp
-  password: 325c7b78-d1ba-4969-8b3b-b81054de80a0
-  port: 10824
-  server: falungong.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
   udp: true
-- name: 29|CN_speednode_0037
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10819
-  server: falungong.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0049
+  password: 792fb66e-fb2e-4b64-9fb9-3c86668cd741
+  port: 20039
+  server: node.websitea.xyz
+  type: ss
   udp: true
-- name: 29|CN_speednode_0038
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10826
-  server: falungong.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0036
+  password: 91491792-77B1-4ED6-BD01-52DC46B81AD0
+  port: 10028
+  server: 36.139.3.149
+  type: ss
   udp: true
-- name: 29|CN_speednode_0078
-  network: tcp
-  password: 325c7b78-d1ba-4969-8b3b-b81054de80a0
-  port: 10820
-  server: falungong.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0040
+  password: 792fb66e-fb2e-4b64-9fb9-3c86668cd741
+  port: 20031
+  server: node.websitea.xyz
+  type: ss
   udp: true
-- name: 29|CN_speednode_0040
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10825
-  server: falungong.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0043
+  password: 91491792-77B1-4ED6-BD01-52DC46B81AD0
+  port: 10022
+  server: 36.212.148.208
+  type: ss
   udp: true
-- name: 29|CN_speednode_0079
-  network: tcp
-  password: 325c7b78-d1ba-4969-8b3b-b81054de80a0
-  port: 10822
-  server: falungong.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0044
+  password: 91491792-77B1-4ED6-BD01-52DC46B81AD0
+  port: 10023
+  server: hongkong.speed-mitce.top
+  type: ss
   udp: true
-- name: 29|CN_speednode_0042
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10821
-  server: falungong.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0045
+  password: 91491792-77B1-4ED6-BD01-52DC46B81AD0
+  port: 10030
+  server: 36.139.3.149
+  type: ss
   udp: true
-- name: 29|CN_speednode_0043
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10823
-  server: falungong.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0048
+  password: 91491792-77B1-4ED6-BD01-52DC46B81AD0
+  port: 10028
+  server: taiwan.speed-mitce.top
+  type: ss
   udp: true
-- name: 29|CN_speednode_0044
-  network: tcp
-  password: fd0bdc3a-d4e7-42a3-8400-72db8dee6b71
-  port: 10816
-  server: 183.236.51.6
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0062
+  password: 792fb66e-fb2e-4b64-9fb9-3c86668cd741
+  port: 20032
+  server: node.websitea.xyz
+  type: ss
   udp: true
-- name: 29|CN_speednode_0045
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10846
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0061
+  password: 792fb66e-fb2e-4b64-9fb9-3c86668cd741
+  port: 20037
+  server: node.websitea.xyz
+  type: ss
   udp: true
-- name: 29|CN_speednode_0046
-  network: tcp
-  password: fd0bdc3a-d4e7-42a3-8400-72db8dee6b71
-  port: 10814
-  server: 183.236.51.6
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0052
+  password: 91491792-77B1-4ED6-BD01-52DC46B81AD0
+  port: 10029
+  server: 36.139.3.149
+  type: ss
   udp: true
-- name: 29|CN_speednode_0047
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10847
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0053
+  password: c545f43f-def7-4806-99ea-d990f3f71d69
+  port: 20041
+  server: node.websitea.xyz
+  type: ss
   udp: true
-- name: 29|CN_speednode_0048
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10839
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0059
+  password: 91491792-77B1-4ED6-BD01-52DC46B81AD0
+  port: 10026
+  server: 36.139.3.149
+  type: ss
   udp: true
-- name: 29|CN_speednode_0049
-  network: tcp
-  password: 607af48e-eeb4-4785-97e7-985b79355342
-  port: 10849
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0050
-  network: tcp
-  password: 80211d74-f75b-43ee-bb8f-bd534868cc59
-  port: 10823
-  server: 183.236.51.7
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0051
-  network: tcp
-  password: 80211d74-f75b-43ee-bb8f-bd534868cc59
-  port: 10819
-  server: 183.236.51.7
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0057
-  network: tcp
-  password: fd0bdc3a-d4e7-42a3-8400-72db8dee6b71
-  port: 10832
-  server: ppg-sg.05xuzdqs5j.com
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0058
-  network: tcp
-  password: fd0bdc3a-d4e7-42a3-8400-72db8dee6b71
-  port: 10828
-  server: ppg-sg.05xuzdqs5j.com
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0059
-  network: tcp
-  password: fd0bdc3a-d4e7-42a3-8400-72db8dee6b71
-  port: 10834
-  server: ppg-sg.05xuzdqs5j.com
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0060
-  network: tcp
-  password: fd0bdc3a-d4e7-42a3-8400-72db8dee6b71
-  port: 10830
-  server: ppg-sg.05xuzdqs5j.com
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0062
-  network: tcp
-  password: fd0bdc3a-d4e7-42a3-8400-72db8dee6b71
-  port: 10812
-  server: ppg-jp.05xuzdqs5j.com
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0066
-  network: tcp
-  password: fd0bdc3a-d4e7-42a3-8400-72db8dee6b71
-  port: 10816
-  server: ppg-jp.05xuzdqs5j.com
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0060
+  password: 91491792-77B1-4ED6-BD01-52DC46B81AD0
+  port: 10026
+  server: taiwan.speed-mitce.top
+  type: ss
   udp: true
 - name: 29|CN_speednode_0067
   network: tcp
-  password: fd0bdc3a-d4e7-42a3-8400-72db8dee6b71
-  port: 10814
-  server: ppg-jp.05xuzdqs5j.com
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0070
-  network: tcp
-  password: fd0bdc3a-d4e7-42a3-8400-72db8dee6b71
-  port: 10818
-  server: ppg-jp.05xuzdqs5j.com
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0074
-  network: tcp
-  password: fd0bdc3a-d4e7-42a3-8400-72db8dee6b71
-  port: 10822
-  server: ppg-us.05xuzdqs5j.com
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0075
-  network: tcp
-  password: fd0bdc3a-d4e7-42a3-8400-72db8dee6b71
-  port: 10826
-  server: ppg-us.05xuzdqs5j.com
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0076
-  network: tcp
-  password: fd0bdc3a-d4e7-42a3-8400-72db8dee6b71
-  port: 10820
-  server: ppg-us.05xuzdqs5j.com
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 29|CN_speednode_0077
-  network: tcp
-  password: fd0bdc3a-d4e7-42a3-8400-72db8dee6b71
-  port: 10824
-  server: ppg-us.05xuzdqs5j.com
+  password: aa002102-5e81-4c47-ba3c-f78ebbfa0d59
+  port: 10808
+  server: 183.236.51.7
   skip-cert-verify: true
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
@@ -12509,31 +12197,114 @@ proxies:
   country: 🇨🇳CN
   h2-opts: {}
   http-opts: {}
-  name: 29|CN_speednode_0091
+  name: 29|CN_speednode_0068
   network: tcp
   port: 50004
   server: 04.kccic2pa.xyz
   type: vmess
   uuid: 1d8963ab-0cd8-4091-93ca-4c6a7dbcd1f2
-- name: 29|CN_speednode_0093
-  network: tcp
-  password: aa002102-5e81-4c47-ba3c-f78ebbfa0d59
-  port: 10807
-  server: 183.236.51.7
+- alterId: 0
+  cipher: auto
+  name: 29|CZ_speednode_0072
+  network: ws
+  port: 80
+  server: cz1-vmess.sshmax.xyz
+  servername: cz1-vmess.sshmax.xyz
   skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
-- client-fingerprint: chrome
-  name: 29|CN_speednode_0095
-  port: 17070
-  server: 106.75.26.66
+  uuid: ef7cfdf6-63e1-4307-bb61-40eb81acb5bd
+  ws-opts:
+    headers:
+      Host: cz1-vmess.sshmax.xyz
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 29|DE_speednode_0073
+  network: ws
+  port: 443
+  server: 92.223.124.23
   skip-cert-verify: true
-  type: socks5
+  tls: true
+  type: vmess
+  uuid: b543de01-18e8-43dc-92fc-1e46e2cdbb7d
+  ws-opts:
+    headers:
+      host: majazi.zapto.org
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|ES_speednode_0075
+  network: ws
+  port: 80
+  server: 5.188.126.6
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 726a0a65-04fd-4531-a96b-5510537737fc
+  ws-opts:
+    headers:
+      host: saber.serveirc.com
+    path: /@forwardv2ray
+- cipher: chacha20-ietf-poly1305
+  country: 🇺🇸US
+  delay: 632
+  name: 29|GB_speednode_0076
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: jseyu.arvancode.eu.Org
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 29|GB_speednode_0077
+  network: http
+  port: 28514
+  server: 45.154.14.201
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c119b176-7240-43f7-b26f-9b67d54e2b95
+- cipher: chacha20-ietf-poly1305
+  country: 🇺🇸US
+  delay: 722
+  name: 29|GB_speednode_0078
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: Fast_2ray_Telchannelll.fast2rayy.eu.org
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 29|GB_speednode_0079
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: java.ct.arvancode.eu.Org
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 29|GB_speednode_0081
+  password: FzBnWpFK3Dw5lYMC
+  port: 443
+  server: series-a2.samanehha.co
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 29|GB_speednode_0083
+  password: MzFiY
+  port: 8388
+  server: 95.164.69.152
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 29|GB_speednode_0084
+  password: MzFiY
+  port: 1443
+  server: 95.164.69.152
+  type: ss
   udp: true
 - cipher: aes-128-gcm
-  delay: 1724
-  name: 29|HK_speednode_0101
+  delay: 989
+  name: 29|HK_speednode_0086
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -12546,30 +12317,547 @@ proxies:
   server: 1.65.139.54
   type: ss
 - cipher: aes-256-cfb
-  name: 29|TR_speednode_0104
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.123.101.241
+  name: 29|KR_speednode_0087
+  password: qwerREWQ@@
+  port: 58023
+  server: p236.panda004.net
   type: ss
   udp: true
-- alpn:
-  - h2
-  alterId: 0
-  cipher: chacha20-poly1305
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: Nbs2DSTSkFWe4KVnk9AHQv
-  name: 29|US_speednode_0105
-  network: grpc
+- alterId: 0
+  cipher: auto
+  country: 🇳🇱NL
+  delay: 1650
+  h2-opts: {}
+  http-opts: {}
+  name: 29|NL_speednode_0088
+  network: ws
   port: 443
-  server: mtn.cpionline.cc
-  servername: hdfy5c1.foriran.me
+  server: 93.123.17.142
+  servername: soft8989.redirectme.net
   skip-cert-verify: true
   tls: true
   type: vmess
+  uuid: 7682b778-b64b-408b-8fb2-61d7c7fc43e5
+  ws-opts:
+    headers:
+      HOST: soft8989.redirectme.net
+    path: /@forwardv2ray
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0090
+  password: amazonskr05
+  port: 443
+  server: 13.250.25.60
+  type: ss
   udp: true
-  uuid: 251780c1-1501-43b3-be2a-d144a20d479a
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0091
+  password: GA9KzeEgvfxNrgmM
+  port: 9019
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 29|SG_speednode_0092
+  password: y9VURyNzJWNRYEGQ
+  port: 9008
+  server: 103.172.116.90
+  type: ss
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0093
+  password: Lp27rqyJq72bZsqX
+  port: 9045
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0094
+  password: rNBfNuuANFCAk7KB
+  port: 9056
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0095
+  password: a3GFYt36Sm82Vys9
+  port: 9000
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0096
+  password: wfLC2y7rzZyCmuyt
+  port: 9093
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0097
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0098
+  password: VP8ZPxQpJtZRCjfZ
+  port: 9080
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0099
+  password: KnJGad3FqTvjqbaX
+  port: 9014
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0100
+  password: NvS8N4Vf8qAGPSCL
+  port: 9046
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0101
+  password: wjTugX3ZtHMB9c3Z
+  port: 9057
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0102
+  password: UTJA57ypk2XKQpnm
+  port: 9033
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0103
+  password: XPtzA9sCug3SPR4c
+  port: 9025
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0104
+  password: FAdUvMJUq5vDgKEq
+  port: 9006
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0105
+  password: c3NtHJ5ujV2tGDfj
+  port: 9084
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0106
+  password: TN2YqghxeFDKZfLU
+  port: 9037
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0107
+  password: BejrQvtu9sqUeNuZ
+  port: 9024
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0108
+  password: EXN3S3eQpjE7EJu8
+  port: 9027
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0109
+  password: ZpNDDKRu9MagNvaf
+  port: 9015
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0110
+  password: ueLXVkvh4hckhErQ
+  port: 9060
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0111
+  password: p9z5BVADH2YFs3MN
+  port: 9040
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0112
+  password: daFYagqDdBdA6VTX
+  port: 9073
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0113
+  password: gYCYXfkUQEs2TaJQ
+  port: 9038
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0114
+  password: SBM7R883jBmnqe6C
+  port: 9053
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0115
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0116
+  password: aLpQtfEZe445QyHk
+  port: 9098
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0117
+  password: kSPmvwdFzGMMW5pY
+  port: 9007
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0118
+  password: U6qnYRhfyDmn8sgn
+  port: 9041
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0119
+  password: HSZuyJQcWe8dxNdF
+  port: 9043
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0120
+  password: 9XwYyZsK8SNzQDtY
+  port: 9059
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0121
+  password: UkXRsXvR6buDMG2Y
+  port: 9001
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0122
+  password: FG5ddLsMPbV5CutE
+  port: 9050
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0123
+  password: dML2sfhbVwvtfNPe
+  port: 9058
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0124
+  password: bf7v334KKDV3YDhH
+  port: 9070
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0125
+  password: 4R3hUfZ2FHhDmNcP
+  port: 9061
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0126
+  password: TPqX8edgbAURcAMb
+  port: 9079
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0127
+  password: M3t2ZEQcMGRWBjRa
+  port: 9011
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0128
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0129
+  password: rpgbNnU9rDDU4aWZ
+  port: 9094
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0130
+  password: fG2artUmHfNT2cX7
+  port: 9018
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0131
+  password: JdmRK9gMEqFgs8nP
+  port: 9003
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0132
+  password: UWZQeLRWnkqgkseq
+  port: 9032
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0133
+  password: GeregetR8cvQHzYr
+  port: 9030
+  server: 103.172.116.94
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0134
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0135
+  password: f8npKgNzdkss2ytn
+  port: 9088
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0136
+  password: daFYagqDdBdA6VTX
+  port: 9073
+  server: 103.172.116.94
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0137
+  password: UkXRsXvR6buDMG2Y
+  port: 9001
+  server: 103.172.116.94
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0138
+  password: wfLC2y7rzZyCmuyt
+  port: 9093
+  server: 103.172.116.94
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0139
+  password: HSZuyJQcWe8dxNdF
+  port: 9043
+  server: 103.172.116.94
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0140
+  password: rNBfNuuANFCAk7KB
+  port: 9056
+  server: 103.172.116.94
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0141
+  obfs: plain
+  obfs-param: None
+  password: U6qnYRhfyDmn8sgn
+  port: 9041
+  protocol: origin
+  protocol-param: ''
+  server: 103.172.116.90
+  type: ssr
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0142
+  password: 4R3hUfZ2FHhDmNcP
+  port: 9061
+  server: 103.172.116.94
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0143
+  password: GA9KzeEgvfxNrgmM
+  port: 9019
+  server: 103.172.116.94
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0145
+  obfs: plain
+  obfs-param: None
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
+  protocol: origin
+  protocol-param: ''
+  server: 103.172.116.90
+  type: ssr
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts:
+    headers:
+      Host:
+      - speedtest.net
+    method: GET
+    path:
+    - /
+  name: 29|US_speednode_0150
+  network: http
+  port: 13489
+  server: 35.87.209.22
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 61761e55-dff5-4f94-f75f-b0a4718bba98
+- alterId: 0
+  cipher: auto
+  delay: 1390
+  h2-opts: {}
+  http-opts: {}
+  name: 29|US_speednode_0151
+  network: ws
+  port: 443
+  server: cloudflare.cfgo.cc
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
+  ws-opts:
+    headers:
+      host: xray1.freeh1.xyz
+    path: /gzogws
+- alterId: 0
+  cipher: auto
+  delay: 2070
+  h2-opts: {}
+  http-opts: {}
+  name: 29|US_speednode_0154
+  network: ws
+  port: 443
+  server: 198.41.221.100
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f5c180eb-fbce-49ac-9029-482eca9385c0
+  ws-opts:
+    headers:
+      host: xray1.freeh1.xyz
+    path: /gzogws
+- grpc-opts:
+    grpc-service-name: 443trojan
+  name: 29|US_speednode_0155
+  network: grpc
+  password: qj1Dz1CJmFQRhWr1SP80aA
+  port: 443
+  server: zula.ir
+  sni: cdn-21.gsmxreality.com
+  tls: true
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: 8bHUAD5IX0lC5KffvrsN6rqb
+  name: 29|US_speednode_0158
+  network: grpc
+  password: a6292090-afe1-4640-97a7-4f1d1d877cf1
+  port: 443
+  server: 104.25.255.254
+  skip-cert-verify: true
+  sni: hdfy8c1.foriran.me
+  tls: true
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: fYn1ncaQMA1foaK1hpquM
+  name: 29|US_speednode_0159
+  network: grpc
+  password: 01596265-168b-46a7-bcb7-25662c7a9546
+  port: 443
+  server: mtn.cpionline.cc
+  skip-cert-verify: true
+  sni: hdfy7c1.foriran.trade
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 29|US_speednode_0163
+  network: ws
+  port: 2082
+  server: spca.114514782.xyz
+  servername: aegbbs.5489265.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e7663aaf-bf76-3b8d-8cd5-29791ec136f6
+  ws-opts:
+    headers:
+      Host: aegbbs.5489265.xyz
+    path: /uasfbbc
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 29|US_speednode_0165
+  network: ws
+  port: 443
+  server: m1.wenpblog.buzz
+  servername: m1.wenpblog.buzz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 19827243-fae1-42ae-a494-0153dbf07ded
+  ws-opts:
+    headers:
+      HOST: m1.wenpblog.buzz
+    path: /baseOn
 - alpn:
   - h2
   alterId: 0
@@ -12578,7 +12866,7 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: Nbs2DSTSkFWe4KVnk9AHQv
-  name: 29|US_speednode_0106
+  name: 29|US_speednode_0167
   network: grpc
   port: 443
   server: 172.67.183.5
@@ -12590,7 +12878,7 @@ proxies:
   uuid: 251780c1-1501-43b3-be2a-d144a20d479a
 - alterId: 0
   cipher: auto
-  name: 29|US_speednode_0107
+  name: 29|US_speednode_0169
   network: ws
   port: 8080
   server: www.darkroom.lol
