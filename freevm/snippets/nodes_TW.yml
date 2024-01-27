@@ -69,27 +69,7 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: '11,25,28|台湾省新竹市 中华电信 #1'
-  network: tcp
-  port: '2024'
-  server: 114.37.139.157
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 88162ed0-5a4d-4d7b-8a5c-ed5b5fa70e0d
-- alterId: 0
-  cipher: auto
-  name: '11,25,28|台湾省 中华电信(HiNet)数据中心 #1'
-  network: tcp
-  port: 12002
-  server: 118.167.70.229
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 04b694b2-7022-4767-801b-6d21611f548b
-- alterId: 0
-  cipher: auto
-  name: 13,16,21,25,28|🇻🇳VN-103.118.29.229-2146
+  name: 11,13,16,21,25,28|🇻🇳VN-103.118.29.229-2146
   network: ws
   port: 80
   server: 103.118.29.229
@@ -101,6 +81,20 @@ proxies:
     headers:
       Host: lienquan.garena.vn
     path: /5gtocdocao.com
+- alterId: 0
+  cipher: auto
+  name: '11,20,21,25,28|台湾省 中华电信(HiNet)数据中心 #1'
+  network: tcp
+  port: 12002
+  server: 118.167.70.229
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 04b694b2-7022-4767-801b-6d21611f548b
+  ws-headers:
+    Host: 118.167.70.229
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 13,20,21,25|19|台湾省中华电信(HiNet)数据中心 3
@@ -128,6 +122,20 @@ proxies:
   uuid: 27c6999b-58aa-48b4-b065-786d2badc074
   ws-headers:
     Host: c12.twtc.dynu.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20,21,25,28|台湾省新竹市 中华电信
+  network: tcp
+  port: '2024'
+  server: 114.37.139.157
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 88162ed0-5a4d-4d7b-8a5c-ed5b5fa70e0d
+  ws-headers:
+    Host: 114.37.139.157
   ws-path: /
 - alterId: 0
   cipher: auto
