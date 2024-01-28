@@ -69,9 +69,9 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 11,13,16,21,25,28|🇻🇳VN-103.118.29.229-2146
+  name: '11,13,21,25,28|台湾省 晟崴科技股份有限公司 #2'
   network: ws
-  port: 80
+  port: '80'
   server: 103.118.29.229
   servername: ''
   tls: false
@@ -97,7 +97,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '13,16,20,21,25,27,28|台湾3|@ripaojiedian #1'
+  name: '13,20,21,25,28|台湾3|@ripaojiedian #1'
   network: tcp
   port: '6122'
   server: c12.twtc.dynu.net
@@ -111,7 +111,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20,21,25,28|台湾省新竹市 中华电信
+  name: 20,21,25,27|台湾3|@ripaojiedian
   network: tcp
   port: '2024'
   server: 114.37.139.157
@@ -125,9 +125,9 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20,21,25,28|台湾省 中华电信(HiNet)数据中心
+  name: 20,21,25,27|台湾
   network: tcp
-  port: 12002
+  port: '12002'
   server: 118.167.70.229
   servername: ''
   skip-cert-verify: true
@@ -139,7 +139,17 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '25,27,28|台湾|@ripaojiedian #1'
+  name: 25|21|TW-板桥2-4(TCP) - 麻雀加速器 Sparr...
+  network: tcp
+  port: '4443'
+  server: nb24.ntbq.dynu.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bc22f8b6-a366-4c09-812f-64da5a6a15b1
+- alterId: 0
+  cipher: auto
+  name: 28|台湾|@ripaojiedian
   network: tcp
   port: '4443'
   server: 118.167.77.5
@@ -147,23 +157,3 @@ proxies:
   tls: false
   type: vmess
   uuid: d20b031e-a477-45f1-8bfc-4cbea413a44e
-- cipher: aes-128-gcm
-  name: 26|🇹🇼 台湾KT|@ripaojiedian
-  password: oiwym4ovI4Yb
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: true
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 122.118.138.244
-  type: ss
-- cipher: aes-128-gcm
-  name: 26|🇹🇼 台湾2|@ripaojiedian
-  password: 91491792-77B1-4ED6-BD01-52DC46B81AD0
-  port: 10027
-  server: taiwan.speed-mitce.top
-  type: ss
