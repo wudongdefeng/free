@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,4,6,7,13,14,21,25,28|🇺🇸_US_美国->🇮🇷_IR_伊朗 #10'
+  name: 0,4,6,7,13,14,21,25,28|🏁RELAY-104.21.61.214-0198
   network: ws
   port: 8080
   server: www.darkroom.lol
@@ -54,7 +54,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '0,4,6,7,13,14,16,21,25,28|github.com/freefq - 美国CloudFla... #8'
+  name: '0,4,6,7,13,14,16,21,25,28|🇺🇸_US_美国->🇮🇷_IR_伊朗 #9'
   network: ws
   port: 8080
   server: www.crispyrainbow.biz
@@ -68,7 +68,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,4,6,7,21,25,28|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦 #3'
+  name: '0,4,6,7,14,21,25,28|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦 #4'
   network: ws
   port: 80
   server: 104.18.15.149
@@ -93,19 +93,22 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,25|1|_US_->_IR__1
+  name: 1,25|1,21|🇺🇸_US_美国->🇮🇷_IR_伊朗_1
   network: ws
   port: 8080
   server: www.darkroom.lol
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
-  cipher: chacha20-poly1305
-  name: 1,25|1,6|-https://t.me/MrXbin-104
+  cipher: auto
+  name: 1,25|1|_US_->_IR__2
   network: ws
   port: 8080
   server: www.crispyrainbow.biz
@@ -114,45 +117,6 @@ proxies:
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 14|🇺🇸_US_美国->🇩🇪_DE_德国
-  network: ws
-  port: 8080
-  server: 104.31.16.104
-  tls: false
-  type: vmess
-  uuid: 3a6752b4-8353-4172-85b1-32202116714d
-  ws-opts:
-    headers:
-      Host: asan3.azad1.tech
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 14|🇮🇶_IQ_伊拉克->🇹🇷_TR_土耳其
-  network: ws
-  port: 443
-  server: 130.193.166.2
-  tls: true
-  type: vmess
-  uuid: 7682b778-b64b-408b-8fb2-61d7c7fc43e5
-  ws-opts:
-    headers:
-      Host: soft8989.redirectme.net
-    path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: '14|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
-  network: ws
-  port: 8080
-  server: hamrahaval.asan3a.shop
-  tls: false
-  type: vmess
-  uuid: 3a6752b4-8353-4172-85b1-32202116714d
-  ws-opts:
-    headers:
-      Host: asan3.azad1.tech
     path: /
 - alterId: 0
   cipher: auto
@@ -218,3 +182,16 @@ proxies:
   sni: alibaba-node.cn
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 25|29|🇮🇶_IQ_伊拉克->🇹🇷_TR_土耳其_20
+  network: ws
+  port: 443
+  server: 130.193.166.2
+  tls: true
+  type: vmess
+  uuid: 7682b778-b64b-408b-8fb2-61d7c7fc43e5
+  ws-opts:
+    headers:
+      Host: soft8989.redirectme.net
+    path: /@forwardv2ray
