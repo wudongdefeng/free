@@ -289,20 +289,6 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 11,25|26|baipaovpn日本
-  network: ws
-  port: '80'
-  server: 54.250.176.255
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: dbf67e8f-eca2-4a01-9c87-c8cfea490a51
-  ws-opts:
-    headers:
-      Host: jp04.hajimihajimihajimi.online
-    path: /
-- alterId: 0
-  cipher: auto
   name: 12,25|18|🇯🇵日本04
   network: tcp
   port: '36116'
@@ -333,7 +319,7 @@ proxies:
   uuid: 3d5ed1f7-f90d-482e-8dd5-eed7272c50e1
 - alterId: 0
   cipher: auto
-  name: 20|JP-140.83.86.129-097
+  name: 20|JP-140.83.86.129-105
   network: ws
   port: 80
   server: 140.83.86.129
@@ -345,11 +331,38 @@ proxies:
     Host: 140.83.86.129
   ws-path: /
 - cipher: aes-256-cfb
-  name: 20|JP-54.199.83.239-185
+  name: 20|JP-54.199.83.239-190
   password: doub.io
   port: 2333
   server: 54.199.83.239
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|JP-54.250.176.255-221
+  network: ws
+  port: 80
+  server: 54.250.176.255
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: dbf67e8f-eca2-4a01-9c87-c8cfea490a51
+  ws-headers:
+    Host: jp04.hajimihajimihajimi.online
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 21,25|26|baipaovpn日本
+  network: ws
+  port: '80'
+  server: 54.250.176.255
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: dbf67e8f-eca2-4a01-9c87-c8cfea490a51
+  ws-opts:
+    headers:
+      Host: jp04.hajimihajimihajimi.online
+    path: /
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】日本 04  | 1x JP
