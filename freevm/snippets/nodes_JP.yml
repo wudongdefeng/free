@@ -289,19 +289,6 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 11|日本 东京都亚马逊(Amazon)公司数据中心
-  network: ws
-  port: 80
-  server: jp04.hajimihajimihajimi.online
-  tls: false
-  type: vmess
-  uuid: dbf67e8f-eca2-4a01-9c87-c8cfea490a51
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
   name: 11,25|26|baipaovpn日本
   network: ws
   port: '80'
@@ -475,10 +462,18 @@ proxies:
     headers:
       Host: ''
     path: /bb
-- cipher: aes-256-cfb
-  name: 29|JP_speednode_0011
-  password: amazonskr05
-  port: 443
-  server: 52.194.252.137
-  type: ss
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 29|JP_speednode_0028
+  network: http
+  port: 43713
+  server: 103.20.198.51
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
+  uuid: 5d3a1ace-4288-4442-98f2-50ff8795797a
