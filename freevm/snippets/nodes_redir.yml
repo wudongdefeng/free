@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,11,14,21,25,28,30|🇳🇱 _BH_巴林->🇳🇱_NL_荷兰 #4'
+  name: '0,3,4,6,7,14,21,25,28,30|🇳🇱 _BH_巴林->🇳🇱_NL_荷兰 #4'
   network: ws
   port: '80'
   server: 151.248.104.91
@@ -14,7 +14,7 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,21,25,28,30|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #9'
+  name: '0,3,4,6,11,21,25,28,30|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #9'
   network: ws
   port: '8080'
   server: www.crispyrainbow.biz
@@ -28,7 +28,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,13,14,21,25,28,30|🇹🇷 _LY_利比亚->🇹🇷_TR_土耳其 #8'
+  name: '0,3,4,6,7,11,13,14,21,25,28,30|🇹🇷 _LY_利比亚->🇹🇷_TR_土耳其 #8'
   network: ws
   port: '80'
   server: 197.215.140.234
@@ -54,7 +54,7 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,11,13,16,21,25,28,30|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #8'
+  name: '0,3,4,6,13,16,21,25,28,30|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #8'
   network: ws
   port: '8080'
   server: www.darkroom.lol
@@ -105,8 +105,8 @@ proxies:
   ws-opts:
     path: /@forwardv2ray
 - alterId: 0
-  cipher: auto
-  name: '1,25,28|美国 CloudFlare节点 #10'
+  cipher: chacha20-poly1305
+  name: 1,25|1,6|-https://t.me/MrXbin-70
   network: ws
   port: 8080
   server: www.crispyrainbow.biz
@@ -168,8 +168,8 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: chacha20-poly1305
-  name: 1,25|1,6|-https://t.me/MrXbin-105
+  cipher: auto
+  name: 1,25|1|_US_->_IR__2
   network: ws
   port: 8080
   server: www.darkroom.lol
@@ -254,7 +254,7 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: '7,14,25,28|🇰🇬_KG_吉尔吉斯斯坦->🇹🇷_TR_土耳其 #2'
+  name: '7,11,14,25,28|吉尔吉斯斯坦 V2CROSS.COM #1'
   network: ws
   port: 80
   server: 185.48.136.150
@@ -293,7 +293,7 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: '7,13,14,21,25,28|🇮🇶_IQ_伊拉克->🇹🇷_TR_土耳其 #5'
+  name: '7,13,14,16,21,25,28|github.com/freefq - 伊拉克  25 #1'
   network: ws
   port: 80
   server: 130.193.166.2
@@ -381,3 +381,16 @@ proxies:
     headers:
       Host: sahar55.serveirc.com
     path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 25|29|🇺🇸_US_美国->🇨🇦_CA_加拿大_28
+  network: ws
+  port: 2052
+  server: cf-cdn.981545.xyz
+  tls: false
+  type: vmess
+  uuid: 1f7c4a0b-3fd0-4b19-bbc6-d09fc89a4c10
+  ws-opts:
+    headers:
+      Host: ca-cdncdn.syjd.xyz
+    path: /index?ed=2048
