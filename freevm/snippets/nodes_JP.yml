@@ -296,7 +296,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 0cb347d5-3ed8-4540-91f6-872a245e2004
+  uuid: 0bf8ed64-5bce-4ccf-9994-4be9a321f770
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本05
@@ -306,7 +306,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 0cb347d5-3ed8-4540-91f6-872a245e2004
+  uuid: 0bf8ed64-5bce-4ccf-9994-4be9a321f770
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本06
@@ -316,7 +316,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 0cb347d5-3ed8-4540-91f6-872a245e2004
+  uuid: 0bf8ed64-5bce-4ccf-9994-4be9a321f770
 - alterId: 0
   cipher: auto
   name: '20,21|🇪🇺 欧洲(油管:破解资源君) #55'
@@ -358,7 +358,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 09e9361c-3640-4318-b506-2f5db842d67d
+  uuid: c84f3af0-6f20-40d6-b78f-4ab92df8906f
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】日本 05  | 1x JP
@@ -368,7 +368,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 09e9361c-3640-4318-b506-2f5db842d67d
+  uuid: c84f3af0-6f20-40d6-b78f-4ab92df8906f
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】日本 06  | 1x JP
@@ -378,7 +378,21 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 09e9361c-3640-4318-b506-2f5db842d67d
+  uuid: c84f3af0-6f20-40d6-b78f-4ab92df8906f
+- alterId: 0
+  cipher: auto
+  name: 25|21|🔒 VM-WS-NA 🇯🇵 JP-183.181.36...
+  network: ws
+  port: '41597'
+  server: 183.181.36.194
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 26|🇯🇵 日本KT|@ripaojiedian
@@ -405,6 +419,20 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: 28|🇯🇵JP-152.69.197.74-0115
+  network: ws
+  port: 12345
+  server: 152.69.197.74
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
+  ws-opts:
+    headers:
+      Host: ''
+    path: /bb
+- alterId: 0
+  cipher: auto
   name: 28|日本 03 （0.1倍流量消耗)
   network: ws
   port: '2082'
@@ -418,15 +446,18 @@ proxies:
     path: /index?ed=2048
 - alterId: 0
   cipher: auto
-  name: 28|🇯🇵JP-152.69.197.74-0115
-  network: ws
-  port: 12345
-  server: 152.69.197.74
-  servername: ''
+  delay: 525
+  h2-opts: {}
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 29|JP_speednode_0986
+  network: http
+  port: 43713
+  server: 103.20.198.51
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
-  ws-opts:
-    headers:
-      Host: ''
-    path: /bb
+  udp: true
+  uuid: 5d3a1ace-4288-4442-98f2-50ff8795797a
