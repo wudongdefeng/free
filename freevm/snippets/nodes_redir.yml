@@ -80,16 +80,19 @@ proxies:
       Host: www.crispyrainbow.biz
     path: /
 - alterId: 0
-  cipher: auto
-  name: 1,25|1|_US_->_IR__1
+  cipher: chacha20-poly1305
+  name: 1,25|1,21|Youtube顺丰资源  US00192
   network: ws
-  port: 8080
+  port: '8080'
   server: www.darkroom.lol
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -164,15 +167,18 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,25|1|_US_->_IR__2
+  name: 1,25|1,21|【TG：@ccbaohe】定时更新节点订阅
   network: ws
-  port: 8080
+  port: '8080'
   server: www.crispyrainbow.biz
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -240,19 +246,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 28|🇰🇷 A韩国WS_V4 [沪/杭->韩国|天翼爱看免流X1]
-  network: ws
-  port: '36051'
-  server: sh2btf.999333.xyz
-  tls: false
-  type: vmess
-  uuid: 888873cf-87db-4d79-b3aa-6e741377defa
-  ws-opts:
-    headers:
-      Host: ltetp.tv189.com
-    path: /wss
-- alterId: 0
-  cipher: auto
   name: 28|🇰🇷 A韩国WS_V4 [沪/杭->韩国|天翼视讯免流X1]
   network: ws
   port: '18039'
@@ -263,4 +256,17 @@ proxies:
   ws-opts:
     headers:
       Host: h5.nty.tv189.com
+    path: /wss
+- alterId: 0
+  cipher: auto
+  name: 28|🇰🇷 A韩国WS_V4 [沪/杭->韩国|天翼爱看免流X1]
+  network: ws
+  port: '36051'
+  server: sh2btf.999333.xyz
+  tls: false
+  type: vmess
+  uuid: 888873cf-87db-4d79-b3aa-6e741377defa
+  ws-opts:
+    headers:
+      Host: ltetp.tv189.com
     path: /wss

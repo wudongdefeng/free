@@ -296,7 +296,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 8dcce478-4aaf-405f-a0e4-ae3d1cfaec0b
+  uuid: 2bec2c51-0c63-4ec2-b214-543d9b3cd8f2
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本05
@@ -306,7 +306,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 8dcce478-4aaf-405f-a0e4-ae3d1cfaec0b
+  uuid: 2bec2c51-0c63-4ec2-b214-543d9b3cd8f2
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本06
@@ -316,7 +316,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 8dcce478-4aaf-405f-a0e4-ae3d1cfaec0b
+  uuid: 2bec2c51-0c63-4ec2-b214-543d9b3cd8f2
 - alterId: 0
   cipher: auto
   name: '20,21|🇪🇺 欧洲(油管:破解资源君) #55'
@@ -358,7 +358,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: c068eb41-12aa-4613-b04d-c5d97fcaf9a4
+  uuid: 712d6803-a8a6-48e1-abea-2ef062594876
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】日本 05  | 1x JP
@@ -368,7 +368,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: c068eb41-12aa-4613-b04d-c5d97fcaf9a4
+  uuid: 712d6803-a8a6-48e1-abea-2ef062594876
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】日本 06  | 1x JP
@@ -378,13 +378,13 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: c068eb41-12aa-4613-b04d-c5d97fcaf9a4
+  uuid: 712d6803-a8a6-48e1-abea-2ef062594876
 - alterId: 0
   cipher: auto
-  name: 25|21|🇯🇵日本3丨电报群@bp520
+  name: 25|21|🇯🇵日本5丨电报群@bp520
   network: ws
   port: '80'
-  server: 162.159.200.3
+  server: 162.159.200.5
   tls: false
   type: vmess
   uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5
@@ -394,17 +394,27 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|21|🔒 VM-WS-NA 🇯🇵 JP-152.69.197...
-  network: ws
-  port: '12345'
-  server: 152.69.197.74
+  name: 25|21|🔒 VM-TCP-NA 🇯🇵 JP-167.179.1...
+  network: tcp
+  port: '14935'
+  server: 167.179.111.237
+  servername: ''
   tls: false
   type: vmess
-  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
+  uuid: e961894f-8e90-472f-98d3-09402e4be453
+- alterId: 0
+  cipher: auto
+  name: 25|21|🇯🇵日本6丨电报群@bp520
+  network: ws
+  port: '80'
+  server: 162.159.200.6
+  tls: false
+  type: vmess
+  uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5
   ws-opts:
     headers:
-      Host: 152.69.197.74
-    path: /bb
+      Host: jp3.visaapp.top
+    path: /
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 26|🇯🇵 日本KT|@ripaojiedian
@@ -431,7 +441,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 28|日本 02 （0.1倍流量消耗)
+  name: 28|日本 01 （0.1倍流量消耗)
   network: ws
   port: '2082'
   server: cf-cdn.981545.xyz
@@ -456,20 +466,3 @@ proxies:
     headers:
       Host: ''
     path: /bb
-- alterId: 0
-  cipher: auto
-  delay: 525
-  h2-opts: {}
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 29|JP_speednode_0936
-  network: http
-  port: 43713
-  server: 103.20.198.51
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5d3a1ace-4288-4442-98f2-50ff8795797a
