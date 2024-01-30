@@ -296,7 +296,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 0bf8ed64-5bce-4ccf-9994-4be9a321f770
+  uuid: f75243ce-9ca5-4c59-8940-863bd373bf46
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本05
@@ -306,7 +306,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 0bf8ed64-5bce-4ccf-9994-4be9a321f770
+  uuid: f75243ce-9ca5-4c59-8940-863bd373bf46
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本06
@@ -316,7 +316,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 0bf8ed64-5bce-4ccf-9994-4be9a321f770
+  uuid: f75243ce-9ca5-4c59-8940-863bd373bf46
 - alterId: 0
   cipher: auto
   name: '20,21|🇪🇺 欧洲(油管:破解资源君) #55'
@@ -358,7 +358,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: c84f3af0-6f20-40d6-b78f-4ab92df8906f
+  uuid: 4dd63171-3c62-46af-a2b5-864fd140d7b8
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】日本 05  | 1x JP
@@ -368,7 +368,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: c84f3af0-6f20-40d6-b78f-4ab92df8906f
+  uuid: 4dd63171-3c62-46af-a2b5-864fd140d7b8
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】日本 06  | 1x JP
@@ -378,21 +378,40 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: c84f3af0-6f20-40d6-b78f-4ab92df8906f
+  uuid: 4dd63171-3c62-46af-a2b5-864fd140d7b8
 - alterId: 0
   cipher: auto
-  name: 25|21|🔒 VM-WS-NA 🇯🇵 JP-183.181.36...
-  network: ws
-  port: '41597'
-  server: 183.181.36.194
+  name: 25,27|日本2|@ripaojiedian
+  network: tcp
+  port: '43713'
+  server: 103.20.198.51
   servername: ''
   tls: false
   type: vmess
-  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
+  uuid: 5d3a1ace-4288-4442-98f2-50ff8795797a
+- alterId: 0
+  cipher: auto
+  name: 25|21|🔒 VM-WS-NA 🇯🇵 JP-152.69.197...
+  network: ws
+  port: '12345'
+  server: 152.69.197.74
+  tls: false
+  type: vmess
+  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: 152.69.197.74
+    path: /bb
+- alterId: 0
+  cipher: auto
+  name: 25|21|🔒 VM-TCP-NA 🇯🇵 JP-167.179.1...
+  network: tcp
+  port: '14935'
+  server: 167.179.111.237
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e961894f-8e90-472f-98d3-09402e4be453
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 26|🇯🇵 日本KT|@ripaojiedian
@@ -417,47 +436,3 @@ proxies:
   server: 52.221.203.229
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 28|🇯🇵JP-152.69.197.74-0115
-  network: ws
-  port: 12345
-  server: 152.69.197.74
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
-  ws-opts:
-    headers:
-      Host: ''
-    path: /bb
-- alterId: 0
-  cipher: auto
-  name: 28|日本 03 （0.1倍流量消耗)
-  network: ws
-  port: '2082'
-  server: cf-cdn.981545.xyz
-  tls: false
-  type: vmess
-  uuid: 1f7c4a0b-3fd0-4b19-bbc6-d09fc89a4c10
-  ws-opts:
-    headers:
-      Host: jp-cdn.981545.xyz
-    path: /index?ed=2048
-- alterId: 0
-  cipher: auto
-  delay: 525
-  h2-opts: {}
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 29|JP_speednode_0986
-  network: http
-  port: 43713
-  server: 103.20.198.51
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5d3a1ace-4288-4442-98f2-50ff8795797a
