@@ -69,7 +69,7 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: '11,13,16,20,21,25,28|github.com/freefq - 台湾省新竹市中华电信... #3'
+  name: '13,16,20,21,25,28|github.com/freefq - 台湾省新竹市中华电信... #3'
   network: tcp
   port: 2024
   server: b23.ntbq.dynu.net
@@ -79,7 +79,7 @@ proxies:
   type: vmess
   uuid: 6b2e0602-bc1a-4ec3-88da-4238a6955ddd
   ws-headers:
-    Host: updates.sub-nthu.com
+    Host: b23.ntbq.dynu.net
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -125,53 +125,24 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 16,25,28|台湾省 中华电信(HiNet)数据中心
+  name: 16,20,21,25,28|台湾省 中华电信(HiNet)数据中心
   network: tcp
   port: 12002
   server: nb22.ntbq.dynu.net
   servername: nb11.ntbq.dynu.net
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 99e39047-9298-404e-b632-1867f7ed1b37
-- alterId: 0
-  cipher: auto
-  name: 20,21|🇨🇳 台湾省新竹市中华电信 2
-  network: tcp
-  port: '2024'
-  server: 114.37.139.157
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 38ff99d8-dbaf-430a-867e-200b89f4c70a
   ws-headers:
-    Host: 114.37.139.157
+    Host: nb22.ntbq.dynu.net
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 20,21|🇨🇳 台湾省中华电信(HiNet)数据中心 27
-  network: tcp
-  port: '6122'
-  server: 125.224.144.24
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f4595480-44d4-4d55-a37e-a5b1e0ec64d6
-  ws-headers:
-    Host: 125.224.144.24
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 20,21|🇨🇳 台湾省新竹市中华电信 20
-  network: tcp
-  port: '4443'
-  server: 114.37.136.126
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: be59c6eb-baf9-4bb5-aac0-a17f31c4d486
-  ws-headers:
-    Host: 114.37.136.126
-  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 20|TW-118.167.65.55-178
+  password: 6b2e0602-bc1a-4ec3-88da-4238a6955ddd
+  port: 7773
+  server: b13.ntbq.dynu.net
+  type: ss
 - alterId: 0
   cipher: auto
   name: 25|21|台湾省晟崴科技股份有限公司 17〖电报：@ccbaoh...
