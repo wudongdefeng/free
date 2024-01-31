@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,11,13,21,25,28,30|🇺🇸 _US_美国 #40'
+  name: '0,3,4,6,13,21,25,28,30|🇺🇸 _US_美国 #40'
   network: ws
   port: '8080'
   server: 172.67.212.114
@@ -15,7 +15,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,11,21,25,28,30|🇺🇸 _US_美国 #37'
+  name: '0,3,4,6,21,25,28,30|🇺🇸 _US_美国 #37'
   network: ws
   port: '8080'
   server: 104.21.83.10
@@ -1269,7 +1269,7 @@ proxies:
   uuid: 28dc6b61-09d8-4c19-b655-233cfb535567
 - alterId: 0
   cipher: auto
-  name: 10|美国_121320210
+  name: 10,11|美国 加利福尼亚州洛杉矶CodecCloud数据中心
   network: tcp
   port: '8081'
   server: 38.147.165.244
@@ -1984,14 +1984,48 @@ proxies:
   uuid: 37e3fe44-e63c-4988-cff7-d1a27f5f0c09
 - alterId: 0
   cipher: auto
-  name: '11,28|美国 V2CROSS.COM #1'
-  network: tcp
-  port: '443'
-  server: turkmenistan.ednovas.org
+  client-fingerprint: chrome
+  name: '11,13,16,21,25,26,27,28|德国|@ripaojiedian #1'
+  network: ws
+  port: '80'
+  server: 104.17.25.1
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 3d668cbe-5464-4a79-aab5-e301b4e0f169
+  ws-opts:
+    headers:
+      Host: dg.catnipballs.gay
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '11,21|🇺🇸 美国 CloudFlare节点 #1'
+  network: ws
+  port: '80'
+  server: 104.20.231.30
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: my1.tooters.ir
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 11,28|🏁RELAY-172.67.212.171-1883
+  network: ws
+  port: 8080
+  server: 172.67.212.171
   servername: ''
   tls: false
   type: vmess
-  uuid: e4c9dc48-f9dc-4d9b-9318-a3933d113736
+  uuid: 7b6ddff4-8f18-4e27-de82-a33cfeebfa01
+  ws-opts:
+    headers:
+      Host: eu5.openxai.link
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇺🇸美国04
@@ -2050,23 +2084,6 @@ proxies:
     headers:
       Host: ie1-vmess.greenssh.xyz
     path: /vmess
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '13,16,21,25,26,27,28|德国|@ripaojiedian #1'
-  network: ws
-  port: '80'
-  server: 104.17.25.1
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 3d668cbe-5464-4a79-aab5-e301b4e0f169
-  ws-opts:
-    headers:
-      Host: dg.catnipballs.gay
-    path: /
 - alterId: 0
   cipher: auto
   name: 13,21,25,28|🏁RELAY-162.159.135.0-1862
@@ -3549,19 +3566,6 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '21|🇺🇸 美国 CloudFlare节点 #1'
-  network: ws
-  port: '80'
-  server: 104.20.231.30
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: my1.tooters.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
   name: 23,25|22|【BGP】美国 04 | 1x US
   network: tcp
   port: '31501'
@@ -3763,6 +3767,16 @@ proxies:
     headers:
       Host: www.23168499.xyz
     path: /path/221312281009
+- alterId: 0
+  cipher: auto
+  name: '28|美国 V2CROSS.COM #1'
+  network: tcp
+  port: '443'
+  server: turkmenistan.ednovas.org
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e4c9dc48-f9dc-4d9b-9318-a3933d113736
 - alterId: 0
   cipher: auto
   name: 28|美国纽约
