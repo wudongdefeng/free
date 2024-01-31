@@ -110,7 +110,7 @@ proxies:
   servername: sg04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: e3c2bcd8-5b2c-4b94-8b8f-564eb2a5086f
+  uuid: e29c7293-5fce-4d4d-a1d7-9c848fc907ff
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇸🇬新加坡05
@@ -120,7 +120,7 @@ proxies:
   servername: sg05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: e3c2bcd8-5b2c-4b94-8b8f-564eb2a5086f
+  uuid: e29c7293-5fce-4d4d-a1d7-9c848fc907ff
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇸🇬新加坡06
@@ -130,7 +130,7 @@ proxies:
   servername: sg06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: e3c2bcd8-5b2c-4b94-8b8f-564eb2a5086f
+  uuid: e29c7293-5fce-4d4d-a1d7-9c848fc907ff
 - alterId: 0
   cipher: auto
   name: 15|新加坡_【YouTube-VV科技】
@@ -236,13 +236,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 21|🇸🇬 新加坡高速接入点-01
+  client-fingerprint: chrome
+  name: 21,26,27|新加坡2|@ripaojiedian
   network: ws
   port: '2052'
   server: cfcdn2.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 053d2675-4803-48ee-8239-6e499871ac42
+  uuid: 8a4450df-74cc-4a57-a404-4b9558390043
   ws-opts:
     headers:
       Host: 7nAi74jJsg1.yofnhkfc.xyz
@@ -256,7 +260,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: acd43b1b-d904-4453-9026-810fee60361b
+  uuid: 409f400e-e948-4eae-83fc-699c12b7cd48
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】新加坡 05 | 1x SG
@@ -266,7 +270,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: acd43b1b-d904-4453-9026-810fee60361b
+  uuid: 409f400e-e948-4eae-83fc-699c12b7cd48
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】新加坡 06 | 1x SG
@@ -276,24 +280,21 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: acd43b1b-d904-4453-9026-810fee60361b
+  uuid: 409f400e-e948-4eae-83fc-699c12b7cd48
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 25,26,27,28|🏁RELAY-104.17.255.183-5679
+  name: 25|21|🔒 VM-WS-NA 🇸🇬 SG-45.76.186....
   network: ws
-  port: 2052
-  server: cfcdn2.sanfencdn9.com
+  port: '46850'
+  server: 45.76.186.33
   servername: ''
-  skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
-  uuid: 657140e4-fb53-4404-80b7-fcbac652671f
+  uuid: 8beec910-578b-4d07-be4d-69e893f94f97
   ws-opts:
     headers:
-      Host: jpafzyhfsg3.yofnhkfc.xyz
-    path: /video/u4eCZTxW
+      Host: m.instagram.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 25,28|🇸🇬SG-128.199.128.214-0202
@@ -308,12 +309,54 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 25|21|🔒 VM-WS-NA 🇸🇬 SG-45.76.144....
+  network: ws
+  port: '30899'
+  server: 45.76.144.158
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4a503125-b6bd-427a-87d0-55d41308d977
+  ws-opts:
+    headers:
+      Host: m.zoom.us
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 25,28|新加坡3|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: cfcdn2.sanfencdn9.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 657140e4-fb53-4404-80b7-fcbac652671f
+  ws-opts:
+    headers:
+      Host: jpafzyhfsg3.yofnhkfc.xyz
+    path: /video/u4eCZTxW
+- alterId: 0
+  cipher: auto
+  name: 25|26|baipaovpn新加坡
+  network: ws
+  port: '46850'
+  server: 45.76.186.33
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8beec910-578b-4d07-be4d-69e893f94f97
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 3.113.1.121
+  server: 54.199.158.82
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -321,15 +364,24 @@ proxies:
   name: 26|🇸🇬 狮城特殊2|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 34.217.80.153
+  server: 13.112.10.231
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: 28|【直连】狮城 - 1 - A Group
+  name: 28|Singapore 02
   network: tcp
-  port: '38755'
-  server: 00000000000000000000000000000000000000000000000000000000000025.agroup-node-for-bigairport.sbs
+  port: '11111'
+  server: sg.85413.xyz
+  tls: false
+  type: vmess
+  uuid: 1f7c4a0b-3fd0-4b19-bbc6-d09fc89a4c10
+- alterId: 0
+  cipher: auto
+  name: 28|【直连】狮城 - 2 - A Group
+  network: tcp
+  port: '38756'
+  server: 00000000000000000000000000000000000000000000000000000000000026.agroup-node-for-bigairport.sbs
   tls: false
   type: vmess
   uuid: 843764ed-637a-4085-856e-72c507df3447
@@ -362,10 +414,10 @@ proxies:
     path: /index?ed=2048
 - alterId: 0
   cipher: auto
-  name: 28|【直连】狮城 - 2 - A Group
+  name: 28|【直连】狮城 - 1 - A Group
   network: tcp
-  port: '38756'
-  server: 00000000000000000000000000000000000000000000000000000000000026.agroup-node-for-bigairport.sbs
+  port: '38755'
+  server: 00000000000000000000000000000000000000000000000000000000000025.agroup-node-for-bigairport.sbs
   tls: false
   type: vmess
   uuid: 843764ed-637a-4085-856e-72c507df3447
