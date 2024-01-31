@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,1,3,4,7,16,25,30|🇨🇦 _CA_加拿大 #2'
+  name: '0,1,3,4,6,7,16,20,21,25,28,30|🇨🇦 _CA_加拿大 #4'
   network: tcp
   port: '33445'
   server: 108.181.2.154
@@ -10,6 +10,9 @@ proxies:
   tls: false
   type: vmess
   uuid: 7de8d7aa-ae4a-4d75-82f4-2e8b46fc0290
+  ws-headers:
+    Host: 108.181.2.154
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 10|加拿大_121320003
@@ -53,7 +56,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: ea07cc80-561c-4cd0-ac69-3a4edd1ca730
+  uuid: 82c817cc-793a-43e5-971a-859c5457301c
 - alterId: 0
   cipher: auto
   name: 15|加拿大_【YouTube-VV科技】
@@ -68,13 +71,7 @@ proxies:
       Host: 3.freek1.xyz
     path: /dongtaiwang.com
 - cipher: chacha20-ietf-poly1305
-  name: 20|CA-149.56.95.159-184
-  password: Kl3erVrjUy2rC0l9jCsrhX
-  port: 34539
-  server: 149.56.95.159
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|CA-51.161.118.38-098
+  name: 20|CA-51.161.118.38-113
   password: G!yBwPWH3Vao
   port: 810
   server: 51.161.118.38
@@ -88,4 +85,17 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 97101c5f-163b-438d-a4d3-56cce3ff3f53
+  uuid: c53fa129-1dbd-4e97-957e-e91841442bea
+- alterId: 0
+  cipher: auto
+  name: 28|加拿大 02 (cdn)
+  network: ws
+  port: '2052'
+  server: cf-cdn.981545.xyz
+  tls: false
+  type: vmess
+  uuid: 1f7c4a0b-3fd0-4b19-bbc6-d09fc89a4c10
+  ws-opts:
+    headers:
+      Host: ca-cdncdn.syjd.xyz
+    path: /index?ed=2048
