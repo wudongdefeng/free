@@ -28,7 +28,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,21,25,28,30|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #8'
+  name: '0,3,4,6,11,21,25,28,30|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #8'
   network: ws
   port: '8080'
   server: www.crispyrainbow.biz
@@ -42,7 +42,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,1,3,4,6,13,16,20,21,25,28,30|🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 #9'
+  name: '0,1,3,4,6,11,13,16,20,21,25,28,30|🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 #9'
   network: tcp
   port: '443'
   server: 173.249.197.176
@@ -219,7 +219,7 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: '0,1,3,4,6,7,16,20,21,25,28,30|🇨🇦 _CA_加拿大 #4'
+  name: '0,1,3,4,6,7,11,16,20,21,25,28,30|🇨🇦 _CA_加拿大 #4'
   network: tcp
   port: '33445'
   server: 108.181.2.154
@@ -382,7 +382,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,11,21,25,28,30|🇺🇸 _US_美国 #39'
+  name: '0,3,4,6,21,25,28,30|🇺🇸 _US_美国 #39'
   network: ws
   port: '8080'
   server: 172.67.166.190
@@ -569,7 +569,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1,13,25,28|美国 CloudFlare节点 #10'
+  name: '1,13,25,28|美国 CloudFlare节点 #11'
   network: ws
   port: '8080'
   server: www.coldstone.club
@@ -781,7 +781,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1,11,25,28|美国 CloudFlare节点 #13'
+  name: '1,25,28|美国 CloudFlare节点 #14'
   network: ws
   port: 8080
   server: www.crispyrainbow.online
@@ -4696,66 +4696,139 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  name: '11,13,16,21,25,28|github.com/freefq - 美国CloudFla... #6'
+  name: 11|美国 CloudFlare节点
   network: ws
-  port: 80
-  server: 104.17.25.2
+  port: 8880
+  server: 104.21.12.86
   tls: false
   type: vmess
-  uuid: d6664518-c8e1-42cf-f2c1-d33dcc01a8a6
+  uuid: ae3e6ab7-144a-4ecc-981d-603ea73bc8af
   ws-opts:
     headers:
-      Host: sgvpn.catnipballs.gay
-    path: /
+      Host: 8db7766f-d893-430e-96fb-ccd20e681145.tg.hkaa0.66688888.xyz
+    path: /Telegram:@hkaa0
 - alterId: 0
   cipher: auto
-  name: 11,25|12,21|台湾【TG：@ccbaohe】定时更新节点订阅 ...
-  network: tcp
-  port: '6122'
-  server: c12.twtc.dynu.net
+  name: '11|美国 CloudFlare节点 #1'
+  network: ws
+  port: 443
+  server: 104.21.56.185
+  tls: true
+  type: vmess
+  uuid: 38535031-ccc3-4a94-bd54-c68806486406
+  ws-opts:
+    headers:
+      Host: ie1-vmess.greenssh.xyz
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 11|英国 V2CROSS.COM
+  network: ws
+  port: 8880
+  server: 8db7766f-d893-430e-96fb-ccd20e681145.tg.hkaa0.66688888.xyz
+  tls: false
+  type: vmess
+  uuid: ae3e6ab7-144a-4ecc-981d-603ea73bc8af
+  ws-opts:
+    headers:
+      Host: 8db7766f-d893-430e-96fb-ccd20e681145.tg.hkaa0.66688888.xyz
+    path: /Telegram:@hkaa0
+- alterId: 0
+  cipher: auto
+  name: '11,25,28|乌克兰 V2CROSS.COM #4'
+  network: ws
+  port: '2086'
+  server: 94.131.10.135
   servername: ''
   tls: false
   type: vmess
-  uuid: 19999918-f5fc-4a0b-89d1-f19210b430c9
-- alterId: 0
-  cipher: auto
-  name: '11,13,16,20,21,25,28|github.com/freefq - 韩国蘑菇主机BGP数... #1'
-  network: tcp
-  port: 10001
-  server: 103.214.68.57
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: ebca5f68-bf59-4081-e658-f158839c2f5c
-  ws-headers:
-    Host: 103.214.68.57
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #2'
-  network: ws
-  port: 8080
-  server: 172.67.171.177
-  tls: false
-  type: vmess
-  uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
-  ws-opts:
-    headers:
-      Host: eu3.openxai.link
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 11|新加坡 亚马逊(Amazon)公司数据中心
-  network: ws
-  port: 80
-  server: sg02.hajimihajimihajimi.online
-  tls: false
-  type: vmess
-  uuid: dbf67e8f-eca2-4a01-9c87-c8cfea490a51
+  uuid: e2021c91-6e29-49d6-9641-14a8f2600e05
   ws-opts:
     headers:
       Host: ''
-    path: ''
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: '11,13,20,21,25,27,28|台湾2|@ripaojiedian #1'
+  network: tcp
+  port: '38011'
+  server: gz.daxun.cyou
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+  ws-headers:
+    Host: gz.daxun.cyou
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 11,13,21,25|6,12,19|乌克兰  2
+  network: ws
+  port: 80
+  server: 94.131.8.32
+  servername: internet.life.com.by
+  tls: false
+  type: vmess
+  uuid: 57e37a74-badc-4b71-87c7-5b9e20879b58
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 11,14,21|🇺🇦 乌克兰  4
+  network: ws
+  port: '80'
+  server: be1-vmess.sshmax.xyz
+  tls: false
+  type: vmess
+  uuid: 38df59ec-30e2-45e9-86c7-5a58667e6994
+  ws-opts:
+    headers:
+      Host: be1-vmess.sshmax.xyz
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 11,25|7|德国5
+  network: ws
+  port: '8080'
+  server: cf.openxai.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7b6ddff4-8f18-4e27-de82-a33cfeebfa01
+  ws-opts:
+    headers:
+      Host: eu5.openxai.link
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 11,25|12,21|TW-板桥2-2(TCP) - 麻雀加速器 Sp...
+  network: tcp
+  port: '12002'
+  server: nb22.ntbq.dynu.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1d08abce-b0ad-4f5e-aa49-884d5f6690f8
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '11,13,16,21,25,26,27,28|github.com/freefq - 美国CloudFla... #11'
+  network: ws
+  port: 80
+  server: 104.17.25.1
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 3d668cbe-5464-4a79-aab5-e301b4e0f169
+  ws-opts:
+    headers:
+      Host: dg.catnipballs.gay
+    path: /
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本04
@@ -5054,20 +5127,6 @@ proxies:
     path: /5gtocdocao.com
 - alterId: 0
   cipher: auto
-  name: '13,20,21,25,27,28|台湾2|@ripaojiedian #1'
-  network: tcp
-  port: '38011'
-  server: gz.daxun.cyou
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-  ws-headers:
-    Host: gz.daxun.cyou
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: '13,21,25|19|美国 CloudFlare节点 #2'
   network: ws
   port: 2082
@@ -5136,21 +5195,7 @@ proxies:
     path: /geg/45?ed=2048
 - alterId: 0
   cipher: auto
-  name: 13,21,25|6,12,19|乌克兰  2
-  network: ws
-  port: 80
-  server: 94.131.8.32
-  servername: internet.life.com.by
-  tls: false
-  type: vmess
-  uuid: 57e37a74-badc-4b71-87c7-5b9e20879b58
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 13,16,25,28|乌克兰 V2CROSS.COM
+  name: '13,16,25,28|乌克兰 V2CROSS.COM #3'
   network: ws
   port: '80'
   server: be1-vmess.sshmax.xyz
@@ -5177,23 +5222,6 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '13,16,21,25,26,27,28|github.com/freefq - 美国CloudFla... #11'
-  network: ws
-  port: 80
-  server: 104.17.25.1
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 3d668cbe-5464-4a79-aab5-e301b4e0f169
-  ws-opts:
-    headers:
-      Host: dg.catnipballs.gay
-    path: /
-- alterId: 0
-  cipher: auto
   name: '13,16,21,25,28|github.com/freefq - 印度  12 #1'
   network: ws
   port: 80
@@ -5205,6 +5233,19 @@ proxies:
     headers:
       Host: bs2.loadingip.com
     path: /bs
+- alterId: 0
+  cipher: auto
+  name: '13,16,21,25,28|github.com/freefq - 美国CloudFla... #6'
+  network: ws
+  port: 80
+  server: 104.17.25.2
+  tls: false
+  type: vmess
+  uuid: d6664518-c8e1-42cf-f2c1-d33dcc01a8a6
+  ws-opts:
+    headers:
+      Host: sgvpn.catnipballs.gay
+    path: /
 - alterId: 0
   cipher: auto
   name: '13,16,20,21,25,28|github.com/freefq - 美国  20 #1'
@@ -5257,6 +5298,19 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
+- alterId: 0
+  cipher: auto
+  name: '13,16,20,21,25,28|github.com/freefq - 韩国蘑菇主机BGP数... #1'
+  network: tcp
+  port: 10001
+  server: 103.214.68.57
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ebca5f68-bf59-4081-e658-f158839c2f5c
+  ws-headers:
+    Host: 103.214.68.57
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 14|🇪🇨_EC_厄瓜多尔->🇹🇷_TR_土耳其
@@ -5318,19 +5372,6 @@ proxies:
     headers:
       Host: xyz33.servecounterstrike.com
     path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: 14,21|🇺🇦 乌克兰  4
-  network: ws
-  port: '80'
-  server: be1-vmess.sshmax.xyz
-  tls: false
-  type: vmess
-  uuid: 38df59ec-30e2-45e9-86c7-5a58667e6994
-  ws-opts:
-    headers:
-      Host: be1-vmess.sshmax.xyz
-    path: /vmess
 - alterId: 0
   cipher: auto
   name: 14,25|28|🇺🇸_US_美国_3_6
@@ -9695,20 +9736,6 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 25|7|德国5
-  network: ws
-  port: '8080'
-  server: cf.openxai.link
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7b6ddff4-8f18-4e27-de82-a33cfeebfa01
-  ws-opts:
-    headers:
-      Host: eu5.openxai.link
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
   name: 25|12|dongtaiwang.com_4
   network: ws
   port: 27490
@@ -9764,7 +9791,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '25,28|台湾省南投县 中华电信 #1'
+  name: 25,28|台湾省南投县 中华电信
   network: tcp
   port: '6122'
   server: 36.232.161.39
@@ -9807,14 +9834,14 @@ proxies:
     path: /video/34kKXbLM
 - alterId: 0
   cipher: auto
-  name: 25|12,21|TW-板桥2-2(TCP) - 麻雀加速器 Sp...
+  name: 25|12,21|台湾【TG：@ccbaohe】定时更新节点订阅 ...
   network: tcp
-  port: '12002'
-  server: nb22.ntbq.dynu.net
+  port: '6122'
+  server: c12.twtc.dynu.net
   servername: ''
   tls: false
   type: vmess
-  uuid: 1d08abce-b0ad-4f5e-aa49-884d5f6690f8
+  uuid: 19999918-f5fc-4a0b-89d1-f19210b430c9
 - alterId: 0
   cipher: auto
   name: 25|12|dongtaiwang.com_19
@@ -9955,7 +9982,7 @@ proxies:
   uuid: 102d7ab9-c535-47ae-843f-717f696502bc
 - alterId: 0
   cipher: auto
-  name: '25,28|美国 CloudFlare节点 #12'
+  name: '25,28|美国 CloudFlare节点 #13'
   network: ws
   port: 80
   server: 104.20.231.30
@@ -10192,20 +10219,6 @@ proxies:
     headers:
       Host: ''
     path: /DIALOGZOOM
-- alterId: 0
-  cipher: auto
-  name: '25,28|乌克兰 V2CROSS.COM #1'
-  network: ws
-  port: '2086'
-  server: 94.131.10.135
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e2021c91-6e29-49d6-9641-14a8f2600e05
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess
 - alterId: 0
   cipher: auto
   name: 25|26|baipaovpn台湾省
