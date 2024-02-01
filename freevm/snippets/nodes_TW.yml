@@ -69,34 +69,31 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 11,25|26|baipaovpn台湾省新竹市
+  name: '11,16,20,21,25,28|台湾省新竹市 中华电信 #1'
   network: tcp
-  port: '4443'
-  server: 114.37.134.116
-  servername: ''
+  port: '2024'
+  server: 114.37.132.46
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 847bfa48-992d-4634-904f-be77beb390ce
+  ws-headers:
+    Host: 114.37.132.46
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '11,13,25,27,28|台湾|@ripaojiedian #1'
+  name: '13,20,21,25,27,28|台湾|@ripaojiedian #1'
   network: tcp
   port: '12002'
   server: 36.226.132.249
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 847bfa48-992d-4634-904f-be77beb390ce
-- alterId: 0
-  cipher: auto
-  name: '16,25,28|台湾省新竹市 中华电信 #1'
-  network: tcp
-  port: 2024
-  server: 114.37.132.46
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 847bfa48-992d-4634-904f-be77beb390ce
+  ws-headers:
+    Host: 36.226.132.249
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '20,21|🇨🇳 台湾(油管:破解资源君) #1'
@@ -112,56 +109,48 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20,21|🇨🇳 台湾省台北市中华电信 7
-  network: tcp
-  port: '12002'
-  server: nb22.ntbq.dynu.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 1d08abce-b0ad-4f5e-aa49-884d5f6690f8
-  ws-headers:
-    Host: data-hk-1.cn-db.top
-  ws-path: /db00
-- alterId: 0
-  cipher: auto
-  name: 20,21|🇨🇳 台湾省新竹市中华电信 6
+  name: 20,21,25|21,26|baipaovpn台湾省新竹市
   network: tcp
   port: '4443'
-  server: nb24.ntbq.dynu.net
+  server: 114.37.134.116
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 1d08abce-b0ad-4f5e-aa49-884d5f6690f8
+  uuid: 847bfa48-992d-4634-904f-be77beb390ce
   ws-headers:
-    Host: data-hk-1.cn-db.top
-  ws-path: /db00
+    Host: 114.37.134.116
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20,21|🇨🇳 台湾省新竹市中华电信 5
+  name: 25|21|TW-板桥2-3(TCP) - 麻雀加速器 Sparr...
   network: tcp
   port: '2024'
   server: b23.ntbq.dynu.net
-  skip-cert-verify: true
+  servername: ''
   tls: false
   type: vmess
-  uuid: 19999918-f5fc-4a0b-89d1-f19210b430c9
-  ws-headers:
-    Host: b23.ntbq.dynu.net
-  ws-path: /
+  uuid: 02f93b88-147b-4cc9-ad6a-15d0af3843c7
 - alterId: 0
   cipher: auto
-  name: 20,21|🇨🇳 台湾省南投县中华电信 8
+  name: 25|21|TW-台中1-2(TCP) - 麻雀加速器 Sparr...
   network: tcp
   port: '6122'
   server: c12.twtc.dynu.net
-  skip-cert-verify: true
+  servername: ''
   tls: false
   type: vmess
-  uuid: 19999918-f5fc-4a0b-89d1-f19210b430c9
-  ws-headers:
-    Host: c12.twtc.dynu.net
-  ws-path: /
+  uuid: 02f93b88-147b-4cc9-ad6a-15d0af3843c7
+- alterId: 0
+  cipher: auto
+  name: 25|21|TW-板桥2-4(TCP) - 麻雀加速器 Sparr...
+  network: tcp
+  port: '4443'
+  server: nb24.ntbq.dynu.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 02f93b88-147b-4cc9-ad6a-15d0af3843c7
 - cipher: aes-256-cfb
   name: 29|TW_speednode_0065
   password: qwerREWQ@@

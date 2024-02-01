@@ -287,6 +287,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 1
+  cipher: auto
+  name: '11,28|日本 东京都亚马逊(Amazon)公司数据中心 #1'
+  network: tcp
+  port: 21583
+  server: 54.248.200.124
+  tls: true
+  type: vmess
+  uuid: 65cdb2a2-ac65-3dc6-992d-a58b8cb996b9
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本04
@@ -296,7 +305,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f54902aa-8984-41a5-a5f6-17459a4575dd
+  uuid: e3d7d5e9-7c33-4e54-9d99-35db3fa681a8
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本05
@@ -306,7 +315,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f54902aa-8984-41a5-a5f6-17459a4575dd
+  uuid: e3d7d5e9-7c33-4e54-9d99-35db3fa681a8
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本06
@@ -316,10 +325,10 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f54902aa-8984-41a5-a5f6-17459a4575dd
+  uuid: e3d7d5e9-7c33-4e54-9d99-35db3fa681a8
 - alterId: 1
   cipher: auto
-  name: 13,20,21,25,28|github.com/freefq - 日本东京都Amazo...
+  name: 13,20,21,25|19|日本东京都Amazon数据中心 4
   network: tcp
   port: 21583
   server: jp01-alt-vm0.entry.srthdw.art
@@ -332,32 +341,23 @@ proxies:
   ws-path: /
 - alterId: 1
   cipher: auto
-  name: '13,25|19|日本 东京都Amazon数据中心 #1'
+  name: '13,20,21,25|19|日本 东京都Amazon数据中心 #1'
   network: tcp
   port: 28787
   server: jp06-vm0.entry.jpojpoh.art
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+  ws-headers:
+    Host: jp06-vm0.entry.jpojpoh.art
+  ws-path: /hlsrthe214/8u4692j
 - cipher: aes-256-cfb
-  name: 20|JP-54.199.83.239-194
+  name: 20|JP-54.199.83.239-197
   password: doub.io
   port: 2333
   server: 54.199.83.239
   type: ss
-- alterId: 1
-  cipher: auto
-  name: 20,21|🇯🇵 日本 东京Amazon数据中心
-  network: tcp
-  port: '21583'
-  server: jp03-alt-vm0.entry.srthdw.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 22acc467-7440-386a-927a-d84be554b37e
-  ws-headers:
-    Host: jp03-alt-vm0.entry.srthdw.art
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: 21|🇯🇵 日本(油管:破解资源君)
@@ -373,19 +373,6 @@ proxies:
     path: /chat
 - alterId: 0
   cipher: auto
-  name: 21|🇯🇵 日本  4
-  network: ws
-  port: '20326'
-  server: 146.56.108.33
-  tls: false
-  type: vmess
-  uuid: 3b338c13-f975-4e85-b1b5-6ff2fb0f14b3
-  ws-opts:
-    headers:
-      Host: youku.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: 23,25|22|【BGP】日本 04  | 1x JP
   network: tcp
   port: '31116'
@@ -393,7 +380,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 4dc3abe9-6863-4ece-9eca-47431a3097d5
+  uuid: 56e71832-98e6-4a54-ac24-9f3b5920f482
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】日本 05  | 1x JP
@@ -403,7 +390,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 4dc3abe9-6863-4ece-9eca-47431a3097d5
+  uuid: 56e71832-98e6-4a54-ac24-9f3b5920f482
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】日本 06  | 1x JP
@@ -413,7 +400,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 4dc3abe9-6863-4ece-9eca-47431a3097d5
+  uuid: 56e71832-98e6-4a54-ac24-9f3b5920f482
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -431,16 +418,6 @@ proxies:
     headers:
       Host: kvjqqknzjp6.yofnhkfc.xyz
     path: /video/Zo98PYfE
-- alterId: 1
-  cipher: auto
-  name: 25|26|baipaovpn日本东京
-  network: tcp
-  port: '46485'
-  server: 35.77.223.169
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a578216f-70ea-32f2-8950-125e930f6bf4
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 26|🇯🇵 日本KT|@ripaojiedian
@@ -467,20 +444,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 28|🇯🇵JP-54.92.22.240-2110
-  network: ws
-  port: 80
-  server: jp04.hajimihajimihajimi.online
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: dbf67e8f-eca2-4a01-9c87-c8cfea490a51
-  ws-opts:
-    headers:
-      Host: jp04.hajimihajimihajimi.online
-    path: /
-- alterId: 0
-  cipher: auto
   name: 28|🇯🇵JP-152.69.197.74-5069
   network: ws
   port: 12345
@@ -493,6 +456,20 @@ proxies:
     headers:
       Host: ''
     path: /bb
+- alterId: 0
+  cipher: auto
+  name: 28|🇯🇵JP-54.92.22.240-2110
+  network: ws
+  port: 80
+  server: jp04.hajimihajimihajimi.online
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: dbf67e8f-eca2-4a01-9c87-c8cfea490a51
+  ws-opts:
+    headers:
+      Host: jp04.hajimihajimihajimi.online
+    path: /
 - alterId: 0
   cipher: auto
   delay: 525
