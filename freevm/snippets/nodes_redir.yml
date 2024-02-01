@@ -54,7 +54,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,7,25,28,30|🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 #20'
+  name: '0,3,4,7,11,25,28,30|🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 #20'
   network: ws
   port: '80'
   server: 104.18.15.149
@@ -67,7 +67,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,1,3,4,6,7,13,16,20,21,25,28,30|🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 #9'
+  name: '0,1,3,4,6,7,11,13,16,20,21,25,28,30|🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 #9'
   network: tcp
   port: '443'
   server: 173.249.197.176
@@ -108,7 +108,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,1,3,4,7,25,28,30|🇺🇸 _CN_中国->🇺🇸_US_美国 #7'
+  name: '0,1,3,4,7,11,25,28,30|🇺🇸 _CN_中国->🇺🇸_US_美国 #7'
   network: tcp
   port: '11114'
   server: dx-us.85413.xyz
@@ -144,7 +144,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,1,3,4,6,7,14,20,21,25,28,30|🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 #8'
+  name: '0,1,3,4,6,7,14,16,20,21,25,28,30|🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 #8'
   network: tcp
   port: '443'
   server: pitcairn.ednovas.org
@@ -171,19 +171,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,25|1|_US_->_CA__4
+  name: 1,25|1|_US_->_CA__1
   network: ws
   port: 80
   server: 162.159.200.5
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5
+  uuid: 3a333291-9bd1-46c5-b9a9-370b5a3d1bd9
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,25|1,21|🇺🇸_US_美国->🇮🇷_IR_伊朗_2
+  name: 1,25|1,6,21|🇺🇸_US_美国->🇮🇷_IR_伊朗_2
   network: ws
   port: 8080
   server: www.crispyrainbow.biz
@@ -198,7 +198,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_IN_
+  name: 1,25|1|_US_->_IN_
   network: ws
   port: 2082
   server: cf-cdn.981545.xyz
@@ -207,19 +207,17 @@ proxies:
   type: vmess
   uuid: 1f7c4a0b-3fd0-4b19-bbc6-d09fc89a4c10
   ws-opts:
-    headers:
-      host: cfydmm.981545.xyz
     path: /index?ed=2048
 - alterId: 0
   cipher: auto
-  name: 1,25|1|_US_->_CA__1
+  name: 1,25|1|_US_->_CA__2
   network: ws
   port: 80
   server: 162.159.200.3
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5
+  uuid: 3a333291-9bd1-46c5-b9a9-370b5a3d1bd9
   ws-opts:
     path: /
 - alterId: 0
@@ -231,12 +229,12 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5
+  uuid: 3a333291-9bd1-46c5-b9a9-370b5a3d1bd9
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,25|1,21|🇺🇸_US_美国->🇮🇷_IR_伊朗_1
+  name: 1,25|1,6,21|🇺🇸_US_美国->🇮🇷_IR_伊朗_1
   network: ws
   port: 8080
   server: www.darkroom.lol
@@ -251,26 +249,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,25|1|_US_->_RU__4
+  name: 1,25|1|_US_->_RU__2
   network: ws
   port: 80
   server: 162.159.200.7
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1,25|1|_US_->_CA__3
-  network: ws
-  port: 80
-  server: 104.18.15.148
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5
+  uuid: 3a333291-9bd1-46c5-b9a9-370b5a3d1bd9
   ws-opts:
     path: /
 - alterId: 0
@@ -278,23 +264,35 @@ proxies:
   name: 1,25|1|_US_->_RU__3
   network: ws
   port: 80
-  server: 104.18.15.150
+  server: 104.18.15.148
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5
+  uuid: 3a333291-9bd1-46c5-b9a9-370b5a3d1bd9
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,25|1|_US_->_RU__2
+  name: 1,25|1|_US_->_RU__4
+  network: ws
+  port: 80
+  server: 104.18.15.150
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3a333291-9bd1-46c5-b9a9-370b5a3d1bd9
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1,25|1|_US_->_RU__5
   network: ws
   port: 80
   server: 162.159.200.6
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5
+  uuid: 3a333291-9bd1-46c5-b9a9-370b5a3d1bd9
   ws-opts:
     path: /
 - alterId: 0
@@ -364,7 +362,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '6,7,13,14,16,20,21,25,28|🇨🇳_CN_中国->🇮🇳_IN_印度 #3'
+  name: '6,7,13,14,20,21,25,28|🇨🇳_CN_中国->🇮🇳_IN_印度 #3'
   network: tcp
   port: 30128
   server: 183.232.170.22
@@ -421,7 +419,6 @@ proxies:
   network: ws
   port: 2095
   server: 120.233.45.104
-  servername: ''
   tls: false
   type: vmess
   uuid: 8c456efc-67d7-3190-8b75-5c879e133288
@@ -493,72 +490,6 @@ proxies:
   sni: alibaba-node.cn
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 25|1|_CN_->_US__1
-  network: ws
-  port: 41082
-  server: 101.89.154.94
-  tls: false
-  type: vmess
-  uuid: 8c456efc-67d7-3190-8b75-5c879e133288
-  ws-opts:
-    path: /dabai.in
-- alterId: 0
-  cipher: auto
-  name: 25|1|_CN_->_US__2
-  network: ws
-  port: 46242
-  server: 101.91.226.84
-  tls: false
-  type: vmess
-  uuid: 8c456efc-67d7-3190-8b75-5c879e133288
-  ws-opts:
-    path: /dabai.in
-- alterId: 0
-  cipher: auto
-  name: 25|1|_US_->_CA__2
-  network: ws
-  port: 80
-  server: 162.159.200.4
-  tls: false
-  type: vmess
-  uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 25|1|_CN_->_US__4
-  network: ws
-  port: 58081
-  server: 101.89.219.103
-  tls: false
-  type: vmess
-  uuid: 8c456efc-67d7-3190-8b75-5c879e133288
-  ws-opts:
-    path: /dabai.in
-- alterId: 0
-  cipher: auto
-  name: 25|1|_BH_->_NL_
-  network: ws
-  port: 80
-  server: 151.248.104.91
-  tls: false
-  type: vmess
-  uuid: 75916879-adcf-45b3-98d8-54a2412470b5
-  ws-opts:
-    path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: 25|1|_CN_->_US__6
-  network: ws
-  port: 2095
-  server: 120.233.45.104
-  tls: false
-  type: vmess
-  uuid: 8c456efc-67d7-3190-8b75-5c879e133288
-  ws-opts:
-    path: /dabai.in
 - alterId: 0
   cipher: auto
   name: 25|29|🇨🇾_CY_塞浦路斯->🇷🇺_RU_俄罗斯联邦_8

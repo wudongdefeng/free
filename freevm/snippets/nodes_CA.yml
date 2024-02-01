@@ -15,11 +15,12 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '7,25,28|🇨🇦_CA_加拿大 #4'
+  name: 7,11,25,28,29|US_speednode_0070
   network: tcp
   port: 18657
   server: 108.181.5.18
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 636ba072-493e-4235-b7a8-822bd4e340d5
@@ -66,7 +67,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 465fe39c-2009-4e22-9bcb-9f98e58ca894
+  uuid: f54902aa-8984-41a5-a5f6-17459a4575dd
 - alterId: 0
   cipher: auto
   name: 15|加拿大_【YouTube-VV科技】
@@ -111,7 +112,9 @@ proxies:
   server: 51.161.118.38
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|CA-158.69.0.27-174
+  country: 🇨🇦CA
+  delay: 735
+  name: 20,29|CA_speednode_0003
   password: KVcdcsJT6f0OWL5sEyM38A
   port: 1080
   server: 158.69.0.27
@@ -125,7 +128,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: cdf51d8f-ea2d-4b68-95a3-01d73925734c
+  uuid: 4dc3abe9-6863-4ece-9eca-47431a3097d5
 - alterId: 0
   cipher: auto
   name: 25,28|🏁RELAY-104.21.24.72-0147
@@ -140,3 +143,18 @@ proxies:
     headers:
       Host: no1.xv2ray.net
     path: /vmess
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /@general_sudo
+  name: 29|CA_speednode_0002
+  network: http
+  port: 48366
+  server: 15.235.49.129
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f3c167ee-b379-44a4-b3a8-3add749dab15
