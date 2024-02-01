@@ -41,7 +41,7 @@ proxies:
     path: /index?ed=2048
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,13,14,21,25,28,30|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #9'
+  name: '0,3,4,6,7,11,13,14,16,21,25,28,30|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #9'
   network: ws
   port: '80'
   server: 162.159.200.3
@@ -54,7 +54,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,14,21,25,28,30|🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 #21'
+  name: '0,3,4,6,7,11,14,21,25,28,30|🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 #21'
   network: ws
   port: '80'
   server: 104.18.15.149
@@ -95,7 +95,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,11,13,14,21,25,28,30|🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 #20'
+  name: '0,3,4,6,7,13,14,21,25,28,30|🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 #20'
   network: ws
   port: '80'
   server: 162.159.200.7
@@ -121,7 +121,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,14,21,25,28,30|🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 #22'
+  name: '0,3,4,6,7,11,14,21,25,28,30|🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 #22'
   network: ws
   port: '80'
   server: 104.18.15.148
@@ -147,7 +147,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,1,3,4,6,7,13,14,16,20,21,25,28,30|🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 #8'
+  name: '0,1,3,4,6,7,13,14,20,21,25,28,30|🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 #8'
   network: tcp
   port: '443'
   server: pitcairn.ednovas.org
@@ -185,8 +185,8 @@ proxies:
   ws-opts:
     path: /
 - alterId: 0
-  cipher: chacha20-poly1305
-  name: 1,25|1,6|-https://t.me/MrXbin-67
+  cipher: auto
+  name: 1,25|1|_US_->_IR__1
   network: ws
   port: 8080
   server: www.crispyrainbow.biz
@@ -297,9 +297,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '7,11,13,14,16,20,21,25,28|github.com/freefq - 广东省佛山市移动 2... #1'
+  name: '7,11,13,14,16,20,21,25,28|广东省佛山市 移动 #1'
   network: tcp
-  port: '30128'
+  port: 30128
   server: 183.232.170.22
   servername: ''
   skip-cert-verify: true
@@ -375,19 +375,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 28|🇰🇷 A韩国WS_V4 [沪/杭->韩国|天翼爱看免流X1]
-  network: ws
-  port: '36051'
-  server: sh2btf.999333.xyz
-  tls: false
-  type: vmess
-  uuid: 888873cf-87db-4d79-b3aa-6e741377defa
-  ws-opts:
-    headers:
-      Host: ltetp.tv189.com
-    path: /wss
-- alterId: 0
-  cipher: auto
   name: 28|🇰🇷 A韩国WS_V4 [沪/杭->韩国|天翼视讯免流X1]
   network: ws
   port: '18039'
@@ -398,4 +385,17 @@ proxies:
   ws-opts:
     headers:
       Host: h5.nty.tv189.com
+    path: /wss
+- alterId: 0
+  cipher: auto
+  name: 28|🇰🇷 A韩国WS_V4 [沪/杭->韩国|天翼爱看免流X1]
+  network: ws
+  port: '36051'
+  server: sh2btf.999333.xyz
+  tls: false
+  type: vmess
+  uuid: 888873cf-87db-4d79-b3aa-6e741377defa
+  ws-opts:
+    headers:
+      Host: ltetp.tv189.com
     path: /wss
