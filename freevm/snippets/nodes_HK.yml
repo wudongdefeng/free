@@ -103,21 +103,14 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '25,26,27,28|香港|@ripaojiedian #1'
-  network: ws
-  port: '8002'
-  server: 185.214.103.249
+  name: '25,27,28|香港3|@ripaojiedian #1'
+  network: tcp
+  port: '10241'
+  server: 38.147.191.185
   servername: ''
-  skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
-  uuid: 1405f400-4d72-3cd2-88fc-5bfb9dd9120d
-  ws-opts:
-    headers:
-      Host: data-hk-1.cn-db.top
-    path: /db00
+  uuid: e820d6f7-57ef-4575-99da-bcd7d318c742
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 26|🇭🇰 香港KT|@ripaojiedian
@@ -131,7 +124,7 @@ proxies:
     skip-cert-verify: true
     tls: false
   port: 443
-  server: 1.65.223.223
+  server: 8.210.196.224
   tfo: false
   type: ss
 - cipher: aes-128-gcm
@@ -150,21 +143,29 @@ proxies:
   server: 47.243.196.229
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 28|【直连】香港 - 2 - A Group
-  network: tcp
-  port: '38752'
-  server: 00000000000000000000000000000000000000000000000000000000000022.agroup-node-for-bigairport.sbs
-  tls: false
-  type: vmess
-  uuid: 843764ed-637a-4085-856e-72c507df3447
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇭🇰 香港|@ripaojiedian
+  password: f665c5d0-77c0-4196-bc8d-f0450e9c665b
+  port: 20001
+  server: service.ouluyun9803.com
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 28|【直连】香港 - 1 - A Group
   network: tcp
   port: '38751'
   server: 00000000000000000000000000000000000000000000000000000000000021.agroup-node-for-bigairport.sbs
+  tls: false
+  type: vmess
+  uuid: 843764ed-637a-4085-856e-72c507df3447
+- alterId: 0
+  cipher: auto
+  name: 28|【直连】香港 - 2 - A Group
+  network: tcp
+  port: '38752'
+  server: 00000000000000000000000000000000000000000000000000000000000022.agroup-node-for-bigairport.sbs
   tls: false
   type: vmess
   uuid: 843764ed-637a-4085-856e-72c507df3447
