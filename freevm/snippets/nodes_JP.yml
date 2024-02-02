@@ -289,18 +289,14 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 12,20,21,25|18|🇯🇵日本04
+  name: 12,25|18|🇯🇵日本04
   network: tcp
   port: '36116'
   server: 1j8p04.abzoones.xyz
   servername: jp04.abpilot.xyz
-  skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 8cb15839-7199-4ae4-9e46-be5f454e079e
-  ws-headers:
-    Host: 1j8p04.abzoones.xyz
-  ws-path: /
+  uuid: 7d164c47-3084-461b-9560-988d470331cf
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本05
@@ -310,7 +306,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 8cb15839-7199-4ae4-9e46-be5f454e079e
+  uuid: 7d164c47-3084-461b-9560-988d470331cf
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本06
@@ -320,10 +316,10 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 8cb15839-7199-4ae4-9e46-be5f454e079e
+  uuid: 7d164c47-3084-461b-9560-988d470331cf
 - alterId: 0
   cipher: auto
-  name: 20|JP-140.83.35.62-042
+  name: 20|JP-140.83.35.62-035
   network: ws
   port: 443
   server: jp-amd1.018999.xyz
@@ -336,7 +332,20 @@ proxies:
   ws-path: /65e619e7-0bf1-4f5b-a390-5735b01a3713
 - alterId: 0
   cipher: auto
-  name: 20|JP-140.83.86.129-149
+  name: 20|JP-138.2.5.177-160
+  network: ws
+  port: 443
+  server: jp-amd2.018999.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a79f2127-3ba4-4af8-96d5-2db3a0e186a7
+  ws-headers:
+    Host: jp-amd2.018999.xyz
+  ws-path: /a79f2127-3ba4-4af8-96d5-2db3a0e186a7
+- alterId: 0
+  cipher: auto
+  name: 20|JP-140.83.86.129-163
   network: ws
   port: 80
   server: 140.83.86.129
@@ -349,7 +358,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20|JP-138.2.39.67-151
+  name: 20|JP-138.2.39.67-167
   network: ws
   port: 80
   server: 138.2.39.67
@@ -361,20 +370,53 @@ proxies:
     Host: 138.2.39.67
   ws-path: /
 - cipher: aes-256-cfb
-  name: 20|JP-54.199.83.239-183
+  name: 20|JP-54.199.83.239-197
   password: doub.io
   port: 2333
   server: 54.199.83.239
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|JP-155.248.163.203-196
-  password: 100da7b6-366b-4cd7-9d65-6fd15a32c09e
-  port: 21853
-  server: 155.248.163.203
-  type: ss
 - alterId: 0
   cipher: auto
   name: 21|🇯🇵 日本(油管:破解资源君)
+  network: ws
+  port: '443'
+  server: jp-amd2.018999.xyz
+  tls: true
+  type: vmess
+  uuid: a79f2127-3ba4-4af8-96d5-2db3a0e186a7
+  ws-opts:
+    headers:
+      Host: jp-amd2.018999.xyz
+    path: /a79f2127-3ba4-4af8-96d5-2db3a0e186a7
+- alterId: 0
+  cipher: auto
+  name: '21|🇯🇵 日本(油管:破解资源君) #1'
+  network: ws
+  port: '80'
+  server: jp80-4.sanfen001.pics
+  tls: false
+  type: vmess
+  uuid: 3c34f264-6d9c-4234-b1da-3b84f183a931
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /zh-cn
+- alterId: 0
+  cipher: auto
+  name: '21|🇯🇵 日本(油管:破解资源君) #2'
+  network: ws
+  port: '443'
+  server: vjp1.0bad.com
+  tls: true
+  type: vmess
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    headers:
+      Host: vjp1.0bad.com
+    path: /chat
+- alterId: 0
+  cipher: auto
+  name: '21|🇯🇵 日本(油管:破解资源君) #3'
   network: ws
   port: '80'
   server: 140.83.86.129
@@ -387,7 +429,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '21|🇯🇵 日本(油管:破解资源君) #1'
+  name: '21|🇯🇵 日本(油管:破解资源君) #6'
   network: ws
   port: '80'
   server: jp-04.wxfz.ml
@@ -400,7 +442,20 @@ proxies:
     path: /jun
 - alterId: 0
   cipher: auto
-  name: '21|🇯🇵 日本(油管:破解资源君) #2'
+  name: '21|🇯🇵 日本(油管:破解资源君) #5'
+  network: ws
+  port: '443'
+  server: vjp3.0bad.com
+  tls: true
+  type: vmess
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    headers:
+      Host: vjp3.0bad.com
+    path: /chat
+- alterId: 0
+  cipher: auto
+  name: '21|🇯🇵 日本(油管:破解资源君) #7'
   network: ws
   port: '80'
   server: 138.2.39.67
@@ -420,7 +475,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 7a0533b6-8a32-4a01-9a54-08c593f14c97
+  uuid: 60094570-3c83-4f91-a8f8-e2306ed2e910
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】日本 06  | 1x JP
@@ -430,24 +485,10 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 7a0533b6-8a32-4a01-9a54-08c593f14c97
+  uuid: 60094570-3c83-4f91-a8f8-e2306ed2e910
 - alterId: 0
   cipher: auto
-  name: 25|21|节点日期：02-01 09:11【ccbaohe.co...
-  network: ws
-  port: '80'
-  server: bs2.loadingip.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5278f5d3-f001-4459-94b6-7e0915238998
-  ws-opts:
-    headers:
-      Host: bs2.loadingip.com
-    path: /bs
-- alterId: 0
-  cipher: auto
-  name: '25,27,28|日本2|@ripaojiedian #1'
+  name: '25,27,28|日本1|@ripaojiedian #1'
   network: tcp
   port: '43713'
   server: 103.20.198.51
@@ -465,40 +506,16 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 28|🇯🇵JP-152.69.197.74-5069
+  name: 28|日本 02 | ws
   network: ws
-  port: 12345
-  server: 152.69.197.74
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
-  ws-opts:
-    headers:
-      Host: ''
-    path: /bb
-- alterId: 0
-  cipher: auto
-  name: 28|日本 04 | tcp
-  network: tcp
   port: '80'
-  server: 223.113.54.130
+  server: 223.113.54.131
   tls: false
   type: vmess
   uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-- alterId: 0
-  cipher: auto
-  name: 28|🇯🇵JP-54.92.22.240-2110
-  network: ws
-  port: 80
-  server: jp04.hajimihajimihajimi.online
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: dbf67e8f-eca2-4a01-9c87-c8cfea490a51
   ws-opts:
     headers:
-      Host: jp04.hajimihajimihajimi.online
+      Host: tms.dingtalk.com
     path: /
 - alterId: 0
   cipher: auto
@@ -515,17 +532,41 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|日本 02 | ws
+  name: 28|🇯🇵JP-152.69.197.74-5069
   network: ws
+  port: 12345
+  server: 152.69.197.74
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
+  ws-opts:
+    headers:
+      Host: ''
+    path: /bb
+- alterId: 0
+  cipher: auto
+  name: 28|🇯🇵JP-54.92.22.240-2110
+  network: ws
+  port: 80
+  server: jp04.hajimihajimihajimi.online
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: dbf67e8f-eca2-4a01-9c87-c8cfea490a51
+  ws-opts:
+    headers:
+      Host: jp04.hajimihajimihajimi.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|日本 04 | tcp
+  network: tcp
   port: '80'
-  server: 223.113.54.131
+  server: 223.113.54.130
   tls: false
   type: vmess
   uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
 - alterId: 0
   cipher: auto
   name: 28|日本 03 | tcp
