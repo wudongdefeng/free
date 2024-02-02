@@ -110,7 +110,7 @@ proxies:
   servername: sg04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 9aa72f3d-282f-4357-b1c6-50f11baa260a
+  uuid: a9c272d0-aa05-4650-a58f-e71c2e743a2c
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇸🇬新加坡05
@@ -120,7 +120,7 @@ proxies:
   servername: sg05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 9aa72f3d-282f-4357-b1c6-50f11baa260a
+  uuid: a9c272d0-aa05-4650-a58f-e71c2e743a2c
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇸🇬新加坡06
@@ -130,7 +130,7 @@ proxies:
   servername: sg06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 9aa72f3d-282f-4357-b1c6-50f11baa260a
+  uuid: a9c272d0-aa05-4650-a58f-e71c2e743a2c
 - alterId: 0
   cipher: auto
   name: 15|新加坡_【YouTube-VV科技】
@@ -217,7 +217,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 2ee13653-d56d-4d96-9408-9abe9e4cd018
+  uuid: 32615958-9b6f-4717-9bf4-18b0ddec4778
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】新加坡 05 | 1x SG
@@ -227,7 +227,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 2ee13653-d56d-4d96-9408-9abe9e4cd018
+  uuid: 32615958-9b6f-4717-9bf4-18b0ddec4778
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】新加坡 06 | 1x SG
@@ -237,7 +237,7 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 2ee13653-d56d-4d96-9408-9abe9e4cd018
+  uuid: 32615958-9b6f-4717-9bf4-18b0ddec4778
 - alterId: 0
   cipher: auto
   name: 25|21|🔒 VM-WS-NONE 🇸🇬 SG-146.190....
@@ -269,18 +269,41 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 28|🇸🇬SG-207.148.64.32-5501
+  name: 28|🇸🇬SG-45.76.144.158-0136
   network: ws
-  port: 27263
-  server: 207.148.64.32
+  port: 30899
+  server: 45.76.144.158
   servername: ''
   tls: false
   type: vmess
-  uuid: c064e17e-ac67-4595-be9d-58e8903aec2c
+  uuid: 4a503125-b6bd-427a-87d0-55d41308d977
+  ws-opts:
+    headers:
+      Host: m.zoom.us
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇸🇬SG-45.76.144.158-9140
+  network: ws
+  port: 30899
+  server: 45.76.144.158
+  servername: m.zoom.us
+  tls: false
+  type: vmess
+  uuid: 4a503125-b6bd-427a-87d0-55d41308d977
   ws-opts:
     headers:
       Host: ''
-    path: /DIALOGZOOM
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|【直连】狮城 - 2 - A Group
+  network: tcp
+  port: '38756'
+  server: 00000000000000000000000000000000000000000000000000000000000026.agroup-node-for-bigairport.sbs
+  tls: false
+  type: vmess
+  uuid: 843764ed-637a-4085-856e-72c507df3447
 - alterId: 0
   cipher: auto
   name: 28|【直连】狮城 - 1 - A Group
@@ -306,13 +329,32 @@ proxies:
     path: /DIALOGZOOM
 - alterId: 0
   cipher: auto
-  name: 28|【直连】狮城 - 2 - A Group
-  network: tcp
-  port: '38756'
-  server: 00000000000000000000000000000000000000000000000000000000000026.agroup-node-for-bigairport.sbs
+  name: 28|🇸🇬SG-207.148.64.32-5501
+  network: ws
+  port: 27263
+  server: 207.148.64.32
+  servername: ''
   tls: false
   type: vmess
-  uuid: 843764ed-637a-4085-856e-72c507df3447
+  uuid: c064e17e-ac67-4595-be9d-58e8903aec2c
+  ws-opts:
+    headers:
+      Host: ''
+    path: /DIALOGZOOM
+- alterId: 0
+  cipher: auto
+  name: 28|🇸🇬SG-167.172.80.198-3986
+  network: ws
+  port: 8880
+  server: 8db7766f-d893-430e-96fb-ccd20e681145.tg.hkaa0.66688888.xyz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ae3e6ab7-144a-4ecc-981d-603ea73bc8af
+  ws-opts:
+    headers:
+      Host: 8db7766f-d893-430e-96fb-ccd20e681145.tg.hkaa0.66688888.xyz
+    path: /Telegram:@hkaa0
 - alterId: 0
   cipher: auto
   name: 28|🇸🇬SG-45.76.144.158-0901
@@ -343,43 +385,550 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|🇸🇬SG-45.76.144.158-9140
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0052
   network: ws
-  port: 30899
-  server: 45.76.144.158
-  servername: m.zoom.us
+  port: 40000
+  server: ml1.333210.xyz
+  servername: down.dingtalk.com
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vmess
-  uuid: 4a503125-b6bd-427a-87d0-55d41308d977
+  udp: true
+  uuid: 892e4ff3-f8bb-42ac-9bd5-e103f235fc78
   ws-opts:
     headers:
-      Host: ''
+      Host: ml1.333210.xyz
     path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🇸🇬SG-167.172.80.198-3986
-  network: ws
-  port: 8880
-  server: 8db7766f-d893-430e-96fb-ccd20e681145.tg.hkaa0.66688888.xyz
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ae3e6ab7-144a-4ecc-981d-603ea73bc8af
-  ws-opts:
-    headers:
-      Host: 8db7766f-d893-430e-96fb-ccd20e681145.tg.hkaa0.66688888.xyz
-    path: /Telegram:@hkaa0
-- alterId: 0
-  cipher: auto
-  name: 28|🇸🇬SG-45.76.144.158-0136
-  network: ws
-  port: 30899
-  server: 45.76.144.158
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4a503125-b6bd-427a-87d0-55d41308d977
-  ws-opts:
-    headers:
-      Host: m.zoom.us
-    path: /
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 29|SG_speednode_0054
+  obfs: plain
+  password: aLpQtfEZe445QyHk
+  port: 9098
+  protocol: origin
+  server: 103.172.116.90
+  type: ssr
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0055
+  password: GeregetR8cvQHzYr
+  port: 9030
+  server: 103.172.116.90
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 29|SG_speednode_0056
+  password: BNmAXXxAHYpTRdzu
+  port: 9020
+  server: 103.172.116.90
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0057
+  password: p9z5BVADH2YFs3MN
+  port: 9040
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0058
+  password: HSZuyJQcWe8dxNdF
+  port: 9043
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0059
+  password: TPqX8edgbAURcAMb
+  port: 9079
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0060
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0061
+  password: BejrQvtu9sqUeNuZ
+  port: 9024
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0062
+  password: KnJGad3FqTvjqbaX
+  port: 9014
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0063
+  password: FG5ddLsMPbV5CutE
+  port: 9050
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0064
+  password: QWDDvVE9npNurQfA
+  port: 9026
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0065
+  password: ueLXVkvh4hckhErQ
+  port: 9060
+  server: 103.172.116.90
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0066
+  password: f63gg8EruDnUrmz4
+  port: 9010
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0067
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 103.172.116.90
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0068
+  password: kSPmvwdFzGMMW5pY
+  port: 9007
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0069
+  password: GeregetR8cvQHzYr
+  port: 9030
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0070
+  password: aLpQtfEZe445QyHk
+  port: 9098
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0071
+  password: ZpNDDKRu9MagNvaf
+  port: 9015
+  server: 103.172.116.90
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0072
+  password: EXN3S3eQpjE7EJu8
+  port: 9027
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0073
+  password: ZpNDDKRu9MagNvaf
+  port: 9015
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0074
+  password: y9VURyNzJWNRYEGQ
+  port: 9008
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0075
+  password: Lp27rqyJq72bZsqX
+  port: 9045
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0076
+  password: fG2artUmHfNT2cX7
+  port: 9018
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0077
+  password: TN2YqghxeFDKZfLU
+  port: 9037
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0078
+  password: FG5ddLsMPbV5CutE
+  port: 9050
+  server: 103.172.116.90
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0079
+  password: ZET59LF6DvCC8KVt
+  port: 9005
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0080
+  password: dML2sfhbVwvtfNPe
+  port: 9058
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0081
+  password: c3NtHJ5ujV2tGDfj
+  port: 9084
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0082
+  password: XPtzA9sCug3SPR4c
+  port: 9025
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0083
+  password: UWZQeLRWnkqgkseq
+  port: 9032
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0084
+  password: wfLC2y7rzZyCmuyt
+  port: 9093
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0085
+  password: JdmRK9gMEqFgs8nP
+  port: 9003
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0086
+  password: rpgbNnU9rDDU4aWZ
+  port: 9094
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0087
+  password: NvS8N4Vf8qAGPSCL
+  port: 9046
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0088
+  password: BNmAXXxAHYpTRdzu
+  port: 9020
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0089
+  password: bf7v334KKDV3YDhH
+  port: 9070
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0090
+  password: VP8ZPxQpJtZRCjfZ
+  port: 9080
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0091
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0092
+  password: daFYagqDdBdA6VTX
+  port: 9073
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0093
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0094
+  password: SBM7R883jBmnqe6C
+  port: 9053
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0095
+  password: wjTugX3ZtHMB9c3Z
+  port: 9057
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0096
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0097
+  password: gYCYXfkUQEs2TaJQ
+  port: 9038
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0098
+  password: FAdUvMJUq5vDgKEq
+  port: 9006
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0099
+  password: GA9KzeEgvfxNrgmM
+  port: 9019
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0100
+  password: UTJA57ypk2XKQpnm
+  port: 9033
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0101
+  password: UkXRsXvR6buDMG2Y
+  port: 9001
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0102
+  password: 9XwYyZsK8SNzQDtY
+  port: 9059
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0103
+  password: ueLXVkvh4hckhErQ
+  port: 9060
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0104
+  password: rNBfNuuANFCAk7KB
+  port: 9056
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0105
+  password: U6qnYRhfyDmn8sgn
+  port: 9041
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0106
+  password: a3GFYt36Sm82Vys9
+  port: 9000
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0107
+  password: f8npKgNzdkss2ytn
+  port: 9088
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0108
+  password: M3t2ZEQcMGRWBjRa
+  port: 9011
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0109
+  password: ZpNDDKRu9MagNvaf
+  port: 9015
+  server: 103.172.116.94
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0110
+  password: EXN3S3eQpjE7EJu8
+  port: 9027
+  server: 103.172.116.94
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 29|SG_speednode_0111
+  password: 4R3hUfZ2FHhDmNcP
+  port: 9061
+  server: 103.172.116.103
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0112
+  password: TN2YqghxeFDKZfLU
+  port: 9037
+  server: 103.172.116.90
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0113
+  password: HSZuyJQcWe8dxNdF
+  port: 9043
+  server: 103.172.116.90
+  type: ss
+  udp: true
