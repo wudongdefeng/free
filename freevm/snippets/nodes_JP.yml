@@ -296,7 +296,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: de7d973a-e673-4ae7-a48f-5bb64115be88
+  uuid: cc3c1253-0812-42b8-8647-e19f242465d9
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本05
@@ -306,7 +306,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: de7d973a-e673-4ae7-a48f-5bb64115be88
+  uuid: cc3c1253-0812-42b8-8647-e19f242465d9
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本06
@@ -316,7 +316,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: de7d973a-e673-4ae7-a48f-5bb64115be88
+  uuid: cc3c1253-0812-42b8-8647-e19f242465d9
 - alterId: 0
   cipher: auto
   name: 20|JP-140.83.35.62-035
@@ -475,7 +475,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 270cbf7c-2539-4999-9e79-b823fb84a260
+  uuid: f3304ae7-5948-412a-8854-9a0ce6b80f34
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】日本 05  | 1x JP
@@ -485,7 +485,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 270cbf7c-2539-4999-9e79-b823fb84a260
+  uuid: f3304ae7-5948-412a-8854-9a0ce6b80f34
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】日本 06  | 1x JP
@@ -495,7 +495,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 270cbf7c-2539-4999-9e79-b823fb84a260
+  uuid: f3304ae7-5948-412a-8854-9a0ce6b80f34
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇯🇵 日本2|@ripaojiedian
@@ -514,6 +514,24 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: 28|日本 04 | tcp
+  network: tcp
+  port: '80'
+  server: 223.113.54.130
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+- alterId: 0
+  cipher: auto
+  name: 28|日本 03 | tcp
+  network: tcp
+  port: '80'
+  server: 223.113.54.139
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+- alterId: 0
+  cipher: auto
   name: 28|日本 02 | ws
   network: ws
   port: '80'
@@ -525,28 +543,6 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 28|日本 01 | ws
-  network: ws
-  port: '80'
-  server: 223.113.54.138
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|日本 03 | tcp
-  network: tcp
-  port: '80'
-  server: 223.113.54.139
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
 - alterId: 0
   cipher: auto
   name: 28|🇯🇵JP-152.69.197.74-5069
@@ -563,6 +559,19 @@ proxies:
     path: /bb
 - alterId: 0
   cipher: auto
+  name: 28|日本 01 | ws
+  network: ws
+  port: '80'
+  server: 223.113.54.138
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 28|🇯🇵JP-54.92.22.240-2110
   network: ws
   port: 80
@@ -575,57 +584,25 @@ proxies:
     headers:
       Host: jp04.hajimihajimihajimi.online
     path: /
-- alterId: 0
-  cipher: auto
-  name: 28|日本 04 | tcp
-  network: tcp
-  port: '80'
-  server: 223.113.54.130
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 29|JP_speednode_0030
+  password: 1ab14429-ff44-402d-baf6-ddea2ef883cc
+  port: 21853
+  server: jp.doushimeng.com
+  tfo: false
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: 29|JP_speednode_0043
+  name: 29|JP_speednode_0031
   password: amazonskr05
   port: 443
   server: 43.207.197.15
   type: ss
 - cipher: aes-256-cfb
-  name: 29|JP_speednode_0044
-  password: amazonskr05
-  port: 443
-  server: 13.231.78.35
-  type: ss
-- cipher: aes-256-cfb
-  name: 29|JP_speednode_0045
+  name: 29|JP_speednode_0032
   password: amazonskr05
   port: 443
   server: 18.179.13.191
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 29|JP_speednode_0046
-  password: 100da7b6-366b-4cd7-9d65-6fd15a32c09e
-  port: 21853
-  server: 168.138.192.22
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  delay: 525
-  h2-opts: {}
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 29|JP_speednode_0048
-  network: http
-  port: 43713
-  server: 103.20.198.51
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5d3a1ace-4288-4442-98f2-50ff8795797a
