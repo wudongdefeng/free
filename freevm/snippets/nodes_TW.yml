@@ -69,14 +69,17 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 11,25|26|baipaovpn台湾省
-  network: tcp
-  port: '12002'
-  server: 118.167.66.198
-  servername: ''
+  name: 11|台湾省台中市 中华电信
+  network: ws
+  port: 36002
+  server: tw.178820225.xyz
   tls: false
   type: vmess
-  uuid: 4c698ff1-ab96-4ce3-8c3a-e23ced87b441
+  uuid: 8fa261c0-ae8d-4aee-8f8b-1604b6f78f4a
+  ws-opts:
+    headers:
+      Host: tw.178820225.xyz
+    path: /ergedgdsrgsd
 - alterId: 0
   cipher: auto
   name: 13,20,21,25|19|台湾省中华电信(HiNet)数据中心 1
@@ -158,6 +161,16 @@ proxies:
   network: tcp
   port: '2024'
   server: 36.226.153.203
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4c698ff1-ab96-4ce3-8c3a-e23ced87b441
+- alterId: 0
+  cipher: auto
+  name: 25|26|baipaovpn台湾省
+  network: tcp
+  port: '12002'
+  server: 118.167.66.198
   servername: ''
   tls: false
   type: vmess
