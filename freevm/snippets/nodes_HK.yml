@@ -162,15 +162,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 28|香港 03 | tcp
-  network: tcp
-  port: '80'
-  server: 120.232.186.60
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-- alterId: 0
-  cipher: auto
   name: 28|🇭🇰HK-182.16.1.194-9105
   network: ws
   port: 80
@@ -185,6 +176,19 @@ proxies:
     path: /opt/video/images
 - alterId: 0
   cipher: auto
+  name: 28|香港 01 | ws
+  network: ws
+  port: '80'
+  server: 223.113.54.132
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 28|香港 02 | ws
   network: ws
   port: '80'
@@ -196,6 +200,15 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: 28|香港 03 | tcp
+  network: tcp
+  port: '80'
+  server: 120.232.186.60
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
 - alterId: 0
   cipher: auto
   name: 28|香港 04 | tcp
@@ -214,19 +227,6 @@ proxies:
   tls: false
   type: vmess
   uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
-  name: 28|香港 01 | ws
-  network: ws
-  port: '80'
-  server: 223.113.54.132
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
 - cipher: aes-128-gcm
   country: 🇭🇰HK
   name: 29|HK_speednode_0056
