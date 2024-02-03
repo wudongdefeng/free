@@ -1,7 +1,21 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '11,13,16,21,25,28|github.com/freefq - 广东省移动 21 #1'
+  name: 11|广东省 移动
+  network: ws
+  port: '20401'
+  server: data-us-v1.shwjfkw.cn
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: ''
+    path: /debian
+- alterId: 0
+  cipher: auto
+  name: '13,16,21,25,28|github.com/freefq - 广东省移动 21 #1'
   network: ws
   port: '20401'
   server: data-us-v1.shwjfkw.cn
@@ -121,7 +135,20 @@ proxies:
   ws-path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: 20|CN-120.233.42.199-307
+  name: 20|CN-36.138.98.173-277
+  network: ws
+  port: 38889
+  server: aws.daxun.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+  ws-headers:
+    Host: www.baidu.com
+  ws-path: /daxun/us2
+- alterId: 0
+  cipher: auto
+  name: 20|CN-120.233.42.199-292
   network: ws
   port: 20401
   server: data-us-v1.shwjfkw.cn
@@ -133,10 +160,12 @@ proxies:
     Host: data-us-v1.shwjfkw.cn
   ws-path: /debian
 - cipher: chacha20-ietf-poly1305
-  name: 20|CN-120.238.122.159-310
+  client-fingerprint: chrome
+  name: 20,26|🇯🇵 日本2|@ripaojiedian
   password: f665c5d0-77c0-4196-bc8d-f0450e9c665b
-  port: 26666
+  port: 20007
   server: service.ouluyun9803.com
+  tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
@@ -147,27 +176,40 @@ proxies:
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|CN-117.149.247.11-209
+  client-fingerprint: chrome
+  name: 20,26|🇸🇬 新加坡1|@ripaojiedian
+  password: f665c5d0-77c0-4196-bc8d-f0450e9c665b
+  port: 20009
+  server: service.ouluyun9803.com
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|CN-117.149.247.11-206
   password: 8e949d75-3510-4678-8593-3c5032dd931a
   port: 30818
   server: wqfuinwqffq.dfcloud.xyz
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 20,26|🇯🇵 日本2|@ripaojiedian
+  name: 20,26|🇰🇷 韩国1|@ripaojiedian
   password: f665c5d0-77c0-4196-bc8d-f0450e9c665b
-  port: 20007
+  port: 26667
   server: service.ouluyun9803.com
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 20,26|🇹🇼 台湾|@ripaojiedian
-  password: f665c5d0-77c0-4196-bc8d-f0450e9c665b
-  port: 20005
-  server: service.ouluyun9803.com
-  tfo: false
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20,21,28|日本原生|优选IP|1x
+  network: tcp
+  port: '38013'
+  server: gz.daxun.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+  ws-headers:
+    Host: gz.daxun.cyou
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 20,21,25,28|Scloud台湾02-原生IP|0.5x
@@ -181,6 +223,14 @@ proxies:
   ws-headers:
     Host: gz.daxun.cyou
   ws-path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇹🇼 台湾|@ripaojiedian
+  password: f665c5d0-77c0-4196-bc8d-f0450e9c665b
+  port: 20005
+  server: service.ouluyun9803.com
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 29|CN_speednode_0003
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
