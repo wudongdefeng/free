@@ -14,7 +14,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,11,13,14,16,21,25,28,30|🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚 #4'
+  name: '0,3,4,6,7,13,14,16,21,25,28,30|🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚 #4'
   network: ws
   port: '80'
   server: 104.17.25.1
@@ -28,7 +28,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,13,16,21,25,28,30|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #9'
+  name: '0,3,4,6,11,13,16,21,25,28,30|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #9'
   network: ws
   port: '8080'
   server: www.darkroom.lol
@@ -42,7 +42,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,11,21,25,28,30|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #8'
+  name: '0,3,4,6,21,25,28,30|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #8'
   network: ws
   port: '8080'
   server: www.crispyrainbow.biz
@@ -56,7 +56,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,1,3,4,6,7,13,14,20,21,25,28,30|🇮🇳 _CN_中国->🇮🇳_IN_印度 #4'
+  name: '0,1,3,4,6,7,11,13,14,20,21,25,28,30|🇮🇳 _CN_中国->🇮🇳_IN_印度 #4'
   network: tcp
   port: '30128'
   server: 183.232.170.22
@@ -106,11 +106,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,11,25|1|_US_->_IR__1
+  name: 1,25|1|_US_->_IR__1
   network: ws
   port: 8080
   server: www.darkroom.lol
-  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -118,8 +117,8 @@ proxies:
   ws-opts:
     path: /
 - alterId: 0
-  cipher: chacha20-poly1305
-  name: 1,25|1,6|-https://t.me/MrXbin-55
+  cipher: auto
+  name: 1,25|1|_US_->_IR__2
   network: ws
   port: 8080
   server: www.crispyrainbow.biz
@@ -156,9 +155,9 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: '7,14,25,28|🇨🇳_CN_中国->🇺🇸_US_美国 #8'
+  name: 7,14,25,28|哈萨克斯坦 01 | ws
   network: ws
-  port: 20018
+  port: '20018'
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
   tls: false
   type: vmess
@@ -169,9 +168,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 7,14,25,28|美国 02 | ws
+  name: '7,14,25,28|🇨🇳_CN_中国->🇺🇸_US_美国 #8'
   network: ws
-  port: '2004'
+  port: 2004
   server: 223.113.54.131
   tls: false
   type: vmess
@@ -182,9 +181,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '7,14,25,28|🇨🇳_CN_中国->🇸🇰_SK_斯洛伐克 #2'
+  name: 7,14,25,28|斯洛伐克 01 | ws
   network: ws
-  port: 20026
+  port: '20026'
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
   tls: false
   type: vmess
@@ -195,9 +194,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 7,14,25,28|白俄罗斯 01  | ws
+  name: '7,14,25,28|🇨🇳_CN_中国->🇧🇾_BY_白俄罗斯 #2'
   network: ws
-  port: '20019'
+  port: 20019
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
   tls: false
   type: vmess
@@ -208,9 +207,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 7,14,25,28|土耳其 01 | ws
+  name: '7,14,25,28|🇨🇳_CN_中国->🇹🇷_TR_土耳其 #2'
   network: ws
-  port: '2000'
+  port: 2000
   server: 223.113.54.131
   tls: false
   type: vmess
@@ -234,7 +233,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 7,11,14,25,28|爱沙尼亚 01 | ws
+  name: 7,14,25,28|爱沙尼亚 01 | ws
   network: ws
   port: '20021'
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
@@ -337,21 +336,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28,29|CN_speednode_0028
-  network: ws
-  port: 38888
-  server: aws.daxun.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-  ws-opts:
-    headers:
-      Host: www.baidu.com
-    path: /daxun/us1
-- alterId: 0
-  cipher: auto
   name: 28,29|CN_speednode_0027
   network: ws
   port: 38887
@@ -365,3 +349,18 @@ proxies:
     headers:
       Host: www.baidu.com
     path: /daxun/us3
+- alterId: 0
+  cipher: auto
+  name: 28,29|CN_speednode_0028
+  network: ws
+  port: 38888
+  server: aws.daxun.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /daxun/us1
