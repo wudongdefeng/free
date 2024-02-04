@@ -15,7 +15,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,11,13,16,21,25,28,30|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #9'
+  name: '0,3,4,6,13,16,21,25,28,30|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #9'
   network: ws
   port: '8080'
   server: www.darkroom.lol
@@ -29,7 +29,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,13,14,16,21,25,28,30|🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚 #4'
+  name: '0,3,4,6,7,11,13,14,16,21,25,28,30|🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚 #4'
   network: ws
   port: '80'
   server: 104.17.25.1
@@ -240,19 +240,6 @@ proxies:
     path: /daxun/us3
 - alterId: 0
   cipher: auto
-  name: 28|美国洛杉矶-中转|1x
-  network: ws
-  port: '38888'
-  server: aws.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-  ws-opts:
-    headers:
-      Host: www.baidu.com
-    path: /daxun/us1
-- alterId: 0
-  cipher: auto
   name: 28|美国圣何塞-中转|1x
   network: ws
   port: '38889'
@@ -264,3 +251,16 @@ proxies:
     headers:
       Host: www.baidu.com
     path: /daxun/us2
+- alterId: 0
+  cipher: auto
+  name: 28|美国洛杉矶-中转|1x
+  network: ws
+  port: '38888'
+  server: aws.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /daxun/us1
