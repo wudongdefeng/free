@@ -60,7 +60,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,11,21,25,28,30|🇺🇸 _US_美国 #80'
+  name: '0,3,4,6,7,21,25,28,30|🇺🇸 _US_美国 #80'
   network: ws
   port: '8080'
   server: 172.67.166.190
@@ -187,13 +187,20 @@ proxies:
     path: /video/DDC4btA8wc/
 - alterId: 0
   cipher: auto
-  name: '0,1,3,4,6,7,20,21,25,28,30|🇺🇸 _US_美国 #79'
+  delay: 638
+  h2-opts: {}
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: '0,1,3,4,6,7,20,21,25,28,29,30|🇺🇸 _US_美国 #79'
   network: http
   port: '12079'
   server: 45.32.192.94
   skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: e63f477b-59d7-485e-9385-c38888b60cbf
   ws-headers:
     Host: 45.32.192.94
@@ -242,7 +249,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,13,14,21,25,28,30|🇺🇸 _US_美国 #93'
+  name: '0,3,4,6,7,11,13,14,21,25,28,30|🇺🇸 _US_美国 #93'
   network: ws
   port: '8880'
   server: server3.beheshtbaneh.com
@@ -270,7 +277,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,11,21,25,28,30|🇺🇸 _US_美国 #88'
+  name: '0,3,4,6,7,21,25,28,30|🇺🇸 _US_美国 #88'
   network: ws
   port: '80'
   server: 104.20.231.30
@@ -284,7 +291,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,13,14,21,25,28,30|🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚 #4'
+  name: '0,3,4,6,7,11,13,14,21,25,28,30|🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚 #4'
   network: ws
   port: '80'
   server: 104.17.25.1
@@ -298,7 +305,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,13,14,21,25,28,30|🇺🇸 _US_美国 #82'
+  name: '0,3,4,6,11,13,14,21,25,28,30|🇺🇸 _US_美国 #82'
   network: ws
   port: '8880'
   server: server10.beheshtbaneh.com
@@ -417,7 +424,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1,13,16,25,28|github.com/freefq - 美国CloudFla... #8'
+  name: '1,11,13,16,25,28|github.com/freefq - 美国CloudFla... #8'
   network: ws
   port: '8880'
   server: server31.beheshtbaneh.com
@@ -4569,18 +4576,17 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  name: 11|美国 CloudFlare节点
+  name: '11,13,14,21,25,28|美国 CloudFlare节点 #32'
   network: ws
-  port: '8080'
-  server: 172.67.171.177
-  servername: ''
+  port: '8880'
+  server: server2.beheshtbaneh.com
   tls: false
   type: vmess
-  uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
+  uuid: 8420ee38-4cf6-4d79-a9ec-2731207cf83a
   ws-opts:
     headers:
-      Host: eu3.openxai.link
-    path: /?ed=2048
+      Host: server2.beheshtbaneh.com
+    path: /
 - alterId: 0
   cipher: auto
   name: '11,16,21,25,28|github.com/freefq - 美国CloudFla... #12'
@@ -4597,44 +4603,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 11,25|21|LU_youtube@资源分享师_91
+  name: 11,25|21|FR_youtube@资源分享师_70
   network: ws
-  port: 443
-  server: nngxxx.link
-  tls: true
-  type: vmess
-  uuid: 7fdc9ae0-4b55-4da2-f234-31079092b323
-  ws-opts:
-    headers:
-      Host: nngxxx.link
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11,13,16,20,21,25,28|github.com/freefq - 韩国蘑菇主机BGP数... #1'
-  network: tcp
-  port: 10001
-  server: 103.214.68.57
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: ebca5f68-bf59-4081-e658-f158839c2f5c
-  ws-headers:
-    Host: 103.214.68.57
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #3'
-  network: ws
-  port: '8080'
-  server: 162.159.137.28
-  servername: ''
+  port: 80
+  server: 146.59.204.6
   tls: false
   type: vmess
-  uuid: 5e203864-6170-4056-fa90-b1fdbda3a3ca
+  uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
   ws-opts:
-    headers:
-      Host: eu4.openxai.link
-    path: /?ed=2048
+    path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY
 - alterId: 0
   cipher: auto
   name: '11,13,16,21,25,28|github.com/freefq - 广东省移动 18 #1'
@@ -4651,17 +4628,17 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: '11,13,16,21,25,28|github.com/freefq - 英国  17 #1'
+  name: '11,13,21,25|19|美国 CloudFlare节点 #10'
   network: ws
-  port: 20326
-  server: chuncheonarm.yuwan.link
+  port: '8880'
+  server: server6.beheshtbaneh.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 3b338c13-f975-4e85-b1b5-6ff2fb0f14b3
+  uuid: c5626b16-4c57-4d7e-8668-6b1ecda5c8b5
   ws-opts:
     headers:
-      Host: chuncheonarm.yuwan.link
+      Host: server6.beheshtbaneh.com
     path: /
 - alterId: 0
   cipher: auto
@@ -4679,45 +4656,68 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 11,21,25|7|德国4
-  network: ws
-  port: '8080'
-  server: cf.openxai.link
-  servername: ''
+  name: 11,16,25,28|🇹🇼台湾 0.1X
+  network: tcp
+  port: '21353'
+  server: tw1-vds3.anyhk.co
   tls: false
   type: vmess
-  uuid: 5e203864-6170-4056-fa90-b1fdbda3a3ca
-  ws-opts:
-    headers:
-      Host: eu4.openxai.link
-    path: /?ed=2048
+  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
 - alterId: 0
   cipher: auto
-  name: '11,25,28|美国 CloudFlare节点 #32'
+  name: '11,13,16,25,28|github.com/freefq - 美国CloudFla... #11'
   network: ws
-  port: '8080'
-  server: 104.21.83.10
+  port: '8880'
+  server: server13.beheshtbaneh.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  uuid: 0c0db4fe-6133-4837-9f57-0ce75fb59692
   ws-opts:
     headers:
-      Host: www.coldstone.club
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: '11,21,28|美国 CloudFlare节点 #36'
+  name: '11,13,16,21,25,28|github.com/freefq - 英国  17 #1'
   network: ws
-  port: '8080'
-  server: 104.17.123.55
+  port: 20326
+  server: chuncheonarm.yuwan.link
+  servername: ''
   tls: false
   type: vmess
-  uuid: 1d47288a-699d-45ca-b4f0-4e5b36940e6f
+  uuid: 3b338c13-f975-4e85-b1b5-6ff2fb0f14b3
   ws-opts:
     headers:
-      Host: pq.kmoljklj.top
-    path: /qZTtpya?ed=2048
+      Host: chuncheonarm.yuwan.link
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '11,16,21,25,28|美国 CloudFlare节点 #29'
+  network: ws
+  port: '8880'
+  server: server26.beheshtbaneh.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
+  ws-opts:
+    headers:
+      Host: server26.beheshtbaneh.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '11,14|🇺🇸_US_美国 #64'
+  network: ws
+  port: 443
+  server: cold-dawn-9246.fly.dev
+  tls: true
+  type: vmess
+  uuid: ea4909ef-7ca6-4b46-bf2e-6c07896ef338
+  ws-opts:
+    headers:
+      Host: cold-dawn-9246.fly.dev
+    path: /ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本04
@@ -4990,18 +4990,17 @@ proxies:
   uuid: 6b38cbd9-c095-42f5-92c8-11f8a004afbb
 - alterId: 0
   cipher: auto
-  name: '13,16,25,28|github.com/freefq - 美国CloudFla... #11'
-  network: ws
-  port: '8880'
-  server: server13.beheshtbaneh.com
-  servername: ''
-  tls: false
+  name: '13,16,20,21,25,28|github.com/freefq - 韩国蘑菇主机BGP数... #1'
+  network: tcp
+  port: 10001
+  server: 103.214.68.57
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 0c0db4fe-6133-4837-9f57-0ce75fb59692
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  uuid: ebca5f68-bf59-4081-e658-f158839c2f5c
+  ws-headers:
+    Host: 103.214.68.57
+  ws-path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -5059,20 +5058,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '13,21,25|19|美国 CloudFlare节点 #10'
-  network: ws
-  port: '8880'
-  server: server6.beheshtbaneh.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c5626b16-4c57-4d7e-8668-6b1ecda5c8b5
-  ws-opts:
-    headers:
-      Host: server6.beheshtbaneh.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: 13,21,25|19,21|韩国·{TG：@ccbaohe}定时更新节点订阅
   network: ws
   port: 80
@@ -5087,7 +5072,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '13,21,25,28|美国 CloudFlare节点 #34'
+  name: '13,21,25,28|美国 CloudFlare节点 #35'
   network: ws
   port: '80'
   server: for-irancell.outline-vpn.cloud
@@ -5156,19 +5141,17 @@ proxies:
     path: /geg/45?ed=2048
 - alterId: 0
   cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 13,25,29|GR_speednode_0034
+  name: 13,25|19|乌克兰  7
   network: ws
   port: 8080
   server: 94.131.8.32
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 57e37a74-badc-4b71-87c7-5b9e20879b58
   ws-opts:
+    headers:
+      Host: ''
     path: /vmess
 - alterId: 0
   cipher: auto
@@ -5184,19 +5167,6 @@ proxies:
     headers:
       Host: ''
     path: /5gtocdocao.com
-- alterId: 0
-  cipher: auto
-  name: '13,14,21,25,28|美国 CloudFlare节点 #31'
-  network: ws
-  port: '8880'
-  server: server2.beheshtbaneh.com
-  tls: false
-  type: vmess
-  uuid: 8420ee38-4cf6-4d79-a9ec-2731207cf83a
-  ws-opts:
-    headers:
-      Host: server2.beheshtbaneh.com
-    path: /
 - alterId: 0
   cipher: auto
   name: '14|🇺🇸_US_美国 #53'
@@ -5221,7 +5191,7 @@ proxies:
   uuid: 636ba072-493e-4235-b7a8-822bd4e340d5
 - alterId: 0
   cipher: auto
-  name: '14,21,25,28|美国 CloudFlare节点 #30'
+  name: '14,21,25,28|美国 CloudFlare节点 #31'
   network: ws
   port: '8880'
   server: server12.beheshtbaneh.com
@@ -5408,19 +5378,6 @@ proxies:
   uuid: e2021c91-6e29-49d6-9641-14a8f2600e05
   ws-opts:
     path: /vmess
-- alterId: 0
-  cipher: auto
-  name: '14|🇺🇸_US_美国 #64'
-  network: ws
-  port: 443
-  server: cold-dawn-9246.fly.dev
-  tls: true
-  type: vmess
-  uuid: ea4909ef-7ca6-4b46-bf2e-6c07896ef338
-  ws-opts:
-    headers:
-      Host: cold-dawn-9246.fly.dev
-    path: /ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm
 - alterId: 64
   cipher: auto
   name: 15|电报群：t.me/vvkj11
@@ -6691,15 +6648,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 16,25,28|🇹🇼台湾 0.1X
-  network: tcp
-  port: '21353'
-  server: tw1-vds3.anyhk.co
-  tls: false
-  type: vmess
-  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
-- alterId: 0
-  cipher: auto
   name: '16,25,28|github.com/freefq - 美国Microsof... #2'
   network: ws
   port: '443'
@@ -6711,20 +6659,6 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '16,21,25,28|美国 CloudFlare节点 #28'
-  network: ws
-  port: '8880'
-  server: server26.beheshtbaneh.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
-  ws-opts:
-    headers:
-      Host: server26.beheshtbaneh.com
     path: /
 - alterId: 0
   cipher: auto
@@ -7118,20 +7052,22 @@ proxies:
   ws-headers:
     Host: my1.tooters.ir
   ws-path: /
-- alterId: 0
+- Inc. - 20: None
+  alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 20,26,29|CN_speednode_0026
-  password: 941634d941894a4a8c894824302af28c
-  port: 26045
-  server: gz.daxun.cyou
+  delay: 922
+  name: 20,26,29|US_speednode_0068
+  password: telegram-id-directvpn
+  port: 22222
+  server: 3.13.227.233
   skip-cert-verify: true
-  sni: www.gpt123.one
+  sni: trj.rollingnext.co.uk
   tfo: false
   tls: false
-  type: vmess
+  type: trojan
   udp: true
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+  uuid: 6f052e34-456e-47f1-84a4-d0aa3b9e8b39
 - alterId: 0
   cipher: auto
   name: 20|RELAY-104.24.208.37-003
@@ -9365,6 +9301,33 @@ proxies:
     path: /h6jr23x9h3lqiitg
 - alterId: 0
   cipher: auto
+  name: '21,28|美国 CloudFlare节点 #37'
+  network: ws
+  port: '8080'
+  server: 104.17.123.55
+  tls: false
+  type: vmess
+  uuid: 1d47288a-699d-45ca-b4f0-4e5b36940e6f
+  ws-opts:
+    headers:
+      Host: pq.kmoljklj.top
+    path: /qZTtpya?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 21,25|7|德国4
+  network: ws
+  port: '8080'
+  server: cf.openxai.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5e203864-6170-4056-fa90-b1fdbda3a3ca
+  ws-opts:
+    headers:
+      Host: eu4.openxai.link
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
   name: 21|🇸🇬 新加坡高速接入点-01
   network: ws
   port: '2052'
@@ -9791,11 +9754,13 @@ proxies:
   sni: alibaba-node.cn
   type: trojan
   udp: true
-- alterId: 0
+- Inc. - 2: None
+  alterId: 0
   cipher: auto
+  delay: 773
   h2-opts: {}
   http-opts: {}
-  name: 25,29|HK_speednode_0037
+  name: 25,29|HK_speednode_0023
   network: ws
   port: 30810
   server: 194.104.146.124
@@ -9809,22 +9774,15 @@ proxies:
     path: /ebffd932-3fb9-460e-dc98-700b592bfb9c
 - alterId: 0
   cipher: auto
-  country: 🇨🇾CY
-  delay: 1824
-  h2-opts: {}
-  http-opts: {}
-  name: 25,29|CY_speednode_0030
+  name: 25|6|-https://t.me/MrXbin-142
   network: ws
   port: 80
   server: 195.14.146.81
   servername: saman8888.servecounterstrike.com
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: f0028153-2a2d-45fe-b44e-a1a6dbd0c65e
   ws-opts:
-    headers:
-      HOST: saman8888.servecounterstrike.com
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
@@ -10025,6 +9983,20 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
+  name: '25,28|美国 CloudFlare节点 #33'
+  network: ws
+  port: '8080'
+  server: 104.21.83.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-opts:
+    headers:
+      Host: www.coldstone.club
+    path: /
+- alterId: 0
+  cipher: auto
   name: 25|21|NL_youtube@资源分享师_86
   network: ws
   port: 443
@@ -10200,16 +10172,12 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 25,29|PT_speednode_0042
+  name: 25|21|🇺🇸|US|美国|@wxgqlfx|63
   network: ws
   port: 2095
   server: 94.131.10.135
-  skip-cert-verify: true
-  tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: e2021c91-6e29-49d6-9641-14a8f2600e05
   ws-opts:
     path: /vmess
@@ -10346,6 +10314,19 @@ proxies:
   uuid: f1bf8962-3719-4c00-8495-c5483aea0ef0
 - alterId: 0
   cipher: auto
+  name: 25|21|LU_youtube@资源分享师_91
+  network: ws
+  port: 443
+  server: nngxxx.link
+  tls: true
+  type: vmess
+  uuid: 7fdc9ae0-4b55-4da2-f234-31079092b323
+  ws-opts:
+    headers:
+      Host: nngxxx.link
+    path: /
+- alterId: 0
+  cipher: auto
   name: 25|21|🇲🇽_MX_墨西哥
   network: ws
   port: 2053
@@ -10415,12 +10396,11 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 25,29|GR_speednode_0035
+  name: 25|21|美国【TG：@ccbaohe】定时更新节点订阅 13
   network: ws
   port: 8080
   server: 94.131.8.32
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 57e37a74-badc-4b71-87c7-5b9e20879b58
@@ -10438,17 +10418,6 @@ proxies:
   tls: false
   type: vmess
   uuid: c21b766e-fa13-496f-ccb1-f201e1f5154c
-- alterId: 0
-  cipher: auto
-  name: 25|21|FR_youtube@资源分享师_70
-  network: ws
-  port: 80
-  server: 146.59.204.6
-  tls: false
-  type: vmess
-  uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
-  ws-opts:
-    path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY
 - alterId: 0
   cipher: auto
   name: 25|21|NL_youtube@资源分享师_32
@@ -10478,7 +10447,7 @@ proxies:
     path: /v1893298323Py
 - alterId: 0
   cipher: auto
-  name: '25,28|美国 CloudFlare节点 #27'
+  name: '25,28|美国 CloudFlare节点 #28'
   network: ws
   port: 80
   server: us2e-20240116.v2freevpn.com
@@ -10655,7 +10624,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '25,26,27,28|美国 CloudFlare节点 #35'
+  name: '25,26,27,28|美国 CloudFlare节点 #36'
   network: ws
   port: '2052'
   server: 172.67.71.13
@@ -10760,7 +10729,7 @@ proxies:
     path: /
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 26,29|HK_speednode_0036
+  name: 26|🇭🇰 香港KT|@ripaojiedian
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -12279,14 +12248,12 @@ proxies:
   uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
 - alterId: 0
   cipher: auto
-  name: 28,29|CN_speednode_0028
+  name: 28|美国洛杉矶-中转|1x
   network: ws
-  port: 38888
+  port: '38888'
   server: aws.daxun.cyou
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
   ws-opts:
     headers:
@@ -12438,14 +12405,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28,29|CN_speednode_0027
+  name: 28|美国凤凰城-高速中转|1x
   network: ws
-  port: 38887
+  port: '38887'
   server: aws.daxun.cyou
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
   ws-opts:
     headers:
@@ -12489,14 +12454,12 @@ proxies:
   uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
 - alterId: 0
   cipher: auto
-  name: 28,29|CN_speednode_0022
+  name: 28|美国圣何塞-中转|1x
   network: ws
-  port: 38889
+  port: '38889'
   server: aws.daxun.cyou
-  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
   ws-opts:
     headers:
@@ -12712,53 +12675,56 @@ proxies:
     path: /
 - cipher: aes-256-cfb
   country: 🇦🇱AL
+  delay: 1254
   name: 29|AL_speednode_0001
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 31.171.153.182
   type: ss
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-cfb
+  name: 29|CN_speednode_0002
+  obfs: plain
+  obfs-param: e06b619859.microsoft.com
+  password: tsu9oi
+  port: 19546
+  protocol: auth_aes128_sha1
+  protocol-param: 19859:uzshFm
+  server: freeno1sg.beednsvip.top
+  type: ssr
+  udp: true
+- alterId: 0
+  cipher: auto
   name: 29|CN_speednode_0003
-  password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
-  port: 20105
-  server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0004
-  password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
-  port: 20109
-  server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0005
-  password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
-  port: 20201
-  server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0006
-  password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
-  port: 20107
-  server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0007
-  password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
-  port: 20210
-  server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0008
-  password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
-  port: 20205
-  server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0009
-  password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
-  port: 20117
-  server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  type: ss
+  network: ws
+  port: 20207
+  server: data-hk-v1.shwjfkw.cn
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-hk-v1.shwjfkw.cn
+    path: /debian
+- alterId: 0
+  cipher: auto
+  country: 🇨🇳CN
+  h2-opts: {}
+  http-opts: {}
+  name: 29|CN_speednode_0014
+  network: ws
+  port: 27109
+  server: rl1.269999.xyz
+  servername: j1.269999.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 460d53e3-3fa4-456a-83d1-d75d17d87c65
+  ws-opts:
+    headers:
+      HOST: j1.269999.xyz
+    path: /
 - alterId: 0
   cipher: auto
   country: 🇬🇧 GB
@@ -12768,7 +12734,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 29|GB_speednode_0032
+  name: 29|GB_speednode_0018
   network: http
   port: 48852
   server: 45.154.14.209
@@ -12779,22 +12745,24 @@ proxies:
   uuid: 557769ba-e085-49ef-8ac6-96cf3d1a9730
 - alterId: 0
   cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 29|GB_speednode_0033
-  network: http
-  port: 28514
-  server: 45.154.14.201
+  client-fingerprint: chrome
+  delay: 1345
+  h2-opts: {}
+  http-opts: {}
+  name: 29|GR_speednode_0020
+  network: ws
+  port: 2086
+  server: 94.131.8.32
   skip-cert-verify: true
+  tfo: false
   tls: false
   type: vmess
   udp: true
-  uuid: c119b176-7240-43f7-b26f-9b67d54e2b95
+  uuid: 57e37a74-badc-4b71-87c7-5b9e20879b58
+  ws-opts:
+    path: /vmess
 - cipher: aes-128-gcm
-  country: 🇭🇰HK
-  name: 29|HK_speednode_0038
+  name: 29|HK_speednode_0021
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -12804,82 +12772,636 @@ proxies:
   port: 443
   server: 1.65.139.54
   type: ss
-- cipher: aes-128-gcm
-  name: 29|HK_speednode_0039
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: true
-    path: /
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 47.243.196.229
-  type: ss
 - cipher: aes-256-cfb
-  country: 🇯🇵JP
-  name: 29|JP_speednode_0040
-  password: amazonskr05
-  port: 443
-  server: 13.231.164.174
-  type: ss
-- cipher: aes-256-cfb
-  name: 29|KR_speednode_0041
-  password: qwerREWQ@@
-  port: 57428
-  server: p229.panda004.net
-  type: ss
+  country: 🇭🇰 HK
+  delay: 353
+  name: 29|HK_speednode_0022
+  obfs: tls1.2_ticket_auth
+  password: iFqnzSscN
+  port: 8083
+  protocol: origin
+  server: 150.107.46.21
+  type: ssr
 - alterId: 0
   cipher: auto
-  delay: 2608
-  h2-opts: {}
-  http-opts: {}
-  name: 29|QA_speednode_0043
+  name: 29|JP_speednode_0024
   network: ws
-  port: 80
-  server: 82.148.98.42
+  port: 443
+  server: 31.184.207.5
   skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 9dca0609-a375-4cb4-9641-6246354b8da2
+  udp: true
+  uuid: b85520c4-e377-4806-bc12-5be674fc4061
   ws-opts:
     headers:
-      host: mehdi21.servecounterstrike.com
+      Host: yasdl900.redirectme.net
     path: /@forwardv2ray
+- cipher: chacha20-ietf-poly1305
+  name: 29|JP_speednode_0025
+  password: cdd1a06b-8b2f-4959-ae78-5aca43081198
+  port: 21853
+  server: jp.doushimeng.com
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 29|QA_speednode_0044
+  name: 29|KR_speednode_0026
   network: ws
   port: 80
-  server: 82.148.98.42
+  server: kr04.hajimihajimihajimi.online
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 9dca0609-a375-4cb4-9641-6246354b8da2
+  udp: true
+  uuid: f9d04a5f-9cda-4184-bb5d-f69f1909eff9
   ws-opts:
     headers:
-      Host: mehdi21.servecounterstrike.com
+      Host: kr04.hajimihajimihajimi.online
+    path: /
+- alterId: 0
+  cipher: none
+  name: 29|KR_speednode_0027
+  network: ws
+  port: 20326
+  server: chuncheonarm.yuwan.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3b338c13-f975-4e85-b1b5-6ff2fb0f14b3
+  ws-opts:
+    headers:
+      Host: youku.com
+    path: /
+- Inc. - 3: None
+  cipher: aes-256-cfb
+  name: 29|KR_speednode_0028
+  password: amazonskr05
+  port: 443
+  server: 43.201.110.52
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 29|LV_speednode_0029
+  network: ws
+  port: 443
+  server: 93.123.38.4
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 1bfa9c49-d143-4326-bbd4-0b5d9d763856
+  ws-opts:
+    headers:
+      Host: mom90.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|LV_speednode_0030
+  network: ws
+  port: 443
+  server: 93.123.38.4
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 630936c0-547a-4fe7-99ee-a43888d7932c
+  ws-opts:
+    headers:
+      Host: mom10.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|LV_speednode_0031
+  network: ws
+  port: 443
+  server: 93.123.38.4
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea
+  ws-opts:
+    headers:
+      Host: irsoft.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|LV_speednode_0032
+  network: ws
+  port: 443
+  server: 93.123.38.4
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 208bb4c5-e9d4-4b2e-b269-baaef130924f
+  ws-opts:
+    headers:
+      Host: kosar31.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|LV_speednode_0033
+  network: ws
+  port: 443
+  server: 93.123.38.4
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: b85520c4-e377-4806-bc12-5be674fc4061
+  ws-opts:
+    headers:
+      Host: yasdl900.redirectme.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|LV_speednode_0034
+  network: ws
+  port: 443
+  server: 93.123.38.4
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a09e13dc-cbbf-4585-b46b-2d86de0e9d3f
+  ws-opts:
+    headers:
+      Host: sahar2.serveminecraft.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|LV_speednode_0035
+  network: ws
+  port: 443
+  server: 93.123.38.4
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 6dfd58dd-e1fc-47cb-812a-aef46d72f62f
+  ws-opts:
+    headers:
+      Host: kosar35.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|RU_speednode_0036
+  network: ws
+  port: 80
+  server: 45.144.2.113
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f
+  ws-opts:
+    headers:
+      Host: 45.144.2.113
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 29|TH_speednode_0037
+  network: ws
+  port: 443
+  server: 5.252.26.4
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea
+  ws-opts:
+    headers:
+      Host: irsoft.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|TH_speednode_0038
+  network: ws
+  port: 443
+  server: 5.252.26.4
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: b85520c4-e377-4806-bc12-5be674fc4061
+  ws-opts:
+    headers:
+      Host: yasdl900.redirectme.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|TH_speednode_0039
+  network: ws
+  port: 443
+  server: 5.252.26.4
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: da48f11e-8ceb-4bd0-b841-1c4b24403412
+  ws-opts:
+    headers:
+      Host: mom7.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  country: 🇹🇭TH
+  delay: 1314
+  h2-opts: {}
+  http-opts: {}
+  name: 29|TH_speednode_0041
+  network: ws
+  port: 443
+  server: 5.252.26.6
+  servername: soft99.gotdns.ch
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ae5fa0e0-a56b-439d-9bd3-0546b50d3e18
+  ws-opts:
+    headers:
+      HOST: soft99.gotdns.ch
     path: /@forwardv2ray
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 29|SG_speednode_0045
-  password: kSPmvwdFzGMMW5pY
-  port: 9007
-  server: 103.172.116.94
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 29|TR_speednode_0046
+  country: 🇹🇷 TR
+  delay: 1797
+  name: 29|TR_speednode_0042
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.123.101.241
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0043
+  network: ws
+  port: 443
+  server: 79.133.108.5
+  skip-cert-verify: true
+  tls: true
+  type: vmess
   udp: true
-- cipher: aes-256-cfb
-  name: 29|TW_speednode_0047
-  password: qwerREWQ@@
-  port: 2003
-  server: e001.panda003.net
-  type: ss
+  uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6
+  ws-opts:
+    headers:
+      Host: sahand.serveminecraft.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0044
+  network: ws
+  port: 443
+  server: 79.133.108.5
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 6dfd58dd-e1fc-47cb-812a-aef46d72f62f
+  ws-opts:
+    headers:
+      Host: kosar35.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0045
+  network: ws
+  port: 443
+  server: 79.133.108.5
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d30e64a5-6539-4ce5-987a-717c3835669f
+  ws-opts:
+    headers:
+      Host: mom8.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0046
+  network: ws
+  port: 443
+  server: 79.133.108.13
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677
+  ws-opts:
+    headers:
+      Host: pendar.onthewifi.com
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0047
+  network: ws
+  port: 443
+  server: 79.133.108.13
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5efa4cc9-ad97-4f61-9b4f-40f9e91fb87b
+  ws-opts:
+    headers:
+      Host: kosar36.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0048
+  network: ws
+  port: 443
+  server: 79.133.108.13
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea
+  ws-opts:
+    headers:
+      Host: irsoft.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0049
+  network: ws
+  port: 443
+  server: 79.133.108.13
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 8ed466fb-1aba-4bde-90a6-8536817c2230
+  ws-opts:
+    headers:
+      Host: mom5.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0050
+  network: ws
+  port: 443
+  server: 79.133.108.13
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: b85520c4-e377-4806-bc12-5be674fc4061
+  ws-opts:
+    headers:
+      Host: yasdl900.redirectme.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0051
+  network: ws
+  port: 443
+  server: 79.133.108.9
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: ae5fa0e0-a56b-439d-9bd3-0546b50d3e18
+  ws-opts:
+    headers:
+      Host: soft99.gotdns.ch
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0052
+  network: ws
+  port: 443
+  server: 79.133.108.13
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a09e13dc-cbbf-4585-b46b-2d86de0e9d3f
+  ws-opts:
+    headers:
+      Host: sahar2.serveminecraft.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0053
+  network: ws
+  port: 443
+  server: 79.133.108.9
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 1bfa9c49-d143-4326-bbd4-0b5d9d763856
+  ws-opts:
+    headers:
+      Host: mom90.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0054
+  network: ws
+  port: 443
+  server: 79.133.108.5
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 29a47c42-6c3a-46d0-a184-2c1a6ea192ac
+  ws-opts:
+    headers:
+      Host: kosar37.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0055
+  network: ws
+  port: 443
+  server: 79.133.108.5
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 8ed466fb-1aba-4bde-90a6-8536817c2230
+  ws-opts:
+    headers:
+      Host: mom5.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0056
+  network: ws
+  port: 443
+  server: 79.133.108.5
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 6ae02e5a-b917-4a83-a0cc-a2493b62ab7c
+  ws-opts:
+    headers:
+      Host: sahar.onthewifi.com
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0057
+  network: ws
+  port: 443
+  server: 79.133.108.5
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a09e13dc-cbbf-4585-b46b-2d86de0e9d3f
+  ws-opts:
+    headers:
+      Host: sahar2.serveminecraft.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0058
+  network: ws
+  port: 443
+  server: 79.133.108.9
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea
+  ws-opts:
+    headers:
+      Host: irsoft.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0059
+  network: ws
+  port: 443
+  server: 79.133.108.13
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: da48f11e-8ceb-4bd0-b841-1c4b24403412
+  ws-opts:
+    headers:
+      Host: mom7.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0060
+  network: ws
+  port: 443
+  server: 79.133.108.10
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 630936c0-547a-4fe7-99ee-a43888d7932c
+  ws-opts:
+    headers:
+      Host: mom10.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0061
+  network: ws
+  port: 443
+  server: 79.133.108.5
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 1bfa9c49-d143-4326-bbd4-0b5d9d763856
+  ws-opts:
+    headers:
+      Host: mom90.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0062
+  network: ws
+  port: 443
+  server: 79.133.108.13
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 208bb4c5-e9d4-4b2e-b269-baaef130924f
+  ws-opts:
+    headers:
+      Host: kosar31.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0063
+  network: ws
+  port: 443
+  server: 79.133.108.9
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: b85520c4-e377-4806-bc12-5be674fc4061
+  ws-opts:
+    headers:
+      Host: yasdl900.redirectme.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0064
+  network: ws
+  port: 443
+  server: 79.133.108.13
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 6ae02e5a-b917-4a83-a0cc-a2493b62ab7c
+  ws-opts:
+    headers:
+      Host: sahar.onthewifi.com
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|UA_speednode_0065
+  network: ws
+  port: 443
+  server: 79.133.108.9
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 208bb4c5-e9d4-4b2e-b269-baaef130924f
+  ws-opts:
+    headers:
+      Host: kosar31.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 29|US_speednode_0067
+  network: ws
+  port: 9
+  server: zf-u.rcdn.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8c5c667f-8537-45b1-ac35-9c76ee9a4bbb
+  ws-opts:
+    headers:
+      Host: svideo.mfa.gov.cn
+    path: /masvod/public/2023/08/25/20230825_18a2a2ac897_r1_1200k.mp4
+- alterId: 0
+  cipher: auto
+  name: 29|US_speednode_0069
+  network: ws
+  port: 8880
+  server: 104.21.82.183
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 352ecc6f-21f1-4dc8-8177-4ebd52c55b12
+  ws-opts:
+    headers:
+      Host: server5.beheshtbaneh.com
+    path: /
