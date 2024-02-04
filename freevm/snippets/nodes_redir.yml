@@ -29,11 +29,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,11,13,14,21,25,28,30|🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚 #4'
+  name: '0,3,4,6,7,13,14,16,21,25,28,30|🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚 #4'
   network: ws
   port: '80'
   server: 104.17.25.1
-  servername: ''
   tls: false
   type: vmess
   uuid: 4e23bd4f-cc11-4ade-fbc1-fcaf245662bf
@@ -60,8 +59,8 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: auto
-  name: 1,25|1|_US_->_IR__1
+  cipher: chacha20-poly1305
+  name: 1,25|1,6|-https://t.me/MrXbin-65
   network: ws
   port: 8080
   server: www.crispyrainbow.biz
@@ -142,7 +141,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '7,13,14,16,20,21,25,28|🇨🇳_CN_中国->🇮🇳_IN_印度 #2'
+  name: '7,13,14,20,21,25,28|🇨🇳_CN_中国->🇮🇳_IN_印度 #2'
   network: tcp
   port: 30128
   server: 183.232.170.22
@@ -166,123 +165,6 @@ proxies:
     headers:
       Host: cache-hk-1.cn-db.top
     path: /db00
-- alterId: 0
-  cipher: auto
-  name: 14,28|哈萨克斯坦 01 | ws
-  network: ws
-  port: '20018'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 14,28|美国 02 | ws
-  network: ws
-  port: '2004'
-  server: 223.113.54.131
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 14,28|斯洛伐克 01 | ws
-  network: ws
-  port: '20026'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 14,28|白俄罗斯 01  | ws
-  network: ws
-  port: '20019'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 14,28|土耳其 01 | ws
-  network: ws
-  port: '2000'
-  server: 223.113.54.131
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 14,28|波黑 01 | ws
-  network: ws
-  port: '20014'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 14,28|爱沙尼亚 01 | ws
-  network: ws
-  port: '20021'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 14,28|伊拉克 01 | ws
-  network: ws
-  port: '20011'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 14,28|乌克兰 01 | ws
-  network: ws
-  port: '20005'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
 - alterId: 0
   cipher: auto
   name: 24|_SG_->_US_
@@ -349,43 +231,17 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 25|29|🇺🇸_US_美国->🇳🇱_NL_荷兰_由快嘴科技提供：...
+  name: 28|美国凤凰城-高速中转|1x
   network: ws
-  port: 2096
-  server: 104.25.254.162
-  tls: true
-  type: vmess
-  uuid: 12009e57-6fd8-46d6-94af-539514a7e7c7
-  ws-opts:
-    headers:
-      Host: s1.shargh.shop
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 25|29|🇺🇸_US_美国->🇳🇱_NL_荷兰_2_29
-  network: ws
-  port: 2096
-  server: 162.159.129.87
-  tls: true
-  type: vmess
-  uuid: 12009e57-6fd8-46d6-94af-539514a7e7c7
-  ws-opts:
-    headers:
-      Host: s1.shargh.shop
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 25|29|🇺🇸_US_美国->🇳🇱_NL_荷兰_3_3由快嘴科技...
-  network: ws
-  port: 2095
-  server: 172.67.185.208
+  port: '38887'
+  server: aws.daxun.cyou
   tls: false
   type: vmess
-  uuid: 3c1cca21-1373-4707-a575-195e9da0fb71
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
   ws-opts:
     headers:
-      Host: ebiii.fozool76.lol
-    path: /
+      Host: www.baidu.com
+    path: /daxun/us3
 - alterId: 0
   cipher: auto
   name: 28|美国洛杉矶-中转|1x
@@ -399,19 +255,6 @@ proxies:
     headers:
       Host: www.baidu.com
     path: /daxun/us1
-- alterId: 0
-  cipher: auto
-  name: 28|美国凤凰城-高速中转|1x
-  network: ws
-  port: '38887'
-  server: aws.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-  ws-opts:
-    headers:
-      Host: www.baidu.com
-    path: /daxun/us3
 - alterId: 0
   cipher: auto
   name: 28|美国圣何塞-中转|1x
