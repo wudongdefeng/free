@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,11,21,25,28,30|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #8'
+  name: '0,3,4,6,21,25,28,30|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #8'
   network: ws
   port: '8080'
   server: www.crispyrainbow.biz
@@ -60,8 +60,8 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: chacha20-poly1305
-  name: 1,25|1,6|-https://t.me/MrXbin-37
+  cipher: auto
+  name: 1,11,25|1|_US_->_IR__1
   network: ws
   port: 8080
   server: www.crispyrainbow.biz
@@ -100,7 +100,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 1,25|1|_US_->_IR__1
+  name: 1,25|1|_US_->_IR__2
   network: ws
   port: 8080
   server: www.darkroom.lol
@@ -142,9 +142,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '6,14,21,25,28|🇨🇳_CN_中国->🇮🇶_IQ_伊拉克 #2'
+  name: 6,14,21,25,28|伊拉克 01 | ws
   network: ws
-  port: 20011
+  port: '20011'
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
   tls: false
   type: vmess
@@ -155,7 +155,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '6,7,13,14,16,20,21,25,28|🇮🇳 _CN_中国->🇮🇳_IN_印度 #1'
+  name: 6,7,13,14,20,21,25,28|github.com/freefq - 广东省佛山市移动 3
   network: tcp
   port: '30128'
   server: 183.232.170.22
@@ -194,9 +194,9 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: '14,25,28|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
+  name: 14,25,28|哈萨克斯坦 01 | ws
   network: ws
-  port: 20018
+  port: '20018'
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
   tls: false
   type: vmess
@@ -207,9 +207,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '14,25,28|🇨🇳_CN_中国->🇺🇸_US_美国 #5'
+  name: 14,25,28|美国 02 | ws
   network: ws
-  port: 2004
+  port: '2004'
   server: 223.113.54.131
   tls: false
   type: vmess
@@ -246,9 +246,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '14,25,28|🇨🇳_CN_中国->🇹🇷_TR_土耳其 #1'
+  name: 14,25,28|土耳其 01 | ws
   network: ws
-  port: 2000
+  port: '2000'
   server: 223.113.54.131
   tls: false
   type: vmess
@@ -349,28 +349,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 25|1|_CN_->_IQ_
-  network: ws
-  port: 20011
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 25|1|_CN_->_UA_
-  network: ws
-  port: 20005
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
   name: 25|29|🇺🇸_US_美国->🇳🇱_NL_荷兰_由快嘴科技提供：...
   network: ws
   port: 2096
@@ -397,21 +375,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28,29|CN_speednode_0027
-  network: ws
-  port: 38887
-  server: aws.daxun.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-  ws-opts:
-    headers:
-      Host: www.baidu.com
-    path: /daxun/us3
-- alterId: 0
-  cipher: auto
   name: 28,29|CN_speednode_0028
   network: ws
   port: 38888
@@ -425,3 +388,18 @@ proxies:
     headers:
       Host: www.baidu.com
     path: /daxun/us1
+- alterId: 0
+  cipher: auto
+  name: 28,29|CN_speednode_0027
+  network: ws
+  port: 38887
+  server: aws.daxun.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /daxun/us3

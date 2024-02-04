@@ -69,7 +69,17 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: '11,13,16,25,28|github.com/freefq - 台湾省晟崴科技股份有... #1'
+  name: 11,25|26|baipaovpn台湾省新竹市
+  network: tcp
+  port: '2024'
+  server: 36.226.153.203
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4c698ff1-ab96-4ce3-8c3a-e23ced87b441
+- alterId: 0
+  cipher: auto
+  name: 13,25,28|台湾省 晟崴科技股份有限公司
   network: ws
   port: '80'
   server: 103.118.29.208
@@ -83,7 +93,7 @@ proxies:
     path: /5gtocdocao.com
 - alterId: 0
   cipher: auto
-  name: 20,21,25,27|台湾|@ripaojiedian
+  name: '20,21,25,27,28|台湾|@ripaojiedian #1'
   network: tcp
   port: '12002'
   server: 118.167.66.198
@@ -110,11 +120,10 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20,21,25|19|台湾省中华电信(HiNet)数据中心 1
+  name: 20,21|🇨🇳 台湾省中华电信(HiNet)数据中心 1
   network: tcp
-  port: 12002
+  port: '12002'
   server: nb22.ntbq.dynu.net
-  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -124,11 +133,10 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20,21,25|19|台湾省新竹市中华电信 19
+  name: 20,21|🇨🇳 台湾省新竹市中华电信 19
   network: tcp
-  port: 2024
+  port: '2024'
   server: b23.ntbq.dynu.net
-  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -152,37 +160,33 @@ proxies:
     path: /ebffd932-3fb9-460e-dc98-700b592bfb9c
 - alterId: 0
   cipher: auto
-  name: 25|26|baipaovpn台湾省新竹市
+  name: 25|26|baipaovpn台湾省
   network: tcp
-  port: '2024'
-  server: 36.226.153.203
+  port: '4443'
+  server: 118.167.69.92
   servername: ''
   tls: false
   type: vmess
   uuid: 4c698ff1-ab96-4ce3-8c3a-e23ced87b441
 - alterId: 0
   cipher: auto
-  name: 25|26|baipaovpn台湾省
-  network: ws
-  port: '80'
-  server: 103.118.29.208
+  name: '25|26|baipaovpn台湾省 #1'
+  network: tcp
+  port: '12002'
+  server: 118.167.72.11
   servername: ''
   tls: false
   type: vmess
-  uuid: eb9e8a52-0fec-4a10-8d16-af3b32874933
-  ws-opts:
-    headers:
-      Host: PR1.5GTOCDOCAO.COM
-    path: /5gtocdocao.com
+  uuid: 4c698ff1-ab96-4ce3-8c3a-e23ced87b441
 - alterId: 0
   cipher: auto
-  name: 28|台湾hinet01|优选原生IP|1x
+  name: 28|台湾 04 | tcp
   network: tcp
-  port: '38015'
-  server: gz.daxun.cyou
+  port: '80'
+  server: ffc3d492-fc46-ded9-a552-d5cb60c4d076.neo-awaken.uk
   tls: false
   type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
 - alterId: 0
   cipher: auto
   name: 28|台湾 03 | tcp
@@ -192,19 +196,6 @@ proxies:
   tls: false
   type: vmess
   uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-- alterId: 0
-  cipher: auto
-  name: 28|台湾 02 | ws
-  network: ws
-  port: '80'
-  server: 1b314bb0-24cd-7d15-ee61-f98c4385068f.neo-awaken.uk
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
 - alterId: 0
   cipher: auto
   name: 28|台湾 01 | ws
@@ -220,6 +211,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 28|台湾hinet01|优选原生IP|1x
+  network: tcp
+  port: '38015'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- alterId: 0
+  cipher: auto
   name: 28|Scloud台湾03—原生IP|0.5x
   network: tcp
   port: '26041'
@@ -229,23 +229,26 @@ proxies:
   uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
 - alterId: 0
   cipher: auto
-  name: 28|台湾2|@ripaojiedian
-  network: tcp
-  port: '6122'
-  server: 36.233.233.65
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 12c3ce3a-f05c-4e0c-9eec-00a4f70affd4
-- alterId: 0
-  cipher: auto
-  name: 28|台湾 04 | tcp
-  network: tcp
+  name: 28|台湾 02 | ws
+  network: ws
   port: '80'
-  server: ffc3d492-fc46-ded9-a552-d5cb60c4d076.neo-awaken.uk
+  server: 1b314bb0-24cd-7d15-ee61-f98c4385068f.neo-awaken.uk
   tls: false
   type: vmess
   uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇹🇼台湾 0.1X
+  network: tcp
+  port: '21353'
+  server: tw1-vds3.anyhk.co
+  tls: false
+  type: vmess
+  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
 - cipher: aes-256-cfb
   name: 29|TW_speednode_0047
   password: qwerREWQ@@
