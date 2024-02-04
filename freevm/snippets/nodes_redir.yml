@@ -15,7 +15,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,13,16,21,25,28,30|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #9'
+  name: '0,3,4,6,11,13,16,21,25,28,30|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #9'
   network: ws
   port: '8080'
   server: www.darkroom.lol
@@ -29,7 +29,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,11,13,14,21,25,28,30|🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚 #4'
+  name: '0,3,4,6,7,13,14,21,25,28,30|🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚 #4'
   network: ws
   port: '80'
   server: 104.17.25.1
@@ -98,16 +98,19 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: auto
-  name: 1,11,25|1|_US_->_IR__2
+  cipher: chacha20-poly1305
+  name: '1,11,25,28|美国 CloudFlare节点 #34'
   network: ws
-  port: 8080
+  port: '8080'
   server: www.darkroom.lol
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - name: 1|_CN_->_AT_
   network: tcp
@@ -150,7 +153,7 @@ proxies:
   uuid: 9f41898b-e80d-418d-9ea8-5c51a914722a
 - alterId: 0
   cipher: auto
-  name: '7,14,25,28|🇪🇸_ES_西班牙->🇭🇰_HK_香港 #2'
+  name: '7,11,14,25,28|西班牙 V2CROSS.COM #1'
   network: ws
   port: 8002
   server: 185.214.103.249
