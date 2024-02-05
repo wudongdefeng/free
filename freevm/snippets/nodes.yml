@@ -154,7 +154,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,11,13,14,21,25,28,30|🇺🇸 _US_美国 #84'
+  name: '0,3,4,6,7,13,14,21,25,28,30|🇺🇸 _US_美国 #84'
   network: ws
   port: '8080'
   server: www.blueberrywindow.online
@@ -224,7 +224,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,11,14,21,25,28,30|🇭🇰 _ES_西班牙->🇭🇰_HK_香港 #4'
+  name: '0,3,4,6,7,14,21,25,28,30|🇭🇰 _ES_西班牙->🇭🇰_HK_香港 #4'
   network: ws
   port: '8002'
   server: 185.214.103.249
@@ -313,7 +313,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 1,25|1,6|-https://t.me/MrXbin-17
+  name: 1,25|1|_US__2
   network: ws
   port: 8080
   server: 172.67.166.190
@@ -361,7 +361,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,11,25|1|_US__5
+  name: '1,25,28|美国 CloudFlare节点 #24'
   network: ws
   port: 8880
   server: server26.beheshtbaneh.com
@@ -444,20 +444,23 @@ proxies:
   ws-opts:
     path: /
 - alterId: 0
-  cipher: auto
-  name: 1,25|1|_US__12
+  cipher: chacha20-poly1305
+  name: '1,25|1,21|美国 CloudFlare节点 #9'
   network: ws
-  port: 8080
+  port: '8080'
   server: www.blueberrywindow.online
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: chacha20-poly1305
-  name: 1,25,29|US_speednode_0028
+  name: 1,11,25,29|US_speednode_0028
   network: ws
   port: 8080
   server: www.darkroom.lol
@@ -481,8 +484,8 @@ proxies:
   ws-opts:
     path: /
 - alterId: 0
-  cipher: chacha20-poly1305
-  name: 1,25|1,6|-https://t.me/MrXbin-19
+  cipher: auto
+  name: 1,25|1|_US__15
   network: ws
   port: 8080
   server: www.crispyrainbow.biz
@@ -616,9 +619,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '8,9,25,28|🇬🇧 United Kingdom 01 @nodpai #2'
+  name: 8,9,25,28|🇬🇧GB-172.99.190.109-2231
   network: ws
-  port: '443'
+  port: 443
   server: 172.99.190.109
   servername: ''
   skip-cert-verify: true
@@ -1088,7 +1091,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10,17,18,28|TG频道:@hkaa0|德国 #1'
+  name: 10,17,18,28|🇩🇪DE-217.160.45.31-0415
   network: ws
   port: 8880
   server: 217.160.45.31
@@ -1098,6 +1101,8 @@ proxies:
   type: vmess
   uuid: 4e186678-fcca-4325-e4bc-b2916bdf6708
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -2685,7 +2690,7 @@ proxies:
   uuid: 1773b226-0bdb-43c5-87d8-270d26211dda
 - alterId: 0
   cipher: auto
-  name: 10|美国_121320056
+  name: 10,25|21|🔒 VM-TCP-NA 🇺🇸 US-38.75.137...
   network: tcp
   port: '22324'
   server: 38.75.137.27
@@ -3003,7 +3008,7 @@ proxies:
   uuid: 10877446-f9aa-4b84-ec43-a688521815dd
 - alterId: 0
   cipher: auto
-  name: 10,25|21|🔒 VM-TCP-NA 🇺🇸 US-104.237.1...
+  name: 10|美国_121320123
   network: tcp
   port: '14432'
   server: 104.237.128.72
@@ -4502,35 +4507,109 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  name: '11,25,28|美国 CloudFlare节点 #19'
+  name: 11,25|21,29|🇺🇸_US_美国->🇩🇪_DE_德国_2_8
   network: ws
   port: 80
-  server: 104.17.25.1
+  server: 104.22.51.162
   servername: ''
   tls: false
   type: vmess
-  uuid: 113a74cc-f13b-48ec-bbb2-2bbab77a2f35
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
-      Host: kr1.ljyyds.top
+      Host: my1.tooters.ir
     path: /
 - alterId: 0
   cipher: auto
-  name: 11,25|21|Vls-US【TG：@ccbaohe】定时更新节点订阅
-  network: ws
-  port: 443
-  server: government.se
-  servername: ''
+  name: 11|韩国 蘑菇主机BGP数据中心
+  network: tcp
+  port: 10001
+  server: 103.214.68.57
   tls: true
   type: vmess
-  uuid: 8b3c9d7b-2099-46d4-aa98-d237068ff38a
-  ws-opts:
-    headers:
-      Host: tt04.77678h.tk
-    path: /vmess?ed=2048
+  uuid: ebca5f68-bf59-4081-e658-f158839c2f5c
 - alterId: 0
   cipher: auto
-  name: '11,28|美国 CloudFlare节点 #21'
+  name: 11,25|21|🔒 VM-WS-NA 🏴‍☠️ NA-104.21.8...
+  network: ws
+  port: '8880'
+  server: 104.21.82.183
+  tls: false
+  type: vmess
+  uuid: 7ee41eb4-0594-4e2d-92a7-5dd3ee513692
+  ws-opts:
+    headers:
+      Host: server20.beheshtbaneh.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 11,23,25|22|【BGP】俄罗斯 04 | 1x RU
+  network: tcp
+  port: '31851'
+  server: 4t1r5u04.m1k2s.xyz
+  servername: ru04.lovemc.xyz
+  tls: true
+  type: vmess
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
+- alterId: 0
+  cipher: auto
+  name: '11,16,20,21,25,28|github.com/freefq - 台湾省中华电信(Hi... #1'
+  network: tcp
+  port: 2024
+  server: 118.167.68.146
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4c698ff1-ab96-4ce3-8c3a-e23ced87b441
+  ws-headers:
+    Host: 118.167.68.146
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '11,13,16,21,25,28|github.com/freefq - 美国CloudFla... #8'
+  network: ws
+  port: 8880
+  server: server33.beheshtbaneh.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0873fffc-414f-4140-a155-672129fd9a1d
+  ws-opts:
+    headers:
+      Host: server33.beheshtbaneh.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '11,13,16,21,25,28|github.com/freefq - 广东省移动 10 #1'
+  network: ws
+  port: '20401'
+  server: data-us-v1.shwjfkw.cn
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-us-v1.shwjfkw.cn
+    path: /debian
+- alterId: 0
+  cipher: auto
+  name: '11,16,25,28|github.com/freefq - 美国CloudFla... #12'
+  network: ws
+  port: 8880
+  server: server31.beheshtbaneh.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
+  ws-opts:
+    headers:
+      Host: server31.beheshtbaneh.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '11,28|美国 CloudFlare节点 #25'
   network: ws
   port: 2052
   server: 104.19.23.194
@@ -4543,33 +4622,84 @@ proxies:
     path: /video/QXjZG5u4F2
 - alterId: 0
   cipher: auto
-  name: 11,29|US_speednode_0031
-  network: ws
-  port: 8080
-  server: 104.21.83.10
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    headers:
-      Host: www.coldstone.club
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 11,25|7|德国2
+  name: '11|美国 CloudFlare节点 #5'
   network: ws
   port: '8080'
-  server: cf.openxai.link
+  server: 162.159.137.28
   servername: ''
   tls: false
   type: vmess
-  uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c
+  uuid: 5e203864-6170-4056-fa90-b1fdbda3a3ca
   ws-opts:
     headers:
-      Host: eu2.openxai.link
+      Host: eu4.openxai.link
     path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '11,21,25,26,27,28|美国2|@ripaojiedian #1'
+  network: ws
+  port: '2052'
+  server: cfcdn1.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: ce1b46f7-fd89-4646-a968-206d65245aba
+  ws-opts:
+    headers:
+      Host: us3AJ8biuQx.fzbqfrse.xyz
+    path: /video/QXjZG5u4F2
+- alterId: 0
+  cipher: auto
+  name: 11,25|6|-https://t.me/MrXbin-85
+  network: tcp
+  port: 80
+  server: 193.104.57.136
+  tls: true
+  type: vmess
+  uuid: 892e4ff3-f8bb-42ac-9bd5-e103f235fc78
+- alterId: 0
+  cipher: auto
+  name: 11,25|21|[宇航员] 日本 80免流 02
+  network: ws
+  port: '80'
+  server: jpcd07-4c4e-9945-219dfebd1776.xn--jsrz0o258a.online
+  tls: false
+  type: vmess
+  uuid: aaf1e0a7-5616-4e67-bb4b-c706b8a32b01
+  ws-opts:
+    headers:
+      Host: bilibili.com
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 11,25|21|🇺🇸|US|美国|@wxgqlfx|26
+  network: ws
+  port: 80
+  server: 18arcims.ir
+  tls: false
+  type: vmess
+  uuid: 6101f6c5-86a2-46d1-a0b0-3dafdf2a8535
+  ws-opts:
+    headers:
+      Host: dk1.xv2ray.net
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: '11,13,16,21,25,28|github.com/freefq - 美国CloudFla... #9'
+  network: ws
+  port: '2052'
+  server: 104.17.19.122
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ce1b46f7-fd89-4646-a968-206d65245aba
+  ws-opts:
+    headers:
+      Host: us3AJ8biuQx.fzbqfrse.xyz
+    path: /video/QXjZG5u4F2
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本04
@@ -4579,7 +4709,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本05
@@ -4589,7 +4719,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本06
@@ -4599,7 +4729,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇸🇬新加坡04
@@ -4609,7 +4739,7 @@ proxies:
   servername: sg04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇸🇬新加坡05
@@ -4619,7 +4749,7 @@ proxies:
   servername: sg05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇸🇬新加坡06
@@ -4629,7 +4759,7 @@ proxies:
   servername: sg06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇺🇸美国04
@@ -4639,7 +4769,7 @@ proxies:
   servername: us04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇺🇸美国05
@@ -4649,7 +4779,7 @@ proxies:
   servername: us05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇺🇸美国06
@@ -4659,7 +4789,7 @@ proxies:
   servername: us06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇷🇺俄罗斯04
@@ -4669,7 +4799,7 @@ proxies:
   servername: ru04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇲🇾马来西亚04
@@ -4679,7 +4809,7 @@ proxies:
   servername: my04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇹🇭泰国04
@@ -4689,7 +4819,7 @@ proxies:
   servername: th04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇵🇭菲律宾04
@@ -4699,7 +4829,7 @@ proxies:
   servername: ph04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇰🇷韩国04
@@ -4709,7 +4839,7 @@ proxies:
   servername: kr04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇮🇳印度04
@@ -4719,7 +4849,7 @@ proxies:
   servername: in04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇧🇷巴西04
@@ -4729,7 +4859,7 @@ proxies:
   servername: br04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇻🇳越南04
@@ -4739,7 +4869,7 @@ proxies:
   servername: vn04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇭🇺匈牙利04
@@ -4749,7 +4879,7 @@ proxies:
   servername: hu04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇦🇷阿根廷04
@@ -4759,7 +4889,7 @@ proxies:
   servername: ar04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇹🇷土耳其04
@@ -4769,7 +4899,7 @@ proxies:
   servername: tr04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇺🇦乌克兰04
@@ -4779,7 +4909,7 @@ proxies:
   servername: ua04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇦🇺澳大利亚04
@@ -4789,7 +4919,7 @@ proxies:
   servername: au04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇬🇧英国04
@@ -4799,7 +4929,7 @@ proxies:
   servername: uk04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇩🇪德国04
@@ -4809,7 +4939,7 @@ proxies:
   servername: de04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇵🇹葡萄牙04
@@ -4819,7 +4949,7 @@ proxies:
   servername: pt04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇨🇦加拿大04
@@ -4829,7 +4959,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇪🇸西班牙04
@@ -4839,21 +4969,7 @@ proxies:
   servername: es04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 5d7484c4-d709-404c-ab16-667914c0d0c8
-- alterId: 0
-  cipher: auto
-  name: '13,16,21,25,28|github.com/freefq - 美国CloudFla... #10'
-  network: ws
-  port: 8880
-  server: server33.beheshtbaneh.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0873fffc-414f-4140-a155-672129fd9a1d
-  ws-opts:
-    headers:
-      Host: server33.beheshtbaneh.com
-    path: /
+  uuid: 4abe0004-7317-4887-87fb-09da4dc7eb91
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -4907,9 +5023,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '13,21,25,28|github.com/freefq - 美国CloudFla... #12'
+  name: 13,21,25,28|🏁RELAY-104.21.82.183-0155
   network: ws
-  port: '8880'
+  port: 8880
   server: 104.21.82.183
   servername: ''
   tls: false
@@ -4921,7 +5037,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '13,16,21,25,28|美国 Fastly全球Anycast节点 #2'
+  name: '13,16,21,25,28|github.com/freefq - 美国Fastly全球... #1'
   network: ws
   port: '443'
   server: gov.uk
@@ -4949,21 +5065,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '13,16,21,25,28|github.com/freefq - 美国CloudFla... #9'
-  network: ws
-  port: '2052'
-  server: 104.17.19.122
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ce1b46f7-fd89-4646-a968-206d65245aba
-  ws-opts:
-    headers:
-      Host: us3AJ8biuQx.fzbqfrse.xyz
-    path: /video/QXjZG5u4F2
-- alterId: 0
-  cipher: auto
-  name: '13,16,21,25,28|github.com/freefq - 美国CloudFla... #7'
+  name: '13,16,21,25,28|github.com/freefq - 美国CloudFla... #11'
   network: ws
   port: '80'
   server: 104.20.231.30
@@ -4976,7 +5078,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 13,21,25,28|github.com/freefq - 俄罗斯  5
+  name: 13,21,25|19,21|US_youtube@资源分享师_20
   network: ws
   port: 443
   server: 92.38.168.5
@@ -4987,20 +5089,6 @@ proxies:
     headers:
       Host: kosar37.sytes.net
     path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: 13,16,21,25,28|github.com/freefq - 广东省移动 9
-  network: ws
-  port: '20401'
-  server: data-us-v1.shwjfkw.cn
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-us-v1.shwjfkw.cn
-    path: /debian
 - alterId: 64
   cipher: auto
   name: 15|电报群：t.me/vvkj11
@@ -6206,21 +6294,7 @@ proxies:
     path: /path/1693992821776
 - alterId: 0
   cipher: auto
-  name: 16,20,21,25,28|台湾省 中华电信(HiNet)数据中心
-  network: tcp
-  port: 2024
-  server: 118.167.68.146
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4c698ff1-ab96-4ce3-8c3a-e23ced87b441
-  ws-headers:
-    Host: 118.167.68.146
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 16,25,28|🇰🇷KR-54.180.160.243-4541
+  name: '16,25,28|github.com/freefq - 韩国首尔Amazon... #1'
   network: ws
   port: 80
   server: kr04.hajimihajimihajimi.online
@@ -6234,21 +6308,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 16,25,28|🏁RELAY-172.67.161.114-0084
-  network: ws
-  port: 8880
-  server: server31.beheshtbaneh.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
-  ws-opts:
-    headers:
-      Host: server31.beheshtbaneh.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '16|github.com/freefq - 美国CloudFla... #6'
+  name: '16,25,28|github.com/freefq - 美国CloudFla... #7'
   network: ws
   port: '443'
   server: 1208.ssfree.ru
@@ -6308,7 +6368,7 @@ proxies:
     path: /takeshi.wiki
 - alterId: 64
   cipher: auto
-  name: '17,28|TG频道:@hkaa0|美国 #3'
+  name: '17,28|TG频道:@hkaa0|美国 #5'
   network: ws
   port: 30000
   server: 45.58.153.24
@@ -6321,7 +6381,7 @@ proxies:
     path: /path/1702392255355
 - alterId: 0
   cipher: auto
-  name: '17,28|TG频道:@hkaa0|美国 #5'
+  name: '17,28|TG频道:@hkaa0|美国 #3'
   network: ws
   port: 8880
   server: a3.bcbot.in
@@ -9841,7 +9901,7 @@ proxies:
     path: /look
 - alterId: 64
   cipher: auto
-  name: '21,28|未命名 #6'
+  name: '21,28|未命名 #7'
   network: ws
   port: 80
   server: 159.223.94.156
@@ -9867,24 +9927,7 @@ proxies:
     path: /h6jr23x9h3lqiitg
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '21,25,26,27,28|美国2|@ripaojiedian #1'
-  network: ws
-  port: '2052'
-  server: cfcdn1.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: ce1b46f7-fd89-4646-a968-206d65245aba
-  ws-opts:
-    headers:
-      Host: us3AJ8biuQx.fzbqfrse.xyz
-    path: /video/QXjZG5u4F2
-- alterId: 0
-  cipher: auto
-  name: 21,25|28|🇺🇸_US_美国->🇩🇪_DE_德国_3_由快嘴科技提...
+  name: 21,25|29|🇺🇸_US_美国->🇩🇪_DE_德国_3_由快嘴科技提...
   network: ws
   port: 80
   server: 104.24.208.37
@@ -9917,7 +9960,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】日本 05  | 1x JP
@@ -9927,7 +9970,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】日本 06  | 1x JP
@@ -9937,7 +9980,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】新加坡 04 | 1x SG
@@ -9947,7 +9990,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】新加坡 05 | 1x SG
@@ -9957,7 +10000,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】新加坡 06 | 1x SG
@@ -9967,7 +10010,7 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】美国 04 | 1x US
@@ -9977,7 +10020,7 @@ proxies:
   servername: us04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】美国 05 | 1x US
@@ -9987,7 +10030,7 @@ proxies:
   servername: us05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】美国 06 | 1x US
@@ -9997,7 +10040,7 @@ proxies:
   servername: us06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】韩国 02 | 1x KR
@@ -10007,7 +10050,7 @@ proxies:
   servername: kr04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】菲律宾 04 | 1x PH
@@ -10017,17 +10060,7 @@ proxies:
   servername: ph04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
-- alterId: 0
-  cipher: auto
-  name: 23,25|22|【BGP】俄罗斯 04 | 1x RU
-  network: tcp
-  port: '31851'
-  server: 4t1r5u04.m1k2s.xyz
-  servername: ru04.lovemc.xyz
-  tls: true
-  type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】马来西亚 04 | 1x MY
@@ -10037,7 +10070,7 @@ proxies:
   servername: my04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】泰国 04 | 1x TH
@@ -10047,7 +10080,7 @@ proxies:
   servername: th04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】阿根廷 04 | 1x AR
@@ -10057,7 +10090,7 @@ proxies:
   servername: ar04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】匈牙利 04 | 1x HU
@@ -10067,7 +10100,7 @@ proxies:
   servername: hu04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】土耳其 04 | 1x TR
@@ -10077,7 +10110,7 @@ proxies:
   servername: tr04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】乌克兰 04 | 1x UA
@@ -10087,7 +10120,7 @@ proxies:
   servername: ua04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】越南 04 | 1x VN
@@ -10097,7 +10130,7 @@ proxies:
   servername: vn04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】巴西 04 | 1x BR
@@ -10107,7 +10140,7 @@ proxies:
   servername: br04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】印度 04 | 1x IN
@@ -10117,7 +10150,7 @@ proxies:
   servername: in04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】澳大利亚 04 | 1x AU
@@ -10127,7 +10160,7 @@ proxies:
   servername: au04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】英国 04 | 1x UK
@@ -10137,7 +10170,7 @@ proxies:
   servername: uk04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】德国 04 | 1x AU
@@ -10147,7 +10180,7 @@ proxies:
   servername: de04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】葡萄牙 04 | 1x PT
@@ -10157,7 +10190,7 @@ proxies:
   servername: pt04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】加拿大 02 | 1x CA
@@ -10167,7 +10200,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】西班牙 02 | 1x ES
@@ -10177,7 +10210,7 @@ proxies:
   servername: es04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18753695-3a96-4711-b0d7-107f7bdab488
+  uuid: b8116701-bd23-4f87-8d76-06a30f9ae5d5
 - alterId: 0
   cipher: auto
   name: '24|_US__1 #1'
@@ -10295,7 +10328,39 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 25|6|-https://t.me/MrXbin-72
+  name: 25|6|-https://t.me/MrXbin-23
+  network: ws
+  port: 443
+  server: 93.123.11.11
+  tls: true
+  type: vmess
+  uuid: b85520c4-e377-4806-bc12-5be674fc4061
+  ws-opts:
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 25|6|-https://t.me/MrXbin-86
+  network: tcp
+  port: 2024
+  server: b23.ntbq.dynu.net
+  tls: false
+  type: vmess
+  uuid: 08ee510e-68e6-4a71-8d3a-1c576ffa3cac
+- alterId: 0
+  cipher: auto
+  name: 25|6|-https://t.me/MrXbin-89
+  network: ws
+  port: 8080
+  server: cf.openxai.link
+  servername: eu1.openxai.link
+  tls: false
+  type: vmess
+  uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194
+  ws-opts:
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 25|6|-https://t.me/MrXbin-91
   network: ws
   port: 80
   server: cname.volcengine.eu.org
@@ -10305,18 +10370,6 @@ proxies:
   uuid: ebc8ef6e-961d-4315-9258-46fb81605bd7
   ws-opts:
     path: /centos/7.9.2009/isos/x86_64/CentOS-7-x86_64-Minimal-2009.iso
-- alterId: 0
-  cipher: auto
-  name: 25|6|-https://t.me/MrXbin-74
-  network: ws
-  port: 80
-  server: ap-northeast-anycast.lnaspiring.com
-  servername: jpli.edge.233.tw
-  tls: false
-  type: vmess
-  uuid: fce9d0cd-8f62-4fc6-8d0f-f1905af672a4
-  ws-opts:
-    path: /geg/45?ed=2048
 - alterId: 0
   cipher: auto
   name: 25|7|德国1
@@ -10330,6 +10383,20 @@ proxies:
   ws-opts:
     headers:
       Host: eu1.openxai.link
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '25,28|美国 CloudFlare节点 #22'
+  network: ws
+  port: '8080'
+  server: cf.openxai.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c
+  ws-opts:
+    headers:
+      Host: eu2.openxai.link
     path: /?ed=2048
 - alterId: 0
   cipher: auto
@@ -10347,60 +10414,125 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 25|21|@Hope_Net-join-us-on-Telegr...
+  name: 25|21|[宇航员] 香港 80免流 04
   network: ws
   port: '80'
-  server: 95.164.46.154
-  servername: ''
+  server: hke9016a-9c15-ce43.xn--jsrz0o258a.online
   tls: false
   type: vmess
-  uuid: 431fda16-e0f8-4884-b4fd-965f03f86471
+  uuid: aaf1e0a7-5616-4e67-bb4b-c706b8a32b01
   ws-opts:
     headers:
-      Host: ''
-    path: /vmess
+      Host: bilibili.com
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 25,28|🇭🇰HK-23.99.120.52-0911
+  name: 25|21|⏭️15@oneclickvpnkeys
   network: ws
-  port: 10510
-  server: 23.99.120.52
+  port: '8080'
+  server: ip.sb
   servername: ''
   tls: false
   type: vmess
-  uuid: 619d8b66-469f-4dce-fc71-b74f05810212
+  uuid: 7e315854-9066-4775-fee9-a54b34148ab0
   ws-opts:
     headers:
-      Host: www.alipay.com
+      Host: cokdcnodkcnokdcnwod.dsdsdsd-weweD.cwdcdwwwwddcwdcwdcw-d-d-s-a-dcf.who-the-fuc.tk
     path: /
 - alterId: 0
   cipher: auto
-  name: 25,28|🏁RELAY-172.67.152.214-0125
-  network: ws
-  port: 443
-  server: meroiy.icu
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: meroiy.icu
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 25|21|redme-onrender【TG：@ccbaohe】...
+  name: 25|21|sk-onrender【TG：@ccbaohe】定时更...
   network: ws
   port: 443
   server: government.se
   servername: ''
   tls: true
   type: vmess
-  uuid: 4b53b3f4-3fb0-42ec-aa73-b4efdf075dbc
+  uuid: 1019ee28-4983-4d30-8090-c94ef5af1077
   ws-opts:
     headers:
-      Host: main.pooljim.tk
+      Host: labi.firecool.tk
     path: /vmess?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 25,28|🇺🇸US-129.146.113.254-0120
+  network: ws
+  port: 43121
+  server: 129.146.113.254
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d53b39e2-925e-45b6-9389-46b9fa95878b
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 25|21|bk-ba02【TG：@ccbaohe】定时更新节点订...
+  network: ws
+  port: 443
+  server: government.se
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 77001d1d-4c9c-4751-aa7c-8250dab83343
+  ws-opts:
+    headers:
+      Host: whow.whowdomuch.gq
+    path: /vmess?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 25|21|🔒 VM-WS-NA 🇩🇪 DE-217.160.45...
+  network: ws
+  port: 8880
+  server: 217.160.45.31
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4e186678-fcca-4325-e4bc-b2916bdf6708
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 25|21|@Hope_Net-join-us-on-Telegr...
+  network: ws
+  port: '8080'
+  server: 172.67.75.172
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7e315854-9066-4775-fee9-a54b34148ab0
+  ws-opts:
+    headers:
+      Host: cokdcnodkcnokdcnwod.dsdsdsd-weweD.cwdcdwwwwddcwdcwdcw-d-d-s-a-dcf.who-the-fuc.tk
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 25|21|🔒 VM-TCP-NA 🇫🇷 FR-54.36.118...
+  network: tcp
+  port: '42594'
+  server: 54.36.118.236
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f6557b33-18d1-483e-ce79-ba9f7ac645db
+- alterId: 0
+  cipher: auto
+  name: 25|21|【TG：@ccbaohe}定时更新节点订阅  美国05...
+  network: ws
+  port: '8880'
+  server: server31.beheshtbaneh.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 25,28|🏁RELAY-104.21.18.30-1871
@@ -10417,44 +10549,134 @@ proxies:
     path: /kwhmvws
 - alterId: 0
   cipher: auto
-  name: 25|21|🔒 VM-WS-NA 🏴‍☠️ NA-104.21.8...
+  name: 25,28,29|US_speednode_0031
   network: ws
-  port: '8880'
-  server: 104.21.82.183
+  port: 8080
+  server: 104.21.83.10
+  servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 7ee41eb4-0594-4e2d-92a7-5dd3ee513692
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   ws-opts:
     headers:
-      Host: server20.beheshtbaneh.com
+      Host: www.coldstone.club
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|21|US_youtube@资源分享师_3
+  name: 25|21,29|🇺🇸_US_美国->🇩🇪_DE_德国_5_2由快...
   network: ws
-  port: 443
-  server: vip2323.cfd
-  tls: true
+  port: 80
+  server: www.greendam.site
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
-      Host: vip2323.cfd
-    path: /linkvws
+      Host: my1.tooters.ir
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 25|21|🇺🇸|US|美国|@wxgqlfx|31
+  name: 25|21|日本 001
+  network: tcp
+  port: 37368
+  server: 150.107.200.184
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7b72983c-84a3-46ba-9b6d-d4c55c73db8c
+- alterId: 0
+  cipher: auto
+  name: 25|21|加拿大 021
+  network: ws
+  port: 443
+  server: icook.hk
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 475e3bfc-cb14-47fd-b6b8-a6c2d27ea259
+  ws-opts:
+    headers:
+      Host: gdsgrenderwestgsg.nihaoaaaa.tk
+    path: /vmess?ed=2048
+- alterId: 0
+  cipher: none
+  name: 25|21|ba4【TG：@ccbaohe】定时更新节点订阅
   network: ws
   port: '443'
   server: government.se
-  servername: www.vrygejvjkab.cf
+  servername: www.gesgo.tk
   tls: true
   type: vmess
-  uuid: 0bbeb982-d1fe-4cde-a597-4b7e82999b50
+  uuid: 79ba9c1e-5563-4e60-b07a-a1916c2d8334
   ws-opts:
     headers:
-      Host: www.vrygejvjkab.cf
+      Host: www.gesgo.tk
     path: /vmess?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 25|21|[宇航员] 台湾 80免流 01
+  network: ws
+  port: '80'
+  server: twa877-4e18-b158-bc88c4bb2e2d.xn--jsrz0o258a.online
+  tls: false
+  type: vmess
+  uuid: aaf1e0a7-5616-4e67-bb4b-c706b8a32b01
+  ws-opts:
+    headers:
+      Host: bilibili.com
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 25|21|🔒 VM-TCP-NA 🇵🇱 PL-51.83.251...
+  network: tcp
+  port: '50378'
+  server: 51.83.251.144
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ba71a798-4b9e-4908-e013-547150cc1b45
+- alterId: 0
+  cipher: auto
+  name: 25|21|新加坡 002
+  network: ws
+  port: 34920
+  server: 207.148.64.32
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e3f84780-dea0-4100-9b65-482d098825b2
+  ws-opts:
+    headers:
+      Host: m.zoom.us
+    path: /DIALOGZ
+- alterId: 0
+  cipher: auto
+  name: 25|21|[宇航员] 香港 80免流 01
+  network: ws
+  port: '80'
+  server: hkb12a8e-36fc-a36f-5a2.xn--jsrz0o258a.online
+  tls: false
+  type: vmess
+  uuid: aaf1e0a7-5616-4e67-bb4b-c706b8a32b01
+  ws-opts:
+    headers:
+      Host: bilibili.com
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 25,28|🇭🇰HK-23.99.120.52-0911
+  network: ws
+  port: 10510
+  server: 23.99.120.52
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 619d8b66-469f-4dce-fc71-b74f05810212
+  ws-opts:
+    headers:
+      Host: www.alipay.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 25|21|澳大利亚 003
@@ -10466,24 +10688,139 @@ proxies:
   type: vmess
   uuid: db6c286f-69fa-4ed0-b812-4f22d78f2fed
 - alterId: 0
+  cipher: none
+  name: 25|21|rt-US【TG：@ccbaohe】定时更新节点订阅
+  network: ws
+  port: '443'
+  server: government.se
+  servername: hoh.vbyr463-ajwc3294-vrye.cf
+  tls: true
+  type: vmess
+  uuid: c2fa82e4-6ad2-4e3b-86bc-5c803b11952c
+  ws-opts:
+    headers:
+      Host: hoh.vbyr463-ajwc3294-vrye.cf
+    path: /vmess?ed=2048
+- alterId: 0
   cipher: auto
-  name: 25|21|ba4【TG：@ccbaohe】定时更新节点订阅
+  client-fingerprint: chrome
+  name: '25,26,27,28|日本2|@ripaojiedian #1'
+  network: ws
+  port: '2052'
+  server: 172.67.66.124
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: ae056da6-d893-4f06-94f5-1876a6a76fcf
+  ws-opts:
+    headers:
+      Host: mianfei-jp-0001.bpjc.site
+    path: /?ed
+- alterId: 0
+  cipher: none
+  name: 25|21|Vls-US-https://t.me/warp_ke...
+  network: ws
+  port: '443'
+  server: government.se
+  servername: tt03.77678h.tk
+  tls: true
+  type: vmess
+  uuid: 1c1c5f80-9eef-46b9-b6a7-b0ac01469e80
+  ws-opts:
+    headers:
+      Host: tt03.77678h.tk
+    path: /vmess?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 25,28|🇬🇷GR-94.131.8.32-2118
+  network: ws
+  port: 80
+  server: 94.131.8.32
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 57e37a74-badc-4b71-87c7-5b9e20879b58
+  ws-opts:
+    headers:
+      Host: None
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 25|21|加拿大 030
   network: ws
   port: 443
   server: government.se
   servername: ''
   tls: true
   type: vmess
-  uuid: 79ba9c1e-5563-4e60-b07a-a1916c2d8334
+  uuid: 4b53b3f4-3fb0-42ec-aa73-b4efdf075dbc
   ws-opts:
     headers:
-      Host: www.gesgo.tk
+      Host: main.pooljim.tk
+    path: /vmess?ed=2048
+- alterId: 0
+  cipher: none
+  name: '25|21|Vls-US-https://t.me/warp_ke... #1'
+  network: ws
+  port: '443'
+  server: government.se
+  servername: tt06.77678h.tk
+  tls: true
+  type: vmess
+  uuid: 16ee03c9-7f24-4ac1-a1b0-3b48ec7ba720
+  ws-opts:
+    headers:
+      Host: tt06.77678h.tk
     path: /vmess?ed=2048
 - alterId: 0
   cipher: auto
-  name: 25|21,28|🇺🇸_US_美国->🇩🇪_DE_德国_4_由快嘴...
+  name: '25,28|美国 CloudFlare节点 #23'
   network: ws
-  port: 80
+  port: 443
+  server: government.se
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 8b3c9d7b-2099-46d4-aa98-d237068ff38a
+  ws-opts:
+    headers:
+      Host: tt04.77678h.tk
+    path: /vmess?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 25|21|美国【TG：@ccbaohe】定时更新节点订阅
+  network: ws
+  port: '80'
+  server: 104.24.208.37
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: my1.tooters.ir
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 25,28|🏁RELAY-172.67.152.214-0125
+  network: ws
+  port: 443
+  server: meroiy.icu
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: meroiy.icu
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '25|21|美国【TG：@ccbaohe】定时更新节点订阅 #1'
+  network: ws
+  port: '80'
   server: for-irancell.outline-vpn.cloud
   servername: ''
   tls: false
@@ -10492,48 +10829,86 @@ proxies:
   ws-opts:
     headers:
       Host: my1.tooters.ir
-    path: /
-- alterId: 0
-  cipher: none
-  name: 25|21|Glitch-US【TG：@ccbaohe】定时更新节...
-  network: ws
-  port: '443'
-  server: glitch.speedarrow.tk
-  servername: glitch.speedarrow.tk
-  tls: true
-  type: vmess
-  uuid: e8309fac-2f74-4bc2-bb72-90d4e4b264f5
-  ws-opts:
-    headers:
-      Host: glitch.speedarrow.tk
-    path: /vmess?ed=2048
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 25|21|bak-ba03【TG：@ccbaohe】定时更新节点...
+  name: '25|21|美国【TG：@ccbaohe】定时更新节点订阅 #2'
+  network: ws
+  port: '80'
+  server: 104.20.231.30
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: my1.tooters.ir
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 25|21|加拿大 016
   network: ws
   port: 443
-  server: government.se
+  server: chrome.cloudflare-dns.com
   servername: ''
   tls: true
   type: vmess
-  uuid: a608ea78-b4dd-4c01-b290-b5ba30fd49d9
+  uuid: 7f14e42a-f453-4c39-a762-019ee493237d
   ws-opts:
     headers:
-      Host: www.dermartmi.tk
-    path: /vmess?ed=2048
+      Host: a4.bbbbbbbb.tk
+    path: /argox-vm?ed=2048
 - alterId: 0
-  cipher: none
-  name: 25|21|Codesphere-nodejs-DE-Packet...
+  cipher: auto
+  name: 25|21|加拿大 031
   network: ws
-  port: '2053'
-  server: cf1.hz.cz
-  servername: dfsgcodesphere2dog1.status-turbojerry.cf
+  port: 443
+  server: vip2323.cfd
+  servername: ''
   tls: true
   type: vmess
-  uuid: 59800d5b-5177-494d-9629-fca59797daa6
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: dfsgcodesphere2dog1.status-turbojerry.cf
+      Host: vip2323.cfd
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 25|21|🔒 VM-WS-TLS 🇺🇸 US-172.67.17...
+  network: ws
+  port: '443'
+  server: 172.67.174.63
+  servername: nina.bond
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: nina.bond
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 25|21|🔒 VM-TCP-NA 🇨🇭 CH-94.131.99...
+  network: tcp
+  port: '47182'
+  server: 94.131.99.8
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 81b2b630-8b6a-404f-b996-b12f13db5786
+- alterId: 0
+  cipher: none
+  name: 25|21|Vls-US【TG：@ccbaohe】定时更新节点订阅...
+  network: ws
+  port: '443'
+  server: government.se
+  servername: 120.301.free.hr
+  tls: true
+  type: vmess
+  uuid: 72fda6db-e0ed-413a-8d5f-d417d1ced332
+  ws-opts:
+    headers:
+      Host: 120.301.free.hr
     path: /vmess?ed=2048
 - alterId: 0
   cipher: auto
@@ -10552,328 +10927,6 @@ proxies:
     headers:
       Host: kr1.ljyyds.top
     path: /
-- alterId: 0
-  cipher: auto
-  name: 25|21|新加坡 002
-  network: ws
-  port: 34920
-  server: 207.148.64.32
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e3f84780-dea0-4100-9b65-482d098825b2
-  ws-opts:
-    headers:
-      Host: m.zoom.us
-    path: /DIALOGZ
-- alterId: 0
-  cipher: auto
-  name: 25|21|加拿大 021
-  network: ws
-  port: 443
-  server: icook.hk
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 475e3bfc-cb14-47fd-b6b8-a6c2d27ea259
-  ws-opts:
-    headers:
-      Host: gdsgrenderwestgsg.nihaoaaaa.tk
-    path: /vmess?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 25|21|🇺🇸|US|美国|@wxgqlfx|30
-  network: ws
-  port: '443'
-  server: government.se
-  servername: whow.whowdomuch.gq
-  tls: true
-  type: vmess
-  uuid: 77001d1d-4c9c-4751-aa7c-8250dab83343
-  ws-opts:
-    headers:
-      Host: whow.whowdomuch.gq
-    path: /vmess?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 25|21,28|🇺🇸_US_美国->🇩🇪_DE_德国_5_2由快...
-  network: ws
-  port: 80
-  server: www.greendam.site
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: my1.tooters.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 25|21|🔒 VM-WS-NA 🇩🇪 DE-217.160.45...
-  network: ws
-  port: 8880
-  server: 217.160.45.31
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4e186678-fcca-4325-e4bc-b2916bdf6708
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: 25|21|🇺🇸|US|美国|@wxgqlfx|29
-  network: ws
-  port: '80'
-  server: 104.20.231.30
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: my1.tooters.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 25|21|🇺🇸|US|美国|@wxgqlfx|32
-  network: ws
-  port: '443'
-  server: government.se
-  servername: glitch2.future13800.cf
-  tls: true
-  type: vmess
-  uuid: 65991514-9e72-4aff-981d-5c7cf1a4e554
-  ws-opts:
-    headers:
-      Host: glitch2.future13800.cf
-    path: /vmess?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 25|21|日本 001
-  network: tcp
-  port: 37368
-  server: 150.107.200.184
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7b72983c-84a3-46ba-9b6d-d4c55c73db8c
-- alterId: 0
-  cipher: auto
-  name: 25|21|🔒 VM-TCP-NA 🇳🇱 NL-45.136.51...
-  network: tcp
-  port: '32567'
-  server: 45.136.51.175
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: df35304b-1f31-4b0d-9d02-f70256f732f1
-- alterId: 0
-  cipher: auto
-  name: 25|21|t.me/warp_key
-  network: ws
-  port: 443
-  server: icook.hk
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 39b1cee5-3aa4-4b04-b91e-f2a73ab35981
-  ws-opts:
-    headers:
-      Host: gdgrendereuklk.nihaoaaaa.tk
-    path: /vmess?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 25|21|Vls-US【TG：@ccbaohe】定时更新节点订阅...
-  network: ws
-  port: 443
-  server: government.se
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 72fda6db-e0ed-413a-8d5f-d417d1ced332
-  ws-opts:
-    headers:
-      Host: 120.301.free.hr
-    path: /vmess?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 25|21|五叶节点分享 https://t.me/hkaa0
-  network: ws
-  port: '8880'
-  server: 167.172.80.198
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ae3e6ab7-144a-4ecc-981d-603ea73bc8af
-  ws-opts:
-    headers:
-      Host: 8db7766f-d893-430e-96fb-ccd20e681145.tg.hkaa0.66688888.xyz
-    path: /Telegram:@hkaa0
-- alterId: 0
-  cipher: auto
-  name: 25|21|🔒 VM-TCP-NA 🇳🇱 NL-31.187.64...
-  network: tcp
-  port: '47228'
-  server: 31.187.64.125
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c21b766e-fa13-496f-ccb1-f201e1f5154c
-- alterId: 0
-  cipher: auto
-  name: 25|21|Glitch-guding2-US【TG：@ccbao...
-  network: ws
-  port: 2053
-  server: cf1.hz.cz
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 65e5ded5-1e0e-4329-8d62-9e53634312e1
-  ws-opts:
-    headers:
-      Host: gfdghglitchnodejsgugu.status-turbojerry.gq
-    path: /vmess?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 25|21,28|🇺🇸_US_美国->🇩🇪_DE_德国_2_8
-  network: ws
-  port: 80
-  server: 104.22.51.162
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: my1.tooters.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 25|21|🇺🇸|US|美国|@wxgqlfx|33
-  network: ws
-  port: '80'
-  server: 104.24.208.37
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: my1.tooters.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 25|21|sk-onrender【TG：@ccbaohe】定时更...
-  network: ws
-  port: 443
-  server: government.se
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 1019ee28-4983-4d30-8090-c94ef5af1077
-  ws-opts:
-    headers:
-      Host: labi.firecool.tk
-    path: /vmess?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 25|21|🇲🇽_MX_墨西哥
-  network: ws
-  port: 2053
-  server: 45.170.248.137
-  tls: true
-  type: vmess
-  uuid: 8b0136d3-148d-4efd-a866-76bd8d3e061e
-  ws-opts:
-    headers:
-      Host: usacv.universecloud.cloud
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 25,28|🇬🇷GR-94.131.8.32-2118
-  network: ws
-  port: 80
-  server: 94.131.8.32
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 57e37a74-badc-4b71-87c7-5b9e20879b58
-  ws-opts:
-    headers:
-      Host: None
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 25|21|4bka【TG：@ccbaohe】定时更新节点订阅
-  network: ws
-  port: 443
-  server: government.se
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9880247e-3dc4-4001-9f29-7f484876fff4
-  ws-opts:
-    headers:
-      Host: www.ieowhfvas.cf
-    path: /vmess?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 25|21|argo-2【TG：@ccbaohe】定时更新节点订阅
-  network: ws
-  port: 443
-  server: dsfaw-testwang.hf.space
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 2aa34f83-ad7c-4684-9097-fa66a03ff98c
-  ws-opts:
-    headers:
-      Host: dsfaw-testwang.hf.space
-    path: /vmess?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 25,28|🇺🇸US-129.146.113.254-0120
-  network: ws
-  port: 43121
-  server: 129.146.113.254
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d53b39e2-925e-45b6-9389-46b9fa95878b
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 25|21|台湾【TG：@ccbaohe】定时更新节点订阅
-  network: tcp
-  port: 4443
-  server: nb24.ntbq.dynu.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4c698ff1-ab96-4ce3-8c3a-e23ced87b441
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '25,26,27,28|日本2|@ripaojiedian #1'
-  network: ws
-  port: '2052'
-  server: 172.67.66.124
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: ae056da6-d893-4f06-94f5-1876a6a76fcf
-  ws-opts:
-    headers:
-      Host: mianfei-jp-0001.bpjc.site
-    path: /?ed
 - alterId: 0
   cipher: auto
   name: '25,27,28|台湾2|@ripaojiedian #1'
@@ -10918,6 +10971,19 @@ proxies:
   tls: false
   type: vmess
   uuid: e63f477b-59d7-485e-9385-c38888b60cbf
+- alterId: 0
+  cipher: auto
+  name: 25|29|🇺🇸_US_美国->🇩🇪_DE_德国_4_由快嘴科技提...
+  network: ws
+  port: 80
+  server: for-irancell.outline-vpn.cloud
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: my1.tooters.ir
+    path: /
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 26|🇭🇰 香港KT|@ripaojiedian
@@ -11024,95 +11090,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 28|UK英国—lite|解锁流媒体|1x
-  network: tcp
-  port: '38005'
-  server: gz.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
-  name: 28|爱尔兰 01 | ws
+  name: 28|日本 02 | ws
   network: ws
-  port: '20015'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 1
-  cipher: auto
-  name: 28|🏁RELAY-104.21.83.108-1436
-  network: ws
-  port: 443
-  server: hms02opi.fxiaomi.sbs
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
-  ws-opts:
-    headers:
-      Host: hms02.fxiaomi.sbs
-    path: /link
-- alterId: 0
-  cipher: auto
-  name: 28|日本原生|优选IP|1x
-  network: tcp
-  port: '38013'
-  server: gz.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
-  name: 28|印度|三网优化|注册游戏|1x
-  network: tcp
-  port: '26043'
-  server: gz.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
-  name: 28|🇹🇼台湾 0.1X
-  network: tcp
-  port: '21353'
-  server: tw1-vds3.anyhk.co
-  tls: false
-  type: vmess
-  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
-- alterId: 0
-  cipher: auto
-  name: 28|香港 04 | tcp
-  network: tcp
   port: '80'
-  server: 223.113.54.134
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-- alterId: 0
-  cipher: auto
-  name: 28|韩国B丨Oracle丨流媒体 | 直连
-  network: ws
-  port: '443'
-  server: 2.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /fjdfk364dfhej34104
-- alterId: 0
-  cipher: auto
-  name: 28|阿根廷 01 | ws
-  network: ws
-  port: '2001'
   server: 223.113.54.131
   tls: false
   type: vmess
@@ -11123,103 +11103,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|🏁RELAY-172.67.161.114-0770
-  network: ws
-  port: 8880
-  server: 172.67.161.114
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 352ecc6f-21f1-4dc8-8177-4ebd52c55b12
-  ws-opts:
-    headers:
-      Host: server5.beheshtbaneh.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🇵🇹PT-94.131.10.135-0147
-  network: ws
-  port: 2095
-  server: 94.131.10.135
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e2021c91-6e29-49d6-9641-14a8f2600e05
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 28|河南移动 04 | tcp | 非80
-  network: tcp
-  port: '1081'
-  server: 39.164.141.93
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-- alterId: 0
-  cipher: auto
-  name: 28|英国BB丨伦敦丨流媒体 | 直连
-  network: ws
-  port: '443'
-  server: 28.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /e6g54g4ggyuh42
-- alterId: 0
-  cipher: auto
-  name: 28|🇺🇸US-132.145.132.227-0108
-  network: ws
-  port: 37121
-  server: 132.145.132.227
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 93845b50-26f6-4203-f5ad-4d231d4e8f45
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 1
-  cipher: auto
-  name: 28|🏁RELAY-104.21.44.106-1435
-  network: ws
-  port: 443
-  server: hms04.xmivideo.cfd
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
-  ws-opts:
-    headers:
-      Host: xmivideo.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 28|🇺🇸US-66.181.33.108-3306
-  network: ws
-  port: 22666
-  server: 66.181.33.108
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f096c70-478a-4fef-b29f-0f14d6a06583
-  ws-opts:
-    headers:
-      Host: ''
-    path: /a?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 28|新加坡 03 | ws
+  name: 28|新加坡 02 | ws
   network: ws
   port: '80'
-  server: 223.113.54.136
+  server: 223.113.54.135
   tls: false
   type: vmess
   uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
@@ -11229,33 +11116,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|🇸🇬SG-172.104.180.68-1870
-  network: ws
-  port: 80
-  server: 172.104.180.68
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: eb9e8a52-0fec-4a10-8d16-af3b32874933
-  ws-opts:
-    headers:
-      Host: UC99.5GTOCDOCAO.COM
-    path: /5gtocdocao.com
-- alterId: 0
-  cipher: auto
-  name: 28|🇸🇬新加坡 0.1X
-  network: tcp
-  port: '27161'
-  server: sg-singapore-oracle-aa087d.ip1.shop
-  tls: false
-  type: vmess
-  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
-- alterId: 0
-  cipher: auto
-  name: 28|美国59 | 流媒体 | 直连
+  name: 28|美国55 | 流媒体 | 直连
   network: ws
   port: '443'
-  server: 41.openiisee.monster
+  server: 37.openiisee.monster
   servername: 116.supermanapp.top
   tls: true
   type: vmess
@@ -11263,85 +11127,13 @@ proxies:
   ws-opts:
     headers:
       Host: 116.supermanapp.top
-    path: /kd66kk59
+    path: /kdakfdff55
 - alterId: 0
   cipher: auto
-  name: 28|东京|优选原生IP|1x
-  network: tcp
-  port: '26045'
-  server: gz.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
-  name: 28|套餐到期：2024-12-01
-  network: tcp
-  port: '38001'
-  server: daxun.info
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
-  name: 28|芬兰 01 | ws
-  network: ws
-  port: '20012'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-172.67.179.232-1881
-  network: ws
-  port: 443
-  server: 172.67.179.232
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 06195b5b-3815-4a07-96f7-47eefbb1b143
-  ws-opts:
-    headers:
-      Host: urnxewzvh.site
-    path: /kwhmvws
-- alterId: 0
-  cipher: auto
-  name: 28|瑞士 01 | ws
-  network: ws
-  port: '20017'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🇩🇪DE-130.162.47.123-8303
-  network: ws
-  port: 6854
-  server: 130.162.47.123
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: b5f7e932-f730-4ad2-b425-40977b9db332
-  ws-opts:
-    headers:
-      Host: ''
-    path: /zBLPou
-- alterId: 0
-  cipher: auto
-  name: 28|韩国he丨Oracle丨流媒体 | 直连
+  name: 28|加拿大D丨多伦多|直连
   network: ws
   port: '443'
-  server: 25.openiisee.monster
+  server: 17.openiisee.monster
   servername: 116.supermanapp.top
   tls: true
   type: vmess
@@ -11349,13 +11141,13 @@ proxies:
   ws-opts:
     headers:
       Host: 116.supermanapp.top
-    path: /fuuig7ggugguyg39
+    path: /hjhjnadbjn1iididj19
 - alterId: 0
   cipher: auto
-  name: 28|美国53 | 流媒体 | 直连
+  name: 28|新加坡D丨Lin丨流媒体|直连
   network: ws
   port: '443'
-  server: 35.openiisee.monster
+  server: 11.openiisee.monster
   servername: 116.supermanapp.top
   tls: true
   type: vmess
@@ -11363,91 +11155,22 @@ proxies:
   ws-opts:
     headers:
       Host: 116.supermanapp.top
-    path: /kdaa2232u53
-- cipher: aes-128-cfb
-  name: 28|8J%2BHs%2FCfh7FOTC0xMDkuMjAxLj...
-  obfs: plain
-  obfs-param: ''
-  password: shadowsocks
-  port: '443'
-  protocol: origin
-  protocol-param: ''
-  server: 109.201.152.181
-  type: ssr
+    path: /13é1yuiewh13
 - alterId: 0
   cipher: auto
-  name: 28|加拿大B丨多伦多 | 直连 | 流媒体
-  network: ws
-  port: '443'
-  server: 15.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /adfyui902kjk17
-- alterId: 0
-  cipher: auto
-  name: 28|韩国 02 | tcp
+  name: 28|新加坡 04 | tcp
   network: tcp
   port: '80'
-  server: 223.113.54.143
+  server: 223.113.54.137
   tls: false
   type: vmess
   uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
 - alterId: 0
   cipher: auto
-  name: 28|🇸🇬SG-167.172.80.198-8338
-  network: ws
-  port: 8880
-  server: 8db7766f-d893-430e-96fb-ccd20e681145.tg.hkaa0.66688888.xyz
-  servername: 8db7766f-d893-430e-96fb-ccd20e681145.tg.hkaa0.66688888.xyz
-  tls: false
-  type: vmess
-  uuid: ae3e6ab7-144a-4ecc-981d-603ea73bc8af
-  ws-opts:
-    headers:
-      Host: 8db7766f-d893-430e-96fb-ccd20e681145.tg.hkaa0.66688888.xyz
-    path: /Telegram:@hkaa0
-- alterId: 0
-  cipher: auto
-  name: 28|S-新加坡1号|2x
-  network: tcp
-  port: '26037'
-  server: gz.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
-  name: 28|🇰🇷韩国3 0.1X
-  network: tcp
-  port: '31652'
-  server: kr-seoul-oracle-899012.ip1.shop
-  tls: false
-  type: vmess
-  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
-- alterId: 0
-  cipher: auto
-  name: 28|吉尔吉斯斯坦 01 | ws
-  network: ws
-  port: '20000'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|美国AA丨流媒体 | 直连
+  name: 28|韩国K丨Oracle丨流媒体 | 直连
   network: ws
   port: '443'
-  server: 31.openiisee.monster
+  server: 10.openiisee.monster
   servername: 116.supermanapp.top
   tls: true
   type: vmess
@@ -11455,13 +11178,13 @@ proxies:
   ws-opts:
     headers:
       Host: 116.supermanapp.top
-    path: /e6234sdfsuh45
+    path: /fjdfk3fw2ssi2q33
 - alterId: 0
   cipher: auto
-  name: 28|韩国Ha丨Oracle丨流媒体 | 直连
+  name: 28|印度C丨孟买 | 直连 | 流媒体
   network: ws
   port: '443'
-  server: 20.openiisee.monster
+  server: 19.openiisee.monster
   servername: 116.supermanapp.top
   tls: true
   type: vmess
@@ -11469,13 +11192,13 @@ proxies:
   ws-opts:
     headers:
       Host: 116.supermanapp.top
-    path: /fjdfk678tyuh35
+    path: /7898uuhuugdhfgh21
 - alterId: 0
   cipher: auto
-  name: 28|美国51 | 流媒体 | 直连
+  name: 28|日本I丨BGP丨流媒体|直连
   network: ws
   port: '443'
-  server: 33.openiisee.monster
+  server: 6.openiisee.monster
   servername: 116.supermanapp.top
   tls: true
   type: vmess
@@ -11483,140 +11206,7 @@ proxies:
   ws-opts:
     headers:
       Host: 116.supermanapp.top
-    path: /dsflkobishioio51
-- alterId: 0
-  cipher: auto
-  name: 28|乌克兰 01 | ws
-  network: ws
-  port: '20005'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-104.18.202.250-1762
-  network: ws
-  port: 2082
-  server: 104.18.202.250
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev
-    path: /nina.bond/linkvws
-- alterId: 0
-  cipher: auto
-  name: 28|🇯🇵JP-152.69.197.74-4174
-  network: ws
-  port: 12345
-  server: 152.69.197.74
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
-  ws-opts:
-    headers:
-      Host: ''
-    path: /bb
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-172.67.170.103-2070
-  network: ws
-  port: 2095
-  server: 172.67.170.103
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  ws-opts:
-    headers:
-      Host: yaghoob55freenodes.repaco69437403.workers.dev
-    path: /glweidf.sbs/linkws
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-172.67.175.56-8402
-  network: ws
-  port: 443
-  server: obdii.cfd
-  servername: obdii.cfd
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 28|俄罗斯 01 | ws
-  network: ws
-  port: '20003'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-104.21.82.183-0117
-  network: ws
-  port: 8880
-  server: server6.beheshtbaneh.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c5626b16-4c57-4d7e-8668-6b1ecda5c8b5
-  ws-opts:
-    headers:
-      Host: server6.beheshtbaneh.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🇸🇬SG-45.76.144.158-8335
-  network: ws
-  port: 17187
-  server: 45.76.144.158
-  servername: android.googleapis.com
-  tls: false
-  type: vmess
-  uuid: ae7590fa-242e-41ef-ae0a-9018025d2ff7
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|SJP—新加坡02|优选原生IP|1x
-  network: tcp
-  port: '26033'
-  server: gz.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-172.64.80.1-8440
-  network: ws
-  port: 8880
-  server: fra.yj2022.gq
-  servername: fra.yj2022.gq
-  tls: false
-  type: vmess
-  uuid: 4b5e4565-322f-4223-a891-78a84f189726
-  ws-opts:
-    headers:
-      Host: fra.yj2022.gq
-    path: /9sTFt5L554kPVWmuJ2k8baS4bEY83PZ66xb4twoBBtsiMPK2b
+    path: /uruydtyubn8q08
 - alterId: 0
   cipher: auto
   name: 28|🏁RELAY-172.67.161.114-0764
@@ -11633,6 +11223,151 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 28|斯洛伐克 01 | ws
+  network: ws
+  port: '20026'
+  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|香港 04 | tcp
+  network: tcp
+  port: '80'
+  server: 223.113.54.134
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+- alterId: 0
+  cipher: auto
+  name: 28|美国洛杉矶-中转|1x
+  network: ws
+  port: '38888'
+  server: aws.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /daxun/us1
+- alterId: 0
+  cipher: auto
+  name: 28|俄罗斯 01 | ws
+  network: ws
+  port: '20003'
+  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-104.21.73.14-1619
+  network: ws
+  port: 8880
+  server: 104.21.73.14
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 45f63e92-f782-4cac-84b8-e61cb5a5bfd0
+  ws-opts:
+    headers:
+      Host: yaghoob55freenodes.repaco69437403.workers.dev
+    path: /adenc35.fixedlfoat.top/linkws
+- alterId: 0
+  cipher: auto
+  name: 28|印度F | 孟买 | 直连 | 流媒体
+  network: ws
+  port: '443'
+  server: 21.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+  ws-opts:
+    headers:
+      Host: 116.supermanapp.top
+    path: /rfededxcvbniuyt5671ss23
+- alterId: 0
+  cipher: auto
+  name: '28|美国 CloudFlare节点 #27'
+  network: ws
+  port: 80
+  server: 104.17.25.1
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 113a74cc-f13b-48ec-bbb2-2bbab77a2f35
+  ws-opts:
+    headers:
+      Host: kr1.ljyyds.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-172.67.161.114-0163
+  network: ws
+  port: 8880
+  server: server8.beheshtbaneh.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f46acc36-5edf-4c5f-8c8f-3520ff46cdd9
+  ws-opts:
+    headers:
+      Host: server8.beheshtbaneh.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-104.21.15.36-2028
+  network: ws
+  port: 443
+  server: linde06.indiavideo.sbs
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 28|台湾 03 | tcp
+  network: tcp
+  port: '80'
+  server: 975e1329-3bc5-d33e-f8b3-f841c1ce31b5.neo-awaken.uk
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+- alterId: 0
+  cipher: auto
+  name: 28|🇸🇬新加坡 0.1X
+  network: tcp
+  port: '27161'
+  server: sg-singapore-oracle-aa087d.ip1.shop
+  tls: false
+  type: vmess
+  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
+- alterId: 0
+  cipher: auto
+  name: 28|🇹🇼台湾 0.1X
+  network: tcp
+  port: '21353'
+  server: tw1-vds3.anyhk.co
+  tls: false
+  type: vmess
+  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
+- alterId: 0
+  cipher: auto
   name: 28|美国 02 | ws
   network: ws
   port: '2004'
@@ -11646,22 +11381,99 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|🇭🇰香港1-移动优选 0.1X
+  name: 28|加拿大B丨多伦多 | 直连 | 流媒体
   network: ws
-  port: '80'
-  server: cfzl1.freeapp.buzz
-  tls: false
+  port: '443'
+  server: 15.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
   type: vmess
-  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
   ws-opts:
     headers:
-      Host: wz3.kcjs.me
-    path: /gd3245vd2S32cr
+      Host: 116.supermanapp.top
+    path: /adfyui902kjk17
+- alterId: 64
+  cipher: auto
+  name: '28|未命名 #4'
+  network: ws
+  port: 443
+  server: aaaa.wxx.gay
+  tls: true
+  type: vmess
+  uuid: 8237ec34-143a-11ee-8019-000017022008
+  ws-opts:
+    headers:
+      Host: ''
+    path: /look
 - alterId: 0
   cipher: auto
-  name: 28|罗马尼亚 01 | ws
+  name: 28|🏁RELAY-172.67.132.15-10366
   network: ws
-  port: '20008'
+  port: 443
+  server: ming2.kiwireich.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
+  ws-opts:
+    headers:
+      Host: ming2.kiwireich.com
+    path: /ray
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-10.10.34.36-0808
+  network: ws
+  port: 2086
+  server: index.zhaal.ir
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e690ff9e-1676-4be3-d136-dcae586cb1e7
+  ws-opts:
+    headers:
+      Host: index.zhaal.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|阿根廷 01 | ws
+  network: ws
+  port: '2001'
+  server: 223.113.54.131
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 64
+  cipher: auto
+  name: '28|未命名 #5'
+  network: ws
+  port: 443
+  server: hkd1.quickerlink.xyz
+  tls: true
+  type: vmess
+  uuid: 3853a2ab-6bec-4503-89b9-d3cbcc6b69c9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /h6jr23x9h3lqiitg
+- alterId: 0
+  cipher: auto
+  name: 28|日本原生|优选IP|1x
+  network: tcp
+  port: '38013'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- alterId: 0
+  cipher: auto
+  name: 28|波兰 01 | ws
+  network: ws
+  port: '20013'
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
   tls: false
   type: vmess
@@ -11672,46 +11484,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|泰国 01 | ws
-  network: ws
-  port: '2003'
-  server: 223.113.54.131
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|新加坡 04 | tcp
-  network: tcp
-  port: '80'
-  server: 223.113.54.137
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-- alterId: 0
-  cipher: auto
-  name: 28|美国凤凰城-高速中转|1x
-  network: ws
-  port: '38887'
-  server: aws.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-  ws-opts:
-    headers:
-      Host: www.baidu.com
-    path: /daxun/us3
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-172.67.196.112-2229
+  name: 28|🏁RELAY-172.67.196.112-4632
   network: ws
   port: 443
-  server: kellie.makeup
-  servername: ''
+  server: 172.67.196.112
+  servername: kellie.makeup
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -11721,62 +11498,27 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 28|新加坡 01 | ws
+  name: 28|🏁RELAY-104.21.82.183-0117
   network: ws
-  port: '80'
-  server: 120.232.186.55
+  port: 8880
+  server: server6.beheshtbaneh.com
+  servername: ''
   tls: false
   type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  uuid: c5626b16-4c57-4d7e-8668-6b1ecda5c8b5
   ws-opts:
     headers:
-      Host: tms.dingtalk.com
+      Host: server6.beheshtbaneh.com
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|哈萨克斯坦 01 | ws
-  network: ws
-  port: '20018'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|荷兰 01 | ws
-  network: ws
-  port: '20010'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|香港BGP|优选原生IP|2x
+  name: 28|香港 03 | tcp
   network: tcp
-  port: '38001'
-  server: gz.daxun.cyou
+  port: '80'
+  server: 120.232.186.60
   tls: false
   type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- cipher: aes-128-cfb
-  name: 28|8J%2BHuvCfh7hVUy0yMTIuMTAyLjQ3...
-  obfs: plain
-  obfs-param: ''
-  password: shadowsocks
-  port: '443'
-  protocol: origin
-  protocol-param: ''
-  server: 212.102.47.198
-  type: ssr
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
 - alterId: 0
   cipher: auto
   name: 28|白俄罗斯 01  | ws
@@ -11792,9 +11534,109 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|乌兹别克斯坦 01 | ws
+  name: 28|韩国Hf丨Oracle丨流媒体 | 直连
   network: ws
-  port: '20001'
+  port: '443'
+  server: 26.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+  ws-opts:
+    headers:
+      Host: 116.supermanapp.top
+    path: /fj78uhjhu40
+- alterId: 0
+  cipher: auto
+  name: 28|🇫🇷FR-146.59.204.6-0168
+  network: ws
+  port: 80
+  server: 146.59.204.6
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
+  ws-opts:
+    headers:
+      Host: ''
+    path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY
+- alterId: 0
+  cipher: auto
+  name: 28|SJP—新加坡04|优选原生IP|1x
+  network: tcp
+  port: '27034'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- alterId: 0
+  cipher: auto
+  name: 28|波黑 01 | ws
+  network: ws
+  port: '20014'
+  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|新加坡02|三网优化|1x
+  network: tcp
+  port: '38019'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- alterId: 0
+  cipher: auto
+  name: 28|东京|优选原生IP|1x
+  network: tcp
+  port: '26045'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- alterId: 0
+  cipher: auto
+  name: 28|SJP—新加坡02|优选原生IP|1x
+  network: tcp
+  port: '26033'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- alterId: 0
+  cipher: auto
+  name: 28|🇩🇪DE-130.162.47.123-11212
+  network: ws
+  port: 6854
+  server: 130.162.47.123
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: b5f7e932-f730-4ad2-b425-40977b9db332
+  ws-opts:
+    headers:
+      Host: ''
+    path: /zBLPou
+- alterId: 0
+  cipher: auto
+  name: 28|河南移动 04 | tcp | 非80
+  network: tcp
+  port: '1081'
+  server: 39.164.141.93
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+- alterId: 0
+  cipher: auto
+  name: 28|乌克兰 01 | ws
+  network: ws
+  port: '20005'
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
   tls: false
   type: vmess
@@ -11818,22 +11660,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|香港 02 | ws
+  name: 28|荷兰 01 | ws
   network: ws
-  port: '80'
-  server: 223.113.54.133
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|伊拉克 01 | ws
-  network: ws
-  port: '20011'
+  port: '20010'
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
   tls: false
   type: vmess
@@ -11844,42 +11673,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|美国58 | 流媒体 | 直连
+  name: 28|徐州移动 01 | ws
   network: ws
-  port: '443'
-  server: 40.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /kda22k58
-- alterId: 0
-  cipher: auto
-  name: 28|新加坡01|三网优化|1x
-  network: tcp
-  port: '26035'
-  server: gz.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
-  name: 28|日本 03 | tcp
-  network: tcp
   port: '80'
-  server: 223.113.54.139
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-- alterId: 0
-  cipher: auto
-  name: 28|阿根廷 02 | ws
-  network: ws
-  port: '2002'
-  server: 223.113.54.131
+  server: 223.113.54.140
   tls: false
   type: vmess
   uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
@@ -11889,9 +11686,32 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|斯洛伐克 01 | ws
+  name: 28|🏁RELAY-104.21.82.183-0768
   network: ws
-  port: '20026'
+  port: 8880
+  server: 104.21.82.183
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e305fc57-6153-4650-8c52-9a36865a199d
+  ws-opts:
+    headers:
+      Host: server3.beheshtbaneh.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|台湾 04 | tcp
+  network: tcp
+  port: '80'
+  server: ffc3d492-fc46-ded9-a552-d5cb60c4d076.neo-awaken.uk
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+- alterId: 0
+  cipher: auto
+  name: 28|挪威 01 | ws
+  network: ws
+  port: '20025'
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
   tls: false
   type: vmess
@@ -11902,19 +11722,38 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|新加坡04|三网优化|1x
-  network: tcp
-  port: '26038'
-  server: gz.daxun.cyou
+  name: 28|🏁RELAY-104.21.82.183-0104
+  network: ws
+  port: 8880
+  server: server10.beheshtbaneh.com
+  servername: ''
   tls: false
   type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+  uuid: 66d4af1c-fcc3-479b-847c-3260253e1faa
+  ws-opts:
+    headers:
+      Host: server10.beheshtbaneh.com
+    path: /
 - alterId: 0
   cipher: auto
-  name: 28|加拿大F丨多伦多 | 直连
+  name: 28|🇯🇵JP-152.69.197.74-4174
+  network: ws
+  port: 12345
+  server: 152.69.197.74
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
+  ws-opts:
+    headers:
+      Host: ''
+    path: /bb
+- alterId: 0
+  cipher: auto
+  name: 28|英国Bz丨伦敦丨流媒体 | 直连
   network: ws
   port: '443'
-  server: 16.openiisee.monster
+  server: 29.openiisee.monster
   servername: 116.supermanapp.top
   tls: true
   type: vmess
@@ -11922,38 +11761,32 @@ proxies:
   ws-opts:
     headers:
       Host: 116.supermanapp.top
-    path: /fokk30023k9fk9(KFdf18
+    path: /e632323ruh43
 - alterId: 0
   cipher: auto
-  name: 28|🏁RELAY-104.21.30.254-1731
+  name: 28|德国 01 | ws
   network: ws
-  port: 443
-  server: nina.bond
-  servername: ''
-  tls: true
+  port: '20004'
+  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
   ws-opts:
     headers:
-      Host: nina.bond
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-162.159.129.87-0871
-  network: ws
-  port: 2096
-  server: 162.159.129.87
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 12009e57-6fd8-46d6-94af-539514a7e7c7
-  ws-opts:
-    headers:
-      Host: s1.shargh.shop
+      Host: tms.dingtalk.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: 28|大讯云直连官网地址:daxuns.top(优先推荐使用香港和...
+  network: tcp
+  port: '38001'
+  server: daxun.info
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
 - alterId: 64
   cipher: auto
-  name: '28|未命名 #4'
+  name: '28|未命名 #6'
   network: ws
   port: 2095
   server: xt.ylks01.eu.org
@@ -11966,10 +11799,42 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: 28|加拿大D丨多伦多|直连
+  name: 28|台湾hinet01|优选原生IP|1x
+  network: tcp
+  port: '38015'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-104.25.38.74-0874
+  network: ws
+  port: 2096
+  server: 104.25.38.74
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 12009e57-6fd8-46d6-94af-539514a7e7c7
+  ws-opts:
+    headers:
+      Host: s1.shargh.shop
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|新加坡04|三网优化|1x
+  network: tcp
+  port: '26038'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- alterId: 0
+  cipher: auto
+  name: 28|韩国A丨Oracle丨流媒体 | 直连
   network: ws
   port: '443'
-  server: 17.openiisee.monster
+  server: 4.openiisee.monster
   servername: 116.supermanapp.top
   tls: true
   type: vmess
@@ -11977,12 +11842,49 @@ proxies:
   ws-opts:
     headers:
       Host: 116.supermanapp.top
-    path: /hjhjnadbjn1iididj19
+    path: /5678hhg788u06
 - alterId: 0
   cipher: auto
-  name: 28|波黑 01 | ws
+  name: 28|🏁RELAY-172.67.161.114-0770
   network: ws
-  port: '20014'
+  port: 8880
+  server: 172.67.161.114
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 352ecc6f-21f1-4dc8-8177-4ebd52c55b12
+  ws-opts:
+    headers:
+      Host: server5.beheshtbaneh.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|英国BD丨伦敦丨流媒体 | 直连
+  network: ws
+  port: '443'
+  server: 30.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+  ws-opts:
+    headers:
+      Host: 116.supermanapp.top
+    path: /789bjuiouh44
+- alterId: 0
+  cipher: auto
+  name: 28|日本 03 | tcp
+  network: tcp
+  port: '80'
+  server: 223.113.54.139
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+- alterId: 0
+  cipher: auto
+  name: 28|印度尼西亚 01 | ws
+  network: ws
+  port: '20002'
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
   tls: false
   type: vmess
@@ -11993,93 +11895,78 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|🇯🇵JP-31.184.207.5-4546
+  name: 28|捷克 01 | ws
   network: ws
-  port: 443
-  server: 31.184.207.5
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: b85520c4-e377-4806-bc12-5be674fc4061
-  ws-opts:
-    headers:
-      Host: yasdl900.redirectme.net
-    path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
-  name: 28|徐州移动 02 | tcp
-  network: tcp
-  port: '80'
-  server: 223.113.54.141
+  port: '20024'
+  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
   tls: false
   type: vmess
   uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-- alterId: 0
-  cipher: auto
-  name: 28|韩国Hb丨Oracle丨流媒体 | 直连
-  network: ws
-  port: '443'
-  server: 22.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
   ws-opts:
     headers:
-      Host: 116.supermanapp.top
-    path: /hhhuhufk36io36
-- cipher: aes-256-cfb
-  name: 28|8J%2BHr%2FCfh7VKUC01NC4yNTAuMT...
-  obfs: tls1.2_ticket_auth
-  obfs-param: ''
-  password: eAokbaDN6
-  port: '8081'
-  protocol: origin
-  protocol-param: ''
-  server: jp-am48-6.eqnode.net
-  type: ssr
+      Host: tms.dingtalk.com
+    path: /
 - alterId: 0
   cipher: auto
-  name: 28|印度C丨孟买 | 直连 | 流媒体
-  network: ws
-  port: '443'
-  server: 19.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /7898uuhuugdhfgh21
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-104.21.73.14-1619
+  name: 28|🏁RELAY-104.21.82.183-0179
   network: ws
   port: 8880
-  server: 104.21.73.14
+  server: server12.beheshtbaneh.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 45f63e92-f782-4cac-84b8-e61cb5a5bfd0
+  uuid: 39c03e6d-9efd-4e5a-8851-cd4ed0ec303c
+  ws-opts:
+    headers:
+      Host: server12.beheshtbaneh.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇵🇹PT-94.131.10.135-0147
+  network: ws
+  port: 2095
+  server: 94.131.10.135
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e2021c91-6e29-49d6-9641-14a8f2600e05
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 28|美国53 | 流媒体 | 直连
+  network: ws
+  port: '443'
+  server: 35.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+  ws-opts:
+    headers:
+      Host: 116.supermanapp.top
+    path: /kdaa2232u53
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-172.67.170.103-2070
+  network: ws
+  port: 2095
+  server: 172.67.170.103
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
   ws-opts:
     headers:
       Host: yaghoob55freenodes.repaco69437403.workers.dev
-    path: /adenc35.fixedlfoat.top/linkws
+    path: /glweidf.sbs/linkws
 - alterId: 0
   cipher: auto
-  name: 28|SJP—新加坡03|优选原生IP|1x
-  network: tcp
-  port: '38017'
-  server: gz.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
-  name: 28|印度尼西亚 01 | ws
+  name: 28|乌兹别克斯坦 01 | ws
   network: ws
-  port: '20002'
+  port: '20001'
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
   tls: false
   type: vmess
@@ -12103,18 +11990,473 @@ proxies:
     path: /gd3245vd2S32cr
 - alterId: 0
   cipher: auto
-  name: 28|🏁RELAY-10.10.34.36-0808
+  name: 28|🇺🇸US-66.181.33.108-3306
   network: ws
-  port: 2086
-  server: index.zhaal.ir
+  port: 22666
+  server: 66.181.33.108
   servername: ''
   tls: false
   type: vmess
-  uuid: e690ff9e-1676-4be3-d136-dcae586cb1e7
+  uuid: 9f096c70-478a-4fef-b29f-0f14d6a06583
   ws-opts:
     headers:
-      Host: index.zhaal.ir
+      Host: ''
+    path: /a?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 28|美国57 | 流媒体 | 直连
+  network: ws
+  port: '443'
+  server: 39.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+  ws-opts:
+    headers:
+      Host: 116.supermanapp.top
+    path: /kdakfj233q57
+- alterId: 0
+  cipher: auto
+  name: 28|SJP—新加坡03|优选原生IP|1x
+  network: tcp
+  port: '38017'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- alterId: 0
+  cipher: auto
+  name: 28|美国52 | 流媒体 | 直连
+  network: ws
+  port: '443'
+  server: 34.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+  ws-opts:
+    headers:
+      Host: 116.supermanapp.top
+    path: /kd1234kk52
+- alterId: 0
+  cipher: auto
+  name: 28|🇪🇸ES-176.120.74.142-0950
+  network: ws
+  port: 443
+  server: 176.120.74.142
+  servername: 176.120.74.142
+  tls: false
+  type: vmess
+  uuid: 75695f5a-b6af-44f4-9983-ae250b53ff9c
+  ws-opts:
+    headers:
+      Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 28|韩国Hd丨Oracle丨流媒体 | 直连
+  network: ws
+  port: '443'
+  server: 24.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+  ws-opts:
+    headers:
+      Host: 116.supermanapp.top
+    path: /tyuihjhjh78yu38
+- alterId: 0
+  cipher: auto
+  name: 28|S-新加坡1号|2x
+  network: tcp
+  port: '26037'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- alterId: 0
+  cipher: auto
+  name: 28|UK英国—lite|解锁流媒体|1x
+  network: tcp
+  port: '38005'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-172.67.196.112-2229
+  network: ws
+  port: 443
+  server: kellie.makeup
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kellie.makeup
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-172.67.235.237-1707
+  network: ws
+  port: 443
+  server: 172.67.235.237
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: f24bba0f-8656-44f8-b21e-a0e3a190c4c5
+  ws-opts:
+    headers:
+      Host: www.31000oooowe2.bf
+    path: /df97b21e-3943-4865-af18-b5ea9676b037
+- alterId: 0
+  cipher: auto
+  name: 28|USpro—解锁流媒体|2x
+  network: tcp
+  port: '38027'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-10.10.34.36-0845
+  network: ws
+  port: 8880
+  server: food.zhaal.ir
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+  ws-opts:
+    headers:
+      Host: food.zhaal.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|爱尔兰 01 | ws
+  network: ws
+  port: '20015'
+  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇭🇰香港1-移动优选 0.1X
+  network: ws
+  port: '80'
+  server: cfzl1.freeapp.buzz
+  tls: false
+  type: vmess
+  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
+  ws-opts:
+    headers:
+      Host: wz3.kcjs.me
+    path: /gd3245vd2S32cr
+- alterId: 0
+  cipher: auto
+  name: 28|英国|三网优化|1x
+  network: tcp
+  port: '38067'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- alterId: 0
+  cipher: auto
+  name: 28|美国BB | 流媒体 | 直连
+  network: ws
+  port: '443'
+  server: 32.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+  ws-opts:
+    headers:
+      Host: 116.supermanapp.top
+    path: /kdakfj32u9u46
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-172.67.179.232-1881
+  network: ws
+  port: 443
+  server: 172.67.179.232
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 06195b5b-3815-4a07-96f7-47eefbb1b143
+  ws-opts:
+    headers:
+      Host: urnxewzvh.site
+    path: /kwhmvws
+- alterId: 0
+  cipher: auto
+  name: 28|越南 01 | ws
+  network: ws
+  port: '20023'
+  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇬🇷GR-94.131.8.32-0191
+  network: ws
+  port: 8080
+  server: 94.131.8.32
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 57e37a74-badc-4b71-87c7-5b9e20879b58
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 28|美国56 | 流媒体 | 直连
+  network: ws
+  port: '443'
+  server: 38.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+  ws-opts:
+    headers:
+      Host: 116.supermanapp.top
+    path: /kda2dd56
+- alterId: 0
+  cipher: auto
+  name: 28|美国AA丨流媒体 | 直连
+  network: ws
+  port: '443'
+  server: 31.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+  ws-opts:
+    headers:
+      Host: 116.supermanapp.top
+    path: /e6234sdfsuh45
+- alterId: 0
+  cipher: auto
+  name: 28|美国 01 | ws
+  network: ws
+  port: '80'
+  server: 223.113.54.144
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 28|🏁RELAY-104.21.83.108-1436
+  network: ws
+  port: 443
+  server: hms02opi.fxiaomi.sbs
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
+  ws-opts:
+    headers:
+      Host: hms02.fxiaomi.sbs
+    path: /link
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-172.64.80.1-8440
+  network: ws
+  port: 8880
+  server: fra.yj2022.gq
+  servername: fra.yj2022.gq
+  tls: false
+  type: vmess
+  uuid: 4b5e4565-322f-4223-a891-78a84f189726
+  ws-opts:
+    headers:
+      Host: fra.yj2022.gq
+    path: /9sTFt5L554kPVWmuJ2k8baS4bEY83PZ66xb4twoBBtsiMPK2b
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-172.67.181.241-8413
+  network: ws
+  port: 443
+  server: afrhms16v.bestxray.buzz
+  servername: afrhms16v.bestxray.buzz
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: afrhms16v.bestxray.buzz
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 28|泰国 01 | ws
+  network: ws
+  port: '2003'
+  server: 223.113.54.131
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|韩国he丨Oracle丨流媒体 | 直连
+  network: ws
+  port: '443'
+  server: 25.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+  ws-opts:
+    headers:
+      Host: 116.supermanapp.top
+    path: /fuuig7ggugguyg39
+- alterId: 0
+  cipher: auto
+  name: 28|韩国 01 | ws
+  network: ws
+  port: '80'
+  server: 223.113.54.142
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-104.20.231.21-1911
+  network: ws
+  port: 443
+  server: 104.20.231.21
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: vpnsupportfast.vpnsuortfast.workers.dev
+    path: /kellie.makeup/linkvws
+- cipher: aes-128-cfb
+  name: 28|8J%2BHuvCfh7hVUy0yMTIuMTAyLjQ3...
+  obfs: plain
+  obfs-param: ''
+  password: shadowsocks
+  port: '443'
+  protocol: origin
+  protocol-param: ''
+  server: 212.102.47.198
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 28|台湾 02 | ws
+  network: ws
+  port: '80'
+  server: 1b314bb0-24cd-7d15-ee61-f98c4385068f.neo-awaken.uk
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- cipher: aes-256-cfb
+  name: 28|8J%2BHr%2FCfh7VKUC01NC4yNTAuMT...
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: eAokbaDN6
+  port: '8081'
+  protocol: origin
+  protocol-param: ''
+  server: jp-am48-6.eqnode.net
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 28|爱沙尼亚 01 | ws
+  network: ws
+  port: '20021'
+  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|阿根廷 02 | ws
+  network: ws
+  port: '2002'
+  server: 223.113.54.131
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|美国圣何塞-中转|1x
+  network: ws
+  port: '38889'
+  server: aws.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /daxun/us2
+- alterId: 0
+  cipher: auto
+  name: 28|🇰🇷韩国-优选 0.1X
+  network: ws
+  port: '8080'
+  server: cfzl1.freeapp.buzz
+  tls: false
+  type: vmess
+  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
+  ws-opts:
+    headers:
+      Host: ywcc.kcjs.me
+    path: /gd3245vd2S32cr
+- alterId: 0
+  cipher: auto
+  name: 28|香港BGP|优选原生IP|2x
+  network: tcp
+  port: '38001'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
 - alterId: 0
   cipher: auto
   name: 28|🇵🇹PT-94.131.10.135-8425
@@ -12131,9 +12473,91 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 28|爱沙尼亚 01 | ws
+  name: 28|🇯🇵日本 0.1X
+  network: tcp
+  port: '31302'
+  server: jp-tokyo-oracle-03b285.ip1.shop
+  tls: false
+  type: vmess
+  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
+- alterId: 0
+  cipher: auto
+  name: 28|英国C丨伦敦丨流媒体|直连
   network: ws
-  port: '20021'
+  port: '443'
+  server: 13.openiisee.monster
+  servername: 116.cloudreve.top
+  tls: true
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+  ws-opts:
+    headers:
+      Host: 116.cloudreve.top
+    path: /u7uyu3i73ueud15
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-162.159.36.20-2236
+  network: ws
+  port: 443
+  server: 08dfde51-8c5d-4160-8732-0745507cfd5b.cloudflare-gateway.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: mikasa.erenyeager.cloudns.biz
+    path: /glweidf.sbs/linkws
+- alterId: 0
+  cipher: auto
+  name: 28|杭州电信 01 | ws | 非80
+  network: ws
+  port: '1080'
+  server: 125.124.254.5
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|新加坡03|三网优化|1x
+  network: tcp
+  port: '38023'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- alterId: 0
+  cipher: auto
+  name: 28|🇰🇷韩国2 0.1X
+  network: tcp
+  port: '34902'
+  server: kr-seoul-oracle-86a6ed.ip1.shop
+  tls: false
+  type: vmess
+  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
+- alterId: 0
+  cipher: auto
+  name: 28|69yun.top | 1元机场 | 注册即送流量
+  network: ws
+  port: '443'
+  server: 18.openiisee.monster
+  servername: lovemylive.top
+  tls: true
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+  ws-opts:
+    headers:
+      Host: lovemylive.top
+    path: /fjdfhhh64dfhej341754ffg34
+- alterId: 0
+  cipher: auto
+  name: 28|瑞士 01 | ws
+  network: ws
+  port: '20017'
   server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
   tls: false
   type: vmess
@@ -12144,40 +12568,68 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|🏁RELAY-104.25.38.74-0874
+  name: 28|美国凤凰城-高速中转|1x
   network: ws
-  port: 2096
-  server: 104.25.38.74
+  port: '38887'
+  server: aws.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /daxun/us3
+- alterId: 0
+  cipher: auto
+  name: 28|🇰🇷KR-152.67.218.38-0913
+  network: ws
+  port: 443
+  server: 152.67.218.38
   servername: ''
+  tls: false
+  type: vmess
+  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
+  ws-opts:
+    headers:
+      Host: 152.67.218.38
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|日本|三网优化|1x
+  network: tcp
+  port: '26044'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- alterId: 0
+  cipher: auto
+  name: 28|韩国Hb丨Oracle丨流媒体 | 直连
+  network: ws
+  port: '443'
+  server: 22.openiisee.monster
+  servername: 116.supermanapp.top
   tls: true
   type: vmess
-  uuid: 12009e57-6fd8-46d6-94af-539514a7e7c7
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
   ws-opts:
     headers:
-      Host: s1.shargh.shop
-    path: /
+      Host: 116.supermanapp.top
+    path: /hhhuhufk36io36
 - alterId: 0
   cipher: auto
-  name: 28|济南联通 02 | tcp
-  network: tcp
-  port: '80'
-  server: 60.215.152.139
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-- alterId: 0
-  cipher: auto
-  name: 28|济南联通 01 | ws
+  name: 28|英国BA丨伦敦丨流媒体 | 直连
   network: ws
-  port: '80'
-  server: 60.215.152.138
-  tls: false
+  port: '443'
+  server: 27.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
   type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
   ws-opts:
     headers:
-      Host: tms.dingtalk.com
-    path: /
+      Host: 116.supermanapp.top
+    path: /e678wqw1qq41
 - alterId: 0
   cipher: auto
   name: 28|英国B丨伦敦丨流媒体 | 直连
@@ -12194,18 +12646,303 @@ proxies:
     path: /e678uhgyuh14
 - alterId: 0
   cipher: auto
-  name: 28|🏁RELAY-104.20.231.21-1911
+  name: 28|杭州电信 02 | tcp | 非80
+  network: tcp
+  port: '1081'
+  server: 125.124.254.5
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-104.21.30.254-1731
   network: ws
   port: 443
-  server: 104.20.231.21
+  server: nina.bond
   servername: ''
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: vpnsupportfast.vpnsuortfast.workers.dev
-    path: /kellie.makeup/linkvws
+      Host: nina.bond
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 28|Scloud台湾03—原生IP|0.5x
+  network: tcp
+  port: '26041'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- alterId: 0
+  cipher: auto
+  name: 28|新加坡 01 | ws
+  network: ws
+  port: '80'
+  server: 120.232.186.55
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇸🇬SG-45.76.144.158-8335
+  network: ws
+  port: 17187
+  server: 45.76.144.158
+  servername: android.googleapis.com
+  tls: false
+  type: vmess
+  uuid: ae7590fa-242e-41ef-ae0a-9018025d2ff7
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|济南联通 02 | tcp
+  network: tcp
+  port: '80'
+  server: 60.215.152.139
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-104.21.18.30-2010
+  network: ws
+  port: 443
+  server: 104.21.18.30
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 06195b5b-3815-4a07-96f7-47eefbb1b143
+  ws-opts:
+    headers:
+      Host: urnxewzvh.site
+    path: /kwhmvws
+- alterId: 0
+  cipher: auto
+  name: 28|🇯🇵JP-31.184.207.5-4546
+  network: ws
+  port: 443
+  server: 31.184.207.5
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: b85520c4-e377-4806-bc12-5be674fc4061
+  ws-opts:
+    headers:
+      Host: yasdl900.redirectme.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 28|吉尔吉斯斯坦 01 | ws
+  network: ws
+  port: '20000'
+  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|河南移动 03 | ws | 非80
+  network: ws
+  port: '1080'
+  server: 39.164.141.93
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-162.159.129.87-0871
+  network: ws
+  port: 2096
+  server: 162.159.129.87
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 12009e57-6fd8-46d6-94af-539514a7e7c7
+  ws-opts:
+    headers:
+      Host: s1.shargh.shop
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 28|🇺🇸US-142.171.237.214-2225
+  network: ws
+  port: 443
+  server: 142.171.237.214
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.23168499.xyz
+    path: /path/221312281009
+- alterId: 0
+  cipher: auto
+  name: 28|韩国 02 | tcp
+  network: tcp
+  port: '80'
+  server: 223.113.54.143
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+- alterId: 0
+  cipher: auto
+  name: 28|芬兰 01 | ws
+  network: ws
+  port: '20012'
+  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|美国54 | 流媒体 | 直连
+  network: ws
+  port: '443'
+  server: 36.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+  ws-opts:
+    headers:
+      Host: 116.supermanapp.top
+    path: /dff234d54
+- alterId: 0
+  cipher: auto
+  name: 28|🇸🇰SK-5.252.23.173-8324
+  network: ws
+  port: 2082
+  server: 5.252.23.173
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d70a32b5-5d4b-4ebe-adf6-8f34c73871d2
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 28|🇪🇸ES-176.120.74.142-0907
+  network: ws
+  port: 443
+  server: 176.120.74.142
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 75695f5a-b6af-44f4-9983-ae250b53ff9c
+  ws-opts:
+    headers:
+      Host: internet.life.com.by
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-104.21.82.183-0774
+  network: ws
+  port: 8880
+  server: 104.21.82.183
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 352ecc6f-21f1-4dc8-8177-4ebd52c55b12
+  ws-opts:
+    headers:
+      Host: server5.beheshtbaneh.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|新加坡01|三网优化|1x
+  network: tcp
+  port: '26035'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- alterId: 0
+  cipher: auto
+  name: 28|徐州移动 02 | tcp
+  network: tcp
+  port: '80'
+  server: 223.113.54.141
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+- alterId: 0
+  cipher: auto
+  name: 28|香港 02 | ws
+  network: ws
+  port: '80'
+  server: 223.113.54.133
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|哈萨克斯坦 01 | ws
+  network: ws
+  port: '20018'
+  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|罗马尼亚 01 | ws
+  network: ws
+  port: '20008'
+  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-104.21.30.254-4590
+  network: ws
+  port: 443
+  server: 104.21.30.254
+  servername: nina.bond
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: nina.bond
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 28|🇻🇳VN-103.147.126.66-2135
@@ -12236,73 +12973,10 @@ proxies:
     path: /kdakf212u60
 - alterId: 0
   cipher: auto
-  name: 28|🇰🇷KR-152.67.218.38-0913
-  network: ws
-  port: 443
-  server: 152.67.218.38
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
-  ws-opts:
-    headers:
-      Host: 152.67.218.38
-    path: /
-- alterId: 64
-  cipher: auto
-  name: '28|未命名 #5'
-  network: ws
-  port: 443
-  server: aaaa.wxx.gay
-  tls: true
-  type: vmess
-  uuid: 8237ec34-143a-11ee-8019-000017022008
-  ws-opts:
-    headers:
-      Host: ''
-    path: /look
-- alterId: 0
-  cipher: auto
-  name: 28|🇫🇷FR-146.59.204.6-0168
-  network: ws
-  port: 80
-  server: 146.59.204.6
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
-  ws-opts:
-    headers:
-      Host: ''
-    path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY
-- alterId: 0
-  cipher: auto
-  name: 28|香港 03 | tcp
-  network: tcp
-  port: '80'
-  server: 120.232.186.60
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-- alterId: 0
-  cipher: auto
-  name: 28|美国圣何塞-中转|1x
-  network: ws
-  port: '38889'
-  server: aws.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-  ws-opts:
-    headers:
-      Host: www.baidu.com
-    path: /daxun/us2
-- alterId: 0
-  cipher: auto
-  name: 28|英国BD丨伦敦丨流媒体 | 直连
+  name: 28|美国59 | 流媒体 | 直连
   network: ws
   port: '443'
-  server: 30.openiisee.monster
+  server: 41.openiisee.monster
   servername: 116.supermanapp.top
   tls: true
   type: vmess
@@ -12310,13 +12984,36 @@ proxies:
   ws-opts:
     headers:
       Host: 116.supermanapp.top
-    path: /789bjuiouh44
+    path: /kd66kk59
 - alterId: 0
   cipher: auto
-  name: 28|台湾 02 | ws
+  name: 28|英国丨伦敦丨流媒体 | 直连
+  network: ws
+  port: '443'
+  server: 3.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+  ws-opts:
+    headers:
+      Host: 116.supermanapp.top
+    path: /uiohhjk7894567hjy05
+- alterId: 0
+  cipher: auto
+  name: 28|印度|三网优化|注册游戏|1x
+  network: tcp
+  port: '26043'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- alterId: 0
+  cipher: auto
+  name: 28|香港 01 | ws
   network: ws
   port: '80'
-  server: 1b314bb0-24cd-7d15-ee61-f98c4385068f.neo-awaken.uk
+  server: 223.113.54.132
   tls: false
   type: vmess
   uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
@@ -12324,62 +13021,6 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🇭🇰HK-23.99.120.52-0912
-  network: ws
-  port: 10510
-  server: 23.99.120.52
-  servername: www.alipay.com
-  tls: false
-  type: vmess
-  uuid: 619d8b66-469f-4dce-fc71-b74f05810212
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🇪🇸ES-176.120.74.142-0948
-  network: ws
-  port: 443
-  server: 176.120.74.142
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 75695f5a-b6af-44f4-9983-ae250b53ff9c
-  ws-opts:
-    headers:
-      Host: 176.120.74.142
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|英国C丨伦敦丨流媒体|直连
-  network: ws
-  port: '443'
-  server: 13.openiisee.monster
-  servername: 116.cloudreve.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.cloudreve.top
-    path: /u7uyu3i73ueud15
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-104.21.15.36-2028
-  network: ws
-  port: 443
-  server: linde06.indiavideo.sbs
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-  ws-opts:
-    headers:
-      Host: linde06.indiavideo.sbs
-    path: /linkws
 - alterId: 0
   cipher: auto
   name: 28|🏁RELAY-172.67.161.114-0800
@@ -12396,24 +13037,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|🏁RELAY-104.21.18.30-2010
-  network: ws
-  port: 443
-  server: 104.21.18.30
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 06195b5b-3815-4a07-96f7-47eefbb1b143
-  ws-opts:
-    headers:
-      Host: urnxewzvh.site
-    path: /kwhmvws
-- alterId: 0
-  cipher: auto
-  name: 28|英国BA丨伦敦丨流媒体 | 直连
+  name: 28|韩国Hc丨Oracle丨流媒体 | 直连
   network: ws
   port: '443'
-  server: 27.openiisee.monster
+  server: 23.openiisee.monster
   servername: 116.supermanapp.top
   tls: true
   type: vmess
@@ -12421,72 +13048,13 @@ proxies:
   ws-opts:
     headers:
       Host: 116.supermanapp.top
-    path: /e678wqw1qq41
+    path: /678ghuih8uuij137
 - alterId: 0
   cipher: auto
-  name: 28|日本 02 | ws
-  network: ws
-  port: '80'
-  server: 223.113.54.131
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|日本|三网优化|1x
-  network: tcp
-  port: '26044'
-  server: gz.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
-  name: 28|台湾hinet01|优选原生IP|1x
-  network: tcp
-  port: '38015'
-  server: gz.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
-  name: 28|69yun.top | 1元机场 | 注册即送流量
+  name: 28|英国BB丨伦敦丨流媒体 | 直连
   network: ws
   port: '443'
-  server: 18.openiisee.monster
-  servername: lovemylive.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: lovemylive.top
-    path: /fjdfhhh64dfhej341754ffg34
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-104.21.30.254-4590
-  network: ws
-  port: 443
-  server: 104.21.30.254
-  servername: nina.bond
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: nina.bond
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 28|韩国H丨Oracle丨流媒体 | 直连
-  network: ws
-  port: '443'
-  server: 5.openiisee.monster
+  server: 28.openiisee.monster
   servername: 116.supermanapp.top
   tls: true
   type: vmess
@@ -12494,569 +13062,21 @@ proxies:
   ws-opts:
     headers:
       Host: 116.supermanapp.top
-    path: /343111341ere31
+    path: /e6g54g4ggyuh42
 - alterId: 0
   cipher: auto
-  name: 28|美国55 | 流媒体 | 直连
+  name: 28|🇸🇬SG-167.172.80.198-8338
   network: ws
-  port: '443'
-  server: 37.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /kdakfdff55
-- alterId: 0
-  cipher: auto
-  name: 28|土耳其 01 | ws
-  network: ws
-  port: '2000'
-  server: 223.113.54.131
+  port: 8880
+  server: 8db7766f-d893-430e-96fb-ccd20e681145.tg.hkaa0.66688888.xyz
+  servername: 8db7766f-d893-430e-96fb-ccd20e681145.tg.hkaa0.66688888.xyz
   tls: false
   type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  uuid: ae3e6ab7-144a-4ecc-981d-603ea73bc8af
   ws-opts:
     headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|杭州电信 01 | ws | 非80
-  network: ws
-  port: '1080'
-  server: 125.124.254.5
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🇪🇸ES-176.120.74.142-0907
-  network: ws
-  port: 443
-  server: 176.120.74.142
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 75695f5a-b6af-44f4-9983-ae250b53ff9c
-  ws-opts:
-    headers:
-      Host: internet.life.com.by
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🇬🇷GR-94.131.8.32-0191
-  network: ws
-  port: 8080
-  server: 94.131.8.32
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 57e37a74-badc-4b71-87c7-5b9e20879b58
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 28|波兰 01 | ws
-  network: ws
-  port: '20013'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🇰🇷韩国-优选 0.1X
-  network: ws
-  port: '8080'
-  server: cfzl1.freeapp.buzz
-  tls: false
-  type: vmess
-  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
-  ws-opts:
-    headers:
-      Host: ywcc.kcjs.me
-    path: /gd3245vd2S32cr
-- alterId: 0
-  cipher: auto
-  name: 28|韩国K丨Oracle丨流媒体 | 直连
-  network: ws
-  port: '443'
-  server: 10.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /fjdfk3fw2ssi2q33
-- alterId: 0
-  cipher: auto
-  name: 28|徐州移动 01 | ws
-  network: ws
-  port: '80'
-  server: 223.113.54.140
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|新加坡03|三网优化|1x
-  network: tcp
-  port: '38023'
-  server: gz.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-172.67.220.64-1994
-  network: ws
-  port: 443
-  server: 172.67.220.64
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: f24bba0f-8656-44f8-b21e-a0e3a190c4c5
-  ws-opts:
-    headers:
-      Host: www.31000oooowe2.bf
-    path: /df97b21e-3943-4865-af18-b5ea9676b037
-- alterId: 0
-  cipher: auto
-  name: 28|美国54 | 流媒体 | 直连
-  network: ws
-  port: '443'
-  server: 36.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /dff234d54
-- alterId: 64
-  cipher: auto
-  name: 28|🇺🇸US-142.171.237.214-2225
-  network: ws
-  port: 443
-  server: 142.171.237.214
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.23168499.xyz
-    path: /path/221312281009
-- alterId: 0
-  cipher: auto
-  name: 28|美国57 | 流媒体 | 直连
-  network: ws
-  port: '443'
-  server: 39.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /kdakfj233q57
-- alterId: 0
-  cipher: auto
-  name: 28|加拿大|三网优化|1x
-  network: tcp
-  port: '26042'
-  server: gz.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-162.159.36.20-2236
-  network: ws
-  port: 443
-  server: 08dfde51-8c5d-4160-8732-0745507cfd5b.cloudflare-gateway.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  ws-opts:
-    headers:
-      Host: mikasa.erenyeager.cloudns.biz
-    path: /glweidf.sbs/linkws
-- alterId: 0
-  cipher: auto
-  name: 28|英国|三网优化|1x
-  network: tcp
-  port: '38067'
-  server: gz.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
-  name: 28|韩国 01 | ws
-  network: ws
-  port: '80'
-  server: 223.113.54.142
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|美国52 | 流媒体 | 直连
-  network: ws
-  port: '443'
-  server: 34.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /kd1234kk52
-- alterId: 0
-  cipher: auto
-  name: 28|台湾 03 | tcp
-  network: tcp
-  port: '80'
-  server: 975e1329-3bc5-d33e-f8b3-f841c1ce31b5.neo-awaken.uk
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-- alterId: 0
-  cipher: auto
-  name: 28|德国|三网优化|1x
-  network: tcp
-  port: '38007'
-  server: gz.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
-  name: 28|印度J丨孟买 | 直连 | 流媒体
-  network: ws
-  port: '443'
-  server: 8.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /jfsds5rtgftyg10
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-172.67.181.241-8413
-  network: ws
-  port: 443
-  server: afrhms16v.bestxray.buzz
-  servername: afrhms16v.bestxray.buzz
-  tls: true
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: afrhms16v.bestxray.buzz
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 28|越南 01 | ws
-  network: ws
-  port: '20023'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|新加坡 02 | ws
-  network: ws
-  port: '80'
-  server: 223.113.54.135
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🇳🇱NL-81.28.12.12-0133
-  network: ws
-  port: 443
-  server: nngxxx.link
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 7fdc9ae0-4b55-4da2-f234-31079092b323
-  ws-opts:
-    headers:
-      Host: nngxxx.link
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|日本 04 | tcp
-  network: tcp
-  port: '80'
-  server: 223.113.54.130
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-- alterId: 0
-  cipher: auto
-  name: 28|日本I丨BGP丨流媒体|直连
-  network: ws
-  port: '443'
-  server: 6.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /uruydtyubn8q08
-- alterId: 0
-  cipher: auto
-  name: 28|Scloud台湾03—原生IP|0.5x
-  network: tcp
-  port: '26041'
-  server: gz.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
-  name: 28|印度F | 孟买 | 直连 | 流媒体
-  network: ws
-  port: '443'
-  server: 21.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /rfededxcvbniuyt5671ss23
-- alterId: 0
-  cipher: auto
-  name: 28|韩国A丨Oracle丨流媒体 | 直连
-  network: ws
-  port: '443'
-  server: 4.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /5678hhg788u06
-- alterId: 0
-  cipher: auto
-  name: 28|USpro—解锁流媒体|2x
-  network: tcp
-  port: '38027'
-  server: gz.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
-  name: 28|美国BB | 流媒体 | 直连
-  network: ws
-  port: '443'
-  server: 32.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /kdakfj32u9u46
-- alterId: 0
-  cipher: auto
-  name: 28|🇯🇵日本 0.1X
-  network: tcp
-  port: '31302'
-  server: jp-tokyo-oracle-03b285.ip1.shop
-  tls: false
-  type: vmess
-  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
-- alterId: 0
-  cipher: auto
-  name: '28|美国 CloudFlare节点 #18'
-  network: ws
-  port: '8080'
-  server: 104.17.123.55
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1d47288a-699d-45ca-b4f0-4e5b36940e6f
-  ws-opts:
-    headers:
-      Host: pq.kmoljklj.top
-    path: /qZTtpya?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 28|河南移动 03 | ws | 非80
-  network: ws
-  port: '1080'
-  server: 39.164.141.93
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '28|TG群组链接: https://t.me/daxunyun'
-  network: tcp
-  port: '38001'
-  server: daxun.club
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
-  name: 28|🇰🇷韩国1 0.1X
-  network: tcp
-  port: '25362'
-  server: kr-seoul-oracle-4fccf5.ip1.shop
-  tls: false
-  type: vmess
-  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
-- alterId: 0
-  cipher: auto
-  name: 28|英国Bz丨伦敦丨流媒体 | 直连
-  network: ws
-  port: '443'
-  server: 29.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /e632323ruh43
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-172.67.196.112-4632
-  network: ws
-  port: 443
-  server: 172.67.196.112
-  servername: kellie.makeup
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kellie.makeup
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 28|香港 01 | ws
-  network: ws
-  port: '80'
-  server: 223.113.54.132
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🇳🇱荷兰-优选1 0.1X
-  network: ws
-  port: '8080'
-  server: cfzl1.freeapp.buzz
-  tls: false
-  type: vmess
-  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
-  ws-opts:
-    headers:
-      Host: nl.kcjs.me
-    path: /gd3245vd2S32cr
-- alterId: 0
-  cipher: auto
-  name: 28|日本 01 | ws
-  network: ws
-  port: '80'
-  server: 223.113.54.138
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🇩🇪德国-优选1 0.1X
-  network: ws
-  port: '8080'
-  server: cfzl1.freeapp.buzz
-  tls: false
-  type: vmess
-  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
-  ws-opts:
-    headers:
-      Host: wz2.kcjs.me
-    path: /gd3245vd2S32cr
-- alterId: 0
-  cipher: auto
-  name: 28|韩国Hf丨Oracle丨流媒体 | 直连
-  network: ws
-  port: '443'
-  server: 26.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /fj78uhjhu40
+      Host: 8db7766f-d893-430e-96fb-ccd20e681145.tg.hkaa0.66688888.xyz
+    path: /Telegram:@hkaa0
 - alterId: 0
   cipher: auto
   name: 28|🇿🇦ZA-129.151.164.152-0925
@@ -13073,115 +13093,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|🇸🇬SG-45.76.144.158-8334
-  network: ws
-  port: 55081
-  server: 45.76.144.158
-  servername: m.instagram.com
-  tls: false
-  type: vmess
-  uuid: 9c659458-b937-4297-95bd-3cc571c53032
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-104.21.82.183-4532
-  network: ws
-  port: 8880
-  server: server10.beheshtbaneh.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 66d4af1c-fcc3-479b-847c-3260253e1faa
-  ws-opts:
-    headers:
-      Host: server10.beheshtbaneh.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|台湾 01 | ws
-  network: ws
-  port: '80'
-  server: df0fbfc6-5816-180c-e7b5-f2f0e532c17c.neo-awaken.uk
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-172.67.132.15-10366
-  network: ws
-  port: 443
-  server: ming2.kiwireich.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af
-  ws-opts:
-    headers:
-      Host: ming2.kiwireich.com
-    path: /ray
-- alterId: 0
-  cipher: auto
-  name: 28|🇸🇬SG-194.156.163.108-2080
-  network: ws
-  port: 21010
-  server: 194.156.163.108
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 57c3bfd6-09d1-4954-9b67-3a7580adc14f
-  ws-opts:
-    headers:
-      Host: wapv62g.gorun.tech
-    path: /ebffd932-3fb9-460e-dc98-700b592bfb9c
-- alterId: 64
-  cipher: auto
-  name: '28|未命名 #7'
-  network: ws
-  port: 443
-  server: hkd1.quickerlink.xyz
-  tls: true
-  type: vmess
-  uuid: 3853a2ab-6bec-4503-89b9-d3cbcc6b69c9
-  ws-opts:
-    headers:
-      Host: ''
-    path: /h6jr23x9h3lqiitg
-- alterId: 0
-  cipher: auto
-  name: 28|挪威 01 | ws
-  network: ws
-  port: '20025'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|新加坡D丨Lin丨流媒体|直连
-  network: ws
-  port: '443'
-  server: 11.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /13é1yuiewh13
-- alterId: 0
-  cipher: auto
   name: 28|🏁RELAY-104.25.254.162-0876
   network: ws
   port: 2096
@@ -13196,10 +13107,23 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|美国56 | 流媒体 | 直连
+  name: 28|🇩🇪德国-优选1 0.1X
+  network: ws
+  port: '8080'
+  server: cfzl1.freeapp.buzz
+  tls: false
+  type: vmess
+  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
+  ws-opts:
+    headers:
+      Host: wz2.kcjs.me
+    path: /gd3245vd2S32cr
+- alterId: 0
+  cipher: auto
+  name: 28|美国51 | 流媒体 | 直连
   network: ws
   port: '443'
-  server: 38.openiisee.monster
+  server: 33.openiisee.monster
   servername: 116.supermanapp.top
   tls: true
   type: vmess
@@ -13207,13 +13131,73 @@ proxies:
   ws-opts:
     headers:
       Host: 116.supermanapp.top
-    path: /kda2dd56
+    path: /dsflkobishioio51
 - alterId: 0
   cipher: auto
-  name: 28|韩国Hc丨Oracle丨流媒体 | 直连
+  name: 28|🏁RELAY-172.67.175.56-8402
+  network: ws
+  port: 443
+  server: obdii.cfd
+  servername: obdii.cfd
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 28|伊拉克 01 | ws
+  network: ws
+  port: '20011'
+  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '28|TG群组链接: https://t.me/daxunyun'
+  network: tcp
+  port: '38001'
+  server: daxun.club
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- cipher: aes-128-cfb
+  name: 28|8J%2BHs%2FCfh7FOTC0xMDkuMjAxLj...
+  obfs: plain
+  obfs-param: ''
+  password: shadowsocks
+  port: '443'
+  protocol: origin
+  protocol-param: ''
+  server: 109.201.152.181
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 28|🇭🇰HK-23.99.120.52-0912
+  network: ws
+  port: 10510
+  server: 23.99.120.52
+  servername: www.alipay.com
+  tls: false
+  type: vmess
+  uuid: 619d8b66-469f-4dce-fc71-b74f05810212
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|韩国J丨Oracle丨流媒体 | 直连
   network: ws
   port: '443'
-  server: 23.openiisee.monster
+  server: 9.openiisee.monster
   servername: 116.supermanapp.top
   tls: true
   type: vmess
@@ -13221,63 +13205,264 @@ proxies:
   ws-opts:
     headers:
       Host: 116.supermanapp.top
-    path: /678ghuih8uuij137
+    path: /fj12f2k112ej34132
 - alterId: 0
   cipher: auto
-  name: 28|台湾 04 | tcp
+  name: 28|🇸🇬SG-194.156.163.108-2080
+  network: ws
+  port: 21010
+  server: 194.156.163.108
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 57c3bfd6-09d1-4954-9b67-3a7580adc14f
+  ws-opts:
+    headers:
+      Host: wapv62g.gorun.tech
+    path: /ebffd932-3fb9-460e-dc98-700b592bfb9c
+- alterId: 0
+  cipher: auto
+  name: 28|日本 04 | tcp
   network: tcp
   port: '80'
-  server: ffc3d492-fc46-ded9-a552-d5cb60c4d076.neo-awaken.uk
+  server: 223.113.54.130
   tls: false
   type: vmess
   uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
 - alterId: 0
   cipher: auto
-  name: 28|🏁RELAY-104.21.82.183-0774
+  name: 28|韩国H丨Oracle丨流媒体 | 直连
   network: ws
-  port: 8880
-  server: 104.21.82.183
+  port: '443'
+  server: 5.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+  ws-opts:
+    headers:
+      Host: 116.supermanapp.top
+    path: /343111341ere31
+- alterId: 0
+  cipher: auto
+  name: 28|🇪🇸ES-176.120.74.142-0948
+  network: ws
+  port: 443
+  server: 176.120.74.142
   servername: ''
   tls: false
   type: vmess
-  uuid: 352ecc6f-21f1-4dc8-8177-4ebd52c55b12
+  uuid: 75695f5a-b6af-44f4-9983-ae250b53ff9c
   ws-opts:
     headers:
-      Host: server5.beheshtbaneh.com
+      Host: 176.120.74.142
     path: /
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #20'
+  name: 28|日本 01 | ws
   network: ws
-  port: '8080'
-  server: 172.67.171.177
-  servername: ''
+  port: '80'
+  server: 223.113.54.138
   tls: false
   type: vmess
-  uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
   ws-opts:
     headers:
-      Host: eu3.openxai.link
-    path: /?ed=2048
+      Host: tms.dingtalk.com
+    path: /
 - alterId: 0
   cipher: auto
-  name: 28|美国洛杉矶-中转|1x
-  network: ws
-  port: '38888'
-  server: aws.daxun.cyou
+  name: 28|加拿大|三网优化|1x
+  network: tcp
+  port: '26042'
+  server: gz.daxun.cyou
   tls: false
   type: vmess
   uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-  ws-opts:
-    headers:
-      Host: www.baidu.com
-    path: /daxun/us1
 - alterId: 0
   cipher: auto
-  name: 28|🏁RELAY-172.67.235.237-1707
+  name: 28|韩国B丨Oracle丨流媒体 | 直连
+  network: ws
+  port: '443'
+  server: 2.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+  ws-opts:
+    headers:
+      Host: 116.supermanapp.top
+    path: /fjdfk364dfhej34104
+- alterId: 0
+  cipher: auto
+  name: 28|🇰🇷韩国3 0.1X
+  network: tcp
+  port: '31652'
+  server: kr-seoul-oracle-899012.ip1.shop
+  tls: false
+  type: vmess
+  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
+- alterId: 0
+  cipher: auto
+  name: 28|🇸🇬SG-45.76.144.158-8334
+  network: ws
+  port: 55081
+  server: 45.76.144.158
+  servername: m.instagram.com
+  tls: false
+  type: vmess
+  uuid: 9c659458-b937-4297-95bd-3cc571c53032
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|土耳其 01 | ws
+  network: ws
+  port: '2000'
+  server: 223.113.54.131
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🇸🇬SG-172.104.180.68-1870
+  network: ws
+  port: 80
+  server: 172.104.180.68
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: eb9e8a52-0fec-4a10-8d16-af3b32874933
+  ws-opts:
+    headers:
+      Host: UC99.5GTOCDOCAO.COM
+    path: /5gtocdocao.com
+- alterId: 0
+  cipher: auto
+  name: 28|🇺🇸US-132.145.132.227-0108
+  network: ws
+  port: 37121
+  server: 132.145.132.227
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 93845b50-26f6-4203-f5ad-4d231d4e8f45
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|印度J丨孟买 | 直连 | 流媒体
+  network: ws
+  port: '443'
+  server: 8.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+  ws-opts:
+    headers:
+      Host: 116.supermanapp.top
+    path: /jfsds5rtgftyg10
+- alterId: 0
+  cipher: auto
+  name: 28|济南联通 01 | ws
+  network: ws
+  port: '80'
+  server: 60.215.152.138
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|加拿大F丨多伦多 | 直连
+  network: ws
+  port: '443'
+  server: 16.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+  ws-opts:
+    headers:
+      Host: 116.supermanapp.top
+    path: /fokk30023k9fk9(KFdf18
+- alterId: 0
+  cipher: auto
+  name: 28|德国|三网优化|1x
+  network: tcp
+  port: '38007'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-104.18.202.250-1762
+  network: ws
+  port: 2082
+  server: 104.18.202.250
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev
+    path: /nina.bond/linkvws
+- alterId: 1
+  cipher: auto
+  name: 28|🏁RELAY-104.21.44.106-1435
   network: ws
   port: 443
-  server: 172.67.235.237
+  server: hms04.xmivideo.cfd
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
+  ws-opts:
+    headers:
+      Host: xmivideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 28|🇰🇷韩国1 0.1X
+  network: tcp
+  port: '25362'
+  server: kr-seoul-oracle-4fccf5.ip1.shop
+  tls: false
+  type: vmess
+  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
+- alterId: 0
+  cipher: auto
+  name: 28|新加坡 03 | ws
+  network: ws
+  port: '80'
+  server: 223.113.54.136
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|🏁RELAY-172.67.220.64-1994
+  network: ws
+  port: 443
+  server: 172.67.220.64
   servername: ''
   tls: true
   type: vmess
@@ -13288,17 +13473,44 @@ proxies:
     path: /df97b21e-3943-4865-af18-b5ea9676b037
 - alterId: 0
   cipher: auto
-  name: 28|🏁RELAY-104.21.82.183-0768
+  name: 28|🇳🇱NL-81.28.12.12-0133
   network: ws
-  port: 8880
-  server: 104.21.82.183
+  port: 443
+  server: nngxxx.link
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: e305fc57-6153-4650-8c52-9a36865a199d
+  uuid: 7fdc9ae0-4b55-4da2-f234-31079092b323
   ws-opts:
     headers:
-      Host: server3.beheshtbaneh.com
+      Host: nngxxx.link
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|韩国Ha丨Oracle丨流媒体 | 直连
+  network: ws
+  port: '443'
+  server: 20.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+  ws-opts:
+    headers:
+      Host: 116.supermanapp.top
+    path: /fjdfk678tyuh35
+- alterId: 0
+  cipher: auto
+  name: 28|台湾 01 | ws
+  network: ws
+  port: '80'
+  server: df0fbfc6-5816-180c-e7b5-f2f0e532c17c.neo-awaken.uk
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
     path: /
 - alterId: 0
   cipher: auto
@@ -13316,113 +13528,31 @@ proxies:
     path: /jfsds2u4ud22d2209
 - alterId: 0
   cipher: auto
-  name: 28|德国 01 | ws
+  name: 28|美国58 | 流媒体 | 直连
   network: ws
-  port: '20004'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
+  port: '443'
+  server: 40.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
   type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
   ws-opts:
     headers:
-      Host: tms.dingtalk.com
-    path: /
+      Host: 116.supermanapp.top
+    path: /kda22k58
 - alterId: 0
   cipher: auto
-  name: 28|美国 01 | ws
+  name: 28|🇳🇱荷兰-优选1 0.1X
   network: ws
-  port: '80'
-  server: 223.113.54.144
+  port: '8080'
+  server: cfzl1.freeapp.buzz
   tls: false
   type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
   ws-opts:
     headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-10.10.34.36-0845
-  network: ws
-  port: 8880
-  server: food.zhaal.ir
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
-  ws-opts:
-    headers:
-      Host: food.zhaal.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🇪🇸ES-176.120.74.142-0950
-  network: ws
-  port: 443
-  server: 176.120.74.142
-  servername: 176.120.74.142
-  tls: false
-  type: vmess
-  uuid: 75695f5a-b6af-44f4-9983-ae250b53ff9c
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-172.67.161.114-0163
-  network: ws
-  port: 8880
-  server: server8.beheshtbaneh.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f46acc36-5edf-4c5f-8c8f-3520ff46cdd9
-  ws-opts:
-    headers:
-      Host: server8.beheshtbaneh.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🏁RELAY-104.21.82.183-0179
-  network: ws
-  port: 8880
-  server: server12.beheshtbaneh.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 39c03e6d-9efd-4e5a-8851-cd4ed0ec303c
-  ws-opts:
-    headers:
-      Host: server12.beheshtbaneh.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|捷克 01 | ws
-  network: ws
-  port: '20024'
-  server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|🇸🇰SK-5.252.23.173-8324
-  network: ws
-  port: 2082
-  server: 5.252.23.173
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d70a32b5-5d4b-4ebe-adf6-8f34c73871d2
-  ws-opts:
-    headers:
-      Host: ''
-    path: /vmess
+      Host: nl.kcjs.me
+    path: /gd3245vd2S32cr
 - alterId: 0
   cipher: auto
   name: 28|英国D丨伦敦丨流媒体|直连
@@ -13437,84 +13567,6 @@ proxies:
     headers:
       Host: 116.supermanapp.top
     path: /oko932jjskjs1s16
-- alterId: 0
-  cipher: auto
-  name: 28|英国丨伦敦丨流媒体 | 直连
-  network: ws
-  port: '443'
-  server: 3.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /uiohhjk7894567hjy05
-- alterId: 0
-  cipher: auto
-  name: 28|韩国J丨Oracle丨流媒体 | 直连
-  network: ws
-  port: '443'
-  server: 9.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /fj12f2k112ej34132
-- alterId: 0
-  cipher: auto
-  name: 28|杭州电信 02 | tcp | 非80
-  network: tcp
-  port: '1081'
-  server: 125.124.254.5
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-- alterId: 0
-  cipher: auto
-  name: 28|韩国Hd丨Oracle丨流媒体 | 直连
-  network: ws
-  port: '443'
-  server: 24.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /tyuihjhjh78yu38
-- alterId: 0
-  cipher: auto
-  name: 28|🇰🇷韩国2 0.1X
-  network: tcp
-  port: '34902'
-  server: kr-seoul-oracle-86a6ed.ip1.shop
-  tls: false
-  type: vmess
-  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
-- alterId: 0
-  cipher: auto
-  name: 28|新加坡02|三网优化|1x
-  network: tcp
-  port: '38019'
-  server: gz.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
-  name: 28|SJP—新加坡04|优选原生IP|1x
-  network: tcp
-  port: '27034'
-  server: gz.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
 - cipher: aes-256-cfb
   name: 29|AL_speednode_0001
   password: f8f7aCzcPKbsF8p3
