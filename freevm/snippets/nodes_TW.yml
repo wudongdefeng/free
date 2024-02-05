@@ -69,14 +69,14 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: '11,25|26|baipaovpn台湾省 #1'
+  name: '11,25,28|台湾省 中华电信(HiNet)数据中心 #1'
   network: tcp
-  port: '6122'
-  server: 125.224.140.64
+  port: '12002'
+  server: 118.167.68.80
   servername: ''
   tls: false
   type: vmess
-  uuid: 6d1d2171-fab5-4313-8e8c-91ecc9f5dee0
+  uuid: 4c698ff1-ab96-4ce3-8c3a-e23ced87b441
 - alterId: 0
   cipher: auto
   name: '20,21|🇨🇳 台湾(油管:破解资源君) #2'
@@ -129,9 +129,9 @@ proxies:
   uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
 - alterId: 0
   cipher: auto
-  name: 25,27,28|台湾省台北市 中华电信
+  name: '25,27,28|台湾2|@ripaojiedian #1'
   network: tcp
-  port: 4443
+  port: '4443'
   server: 61.228.160.178
   servername: ''
   tls: false
@@ -139,14 +139,14 @@ proxies:
   uuid: 4c698ff1-ab96-4ce3-8c3a-e23ced87b441
 - alterId: 0
   cipher: auto
-  name: 25|26|baipaovpn台湾省
+  name: '25|26|baipaovpn台湾省 #1'
   network: tcp
-  port: '12002'
-  server: 118.167.68.80
+  port: '6122'
+  server: 125.224.140.64
   servername: ''
   tls: false
   type: vmess
-  uuid: 4c698ff1-ab96-4ce3-8c3a-e23ced87b441
+  uuid: 6d1d2171-fab5-4313-8e8c-91ecc9f5dee0
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇹🇼 台湾|@ripaojiedian
@@ -157,17 +157,13 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 28|台湾 01 | ws
-  network: ws
-  port: '80'
-  server: df0fbfc6-5816-180c-e7b5-f2f0e532c17c.neo-awaken.uk
+  name: 28|Scloud台湾03—原生IP|0.5x
+  network: tcp
+  port: '26041'
+  server: gz.daxun.cyou
   tls: false
   type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
 - alterId: 0
   cipher: auto
   name: 28|台湾 04 | tcp
@@ -192,25 +188,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|台湾|@ripaojiedian
-  network: tcp
-  port: '12002'
-  server: 118.167.66.198
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4c698ff1-ab96-4ce3-8c3a-e23ced87b441
-- alterId: 0
-  cipher: auto
-  name: 28|Scloud台湾03—原生IP|0.5x
-  network: tcp
-  port: '26041'
-  server: gz.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
   name: 28|台湾hinet01|优选原生IP|1x
   network: tcp
   port: '38015'
@@ -227,3 +204,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
+- alterId: 0
+  cipher: auto
+  name: 28|台湾 01 | ws
+  network: ws
+  port: '80'
+  server: df0fbfc6-5816-180c-e7b5-f2f0e532c17c.neo-awaken.uk
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /

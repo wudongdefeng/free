@@ -418,7 +418,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 25,26,27|日本2|@ripaojiedian
+  name: '25,26,27,28|日本2|@ripaojiedian #1'
   network: ws
   port: '2052'
   server: 172.67.66.124
@@ -432,6 +432,23 @@ proxies:
     headers:
       Host: mianfei-jp-0001.bpjc.site
     path: /?ed
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '25,26,27,28|日本3|@ripaojiedian #1'
+  network: ws
+  port: '80'
+  server: cfcdn3.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: ce1b46f7-fd89-4646-a968-206d65245aba
+  ws-opts:
+    headers:
+      Host: agzbjszujp4.yofnhkfc.xyz
+    path: /video/ibCT6z55
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇯🇵 日本|@ripaojiedian
@@ -450,60 +467,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 28|日本 03 | tcp
-  network: tcp
-  port: '80'
-  server: 223.113.54.139
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-- alterId: 0
-  cipher: auto
-  name: 28|日本 04 | tcp
-  network: tcp
-  port: '80'
-  server: 223.113.54.130
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-- alterId: 0
-  cipher: auto
-  name: 28|日本 02 | ws
-  network: ws
-  port: '80'
-  server: 223.113.54.131
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|日本 01 | ws
-  network: ws
-  port: '80'
-  server: 223.113.54.138
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|日本原生|优选IP|1x
-  network: tcp
-  port: '38013'
-  server: gz.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-- alterId: 0
-  cipher: auto
-  name: 28|🇯🇵JP-152.69.197.74-5069
+  name: 28|🇯🇵JP-152.69.197.74-4174
   network: ws
   port: 12345
   server: 152.69.197.74
@@ -526,44 +490,11 @@ proxies:
   uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
 - alterId: 0
   cipher: auto
-  name: 28|🇯🇵JP-54.92.22.240-2110
-  network: ws
-  port: 80
-  server: jp04.hajimihajimihajimi.online
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: dbf67e8f-eca2-4a01-9c87-c8cfea490a51
-  ws-opts:
-    headers:
-      Host: jp04.hajimihajimihajimi.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '28|日本3|@ripaojiedian #1'
-  network: ws
-  port: '80'
-  server: cfcdn3.sanfencdn9.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e393dd86-fddc-4bce-8abe-d902cf831670
-  ws-opts:
-    headers:
-      Host: GWYp69Yujp2.yofnhkfc.xyz
-    path: /video/VDXcaM7r
-- cipher: aes-256-cfb
-  name: 29|JP_speednode_0023
-  password: amazonskr05
-  port: 443
-  server: 13.112.10.231
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 29|JP_speednode_0024
+  name: 28,29|JP_speednode_0024
   network: ws
   port: 443
   server: 31.184.207.5
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -573,3 +504,62 @@ proxies:
     headers:
       Host: yasdl900.redirectme.net
     path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 28|日本 02 | ws
+  network: ws
+  port: '80'
+  server: 223.113.54.131
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|日本 03 | tcp
+  network: tcp
+  port: '80'
+  server: 223.113.54.139
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+- alterId: 0
+  cipher: auto
+  name: 28|日本原生|优选IP|1x
+  network: tcp
+  port: '38013'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- alterId: 0
+  cipher: auto
+  name: 28|日本 01 | ws
+  network: ws
+  port: '80'
+  server: 223.113.54.138
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|日本 04 | tcp
+  network: tcp
+  port: '80'
+  server: 223.113.54.130
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+- cipher: aes-256-cfb
+  name: 29|JP_speednode_0023
+  password: amazonskr05
+  port: 443
+  server: 13.112.10.231
+  type: ss

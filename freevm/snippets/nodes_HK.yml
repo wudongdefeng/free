@@ -129,9 +129,23 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: 25|21|🔒 VM-WS-NA 🇭🇰 HK-23.99.120....
+  name: 25|21|HK2-Vm
   network: ws
-  port: '10510'
+  port: 443
+  server: chrome.cloudflare-dns.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 7f14e42a-f453-4c39-a762-019ee493237d
+  ws-opts:
+    headers:
+      Host: a4.bbbbbbbb.tk
+    path: /argox-vm?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 25,28|🇭🇰HK-23.99.120.52-0911
+  network: ws
+  port: 10510
   server: 23.99.120.52
   servername: ''
   tls: false
@@ -143,7 +157,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 25,27|香港2
+  name: '25,27,28|香港2 #1'
   network: tcp
   port: '54137'
   server: 112.28.208.16
@@ -185,18 +199,35 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 28|🇭🇰HK-182.16.1.194-9105
+  name: 28|香港 02 | ws
   network: ws
-  port: 80
-  server: 182.16.1.194
-  servername: ''
+  port: '80'
+  server: 223.113.54.133
   tls: false
   type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
   ws-opts:
     headers:
-      Host: ''
-    path: /opt/video/images
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 28|香港BGP|优选原生IP|2x
+  network: tcp
+  port: '38001'
+  server: gz.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+- alterId: 0
+  cipher: auto
+  name: 28|香港 04 | tcp
+  network: tcp
+  port: '80'
+  server: 223.113.54.134
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
 - alterId: 0
   cipher: auto
   name: 28|🇭🇰香港2-电信优选 0.1X
@@ -210,28 +241,6 @@ proxies:
     headers:
       Host: wz3.kcjs.me
     path: /gd3245vd2S32cr
-- alterId: 0
-  cipher: auto
-  name: 28|🇭🇰香港1-移动优选 0.1X
-  network: ws
-  port: '80'
-  server: cfzl1.freeapp.buzz
-  tls: false
-  type: vmess
-  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
-  ws-opts:
-    headers:
-      Host: wz3.kcjs.me
-    path: /gd3245vd2S32cr
-- alterId: 0
-  cipher: auto
-  name: 28|香港 04 | tcp
-  network: tcp
-  port: '80'
-  server: 223.113.54.134
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
 - alterId: 0
   cipher: auto
   name: 28|香港 03 | tcp
@@ -256,26 +265,31 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|香港 02 | ws
+  name: 28|🇭🇰香港1-移动优选 0.1X
   network: ws
   port: '80'
-  server: 223.113.54.133
+  server: cfzl1.freeapp.buzz
   tls: false
   type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
   ws-opts:
     headers:
-      Host: tms.dingtalk.com
-    path: /
+      Host: wz3.kcjs.me
+    path: /gd3245vd2S32cr
 - alterId: 0
   cipher: auto
-  name: 28|香港BGP|优选原生IP|2x
-  network: tcp
-  port: '38001'
-  server: gz.daxun.cyou
+  name: 28|🇭🇰HK-23.99.120.52-0912
+  network: ws
+  port: 10510
+  server: 23.99.120.52
+  servername: www.alipay.com
   tls: false
   type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+  uuid: 619d8b66-469f-4dce-fc71-b74f05810212
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - cipher: aes-128-gcm
   name: 29|HK_speednode_0018
   password: a-wym4ovY4Yw
