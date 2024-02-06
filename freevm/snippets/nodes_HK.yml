@@ -129,17 +129,17 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20|HK-154.12.87.218-138
+  name: 20|HK-185.244.208.71-213
   network: ws
-  port: 80
-  server: 154.12.87.218
+  port: 10000
+  server: 185.244.208.71
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: eeee6cb6-7023-433a-8f6c-66293f018113
+  uuid: e7093298-c066-11ee-ade9-4b28e1112dca
   ws-headers:
-    Host: www.microsoft.com
-  ws-path: /zh-cn
+    Host: 185.244.208.71
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '21|🇭🇰 香港(油管:破解资源君) #1'
@@ -168,7 +168,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 21,25|19|香港Google云计算数据中心 4
+  name: 25|19|香港Google云计算数据中心 4
   network: ws
   port: '80'
   server: hke9016a-9c15-ce43.xn--jsrz0o258a.online
@@ -202,6 +202,23 @@ proxies:
     headers:
       Host: bilibili.com
     path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '25,26,27,28|香港4|@ripaojiedian #1'
+  network: ws
+  port: '80'
+  server: 154.12.87.218
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: eeee6cb6-7023-433a-8f6c-66293f018113
+  ws-opts:
+    headers:
+      Host: www.microsoft.com
+    path: /zh-cn
 - alterId: 64
   cipher: auto
   name: '25,27,28|香港A #1'
@@ -214,7 +231,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 26|🇭🇰 香港KT|@ripaojiedian
+  name: 26,29|HK_speednode_0010
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -244,15 +261,6 @@ proxies:
   server: 47.243.196.229
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26,29|CN_speednode_0011
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 21001
-  server: service.ouluyun9803.com
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 28|香港 01 | ws
@@ -362,7 +370,7 @@ proxies:
     path: /gd3245vd2S32cr
 - cipher: aes-128-gcm
   delay: 1649
-  name: 29|HK_speednode_0024
+  name: 29|HK_speednode_0011
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -374,13 +382,3 @@ proxies:
   port: 443
   server: 1.65.139.54
   type: ss
-- cipher: aes-256-cfb
-  name: 29|HK_speednode_0025
-  obfs: tls1.2_ticket_auth
-  obfs-param: cloudfront.net
-  password: iFqnzSscN
-  port: 8083
-  protocol: origin
-  protocol-param: ''
-  server: 150.107.46.21
-  type: ssr
