@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,13,14,16,21,25,28,30|🇺🇸 _US_美国 #81'
+  name: '0,3,4,6,7,11,13,14,16,21,25,28,30|🇺🇸 _US_美国 #81'
   network: ws
   port: '8080'
   server: www.darkroom.lol
@@ -95,7 +95,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,14,16,21,25,28,30|🇺🇸 _US_美国 #79'
+  name: '0,3,4,6,7,11,14,16,21,25,28,30|🇺🇸 _US_美国 #79'
   network: ws
   port: '8880'
   server: server20.beheshtbaneh.com
@@ -139,7 +139,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,14,21,25,28,30|🇺🇸 _US_美国 #80'
+  name: '0,3,4,6,7,11,14,21,25,28,30|🇺🇸 _US_美国 #80'
   network: ws
   port: '8880'
   server: server26.beheshtbaneh.com
@@ -153,7 +153,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,13,14,16,21,25,28,30|🇺🇸 _US_美国 #78'
+  name: '0,3,4,6,7,11,13,14,16,21,25,28,30|🇺🇸 _US_美国 #78'
   network: ws
   port: '8880'
   server: server31.beheshtbaneh.com
@@ -478,21 +478,6 @@ proxies:
   ws-opts:
     headers:
       Host: server33.beheshtbaneh.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '8,9,25,28|🇺🇸 United States 01 @nodpai #2'
-  network: ws
-  port: '8080'
-  server: hytron.io
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9c4a3ad3-4f1d-4138-e7ee-8bb5325b411d
-  ws-opts:
-    headers:
-      Host: hytron.io
     path: /
 - alterId: 1
   cipher: auto
@@ -2235,76 +2220,32 @@ proxies:
   uuid: 37e3fe44-e63c-4988-cff7-d1a27f5f0c09
 - alterId: 0
   cipher: auto
-  name: '11,25,28|美国 CloudFlare节点 #22'
+  name: '11,13,16,21,25|7,19|美国 CloudFlare节点 #7'
   network: ws
   port: '8080'
-  server: 104.21.83.10
+  server: cf.openxai.link
   servername: ''
   tls: false
   type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194
   ws-opts:
     headers:
-      Host: www.coldstone.club
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '11,25,26,27,28|韩国2|@ripaojiedian #1'
-  network: ws
-  port: '80'
-  server: ip.sb
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 113a74cc-f13b-48ec-bbb2-2bbab77a2f35
-  ws-opts:
-    headers:
-      Host: kr1.ljyyds.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 11,13,21,25,28|🏁RELAY-104.17.25.1-0961
-  network: ws
-  port: 80
-  server: 104.17.25.1
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 113a74cc-f13b-48ec-bbb2-2bbab77a2f35
-  ws-opts:
-    headers:
-      Host: kr1.ljyyds.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #9'
-  network: ws
-  port: '8080'
-  server: 104.17.123.55
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1d47288a-699d-45ca-b4f0-4e5b36940e6f
-  ws-opts:
-    headers:
-      Host: pq.kmoljklj.top
-    path: /qZTtpya?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '11,21|🇺🇸 美国 CloudFlare节点 #6'
-  network: ws
-  port: '8080'
-  server: 162.159.137.28
-  tls: false
-  type: vmess
-  uuid: 5e203864-6170-4056-fa90-b1fdbda3a3ca
-  ws-opts:
-    headers:
-      Host: eu4.openxai.link
+      Host: eu1.openxai.link
     path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 11,13,21,25,28|美国测试节点
+  network: ws
+  port: '443'
+  server: gov.uk
+  servername: gov.uk
+  tls: true
+  type: vmess
+  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+  ws-opts:
+    headers:
+      Host: zheshiscp.com
+    path: /77848824
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇺🇸美国04
@@ -2337,32 +2278,18 @@ proxies:
   uuid: 67fcf3e4-598b-44fe-bfe0-fc24cf85884a
 - alterId: 0
   cipher: auto
-  name: 13,21,25,28|美国测试节点
+  name: 13,21,25,28|🏁RELAY-104.17.25.1-0961
   network: ws
-  port: '443'
-  server: gov.uk
-  servername: gov.uk
-  tls: true
-  type: vmess
-  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
-  ws-opts:
-    headers:
-      Host: zheshiscp.com
-    path: /77848824
-- alterId: 0
-  cipher: auto
-  name: '13,16,21,25|7,19|美国 CloudFlare节点 #7'
-  network: ws
-  port: '8080'
-  server: cf.openxai.link
+  port: 80
+  server: 104.17.25.1
   servername: ''
   tls: false
   type: vmess
-  uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194
+  uuid: 113a74cc-f13b-48ec-bbb2-2bbab77a2f35
   ws-opts:
     headers:
-      Host: eu1.openxai.link
-    path: /?ed=2048
+      Host: kr1.ljyyds.top
+    path: /
 - alterId: 0
   cipher: auto
   name: '13,21,25|19,21|Channel id: @ShadowProxy...'
@@ -3821,6 +3748,19 @@ proxies:
     path: /sshkit/fdfadsfa/63848bfe228fd/
 - alterId: 0
   cipher: auto
+  name: '21|🇺🇸 美国 CloudFlare节点 #6'
+  network: ws
+  port: '8080'
+  server: 162.159.137.28
+  tls: false
+  type: vmess
+  uuid: 5e203864-6170-4056-fa90-b1fdbda3a3ca
+  ws-opts:
+    headers:
+      Host: eu4.openxai.link
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
   name: 23,25|22|【BGP】美国 04 | 1x US
   network: tcp
   port: '31501'
@@ -3893,6 +3833,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 25,28|🇺🇸 United States 01 @nodpai
+  network: ws
+  port: '8080'
+  server: hytron.io
+  tls: false
+  type: vmess
+  uuid: 9c4a3ad3-4f1d-4138-e7ee-8bb5325b411d
+  ws-opts:
+    headers:
+      Host: hytron.io
+    path: /
+- alterId: 0
+  cipher: auto
   name: 25,28|🏁RELAY-172.67.196.112-4632
   network: ws
   port: 443
@@ -3950,7 +3903,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '25,26,27,28|美国 CloudFlare节点 #27'
+  name: '25,26,27,28|美国 CloudFlare节点 #24'
   network: ws
   port: '8080'
   server: www.coldstone.club
@@ -4006,6 +3959,20 @@ proxies:
     headers:
       Host: v2ray.ibgfw.top
     path: /vVNUJOgb/
+- alterId: 0
+  cipher: auto
+  name: '25,28|美国 CloudFlare节点 #19'
+  network: ws
+  port: '8080'
+  server: 104.21.83.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-opts:
+    headers:
+      Host: www.coldstone.club
+    path: /
 - alterId: 0
   cipher: auto
   name: 25,28|🇺🇸US-129.146.113.254-0120
