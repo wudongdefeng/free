@@ -27,7 +27,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,11,13,16,21,25,28,30|🇺🇸 _US_美国->🇹🇷_TR_土耳其 #4'
+  name: '0,3,4,6,13,16,21,25,28,30|🇺🇸 _US_美国->🇹🇷_TR_土耳其 #4'
   network: ws
   port: '8080'
   server: ip.sb
@@ -41,7 +41,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,13,14,16,21,25,28,30|🇺🇸 _US_美国->🇩🇪_DE_德国 #24'
+  name: '0,3,4,6,7,13,14,21,25,28,30|🇺🇸 _US_美国->🇩🇪_DE_德国 #24'
   network: ws
   port: '80'
   server: 104.20.231.30
@@ -253,19 +253,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 28|美国凤凰城-高速中转|1x
-  network: ws
-  port: '38887'
-  server: aws.daxun.cyou
-  tls: false
-  type: vmess
-  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
-  ws-opts:
-    headers:
-      Host: www.baidu.com
-    path: /daxun/us3
-- alterId: 0
-  cipher: auto
   name: 28|美国圣何塞-中转|1x
   network: ws
   port: '38889'
@@ -277,6 +264,19 @@ proxies:
     headers:
       Host: www.baidu.com
     path: /daxun/us2
+- alterId: 0
+  cipher: auto
+  name: 28|美国凤凰城-高速中转|1x
+  network: ws
+  port: '38887'
+  server: aws.daxun.cyou
+  tls: false
+  type: vmess
+  uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
+  ws-opts:
+    headers:
+      Host: www.baidu.com
+    path: /daxun/us3
 - alterId: 0
   cipher: auto
   name: 28|美国洛杉矶-中转|1x
