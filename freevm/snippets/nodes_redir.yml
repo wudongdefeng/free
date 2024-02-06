@@ -54,7 +54,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,11,14,21,25,28,30|🇺🇸 _US_美国->🇩🇪_DE_德国 #21'
+  name: '0,3,4,6,7,14,21,25,28,30|🇺🇸 _US_美国->🇩🇪_DE_德国 #21'
   network: ws
   port: '80'
   server: 104.22.51.162
@@ -179,14 +179,18 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '7,11,14,25,28|🇨🇳_CN_中国->🇮🇳_IN_印度 #2'
+  name: '7,11,14,20,21,25,28|🇨🇳_CN_中国->🇮🇳_IN_印度 #2'
   network: tcp
   port: 30128
   server: 183.232.170.22
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 9f41898b-e80d-418d-9ea8-5c51a914722a
+  ws-headers:
+    Host: 183.232.170.22
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 24|_SG_->_US_
