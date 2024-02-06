@@ -209,10 +209,20 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 25,27|香港A
+  name: '25,27,28|香港A #1'
   network: tcp
   port: '54002'
   server: 183.237.20.149
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '25,27,28|香港B #1'
+  network: tcp
+  port: '54137'
+  server: 112.28.208.18
   servername: ''
   tls: false
   type: vmess
@@ -259,10 +269,10 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 28|🇭🇰香港1-移动优选 0.1X
+  name: 28|🇭🇰香港2-电信优选 0.1X
   network: ws
   port: '80'
-  server: cfzl1.freeapp.buzz
+  server: cfzl9.freeapp.buzz
   tls: false
   type: vmess
   uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
@@ -290,17 +300,38 @@ proxies:
   uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1
 - alterId: 0
   cipher: auto
-  name: 28|🇭🇰HK-23.99.120.52-0912
+  name: 28|🇭🇰香港1-移动优选 0.1X
   network: ws
-  port: 10510
-  server: 23.99.120.52
-  servername: www.alipay.com
+  port: '80'
+  server: cfzl1.freeapp.buzz
   tls: false
   type: vmess
-  uuid: 619d8b66-469f-4dce-fc71-b74f05810212
+  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
   ws-opts:
     headers:
-      Host: ''
+      Host: wz3.kcjs.me
+    path: /gd3245vd2S32cr
+- alterId: 0
+  cipher: auto
+  name: 28|香港 04 | tcp
+  network: tcp
+  port: '80'
+  server: 223.113.54.134
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+- alterId: 0
+  cipher: auto
+  name: 28|香港 01 | ws
+  network: ws
+  port: '80'
+  server: 223.113.54.132
+  tls: false
+  type: vmess
+  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
     path: /
 - alterId: 0
   cipher: auto
@@ -317,39 +348,18 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 28|🇭🇰香港2-电信优选 0.1X
+  name: 28|🇭🇰HK-23.99.120.52-0912
   network: ws
-  port: '80'
-  server: cfzl9.freeapp.buzz
+  port: 10510
+  server: 23.99.120.52
+  servername: www.alipay.com
   tls: false
   type: vmess
-  uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
+  uuid: 619d8b66-469f-4dce-fc71-b74f05810212
   ws-opts:
     headers:
-      Host: wz3.kcjs.me
-    path: /gd3245vd2S32cr
-- alterId: 0
-  cipher: auto
-  name: 28|香港 01 | ws
-  network: ws
-  port: '80'
-  server: 223.113.54.132
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
+      Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: 28|香港 04 | tcp
-  network: tcp
-  port: '80'
-  server: 223.113.54.134
-  tls: false
-  type: vmess
-  uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca
 - cipher: aes-128-gcm
   name: 29|HK_speednode_0019
   password: a-wym4ovY4Yw
