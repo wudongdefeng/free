@@ -289,6 +289,21 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
+  name: 11,25,29|JP_speednode_0097
+  network: ws
+  port: 80
+  server: s6.956256.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1b5857d5-a7b8-445b-bcc8-f34745e75929
+  ws-opts:
+    headers:
+      Host: a.189.cn
+    path: /
+- alterId: 0
+  cipher: auto
   name: 12,25|18|🇯🇵日本04
   network: tcp
   port: '36116'
@@ -296,7 +311,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 34cb3afb-5e8c-4225-ba4d-f8f09d079447
+  uuid: 11f1ae37-1e74-4751-9fa7-de4c5e7c0a2a
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本05
@@ -306,7 +321,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 34cb3afb-5e8c-4225-ba4d-f8f09d079447
+  uuid: 11f1ae37-1e74-4751-9fa7-de4c5e7c0a2a
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本06
@@ -316,7 +331,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 34cb3afb-5e8c-4225-ba4d-f8f09d079447
+  uuid: 11f1ae37-1e74-4751-9fa7-de4c5e7c0a2a
 - cipher: aes-256-gcm
   name: 20|JP-85.208.108.60-095
   password: pKEW8JPByTVTLtM
@@ -394,7 +409,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 2f3b5b6c-bf48-42e7-b7c5-03253e9564aa
+  uuid: 38c9a4cc-ad76-4ee0-836c-9924286dfcdd
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】日本 05  | 1x JP
@@ -404,7 +419,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 2f3b5b6c-bf48-42e7-b7c5-03253e9564aa
+  uuid: 38c9a4cc-ad76-4ee0-836c-9924286dfcdd
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】日本 06  | 1x JP
@@ -414,7 +429,42 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 2f3b5b6c-bf48-42e7-b7c5-03253e9564aa
+  uuid: 38c9a4cc-ad76-4ee0-836c-9924286dfcdd
+- alterId: 0
+  cipher: auto
+  name: 25|21|日本 001
+  network: tcp
+  port: 37368
+  server: 150.107.200.184
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7b72983c-84a3-46ba-9b6d-d4c55c73db8c
+- alterId: 0
+  cipher: auto
+  name: 25,29|JP_speednode_0096
+  network: ws
+  port: 80
+  server: s5.956256.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1b5857d5-a7b8-445b-bcc8-f34745e75929
+  ws-opts:
+    headers:
+      Host: a.189.cn
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 25|21|JP_speednode_0070
+  network: tcp
+  port: 21585
+  server: jp01-alt-vm0.entry.srthdw.art
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: d381afc3-4fe1-368c-b70b-6192762f6c10
 - alterId: 0
   cipher: auto
   name: 25|21|[宇航员] 日本 80免流 01
@@ -423,35 +473,23 @@ proxies:
   server: jpcd07-4c4e-9945-219dfebd1776.xn--jsrz0o258a.online
   tls: false
   type: vmess
-  uuid: aaf1e0a7-5616-4e67-bb4b-c706b8a32b01
+  uuid: 1cb8d9f0-639c-4a8d-83c1-d5361179d18f
   ws-opts:
     headers:
       Host: bilibili.com
     path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 25|21|🔒 VM-TCP-NA 🇯🇵 JP-150.107.2...
-  network: tcp
-  port: '37368'
-  server: 150.107.200.184
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7b72983c-84a3-46ba-9b6d-d4c55c73db8c
-- 24|日本2|@ripaojiedian: None
-  alterId: 64
+- alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 25,26,27,28,29|JP_speednode_0075
+  name: '25,26,27,28|日本2|@ripaojiedian #1'
   network: ws
-  port: 32100
+  port: '32100'
   server: 103.72.5.20
   servername: www.17438016.xyz
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vmess
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     headers:
@@ -459,27 +497,13 @@ proxies:
     path: /path/340323081726
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 26,29|KR_speednode_0084
+  name: 26,29|KR_speednode_0098
   password: amazonskr05
   port: 443
   server: 43.202.6.72
   tfo: false
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 28|日本I丨BGP丨流媒体|直连
-  network: ws
-  port: '443'
-  server: 6.openiisee.monster
-  servername: 116.supermanapp.top
-  tls: true
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-  ws-opts:
-    headers:
-      Host: 116.supermanapp.top
-    path: /uruydtyubn8q08
 - alterId: 0
   cipher: auto
   name: 28|🇯🇵JP-152.69.197.74-3305
@@ -503,16 +527,23 @@ proxies:
   tls: false
   type: vmess
   uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
+- alterId: 0
+  cipher: auto
+  name: 28|日本I丨BGP丨流媒体|直连
+  network: ws
+  port: '443'
+  server: 6.openiisee.monster
+  servername: 116.supermanapp.top
+  tls: true
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+  ws-opts:
+    headers:
+      Host: 116.supermanapp.top
+    path: /uruydtyubn8q08
 - cipher: chacha20-ietf-poly1305
-  country: 🇯🇵JP
-  name: 29|JP_speednode_0082
+  name: 29|JP_speednode_0095
   password: 3b34151f-8a87-413c-803b-18d70bd69f95
   port: 21853
   server: jp.doushimeng.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|JP_speednode_0081
-  password: e0571ef6-66d3-4715-b82c-83191d660719
-  port: 51310
-  server: jp.colacloud.site
   type: ss

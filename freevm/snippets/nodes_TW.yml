@@ -82,20 +82,6 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 25|21|🔒 VM-WS-NA 🇹🇼 TW-103.159.20...
-  network: ws
-  port: '31945'
-  server: 103.159.206.35
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: 25|21|🔒 VM-TCP-NA 🇹🇼 TW-114.37.11...
   network: tcp
   port: '2024'
@@ -103,10 +89,10 @@ proxies:
   servername: ''
   tls: false
   type: vmess
-  uuid: 08ee510e-68e6-4a71-8d3a-1c576ffa3cac
+  uuid: 9cc18dc9-993d-4d34-8638-904024f5efb5
 - alterId: 0
   cipher: auto
-  name: 25|21|[宇航员] 台湾 80免流 02
+  name: 25|21|[宇航员] 台湾 80免流 01
   network: ws
   port: '80'
   server: twa877-4e18-b158-bc88c4bb2e2d.xn--jsrz0o258a.online
@@ -119,10 +105,10 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 28|TW-板桥2-2(TCP)
+  name: 28|TW-板桥2-4(TCP)
   network: tcp
-  port: '12002'
-  server: nb22.ntbq.dynu.net
+  port: '4443'
+  server: nb24.ntbq.dynu.net
   tls: false
   type: vmess
   uuid: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
@@ -146,6 +132,15 @@ proxies:
   uuid: 1ae0f67d-197e-4c80-8d91-a8388821c81b
 - alterId: 0
   cipher: auto
+  name: 28|TW-板桥2-2(TCP)
+  network: tcp
+  port: '12002'
+  server: nb22.ntbq.dynu.net
+  tls: false
+  type: vmess
+  uuid: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
+- alterId: 0
+  cipher: auto
   name: 28|TW-台中1-2(TCP)
   network: tcp
   port: '6122'
@@ -155,18 +150,32 @@ proxies:
   uuid: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
 - alterId: 0
   cipher: auto
-  name: 28|TW-板桥2-4(TCP)
-  network: tcp
-  port: '4443'
-  server: nb24.ntbq.dynu.net
+  name: 29|TW_speednode_0120
+  network: ws
+  port: 3331
+  server: ffbf920.t2.gladns.com
+  servername: n2.gladns.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  ws-opts:
+    headers:
+      Host: tls.apple.com
+    path: /s/ffbf920.fm.apple.com:68447
+- alterId: 0
+  cipher: auto
+  name: 29|TW_speednode_0121
+  network: ws
+  port: 18803
+  server: taiwan2.209966.xyz
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: a879c622-37bf-4f3e-a8bf-a7f4a0daf465
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 29|TW_speednode_0111
-  password: qwerREWQ@@
-  port: 2003
-  server: e001.panda003.net
-  tfo: false
-  type: ss
+  udp: true
+  uuid: 1b5857d5-a7b8-445b-bcc8-f34745e75929
+  ws-opts:
+    headers:
+      Host: a.189.cn
+    path: /
