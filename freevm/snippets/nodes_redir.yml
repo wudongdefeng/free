@@ -1,9 +1,9 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,14,20,21,25|0,1,4|🇨🇳_CN_中国->🇮🇳_IN_印度
+  name: 0,14,20,21,25|0|🇮🇳 _CN_中国->🇮🇳_IN_印度
   network: tcp
-  port: 30128
+  port: '30128'
   server: 183.232.170.22
   skip-cert-verify: true
   tls: false
@@ -14,7 +14,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_DE__1
+  name: 1,25|1|_US_->_DE__1
   network: ws
   port: 80
   server: www.greendam.site
@@ -23,8 +23,6 @@ proxies:
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
-    headers:
-      host: my1.tooters.ir
     path: /
 - grpc-opts:
     grpc-service-name: 443trojan
@@ -40,7 +38,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_RU__2
+  name: 1,25|1|_US_->_RU__2
   network: ws
   port: 80
   server: fastly.alipay.ovh
@@ -49,12 +47,10 @@ proxies:
   type: vmess
   uuid: 97d5d17f-1a55-4074-8207-192873e362ed
   ws-opts:
-    headers:
-      host: beeline.ru
     path: /aries?ed=2048
 - alterId: 0
   cipher: auto
-  name: 1,25|1|_US__11
+  name: 1,25|1|_US_->_DE__2
   network: ws
   port: 80
   server: 104.20.231.30
@@ -78,7 +74,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_BR_
+  name: 1,25|1|_US_->_BR_
   network: ws
   port: 80
   server: s16.956256.xyz
@@ -87,12 +83,10 @@ proxies:
   type: vmess
   uuid: 8ddfa270-aab5-45f0-b964-a729b957c70e
   ws-opts:
-    headers:
-      host: caonimashabiwanyi5.daxiongda.top
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,25|1|_US__5
+  name: 1,25|1|_US_->_DE__3
   network: ws
   port: 80
   server: 104.22.51.162
@@ -104,7 +98,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '4,6,28|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦 #2'
+  name: '4,6,11,25,28|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦 #2'
   network: ws
   port: 80
   server: fastly.alipay.ovh
