@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,1,4,14,20,21,25|0,1,4|🇨🇳_CN_中国->🇮🇳_IN_印度
+  name: 0,14,20,21,25|0,1,4|🇨🇳_CN_中国->🇮🇳_IN_印度
   network: tcp
   port: 30128
   server: 183.232.170.22
@@ -12,28 +12,123 @@ proxies:
   ws-headers:
     Host: 183.232.170.22
   ws-path: /
-- name: 1|_CN_->_CZ_
-  network: tcp
-  password: 4623e7ff-47b4-41d6-8f5a-33c8e6ac3fd5
-  port: 10846
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 1|_US_->_DE_
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_DE__1
   network: ws
-  password: 8c4c1021-3352-4c76-b4b6-26c38a137f92
-  port: 443
-  server: 104.17.175.159
+  port: 80
+  server: www.greendam.site
   skip-cert-verify: true
-  sni: jnl1.jsjc.sbs
-  type: trojan
-  udp: true
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
-      host: jnl1.jsjc.sbs
-    path: /jsjc/nl1
+      host: my1.tooters.ir
+    path: /
+- grpc-opts:
+    grpc-service-name: 443trojan
+  name: 1|_US_->_RU__1
+  network: grpc
+  password: qj1Dz1CJmFQRhWr1SP80aA
+  port: 443
+  server: 172.67.204.84
+  skip-cert-verify: true
+  sni: cdn-21.gsmxreality.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_RU__2
+  network: ws
+  port: 80
+  server: fastly.alipay.ovh
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 97d5d17f-1a55-4074-8207-192873e362ed
+  ws-opts:
+    headers:
+      host: beeline.ru
+    path: /aries?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 1,25|1|_US__11
+  network: ws
+  port: 80
+  server: 104.20.231.30
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    path: /
+- grpc-opts:
+    grpc-service-name: server-53651.prod.hosts.ooklaserver.net
+  name: 1|_US_->_TR_
+  network: grpc
+  password: YS7mIZvKNt
+  port: 2053
+  server: 172.67.175.243
+  skip-cert-verify: false
+  sni: panell.followprovider.ir
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_BR_
+  network: ws
+  port: 80
+  server: s16.956256.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 8ddfa270-aab5-45f0-b964-a729b957c70e
+  ws-opts:
+    headers:
+      host: caonimashabiwanyi5.daxiongda.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1,25|1|_US__5
+  network: ws
+  port: 80
+  server: 104.22.51.162
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '4,6,28|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦 #2'
+  network: ws
+  port: 80
+  server: fastly.alipay.ovh
+  tls: false
+  type: vmess
+  uuid: 97d5d17f-1a55-4074-8207-192873e362ed
+  ws-opts:
+    headers:
+      Host: beeline.ru
+    path: /aries?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '4,6,25,28|🇺🇸_US_美国->🇧🇷_BR_巴西 #4'
+  network: ws
+  port: 80
+  server: s16.956256.xyz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8ddfa270-aab5-45f0-b964-a729b957c70e
+  ws-opts:
+    headers:
+      Host: caonimashabiwanyi5.daxiongda.top
+    path: /
 - alterId: 0
   cipher: auto
   name: 7,25,28,29|BR_speednode_0002
@@ -48,21 +143,6 @@ proxies:
   ws-opts:
     headers:
       Host: caonimashabiwanyi5.daxiongda.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 7,21,25,28,29|CL_speednode_0003
-  network: ws
-  port: 80
-  server: s11.956256.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1b5857d5-a7b8-445b-bcc8-f34745e75929
-  ws-opts:
-    headers:
-      Host: caonimashabiwanyi21.daxiongda.top
     path: /
 - alterId: 0
   cipher: auto
@@ -130,6 +210,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 28|防失联 | 中转 | 高倍率慎用 
+  network: tcp
+  port: '47552'
+  server: 69yun.lovemylive.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
+- alterId: 0
+  cipher: auto
   name: 28|防失联3 | 中转 | 高倍率慎用 
   network: tcp
   port: '46798'
@@ -143,16 +233,6 @@ proxies:
   name: 28|防失联2 | 中转 | 高倍率慎用 
   network: tcp
   port: '47575'
-  server: 69yun.lovemylive.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7
-- alterId: 0
-  cipher: auto
-  name: 28|防失联 | 中转 | 高倍率慎用 
-  network: tcp
-  port: '47552'
   server: 69yun.lovemylive.top
   servername: ''
   tls: false
