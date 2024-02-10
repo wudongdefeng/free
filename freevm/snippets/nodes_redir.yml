@@ -25,7 +25,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '1,4,7,14,20,21,25,28|🇨🇳_CN_中国->🇮🇳_IN_印度 #3'
+  name: '1,3,4,7,11,14,20,21,25,28|🇨🇳_CN_中国->🇮🇳_IN_印度 #4'
   network: tcp
   port: 30128
   server: 183.232.170.22
@@ -48,33 +48,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '3,25,28,30|🇪🇸_ES_西班牙->🇭🇰_HK_香港 #2'
-  network: ws
-  port: 8002
-  server: 185.214.103.249
-  tls: false
-  type: vmess
-  uuid: e096b14e-b746-3dda-bc95-a435b4b2aceb
-  ws-opts:
-    headers:
-      Host: cache-hk-1.cn-db.top
-    path: /db00
-- alterId: 0
-  cipher: auto
-  name: '3,25,28,30|🇸🇬_SG_新加坡->🇷🇺_RU_俄罗斯联邦 #2'
-  network: ws
-  port: 80
-  server: gcore.Alipay.ovh
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 97d5d17f-1a55-4074-8207-192873e362ed
-  ws-opts:
-    headers:
-      Host: beeline.ru
-    path: /aries?ed=2048
 - alterId: 0
   cipher: auto
   name: 24|_SG_->_US_
@@ -139,6 +112,33 @@ proxies:
   sni: alibaba-node.cn
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 25,30|🇪🇸_ES_西班牙->🇭🇰_HK_香港
+  network: ws
+  port: 8002
+  server: 185.214.103.249
+  tls: false
+  type: vmess
+  uuid: e096b14e-b746-3dda-bc95-a435b4b2aceb
+  ws-opts:
+    headers:
+      Host: cache-hk-1.cn-db.top
+    path: /db00
+- alterId: 0
+  cipher: auto
+  name: 25,28,30|🇸🇬_SG_新加坡->🇷🇺_RU_俄罗斯联邦
+  network: ws
+  port: 80
+  server: gcore.Alipay.ovh
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 97d5d17f-1a55-4074-8207-192873e362ed
+  ws-opts:
+    headers:
+      Host: beeline.ru
+    path: /aries?ed=2048
 - alterId: 0
   cipher: auto
   name: 25|29|🇨🇳_CN_中国->🇨🇦_CA_加拿大_由快嘴科技提供...
