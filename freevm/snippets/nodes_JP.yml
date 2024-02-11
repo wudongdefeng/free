@@ -296,7 +296,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1aa84b5e-2d46-4249-888f-511808a70279
+  uuid: e9b55e27-2868-4322-920b-09261e7211c5
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本05
@@ -306,7 +306,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1aa84b5e-2d46-4249-888f-511808a70279
+  uuid: e9b55e27-2868-4322-920b-09261e7211c5
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本06
@@ -316,7 +316,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 1aa84b5e-2d46-4249-888f-511808a70279
+  uuid: e9b55e27-2868-4322-920b-09261e7211c5
 - cipher: aes-256-cfb
   name: 20|JP-54.199.83.239-141
   password: doub.io
@@ -345,7 +345,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 000526f0-6295-4996-bef6-2aac2460ab5a
+  uuid: a0e52382-d700-444a-a6b3-93acef540383
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】日本 05  | 1x JP
@@ -355,7 +355,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 000526f0-6295-4996-bef6-2aac2460ab5a
+  uuid: a0e52382-d700-444a-a6b3-93acef540383
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】日本 06  | 1x JP
@@ -365,7 +365,17 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 000526f0-6295-4996-bef6-2aac2460ab5a
+  uuid: a0e52382-d700-444a-a6b3-93acef540383
+- alterId: 0
+  cipher: auto
+  name: 25|21|🔒 VM-TCP-NA 🇯🇵 JP-167.179.1...
+  network: tcp
+  port: '14935'
+  server: 167.179.111.237
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e961894f-8e90-472f-98d3-09402e4be453
 - alterId: 0
   cipher: auto
   name: 25|21|日本 001
@@ -378,14 +388,18 @@ proxies:
   uuid: 7b72983c-84a3-46ba-9b6d-d4c55c73db8c
 - alterId: 0
   cipher: auto
-  name: 25|21|🔒 VM-TCP-NA 🇯🇵 JP-167.179.1...
-  network: tcp
-  port: '14935'
-  server: 167.179.111.237
+  name: 25|21,26|baipaovpn日本东京都
+  network: ws
+  port: '43058'
+  server: 20.210.219.158
   servername: ''
   tls: false
   type: vmess
-  uuid: e961894f-8e90-472f-98d3-09402e4be453
+  uuid: 59edd00e-9783-4898-d6e4-7b78d8a2caa6
+  ws-opts:
+    headers:
+      Host: www.alipay.com
+    path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
