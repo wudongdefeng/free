@@ -69,14 +69,28 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: '11,25,28|台湾省 中华电信(HiNet)数据中心 #1'
+  name: 11,25|6|-https://t.me/MrXbin-129
+  network: tcp
+  port: 6122
+  server: c12.twtc.dynu.net
+  servername: c12.twtc.dynu.net
+  tls: false
+  type: vmess
+  uuid: 60ab817e-0566-44cb-becd-6b51698d5672
+- alterId: 0
+  cipher: auto
+  name: 20,21,25,28|台湾省 中华电信(HiNet)数据中心
   network: tcp
   port: 12002
   server: nb22.ntbq.dynu.net
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 4e488e23-d1e5-40ee-8ffb-22bd95e80d0a
+  ws-headers:
+    Host: nb22.ntbq.dynu.net
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '25|21|台湾【TG：@ccbaohe】定时更新节点订阅 #1'
@@ -115,10 +129,10 @@ proxies:
     path: /video/GQ2qE5Us9g
 - alterId: 0
   cipher: auto
-  name: 25|26|baipaovpn台湾省
+  name: 25|26|baipaovpn台湾省彰化县
   network: tcp
-  port: '12002'
-  server: 118.167.65.80
+  port: '6122'
+  server: 36.233.237.131
   servername: ''
   tls: false
   type: vmess
