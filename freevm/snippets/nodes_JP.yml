@@ -289,32 +289,18 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '11,13,28|日本东京 Oracle云计算数据中心 #2'
+  name: 11|日本 东京Fastly节点
   network: ws
   port: '80'
-  server: 158.101.146.160
+  server: fastly.alipay.ovh
   servername: ''
   tls: false
   type: vmess
-  uuid: ac2deae9-e7de-4056-be59-eaeea6deeb24
+  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
   ws-opts:
     headers:
-      Host: kr01.travisdependable.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11,25|21|日本 #13'
-  network: ws
-  port: '80'
-  server: 47.74.11.219
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ac2deae9-e7de-4056-be59-eaeea6deeb24
-  ws-opts:
-    headers:
-      Host: kr01.travisdependable.online
-    path: /
+      Host: nmsl.kp
+    path: /aries?ed=2048
 - alterId: 0
   cipher: auto
   name: 12,25|18|🇯🇵日本04
@@ -347,7 +333,7 @@ proxies:
   uuid: 224b77b2-71d2-439e-980b-e47118b5ce8c
 - alterId: 0
   cipher: auto
-  name: '13,25,28|日本东京 Oracle Cloud #3'
+  name: '13,21,25,28|日本东京 Oracle Cloud #2'
   network: ws
   port: '80'
   server: 141.147.178.135
@@ -361,7 +347,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 20|JP-150.230.201.63-172
+  name: '13,21,28|日本东京 Oracle云计算数据中心 #1'
+  network: ws
+  port: '80'
+  server: 158.101.146.160
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ac2deae9-e7de-4056-be59-eaeea6deeb24
+  ws-opts:
+    headers:
+      Host: kr01.travisdependable.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 20|JP-150.230.201.63-000
   network: ws
   port: 80
   server: 150.230.201.63
@@ -374,20 +374,20 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20|JP-47.74.11.219-168
+  name: 20|JP-47.74.11.219-166
   network: ws
   port: 80
   server: 47.74.11.219
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  uuid: ac2deae9-e7de-4056-be59-eaeea6deeb24
   ws-headers:
-    Host: my1.tooters.ir
+    Host: kr01.travisdependable.online
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20|JP-47.245.26.167-003
+  name: 20|JP-47.245.26.167-195
   network: ws
   port: 80
   server: 47.245.26.167
@@ -400,7 +400,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20|JP-150.230.197.156-141
+  name: 20|JP-150.230.197.156-009
   network: ws
   port: 80
   server: 150.230.197.156
@@ -426,7 +426,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20|JP-47.91.19.249-191
+  name: 20|JP-47.91.19.249-011
   network: ws
   port: 80
   server: 47.91.19.249
@@ -439,7 +439,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20|JP-47.74.40.13-209
+  name: 20|JP-47.74.40.13-012
   network: ws
   port: 80
   server: 47.74.40.13
@@ -491,7 +491,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20|JP-138.2.6.15-027
+  name: 20|JP-138.2.6.15-158
   network: ws
   port: 80
   server: 138.2.6.15
@@ -504,7 +504,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20|JP-47.91.31.231-028
+  name: 20|JP-47.91.31.231-147
   network: ws
   port: 80
   server: 47.91.31.231
@@ -517,7 +517,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20|JP-141.147.181.148-033
+  name: 20|JP-141.147.181.148-155
   network: ws
   port: 80
   server: 141.147.181.148
@@ -530,7 +530,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20|JP-47.245.54.58-161
+  name: 20|JP-47.245.54.58-209
   network: ws
   port: 80
   server: 47.245.54.58
@@ -556,7 +556,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20|JP-47.245.58.250-042
+  name: 20|JP-47.245.58.250-189
   network: ws
   port: 80
   server: 47.245.58.250
@@ -575,23 +575,10 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 20|JP-64.176.44.231-165
+  name: 20|JP-150.230.205.56-183
   network: ws
   port: 80
-  server: jp04.36routes.online
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f8cc73c7-a72f-4f85-aa53-975277f3292c
-  ws-headers:
-    Host: jp04.36routes.online
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 20|JP-155.248.186.182-167
-  network: ws
-  port: 80
-  server: 155.248.186.182
+  server: 150.230.205.56
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -599,6 +586,46 @@ proxies:
   ws-headers:
     Host: my1.tooters.ir
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|JP-158.101.146.160-210
+  network: ws
+  port: 80
+  server: 158.101.146.160
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ac2deae9-e7de-4056-be59-eaeea6deeb24
+  ws-headers:
+    Host: kr01.travisdependable.online
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|JP-141.147.178.135-204
+  network: ws
+  port: 80
+  server: 141.147.178.135
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f8cc73c7-a72f-4f85-aa53-975277f3292c
+  ws-headers:
+    Host: kr03.36routes.online
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '21,25|21|日本 #13'
+  network: ws
+  port: '80'
+  server: 47.74.11.219
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ac2deae9-e7de-4056-be59-eaeea6deeb24
+  ws-opts:
+    headers:
+      Host: kr01.travisdependable.online
+    path: /
 - alterId: 0
   cipher: auto
   name: 23,25|22|【BGP】日本 04  | 1x JP
@@ -642,6 +669,20 @@ proxies:
   ws-opts:
     headers:
       Host: my1.tooters.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 25|21|JP-64.176.45.34-1006
+  network: ws
+  port: 80
+  server: jp04.36routes.online
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f8cc73c7-a72f-4f85-aa53-975277f3292c
+  ws-opts:
+    headers:
+      Host: jp04.36routes.online
     path: /
 - alterId: 0
   cipher: auto
@@ -793,20 +834,6 @@ proxies:
   tls: false
   type: vmess
   uuid: e961894f-8e90-472f-98d3-09402e4be453
-- alterId: 0
-  cipher: auto
-  name: '25|21|日本 #12'
-  network: ws
-  port: '80'
-  server: 155.248.186.182
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f8cc73c7-a72f-4f85-aa53-975277f3292c
-  ws-opts:
-    headers:
-      Host: kr03.36routes.online
-    path: /
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -833,14 +860,6 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本2|@ripaojiedian
-  password: 2770a662-61db-40ed-a17c-783e521084ce
-  port: 50005
-  server: service.ouluyun9803.com
-  tfo: false
-  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇯🇵 日本特殊|@ripaojiedian
