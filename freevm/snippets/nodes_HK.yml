@@ -168,20 +168,6 @@ proxies:
   server: 47.243.196.229
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 28|🇭🇰HK-212.192.12.231-0104
-  network: ws
-  port: 80
-  server: 212.192.12.231
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1a6c9d53-122f-4fb0-a39d-e6e94b7bdfd4
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 64
   cipher: auto
   name: 28|🇭🇰HK-182.16.1.194-9488
@@ -210,6 +196,22 @@ proxies:
   port: 443
   server: 1.65.139.54
   type: ss
+- alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - internet.life.com.by
+    method: GET
+  name: 29|HK_speednode_0083
+  network: http
+  port: 3389
+  server: 185.244.208.61
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - cipher: aes-256-cfb
   name: 29|HK_speednode_0086
   obfs: tls1.2_ticket_auth
