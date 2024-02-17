@@ -319,33 +319,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-- alterId: 0
-  cipher: auto
-  name: 25|21|BGP|香港03-Netflix|Disney+|HB...
-  network: tcp
-  port: 33255
-  server: wuhan.sy-isp.com
-  tls: false
-  type: vmess
-  uuid: c24aad53-1133-3363-b29d-4bf6cbcce86c
-- alterId: 0
-  cipher: auto
-  name: 25|21|BGP|香港02-Neflix|Disney+|HBO
-  network: tcp
-  port: 33254
-  server: wuhan.sy-isp.com
-  tls: false
-  type: vmess
-  uuid: c24aad53-1133-3363-b29d-4bf6cbcce86c
-- alterId: 0
-  cipher: auto
-  name: 25|21|BGP|香港01-Neflix|Disney+|HBO
-  network: tcp
-  port: 33253
-  server: wuhan.sy-isp.com
-  tls: false
-  type: vmess
-  uuid: c24aad53-1133-3363-b29d-4bf6cbcce86c
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 26|🇭🇰 香港KT|@ripaojiedian
@@ -508,6 +481,22 @@ proxies:
   port: 443
   server: 1.65.139.54
   type: ss
+- alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - internet.life.com.by
+    method: GET
+  name: 29|HK_speednode_0083
+  network: http
+  port: 3389
+  server: 185.244.208.61
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - cipher: aes-256-cfb
   name: 29|HK_speednode_0086
   obfs: tls1.2_ticket_auth
