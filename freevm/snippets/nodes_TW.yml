@@ -5,13 +5,13 @@ proxies:
   network: tcp
   port: 2024
   server: b23.ntbq.dynu.net
-  servername: ''
+  servername: b23.ntbq.dynu.net
   tls: false
   type: vmess
   uuid: 60ab817e-0566-44cb-becd-6b51698d5672
 - alterId: 0
   cipher: auto
-  name: '7,11,14,25,28|🇹🇼_TW_台湾 #4'
+  name: '7,14,25,28|🇹🇼_TW_台湾 #4'
   network: tcp
   port: 12002
   server: nb22.ntbq.dynu.net
@@ -89,6 +89,16 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
+  name: '11,25,28|台湾省桃园市 中华电信 #1'
+  network: tcp
+  port: '21353'
+  server: 1.162.150.61
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 71618f91-d149-4b45-91c9-f94dd4e2499a
+- alterId: 0
+  cipher: auto
   name: 20|TW-1.162.151.202-191
   network: ws
   port: 18840
@@ -102,14 +112,17 @@ proxies:
   ws-path: /9tEYTPFN/
 - alterId: 0
   cipher: auto
-  name: 25|26|baipaovpn台湾省桃园市
-  network: tcp
-  port: '21353'
-  server: 1.162.150.61
-  servername: ''
+  name: 28|台湾 05|HiNet|WBGP|1.0
+  network: ws
+  port: 18075
+  server: 183.236.48.151
   tls: false
   type: vmess
-  uuid: 71618f91-d149-4b45-91c9-f94dd4e2499a
+  uuid: 796f2257-58f6-320b-9022-2655c256703e
+  ws-opts:
+    headers:
+      Host: www.alidns.com
+    path: /soda
 - alterId: 0
   cipher: auto
   name: 28|🇹🇼TW-1.162.151.202-1793
@@ -126,19 +139,6 @@ proxies:
     path: /soh5qvuQ/
 - alterId: 0
   cipher: auto
-  name: 28|台湾 04|Hinet|新北市|1.0
-  network: ws
-  port: 11810
-  server: 183.236.48.151
-  tls: false
-  type: vmess
-  uuid: 796f2257-58f6-320b-9022-2655c256703e
-  ws-opts:
-    headers:
-      Host: www.alidns.com
-    path: /soda
-- alterId: 0
-  cipher: auto
   name: 28|台湾 02|HiNet|台北市|1.0
   network: ws
   port: 19977
@@ -152,9 +152,9 @@ proxies:
     path: /soda
 - alterId: 0
   cipher: auto
-  name: 28|台湾 05|HiNet|WBGP|1.0
+  name: 28|台湾 04|Hinet|新北市|1.0
   network: ws
-  port: 18075
+  port: 11810
   server: 183.236.48.151
   tls: false
   type: vmess
