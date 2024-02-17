@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '7,14,25,28|🇹🇼_TW_台湾 #5'
+  name: '7,11,14,25,28|🇹🇼_TW_台湾 #5'
   network: tcp
   port: 2024
   server: b23.ntbq.dynu.net
@@ -89,27 +89,55 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: '11,25,28|台湾省桃园市 中华电信 #1'
+  name: 11,25|26|baipaovpn台湾省新竹市
+  network: tcp
+  port: '12002'
+  server: 114.37.158.127
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4403b75a-24ca-4d06-af15-6e157a0a7361
+- alterId: 0
+  cipher: auto
+  name: 20,21,25,28|台湾省桃园市 中华电信
   network: tcp
   port: '21353'
   server: 1.162.150.61
   servername: ''
-  tls: false
-  type: vmess
-  uuid: 71618f91-d149-4b45-91c9-f94dd4e2499a
-- alterId: 0
-  cipher: auto
-  name: 20|TW-1.162.151.202-191
-  network: ws
-  port: 18840
-  server: www.dtku40.xyz
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: afb1ad76-0f6f-4cb8-983a-95f5b4708321
+  uuid: 71618f91-d149-4b45-91c9-f94dd4e2499a
   ws-headers:
-    Host: www.dtku40.xyz
-  ws-path: /9tEYTPFN/
+    Host: 1.162.150.61
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '25,26,27,28|台湾|@ripaojiedian #1'
+  network: ws
+  port: '18840'
+  server: www.dtku40.xyz
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: afb1ad76-0f6f-4cb8-983a-95f5b4708321
+  ws-opts:
+    headers:
+      Host: www.dtku40.xyz
+    path: /9tEYTPFN/
+- alterId: 0
+  cipher: auto
+  name: 25|26|baipaovpn台湾省
+  network: tcp
+  port: '2024'
+  server: 118.167.66.25
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b6cd1e64-484a-431a-90c2-41bb0d579ee6
 - alterId: 0
   cipher: auto
   name: 28|台湾 05|HiNet|WBGP|1.0
