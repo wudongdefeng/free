@@ -1,16 +1,20 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '7,13,14,25,28|🇹🇼_TW_台湾 #4'
+  name: '7,13,14,20,21,25,28|🇹🇼_TW_台湾 #5'
   network: tcp
   port: 2024
   server: b23.ntbq.dynu.net
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 8907aeec-189d-48d9-b557-fb242a4d8127
+  ws-headers:
+    Host: b23.ntbq.dynu.net
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '7,25,27,28|🇹🇼_TW_台湾 #5'
+  name: '7,25,27,28|🇹🇼_TW_台湾 #4'
   network: tcp
   port: 12002
   server: 114.37.158.127
@@ -88,28 +92,24 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: '11,13,14,25,28|台湾省新竹市 中华电信 #2'
+  name: 13,14,20,21,25|19,21|🇹🇼|TW|台湾|@wxgqlfx|40
   network: tcp
   port: 12002
   server: nb22.ntbq.dynu.net
   servername: ''
-  tls: false
-  type: vmess
-  uuid: d3f5c39d-610c-4b98-9b01-d5b847033cf9
-- alterId: 0
-  cipher: auto
-  name: '20,21,25,27,28|台湾2|@ripaojiedian #1'
-  network: tcp
-  port: '21353'
-  server: 1.162.150.61
-  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 71618f91-d149-4b45-91c9-f94dd4e2499a
+  uuid: 35916fe2-8dbe-4a8c-870c-123edabcb414
   ws-headers:
-    Host: 1.162.150.61
+    Host: nb22.ntbq.dynu.net
   ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 20|TW-220.141.151.162-192
+  password: 2e2a2655-0ac1-4b1d-a777-de98bea4aa0a
+  port: 2203
+  server: ty11.twty.dynu.net
+  type: ss
 - alterId: 0
   cipher: aes-128-gcm
   name: 25|21|🔒 VM-TCP-NONE 🇹🇼 TW-118.167...
@@ -121,10 +121,20 @@ proxies:
   uuid: 1cc969d3-1df8-4794-a5cc-9231fe0e4710
 - alterId: 0
   cipher: auto
-  name: 28|台湾 05|HiNet|WBGP|1.0
+  name: '25,27,28|台湾2|@ripaojiedian #1'
+  network: tcp
+  port: '21353'
+  server: 1.162.150.61
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 71618f91-d149-4b45-91c9-f94dd4e2499a
+- alterId: 0
+  cipher: auto
+  name: 28|台湾 02|HiNet|台北市|1.0
   network: ws
-  port: 18075
-  server: 183.236.48.151
+  port: 19977
+  server: 221.131.165.182
   tls: false
   type: vmess
   uuid: 796f2257-58f6-320b-9022-2655c256703e
@@ -134,10 +144,10 @@ proxies:
     path: /soda
 - alterId: 0
   cipher: auto
-  name: 28|台湾 02|HiNet|台北市|1.0
+  name: 28|台湾 05|HiNet|WBGP|1.0
   network: ws
-  port: 19977
-  server: 221.131.165.182
+  port: 18075
+  server: 183.236.48.151
   tls: false
   type: vmess
   uuid: 796f2257-58f6-320b-9022-2655c256703e
