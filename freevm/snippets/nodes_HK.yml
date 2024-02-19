@@ -53,23 +53,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '11,25,26,27,28|香港B|@ripaojiedian #1'
-  network: ws
-  port: '80'
-  server: hk01.hajimihajimihajimi.online
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: e46c0ad2-2ce8-41e2-a055-2fd402638a38
-  ws-opts:
-    headers:
-      Host: hk01.hajimihajimihajimi.online
-    path: /
 - alterId: 64
   cipher: auto
   name: 15|香港_【YouTube-VV科技】
@@ -157,20 +140,23 @@ proxies:
     headers:
       Host: hk1.qtycloud.link
     path: /
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 25,28|🇭🇰HK-182.16.1.194-9729
+  client-fingerprint: chrome
+  name: '25,26,27,28|香港B|@ripaojiedian #1'
   network: ws
-  port: 80
-  server: hrgdvpn.flycdnedc55.vip
+  port: '80'
+  server: hk01.hajimihajimihajimi.online
   servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  uuid: e46c0ad2-2ce8-41e2-a055-2fd402638a38
   ws-opts:
     headers:
-      Host: hrgdvpn.flycdnedc55.vip
-    path: /opt/video/images
+      Host: hk01.hajimihajimihajimi.online
+    path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -199,18 +185,14 @@ proxies:
   uuid: de9558f3-d11b-410e-ab27-26956dde256d
 - alterId: 0
   cipher: auto
-  name: 25|26|baipaovpn香港
-  network: ws
-  port: '80'
-  server: 18.162.213.169
+  name: '25,27,28|香港3|@ripaojiedian #1'
+  network: tcp
+  port: '3389'
+  server: 185.244.208.61
   servername: ''
   tls: false
   type: vmess
-  uuid: e46c0ad2-2ce8-41e2-a055-2fd402638a38
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 26|🇭🇰 香港KT|@ripaojiedian
@@ -252,6 +234,20 @@ proxies:
   tfo: false
   type: ss
   udp: true
+- alterId: 64
+  cipher: auto
+  name: 28|🇭🇰HK-182.16.1.194-9729
+  network: ws
+  port: 80
+  server: hrgdvpn.flycdnedc55.vip
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: hrgdvpn.flycdnedc55.vip
+    path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: 28|香港 03|HKT-WTT|沙田区|1.0
@@ -332,6 +328,22 @@ proxies:
   port: 443
   server: 1.65.139.54
   type: ss
+- alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - internet.life.com.by
+    method: GET
+  name: 29|HK_speednode_0083
+  network: http
+  port: 3389
+  server: 185.244.208.61
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - cipher: aes-256-cfb
   name: 29|HK_speednode_0086
   obfs: tls1.2_ticket_auth
