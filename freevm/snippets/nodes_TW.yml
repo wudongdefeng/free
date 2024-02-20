@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '1,4,6,20,21,28|🇹🇼_TW_台湾 #4'
+  name: '1,4,6,20,21,28|🇹🇼_TW_台湾 #2'
   network: tcp
   port: 3278
   server: 118.167.69.188
@@ -94,24 +94,6 @@ proxies:
   ws-headers:
     Host: 36.232.170.53
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '14|🇹🇼_TW_台湾 #2'
-  network: tcp
-  port: 5681
-  server: 118.167.66.25
-  tls: false
-  type: vmess
-  uuid: de9558f3-d11b-410e-ab27-26956dde256d
-- alterId: 0
-  cipher: auto
-  name: '14|🇹🇼_TW_台湾 #3'
-  network: tcp
-  port: 3278
-  server: 118.167.81.140
-  tls: false
-  type: vmess
-  uuid: de9558f3-d11b-410e-ab27-26956dde256d
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 26|🇹🇼 台湾R|@ripaojiedian
@@ -125,17 +107,30 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: 28|台湾 03|HiNet|新北市|1.0
+  name: 28|台湾-优化3
   network: ws
-  port: 11894
-  server: 183.236.48.151
+  port: '16616'
+  server: t.cnmjcn.cyou
   tls: false
   type: vmess
-  uuid: 796f2257-58f6-320b-9022-2655c256703e
+  uuid: e418915e-6459-414d-bc76-bbcbda621f0f
   ws-opts:
     headers:
-      Host: www.alidns.com
-    path: /soda
+      Host: 1e85f722cb07adf2cffdbcd31ee19a14.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '28|台湾-优化3 #1'
+  network: ws
+  port: '16616'
+  server: t.cnmjcn.cyou
+  tls: false
+  type: vmess
+  uuid: c99074bd-bacd-48b5-9561-da069c481602
+  ws-opts:
+    headers:
+      Host: fe5be62428b65a2ce7a22d9997b4c9d0.mobgslb.tbcache.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 28|台湾-优化2
@@ -151,10 +146,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '28|台湾-优化2 #1'
+  name: '28|台湾-优化3 #2'
   network: ws
   port: '16616'
-  server: m.cnmjcn.com
+  server: t.cnmjcn.cyou
   tls: false
   type: vmess
   uuid: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3
@@ -164,20 +159,46 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 28|台湾 03|HiNet|新北市|1.0
+  network: ws
+  port: 11894
+  server: 183.236.48.151
+  tls: false
+  type: vmess
+  uuid: 796f2257-58f6-320b-9022-2655c256703e
+  ws-opts:
+    headers:
+      Host: www.alidns.com
+    path: /soda
+- alterId: 0
+  cipher: auto
+  name: 28|台湾 05|HiNet|WBGP|1.0
+  network: ws
+  port: 18075
+  server: 183.236.48.151
+  tls: false
+  type: vmess
+  uuid: 796f2257-58f6-320b-9022-2655c256703e
+  ws-opts:
+    headers:
+      Host: www.alidns.com
+    path: /soda
+- alterId: 0
+  cipher: auto
   name: 28|台湾-优化
   network: ws
   port: '16616'
   server: yes.cnmjcn.net
   tls: false
   type: vmess
-  uuid: c99074bd-bacd-48b5-9561-da069c481602
+  uuid: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3
   ws-opts:
     headers:
-      Host: fe5be62428b65a2ce7a22d9997b4c9d0.mobgslb.tbcache.com
+      Host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com
     path: /
 - alterId: 0
   cipher: auto
-  name: '28|台湾-优化2 #2'
+  name: '28|台湾-优化2 #1'
   network: ws
   port: '16616'
   server: m.cnmjcn.com
@@ -190,36 +211,23 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '28|台湾-优化 #1'
+  name: 28|台湾 04|Hinet|新北市|1.0
   network: ws
-  port: '16616'
-  server: yes.cnmjcn.net
+  port: 11810
+  server: 183.236.48.151
   tls: false
   type: vmess
-  uuid: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3
+  uuid: 796f2257-58f6-320b-9022-2655c256703e
   ws-opts:
     headers:
-      Host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com
-    path: /
+      Host: www.alidns.com
+    path: /soda
 - alterId: 0
   cipher: auto
-  name: 28|台湾-优化3
+  name: '28|台湾-优化2 #2'
   network: ws
   port: '16616'
-  server: t.cnmjcn.cyou
-  tls: false
-  type: vmess
-  uuid: c99074bd-bacd-48b5-9561-da069c481602
-  ws-opts:
-    headers:
-      Host: fe5be62428b65a2ce7a22d9997b4c9d0.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '28|台湾-优化3 #1'
-  network: ws
-  port: '16616'
-  server: t.cnmjcn.cyou
+  server: m.cnmjcn.com
   tls: false
   type: vmess
   uuid: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3
@@ -242,17 +250,30 @@ proxies:
     path: /soda
 - alterId: 0
   cipher: auto
-  name: 28|台湾 04|Hinet|新北市|1.0
+  name: '28|台湾-优化 #1'
   network: ws
-  port: 11810
-  server: 183.236.48.151
+  port: '16616'
+  server: yes.cnmjcn.net
   tls: false
   type: vmess
-  uuid: 796f2257-58f6-320b-9022-2655c256703e
+  uuid: e418915e-6459-414d-bc76-bbcbda621f0f
   ws-opts:
     headers:
-      Host: www.alidns.com
-    path: /soda
+      Host: 1e85f722cb07adf2cffdbcd31ee19a14.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '28|台湾-优化 #2'
+  network: ws
+  port: '16616'
+  server: yes.cnmjcn.net
+  tls: false
+  type: vmess
+  uuid: c99074bd-bacd-48b5-9561-da069c481602
+  ws-opts:
+    headers:
+      Host: fe5be62428b65a2ce7a22d9997b4c9d0.mobgslb.tbcache.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 28|🇹🇼TW-103.159.206.35-0656
@@ -266,45 +287,6 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 28|台湾 05|HiNet|WBGP|1.0
-  network: ws
-  port: 18075
-  server: 183.236.48.151
-  tls: false
-  type: vmess
-  uuid: 796f2257-58f6-320b-9022-2655c256703e
-  ws-opts:
-    headers:
-      Host: www.alidns.com
-    path: /soda
-- alterId: 0
-  cipher: auto
-  name: '28|台湾-优化 #2'
-  network: ws
-  port: '16616'
-  server: yes.cnmjcn.net
-  tls: false
-  type: vmess
-  uuid: e418915e-6459-414d-bc76-bbcbda621f0f
-  ws-opts:
-    headers:
-      Host: 1e85f722cb07adf2cffdbcd31ee19a14.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '28|台湾-优化3 #2'
-  network: ws
-  port: '16616'
-  server: t.cnmjcn.cyou
-  tls: false
-  type: vmess
-  uuid: e418915e-6459-414d-bc76-bbcbda621f0f
-  ws-opts:
-    headers:
-      Host: 1e85f722cb07adf2cffdbcd31ee19a14.mobgslb.tbcache.com
     path: /
 - alterId: 0
   cipher: auto
