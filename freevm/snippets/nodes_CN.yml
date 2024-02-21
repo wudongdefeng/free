@@ -1,7 +1,21 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '11,13,25,28|美国LA-优化2-GPT #1'
+  name: '11,28|香港HKT-优化2 #2'
+  network: ws
+  port: '16620'
+  server: m.cnmjcn.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c99074bd-bacd-48b5-9561-da069c481602
+  ws-opts:
+    headers:
+      Host: fe5be62428b65a2ce7a22d9997b4c9d0.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 13,21,25,28|美国LA-优化2-GPT
   network: ws
   port: '16648'
   server: m.cnmjcn.com
@@ -16,7 +30,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '13,14,25,26,27,28|香港2|@ripaojiedian #1'
+  name: '13,14,21,25,26,27,28|香港2|@ripaojiedian #1'
   network: ws
   port: '19979'
   server: 101.89.154.94
@@ -74,24 +88,33 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  country: 🇨🇳CN
-  delay: 1260
-  name: 20,26,29|JP_speednode_0094
-  password: 4a39dba7-463b-4c8a-a804-758282c11c62
-  port: 443
-  server: uk01.trojanyyds.xyz
-  skip-cert-verify: false
-  sni: uk01.trojanyyds.xyz
-  tfo: false
+  name: 20|CN-116.162.172.120-030
+  network: ws
+  port: 16645
+  server: yes.cnmjcn.net
+  skip-cert-verify: true
   tls: false
-  type: trojan
-  udp: true
-  uuid: 0136f633-8f20-3e15-9853-226fb53ec965
-  ws-path: h=%2Fwebsocket
+  type: vmess
+  uuid: c99074bd-bacd-48b5-9561-da069c481602
+  ws-headers:
+    Host: fe5be62428b65a2ce7a22d9997b4c9d0.mobgslb.tbcache.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|CN-120.233.43.16-167
+  network: ws
+  port: 16648
+  server: m.cnmjcn.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e418915e-6459-414d-bc76-bbcbda621f0f
+  ws-headers:
+    Host: 1e85f722cb07adf2cffdbcd31ee19a14.mobgslb.tbcache.com
+  ws-path: /
 - alterId: 2
   cipher: auto
-  name: 20|CN-183.232.56.161-072
+  name: 20|CN-183.232.56.161-071
   network: ws
   port: 1302
   server: 183.232.56.161
@@ -104,7 +127,7 @@ proxies:
   ws-path: /v2ray
 - alterId: 2
   cipher: auto
-  name: 20|CN-183.232.56.161-073
+  name: 20|CN-183.232.56.161-072
   network: ws
   port: 3099
   server: 183.232.56.161
@@ -117,7 +140,7 @@ proxies:
   ws-path: /v2ray
 - alterId: 2
   cipher: auto
-  name: 20|CN-183.232.56.161-074
+  name: 20|CN-183.232.56.161-073
   network: ws
   port: 4099
   server: 183.232.56.161
@@ -130,7 +153,7 @@ proxies:
   ws-path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 20|CN-183.232.56.161-075
+  name: 20|CN-183.232.56.161-074
   network: ws
   port: 1612
   server: 183.232.56.161
@@ -143,7 +166,7 @@ proxies:
   ws-path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 20|CN-183.232.56.161-076
+  name: 20|CN-183.232.56.161-075
   network: ws
   port: 1301
   server: 183.232.56.161
@@ -156,7 +179,7 @@ proxies:
   ws-path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 20|CN-183.232.56.161-077
+  name: 20|CN-183.232.56.161-076
   network: ws
   port: 1101
   server: 183.232.56.161
@@ -169,7 +192,7 @@ proxies:
   ws-path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 20|CN-183.232.56.161-078
+  name: 20|CN-183.232.56.161-077
   network: ws
   port: 5018
   server: 183.232.56.161
@@ -182,7 +205,7 @@ proxies:
   ws-path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 20|CN-183.232.56.161-079
+  name: 20|CN-183.232.56.161-078
   network: ws
   port: 1501
   server: 183.232.56.161
@@ -195,7 +218,7 @@ proxies:
   ws-path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 20|CN-183.232.56.161-081
+  name: 20|CN-183.232.56.161-080
   network: ws
   port: 8001
   server: 183.232.56.161
@@ -208,7 +231,7 @@ proxies:
   ws-path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 20|CN-120.233.42.199-198
+  name: 20|CN-120.233.42.199-201
   network: ws
   port: 20401
   server: data-us-v1.shwjfkw.cn
@@ -228,46 +251,22 @@ proxies:
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|CN-120.238.122.159-202
+  name: 20|CN-120.238.122.159-205
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|CN-120.238.122.159-203
+  name: 20|CN-120.238.122.160-206
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|CN-117.149.247.11-120
+  name: 20|CN-117.149.247.11-119
   password: 8e949d75-3510-4678-8593-3c5032dd931a
   port: 30818
   server: wqfuinwqffq.dfcloud.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 20,26|🇭🇰 香港|@ripaojiedian
-  password: cfa17a0d-5e7d-4871-976e-f116e0818123
-  port: 21001
-  server: service.ouluyun9803.com
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 20,26|🇸🇬 新加坡2|@ripaojiedian
-  password: cfa17a0d-5e7d-4871-976e-f116e0818123
-  port: 20009
-  server: service.ouluyun9803.com
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 20,26|🇰🇷 韩国|@ripaojiedian
-  password: cfa17a0d-5e7d-4871-976e-f116e0818123
-  port: 21004
-  server: service.ouluyun9803.com
-  tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
@@ -277,19 +276,74 @@ proxies:
   server: service.ouluyun9803.com
   tfo: false
   type: ss
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 25|12|中国五指山市|Github搜索TrojanLinks
+  name: 20|CN-111.47.212.135-149
   network: ws
-  port: '37000'
-  server: 108.186.196.170
-  tls: true
+  port: 16645
+  server: t.cnmjcn.cyou
+  skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.86222404.xyz
-    path: /path/271624282113
+  uuid: c99074bd-bacd-48b5-9561-da069c481602
+  ws-headers:
+    Host: fe5be62428b65a2ce7a22d9997b4c9d0.mobgslb.tbcache.com
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇭🇰 香港|@ripaojiedian
+  password: cfa17a0d-5e7d-4871-976e-f116e0818123
+  port: 21001
+  server: service.ouluyun9803.com
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|CN-120.233.43.16-159
+  network: ws
+  port: 16645
+  server: m.cnmjcn.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3
+  ws-headers:
+    Host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|CN-101.89.154.94-179
+  network: ws
+  port: 19979
+  server: 101.89.154.94
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 941f470e-34e8-3bb0-9b1e-b2c0b4fdb212
+  ws-headers:
+    Host: cache-hk-2.cn-db.top
+  ws-path: /db00
+- alterId: 0
+  cipher: auto
+  name: 20|CN-110.72.101.150-184
+  network: ws
+  port: 16648
+  server: yes.cnmjcn.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e418915e-6459-414d-bc76-bbcbda621f0f
+  ws-headers:
+    Host: 1e85f722cb07adf2cffdbcd31ee19a14.mobgslb.tbcache.com
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇮🇳 印度|@ripaojiedian
+  password: cfa17a0d-5e7d-4871-976e-f116e0818123
+  port: 21003
+  server: service.ouluyun9803.com
+  tfo: false
+  type: ss
 - alterId: 64
   cipher: auto
   name: 25|12|中国洛阳市|Github搜索TrojanLinks
@@ -305,16 +359,29 @@ proxies:
     path: /path/271624282113
 - alterId: 64
   cipher: auto
-  name: 25|12|中国东程|Github搜索TrojanLinks
+  name: 25|12|中国重庆市|Github搜索TrojanLinks
   network: ws
-  port: '37000'
-  server: 137.175.29.50
+  port: '38000'
+  server: 142.4.101.40
   tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     headers:
-      Host: www.87569156.xyz
+      Host: www.87140386.xyz
+    path: /path/271624282113
+- alterId: 64
+  cipher: auto
+  name: 25|12|中国十堰|Github搜索TrojanLinks
+  network: ws
+  port: '38000'
+  server: 137.175.29.76
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.46074906.xyz
     path: /path/271624282113
 - alterId: 64
   cipher: auto
@@ -330,20 +397,6 @@ proxies:
     headers:
       Host: www.31033708.xyz
     path: /path/1707385668735
-- alterId: 64
-  cipher: auto
-  name: 25|16|中国 017
-  network: ws
-  port: 37000
-  server: 108.186.164.76
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.98382183.xyz
-    path: /path/271624282113
 - cipher: chacha20-ietf-poly1305
   name: 29|CN_speednode_0009
   password: 5fd760b5-b3e6-4006-9e8d-bcd8feafa374
