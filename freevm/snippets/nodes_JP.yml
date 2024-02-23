@@ -319,6 +319,20 @@ proxies:
   uuid: cac31516-3734-4dde-932a-562f1b1f936c
 - alterId: 0
   cipher: auto
+  name: 13|日本 东京Fastly节点
+  network: ws
+  port: '80'
+  server: fastly.alipay.ovh
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
+  ws-opts:
+    headers:
+      Host: nmsl.kp
+    path: /aries?ed=2048
+- alterId: 0
+  cipher: auto
   name: 20|JP-13.208.182.186-173
   network: ws
   port: 443
@@ -388,23 +402,6 @@ proxies:
   tls: false
   type: vmess
   uuid: e2d318b6-52f6-4339-ae4d-19ccf28e24c7
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 25,26,27,28|🏁RELAY-104.16.134.157-0122
-  network: ws
-  port: 80
-  server: cfcdn3.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 9a557d02-12ff-4da8-8669-1824cfdefe1f
-  ws-opts:
-    headers:
-      Host: GWYp69Yujp2.yofnhkfc.xyz
-    path: /video/VDXcaM7r
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇯🇵 日本|@ripaojiedian
@@ -423,27 +420,13 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 28|🇯🇵JP-152.69.197.74-3902
-  network: ws
-  port: 12345
-  server: 152.69.197.74
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
-  ws-opts:
-    headers:
-      Host: ''
-    path: /bb
-- alterId: 0
-  cipher: auto
   name: '28|日本-优化2-GPT #1'
   network: ws
   port: '16617'
   server: m.cnmjcn.com
   tls: false
   type: vmess
-  uuid: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3
+  uuid: e418915e-6459-414d-bc76-bbcbda621f0f
   ws-opts:
     headers:
       Host: ''
@@ -456,11 +439,25 @@ proxies:
   server: t.cnmjcn.cyou
   tls: false
   type: vmess
-  uuid: e418915e-6459-414d-bc76-bbcbda621f0f
+  uuid: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3
   ws-opts:
     headers:
       Host: ''
     path: ''
+- alterId: 0
+  cipher: auto
+  name: 28|🇯🇵JP-152.69.197.74-4111
+  network: ws
+  port: 12345
+  server: 152.69.197.74
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
+  ws-opts:
+    headers:
+      Host: ''
+    path: /bb
 - cipher: chacha20-ietf-poly1305
   name: 29|JP_speednode_0095
   password: 3b34151f-8a87-413c-803b-18d70bd69f95
