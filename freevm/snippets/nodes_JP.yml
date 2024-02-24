@@ -289,6 +289,20 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
+  name: '11,28|日本 东京Fastly节点 #2'
+  network: ws
+  port: 80
+  server: fastly.alipay.ovh
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 041f0d5b-c647-4a8d-8e4e-fa7f3526a490
+  ws-opts:
+    headers:
+      Host: mihoyo.gov.kp
+    path: /aries?ed=2048
+- alterId: 0
+  cipher: auto
   name: 12,25|13|🇯🇵日本04
   network: tcp
   port: '36116'
@@ -296,7 +310,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 21df831f-bd48-4f60-8f6c-80b54babba51
+  uuid: c8823d7b-bdf2-4e1a-9ca4-2060deee65ec
 - alterId: 0
   cipher: auto
   name: 12,25|13|🇯🇵日本05
@@ -306,7 +320,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 21df831f-bd48-4f60-8f6c-80b54babba51
+  uuid: c8823d7b-bdf2-4e1a-9ca4-2060deee65ec
 - alterId: 0
   cipher: auto
   name: 12,25|13|🇯🇵日本06
@@ -316,12 +330,12 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 21df831f-bd48-4f60-8f6c-80b54babba51
+  uuid: c8823d7b-bdf2-4e1a-9ca4-2060deee65ec
 - alterId: 0
   cipher: auto
-  name: 13,21,25|14,16|@aries_init 荷兰Warp
+  name: 13,21,25|14|日本 东京Fastly节点
   network: ws
-  port: 80
+  port: '80'
   server: miracle.bilibili.ovh
   servername: ''
   tls: false
@@ -359,7 +373,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 8330309d-4e1c-42a5-827a-44258b83e9e4
+  uuid: abd696cd-9d6a-4dfb-8033-5a0812fcb7dc
 - alterId: 0
   cipher: auto
   name: 23,25|17|【BGP】日本 05  | 1x JP
@@ -369,7 +383,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 8330309d-4e1c-42a5-827a-44258b83e9e4
+  uuid: abd696cd-9d6a-4dfb-8033-5a0812fcb7dc
 - alterId: 0
   cipher: auto
   name: 23,25|17|【BGP】日本 06  | 1x JP
@@ -379,7 +393,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 8330309d-4e1c-42a5-827a-44258b83e9e4
+  uuid: abd696cd-9d6a-4dfb-8033-5a0812fcb7dc
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇯🇵 日本特殊|@ripaojiedian
@@ -388,20 +402,6 @@ proxies:
   server: 3.36.61.58
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 28|🇯🇵JP-152.69.197.74-4111
-  network: ws
-  port: 12345
-  server: 152.69.197.74
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
-  ws-opts:
-    headers:
-      Host: ''
-    path: /bb
 - alterId: 0
   cipher: auto
   name: 28|[vmess]🇯🇵 JP |日本LB
@@ -416,6 +416,20 @@ proxies:
     headers:
       Host: d23c2wgg43roe6.cloudfront.net
     path: /stream
+- alterId: 0
+  cipher: auto
+  name: 28|🇯🇵JP-152.69.197.74-4111
+  network: ws
+  port: 12345
+  server: 152.69.197.74
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
+  ws-opts:
+    headers:
+      Host: ''
+    path: /bb
 - cipher: chacha20-ietf-poly1305
   name: 29|JP_speednode_0095
   password: 3b34151f-8a87-413c-803b-18d70bd69f95
