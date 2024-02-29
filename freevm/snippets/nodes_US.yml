@@ -14,7 +14,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,13,14,17,21,25,28,30|🇺🇸_US_美国 #54'
+  name: '0,3,4,6,7,11,13,14,17,21,25,28,30|🇺🇸_US_美国 #54'
   network: ws
   port: 8080
   server: 104.21.54.252
@@ -45,7 +45,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,11,14,17,21,25,28,30|🇺🇸_US_美国 #53'
+  name: '0,3,4,6,7,14,17,21,25,28,30|🇺🇸_US_美国 #53'
   network: ws
   port: 8080
   server: www.ywnouvbale.biz
@@ -2013,23 +2013,14 @@ proxies:
   uuid: 37e3fe44-e63c-4988-cff7-d1a27f5f0c09
 - alterId: 0
   cipher: auto
-  name: '11,25,28|美国 CloudFlare节点 #18'
+  client-fingerprint: chrome
+  name: '11,25,26,27,28|美国|@ripaojiedian #1'
   network: ws
-  port: 80
-  server: 104.21.225.184
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt5.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11,25,28|美国 CloudFlare节点 #16'
-  network: ws
-  port: 2086
-  server: 104.19.91.152
+  port: '2086'
+  server: cfcdn1.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: 9c4723d9-29e7-4502-a021-7c79355cb7e1
@@ -2049,18 +2040,14 @@ proxies:
   uuid: f2f0cce4-4f5b-4826-b2f6-eb5d51ef3ac7
 - alterId: 0
   cipher: auto
-  name: 12,20,21,25|13|🇺🇸美国05
+  name: 12,25|13|🇺🇸美国05
   network: tcp
   port: '36506'
   server: 3u1s05.abzoones.xyz
   servername: us05.abpilot.xyz
-  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: f2f0cce4-4f5b-4826-b2f6-eb5d51ef3ac7
-  ws-headers:
-    Host: 3u1s05.abzoones.xyz
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: 12,25|13|🇺🇸美国06
@@ -3179,9 +3166,27 @@ proxies:
   port: 443
   server: 54.202.3.34
   type: ss
+- cipher: aes-256-gcm
+  name: 20|US-142.202.48.108-052
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 142.202.48.108
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|US-142.202.48.108-053
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 142.202.48.108
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|US-167.88.63.71-054
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 167.88.63.71
+  type: ss
 - alterId: 4
   cipher: auto
-  name: 20|US-104.166.135.10-043
+  name: 20|US-104.166.135.10-057
   network: ws
   port: 443
   server: 104.166.135.10
@@ -3193,27 +3198,122 @@ proxies:
     Host: ahdaeph8.com
   ws-path: /ws
 - cipher: aes-256-gcm
-  name: 20|US-169.197.141.91-056
-  password: zDNVedRFPQexG9v
-  port: 6379
-  server: 169.197.141.91
+  name: 20|US-167.88.61.175-058
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 167.88.61.175
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|US-38.91.100.102-059
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 38.91.100.102
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|US-167.88.61.60-060
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 167.88.61.60
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|US-38.143.66.71-061
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 38.143.66.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|US-142.202.48.58-065
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 142.202.48.58
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|US-142.202.48.108-066
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 142.202.48.108
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|US-38.114.114.67-067
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 38.114.114.67
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|US-38.68.134.85-068
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 38.68.134.85
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|US-38.75.136.102-069
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 38.75.136.102
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|US-38.114.114.19-073
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 38.114.114.19
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|US-38.114.114.19-074
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 38.114.114.19
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|US-167.88.63.71-075
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 167.88.63.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|US-38.75.136.102-076
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 38.75.136.102
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|US-142.202.48.108-077
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 142.202.48.108
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|US-142.202.48.108-078
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 142.202.48.108
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|US-38.86.135.36-079
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 38.86.135.36
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|US-38.86.135.36-080
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 38.86.135.36
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|US-38.75.136.93-081
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 38.75.136.93
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|US-38.68.134.85-082
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 38.68.134.85
   type: ss
 - alterId: 4
   cipher: auto
-  name: 20|US-45.35.84.162-087
-  network: ws
-  port: 443
-  server: 45.35.84.162
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  ws-headers:
-    Host: usa-dallas.lvuft.com
-  ws-path: /ws
-- alterId: 4
-  cipher: auto
-  name: 20|US-45.58.150.130-139
+  name: 20|US-45.58.150.130-115
   network: ws
   port: 443
   server: 45.58.150.130
@@ -3225,32 +3325,14 @@ proxies:
     Host: dax6ujai.com
   ws-path: /ws
 - cipher: aes-256-gcm
-  name: 20|US-167.88.62.104-145
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 167.88.62.104
-  type: ss
-- cipher: aes-256-gcm
-  name: 20|US-167.88.62.104-146
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 167.88.62.104
-  type: ss
-- cipher: aes-256-gcm
-  name: 20|US-38.86.135.36-148
+  name: 20|US-38.86.135.36-139
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 38.86.135.36
   type: ss
-- cipher: aes-256-gcm
-  name: 20|US-38.91.100.102-162
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 38.91.100.102
-  type: ss
 - alterId: 64
   cipher: auto
-  name: 20|US-38.14.107.227-216
+  name: 20|US-38.14.107.227-215
   network: ws
   port: 38100
   server: 38.14.107.227
@@ -3261,22 +3343,22 @@ proxies:
   ws-headers:
     Host: www.23179753.xyz
   ws-path: /path/271624282113
-- alterId: 0
-  cipher: auto
-  name: '21|🇺🇸 美国(欢迎订阅Youtube破解资源君) #1'
-  network: ws
-  port: '36018'
-  server: china-gzyd-1.forwardserver.xyz
-  tls: false
-  type: vmess
-  uuid: 3b07447e-94cf-4d72-96c6-d0a539098049
-  ws-opts:
-    headers:
-      Host: china-gzyd-1.forwardserver.xyz
-    path: /
-- alterId: 4
+- alterId: 1
   cipher: auto
   name: '21|🇺🇸 美国(欢迎订阅Youtube破解资源君) #2'
+  network: ws
+  port: '448'
+  server: jp03-vm0.ikuuu.casa
+  tls: false
+  type: vmess
+  uuid: 3c7919b0-87bd-3399-abd2-a79cd334c0c2
+  ws-opts:
+    headers:
+      Host: t.me/vpnhat
+    path: /hls/cctv5phd.m3u8
+- alterId: 4
+  cipher: auto
+  name: '21|🇺🇸 美国(欢迎订阅Youtube破解资源君) #4'
   network: ws
   port: '443'
   server: 104.166.135.10
@@ -3287,48 +3369,22 @@ proxies:
     headers:
       Host: ahdaeph8.com
     path: /ws
-- alterId: 4
-  cipher: auto
-  name: '21|🇺🇸 美国(欢迎订阅Youtube破解资源君) #3'
-  network: ws
-  port: '443'
-  server: usa-dallas.lvuft.com
-  tls: true
-  type: vmess
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  ws-opts:
-    headers:
-      Host: usa-dallas.lvuft.com
-    path: /ws
 - alterId: 1
   cipher: auto
-  name: '21|🇺🇸 美国(欢迎订阅Youtube破解资源君) #6'
+  name: '21|🇺🇸 美国(欢迎订阅Youtube破解资源君) #5'
   network: ws
-  port: '21152'
-  server: cmi.db-link.in
+  port: '10007'
+  server: v2.usa1.hgwc.xyz
   tls: false
   type: vmess
-  uuid: 3e2241ef-9b8a-34f4-be7d-3fe6615bfba3
+  uuid: 5d812995-b95c-47fc-a562-750173aeb305
   ws-opts:
     headers:
-      Host: us01.db-link.in
-    path: /db
-- alterId: 0
-  cipher: auto
-  name: '21|🇺🇸 美国(欢迎订阅Youtube破解资源君) #7'
-  network: ws
-  port: '38483'
-  server: china-f4s-az-hk.898868.xyz
-  tls: false
-  type: vmess
-  uuid: 3b07447e-94cf-4d72-96c6-d0a539098049
-  ws-opts:
-    headers:
-      Host: china-f4s-az-hk.898868.xyz
+      Host: v2.usa1.hgwc.xyz
     path: /
 - alterId: 0
   cipher: auto
-  name: '21|🇺🇸 美国(欢迎订阅Youtube破解资源君) #8'
+  name: '21|🇺🇸 美国(欢迎订阅Youtube破解资源君) #6'
   network: ws
   port: '10006'
   server: v2.kr4.hgwc.xyz
@@ -3339,42 +3395,38 @@ proxies:
     headers:
       Host: v2.kr4.hgwc.xyz
     path: /
-- alterId: 0
+- alterId: 32
   cipher: auto
-  name: '21|🇺🇸 美国(欢迎订阅Youtube破解资源君) #9'
+  name: '21|🇺🇸 美国(欢迎订阅Youtube破解资源君) #7'
   network: ws
-  port: '443'
-  server: onedrive.chacha20.xyz
-  tls: true
+  port: '10001'
+  server: v2.nl.hgwc.xyz
+  tls: false
   type: vmess
-  uuid: 3b07447e-94cf-4d72-96c6-d0a539098049
+  uuid: 5d812995-b95c-47fc-a562-750173aeb305
   ws-opts:
     headers:
-      Host: onedrive.chacha20.xyz
-    path: /onedrive
+      Host: v2.nl.hgwc.xyz
+    path: /
 - alterId: 0
   cipher: auto
-  name: '21|🇺🇸 美国(欢迎订阅Youtube破解资源君) #10'
+  name: '21,25,28|美国 CloudFlare节点 #18'
   network: ws
-  port: '443'
-  server: update.office.chacha20.xyz
-  tls: true
+  port: 80
+  server: 104.21.225.184
+  tls: false
   type: vmess
-  uuid: 3b07447e-94cf-4d72-96c6-d0a539098049
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
-      Host: update.office.chacha20.xyz
-    path: /version
+      Host: a.prapt5.ir
+    path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '21,25,26,27,28|美国|@ripaojiedian #1'
+  name: '21,25,28|美国 CloudFlare节点 #16'
   network: ws
-  port: '2086'
-  server: cfcdn1.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
+  port: 2086
+  server: 104.19.91.152
   tls: false
   type: vmess
   uuid: 9c4723d9-29e7-4502-a021-7c79355cb7e1
@@ -3382,33 +3434,6 @@ proxies:
     headers:
       Host: us77SmSk86j.fzbqfrse.xyz
     path: /video/Z7qdcrAGRw
-- alterId: 0
-  cipher: auto
-  name: '21|🇺🇸 美国 CloudFlare节点 #3'
-  network: ws
-  port: '8080'
-  server: 162.159.136.253
-  tls: false
-  type: vmess
-  uuid: ade73e62-7554-40a8-9314-195a372bae28
-  ws-opts:
-    headers:
-      Host: xentain.kmoljklj.top
-    path: /7bFcoRZS?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 21,25,28|🏁RELAY-172.67.172.127-4020
-  network: ws
-  port: 8080
-  server: cf.openxai.link
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c
-  ws-opts:
-    headers:
-      Host: eu2.openxai.link
-    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: 23,25|17|【BGP】美国 04 | 1x US
