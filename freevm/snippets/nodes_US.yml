@@ -102,7 +102,7 @@ proxies:
     path: 53329cdb-8a9e-4ab9-8391-d3e628140c76-vm
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,11,17,21,25,28,30|🇺🇸_US_美国 #57'
+  name: '0,3,4,6,17,21,25,28,30|🇺🇸_US_美国 #57'
   network: ws
   port: 8080
   server: 172.67.136.12
@@ -801,7 +801,7 @@ proxies:
     path: /cloudvideo?ed=1024
 - alterId: 0
   cipher: auto
-  name: 10,11|香港 特别行政区
+  name: 10|美国_121320111
   network: tcp
   port: '45343'
   server: 154.90.39.63
@@ -2013,31 +2013,68 @@ proxies:
   uuid: 37e3fe44-e63c-4988-cff7-d1a27f5f0c09
 - alterId: 0
   cipher: auto
-  name: '11|美国 CloudFlare节点 #6'
+  name: 11,25|24|🇺🇸_US_美国_由快嘴科技提供：kkzui.com_...
   network: ws
-  port: '80'
-  server: us65.netfilx.live
+  port: 2086
+  server: 104.19.91.152
+  tls: false
+  type: vmess
+  uuid: 9c4723d9-29e7-4502-a021-7c79355cb7e1
+  ws-opts:
+    headers:
+      Host: us77SmSk86j.fzbqfrse.xyz
+    path: /video/Z7qdcrAGRw
+- alterId: 0
+  cipher: auto
+  name: '11,13,21,25,28|美国 CloudFlare节点 #19'
+  network: ws
+  port: '2086'
+  server: 104.16.35.48
   servername: ''
   tls: false
   type: vmess
-  uuid: 60f12435-bb55-4da2-cb7d-4fea34ecfa37
+  uuid: 9c4723d9-29e7-4502-a021-7c79355cb7e1
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: us77SmSk86j.fzbqfrse.xyz
+    path: /video/Z7qdcrAGRw
 - alterId: 0
   cipher: auto
-  name: 11,13,21,25|14|美国 Fastly全球Anycast节点
+  name: 11,28|🏁RELAY-104.21.30.249-1042
   network: ws
-  port: '80'
-  server: fastly.com
+  port: 2052
+  server: 104.21.30.249
+  servername: ''
   tls: false
   type: vmess
-  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
+  uuid: 284d74d8-4775-4144-bd7b-e27f310c99e5
   ws-opts:
     headers:
-      Host: nmsl.kp
-    path: /aries?ed=2048
+      Host: 237f1c11e3e9e373.Tiderace.gately.info
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 11,13,21,25|14|美国 华盛顿Cogent通信公司
+  network: ws
+  port: '38100'
+  server: 38.14.107.227
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.23179753.xyz
+    path: /path/271624282113
+- alterId: 0
+  cipher: auto
+  name: 12,25|13|🇺🇸美国04
+  network: tcp
+  port: '36501'
+  server: 3u1s04.abzoones.xyz
+  servername: us04.abpilot.xyz
+  tls: true
+  type: vmess
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
 - alterId: 0
   cipher: auto
   name: 12,20,21,25|13|🇺🇸美国05
@@ -2054,6 +2091,16 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  name: 12,25|13|🇺🇸美国06
+  network: tcp
+  port: '36511'
+  server: 3u1s06.abzoones.xyz
+  servername: us06.abpilot.xyz
+  tls: true
+  type: vmess
+  uuid: bdd8ab40-914f-46db-a48c-c656f23a5032
+- alterId: 0
+  cipher: auto
   name: '13,21,25|14,16|🇺🇸_US_美国->🇩🇪_DE_德国 #111'
   network: ws
   port: 80
@@ -2068,7 +2115,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '13,21,25,26,27,28|美国 CloudFlare节点 #23'
+  name: '13,21,25,26,27,28|美国 CloudFlare节点 #22'
   network: ws
   port: '80'
   server: cfcdn3.sanfencdn9.com
@@ -2082,19 +2129,19 @@ proxies:
     headers:
       Host: agzbjszujp4.yofnhkfc.xyz
     path: /video/ibCT6z55
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 13,21,25|14|美国 华盛顿Cogent通信公司
+  name: 13,21,25|14|美国 Fastly全球Anycast节点
   network: ws
-  port: '38100'
-  server: 38.14.107.227
-  tls: true
+  port: '80'
+  server: fastly.com
+  tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
   ws-opts:
     headers:
-      Host: www.23179753.xyz
-    path: /path/271624282113
+      Host: nmsl.kp
+    path: /aries?ed=2048
 - alterId: 0
   cipher: auto
   name: 13,21,25|14,21|baipaovpn美国
@@ -2123,20 +2170,6 @@ proxies:
     headers:
       Host: my1.tooters.ir
     path: /
-- alterId: 0
-  cipher: auto
-  name: '13,21,25,28|美国 CloudFlare节点 #20'
-  network: ws
-  port: '2086'
-  server: 104.16.35.48
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9c4723d9-29e7-4502-a021-7c79355cb7e1
-  ws-opts:
-    headers:
-      Host: us77SmSk86j.fzbqfrse.xyz
-    path: /video/Z7qdcrAGRw
 - alterId: 0
   cipher: auto
   name: '13,16,21,25,28|github.com/freefq - 美国CloudFla... #4'
@@ -3379,11 +3412,31 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
+  name: 23,25|17|【BGP】美国 04 | 1x US
+  network: tcp
+  port: '31501'
+  server: 4a2u0a04.m1k2s.xyz
+  servername: us04.lovemc.xyz
+  tls: true
+  type: vmess
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
+- alterId: 0
+  cipher: auto
   name: 23,25|17|【BGP】美国 05 | 1x US
   network: tcp
   port: '31506'
   server: 4a2u0a05.m1k2s.xyz
   servername: us05.lovemc.xyz
+  tls: true
+  type: vmess
+  uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
+- alterId: 0
+  cipher: auto
+  name: 23,25|17|【BGP】美国 06 | 1x US
+  network: tcp
+  port: '31511'
+  server: 4a2u0a06.m1k2s.xyz
+  servername: us06.lovemc.xyz
   tls: true
   type: vmess
   uuid: ef2069b7-d1f1-4e4e-a324-58653cfd2cb4
@@ -5907,19 +5960,6 @@ proxies:
     headers:
       Host: ''
     path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 25|24|🇺🇸_US_美国_由快嘴科技提供：kkzui.com_...
-  network: ws
-  port: 2086
-  server: 104.19.91.152
-  tls: false
-  type: vmess
-  uuid: 9c4723d9-29e7-4502-a021-7c79355cb7e1
-  ws-opts:
-    headers:
-      Host: us77SmSk86j.fzbqfrse.xyz
-    path: /video/Z7qdcrAGRw
 - alterId: 0
   cipher: auto
   name: 28|🇺🇸 United States 01 @nodpai
