@@ -14,7 +14,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,7,11,14,21,25,28,30|🇺🇸_US_美国 #49'
+  name: '0,3,4,7,14,21,25,28,30|🇺🇸_US_美国 #49'
   network: ws
   port: 8080
   server: 104.21.54.252
@@ -72,7 +72,7 @@ proxies:
     path: /video/bYdJ7Vc2We
 - alterId: 0
   cipher: auto
-  name: '0,3,4,7,11,14,25,28,30|🇺🇸_US_美国 #45'
+  name: '0,3,4,7,14,25,28,30|🇺🇸_US_美国 #45'
   network: ws
   port: 80
   server: 172.64.141.3
@@ -86,7 +86,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,3,4,7,11,13,14,25,26,27,28,30|🇺🇸_US_美国 #46'
+  name: '0,3,4,7,13,14,25,26,27,28,30|🇺🇸_US_美国 #46'
   network: ws
   port: 8080
   server: 162.159.130.208
@@ -116,7 +116,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,11,25,28,30|🇺🇸_US_美国 #51'
+  name: '0,3,4,25,28,30|🇺🇸_US_美国 #51'
   network: ws
   port: 8080
   server: www.velvetmountain.shop
@@ -179,7 +179,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: chacha20-poly1305
-  name: '1,11,25,27,28|美国3|@ripaojiedian #1'
+  name: '1,25,27,28|美国3|@ripaojiedian #1'
   network: ws
   port: '8080'
   server: www.brightocean.lol
@@ -2040,7 +2040,35 @@ proxies:
   uuid: 37e3fe44-e63c-4988-cff7-d1a27f5f0c09
 - alterId: 0
   cipher: auto
-  name: '11,13,16,21,25,28|美国 CloudFlare节点 #27'
+  name: 11|美国 Fastly全球Anycast节点
+  network: ws
+  port: '80'
+  server: fastly.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
+  ws-opts:
+    headers:
+      Host: nmsl.kp
+    path: /aries?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 11,25|21|baipaovpn美国
+  network: ws
+  port: '2086'
+  server: 104.19.91.152
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9c4723d9-29e7-4502-a021-7c79355cb7e1
+  ws-opts:
+    headers:
+      Host: us77SmSk86j.fzbqfrse.xyz
+    path: /video/Z7qdcrAGRw
+- alterId: 0
+  cipher: auto
+  name: '11,13,16,21,25,28|美国 CloudFlare节点 #28'
   network: ws
   port: 8080
   server: www.darkroom.lol
@@ -2055,7 +2083,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '11,25,26,27,28|美国 CloudFlare节点 #22'
+  name: '11,25,26,27,28|美国 CloudFlare节点 #23'
   network: ws
   port: 80
   server: cfcdn3.sanfencdn9.com
@@ -2069,48 +2097,6 @@ proxies:
     headers:
       Host: agzbjszujp4.yofnhkfc.xyz
     path: /video/ibCT6z55
-- alterId: 0
-  cipher: auto
-  name: '11,28|北美地区 V2CROSS.COM #1'
-  network: ws
-  port: '80'
-  server: 104.248.253.28
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 22b502a4-0886-4c97-9538-49faa23d2912
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11,25,28|美国 CloudFlare节点 #20'
-  network: ws
-  port: 80
-  server: 104.16.77.74
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: my1.tooters.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11,13,16,21,25,28|github.com/freefq - 美国Fastly全球... #1'
-  network: ws
-  port: 443
-  server: gov.uk
-  servername: gov.uk
-  tls: true
-  type: vmess
-  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
-  ws-opts:
-    headers:
-      Host: zheshiscp.com
-    path: /77848824
 - alterId: 0
   cipher: auto
   name: 12,25|13|🇺🇸美国04
@@ -2239,6 +2225,20 @@ proxies:
     headers:
       Host: server26.beheshtbaneh.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: '13,16,21,25,28|github.com/freefq - 美国Fastly全球... #1'
+  network: ws
+  port: 443
+  server: gov.uk
+  servername: gov.uk
+  tls: true
+  type: vmess
+  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+  ws-opts:
+    headers:
+      Host: zheshiscp.com
+    path: /77848824
 - alterId: 64
   cipher: auto
   name: 15|美国_【YouTube-VV科技】
@@ -4966,6 +4966,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: '25,28|美国 CloudFlare节点 #21'
+  network: ws
+  port: 80
+  server: 104.16.77.74
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: my1.tooters.ir
+    path: /
+- alterId: 0
+  cipher: auto
   name: 25|16|US_youtube@资源分享师_219
   network: ws
   port: 80
@@ -5739,20 +5753,6 @@ proxies:
     path: /video/Z7qdcrAGRw
 - alterId: 0
   cipher: auto
-  name: 25|21|baipaovpn美国
-  network: ws
-  port: '2086'
-  server: 104.19.91.152
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9c4723d9-29e7-4502-a021-7c79355cb7e1
-  ws-opts:
-    headers:
-      Host: us77SmSk86j.fzbqfrse.xyz
-    path: /video/Z7qdcrAGRw
-- alterId: 0
-  cipher: auto
   name: '25|21|baipaovpn美国 #1'
   network: ws
   port: '80'
@@ -5933,6 +5933,20 @@ proxies:
   tls: true
   type: vmess
   uuid: e12d68e6-7859-3708-9258-127aabc4d351
+- alterId: 0
+  cipher: auto
+  name: 28|北美地区 V2CROSS.COM
+  network: ws
+  port: '80'
+  server: 104.248.253.28
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 22b502a4-0886-4c97-9538-49faa23d2912
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 2
   cipher: auto
   name: 28|v2ray-B美国1
