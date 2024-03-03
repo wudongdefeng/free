@@ -1,34 +1,32 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 11|广东省 移动
-  network: tcp
-  port: '16110'
-  server: 120.233.43.4
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1534454e-13c1-332c-a1f6-dffb2e51f778
-- alterId: 64
-  cipher: auto
-  name: '11,13,25,27,28|广东省江门市 移动 #2'
-  network: tcp
-  port: '42055'
-  server: 120.238.122.150
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '13,25,28|中国 阿里云 #1'
+  name: '13,20,21,25,28|中国 阿里云 #1'
   network: tcp
   port: 57035
   server: 8.222.154.110
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 25ffd892-0ebf-4e29-98c5-dfba88fd714c
+  ws-headers:
+    Host: 8.222.154.110
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: '13,20,21,25,27,28|广东省江门市 移动 #1'
+  network: tcp
+  port: '42055'
+  server: 120.238.122.150
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.238.122.150
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '13,16,21,25,28|github.com/freefq - 广东省移动 7 #1'
@@ -63,7 +61,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 20|CN-103.56.60.234-164
+  name: 20|CN-103.56.60.234-156
   network: ws
   port: 20401
   server: data-us-v1.shwjfkw.cn
@@ -75,19 +73,19 @@ proxies:
     Host: data-us-v1.shwjfkw.cn
   ws-path: /debian
 - cipher: chacha20-ietf-poly1305
-  name: 20|CN-120.238.122.159-165
+  name: 20|CN-120.238.122.160-157
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|CN-120.238.122.159-168
+  name: 20|CN-120.238.122.160-160
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|CN-120.238.122.159-169
+  name: 20|CN-120.238.122.159-161
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
@@ -98,14 +96,19 @@ proxies:
   port: 30818
   server: wqfuinwqffq.dfcloud.xyz
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 20,26|🇰🇷 韩国3|@ripaojiedian
-  password: 66ae2e5f-8d7a-455f-8724-14881d66b219
-  port: 20014
-  server: kr2.indianonlinejob2.com
-  tfo: false
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20,21|🇨🇳 广东省 移动
+  network: tcp
+  port: '16110'
+  server: 120.233.43.4
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 1534454e-13c1-332c-a1f6-dffb2e51f778
+  ws-headers:
+    Host: 120.233.43.4
+  ws-path: /
 - alterId: 64
   cipher: auto
   name: 25|12|中国新山村|Github搜索TrojanLinks
