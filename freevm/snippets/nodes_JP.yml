@@ -299,16 +299,6 @@ proxies:
   uuid: ce760e28-0dc6-40ab-ba8a-9d5b90a157e0
 - alterId: 0
   cipher: auto
-  name: 12,25|13|🇯🇵日本05
-  network: tcp
-  port: '36106'
-  server: 1j8p05.abzoones.xyz
-  servername: jp05.abpilot.xyz
-  tls: true
-  type: vmess
-  uuid: ce760e28-0dc6-40ab-ba8a-9d5b90a157e0
-- alterId: 0
-  cipher: auto
   name: 12,25|13|🇯🇵日本06
   network: tcp
   port: '36111'
@@ -317,25 +307,38 @@ proxies:
   tls: true
   type: vmess
   uuid: ce760e28-0dc6-40ab-ba8a-9d5b90a157e0
+- alterId: 0
+  cipher: auto
+  name: 20|JP-172.105.222.98-075
+  network: ws
+  port: 80
+  server: 172.105.222.98
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4e1d0b12-25f0-363f-8659-9c6a3ca1fcda
+  ws-headers:
+    Host: 172.105.222.98
+  ws-path: /
 - cipher: aes-256-cfb
-  name: 20|JP-54.199.83.239-083
+  name: 20|JP-54.199.83.239-096
   password: doub.io
   port: 2333
   server: 54.199.83.239
   type: ss
 - alterId: 0
   cipher: auto
-  name: 20|JP-217.142.240.251-092
+  name: 21|🇯🇵 日本(欢迎订阅Youtube破解资源君)
   network: ws
-  port: 54752
-  server: 217.142.240.251
-  skip-cert-verify: true
+  port: '80'
+  server: 172.105.222.98
   tls: false
   type: vmess
-  uuid: 2da64de4-54d0-4611-ab16-3401a8d16f0c
-  ws-headers:
-    Host: japan.pxiz.site
-  ws-path: /?ed=2048
+  uuid: 4e1d0b12-25f0-363f-8659-9c6a3ca1fcda
+  ws-opts:
+    headers:
+      Host: 172.105.222.98
+    path: /
 - alterId: 0
   cipher: auto
   name: 23,25|17|【BGP】日本 04  | 1x JP
