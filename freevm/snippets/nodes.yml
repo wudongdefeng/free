@@ -53,7 +53,7 @@ proxies:
     path: 80b48bc6-1faa-41f5-91f8-0bce015a8bea-vm
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,11,14,17,21,25,28,30|🇺🇸_US_美国->🇩🇪_DE_德国 #12'
+  name: '0,3,4,6,7,14,17,21,25,28,30|🇺🇸_US_美国->🇩🇪_DE_德国 #12'
   network: ws
   port: 80
   server: 104.21.69.44
@@ -67,7 +67,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,11,14,21,25,28,30|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #6'
+  name: '0,3,4,6,7,14,21,25,28,30|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #6'
   network: ws
   port: 8880
   server: 94.140.0.110
@@ -108,7 +108,7 @@ proxies:
     path: e62899a7-438c-40ef-96d6-259cb26d6fdd-vm
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,11,14,21,25,28,30|🇺🇸_US_美国->🇫🇷_FR_法国 #13'
+  name: '0,3,4,6,7,14,21,25,28,30|🇺🇸_US_美国->🇫🇷_FR_法国 #13'
   network: ws
   port: 2082
   server: s1c.v2.v001sss.xyz
@@ -4194,70 +4194,19 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  name: '11,13,21,25,28|美国 Fastly全球Anycast节点 #2'
-  network: ws
-  port: '80'
-  server: fastly.com
-  servername: ''
+  name: 11,25|6,16|卢旺达 001
+  network: tcp
+  port: '22222'
+  server: 197.243.57.239
   tls: false
   type: vmess
-  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
-  ws-opts:
-    headers:
-      Host: nmsl.kp
-    path: /aries?ed=2048
+  uuid: e4c9dc48-f9dc-4d9b-9318-a3933d113736
 - alterId: 0
   cipher: auto
-  name: '11,13,21,25,28|美国 CloudFlare节点 #20'
+  name: '11,21|🇺🇸 美国 CloudFlare节点 #2'
   network: ws
   port: '8080'
-  server: cf.openxai.link
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194
-  ws-opts:
-    headers:
-      Host: eu1.openxai.link
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '11,13,16,21,25,28|github.com/freefq - 美国CloudFla... #5'
-  network: ws
-  port: 8880
-  server: server32.beheshtbaneh.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9
-  ws-opts:
-    headers:
-      Host: server32.beheshtbaneh.com
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '11,17,21,25,26,27,28|美国|@ripaojiedian #1'
-  network: ws
-  port: '8080'
-  server: 104.21.54.252
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    headers:
-      Host: www.velvetmountain.shop
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11,28|美国 CloudFlare节点 #21'
-  network: ws
-  port: 8080
-  server: 172.67.131.246
-  servername: ''
+  server: 172.67.188.193
   tls: false
   type: vmess
   uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
@@ -4267,17 +4216,60 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '11,21,28|美国 CloudFlare节点 #19'
+  name: 11,13,21,25|14,16|加拿大 059
   network: ws
-  port: '8080'
-  server: 104.17.123.55
+  port: 80
+  server: 104.21.63.52
+  servername: ''
   tls: false
   type: vmess
-  uuid: 1d47288a-699d-45ca-b4f0-4e5b36940e6f
+  uuid: 60f12435-bb55-4da2-cb7d-4fea34ecfa37
   ws-opts:
     headers:
-      Host: pq.kmoljklj.top
-    path: /qZTtpya?ed=2048
+      Host: us65.netfilx.live
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '11,13,16,21,25,28|github.com/freefq - 美国Fastly全球... #1'
+  network: ws
+  port: 443
+  server: gov.uk
+  servername: gov.uk
+  tls: true
+  type: vmess
+  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+  ws-opts:
+    headers:
+      Host: zheshiscp.com
+    path: /77848824
+- alterId: 0
+  cipher: auto
+  name: 11,28|🏁RELAY-104.21.46.66-0108
+  network: ws
+  port: 8080
+  server: 104.21.46.66
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-opts:
+    headers:
+      Host: www.ywnouvbale.biz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '11,13,16,25,28|github.com/freefq - 印度  3 #1'
+  network: ws
+  port: 443
+  server: 202.78.162.5
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6
+  ws-opts:
+    headers:
+      Host: sahand.serveminecraft.net
+    path: /@forwardv2ray
 - alterId: 0
   cipher: auto
   name: 12,25|13|🇯🇵日本04
@@ -4554,6 +4546,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: '13,21,25,28|美国 CloudFlare节点 #16'
+  network: ws
+  port: '8080'
+  server: cf.openxai.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194
+  ws-opts:
+    headers:
+      Host: eu1.openxai.link
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
   name: 13,16,21,25,28|🏁RELAY-172.67.215.103-1195
   network: ws
   port: 8080
@@ -4566,6 +4572,20 @@ proxies:
     headers:
       Host: www.darkroom.lol
     path: /
+- alterId: 0
+  cipher: auto
+  name: '13,21,25,28|美国 Fastly全球Anycast节点 #2'
+  network: ws
+  port: '80'
+  server: fastly.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
+  ws-opts:
+    headers:
+      Host: nmsl.kp
+    path: /aries?ed=2048
 - alterId: 0
   cipher: auto
   name: 13,21,25|14,16|【电报：@ccbaohe|免费机场节点 🇯🇵 日...
@@ -4610,20 +4630,6 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '13,16,25,28|github.com/freefq - 印度  3 #1'
-  network: ws
-  port: 443
-  server: 202.78.162.5
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6
-  ws-opts:
-    headers:
-      Host: sahand.serveminecraft.net
-    path: /@forwardv2ray
-- alterId: 0
-  cipher: auto
   name: '13,21,25|14|美国 CloudFlare节点 #5'
   network: ws
   port: '8080'
@@ -4636,20 +4642,6 @@ proxies:
     headers:
       Host: widescreen-instruction-breakdown-postage.trycloudflare.com
     path: 8df7d5fa-cecb-4816-a943-be94929543f9-vm
-- alterId: 0
-  cipher: auto
-  name: 13,21,25|14,16|加拿大 059
-  network: ws
-  port: 80
-  server: 104.21.63.52
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 60f12435-bb55-4da2-cb7d-4fea34ecfa37
-  ws-opts:
-    headers:
-      Host: us65.netfilx.live
-    path: /
 - alterId: 0
   cipher: auto
   name: '13,21,25|14|美国 CloudFlare节点 #7'
@@ -4736,18 +4728,18 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: '13,16,21,25,28|github.com/freefq - 美国Fastly全球... #1'
+  name: '13,16,21,25,28|github.com/freefq - 美国CloudFla... #5'
   network: ws
-  port: 443
-  server: gov.uk
-  servername: gov.uk
-  tls: true
+  port: 8880
+  server: server32.beheshtbaneh.com
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+  uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9
   ws-opts:
     headers:
-      Host: zheshiscp.com
-    path: /77848824
+      Host: server32.beheshtbaneh.com
+    path: /
 - alterId: 64
   cipher: auto
   name: 15|电报群：t.me/vvkj11
@@ -5951,6 +5943,23 @@ proxies:
     headers:
       Host: www.20973848.xyz
     path: /path/1693992821776
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '17,21,25,26,27,28|美国|@ripaojiedian #1'
+  network: ws
+  port: '8080'
+  server: 104.21.54.252
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-opts:
+    headers:
+      Host: www.velvetmountain.shop
+    path: /
 - alterId: 0
   cipher: auto
   name: '17,28|TG频道:@hkaa0▓美国_2 #1'
@@ -7692,17 +7701,17 @@ proxies:
     path: /aries?ed=2048
 - alterId: 0
   cipher: auto
-  name: '21|🇺🇸 美国 CloudFlare节点 #2'
+  name: '21,28|美国 CloudFlare节点 #15'
   network: ws
   port: '8080'
-  server: 172.67.188.193
+  server: 104.17.123.55
   tls: false
   type: vmess
-  uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
+  uuid: 1d47288a-699d-45ca-b4f0-4e5b36940e6f
   ws-opts:
     headers:
-      Host: eu3.openxai.link
-    path: /?ed=2048
+      Host: pq.kmoljklj.top
+    path: /qZTtpya?ed=2048
 - alterId: 0
   cipher: auto
   name: 23,25|17|【BGP】日本 04  | 1x JP
@@ -8096,15 +8105,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 8f589c93-e01b-435a-81f1-17c7434390c3
-- alterId: 0
-  cipher: auto
-  name: 25|6,16|卢旺达 001
-  network: tcp
-  port: '22222'
-  server: 197.243.57.239
-  tls: false
-  type: vmess
-  uuid: e4c9dc48-f9dc-4d9b-9318-a3933d113736
 - alterId: 0
   cipher: auto
   name: 25,28|🏁RELAY-172.64.174.239-3382
@@ -9744,20 +9744,6 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: 28|🏁RELAY-104.21.46.66-0108
-  network: ws
-  port: 8080
-  server: 104.21.46.66
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    headers:
-      Host: www.ywnouvbale.biz
-    path: /
-- alterId: 0
-  cipher: auto
   name: 28|🇭🇰HK-8.217.93.104-1228
   network: ws
   port: 443
@@ -10539,6 +10525,20 @@ proxies:
     headers:
       Host: ''
     path: /look
+- alterId: 0
+  cipher: auto
+  name: '28|美国 CloudFlare节点 #17'
+  network: ws
+  port: 8080
+  server: 172.67.131.246
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
+  ws-opts:
+    headers:
+      Host: eu3.openxai.link
+    path: /?ed=2048
 - cipher: aes-256-cfb
   name: 28|R2FtZSDlj7Dmub4wNS3moIflh4Y
   obfs: http_simple
