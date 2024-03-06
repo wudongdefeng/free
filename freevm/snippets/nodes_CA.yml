@@ -346,6 +346,20 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: 20,21,25|16|加拿大 018
+  network: tcp
+  port: 443
+  server: 216.128.184.239
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 0e0f8e06-3ae6-4889-9bf8-6d744b57369f
+  ws-headers:
+    Host: 216.128.184.239
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 23,25|17|【BGP】加拿大 02 | 1x CA
   network: tcp
   port: '31701'
@@ -354,6 +368,20 @@ proxies:
   tls: true
   type: vmess
   uuid: bb065a68-6785-4276-88f9-26f7906e30a8
+- alterId: 0
+  cipher: auto
+  name: 25|14,16|加拿大 008
+  network: ws
+  port: 8080
+  server: 172.67.143.192
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-opts:
+    headers:
+      Host: www.velvetmountain.shop
+    path: /
 - alterId: 0
   cipher: auto
   name: 25|16|加拿大 011
@@ -410,3 +438,17 @@ proxies:
     headers:
       Host: nelly.homes
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 25|16|加拿大 015
+  network: ws
+  port: 2052
+  server: 104.21.23.231
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16
+  ws-opts:
+    headers:
+      Host: onea.flha.ru
+    path: /
