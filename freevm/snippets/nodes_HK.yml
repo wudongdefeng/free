@@ -103,7 +103,7 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 25|16,18|🇭🇰 香港2|@ripaojiedian
+  name: 25|16|香港 001
   network: ws
   port: 4431
   server: 152.32.190.239
@@ -116,18 +116,21 @@ proxies:
       Host: cfhk.393930.xyz
     path: /
 - alterId: 0
-  cipher: auto
-  name: 25|16,18|🇭🇰 香港1|@ripaojiedian
+  cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: '25,26,27,28|香港|@ripaojiedian #1'
   network: ws
-  port: 2053
-  server: 47.76.80.72
-  servername: cfhk.393930.xyz
-  tls: true
+  port: '48316'
+  server: wtt1.hkg.hypernat.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
   type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  uuid: a44863f7-e332-4b0f-99e5-148564712c24
   ws-opts:
     headers:
-      Host: cfhk.393930.xyz
+      Host: wtt1.hkg.hypernat.com
     path: /
 - cipher: aes-128-gcm
   client-fingerprint: chrome
@@ -161,23 +164,6 @@ proxies:
   server: 42.2.115.231
   tfo: false
   type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 26,27|香港|@ripaojiedian
-  network: ws
-  port: '48316'
-  server: wtt1.hkg.hypernat.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: a44863f7-e332-4b0f-99e5-148564712c24
-  ws-opts:
-    headers:
-      Host: wtt1.hkg.hypernat.com
-    path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇭🇰 香港4|@ripaojiedian
@@ -186,18 +172,47 @@ proxies:
   server: hk03.jjjjjj.icu
   tfo: false
   type: ss
+- alterId: 32
+  cipher: auto
+  name: 28|🇭🇰HK-182.16.1.194-8586
+  network: ws
+  port: 80
+  server: hrgdvpn.flycdnedc55.vip
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: hrgdvpn.flycdnedc55.vip
+    path: /opt/video/images
 - alterId: 0
   cipher: auto
-  name: 28|[vmess]香港三网优化
+  name: 28|[vmess]香港优化 1.25
   network: ws
-  port: '2052'
-  server: hkaa.sectigo.pp.ua
-  tls: false
+  port: '53014'
+  server: 202.81.232.199
+  servername: hkhytronadas.cxzntq.tech
+  tls: true
   type: vmess
   uuid: 5cc3a871-6eeb-4b87-b4e4-4f2611eb5441
   ws-opts:
     headers:
-      Host: spikehk.cxzntq.tech
+      Host: hkhytronadas.cxzntq.tech
+    path: /apopop
+- alterId: 0
+  cipher: auto
+  name: 28|[vmess]香港电信优化 2x
+  network: ws
+  port: '50000'
+  server: 202.86.138.58
+  servername: hkhytronadas.cxzntq.tech
+  tls: true
+  type: vmess
+  uuid: 5cc3a871-6eeb-4b87-b4e4-4f2611eb5441
+  ws-opts:
+    headers:
+      Host: hkhytronadas.cxzntq.tech
     path: /apopop
 - alterId: 0
   cipher: auto
@@ -215,46 +230,17 @@ proxies:
     path: /stream
 - alterId: 0
   cipher: auto
-  name: 28|[vmess]香港优化
+  name: 28|[vmess]香港三网优化
   network: ws
-  port: '53014'
-  server: 202.81.232.199
-  servername: hkhytronadas.cxzntq.tech
-  tls: true
-  type: vmess
-  uuid: 5cc3a871-6eeb-4b87-b4e4-4f2611eb5441
-  ws-opts:
-    headers:
-      Host: hkhytronadas.cxzntq.tech
-    path: /apopop
-- alterId: 0
-  cipher: auto
-  name: 28|[vmess]香港电信优化
-  network: ws
-  port: '50000'
-  server: 202.86.138.58
-  servername: hkhytronadas.cxzntq.tech
-  tls: true
-  type: vmess
-  uuid: 5cc3a871-6eeb-4b87-b4e4-4f2611eb5441
-  ws-opts:
-    headers:
-      Host: hkhytronadas.cxzntq.tech
-    path: /apopop
-- alterId: 64
-  cipher: auto
-  name: 28|🇭🇰HK-182.16.1.194-8584
-  network: ws
-  port: 80
-  server: hrgdvpn.flycdnedc55.vip
-  servername: ''
+  port: '2052'
+  server: hkaa.sectigo.pp.ua
   tls: false
   type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  uuid: 5cc3a871-6eeb-4b87-b4e4-4f2611eb5441
   ws-opts:
     headers:
-      Host: hrgdvpn.flycdnedc55.vip
-    path: /opt/video/images
+      Host: spikehk.cxzntq.tech
+    path: /apopop
 - cipher: aes-128-gcm
   delay: 929
   name: 29|HK_speednode_0082
