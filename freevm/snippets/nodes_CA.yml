@@ -1,16 +1,13 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 1,25|1|_CA_
-  network: ws
-  port: 8080
-  server: 23.227.38.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9d23b60-6e44-45a2-b24f-c8521c04c310
-  ws-opts:
-    path: e9d23b60-6e44-45a2-b24f-c8521c04c310-vm
+- name: 1|_CA_
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 15.157.113.141
+  skip-cert-verify: false
+  sni: trojan.miwan.co.uk
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 10|加拿大_121320003
@@ -150,6 +147,17 @@ proxies:
   tls: true
   type: vmess
   uuid: 2190b18d-edb0-4507-93b1-a7210ecd9c07
+- alterId: 0
+  cipher: auto
+  name: 25|1|_CA_
+  network: ws
+  port: 8080
+  server: 23.227.38.22
+  tls: false
+  type: vmess
+  uuid: e9d23b60-6e44-45a2-b24f-c8521c04c310
+  ws-opts:
+    path: e9d23b60-6e44-45a2-b24f-c8521c04c310-vm
 - alterId: 0
   cipher: auto
   name: 25,28|🏁RELAY-104.16.216.241-1084
