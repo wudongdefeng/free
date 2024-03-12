@@ -190,6 +190,23 @@ proxies:
       Host: cfhk.393930.xyz
     path: /
 - alterId: 0
+  cipher: chacha20-poly1305
+  client-fingerprint: chrome
+  name: '25,26,27,28|香港2|@ripaojiedian #1'
+  network: ws
+  port: '58080'
+  server: 223.113.130.55
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 5d75216f-c2ec-3136-b749-fcfe40ed4b4e
+  ws-opts:
+    headers:
+      Host: cache-hk-1.cn-db.top
+    path: /db00
+- alterId: 0
   cipher: auto
   name: 25|21|baipaovpn香港
   network: ws
@@ -221,7 +238,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 26|🇭🇰 香港KT2|@ripaojiedian
+  name: 26,29|HK_speednode_0027
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -229,7 +246,7 @@ proxies:
     mode: websocket
     mux: true
     path: ''
-    skip-cert-verify: true
+    skip-cert-verify: false
     tls: false
   port: 443
   server: 42.2.115.231
@@ -271,41 +288,3 @@ proxies:
     headers:
       Host: hrgdvpn.flycdnedc55.vip
     path: /opt/video/images
-- cipher: aes-128-gcm
-  delay: 929
-  name: 29|HK_speednode_0082
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: true
-    path: ''
-    tls: false
-  port: 443
-  server: 1.65.139.54
-  type: ss
-- alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - internet.life.com.by
-    method: GET
-  name: 29|HK_speednode_0083
-  network: http
-  port: 3389
-  server: 185.244.208.61
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-- cipher: aes-256-cfb
-  name: 29|HK_speednode_0086
-  obfs: tls1.2_ticket_auth
-  password: iFqnzSscN
-  port: 8083
-  protocol: origin
-  server: 150.107.46.21
-  type: ssr
