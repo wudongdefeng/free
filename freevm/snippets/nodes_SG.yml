@@ -145,20 +145,20 @@ proxies:
       Host: hostodo.galenet.online
     path: /hostodo
 - cipher: aes-256-cfb
-  name: 20|SG-13.213.46.196-112
+  name: 20|SG-13.213.46.196-124
   password: amazonskr05
   port: 443
   server: 13.213.46.196
   type: ss
 - cipher: aes-256-cfb
-  name: 20|SG-54.251.168.143-114
+  name: 20|SG-54.251.168.143-126
   password: amazonskr05
   port: 443
   server: 54.251.168.143
   type: ss
 - alterId: 64
   cipher: auto
-  name: 20|SG-159.223.94.156-118
+  name: 20|SG-159.223.94.156-130
   network: ws
   port: 80
   server: 159.223.94.156
@@ -169,6 +169,19 @@ proxies:
   ws-headers:
     Host: 159.223.94.156
   ws-path: /anti13.zingfast.vn
+- alterId: 0
+  cipher: auto
+  name: 20|SG-146.190.94.116-163
+  network: ws
+  port: 25378
+  server: 146.190.94.116
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d17fc7a7-4f1a-46be-a2fa-4e9ac4a0d407
+  ws-headers:
+    Host: 146.190.94.116
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 23,25|17|【BGP】新加坡 04 | 1x SG
@@ -223,16 +236,6 @@ proxies:
     headers:
       Host: linkedin.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: '25,27,28|新加坡|@ripaojiedian #1'
-  network: tcp
-  port: '50015'
-  server: 50015.baidu-cdn.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e80442e2-4577-4b33-8d9b-798d816974bd
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇸🇬 狮城特殊|@ripaojiedian
@@ -241,34 +244,6 @@ proxies:
   server: 52.79.151.56
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '28|新加坡2-v2ray #1'
-  network: ws
-  port: '443'
-  server: sgoracle2.sstank.top
-  servername: sgoracle2.sstank.top
-  tls: true
-  type: vmess
-  uuid: 6b772c91-a7e1-36a5-aa59-1b12f4339508
-  ws-opts:
-    headers:
-      Host: sgoracle2.sstank.top
-    path: /H6MDrCvt
-- alterId: 0
-  cipher: auto
-  name: '28|新加坡1-v2ray #1'
-  network: ws
-  port: '443'
-  server: sgoracle1.sstank.top
-  servername: sgoracle1.sstank.top
-  tls: true
-  type: vmess
-  uuid: 6b772c91-a7e1-36a5-aa59-1b12f4339508
-  ws-opts:
-    headers:
-      Host: sgoracle1.sstank.top
-    path: /H6MDrCvt
 - alterId: 0
   cipher: auto
   name: '28|新加坡3-v2ray #1'
@@ -282,4 +257,32 @@ proxies:
   ws-opts:
     headers:
       Host: sgoracle3.sstank.top
+    path: /H6MDrCvt
+- alterId: 0
+  cipher: auto
+  name: '28|新加坡1-v2ray #1'
+  network: ws
+  port: '443'
+  server: sgoracle1.sstank.top
+  servername: sgoracle1.sstank.top
+  tls: true
+  type: vmess
+  uuid: 9ad49ff7-de2d-3b71-af59-9ca1d47a174b
+  ws-opts:
+    headers:
+      Host: sgoracle1.sstank.top
+    path: /H6MDrCvt
+- alterId: 0
+  cipher: auto
+  name: '28|新加坡2-v2ray #1'
+  network: ws
+  port: '443'
+  server: sgoracle2.sstank.top
+  servername: sgoracle2.sstank.top
+  tls: true
+  type: vmess
+  uuid: 9ad49ff7-de2d-3b71-af59-9ca1d47a174b
+  ws-opts:
+    headers:
+      Host: sgoracle2.sstank.top
     path: /H6MDrCvt
