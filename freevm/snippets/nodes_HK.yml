@@ -103,16 +103,33 @@ proxies:
   ws-path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 25,26,27|香港2|@ripaojiedian
+  name: 25,29|HK_speednode_0069
   network: ws
-  port: '16627'
+  port: 36801
+  server: 20.255.223.60
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c0ad0b4b-5372-3ab8-9d43-5f8022a0f1ec
+  ws-opts:
+    headers:
+      Host: annie50.ceoiii.com
+    path: /hls/cctv5phd.m3u8
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 25,26,27,28,29|CN_speednode_0040
+  network: ws
+  port: 16627
   server: vip.basicnode.host
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
+  udp: true
   uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
   ws-opts:
     headers:
@@ -128,23 +145,9 @@ proxies:
   tls: false
   type: vmess
   uuid: 8691b44b-3736-4576-b2d1-b70e4bea5044
-- alterId: 0
-  cipher: auto
-  name: '25|21|baipaovpn香港 #1'
-  network: ws
-  port: '36801'
-  server: 20.255.223.60
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c0ad0b4b-5372-3ab8-9d43-5f8022a0f1ec
-  ws-opts:
-    headers:
-      Host: annie50.ceoiii.com
-    path: /hls/cctv5phd.m3u8
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 26|🇭🇰 香港KT|@ripaojiedian
+  name: 26,29|HK_speednode_0065
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -158,9 +161,10 @@ proxies:
   server: 47.76.185.99
   tfo: false
   type: ss
+  udp: true
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 26,29|HK_speednode_0027
+  name: 26,29|HK_speednode_0067
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -168,12 +172,13 @@ proxies:
     mode: websocket
     mux: true
     path: ''
-    skip-cert-verify: false
+    skip-cert-verify: true
     tls: false
   port: 443
   server: 42.2.115.231
   tfo: false
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇭🇰 香港4|@ripaojiedian
@@ -182,6 +187,20 @@ proxies:
   server: hk05.jjjjjj.icu
   tfo: false
   type: ss
+- alterId: 64
+  cipher: auto
+  name: 28|🇭🇰HK-182.16.1.194-9312
+  network: ws
+  port: 80
+  server: hrgdvpn.flycdnedc55.vip
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: hrgdvpn.flycdnedc55.vip
+    path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: 28|[vmess]香港三网优化
@@ -198,7 +217,7 @@ proxies:
     path: /apopop
 - alterId: 0
   cipher: auto
-  name: 28|🇭🇰HK-152.32.190.239-0112
+  name: 28|🇭🇰HK-152.32.190.239-0321
   network: ws
   port: 4431
   server: 152.32.190.239
@@ -210,17 +229,18 @@ proxies:
     headers:
       Host: cfhk.393930.xyz
     path: /
-- alterId: 64
-  cipher: auto
-  name: 28|🇭🇰HK-182.16.1.194-9120
-  network: ws
-  port: 80
-  server: hrgdvpn.flycdnedc55.vip
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      Host: hrgdvpn.flycdnedc55.vip
-    path: /opt/video/images
+- cipher: aes-128-gcm
+  name: 29|HK_speednode_0066
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 47.243.196.229
+  type: ss
+  udp: true
