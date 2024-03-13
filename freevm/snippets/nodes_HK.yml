@@ -103,18 +103,21 @@ proxies:
   ws-path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: 25,28|🇭🇰HK-152.32.190.239-0112
+  client-fingerprint: chrome
+  name: 25,26,27|香港2|@ripaojiedian
   network: ws
-  port: 4431
-  server: 152.32.190.239
-  servername: cfhk.393930.xyz
-  tls: true
+  port: '16627'
+  server: vip.basicnode.host
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
   type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  uuid: 2ab54438-8af9-3711-bf1a-676fcc144586
   ws-opts:
     headers:
-      Host: cfhk.393930.xyz
-    path: /
+      Host: 193.25.215.160
+    path: /niuniu
 - alterId: 0
   cipher: auto
   name: '25,27,28|香港|@ripaojiedian #1'
@@ -135,6 +138,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 8691b44b-3736-4576-b2d1-b70e4bea5044
+- alterId: 0
+  cipher: auto
+  name: '25|21|baipaovpn香港 #1'
+  network: ws
+  port: '36801'
+  server: 20.255.223.60
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c0ad0b4b-5372-3ab8-9d43-5f8022a0f1ec
+  ws-opts:
+    headers:
+      Host: annie50.ceoiii.com
+    path: /hls/cctv5phd.m3u8
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 26|🇭🇰 香港KT|@ripaojiedian
@@ -170,25 +187,11 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇭🇰 香港4|@ripaojiedian
-  password: 069e43cb-15cd-4d3c-9710-6aeb074a5b18
+  password: 0d87a83e-1c78-4702-affc-52f4b8651945
   port: 43217
   server: hk05.jjjjjj.icu
   tfo: false
   type: ss
-- alterId: 64
-  cipher: auto
-  name: 28|🇭🇰HK-182.16.1.194-9120
-  network: ws
-  port: 80
-  server: hrgdvpn.flycdnedc55.vip
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      Host: hrgdvpn.flycdnedc55.vip
-    path: /opt/video/images
 - alterId: 0
   cipher: auto
   name: 28|[vmess]香港三网优化
@@ -203,3 +206,31 @@ proxies:
     headers:
       Host: hkhytronadas.cxzntq.tech
     path: /apopop
+- alterId: 0
+  cipher: auto
+  name: 28|🇭🇰HK-152.32.190.239-0112
+  network: ws
+  port: 4431
+  server: 152.32.190.239
+  servername: cfhk.393930.xyz
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 28|🇭🇰HK-182.16.1.194-9120
+  network: ws
+  port: 80
+  server: hrgdvpn.flycdnedc55.vip
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: hrgdvpn.flycdnedc55.vip
+    path: /opt/video/images
