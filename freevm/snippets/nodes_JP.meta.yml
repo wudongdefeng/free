@@ -296,7 +296,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: a291063f-1543-4cfc-aed4-7fac490338ea
+  uuid: 1b29716e-4eaa-4fbf-96c8-9e0bfab20959
 - alterId: 0
   cipher: auto
   name: 12,25|13|🇯🇵日本05
@@ -306,7 +306,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: a291063f-1543-4cfc-aed4-7fac490338ea
+  uuid: 1b29716e-4eaa-4fbf-96c8-9e0bfab20959
 - alterId: 0
   cipher: auto
   name: 12,25|13|🇯🇵日本06
@@ -316,7 +316,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: a291063f-1543-4cfc-aed4-7fac490338ea
+  uuid: 1b29716e-4eaa-4fbf-96c8-9e0bfab20959
 - cipher: aes-256-cfb
   name: 20|JP-54.199.83.239-118
   password: doub.io
@@ -332,7 +332,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: c1bf2aa9-5adb-40a2-b2b0-7dc45f9c1094
+  uuid: df235a2d-12db-4648-b218-58df3bbcdc72
 - alterId: 0
   cipher: auto
   name: 23,25|17|【BGP】日本 05  | 1x JP
@@ -342,7 +342,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: c1bf2aa9-5adb-40a2-b2b0-7dc45f9c1094
+  uuid: df235a2d-12db-4648-b218-58df3bbcdc72
 - alterId: 0
   cipher: auto
   name: 23,25|17|【BGP】日本 06  | 1x JP
@@ -352,7 +352,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: c1bf2aa9-5adb-40a2-b2b0-7dc45f9c1094
+  uuid: df235a2d-12db-4648-b218-58df3bbcdc72
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇯🇵 日本|@ripaojiedian
@@ -379,6 +379,20 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
+  name: 28|日本2-v2ray
+  network: ws
+  port: '443'
+  server: jp2.sstank.top
+  servername: jp2.sstank.top
+  tls: true
+  type: vmess
+  uuid: 6b772c91-a7e1-36a5-aa59-1b12f4339508
+  ws-opts:
+    headers:
+      Host: jp2.sstank.top
+    path: /hello
+- alterId: 2
+  cipher: auto
   name: 28|日本-v2ray
   network: ws
   port: '443'
@@ -391,6 +405,20 @@ proxies:
     headers:
       Host: jp.sstank.top
     path: /v2ray
+- alterId: 0
+  cipher: auto
+  name: 28|日本3-V2ray
+  network: ws
+  port: '443'
+  server: jp3.sstank.top
+  servername: jp3.sstank.top
+  tls: true
+  type: vmess
+  uuid: 6b772c91-a7e1-36a5-aa59-1b12f4339508
+  ws-opts:
+    headers:
+      Host: jp3.sstank.top
+    path: /hello
 - alterId: 2
   cipher: auto
   name: 28|日本1-v2ray
@@ -419,31 +447,3 @@ proxies:
     headers:
       Host: ''
     path: /bb
-- alterId: 2
-  cipher: auto
-  name: 28|日本2-v2ray
-  network: ws
-  port: '443'
-  server: jp2.sstank.top
-  servername: jp2.sstank.top
-  tls: true
-  type: vmess
-  uuid: 6b772c91-a7e1-36a5-aa59-1b12f4339508
-  ws-opts:
-    headers:
-      Host: jp2.sstank.top
-    path: /hello
-- alterId: 0
-  cipher: auto
-  name: 28|日本3-V2ray
-  network: ws
-  port: '443'
-  server: jp3.sstank.top
-  servername: jp3.sstank.top
-  tls: true
-  type: vmess
-  uuid: 6b772c91-a7e1-36a5-aa59-1b12f4339508
-  ws-opts:
-    headers:
-      Host: jp3.sstank.top
-    path: /hello
