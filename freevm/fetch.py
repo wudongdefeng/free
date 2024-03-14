@@ -4,12 +4,14 @@ import json
 import base64
 from urllib.parse import quote, unquote, urlparse
 import requests
+from requests_file import FileAdapter
 import datetime
 import traceback
 import binascii
 import threading
 import sys
 import os
+import copy
 from types import FunctionType as function
 from typing import Set, List, Dict, Union, Any, Optional
 
@@ -75,7 +77,12 @@ ABFURLS = (
     # "https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/domain.txt",
 )
 
-FAKE_IPS = "8.8.8.8; 8.8.4.4; 1.1.1.1; 1.0.0.1; 4.2.2.2; 4.2.2.1; 114.114.114.114; 127.0.0.1".split('; ')
+ABFWHITE = (
+    "https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-list.txt",
+    "file:///abpwhite.txt",
+)
+
+FAKE_IPS = "8.8.8.8; 8.8.4.4; 1.1.1.1; 1.0.0.1; 4.2.2.2; 4.2.2.1; 114.114.114.114; 127.0.0.1; 0.0.0.0".split('; ')
 FAKE_DOMAINS = ".google.com .github.com".split()
 
 FETCH_TIMEOUT = (6, 5)
@@ -93,7 +100,8 @@ session = requests.Session()
 session.trust_env = False
 if PROXY: session.proxies = {'http': PROXY, 'https': PROXY}
 session.headers["User-Agent"] = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.58'
-
+session.mount('file://', FileAdapter())
+    
 exc_queue: List[str] = []
 
 class Node:
@@ -310,6 +318,7 @@ class Node:
         if 'server' not in self.data: return True
         if '.' not in self.data['server']: return True
         if self.data['server'] in FAKE_IPS: return True
+        if int(str(self.data['port'])) < 20: return True
         for domain in FAKE_DOMAINS:
             if self.data['server'] == domain.lstrip('.'): return True
             if self.data['server'].endswith(domain): return True
@@ -401,21 +410,20 @@ class Node:
             ret['cipher'] = 'auto'
         return ret
 
-    def supports_clash(self) -> bool:
+    def supports_meta(self, noMeta=False) -> bool:
         if self.isfake: return False
-        if 'network' in self.data and self.data['network'] in ('h2','grpc'):
-            # A quick fix for #2
-            self.data['tls'] = True
-        if self.type == 'vless': return False
-        if self.data['type'] == 'vless': return False
-        if 'cipher' not in self.data: return True
-        if not self.data['cipher']: return True
-        elif self.type == 'vmess':
+        if self.type == 'vmess':
             supported = CLASH_CIPHER_VMESS
         elif self.type == 'ss' or self.type == 'ssr':
             supported = CLASH_CIPHER_SS
         elif self.type == 'trojan': return True
-        else: supported = []
+        elif noMeta: return False
+        else: return True
+        if 'network' in self.data and self.data['network'] in ('h2','grpc'):
+            # A quick fix for #2
+            self.data['tls'] = True
+        if 'cipher' not in self.data: return True
+        if not self.data['cipher']: return True
         if self.data['cipher'] not in supported: return False
         if self.type == 'ssr':
             if 'obfs' in self.data and self.data['obfs'] not in CLASH_SSR_OBFS:
@@ -425,6 +433,12 @@ class Node:
         if 'plugin-opts' in self.data and 'mode' in self.data['plugin-opts'] \
                 and not self.data['plugin-opts']['mode']: return False
         return True
+    
+    def supports_clash(self, meta=False) -> bool:
+        if meta: return self.supports_meta()
+        if self.type == 'vless': return False
+        if self.data['type'] == 'vless': return False
+        return self.supports_meta(noMeta=True)
 
     def supports_ray(self) -> bool:
         if self.isfake: return False
@@ -466,10 +480,9 @@ class Source():
         if self.content: return
         try:
             if self.url.startswith("dynamic:"):
-                content: Union[str, List[str]] = self.url_source()
+                self.content: Union[str, List[str]] = self.url_source()
             else:
                 global session
-                content: str = ""
                 with session.get(self.url, stream=True) as r:
                     if r.status_code != 200:
                         if depth > 0 and isinstance(self.url_source, str):
@@ -481,41 +494,7 @@ class Source():
                         else:
                             self.content = r.status_code
                         return
-                    tp = None
-                    pending = None
-                    early_stop = False
-                    for chunk in r.iter_content():
-                        if early_stop: pending = None; break
-                        chunk: bytes
-                        if pending is not None:
-                            chunk = pending + chunk
-                            pending = None
-                        if tp == 'sub':
-                            content += chunk.decode(errors='ignore')
-                            continue
-                        lines: List[bytes] = chunk.splitlines()
-                        if lines and lines[-1] and chunk and lines[-1][-1] == chunk[-1]:
-                            pending = lines.pop()
-                        while lines:
-                            line = lines.pop(0).rstrip().decode(errors='ignore').replace('\\r','')
-                            if not line: continue
-                            if not tp:
-                                if ': ' in line:
-                                    kv = line.split(': ')
-                                    if len(kv) == 2 and kv[0].isalpha():
-                                        tp = 'yaml'
-                                elif line[0] == '#': pass
-                                else: tp = 'sub'
-                            if tp == 'yaml':
-                                if content:
-                                    if line in ("proxy-groups:", "rules:", "script:"):
-                                        early_stop=True; break
-                                    content += line+'\n'
-                                elif line == "proxies:":
-                                    content = line+'\n'
-                            elif tp == 'sub':
-                                content = chunk.decode(errors='ignore')
-                    if pending is not None: content += pending.decode(errors='ignore')
+                    self.content = self._download(r)
         except KeyboardInterrupt: raise
         except requests.exceptions.RequestException:
             self.content = -1
@@ -524,8 +503,46 @@ class Source():
             exc = "在抓取 '"+self.url+"' 时发生错误：\n"+traceback.format_exc()
             exc_queue.append(exc)
         else:
-            self.content: Union[str, List[str]] = content
             self.parse()
+
+    def _download(self, r: requests.Response) -> str:
+        content: str = ""
+        tp = None
+        pending = None
+        early_stop = False
+        for chunk in r.iter_content():
+            if early_stop: pending = None; break
+            chunk: bytes
+            if pending is not None:
+                chunk = pending + chunk
+                pending = None
+            if tp == 'sub':
+                content += chunk.decode(errors='ignore')
+                continue
+            lines: List[bytes] = chunk.splitlines()
+            if lines and lines[-1] and chunk and lines[-1][-1] == chunk[-1]:
+                pending = lines.pop()
+            while lines:
+                line = lines.pop(0).rstrip().decode(errors='ignore').replace('\\r','')
+                if not line: continue
+                if not tp:
+                    if ': ' in line:
+                        kv = line.split(': ')
+                        if len(kv) == 2 and kv[0].isalpha():
+                            tp = 'yaml'
+                    elif line[0] == '#': pass
+                    else: tp = 'sub'
+                if tp == 'yaml':
+                    if content:
+                        if line in ("proxy-groups:", "rules:", "script:"):
+                            early_stop=True; break
+                        content += line+'\n'
+                    elif line == "proxies:":
+                        content = line+'\n'
+                elif tp == 'sub':
+                    content = chunk.decode(errors='ignore')
+        if pending is not None: content += pending.decode(errors='ignore')
+        return content
 
     def parse(self) -> None:
         global exc_queue
@@ -562,12 +579,26 @@ class DomainTree:
         if not segs:
             self.here = True
             return
-        if self.here: return
         if segs[0] not in self.children:
             self.children[segs[0]] = __class__()
         child = self.children[segs[0]]
         del segs[0]
         child._insert(segs)
+
+    def remove(self, domain: str) -> None:
+        segs = domain.split('.')
+        segs.reverse()
+        self._remove(segs)
+
+    def _remove(self, segs: List[str]) -> None:
+        self.here = False
+        if not segs:
+            self.children.clear()
+            return
+        if segs[0] in self.children:
+            child = self.children[segs[0]]
+            del segs[0]
+            child._remove(segs)
 
     def get(self) -> List[str]:
         ret: List[str] = []
@@ -638,6 +669,7 @@ def raw2fastly(url: str) -> str:
 def merge_adblock(adblock_name: str, rules: Dict[str, str]) -> None:
     print("正在解析 Adblock 列表... ", end='', flush=True)
     blocked: Set[str] = set()
+    unblock: Set[str] = set()
     for url in ABFURLS:
         url = raw2fastly(url)
         try:
@@ -654,9 +686,31 @@ def merge_adblock(adblock_name: str, rules: Dict[str, str]) -> None:
             continue
         for line in res.text.strip().splitlines():
             line = line.strip()
-            if line[:2] == '||' and ('/' not in line) and ('?' not in line) and \
+            if not line or line[0] == '!': continue
+            elif line[:2] == '@@':
+                unblock.add(line.split('^')[0].strip('@|^'))
+            elif line[:2] == '||' and ('/' not in line) and ('?' not in line) and \
                             (line[-1] == '^' or line.endswith("$all")):
                 blocked.add(line.strip('al').strip('|^$'))
+
+    for url in ABFWHITE:
+        url = raw2fastly(url)
+        try:
+            res = session.get(url)
+        except requests.exceptions.RequestException as e:
+            try:
+                print(f"{url} 下载失败：{e.args[0].reason}")
+            except Exception:
+                print(f"{url} 下载失败：无法解析的错误！")
+                traceback.print_exc()
+            continue
+        if res.status_code != 200:
+            print(url, res.status_code)
+            continue
+        for line in res.text.strip().splitlines():
+            line = line.strip()
+            if not line or line[0] == '!': continue
+            else: unblock.add(line.split('^')[0].strip('|^'))
 
     domain_root = DomainTree()
     domain_keys = set()
@@ -676,6 +730,8 @@ def merge_adblock(adblock_name: str, rules: Dict[str, str]) -> None:
                 rules[f'IP-CIDR,{domain}/32'] = adblock_name
         else:
             domain_root.insert(domain)
+    for domain in unblock:
+        domain_root.remove(domain)
 
     for domain in domain_keys:
         rules[f'DOMAIN-KEYWORD,{domain}'] = adblock_name
@@ -803,7 +859,10 @@ def main():
                 # 注意：这一步也会影响到下方的 Clash 订阅，不用再执行一遍！
                 p.data['name'] = ','.join([str(_) for _ in sorted(list(used[hash(p)]))])+'|'+p.data['name']
             if p.supports_ray():
-                txt += p.url + '\n'
+                try:
+                    txt += p.url + '\n'
+                except UnsupportedType as e:
+                    print(f"不支持的类型：{e}")
             else: unsupports += 1
         except: traceback.print_exc()
     for p in unknown:
@@ -829,6 +888,7 @@ def main():
 
     snip_conf: Dict[str, Dict[str, Any]] = {}
     ctg_nodes: Dict[str, List[Node.DATA_TYPE]] = {}
+    ctg_nodes_meta: Dict[str, List[Node.DATA_TYPE]] = {}
     categories: Dict[str, List[str]] = {}
     try:
         with open("snippets/_config.yml", encoding="utf-8") as f:
@@ -839,9 +899,11 @@ def main():
     else:
         print("正在按地区分类节点...")
         categories = snip_conf['categories']
-        for ctg in categories: ctg_nodes[ctg] = []
+        for ctg in categories:
+            ctg_nodes[ctg] = []
+            ctg_nodes_meta[ctg] = []
         for node in merged.values():
-            if node.supports_clash():
+            if node.supports_meta():
                 ctgs = []
                 for ctg, keys in categories.items():
                     for key in keys:
@@ -851,29 +913,17 @@ def main():
                     if ctgs and keys[-1] == 'OVERALL':
                         break
                 if len(ctgs) == 1:
-                    ctg_nodes[ctgs[0]].append(node.clash_data)
+                    if node.supports_clash():
+                        ctg_nodes[ctgs[0]].append(node.clash_data)
+                    ctg_nodes_meta[ctgs[0]].append(node.clash_data)
         for ctg, proxies in ctg_nodes.items():
             with open("snippets/nodes_"+ctg+".yml", 'w', encoding="utf-8") as f:
                 yaml.dump({'proxies': proxies}, f, allow_unicode=True)
+        for ctg, proxies in ctg_nodes_meta.items():
+            with open("snippets/nodes_"+ctg+".meta.yml", 'w', encoding="utf-8") as f:
+                yaml.dump({'proxies': proxies}, f, allow_unicode=True)
 
-    # print("正在抓取 Google IP 列表... ", end='', flush=True)
-    # proxy_name: str = conf['proxy-groups'][0]['name']
-    # try:
-    #     prefixes: List[Dict[str,str]] = session.get("https://www.gstatic.com/ipranges/goog.json").json()['prefixes']
-    #     for prefix in prefixes:
-    #         for tp, ip in prefix.items():
-    #             if tp.startswith('ipv4'):
-    #                 rules['IP-CIDR,'+ip] = proxy_name
-    #             elif tp.startswith('ipv6'):
-    #                 rules['IP-CIDR6,'+ip] = proxy_name
-    # except requests.exceptions.RequestException:
-    #     print("抓取失败！")
-    # except Exception:
-    #     print("解析失败！")
-    #     traceback.print_exc()
-    # else: print("解析成功！")
-
-    print("正在写出 Clash 订阅...")
+    print("正在写出 Clash & Meta 订阅...")
     match_rule = None
     for rule in conf['rules']:
         tmp = rule.strip().split(',')
@@ -890,14 +940,26 @@ def main():
         if k not in rules:
             rules[k] = rpolicy
     conf['rules'] = [','.join(_) for _ in rules.items()]+[match_rule]
-    conf['proxies'] = []
+
+    # Clash & Meta
+    proxies: List[Node.DATA_TYPE] = []
+    proxies_meta: List[Node.DATA_TYPE] = []
     ctg_base: Dict[str, Any] = conf['proxy-groups'][3].copy()
     names_clash: Union[Set[str], List[str]] = set()
+    names_clash_meta: Union[Set[str], List[str]] = set()
     for p in merged.values():
-        if p.supports_clash():
-            conf['proxies'].append(p.clash_data)
-            names_clash.add(p.data['name'])
+        if p.supports_meta():
+            proxies_meta.append(p.clash_data)
+            names_clash_meta.add(p.data['name'])
+            if p.supports_clash():
+                proxies.append(p.clash_data)
+                names_clash.add(p.data['name'])
     names_clash = list(names_clash)
+    names_clash_meta = list(names_clash_meta)
+    conf_meta = copy.deepcopy(conf)
+
+    # Clash
+    conf['proxies'] = proxies
     for group in conf['proxy-groups']:
         if not group['proxies']:
             group['proxies'] = names_clash
@@ -914,9 +976,34 @@ def main():
                 conf['proxy-groups'].append(disp)
                 ctg_selects.append(disp['name'])
     with open("list.yml", 'w', encoding="utf-8") as f:
+        f.write(datetime.datetime.now().strftime('# Update: %Y-%m-%d %H:%M\n'))
         f.write(yaml.dump(conf, allow_unicode=True).replace('!!str ',''))
     with open("snippets/nodes.yml", 'w', encoding="utf-8") as f:
-        f.write(yaml.dump({'proxies': conf['proxies']}, allow_unicode=True).replace('!!str ',''))
+        f.write(yaml.dump({'proxies': proxies}, allow_unicode=True).replace('!!str ',''))
+
+    # Meta
+    conf = conf_meta
+    conf['proxies'] = proxies_meta
+    for group in conf['proxy-groups']:
+        if not group['proxies']:
+            group['proxies'] = names_clash_meta
+    if snip_conf:
+        conf['proxy-groups'][-1]['proxies'] = []
+        ctg_selects: List[str] = conf['proxy-groups'][-1]['proxies']
+        ctg_disp: Dict[str, str] = snip_conf['categories_disp']
+        for ctg, payload in ctg_nodes_meta.items():
+            if ctg in ctg_disp:
+                disp = ctg_base.copy()
+                disp['name'] = ctg_disp[ctg]
+                if not payload: disp['proxies'] = ['REJECT']
+                else: disp['proxies'] = [_['name'] for _ in payload]
+                conf['proxy-groups'].append(disp)
+                ctg_selects.append(disp['name'])
+    with open("list.meta.yml", 'w', encoding="utf-8") as f:
+        f.write(datetime.datetime.now().strftime('# Update: %Y-%m-%d %H:%M\n'))
+        f.write(yaml.dump(conf, allow_unicode=True).replace('!!str ',''))
+    with open("snippets/nodes.meta.yml", 'w', encoding="utf-8") as f:
+        f.write(yaml.dump({'proxies': proxies_meta}, allow_unicode=True).replace('!!str ',''))
 
     if snip_conf:
         print("正在写出配置片段...")
@@ -946,3 +1033,23 @@ def main():
 if __name__ == '__main__':
     from dynamic import AUTOURLS, AUTOFETCH
     main()
+
+
+'''python
+print("正在抓取 Google IP 列表... ", end='', flush=True)
+proxy_name: str = conf['proxy-groups'][0]['name']
+try:
+    prefixes: List[Dict[str,str]] = session.get("https://www.gstatic.com/ipranges/goog.json").json()['prefixes']
+    for prefix in prefixes:
+        for tp, ip in prefix.items():
+            if tp.startswith('ipv4'):
+                rules['IP-CIDR,'+ip] = proxy_name
+            elif tp.startswith('ipv6'):
+                rules['IP-CIDR6,'+ip] = proxy_name
+except requests.exceptions.RequestException:
+    print("抓取失败！")
+except Exception:
+    print("解析失败！")
+    traceback.print_exc()
+else: print("解析成功！")
+'''
