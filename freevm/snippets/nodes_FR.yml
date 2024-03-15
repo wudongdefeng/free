@@ -1,10 +1,10 @@
 proxies:
 - alterId: 0
   cipher: auto
-  country: 🇫🇷 FR
-  delay: 680
-  h2-opts: {}
   http-opts:
+    headers:
+      Host:
+      - internet.life.com.by
     method: GET
     path:
     - /
@@ -12,7 +12,6 @@ proxies:
   network: http
   port: 3389
   server: 51.159.155.52
-  servername: internet.life.com.by
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -143,11 +142,12 @@ proxies:
   server: 193.243.147.128
   type: ss
 - cipher: aes-256-gcm
-  name: 20|🇫🇷FR-146.59.102.109-238
+  name: 20,29|FR_speednode_0026
   password: lSreYGyaPfCsJQWf
   port: 35230
   server: 146.59.102.109
   type: ss
+  udp: true
 - name: 24|_FR_国
   network: tcp
   password: telegram-id-directvpn
