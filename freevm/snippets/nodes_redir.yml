@@ -29,10 +29,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,13,21,25,28,30|🇨🇦_CA_加拿大->🇺🇸_US_美国 #4'
+  name: '0,3,4,6,11,13,21,25,28,30|🇨🇦_CA_加拿大->🇺🇸_US_美国 #4'
   network: ws
   port: 8080
   server: 23.227.38.22
+  servername: ''
   tls: false
   type: vmess
   uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
@@ -134,10 +135,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '7,14,25,28|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
+  name: '7,11,14,25,28|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
   network: ws
   port: 8080
   server: fbi.gov
+  servername: ''
   tls: false
   type: vmess
   uuid: ef8c954e-014f-4b36-8273-9b5086afab34
@@ -222,3 +224,18 @@ proxies:
   sni: alibaba-node.cn
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 25,28,29|US_speednode_0076
+  network: ws
+  port: 2082
+  server: s1c.v2.v001sss.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: s1c.v2.v001sss.xyz
+    path: /
