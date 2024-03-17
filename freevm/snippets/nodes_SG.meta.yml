@@ -177,7 +177,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: bcbefbd3-b8a4-4fa6-b333-072fe02b3ba3
+  uuid: d17ebd6f-30f5-475e-9d78-73d7c60bc979
 - alterId: 0
   cipher: auto
   name: 23,25|17|【BGP】新加坡 05 | 1x SG
@@ -187,7 +187,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: bcbefbd3-b8a4-4fa6-b333-072fe02b3ba3
+  uuid: d17ebd6f-30f5-475e-9d78-73d7c60bc979
 - alterId: 0
   cipher: auto
   name: 23,25|17|【BGP】新加坡 06 | 1x SG
@@ -197,37 +197,34 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: bcbefbd3-b8a4-4fa6-b333-072fe02b3ba3
+  uuid: d17ebd6f-30f5-475e-9d78-73d7c60bc979
 - alterId: 0
   cipher: auto
-  name: 25|16|🔒 VM-WS-NONE 🇸🇬 SG-165.232....
+  name: 25|16|🇸🇬新加坡 01
   network: ws
-  port: 44479
-  server: 165.232.170.209
+  port: '443'
+  server: wap.appleid.bf
   tls: false
   type: vmess
-  uuid: a17272e8-3d27-4dd3-a25f-2ddbc70953c1
+  uuid: bfef2469-9d59-4111-b54b-4d58e819a808
   ws-opts:
     headers:
-      Host: google.com
-    path: /
-- cipher: chacha20-ietf
+      Host: gw.alicdn.com
+    path: /CAT
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇸🇬 新加坡2|@ripaojiedian
-  obfs: tls1.2_ticket_auth
-  obfs-param: b91a022997.microsoft.com
-  password: Fhbe0z
-  port: 11807
-  protocol: auth_aes128_sha1
-  protocol-param: 22997:JeHHT2
-  server: vip.basicnode.host
-  type: ssr
+  password: 6f932057-ffd9-4426-8ca7-f0654babf84f
+  port: 20109
+  server: ddns.olucloud.subapi.cc
+  tfo: false
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 52.196.70.160
+  server: 54.238.10.235
   tfo: false
   type: ss
 - alterId: 0
@@ -244,3 +241,10 @@ proxies:
     headers:
       Host: ''
     path: /
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0055
+  password: amazonskr05
+  port: 443
+  server: 18.136.102.74
+  type: ss
+  udp: true
