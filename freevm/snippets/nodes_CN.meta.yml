@@ -1,7 +1,62 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '11,13,16,21,25,28|广东省佛山市 移动 #5'
+  name: 11,21,28,29|CN_speednode_0023
+  network: ws
+  port: 20301
+  server: 183.232.170.157
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-jp-v1.usabooks.com.cn
+    path: /debian
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '11,21,25,26,27,28|广东省佛山市 移动 #5'
+  network: ws
+  port: '20301'
+  server: data-jp-v1.usabooks.com.cn
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-jp-v1.usabooks.com.cn
+    path: /debian
+- alterId: 2
+  cipher: auto
+  name: '11,20,21,28|广东省佛山市 移动 #6'
+  network: tcp
+  port: '10002'
+  server: iepl2.airtcp.vip
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 0927b72f-8f1c-38f7-8a86-cb977dba6b83
+  ws-headers:
+    Host: iepl2.airtcp.vip
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  name: 13,25|14|广东省佛山市 移动
+  network: tcp
+  port: 58000
+  server: iepl2.airtcp.vip
+  tls: false
+  type: vmess
+  uuid: 0927b72f-8f1c-38f7-8a86-cb977dba6b83
+- alterId: 0
+  cipher: auto
+  name: '13,16,21,25,28|github.com/freefq - 广东省移动 7 #1'
   network: ws
   port: '20401'
   server: data-us-v1.shwjfkw.cn
@@ -13,25 +68,6 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
-- alterId: 64
-  cipher: auto
-  name: '11,25,27,28|香港3|@ripaojiedian #1'
-  network: tcp
-  port: '54882'
-  server: 120.238.122.199
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
-  cipher: auto
-  name: '13,28|广东省佛山市 移动 #3'
-  network: tcp
-  port: 58000
-  server: iepl2.airtcp.vip
-  tls: false
-  type: vmess
-  uuid: 0927b72f-8f1c-38f7-8a86-cb977dba6b83
 - alterId: 64
   cipher: auto
   name: 15|中国_【YouTube-VV科技】
@@ -125,19 +161,6 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- alterId: 2
-  cipher: auto
-  name: '20,21|🇨🇳 广东省佛山市 移动 #1'
-  network: tcp
-  port: '10002'
-  server: iepl2.airtcp.vip
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 0927b72f-8f1c-38f7-8a86-cb977dba6b83
-  ws-headers:
-    Host: iepl2.airtcp.vip
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: 20|🇨🇳CN-183.232.170.157-182
@@ -160,78 +183,6 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 21,25,28,29|CN_speednode_0023
-  network: ws
-  port: 20301
-  server: 183.232.170.157
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-jp-v1.usabooks.com.cn
-    path: /debian
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '21,25,26,27,28|日本2|@ripaojiedian #1'
-  network: ws
-  port: '20301'
-  server: data-jp-v1.usabooks.com.cn
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-jp-v1.usabooks.com.cn
-    path: /debian
-- alterId: 64
-  cipher: auto
-  name: 25|12|中国鞍山市|Github搜索TrojanLinks
-  network: ws
-  port: '38000'
-  server: 137.175.32.82
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.94152251.xyz
-    path: /path/153428133302
-- alterId: 64
-  cipher: auto
-  name: 25|12|中国哈尔滨市|Github搜索TrojanLinks
-  network: ws
-  port: '36000'
-  server: 137.175.26.25
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.70173865.xyz
-    path: /path/153428133302
-- alterId: 64
-  cipher: auto
-  name: 25|12|中国济南市|Github搜索TrojanLinks
-  network: ws
-  port: '37000'
-  server: 137.175.12.74
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.86052077.xyz
-    path: /path/153428133302
 - alterId: 64
   cipher: auto
   name: 25|12|中国十堰|Github搜索TrojanLinks
@@ -245,15 +196,39 @@ proxies:
     headers:
       Host: www.46074906.xyz
     path: /path/153428133302
-- alterId: 2
+- alterId: 64
   cipher: auto
-  name: '28|广东省佛山市 移动 #2'
+  name: 25|12|中国成都|Github搜索TrojanLinks
+  network: ws
+  port: '37000'
+  server: 192.74.230.35
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.99555130.xyz
+    path: /path/153428133302
+- alterId: 64
+  cipher: auto
+  name: '25,27,28|香港3|@ripaojiedian #1'
   network: tcp
-  port: 30026
-  server: iepl2.airtcp.vip
+  port: '54882'
+  server: 120.238.122.199
+  servername: ''
   tls: false
   type: vmess
-  uuid: 0927b72f-8f1c-38f7-8a86-cb977dba6b83
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 25|21|baipaovpn广东省广州市
+  network: tcp
+  port: '44827'
+  server: 120.232.159.101
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 40c58958-2432-4f60-9b5d-746f9cded85f
 - alterId: 0
   cipher: auto
   name: 29|CN_speednode_0002
