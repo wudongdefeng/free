@@ -296,7 +296,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 2453fb3f-b7cd-4fa5-be9d-7ef23c20c4ab
+  uuid: b5e9e7ab-898b-4389-a07b-fdbf5fa35c8e
 - alterId: 0
   cipher: auto
   name: 12,25|13|🇯🇵日本05
@@ -306,7 +306,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 2453fb3f-b7cd-4fa5-be9d-7ef23c20c4ab
+  uuid: b5e9e7ab-898b-4389-a07b-fdbf5fa35c8e
 - alterId: 0
   cipher: auto
   name: 12,25|13|🇯🇵日本06
@@ -316,7 +316,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 2453fb3f-b7cd-4fa5-be9d-7ef23c20c4ab
+  uuid: b5e9e7ab-898b-4389-a07b-fdbf5fa35c8e
 - alterId: 0
   cipher: auto
   name: 13,21,25|14|日本 东京Fastly节点
@@ -346,7 +346,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: c26759c4-32dc-4169-a3d5-9c40c6bafefe
+  uuid: 7f5ad171-123a-4010-9929-ef80cf704f65
 - alterId: 0
   cipher: auto
   name: 23,25|17|【BGP】日本 05  | 1x JP
@@ -356,7 +356,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: c26759c4-32dc-4169-a3d5-9c40c6bafefe
+  uuid: 7f5ad171-123a-4010-9929-ef80cf704f65
 - alterId: 0
   cipher: auto
   name: 23,25|17|【BGP】日本 06  | 1x JP
@@ -366,7 +366,30 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: c26759c4-32dc-4169-a3d5-9c40c6bafefe
+  uuid: 7f5ad171-123a-4010-9929-ef80cf704f65
+- alterId: 0
+  cipher: auto
+  name: 25|16|🔒 VM-TCP-NA 🇯🇵 JP-167.179.1...
+  network: tcp
+  port: '14935'
+  server: 167.179.111.237
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e961894f-8e90-472f-98d3-09402e4be453
+- alterId: 0
+  cipher: auto
+  name: 25|16|🇯🇵日本高速接入点-02
+  network: ws
+  port: '80'
+  server: cfcdn3.sanfencdn9.com
+  tls: false
+  type: vmess
+  uuid: cd0a88d8-989b-4500-adb1-94889d6862c2
+  ws-opts:
+    headers:
+      Host: GWYp69Yujp2.yofnhkfc.xyz
+    path: /video/VDXcaM7r
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇯🇵 日本|@ripaojiedian
@@ -441,3 +464,10 @@ proxies:
     headers:
       Host: dj.pdda.me
     path: /pdd?ed=2048
+- cipher: aes-256-cfb
+  name: 29|JP_speednode_0030
+  password: amazonskr05
+  port: 443
+  server: 52.196.70.160
+  type: ss
+  udp: true
