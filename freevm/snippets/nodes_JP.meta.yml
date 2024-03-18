@@ -127,9 +127,9 @@ proxies:
   tls: false
   type: vmess
   uuid: d9dc506b-9bcf-497e-ea11-53c369e2b343
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 10,25|16|🔒 VM-TCP-NA 🇯🇵 JP-138.2.44....
+  name: 10|日本_121320060
   network: tcp
   port: '20081'
   server: 138.2.44.211
@@ -289,7 +289,37 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '11,13,21,25,28|日本 东京Fastly节点 #2'
+  name: 12,25|13|🇯🇵日本04
+  network: tcp
+  port: '36116'
+  server: 1j8p04.a3b5wy.xyz
+  servername: jp04.abpilot.xyz
+  tls: true
+  type: vmess
+  uuid: f999ee78-3c77-47f5-87a4-fdd268e186af
+- alterId: 0
+  cipher: auto
+  name: 12,25|13|🇯🇵日本05
+  network: tcp
+  port: '36106'
+  server: 1j8p05.a3b5wy.xyz
+  servername: jp05.abpilot.xyz
+  tls: true
+  type: vmess
+  uuid: f999ee78-3c77-47f5-87a4-fdd268e186af
+- alterId: 0
+  cipher: auto
+  name: 12,25|13|🇯🇵日本06
+  network: tcp
+  port: '36111'
+  server: 1j8p06.a3b5wy.xyz
+  servername: jp06.abpilot.xyz
+  tls: true
+  type: vmess
+  uuid: f999ee78-3c77-47f5-87a4-fdd268e186af
+- alterId: 0
+  cipher: auto
+  name: '13,21,25,28|日本 东京Fastly节点 #1'
   network: ws
   port: '80'
   server: fastly.alipay.ovh
@@ -301,36 +331,6 @@ proxies:
     headers:
       Host: nmsl.kp
     path: /aries?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 12,25|13|🇯🇵日本04
-  network: tcp
-  port: '36116'
-  server: 1j8p04.a3b5wy.xyz
-  servername: jp04.abpilot.xyz
-  tls: true
-  type: vmess
-  uuid: 8e1da325-b69c-417f-9633-544f239b3d40
-- alterId: 0
-  cipher: auto
-  name: 12,25|13|🇯🇵日本05
-  network: tcp
-  port: '36106'
-  server: 1j8p05.a3b5wy.xyz
-  servername: jp05.abpilot.xyz
-  tls: true
-  type: vmess
-  uuid: 8e1da325-b69c-417f-9633-544f239b3d40
-- alterId: 0
-  cipher: auto
-  name: 12,25|13|🇯🇵日本06
-  network: tcp
-  port: '36111'
-  server: 1j8p06.a3b5wy.xyz
-  servername: jp06.abpilot.xyz
-  tls: true
-  type: vmess
-  uuid: 8e1da325-b69c-417f-9633-544f239b3d40
 - alterId: 0
   cipher: auto
   name: 23,25|17|【BGP】日本 04  | 1x JP
@@ -363,17 +363,21 @@ proxies:
   uuid: d8ee70a2-08b5-422e-b2c7-8d0cdbea9a7c
 - alterId: 0
   cipher: auto
-  name: 25,28|🇯🇵日本 01
+  client-fingerprint: chrome
+  name: '25,26,27,28|广东省佛山市 移动 #1'
   network: ws
-  port: '443'
-  server: 02.appleid.bf
+  port: '20301'
+  server: data-jp-v1.usabooks.com.cn
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
   ws-opts:
     headers:
-      Host: gw.alicdn.com
-    path: /CAT
+      Host: data-jp-v1.usabooks.com.cn
+    path: /debian
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇯🇵 日本|@ripaojiedian
@@ -422,6 +426,19 @@ proxies:
     headers:
       Host: ''
     path: /qwe123321ewq
+- alterId: 0
+  cipher: auto
+  name: 28|🇯🇵日本 01
+  network: ws
+  port: '443'
+  server: 02.appleid.bf
+  tls: false
+  type: vmess
+  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /CAT
 - alterId: 0
   cipher: auto
   name: 28|🇯🇵日本大阪01 | 原生IP
