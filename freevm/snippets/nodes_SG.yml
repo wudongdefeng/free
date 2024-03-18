@@ -96,7 +96,7 @@ proxies:
   servername: sg04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: d4ef5c5e-104f-431d-8f61-096e6fc7bd6e
+  uuid: 3171f307-9c02-423a-a860-c92c31e5537f
 - alterId: 0
   cipher: auto
   name: 12,25|13|🇸🇬新加坡05
@@ -106,7 +106,7 @@ proxies:
   servername: sg05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: d4ef5c5e-104f-431d-8f61-096e6fc7bd6e
+  uuid: 3171f307-9c02-423a-a860-c92c31e5537f
 - alterId: 0
   cipher: auto
   name: 12,25|13|🇸🇬新加坡06
@@ -116,7 +116,7 @@ proxies:
   servername: sg06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: d4ef5c5e-104f-431d-8f61-096e6fc7bd6e
+  uuid: 3171f307-9c02-423a-a860-c92c31e5537f
 - alterId: 0
   cipher: auto
   name: 15|新加坡_【YouTube-VV科技】
@@ -148,7 +148,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 02434214-94f6-4c6d-a60b-b76ffcf87280
+  uuid: ef315fdb-5a51-4d32-bf31-ca9678326bdc
 - alterId: 0
   cipher: auto
   name: 23,25|17|【BGP】新加坡 05 | 1x SG
@@ -158,7 +158,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 02434214-94f6-4c6d-a60b-b76ffcf87280
+  uuid: ef315fdb-5a51-4d32-bf31-ca9678326bdc
 - alterId: 0
   cipher: auto
   name: 23,25|17|【BGP】新加坡 06 | 1x SG
@@ -168,20 +168,7 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 02434214-94f6-4c6d-a60b-b76ffcf87280
-- alterId: 0
-  cipher: auto
-  name: 25|16|🇸🇬新加坡高速接入点-03
-  network: ws
-  port: '2052'
-  server: cfcdn2.sanfencdn9.com
-  tls: false
-  type: vmess
-  uuid: cd0a88d8-989b-4500-adb1-94889d6862c2
-  ws-opts:
-    headers:
-      Host: jpafzyhfsg3.yofnhkfc.xyz
-    path: /video/u4eCZTxW
+  uuid: ef315fdb-5a51-4d32-bf31-ca9678326bdc
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26,29|CN_speednode_0015
@@ -195,51 +182,35 @@ proxies:
   client-fingerprint: chrome
   name: 26|🇸🇬 新加坡2|@ripaojiedian
   password: 6f932057-ffd9-4426-8ca7-f0654babf84f
-  port: 20109
+  port: 50001
   server: ddns.olucloud.subapi.cc
   tfo: false
   type: ss
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: 26|🇸🇬 新加坡3|@ripaojiedian
+  obfs: tls1.2_ticket_auth
+  obfs-param: b91a022997.microsoft.com
+  password: Fhbe0z
+  port: 11806
+  protocol: auth_aes128_sha1
+  protocol-param: 22997:JeHHT2
+  server: vip.basicnode.host
+  type: ssr
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.238.10.235
+  server: 52.69.81.42
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: 28|新加坡01-高速｜x1
-  network: ws
-  port: '10020'
-  server: 103.235.18.153
-  servername: sg.pdda.me
-  tls: true
-  type: vmess
-  uuid: b3bb2518-1435-48e5-b01a-4f9f628baaf1
-  ws-opts:
-    headers:
-      Host: sg.pdda.me
-    path: /pdd?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 28|🇸🇬新加坡 | ✨全流媒体
-  network: ws
-  port: '42201'
-  server: 120.238.118.241
-  tls: false
-  type: vmess
-  uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /qwe123321ewq
-- alterId: 0
-  cipher: auto
   name: 28|新加坡02-高速｜x1
   network: ws
-  port: '10020'
-  server: 103.235.18.153
+  port: '443'
+  server: 35.194.142.42
   servername: dci-sg.pdda.me
   tls: true
   type: vmess
@@ -250,10 +221,37 @@ proxies:
     path: /pdd?ed=2048
 - alterId: 0
   cipher: auto
+  name: 28|新加坡01-高速｜x1
+  network: ws
+  port: '443'
+  server: 35.194.142.42
+  servername: sg.pdda.me
+  tls: true
+  type: vmess
+  uuid: b3bb2518-1435-48e5-b01a-4f9f628baaf1
+  ws-opts:
+    headers:
+      Host: sg.pdda.me
+    path: /pdd?ed=2048
+- alterId: 0
+  cipher: auto
   name: 28|🇸🇬新加坡-Netflix专线
   network: ws
   port: '37104'
   server: 122.195.12.36
+  tls: false
+  type: vmess
+  uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /qwe123321ewq
+- alterId: 0
+  cipher: auto
+  name: 28|🇸🇬新加坡 | ✨全流媒体
+  network: ws
+  port: '42201'
+  server: 120.238.118.241
   tls: false
   type: vmess
   uuid: 2e8034f5-7893-4338-b987-78e21a34ac24
