@@ -1,9 +1,9 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '7,13,16,21,25,28|广东省佛山市 移动 #3'
+  name: '7,11,13,16,21,25,28|🇨🇳_CN_中国 #1'
   network: ws
-  port: '20401'
+  port: 20401
   server: data-us-v1.shwjfkw.cn
   servername: ''
   tls: false
@@ -13,47 +13,6 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '11,25,26,27,28|日本2|@ripaojiedian #1'
-  network: ws
-  port: '20301'
-  server: data-jp-v1.usabooks.com.cn
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-jp-v1.usabooks.com.cn
-    path: /debian
-- alterId: 0
-  cipher: auto
-  name: '11,25,28|广东省佛山市 移动 #2'
-  network: ws
-  port: '20301'
-  server: 183.232.170.157
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-jp-v1.usabooks.com.cn
-    path: /debian
-- alterId: 0
-  cipher: auto
-  name: '11,25,27,28|广东省 移动 #1'
-  network: tcp
-  port: '29299'
-  server: xdtw.cokecloud.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a5059bcb-b3fa-4179-b847-9eb170483810
 - alterId: 64
   cipher: auto
   name: 15|中国_【YouTube-VV科技】
@@ -87,7 +46,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20|🇨🇳CN-183.232.170.157-281
+  name: 20|🇳CN-183.232.170.157-282
   network: ws
   port: 20401
   server: data-us-v1.shwjfkw.cn
@@ -99,19 +58,19 @@ proxies:
     Host: data-us-v1.shwjfkw.cn
   ws-path: /debian
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.159-282
+  name: 20|🇨🇳CN-120.238.122.160-283
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.160-285
+  name: 20|🇨🇳CN-120.238.122.159-286
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.159-286
+  name: 20|🇳CN-120.238.122.159-287
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
@@ -122,43 +81,105 @@ proxies:
   port: 30818
   server: wqfuinwqffq.dfcloud.xyz
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.233.204.106-222
-  password: 17fsse1j0dg
-  port: 56021
-  server: 2a54a289.g5i2h5u6j3-fb-tw01.6pzfwf.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-119.23.104.213-255
-  password: a501c82c72d790b8
-  port: 8474
-  server: 119.23.104.213
-  type: ss
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 25|12|中国哈尔滨市|Github搜索TrojanLinks
+  name: 20|🇳CN-183.232.170.157-130
   network: ws
-  port: '36000'
-  server: 137.175.26.26
-  tls: true
+  port: 20301
+  server: data-jp-v1.usabooks.com.cn
+  skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-headers:
+    Host: data-jp-v1.usabooks.com.cn
+  ws-path: /debian
+- alterId: 0
+  cipher: auto
+  name: 20|🇨🇳CN-183.232.170.157-186
+  network: ws
+  port: 20301
+  server: 183.232.170.157
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-headers:
+    Host: data-jp-v1.usabooks.com.cn
+  ws-path: /debian
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇯🇵 日本4|@ripaojiedian
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20014
+  server: jp2.mhw7e2.online
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '20,21,25,27,28|台湾1|@ripaojiedian #1'
+  network: tcp
+  port: '29299'
+  server: xdtw.cokecloud.top
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: a5059bcb-b3fa-4179-b847-9eb170483810
+  ws-headers:
+    Host: xdtw.cokecloud.top
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇸🇬 新加坡2|@ripaojiedian
+  password: 6f932057-ffd9-4426-8ca7-f0654babf84f
+  port: 50001
+  server: ddns.olucloud.subapi.cc
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '21,25,26,27,28|日本2|@ripaojiedian #1'
+  network: ws
+  port: '20301'
+  server: data-jp-v1.usabooks.com.cn
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
   ws-opts:
     headers:
-      Host: www.70173865.xyz
-    path: /path/153428133302
+      Host: data-jp-v1.usabooks.com.cn
+    path: /debian
+- alterId: 0
+  cipher: auto
+  name: 21,25|21|baipaovpn广东省佛山市
+  network: ws
+  port: '20301'
+  server: 183.232.170.157
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-jp-v1.usabooks.com.cn
+    path: /debian
 - alterId: 64
   cipher: auto
-  name: 25|12|中国重庆市|Github搜索TrojanLinks
+  name: 25|12|中国鞍山市|Github搜索TrojanLinks
   network: ws
   port: '38000'
-  server: 198.2.196.187
+  server: 137.175.32.85
   tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     headers:
-      Host: www.53062560.xyz
+      Host: www.94152251.xyz
     path: /path/153428133302
 - alterId: 2
   cipher: auto
