@@ -15,14 +15,35 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: '11,25,27,28|香港2|@ripaojiedian #1'
+  client-fingerprint: chrome
+  name: '11,25,26,27,28|日本2|@ripaojiedian #1'
+  network: ws
+  port: '20301'
+  server: data-jp-v1.usabooks.com.cn
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-jp-v1.usabooks.com.cn
+    path: /debian
+- alterId: 0
+  cipher: auto
+  name: '11,20,21,25,27,28|香港2|@ripaojiedian #1'
   network: tcp
   port: '44805'
   server: hkjcdn03.dorabbb.top
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 1528295e-c497-43ac-a08d-c040662b9344
+  ws-headers:
+    Host: hkjcdn03.dorabbb.top
+  ws-path: /
 - alterId: 64
   cipher: auto
   name: 15|中国_【YouTube-VV科技】
@@ -43,7 +64,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 20|🇨🇳CN-183.232.170.157-244
+  name: 20|🇨🇳CN-183.232.170.157-231
   network: ws
   port: 20401
   server: data-us-v1.shwjfkw.cn
@@ -55,19 +76,19 @@ proxies:
     Host: data-us-v1.shwjfkw.cn
   ws-path: /debian
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.160-245
+  name: 20|🇨🇳CN-120.238.122.159-232
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.159-248
+  name: 20|🇨🇳CN-120.238.122.160-235
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.159-249
+  name: 20|🇨🇳CN-120.238.122.159-236
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
@@ -84,22 +105,6 @@ proxies:
   password: 6f932057-ffd9-4426-8ca7-f0654babf84f
   port: 50001
   server: ddns.olucloud.subapi.cc
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 20,26|🇸🇬 新加坡|@ripaojiedian
-  password: 6f932057-ffd9-4426-8ca7-f0654babf84f
-  port: 20009
-  server: ddns.olucloud.subapi.cc
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 20,26|🇯🇵 日本4|@ripaojiedian
-  password: 70747514-fb14-4f31-8390-e1f0453eff6d
-  port: 20014
-  server: jp2.mhw7e2.online
   tfo: false
   type: ss
 - alterId: 64
