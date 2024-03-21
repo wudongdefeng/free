@@ -44,7 +44,31 @@ proxies:
   uuid: afedd970-62a2-46f5-88c4-e1f5305d3758
 - alterId: 0
   cipher: chacha20-poly1305
-  name: '13,20,21,25,28|法国 OVH SAS #1'
+  name: 11|法国 OVH SAS
+  network: tcp
+  port: '3586'
+  server: 213.32.63.176
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 763d2999-6321-4e4a-9eea-574820d0a547
+- alterId: 0
+  cipher: auto
+  name: 11,25|16|🇫🇷|FR|法国|@wxgqlfx|88
+  network: ws
+  port: '8080'
+  server: 95.179.209.248
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 620268be-b187-4d4e-96a7-732b5831c744
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: '13,20,21,25,28|法国 OVH SAS #2'
   network: tcp
   port: '3586'
   server: max-ip.hiroman5445.ir
@@ -168,6 +192,26 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 25|16|🔒 VM-TCP-NA 🇫🇷 FR-95.179.20...
+  network: tcp
+  port: '8081'
+  server: 95.179.209.248
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 620268be-b187-4d4e-96a7-732b5831c744
+- alterId: 0
+  cipher: auto
+  name: 25|16|🔒 VM-TCP-NA 🇫🇷 FR-141.94.23...
+  network: tcp
+  port: '8442'
+  server: 141.94.237.81
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 60df4ec6-7506-407e-998e-b1539fc0630f
+- alterId: 0
+  cipher: auto
   name: 25|16|🔒 VM-TCP-NA 🇫🇷 FR-162.19.25...
   network: tcp
   port: '44513'
@@ -177,11 +221,38 @@ proxies:
   type: vmess
   uuid: 4552bdb6-e008-43ac-926d-c6c6c5a6fc76
 - alterId: 0
-  cipher: aes-256-gcm
-  name: 29|FR_speednode_0085
-  password: lSreYGyaPfCsJQWf
-  port: 35230
-  server: 146.59.102.109
+  cipher: chacha20-poly1305
+  http-opts:
+    headers:
+      Host:
+      - zula.ir
+    method: GET
+    path:
+    - /OUIpxwwmtpJGIWzraW7dl5
+  name: 29|FR_speednode_0028
+  network: http
+  port: 3586
+  server: max-ip.hiroman5445.ir
   skip-cert-verify: true
-  tls: true
-  type: ss
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a663bbab-4e9e-4080-b8ab-edd59fe1fdce
+- alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - zula.ir
+    method: GET
+    path:
+    - /OUIpxwwmtpJGIWzraW7dl5
+  name: 29|FR_speednode_0029
+  network: http
+  port: 3586
+  server: 213.32.63.176
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 763d2999-6321-4e4a-9eea-574820d0a547
