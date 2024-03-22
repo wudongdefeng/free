@@ -53,20 +53,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
-- alterId: 0
-  cipher: auto
-  name: 11|香港 V2CROSS.COM
-  network: ws
-  port: 443
-  server: 194.104.147.80
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 3f4d6dd8-0ea2-4ce4-8e30-6a581e13cc4d
-  ws-opts:
-    headers:
-      Host: hk.pdda.me
-    path: /pdd?ed=2048
 - alterId: 64
   cipher: auto
   name: 15|香港_【YouTube-VV科技】
@@ -260,17 +246,17 @@ proxies:
   ws-path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 20|🇰HK-101.32.191.253-176
+  name: 20|🇰HK-194.104.147.80-106
   network: ws
   port: 443
-  server: 101.32.191.253
+  server: 194.104.147.80
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 3f4d6dd8-0ea2-4ce4-8e30-6a581e13cc4d
   ws-headers:
     Host: hk.pdda.me
-  ws-path: /pdd?ed=2048
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 21|🇭🇰 香港(欢迎订阅Youtube破解资源君)
@@ -416,17 +402,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 21|🇭🇰 香港 腾讯云
+  name: 21|🇭🇰 香港 V2CROSS.COM
   network: ws
   port: '443'
-  server: 101.32.191.253
+  server: 194.104.147.80
   tls: true
   type: vmess
   uuid: 3f4d6dd8-0ea2-4ce4-8e30-6a581e13cc4d
   ws-opts:
     headers:
       Host: hk.pdda.me
-    path: /pdd?ed=2048
+    path: /
 - alterId: 0
   cipher: auto
   name: 25,28|🇭🇰HK-47.76.35.246-0787
@@ -458,12 +444,12 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 25,26,27|香港3|@ripaojiedian
+  name: 25,26,27,29|CN_speednode_0021
   network: ws
-  port: '21032'
+  port: 21032
   server: hk.lianjianode.cc
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
@@ -612,26 +598,59 @@ proxies:
       Host: hrgdvpn.flycdnedc55.vip
     path: /opt/video/images
 - cipher: aes-128-gcm
-  country: 🇸🇬 SG
-  name: 29|HK_speednode_0028
+  name: 29|HK_speednode_0048
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
     host: ''
     mode: websocket
-    tls: false
-  port: 443
-  server: 8.218.71.80
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 29|HK_speednode_0029
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
+    mux: true
+    path: /
+    skip-cert-verify: true
     tls: false
   port: 443
   server: 47.243.196.229
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 29|HK_speednode_0049
+  network: ws
+  port: 443
+  server: 194.104.147.80
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3f4d6dd8-0ea2-4ce4-8e30-6a581e13cc4d
+  ws-opts:
+    headers:
+      Host: hk.pdda.me
+    path: /pdd?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 29|HK_speednode_0050
+  network: ws
+  port: 443
+  server: 43.154.230.30
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3f4d6dd8-0ea2-4ce4-8e30-6a581e13cc4d
+  ws-opts:
+    headers:
+      Host: jp.pddf.buzz
+    path: /pdd?ed=2048
+- cipher: aes-128-gcm
+  name: 29|HK_speednode_0051
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: /
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 8.218.196.35
   type: ss
