@@ -319,14 +319,24 @@ proxies:
   uuid: 86028640-70f8-4666-a6ab-4d607b4aff06
 - alterId: 0
   cipher: auto
-  name: 13,21,25|14|日本 东京xTOM网络
+  name: 13,20,21,25|14|日本 东京xTOM网络
   network: tcp
   port: 22353
   server: 172.93.144.168
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 7cca9e99-34fe-48cb-a946-e2b5c7edca31
+  ws-headers:
+    Host: 172.93.144.168
+  ws-path: /
+- cipher: aes-256-cfb
+  name: 20|🇯🇵JP-54.199.83.239-098
+  password: doub.io
+  port: 2333
+  server: 54.199.83.239
+  type: ss
 - alterId: 0
   cipher: auto
   name: 23,25|17|【BGP】日本 04  | 1x JP
