@@ -317,25 +317,6 @@ proxies:
   tls: true
   type: vmess
   uuid: 2b279eb1-9464-4be1-892a-bccdb1f1c554
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇯🇵 日本(欢迎订阅Youtube破解资源君) #3'
-  network: tcp
-  port: '3845'
-  server: 139.162.122.205
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 76d5c6e3-c74c-3406-b9e8-9859d0a71c56
-  ws-headers:
-    Host: 139.162.122.205
-  ws-path: /
-- cipher: aes-256-cfb
-  name: 20|🇯🇵JP-54.199.83.239-111
-  password: doub.io
-  port: 2333
-  server: 54.199.83.239
-  type: ss
 - alterId: 2
   cipher: auto
   name: 21|🇯🇵 日本(欢迎订阅Youtube破解资源君)
@@ -364,6 +345,15 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
+  name: '21|🇯🇵 日本(欢迎订阅Youtube破解资源君) #3'
+  network: tcp
+  port: '3845'
+  server: 139.162.122.205
+  tls: false
+  type: vmess
+  uuid: 76d5c6e3-c74c-3406-b9e8-9859d0a71c56
+- alterId: 0
+  cipher: auto
   name: 23|【BGP】日本 04  | 1x JP
   network: tcp
   port: '31116'
@@ -371,7 +361,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 2186ff5d-b7bb-4d06-8f43-6d425a195786
+  uuid: 5f17ad6a-51df-45b6-929a-75f4c6bb530d
 - alterId: 0
   cipher: auto
   name: 23|【BGP】日本 05  | 1x JP
@@ -381,7 +371,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 2186ff5d-b7bb-4d06-8f43-6d425a195786
+  uuid: 5f17ad6a-51df-45b6-929a-75f4c6bb530d
 - alterId: 0
   cipher: auto
   name: 23|【BGP】日本 06  | 1x JP
@@ -391,7 +381,17 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 2186ff5d-b7bb-4d06-8f43-6d425a195786
+  uuid: 5f17ad6a-51df-45b6-929a-75f4c6bb530d
+- alterId: 0
+  cipher: auto
+  name: 25|19|日本1
+  network: tcp
+  port: '10401'
+  server: zz1.xmfvpn.xyz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7bec82b7-6dfa-3120-ac3d-196784723bf0
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -409,6 +409,23 @@ proxies:
     headers:
       Host: data-jp-v1.usabooks.com.cn
     path: /debian
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 25,26,27|日本3|@ripaojiedian
+  network: ws
+  port: '443'
+  server: 134.122.135.88
+  servername: www.79102825.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.79102825.xyz
+    path: /path/311227222808
 - alterId: 0
   cipher: auto
   name: 25|26|baipaovpn日本
@@ -423,23 +440,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 26,27|日本3|@ripaojiedian
-  network: ws
-  port: '443'
-  server: 134.122.135.88
-  servername: www.79102825.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.79102825.xyz
-    path: /path/311227222808
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇯🇵 日本特殊|@ripaojiedian
