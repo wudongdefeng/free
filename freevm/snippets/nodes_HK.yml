@@ -182,7 +182,7 @@ proxies:
     path: /opt/video/images
 - alterId: 64
   cipher: auto
-  name: 25,27|香港|@ripaojiedian
+  name: 25|22|香港|@ripaojiedian
   network: tcp
   port: '34602'
   server: 120.232.242.88
@@ -192,7 +192,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 25,27|香港3|@ripaojiedian
+  name: 25|22|香港3|@ripaojiedian
   network: tcp
   port: '44602'
   server: 120.232.242.88
@@ -232,14 +232,26 @@ proxies:
   server: 8.210.33.152
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港2|@ripaojiedian
-  password: 55a021e6-30f6-46c5-8297-a2b74d0b3031
-  port: 20001
-  server: ddns.olucloud.subapi.cc
-  tfo: false
-  type: ss
+- alterId: 64
+  cipher: auto
+  name: 27|香港|@ripaojiedian
+  network: tcp
+  port: '40002'
+  server: 120.238.122.246
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 27|香港2|@ripaojiedian
+  network: tcp
+  port: '53942'
+  server: 120.238.122.147
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 28|🇭🇰HK-47.76.35.246-0787
@@ -276,7 +288,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 28|香港2|@ripaojiedian
+  name: '28|香港2|@ripaojiedian #1'
   network: tcp
   port: '44805'
   server: hkjcdn03.dorabbb.top
@@ -312,10 +324,37 @@ proxies:
     headers:
       Host: hrgdvpn.flycdnedc55.vip
     path: /opt/video/images
+- cipher: aes-128-gcm
+  country: 🇺🇸 US
+  name: 29|HK_speednode_0046
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    tls: false
+  port: 443
+  server: 47.243.196.229
+  type: ss
+- cipher: aes-128-gcm
+  delay: 465
+  name: 29|HK_speednode_0049
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: /
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 1.65.218.52
+  type: ss
 - Ltd. - 34: None
   cipher: aes-128-gcm
   delay: 944
-  name: 29|HK_speednode_0049
+  name: 29|HK_speednode_0050
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -329,30 +368,3 @@ proxies:
   server: 8.218.71.80
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 29|HK_speednode_0050
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    tls: false
-  port: 443
-  server: 47.243.196.229
-  type: ss
-- cipher: aes-128-gcm
-  delay: 465
-  name: 29|HK_speednode_0053
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: true
-    path: /
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 1.65.218.52
-  type: ss
