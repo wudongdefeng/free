@@ -93,7 +93,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '3,6,11,21,25,28,30|🇺🇸_US_美国->🇨🇦_CA_加拿大 #12'
+  name: '3,6,21,25,28,30|🇺🇸_US_美国->🇨🇦_CA_加拿大 #12'
   network: ws
   port: 8080
   server: 162.159.137.249
@@ -196,6 +196,19 @@ proxies:
     path: /acc
 - alterId: 0
   cipher: auto
+  name: 14,25|29|🇺🇸_US_美国->🇫🇷_FR_法国_4_28
+  network: ws
+  port: 2082
+  server: s1c.v2.v001sss.xyz
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
   name: 14,21,25|29|🇺🇸_US_美国->🇬🇧_GB_英国_由快嘴科技提供：...
   network: ws
   port: 2086
@@ -284,3 +297,21 @@ proxies:
   sni: alibaba-node.cn
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 25,26,27,29|CN_speednode_0013
+  network: ws
+  port: 16928
+  server: 120.232.234.246
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c65afb39-dcc6-36c0-aca2-22399101273d
+  ws-opts:
+    headers:
+      Host: '%7B%22Host%22:%22193.25.215.160%22%7D'
+    path: /v2ray
