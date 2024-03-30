@@ -130,10 +130,11 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 25,26|🇭🇰 香港1|@ripaojiedian
+  name: 25,26,27|香港1|@ripaojiedian
   network: ws
-  port: 50080
+  port: '50080'
   server: 223.113.130.58
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -145,7 +146,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: 25,27|香港|@ripaojiedian
+  name: 25|22|香港|@ripaojiedian
   network: ws
   port: '8080'
   server: 185.14.47.99
@@ -159,7 +160,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25,27|香港1|@ripaojiedian
+  name: 25|22|香港1|@ripaojiedian
   network: tcp
   port: '57310'
   server: 156.251.217.24
@@ -199,6 +200,24 @@ proxies:
   server: 8.210.33.152
   tfo: false
   type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 26|🇭🇰 香港5|@ripaojiedian
+  password: eoSwHMmeRcyJUo4uGD_25
+  port: 15033
+  server: ntded7zt.klmdns.com
+  tfo: false
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: 27|香港|@ripaojiedian
+  network: tcp
+  port: '40259'
+  server: 120.238.122.148
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: '28|香港1|@ripaojiedian #1'
@@ -258,24 +277,22 @@ proxies:
       Host: hrgdvpn.flycdnedc55.vip
     path: /opt/video/images
 - cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 29|HK_speednode_0046
+  delay: 463
+  name: 29|HK_speednode_0041
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
     host: ''
     mode: websocket
     mux: true
-    path: ''
-    skip-cert-verify: true
+    path: /
     tls: false
   port: 443
-  server: 8.218.71.80
-  tfo: false
+  server: 1.65.218.52
   type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 29|HK_speednode_0047
+  name: 29|HK_speednode_0042
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -290,8 +307,7 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-128-gcm
-  delay: 463
-  name: 29|HK_speednode_0048
+  name: 29|HK_speednode_0043
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -299,7 +315,8 @@ proxies:
     mode: websocket
     mux: true
     path: /
+    skip-cert-verify: true
     tls: false
   port: 443
-  server: 1.65.218.52
+  server: 8.218.82.85
   type: ss
