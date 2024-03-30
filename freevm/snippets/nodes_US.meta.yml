@@ -230,7 +230,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '6,7,13,21,25,28|🇺🇸_US_美国 #50'
+  name: '6,7,21,25,28|🇺🇸_US_美国 #50'
   network: ws
   port: 2052
   server: 104.21.82.39
@@ -243,7 +243,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6,7,13,21,25,28|🏁RELAY-104.21.82.39-0080
+  name: 6,7,21,25,28|🏁RELAY-104.21.82.39-0080
   network: ws
   port: 2052
   server: mahilu.site
@@ -361,7 +361,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '7,13,17,21,25,28|🇺🇸_US_美国 #41'
+  name: '7,17,21,25,28|🇺🇸_US_美国 #41'
   network: ws
   port: 80
   server: 104.21.234.52
@@ -2112,10 +2112,10 @@ proxies:
   uuid: 37e3fe44-e63c-4988-cff7-d1a27f5f0c09
 - alterId: 0
   cipher: auto
-  name: 11|美国 CloudFlare节点
+  name: '11,13,21,25|18|美国 CloudFlare节点 #2'
   network: ws
-  port: 80
-  server: 104.21.224.194
+  port: '80'
+  server: 104.21.224.65
   servername: ''
   tls: false
   type: vmess
@@ -2126,52 +2126,37 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '11,21|🇺🇸 美国 CloudFlare节点 #7'
+  name: '11|美国 CloudFlare节点 #2'
+  network: ws
+  port: '2096'
+  server: 104.21.25.8
+  servername: fr2-vmess.sshmax.xyz
+  tls: true
+  type: vmess
+  uuid: 22999f0a-20b0-485d-b000-fa59586940f9
+  ws-opts:
+    headers:
+      Host: fr2-vmess.sshmax.xyz
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: '11,21,25|18|美国 CloudFlare节点 #21'
   network: ws
   port: '80'
-  server: 104.21.224.1
-  servername: ''
+  server: 104.21.224.105
   tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
       Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-- alterId: 0
-  cipher: auto
-  name: '11,13,21,25|18|美国 CloudFlare节点 #19'
-  network: ws
-  port: '80'
-  server: 104.21.232.41
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #3'
-  network: ws
-  port: 80
-  server: 104.21.227.15
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '11|美国 CloudFlare节点 #4'
+  name: '11,21,25|18|美国 CloudFlare节点 #14'
   network: ws
-  port: 80
-  server: 104.21.230.52
+  port: '80'
+  server: 104.21.234.74
   servername: ''
   tls: false
   type: vmess
@@ -2184,118 +2169,22 @@ proxies:
   cipher: auto
   name: '11|美国 CloudFlare节点 #5'
   network: ws
-  port: 80
-  server: 104.21.233.47
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #6'
-  network: ws
-  port: '80'
-  server: 104.21.221.185
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #7'
-  network: ws
-  port: 80
-  server: 104.21.238.91
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /
-- alterId: 0
-  cipher: chacha20-poly1305
-  grpc-opts:
-    grpc-service-name: sNpuhb8v1rEIIYTVEagC5V7fI
-  name: '11|美国 CloudFlare节点 #8'
-  network: grpc
-  port: '443'
-  server: cdnjs.com
-  servername: hdfyc5.achaemenidempireofpersia.uk
+  port: '2083'
+  server: 172.67.171.175
+  servername: nine.b4a-devs.org
   tls: true
   type: vmess
-  uuid: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #9'
-  network: ws
-  port: 80
-  server: 104.21.224.104
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  uuid: 1016cbc0-03c2-4e11-b590-296b01f269ac
   ws-opts:
     headers:
-      Host: a.prapt1.ir
-    path: /
+      Host: nine.b4a-devs.org
+    path: /nws
 - alterId: 0
   cipher: auto
-  name: '11|美国 CloudFlare节点 #10'
-  network: ws
-  port: '80'
-  server: 104.21.220.104
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #11'
-  network: ws
-  port: 80
-  server: 104.21.226.11
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #12'
-  network: ws
-  port: 80
-  server: 104.21.235.55
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11,14,25|19|🇺🇸_US_美国->🇫🇷_FR_法国 #5'
+  name: 11,14,21,25|19,29|🇺🇸_US_美国->🇫🇷_FR_法国_由快嘴科技...
   network: ws
   port: 2086
-  server: 104.21.4.14
+  server: admin.arzonhost.ir
   servername: ''
   tls: false
   type: vmess
@@ -2304,131 +2193,6 @@ proxies:
     headers:
       Host: admin.arzonhost.ir
     path: /
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #14'
-  network: ws
-  port: '80'
-  server: 104.21.225.9
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #15'
-  network: ws
-  port: 80
-  server: 104.21.220.34
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #16'
-  network: ws
-  port: 80
-  server: 104.21.224.80
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #17'
-  network: ws
-  port: '80'
-  server: 104.21.223.245
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #18'
-  network: ws
-  port: '80'
-  server: 104.21.238.93
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳 @WangCai08
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #19'
-  network: ws
-  port: 80
-  server: 104.21.221.169
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '11,13,21,25|18|美国 CloudFlare节点 #5'
-  network: ws
-  port: 80
-  server: 104.21.224.213
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #21'
-  network: ws
-  port: 80
-  server: 104.21.219.87
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #22'
-  network: ws
-  port: 80
-  server: 104.21.231.35
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /?ed=2048&Telegram🇨🇳 @WangCai08
 - alterId: 0
   cipher: auto
   name: '11,13,21,25|18|美国 CloudFlare节点 #24'
@@ -2445,359 +2209,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai_8
 - alterId: 0
   cipher: auto
-  name: '11,13,21,25|18|美国 CloudFlare节点 #2'
-  network: ws
-  port: '80'
-  server: 104.21.224.65
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #25'
-  network: ws
-  port: '80'
-  server: 104.21.220.97
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: '/?ed=2048&Telegram🇨🇳 '
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #26'
-  network: ws
-  port: 80
-  server: 104.21.224.58
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳 @WangCai08
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #28'
-  network: ws
-  port: '80'
-  server: 104.21.228.43
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #29'
-  network: ws
-  port: '80'
-  server: 104.21.221.203
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #30'
-  network: ws
-  port: '80'
-  server: 104.21.224.201
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 11,14,25,28|🏁RELAY-172.67.194.57-3840
-  network: ws
-  port: 443
-  server: channel.hopev2ray.link
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 9aaceca0-bc5b-49e6-a83f-088e14d94434
-  ws-opts:
-    headers:
-      Host: no1-vmess.sshmax.xyz
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #33'
-  network: ws
-  port: 80
-  server: 104.21.237.65
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #34'
-  network: ws
-  port: '80'
-  server: 104.21.238.73
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #35'
-  network: ws
-  port: 80
-  server: 104.21.224.249
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #36'
-  network: ws
-  port: '8080'
-  server: 173.245.58.100
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
-  ws-opts:
-    headers:
-      Host: technological-mel-fill-decide.trycloudflare.com
-    path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #37'
-  network: ws
-  port: 80
-  server: 104.21.224.169
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳 @WangCai08
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #38'
-  network: ws
-  port: 80
-  server: 104.21.225.29
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #39'
-  network: ws
-  port: 80
-  server: 104.21.221.109
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: 11,21,25|19|加拿大 024
-  network: ws
-  port: 80
-  server: beijing.mfa.ee
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
-  ws-opts:
-    headers:
-      Host: open.alipay.ovh
-    path: /aries?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '11,13,21,25|18|美国 CloudFlare节点 #8'
-  network: ws
-  port: 80
-  server: 104.21.220.61
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '11,13,16,21,25,28|github.com/freefq - 美国CloudFla... #7'
-  network: ws
-  port: 8880
-  server: 104.21.82.183
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
-  ws-opts:
-    headers:
-      Host: server26.beheshtbaneh.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #43'
-  network: ws
-  port: '80'
-  server: 104.21.231.38
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #44'
-  network: ws
-  port: '80'
-  server: 104.21.221.16
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #45'
-  network: ws
-  port: 80
-  server: movies4u.center
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a1dccd85-41dd-454d-983d-b72ef013386a
-  ws-opts:
-    headers:
-      Host: fi1.xv2ray.net
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #46'
-  network: ws
-  port: 80
-  server: 104.21.224.202
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #47'
-  network: ws
-  port: 80
-  server: 104.21.239.77
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 12|🇺🇸美国04
-  network: tcp
-  port: '36501'
-  server: 3u1s04.a3b5wy.xyz
-  servername: us04.abpilot.xyz
-  tls: true
-  type: vmess
-  uuid: 83ced7c0-c34e-4086-94ac-aa5641acc6b3
-- alterId: 0
-  cipher: auto
-  name: 12|🇺🇸美国05
-  network: tcp
-  port: '36506'
-  server: 3u1s05.a3b5wy.xyz
-  servername: us05.abpilot.xyz
-  tls: true
-  type: vmess
-  uuid: 83ced7c0-c34e-4086-94ac-aa5641acc6b3
-- alterId: 0
-  cipher: auto
-  name: 12|🇺🇸美国06
-  network: tcp
-  port: '36511'
-  server: 3u1s06.a3b5wy.xyz
-  servername: us06.abpilot.xyz
-  tls: true
-  type: vmess
-  uuid: 83ced7c0-c34e-4086-94ac-aa5641acc6b3
-- alterId: 0
-  cipher: auto
-  name: '13,16,21,25,28|github.com/freefq - 美国CloudFla... #5'
-  network: ws
-  port: 8880
-  server: server31.beheshtbaneh.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
-  ws-opts:
-    headers:
-      Host: server31.beheshtbaneh.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 13,21,25|18,29|🇺🇸_US_美国_2_29
+  name: 11,21,25|18,29|🇺🇸_US_美国_2_29
   network: ws
   port: 80
   server: russia.com
@@ -2811,24 +2223,40 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: 13,20,21,25|18|美国 新泽西州Choopa有限公司
+  name: 12|🇺🇸美国04
   network: tcp
-  port: '51671'
-  server: 173.199.114.215
-  servername: ''
-  skip-cert-verify: true
-  tls: false
+  port: '36501'
+  server: 3u1s04.a3b5wy.xyz
+  servername: us04.abpilot.xyz
+  tls: true
   type: vmess
-  uuid: 338ae84a-77d3-4438-bbdd-1444105dad20
-  ws-headers:
-    Host: 173.199.114.215
-  ws-path: /
+  uuid: 1e66757d-bd56-44d2-b903-d3370cd0d5dd
 - alterId: 0
   cipher: auto
-  name: '13,21,25|18|美国 CloudFlare节点 #3'
+  name: 12|🇺🇸美国05
+  network: tcp
+  port: '36506'
+  server: 3u1s05.a3b5wy.xyz
+  servername: us05.abpilot.xyz
+  tls: true
+  type: vmess
+  uuid: 1e66757d-bd56-44d2-b903-d3370cd0d5dd
+- alterId: 0
+  cipher: auto
+  name: 12|🇺🇸美国06
+  network: tcp
+  port: '36511'
+  server: 3u1s06.a3b5wy.xyz
+  servername: us06.abpilot.xyz
+  tls: true
+  type: vmess
+  uuid: 1e66757d-bd56-44d2-b903-d3370cd0d5dd
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #9'
   network: ws
   port: 80
-  server: 104.21.233.67
+  server: 104.21.224.194
   servername: ''
   tls: false
   type: vmess
@@ -2839,38 +2267,427 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '13,21,25|18|美国 CloudFlare节点 #7'
+  name: '13,21|🇺🇸 美国 CloudFlare节点 #7'
   network: ws
-  port: '8080'
-  server: cf.openxai.link
+  port: '80'
+  server: 104.21.224.1
   servername: ''
   tls: false
   type: vmess
-  uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
-      Host: eu3.openxai.link
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳 @WangCai_8
+- alterId: 0
+  cipher: auto
+  name: '13,21,25|18|美国 CloudFlare节点 #19'
+  network: ws
+  port: '80'
+  server: 104.21.232.41
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt4.ir
     path: /
 - alterId: 0
   cipher: auto
-  name: '13,25|18,19|🇺🇸 美国 CloudFlare节点 #2'
+  name: '13|美国 CloudFlare节点 #12'
   network: ws
+  port: 80
+  server: 104.21.227.15
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt4.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #13'
+  network: ws
+  port: 80
+  server: 104.21.230.52
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #14'
+  network: ws
+  port: 80
+  server: 104.21.233.47
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt4.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #15'
+  network: ws
+  port: '80'
+  server: 104.21.221.185
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #16'
+  network: ws
+  port: 80
+  server: 104.21.238.91
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /
+- alterId: 0
+  cipher: chacha20-poly1305
+  grpc-opts:
+    grpc-service-name: sNpuhb8v1rEIIYTVEagC5V7fI
+  name: '13|美国 CloudFlare节点 #17'
+  network: grpc
   port: '443'
-  server: maggiy.shop
+  server: cdnjs.com
+  servername: hdfyc5.achaemenidempireofpersia.uk
+  tls: true
+  type: vmess
+  uuid: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #18'
+  network: ws
+  port: 80
+  server: 104.21.224.104
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #19'
+  network: ws
+  port: '80'
+  server: 104.21.220.104
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #20'
+  network: ws
+  port: 80
+  server: 104.21.226.11
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt4.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #21'
+  network: ws
+  port: 80
+  server: 104.21.235.55
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '13,14,25|19|🇺🇸_US_美国->🇫🇷_FR_法国 #5'
+  network: ws
+  port: 2086
+  server: 104.21.4.14
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
+  ws-opts:
+    headers:
+      Host: admin.arzonhost.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #23'
+  network: ws
+  port: '80'
+  server: 104.21.225.9
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt4.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #24'
+  network: ws
+  port: 80
+  server: 104.21.220.34
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #25'
+  network: ws
+  port: 80
+  server: 104.21.224.80
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #26'
+  network: ws
+  port: '80'
+  server: 104.21.223.245
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #27'
+  network: ws
+  port: '80'
+  server: 104.21.238.93
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳 @WangCai08
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #28'
+  network: ws
+  port: 80
+  server: 104.21.221.169
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '13,21,25|18|美国 CloudFlare节点 #5'
+  network: ws
+  port: 80
+  server: 104.21.224.213
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #30'
+  network: ws
+  port: 80
+  server: 104.21.219.87
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #31'
+  network: ws
+  port: 80
+  server: 104.21.231.35
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt4.ir
+    path: /?ed=2048&Telegram🇨🇳 @WangCai08
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #34'
+  network: ws
+  port: '80'
+  server: 104.21.220.97
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #35'
+  network: ws
+  port: 80
+  server: 104.21.224.58
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳 @WangCai08
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #37'
+  network: ws
+  port: '80'
+  server: 104.21.228.43
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt4.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #38'
+  network: ws
+  port: '80'
+  server: 104.21.221.203
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #39'
+  network: ws
+  port: '80'
+  server: 104.21.224.201
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 13,14,25,28|🏁RELAY-172.67.194.57-3840
+  network: ws
+  port: 443
+  server: channel.hopev2ray.link
   servername: ''
   tls: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 9aaceca0-bc5b-49e6-a83f-088e14d94434
   ws-opts:
     headers:
-      Host: maggiy.shop
-    path: /linkvws
+      Host: no1-vmess.sshmax.xyz
+    path: /vmess
 - alterId: 0
   cipher: auto
-  name: '13,21,25|18|美国 CloudFlare节点 #10'
+  name: '13|美国 CloudFlare节点 #42'
   network: ws
   port: 80
-  server: 104.21.220.177
+  server: 104.21.237.65
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt4.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #43'
+  network: ws
+  port: '80'
+  server: 104.21.238.73
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt4.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #44'
+  network: ws
+  port: 80
+  server: 104.21.224.249
   servername: ''
   tls: false
   type: vmess
@@ -2881,53 +2698,24 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '13,21,25|18|美国 CloudFlare节点 #11'
+  name: '13|美国 CloudFlare节点 #45'
   network: ws
-  port: '80'
-  server: 104.21.224.52
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&amp;Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '13,21,25|18|美国 CloudFlare节点 #12'
-  network: ws
-  port: '80'
-  server: 104.21.225.26
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 13,17,21,25,26,27|美国|@ripaojiedian
-  network: ws
-  port: '80'
-  server: 104.21.224.221
+  port: '8080'
+  server: 173.245.58.100
   servername: ''
-  skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
   ws-opts:
     headers:
-      Host: a.prapt1.ir
-    path: /
+      Host: technological-mel-fill-decide.trycloudflare.com
+    path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
 - alterId: 0
   cipher: auto
-  name: '13,21,25|18|美国 CloudFlare节点 #14'
+  name: '13|美国 CloudFlare节点 #46'
   network: ws
-  port: '80'
-  server: 104.21.234.74
+  port: 80
+  server: 104.21.224.169
   servername: ''
   tls: false
   type: vmess
@@ -2935,98 +2723,84 @@ proxies:
   ws-opts:
     headers:
       Host: a.prapt1.ir
-    path: /
+    path: /?ed=2048&Telegram🇨🇳 @WangCai08
 - alterId: 0
   cipher: auto
-  name: '13,16,21,25,28|github.com/freefq - 美国CloudFla... #6'
+  name: '13|美国 CloudFlare节点 #47'
+  network: ws
+  port: 80
+  server: 104.21.225.29
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #48'
+  network: ws
+  port: 80
+  server: 104.21.221.109
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 13,21,25|19|加拿大 024
+  network: ws
+  port: 80
+  server: beijing.mfa.ee
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
+  ws-opts:
+    headers:
+      Host: open.alipay.ovh
+    path: /aries?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '13,21,25|18|美国 CloudFlare节点 #8'
+  network: ws
+  port: 80
+  server: 104.21.220.61
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: '13,16,21,25,28|github.com/freefq - 美国CloudFla... #7'
   network: ws
   port: 8880
-  server: server32.beheshtbaneh.com
+  server: 104.21.82.183
   servername: ''
   tls: false
   type: vmess
-  uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
   ws-opts:
     headers:
-      Host: server32.beheshtbaneh.com
+      Host: server26.beheshtbaneh.com
     path: /
 - alterId: 0
   cipher: auto
-  name: '13,21,25|18|美国 CloudFlare节点 #17'
-  network: ws
-  port: 80
-  server: 104.21.220.168
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '13,21,25|18|美国 CloudFlare节点 #18'
-  network: ws
-  port: '2052'
-  server: 104.19.129.191
-  tls: false
-  type: vmess
-  uuid: 67d8b1b9-1c9f-4a8b-8ddc-0b9ec2db2d6c
-  ws-opts:
-    headers:
-      Host: tw1bQiWSE4x.fzbqfrse.xyz
-    path: /video/GQ2qE5Us9g
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 13,21,25,26,27|台湾|@ripaojiedian
-  network: ws
-  port: '2052'
-  server: cfcdn1.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 67d8b1b9-1c9f-4a8b-8ddc-0b9ec2db2d6c
-  ws-opts:
-    headers:
-      Host: tw1bQiWSE4x.fzbqfrse.xyz
-    path: /video/GQ2qE5Us9g
-- alterId: 0
-  cipher: auto
-  name: '13,21,25|18|美国 CloudFlare节点 #21'
+  name: '13|美国 CloudFlare节点 #52'
   network: ws
   port: '80'
-  server: 104.21.224.105
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '13,21,25|18|美国 CloudFlare节点 #22'
-  network: ws
-  port: 80
-  server: 104.21.220.17
+  server: 104.21.231.38
   servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '13,21,25|18|美国 CloudFlare节点 #23'
-  network: ws
-  port: '80'
-  server: 104.21.226.14
   tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -3036,10 +2810,38 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '13,21,25|18|美国 CloudFlare节点 #25'
+  name: '13|美国 CloudFlare节点 #53'
+  network: ws
+  port: '80'
+  server: 104.21.221.16
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #54'
   network: ws
   port: 80
-  server: 104.21.239.79
+  server: movies4u.center
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a1dccd85-41dd-454d-983d-b72ef013386a
+  ws-opts:
+    headers:
+      Host: fi1.xv2ray.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '13|美国 CloudFlare节点 #55'
+  network: ws
+  port: 80
+  server: 104.21.224.202
   servername: ''
   tls: false
   type: vmess
@@ -3050,16 +2852,17 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '13,21,25|18|美国 CloudFlare节点 #26'
+  name: '13|美国 CloudFlare节点 #56'
   network: ws
-  port: '80'
-  server: 104.21.231.39
+  port: 80
+  server: 104.21.239.77
+  servername: ''
   tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
-      Host: a.prapt1.ir
+      Host: a.prapt4.ir
     path: /
 - alterId: 0
   cipher: auto
@@ -3076,6 +2879,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: '13,16,21,25,28|github.com/freefq - 美国CloudFla... #5'
+  network: ws
+  port: 8880
+  server: server31.beheshtbaneh.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
+  ws-opts:
+    headers:
+      Host: server31.beheshtbaneh.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 13,16,21,25,28|美国测试节点
   network: ws
   port: '443'
@@ -3088,6 +2905,20 @@ proxies:
     headers:
       Host: zheshiscp.com
     path: /77848824
+- alterId: 0
+  cipher: auto
+  name: '13,16,21,25,28|github.com/freefq - 美国CloudFla... #6'
+  network: ws
+  port: 8880
+  server: server32.beheshtbaneh.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9
+  ws-opts:
+    headers:
+      Host: server32.beheshtbaneh.com
+    path: /
 - alterId: 0
   cipher: auto
   name: '14|🇺🇸_US_美国 #29'
@@ -4014,6 +3845,23 @@ proxies:
     path: /path/1693992821776
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  name: 17,21,25,26,27|美国|@ripaojiedian
+  network: ws
+  port: '80'
+  server: 104.21.224.221
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /
+- alterId: 0
+  cipher: auto
   name: '17|TG频道:@hkaa0|美国 #2'
   network: ws
   port: 80
@@ -4147,6 +3995,20 @@ proxies:
   port: 8091
   server: 169.197.142.99
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 20,21,25|18|美国 新泽西州Choopa有限公司
+  network: tcp
+  port: '51671'
+  server: 173.199.114.215
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 338ae84a-77d3-4438-bbdd-1444105dad20
+  ws-headers:
+    Host: 173.199.114.215
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   name: 20|🇸US-45.158.171.215-175
   password: oZIoA69Q8yhcQV8ka3Pa3A
@@ -4204,6 +4066,19 @@ proxies:
   ws-opts:
     headers:
       Host: san.515223.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '21,25|18|美国 CloudFlare节点 #23'
+  network: ws
+  port: '80'
+  server: 104.21.226.14
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
     path: /
 - alterId: 0
   cipher: auto
@@ -4299,6 +4174,19 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
+  name: '21,25|18|美国 CloudFlare节点 #12'
+  network: ws
+  port: '80'
+  server: 104.21.225.26
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /
+- alterId: 0
+  cipher: auto
   name: 21,25|19|🇺🇸 美国 CloudFlare节点
   network: ws
   port: '443'
@@ -4377,6 +4265,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: '21,25|18|美国 CloudFlare节点 #26'
+  network: ws
+  port: '80'
+  server: 104.21.231.39
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /
+- alterId: 0
+  cipher: auto
   name: '21|🇺🇸 美国 CloudFlare节点 #25'
   network: ws
   port: '80'
@@ -4387,6 +4288,34 @@ proxies:
   ws-opts:
     headers:
       Host: a.prapt4.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '21,25|18|美国 CloudFlare节点 #3'
+  network: ws
+  port: 80
+  server: 104.21.233.67
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '21,25|18|美国 CloudFlare节点 #7'
+  network: ws
+  port: '8080'
+  server: cf.openxai.link
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
+  ws-opts:
+    headers:
+      Host: eu3.openxai.link
     path: /
 - alterId: 0
   cipher: auto
@@ -4403,6 +4332,105 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: '21,25|18|美国 CloudFlare节点 #10'
+  network: ws
+  port: 80
+  server: 104.21.220.177
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: '21,25|18|美国 CloudFlare节点 #11'
+  network: ws
+  port: '80'
+  server: 104.21.224.52
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&amp;Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: '21,25|18|美国 CloudFlare节点 #17'
+  network: ws
+  port: 80
+  server: 104.21.220.168
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: '21,25|18|美国 CloudFlare节点 #18'
+  network: ws
+  port: '2052'
+  server: 104.19.129.191
+  tls: false
+  type: vmess
+  uuid: 67d8b1b9-1c9f-4a8b-8ddc-0b9ec2db2d6c
+  ws-opts:
+    headers:
+      Host: tw1bQiWSE4x.fzbqfrse.xyz
+    path: /video/GQ2qE5Us9g
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 21,25,26,27|台湾|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: cfcdn1.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 67d8b1b9-1c9f-4a8b-8ddc-0b9ec2db2d6c
+  ws-opts:
+    headers:
+      Host: tw1bQiWSE4x.fzbqfrse.xyz
+    path: /video/GQ2qE5Us9g
+- alterId: 0
+  cipher: auto
+  name: '21,25|18|美国 CloudFlare节点 #22'
+  network: ws
+  port: 80
+  server: 104.21.220.17
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: '21,25|18|美国 CloudFlare节点 #25'
+  network: ws
+  port: 80
+  server: 104.21.239.79
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
   name: 23|【BGP】美国 04 | 1x US
   network: tcp
   port: '31501'
@@ -4410,7 +4438,7 @@ proxies:
   servername: us04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 247dab2c-a9a9-4802-981c-48da21798d69
+  uuid: c7af32e4-936a-48d6-8051-09fda59d7284
 - alterId: 0
   cipher: auto
   name: 23|【BGP】美国 05 | 1x US
@@ -4420,7 +4448,7 @@ proxies:
   servername: us05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 247dab2c-a9a9-4802-981c-48da21798d69
+  uuid: c7af32e4-936a-48d6-8051-09fda59d7284
 - alterId: 0
   cipher: auto
   name: 23|【BGP】美国 06 | 1x US
@@ -4430,7 +4458,7 @@ proxies:
   servername: us06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 247dab2c-a9a9-4802-981c-48da21798d69
+  uuid: c7af32e4-936a-48d6-8051-09fda59d7284
 - alterId: 0
   cipher: auto
   name: '24|_US__1 #1'
@@ -4473,6 +4501,20 @@ proxies:
     headers:
       host: mm3.shabijichang.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: '25|18,19|🇺🇸 美国 CloudFlare节点 #2'
+  network: ws
+  port: '443'
+  server: maggiy.shop
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: maggiy.shop
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 25|19|🔒 VM-WS-NA 🇺🇸 US-205.234.20...
@@ -5037,7 +5079,7 @@ proxies:
     path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #75'
+  name: '28|美国 CloudFlare节点 #57'
   network: ws
   port: '80'
   server: 104.21.224.8
@@ -5050,7 +5092,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #76'
+  name: '28|美国 CloudFlare节点 #58'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -5064,7 +5106,7 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #77'
+  name: '28|美国 CloudFlare节点 #59'
   network: ws
   port: 80
   server: 104.21.224.129
@@ -5077,7 +5119,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳@WangCai_8
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #78'
+  name: '28|美国 CloudFlare节点 #60'
   network: ws
   port: '80'
   server: 104.21.230.53
@@ -5091,7 +5133,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #79'
+  name: '28|美国 CloudFlare节点 #61'
   network: ws
   port: 80
   server: 104.21.224.56
@@ -5119,7 +5161,7 @@ proxies:
     path: /v118-fccxmxm35
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #80'
+  name: '28|美国 CloudFlare节点 #62'
   network: ws
   port: '80'
   server: 104.21.235.76
@@ -5145,7 +5187,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #81'
+  name: '28|美国 CloudFlare节点 #63'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -5173,7 +5215,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #83'
+  name: '28|美国 CloudFlare节点 #65'
   network: ws
   port: 80
   server: 104.21.224.24
@@ -5199,7 +5241,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #85'
+  name: '28|美国 CloudFlare节点 #67'
   network: ws
   port: 80
   server: 104.21.238.90
@@ -5226,7 +5268,7 @@ proxies:
     path: /CAT
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #86'
+  name: '28|美国 CloudFlare节点 #68'
   network: ws
   port: 80
   server: 104.21.237.88
@@ -5240,7 +5282,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #87'
+  name: '28|美国 CloudFlare节点 #69'
   network: ws
   port: 80
   server: 104.21.224.157
@@ -5254,7 +5296,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #88'
+  name: '28|美国 CloudFlare节点 #70'
   network: ws
   port: '80'
   server: 104.21.237.65
@@ -5267,7 +5309,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai_8
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #89'
+  name: '28|美国 CloudFlare节点 #71'
   network: ws
   port: 80
   server: 104.21.221.135
@@ -5281,7 +5323,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #90'
+  name: '28|美国 CloudFlare节点 #72'
   network: ws
   port: 80
   server: 104.21.237.87
@@ -5295,7 +5337,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #92'
+  name: '28|美国 CloudFlare节点 #74'
   network: ws
   port: 80
   server: 104.21.230.31
@@ -5309,7 +5351,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #93'
+  name: '28|美国 CloudFlare节点 #75'
   network: ws
   port: '80'
   server: 104.21.224.23
@@ -5322,7 +5364,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #94'
+  name: '28|美国 CloudFlare节点 #76'
   network: ws
   port: 80
   server: 104.21.239.76
@@ -5362,7 +5404,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #95'
+  name: '28|美国 CloudFlare节点 #77'
   network: ws
   port: 80
   server: 104.21.228.42
@@ -5376,7 +5418,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #96'
+  name: '28|美国 CloudFlare节点 #78'
   network: ws
   port: '80'
   server: 104.21.234.74
@@ -5402,7 +5444,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #97'
+  name: '28|美国 CloudFlare节点 #79'
   network: ws
   port: '80'
   server: 104.21.230.50
@@ -5416,7 +5458,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #98'
+  name: '28|美国 CloudFlare节点 #80'
   network: ws
   port: '80'
   server: 104.21.228.40
@@ -5430,7 +5472,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #99'
+  name: '28|美国 CloudFlare节点 #81'
   network: ws
   port: '80'
   server: 104.21.228.41
@@ -5443,7 +5485,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #100'
+  name: '28|美国 CloudFlare节点 #82'
   network: ws
   port: 80
   server: 104.21.234.72
@@ -5457,7 +5499,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #101'
+  name: '28|美国 CloudFlare节点 #83'
   network: ws
   port: '80'
   server: 104.21.232.63
@@ -5470,7 +5512,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #102'
+  name: '28|美国 CloudFlare节点 #84'
   network: ws
   port: 80
   server: 104.21.221.95
@@ -5483,7 +5525,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #103'
+  name: '28|美国 CloudFlare节点 #85'
   network: ws
   port: 80
   server: 104.21.224.16
@@ -5496,7 +5538,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳@WangCai_8
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #104'
+  name: '28|美国 CloudFlare节点 #86'
   network: ws
   port: 80
   server: 104.21.224.174
@@ -5510,7 +5552,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #105'
+  name: '28|美国 CloudFlare节点 #87'
   network: ws
   port: 80
   server: 104.21.221.215
@@ -5524,7 +5566,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #106'
+  name: '28|美国 CloudFlare节点 #88'
   network: ws
   port: 80
   server: 104.21.226.14
@@ -5550,7 +5592,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #107'
+  name: '28|美国 CloudFlare节点 #89'
   network: ws
   port: 80
   server: 104.21.235.57
@@ -5563,7 +5605,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai08
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #108'
+  name: '28|美国 CloudFlare节点 #90'
   network: ws
   port: 80
   server: 104.21.224.240
@@ -5590,7 +5632,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #109'
+  name: '28|美国 CloudFlare节点 #91'
   network: ws
   port: '80'
   server: 104.21.230.51
@@ -5604,7 +5646,7 @@ proxies:
     path: '/?ed=2048&Telegram🇨🇳 '
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #110'
+  name: '28|美国 CloudFlare节点 #92'
   network: ws
   port: 80
   server: 104.21.231.59
@@ -5631,7 +5673,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #111'
+  name: '28|美国 CloudFlare节点 #93'
   network: ws
   port: 80
   server: 104.21.224.46
@@ -5645,7 +5687,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #112'
+  name: '28|美国 CloudFlare节点 #94'
   network: ws
   port: '80'
   server: 104.21.236.60
@@ -5658,7 +5700,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #113'
+  name: '28|美国 CloudFlare节点 #95'
   network: ws
   port: '80'
   server: 104.21.238.92
@@ -5671,7 +5713,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #114'
+  name: '28|美国 CloudFlare节点 #96'
   network: ws
   port: '80'
   server: 104.21.239.77
@@ -5684,7 +5726,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #115'
+  name: '28|美国 CloudFlare节点 #97'
   network: ws
   port: 8080
   server: 172.67.143.192
@@ -5698,7 +5740,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #116'
+  name: '28|美国 CloudFlare节点 #98'
   network: ws
   port: '80'
   server: 104.21.229.26
@@ -5724,7 +5766,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #117'
+  name: '28|美国 CloudFlare节点 #99'
   network: ws
   port: '80'
   server: 104.21.227.15
@@ -5737,7 +5779,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳@WangCai_8
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #118'
+  name: '28|美国 CloudFlare节点 #100'
   network: ws
   port: '80'
   server: 104.21.228.20
@@ -5760,7 +5802,7 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #119'
+  name: '28|美国 CloudFlare节点 #101'
   network: ws
   port: 80
   server: 104.21.231.57
@@ -5774,7 +5816,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '28|美国 CloudFlare节点 #120'
+  name: '28|美国 CloudFlare节点 #102'
   network: ws
   port: '80'
   server: 104.21.229.47
