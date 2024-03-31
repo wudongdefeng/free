@@ -13,15 +13,11 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: '1,3,6,7,14,21,25,28,29,30|🇱🇺_LU_卢森堡 #11'
+  name: '1,3,6,7,14,21,25,28,30|🇱🇺_LU_卢森堡 #11'
   network: http
   port: 3389
   server: 78.111.102.232
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
@@ -358,7 +354,7 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
 - alterId: 0
   cipher: auto
-  name: '3,6,21,25,28,30|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
+  name: '3,6,11,21,25,28,30|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
   network: ws
   port: 8080
   server: 162.159.137.249
@@ -411,7 +407,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '3,6,11,14,21,25,28,30|🇺🇸_US_美国 #57'
+  name: '3,6,14,21,25,28,30|🇺🇸_US_美国 #57'
   network: ws
   port: 8080
   server: 162.159.130.208
@@ -596,10 +592,11 @@ proxies:
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - alterId: 0
   cipher: auto
-  name: '6,7,21,25,28|🇺🇸_US_美国 #49'
+  name: '6,7,11,21,25,28|🇺🇸_US_美国 #49'
   network: ws
   port: 8080
   server: 162.159.5.6
+  servername: ''
   tls: false
   type: vmess
   uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
@@ -648,7 +645,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '7,11,25,28|🇺🇸_US_美国 #52'
+  name: '7,25,28|🇺🇸_US_美国 #52'
   network: ws
   port: 8080
   server: yh1.dtku41.xyz
@@ -687,7 +684,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '7,11,17,21,25,28|🇺🇸_US_美国 #41'
+  name: '7,17,21,25,28|🇺🇸_US_美国 #41'
   network: ws
   port: 80
   server: 104.21.234.52
@@ -4556,10 +4553,74 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  name: '11,13,25|18|美国 CloudFlare节点 #21'
+  name: '11,21|🇺🇸 美国 CloudFlare节点 #35'
+  network: ws
+  port: '80'
+  server: 104.21.226.11
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt4.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '11|美国 CloudFlare节点 #1'
+  network: ws
+  port: 2095
+  server: 104.21.23.231
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      Host: onea.flha.ru
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 11|美国 CacheFly全球Anycast节点
+  network: tcp
+  port: '445'
+  server: 205.234.233.68
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ff982b62-2d2e-4ebe-befc-6e3d5177857c
+- alterId: 0
+  cipher: auto
+  name: '11,13,16,21,25,28|github.com/freefq - 美国CloudFla... #4'
+  network: ws
+  port: 8080
+  server: www.darkroom.lol
+  tls: false
+  type: vmess
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-opts:
+    headers:
+      Host: www.darkroom.lol
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '11,13,16,25,28|github.com/freefq - 印度  2 #1'
+  network: ws
+  port: 443
+  server: 202.78.162.5
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea
+  ws-opts:
+    headers:
+      Host: irsoft.sytes.net
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: '11|美国 CloudFlare节点 #3'
   network: ws
   port: '8080'
-  server: 172.67.170.25
+  server: 172.67.66.46
   servername: ''
   tls: false
   type: vmess
@@ -4570,92 +4631,31 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 11,25|6|-https://t.me/MrXbin-135
-  network: tcp
-  port: 36579
-  server: 38.59.245.7
-  tls: false
-  type: vmess
-  uuid: 98094cac-bd96-4167-93da-cf6d98e57cbe
-- alterId: 0
-  cipher: auto
-  name: '11,21|🇺🇸 美国 CloudFlare节点 #67'
+  name: '11,21|🇺🇸 美国 CloudFlare节点 #46'
   network: ws
   port: '80'
-  server: 104.21.231.38
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11,21|🇺🇸 美国 CloudFlare节点 #25'
-  network: ws
-  port: '80'
-  server: 104.21.224.1
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-- alterId: 0
-  cipher: auto
-  country: 🇩🇪DE
-  h2-opts: {}
-  http-opts: {}
-  name: 11,25,29|DE_speednode_0035
-  network: ws
-  port: 8080
-  server: 168.119.130.204
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 1811a85b-2e01-4f89-f841-a1c0afc95732
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #4'
-  network: ws
-  port: '80'
-  server: 104.21.229.49
-  servername: ''
+  server: 104.21.231.35
   tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
       Host: a.prapt4.ir
-    path: /?ed=2048&Telegram🇨🇳@WangCai08
+    path: /?ed=2048&Telegram🇨🇳 @WangCai08
 - alterId: 0
   cipher: auto
-  name: 11,21|🇰🇷 韩国 蘑菇主机BGP数据中心
-  network: tcp
-  port: '10001'
-  server: 103.214.68.57
-  tls: true
-  type: vmess
-  uuid: ebca5f68-bf59-4081-e658-f158839c2f5c
-- alterId: 0
-  cipher: auto
-  name: '11,13,21,25|18|美国 CloudFlare节点 #19'
+  name: '11,13,16,21,25,28|github.com/freefq - 广东省移动 7 #1'
   network: ws
-  port: 80
-  server: 104.21.224.202
+  port: '20401'
+  server: data-us-v1.shwjfkw.cn
   servername: ''
   tls: false
   type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
   ws-opts:
     headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
+      Host: data-us-v1.shwjfkw.cn
+    path: /debian
 - alterId: 0
   cipher: auto
   name: '11,13,25|18|美国 CloudFlare节点 #5'
@@ -4672,150 +4672,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '11,21|🇺🇸 美国 CloudFlare节点 #54'
-  network: ws
-  port: '80'
-  server: 104.21.224.201
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11,21|🇺🇸 美国 CloudFlare节点 #43'
-  network: ws
-  port: '80'
-  server: 104.21.221.169
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 11,25,26,27|美国2|@ripaojiedian
-  network: ws
-  port: '2082'
-  server: cfcdn1.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: d4a530d5-9755-4ff9-a9ed-5a058cf0038b
-  ws-opts:
-    headers:
-      Host: us4Bb5oSgJA.fzbqfrse.xyz
-    path: /video/CuTy87zAzV/
-- alterId: 0
-  cipher: auto
-  name: '11,13,21,25|18|美国 CloudFlare节点 #20'
-  network: ws
-  port: 80
-  server: 104.21.220.34
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '11,13,16,21,25,28|github.com/freefq - 美国CloudFla... #7'
-  network: ws
-  port: 8880
-  server: 104.21.82.183
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
-  ws-opts:
-    headers:
-      Host: server26.beheshtbaneh.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 11,25|6|-https://t.me/MrXbin-100
+  name: 11,25|6|-https://t.me/MrXbin-127
   network: tcp
-  port: 11662
-  server: 149.28.64.6
+  port: 35699
+  server: 50.114.56.73
   tls: false
   type: vmess
-  uuid: 41d32579-a8b4-4bc7-cd5f-aac5e75513da
-- alterId: 0
-  cipher: auto
-  name: 11,25|19|🇺🇸|US|美国|@wxgqlfx|201
-  network: ws
-  port: '2052'
-  server: lol.ps
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: mysan2.jaquay22.workers.dev
-    path: /afrhms16v.bestxray.buzz/linkws
-- alterId: 0
-  cipher: auto
-  name: 11,25|6|-https://t.me/MrXbin-125
-  network: ws
-  port: 16028
-  server: 38.46.29.88
-  tls: false
-  type: vmess
-  uuid: a6057371-3cf3-43c1-c4b2-421bae0cb256
-  ws-opts:
-    path: /a6057371
-- alterId: 0
-  cipher: auto
-  name: '11,21|🇺🇸 美国 CloudFlare节点 #30'
-  network: ws
-  port: '80'
-  server: 104.21.221.185
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 11,25,29|RU_speednode_0087
-  network: ws
-  port: 80
-  server: 45.144.2.113
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 88bd03e6-5ada-42da-9e77-448cd8c60e13
-  ws-opts:
-    headers:
-      Host: 45.144.2.113
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 11,21|🇨🇳 中国 阿里云
-  network: ws
-  port: '2082'
-  server: 8.222.174.108
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: s1c.v2.v001sss.xyz
-    path: /
+  uuid: dc606111-1749-4103-a5c3-2c5999fb7c3f
 - alterId: 0
   cipher: auto
   name: '11,21|🇺🇸 美国 CloudFlare节点 #61'
@@ -4831,52 +4694,10 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai08
 - alterId: 0
   cipher: auto
-  name: '11,21|🇺🇸 美国 CloudFlare节点 #29'
-  network: ws
-  port: '80'
-  server: 104.21.233.47
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 11,13,25,29|US_speednode_0097
+  name: '11,13,25,28|美国 CloudFlare节点 #61'
   network: ws
   port: 80
-  server: ipv4.ip.sb
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7c525a1d-d8fd-331b-b53f-69f06252ed10
-  ws-opts:
-    headers:
-      Host: tk-000.xiaoxiaobujidao.xyz
-    path: /xiaodao?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '11,13,21,25|18|美国 CloudFlare节点 #16'
-  network: ws
-  port: '80'
-  server: 104.21.221.252
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #19'
-  network: ws
-  port: '80'
-  server: 104.21.224.233
+  server: 104.21.230.31
   servername: ''
   tls: false
   type: vmess
@@ -4884,45 +4705,90 @@ proxies:
   ws-opts:
     headers:
       Host: a.prapt1.ir
-    path: /
+    path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 11,25|6|-https://t.me/MrXbin-134
-  network: tcp
-  port: 24573
-  server: 149.28.73.81
+  name: '11,21|🇺🇸 美国 CloudFlare节点 #59'
+  network: ws
+  port: '80'
+  server: 104.21.224.249
   tls: false
   type: vmess
-  uuid: cce18651-02b1-45aa-b01d-8ee4e3fd49f3
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '11|美国 CloudFlare节点 #21'
+  name: '11,21|🇺🇸 美国 CloudFlare节点 #60'
   network: ws
   port: '8080'
-  server: cf.openxai.link
+  server: 173.245.58.100
+  tls: false
+  type: vmess
+  uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
+  ws-opts:
+    headers:
+      Host: technological-mel-fill-decide.trycloudflare.com
+    path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
+- alterId: 0
+  cipher: auto
+  name: 11,25|19|🔒 VM-TCP-NA 🇺🇸 US-149.28.23...
+  network: tcp
+  port: '44464'
+  server: 149.28.236.6
   servername: ''
   tls: false
   type: vmess
-  uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce
+  uuid: 5242158a-61ed-4282-9de8-743850f1a77f
+- alterId: 0
+  cipher: auto
+  name: '11,21|🇺🇸 美国 CloudFlare节点 #54'
+  network: ws
+  port: '80'
+  server: 104.21.224.201
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
-      Host: eu3.openxai.link
+      Host: a.prapt1.ir
     path: /
 - alterId: 0
   cipher: auto
-  name: 11|美国 theplanet
-  network: tcp
-  port: 39027
-  server: 174.136.205.46
+  name: '11|美国 CloudFlare节点 #13'
+  network: ws
+  port: '80'
+  server: 104.21.227.36
+  servername: ''
   tls: false
   type: vmess
-  uuid: 26419143-8a06-43ab-d58c-bea7b7da8203
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '11,21,25|19,29|🇺🇸_US_美国->🇬🇧_GB_英国 #2'
+  network: ws
+  port: 8880
+  server: cdn.vds-server.ir
+  tls: false
+  type: vmess
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+  ws-opts:
+    headers:
+      Host: cdn.vds-server.ir
+    path: /
 - alterId: 0
   cipher: auto
   country: 🏁 ZZ
   h2-opts: {}
   http-opts: {}
-  name: 11,29|LU_speednode_0080
+  name: 11,29|LU_speednode_0060
   network: ws
   port: 8080
   server: 87.120.204.64
@@ -4932,6 +4798,133 @@ proxies:
   type: vmess
   uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
   ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '11,21|🇺🇸 美国 CloudFlare节点 #67'
+  network: ws
+  port: '80'
+  server: 104.21.231.38
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 11,25|6|-https://t.me/MrXbin-124
+  network: ws
+  port: 54321
+  server: 38.46.29.88
+  tls: false
+  type: vmess
+  uuid: 5bc2dc32-0320-45dd-beff-6929ad1a0915
+  ws-opts:
+    path: /5bc2dc32
+- alterId: 0
+  cipher: auto
+  name: '11,21|🇺🇸 美国 CloudFlare节点 #49'
+  network: ws
+  port: '80'
+  server: 104.21.220.97
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 11|美国 Fastly全球Anycast节点
+  network: ws
+  port: '80'
+  server: 151.101.67.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 66ccb11f-75a7-4282-8a60-31fed447401d
+  ws-opts:
+    headers:
+      Host: nmsl.kp
+    path: /aries?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 11,25|6|-https://t.me/MrXbin-139
+  network: tcp
+  port: 59109
+  server: 216.246.21.20
+  tls: false
+  type: vmess
+  uuid: 3365b882-6791-489d-bbb7-1e0cc3579755
+- alterId: 0
+  cipher: auto
+  name: '11,21|🇺🇸 美国 CloudFlare节点 #34'
+  network: ws
+  port: '80'
+  server: 104.21.220.104
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: '11|美国 CloudFlare节点 #18'
+  network: ws
+  port: '443'
+  server: 104.24.0.11
+  servername: vip2323.cfd
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: vip2323.cfd
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '11,13,21,25|18|美国 CloudFlare节点 #19'
+  network: ws
+  port: 80
+  server: 104.21.224.202
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: '11,21|🇺🇸 美国 CloudFlare节点 #40'
+  network: ws
+  port: '80'
+  server: 104.21.224.80
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '11,21|🇺🇸 美国 CloudFlare节点 #33'
+  network: ws
+  port: '80'
+  server: 104.21.224.104
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
     path: /
 - alterId: 0
   cipher: auto
@@ -5220,20 +5213,6 @@ proxies:
     path: /ow
 - alterId: 0
   cipher: auto
-  name: '13,16,21,25,28|github.com/freefq - 广东省移动 7 #1'
-  network: ws
-  port: '20401'
-  server: data-us-v1.shwjfkw.cn
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-us-v1.shwjfkw.cn
-    path: /debian
-- alterId: 0
-  cipher: auto
   name: '13,25|18|美国 CloudFlare节点 #1'
   network: ws
   port: 80
@@ -5334,33 +5313,6 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '13,16,21,25,28|github.com/freefq - 美国CloudFla... #4'
-  network: ws
-  port: 8080
-  server: www.darkroom.lol
-  tls: false
-  type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    headers:
-      Host: www.darkroom.lol
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '13,25,28|美国 CloudFlare节点 #61'
-  network: ws
-  port: 80
-  server: 104.21.230.31
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
   name: '13,25|18|美国 CloudFlare节点 #11'
   network: ws
   port: '443'
@@ -5415,6 +5367,20 @@ proxies:
   uuid: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
 - alterId: 0
   cipher: auto
+  name: 13,25|18,19|🇺🇸|US|美国|@wxgqlfx|181
+  network: ws
+  port: '80'
+  server: ipv4.ip.sb
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7c525a1d-d8fd-331b-b53f-69f06252ed10
+  ws-opts:
+    headers:
+      Host: tk-000.xiaoxiaobujidao.xyz
+    path: /xiaodao?ed=2048
+- alterId: 0
+  cipher: auto
   name: '13,21,25|18|美国 CloudFlare节点 #15'
   network: ws
   port: '80'
@@ -5426,6 +5392,19 @@ proxies:
     headers:
       Host: a.prapt1.ir
     path: /
+- alterId: 0
+  cipher: auto
+  name: '13,21,25|18|美国 CloudFlare节点 #16'
+  network: ws
+  port: '80'
+  server: 104.21.221.252
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: '13,21,25|18|美国 CloudFlare节点 #17'
@@ -5470,18 +5449,46 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '13,16,25,28|github.com/freefq - 印度  2 #1'
+  name: '13,21,25|18|美国 CloudFlare节点 #20'
   network: ws
-  port: 443
-  server: 202.78.162.5
+  port: 80
+  server: 104.21.220.34
   servername: ''
-  tls: true
+  tls: false
   type: vmess
-  uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
-      Host: irsoft.sytes.net
-    path: /@forwardv2ray
+      Host: a.prapt1.ir
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '13,25|18|美国 CloudFlare节点 #21'
+  network: ws
+  port: '8080'
+  server: 172.67.170.25
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c
+  ws-opts:
+    headers:
+      Host: eu2.openxai.link
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '13,16,21,25,28|github.com/freefq - 美国CloudFla... #7'
+  network: ws
+  port: 8880
+  server: 104.21.82.183
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
+  ws-opts:
+    headers:
+      Host: server26.beheshtbaneh.com
+    path: /
 - alterId: 0
   cipher: auto
   name: '13,16,25,28|github.com/freefq - 印度  10 #1'
@@ -6955,7 +6962,7 @@ proxies:
   server: 13.231.154.132
   type: ss
 - cipher: aes-256-cfb
-  name: 18,29|KR_speednode_0070
+  name: '18|TG频道:@hkaa0|国 #1'
   password: amazonskr05
   port: 443
   server: 54.180.9.46
@@ -7394,30 +7401,17 @@ proxies:
     path: /h6jr23x9h3lqiitg
 - alterId: 0
   cipher: auto
-  name: '21|🇺🇸 美国 CloudFlare节点 #60'
+  name: '21|🇺🇸 美国 CloudFlare节点 #30'
   network: ws
-  port: '8080'
-  server: 173.245.58.100
+  port: '80'
+  server: 104.21.221.185
   tls: false
   type: vmess
-  uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
-      Host: technological-mel-fill-decide.trycloudflare.com
-    path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
-- alterId: 0
-  cipher: auto
-  name: '21,25|19,29|🇺🇸_US_美国->🇬🇧_GB_英国 #2'
-  network: ws
-  port: 8880
-  server: cdn.vds-server.ir
-  tls: false
-  type: vmess
-  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
-  ws-opts:
-    headers:
-      Host: cdn.vds-server.ir
-    path: /
+      Host: a.prapt1.ir
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: '21|🇺🇸 美国 CloudFlare节点 #5'
@@ -7430,19 +7424,6 @@ proxies:
   ws-opts:
     headers:
       Host: a.prapt1.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '21|🇺🇸 美国 CloudFlare节点 #35'
-  network: ws
-  port: '80'
-  server: 104.21.226.11
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
     path: /
 - alterId: 0
   cipher: auto
@@ -7485,6 +7466,15 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
+  name: 21|🇰🇷 韩国 蘑菇主机BGP数据中心
+  network: tcp
+  port: '10001'
+  server: 103.214.68.57
+  tls: true
+  type: vmess
+  uuid: ebca5f68-bf59-4081-e658-f158839c2f5c
+- alterId: 0
+  cipher: auto
   name: '21|🇺🇸 美国 CloudFlare节点 #12'
   network: ws
   port: '2082'
@@ -7521,19 +7511,6 @@ proxies:
     path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
 - alterId: 0
   cipher: auto
-  name: '21|🇺🇸 美国 CloudFlare节点 #46'
-  network: ws
-  port: '80'
-  server: 104.21.231.35
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /?ed=2048&Telegram🇨🇳 @WangCai08
-- alterId: 0
-  cipher: auto
   name: '21|🇺🇸 美国 CloudFlare节点 #69'
   network: ws
   port: '80'
@@ -7560,17 +7537,17 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '21|🇺🇸 美国 CloudFlare节点 #34'
+  name: '21|🇺🇸 美国 CloudFlare节点 #43'
   network: ws
   port: '80'
-  server: 104.21.220.104
+  server: 104.21.221.169
   tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
       Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: '21|🇺🇸 美国 CloudFlare节点 #24'
@@ -7584,6 +7561,19 @@ proxies:
     headers:
       Host: a.prapt1.ir
     path: /
+- alterId: 0
+  cipher: auto
+  name: '21|🇺🇸 美国 CloudFlare节点 #25'
+  network: ws
+  port: '80'
+  server: 104.21.224.1
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳 @WangCai_8
 - alterId: 0
   cipher: auto
   name: '21|🇺🇸 美国 CloudFlare节点 #26'
@@ -7625,6 +7615,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: '21|🇺🇸 美国 CloudFlare节点 #29'
+  network: ws
+  port: '80'
+  server: 104.21.233.47
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt4.ir
+    path: /
+- alterId: 0
+  cipher: auto
   name: 21,25|6|-https://t.me/MrXbin-108
   network: ws
   port: 8080
@@ -7634,19 +7637,6 @@ proxies:
   type: vmess
   uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
   ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '21|🇺🇸 美国 CloudFlare节点 #33'
-  network: ws
-  port: '80'
-  server: 104.21.224.104
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
     path: /
 - alterId: 0
   cipher: auto
@@ -7663,16 +7653,16 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '21|🇺🇸 美国 CloudFlare节点 #40'
+  name: 21|🇨🇳 中国 阿里云
   network: ws
-  port: '80'
-  server: 104.21.224.80
+  port: '2082'
+  server: 8.222.174.108
   tls: false
   type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
-      Host: a.prapt1.ir
+      Host: s1c.v2.v001sss.xyz
     path: /
 - alterId: 0
   cipher: auto
@@ -7715,19 +7705,6 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai_8
 - alterId: 0
   cipher: auto
-  name: '21|🇺🇸 美国 CloudFlare节点 #49'
-  network: ws
-  port: '80'
-  server: 104.21.220.97
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
   name: '21|🇺🇸 美国 CloudFlare节点 #50'
   network: ws
   port: '80'
@@ -7765,19 +7742,6 @@ proxies:
     headers:
       Host: a.prapt4.ir
     path: /
-- alterId: 0
-  cipher: auto
-  name: '21|🇺🇸 美国 CloudFlare节点 #59'
-  network: ws
-  port: '80'
-  server: 104.21.224.249
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
   name: '21|🇺🇸 美国 CloudFlare节点 #63'
@@ -8207,6 +8171,15 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 25|6|-https://t.me/MrXbin-100
+  network: tcp
+  port: 11662
+  server: 149.28.64.6
+  tls: false
+  type: vmess
+  uuid: 41d32579-a8b4-4bc7-cd5f-aac5e75513da
+- alterId: 0
+  cipher: auto
   name: 25|6|-https://t.me/MrXbin-102
   network: ws
   port: 45979
@@ -8238,7 +8211,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 25,29|DE_speednode_0036
+  name: 25,29|DE_speednode_0031
   network: ws
   port: 80
   server: 92.223.124.35
@@ -8266,20 +8239,23 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: 25|6|-https://t.me/MrXbin-116
+  name: 25,29|DE_speednode_0030
   network: ws
   port: 80
   server: 92.223.124.22
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: a9c33d66-e66f-4a53-9ef0-3f6c52c8d091
   ws-opts:
+    headers:
+      host: tasnim.servecounterstrike.com
     path: /@forwardv2ray
 - 22|美国3|@ripaojiedian: None
   alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 25,26,27,29|US_speednode_0096
+  name: 25,26,27,29|US_speednode_0089
   network: ws
   port: 17542
   server: zzz.nikili1236vip.top
@@ -8325,15 +8301,15 @@ proxies:
   uuid: f96e9397-08be-4227-e26a-f3a55a3976de
 - alterId: 0
   cipher: auto
-  name: 25|6|-https://t.me/MrXbin-124
+  name: 25|6|-https://t.me/MrXbin-125
   network: ws
-  port: 54321
+  port: 16028
   server: 38.46.29.88
   tls: false
   type: vmess
-  uuid: 5bc2dc32-0320-45dd-beff-6929ad1a0915
+  uuid: a6057371-3cf3-43c1-c4b2-421bae0cb256
   ws-opts:
-    path: /5bc2dc32
+    path: /a6057371
 - alterId: 0
   cipher: auto
   name: 25|6|-https://t.me/MrXbin-126
@@ -8343,15 +8319,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 9a6b74e5-ffdd-4b04-fa82-3a9b30f35f25
-- alterId: 0
-  cipher: auto
-  name: 25|6|-https://t.me/MrXbin-127
-  network: tcp
-  port: 35699
-  server: 50.114.56.73
-  tls: false
-  type: vmess
-  uuid: dc606111-1749-4103-a5c3-2c5999fb7c3f
 - alterId: 0
   cipher: auto
   name: 25|6|-https://t.me/MrXbin-128
@@ -8374,6 +8341,20 @@ proxies:
     path: /hlk
 - alterId: 0
   cipher: auto
+  name: 25,29|RU_speednode_0066
+  network: ws
+  port: 80
+  server: 45.144.2.113
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 88bd03e6-5ada-42da-9e77-448cd8c60e13
+  ws-opts:
+    headers:
+      Host: 45.144.2.113
+    path: /
+- alterId: 0
+  cipher: auto
   name: 25|6|-https://t.me/MrXbin-131
   network: ws
   port: 53870
@@ -8394,6 +8375,24 @@ proxies:
   uuid: 2d70de31-5593-4584-aa56-0b044747f0ab
 - alterId: 0
   cipher: auto
+  name: 25|6|-https://t.me/MrXbin-134
+  network: tcp
+  port: 24573
+  server: 149.28.73.81
+  tls: false
+  type: vmess
+  uuid: cce18651-02b1-45aa-b01d-8ee4e3fd49f3
+- alterId: 0
+  cipher: auto
+  name: 25|6|-https://t.me/MrXbin-135
+  network: tcp
+  port: 36579
+  server: 38.59.245.7
+  tls: false
+  type: vmess
+  uuid: 98094cac-bd96-4167-93da-cf6d98e57cbe
+- alterId: 0
+  cipher: auto
   name: 25|6|-https://t.me/MrXbin-138
   network: ws
   port: 443
@@ -8403,15 +8402,6 @@ proxies:
   uuid: 6a7cfe2b-4bc8-448b-de12-8414bc73d4a8
   ws-opts:
     path: /6a7cfe2b
-- alterId: 0
-  cipher: auto
-  name: 25|6|-https://t.me/MrXbin-139
-  network: tcp
-  port: 59109
-  server: 216.246.21.20
-  tls: false
-  type: vmess
-  uuid: 3365b882-6791-489d-bbb7-1e0cc3579755
 - alterId: 0
   cipher: auto
   name: 25|6|-https://t.me/MrXbin-140
@@ -8454,6 +8444,21 @@ proxies:
   uuid: 207da2a6-3c7d-4b6c-cb46-dcfaf5814053
   ws-opts:
     path: /207da2a6
+- alterId: 0
+  cipher: auto
+  country: 🇩🇪DE
+  h2-opts: {}
+  http-opts: {}
+  name: 25,29|DE_speednode_0028
+  network: ws
+  port: 8080
+  server: 168.119.130.204
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 1811a85b-2e01-4f89-f841-a1c0afc95732
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   name: 25|6|-https://t.me/MrXbin-196
@@ -9444,16 +9449,6 @@ proxies:
     path: /u04
 - alterId: 0
   cipher: auto
-  name: 25|19|🔒 VM-TCP-NA 🇺🇸 US-149.28.23...
-  network: tcp
-  port: '44464'
-  server: 149.28.236.6
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5242158a-61ed-4282-9de8-743850f1a77f
-- alterId: 0
-  cipher: auto
   name: 25|19|🔒 VM-TCP-NA 🇬🇧 GB-154.62.18...
   network: tcp
   port: '35816'
@@ -9731,6 +9726,20 @@ proxies:
     headers:
       Host: janett.click
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 25|19|🇺🇸|US|美国|@wxgqlfx|201
+  network: ws
+  port: '2052'
+  server: lol.ps
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: mysan2.jaquay22.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
 - alterId: 0
   cipher: auto
   name: 25|19|🔒 VM-WS-TLS 🇺🇸 US-172.67.13...
@@ -10045,6 +10054,23 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 25,26,27|美国2|@ripaojiedian
+  network: ws
+  port: '2082'
+  server: cfcdn1.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: d4a530d5-9755-4ff9-a9ed-5a058cf0038b
+  ws-opts:
+    headers:
+      Host: us4Bb5oSgJA.fzbqfrse.xyz
+    path: /video/CuTy87zAzV/
 - alterId: 64
   cipher: auto
   name: 25,27|香港|@ripaojiedian
@@ -10105,7 +10131,7 @@ proxies:
     path: /video/CuTy87zAzV/
 - alterId: 0
   cipher: auto
-  name: 25,29|US_speednode_0123
+  name: 25,29|US_speednode_0095
   network: ws
   port: 17542
   server: 148.135.94.70
@@ -10149,7 +10175,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 26,29|HK_speednode_0056
+  name: 26|🇭🇰 香港KT2|@ripaojiedian
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -10163,16 +10189,18 @@ proxies:
   server: 8.210.33.152
   tfo: false
   type: ss
-- alterId: 0
+- allowInsecure: 1
+  alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  country: 🇸🇬SG
-  name: 26,29|US_speednode_0122
-  password: TwKQRkRNujVm
+  country: 🇰🇷KR
+  delay: 1532
+  name: 26,29|US_speednode_0096
+  password: 27876_t7d7f4e3f
   port: 59109
   server: 216.246.21.20
   skip-cert-verify: true
-  sni: node.ogngwfr.xyz
+  sni: nc12.twtc.dynu.net
   tfo: false
   tls: false
   type: vmess
@@ -10204,7 +10232,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 26,29|KR_speednode_0072
+  name: 26,29|KR_speednode_0053
   password: qwerREWQ@@
   port: 51472
   server: p222.panda001.net
@@ -10237,13 +10265,12 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 26,29|JP_speednode_0061
+  name: 26|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 57.181.42.0
   tfo: false
   type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇬🇧 英国|@ripaojiedian
@@ -11807,10 +11834,16 @@ proxies:
     headers:
       Host: tw.appleid.bf
     path: /ws?ed=2048
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0003
+  password: e41b8b00-d940-4006-80ff-bc7865b3b5e0
+  port: 10061
+  server: v3-js-hk.as9929.uk
+  type: ss
 - alterId: 0
   cipher: auto
   delay: 991
-  name: 29|CN_speednode_0006
+  name: 29|CN_speednode_0004
   network: tcp
   port: 26841
   server: gzyd.pmxu.link
@@ -11818,16 +11851,26 @@ proxies:
   tls: false
   type: vmess
   uuid: 32cd139b-237d-3574-bc52-64428e3e238d
-- alterId: 0
-  cipher: auto
+- cipher: aes-128-gcm
+  delay: 738
+  name: 29|CN_speednode_0005
+  password: e41b8b00-d940-4006-80ff-bc7865b3b5e0
+  port: 22466
+  server: v3-js-sg.as9929.uk
+  type: ss
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0006
+  password: e41b8b00-d940-4006-80ff-bc7865b3b5e0
+  port: 34936
+  server: v3-js-hk.as9929.uk
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
   name: 29|CN_speednode_0007
-  network: tcp
-  port: 20006
-  server: kr01.aikunapp.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: eb6c5021-a13a-4464-ba98-db52f47afaf0
+  password: e41b8b00-d940-4006-80ff-bc7865b3b5e0
+  port: 53495
+  server: v3-js-jp.as9929.uk
+  type: ss
 - alterId: 0
   cipher: auto
   name: 29|CN_speednode_0008
@@ -11840,24 +11883,24 @@ proxies:
   uuid: e9630109-04ef-394b-8f7f-1baee9f07532
 - alterId: 0
   cipher: auto
-  name: 29|CN_speednode_0010
+  name: 29|CN_speednode_0009
   network: tcp
-  port: 20182
-  server: I40ZUL.gov.goldliond.top
+  port: 50180
+  server: xnU92R.gov.goldliond.top
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
 - alterId: 0
   cipher: auto
-  name: 29|CN_speednode_0011
+  name: 29|CN_speednode_0010
   network: tcp
-  port: 20182
-  server: EyZzcc.gov.goldliond.top
+  port: 20006
+  server: kr01.aikunapp.com
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
+  uuid: eb6c5021-a13a-4464-ba98-db52f47afaf0
 - alterId: 0
   cipher: auto
   name: 29|CN_speednode_0012
@@ -11868,38 +11911,8 @@ proxies:
   tls: false
   type: vmess
   uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0013
-  network: tcp
-  port: 50180
-  server: RrmsDv.gov.goldliond.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0014
-  network: tcp
-  port: 50182
-  server: ISgGLf.gov.goldliond.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0015
-  network: tcp
-  port: 20003
-  server: shdxus.aikunapp.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: eb6c5021-a13a-4464-ba98-db52f47afaf0
 - cipher: aes-256-cfb
-  name: 29|CN_speednode_0016
+  name: 29|CN_speednode_0013
   obfs: http_simple
   obfs-param: 68e7b61610.download.windowsupdate.com
   password: QHPy2u
@@ -11910,32 +11923,53 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: 29|CN_speednode_0017
+  name: 29|CN_speednode_0014
   network: tcp
-  port: 50180
-  server: xnU92R.gov.goldliond.top
+  port: 20003
+  server: shdxus.aikunapp.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: eb6c5021-a13a-4464-ba98-db52f47afaf0
+- alterId: 0
+  cipher: auto
+  name: 29|CN_speednode_0015
+  network: tcp
+  port: 20182
+  server: EyZzcc.gov.goldliond.top
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
 - cipher: aes-256-gcm
-  name: 29|CN_speednode_0018
+  name: 29|CN_speednode_0016
   password: 453CFFAA-FBE4-42D5-92E0-856E3FCDFDC6
   port: 10038
   server: america.speed-mitce.top
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0019
-  password: 739f0fb8-ef76-43a6-8175-0a977188e85c
-  port: 19561
-  server: nc.t1.xiaomi-api.xyz
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0017
+  password: e41b8b00-d940-4006-80ff-bc7865b3b5e0
+  port: 29978
+  server: v3-js-sg.as9929.uk
   type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 29|CN_speednode_0019
+  network: tcp
+  port: 52235
+  server: dgyd1.pmxu.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 20dec38e-0f37-359d-86e5-32c0ead42698
 - alterId: 0
   cipher: auto
   name: 29|CN_speednode_0020
   network: tcp
-  port: 50184
-  server: XpHSLy.gov.goldliond.top
+  port: 50181
+  server: XNGCCU.gov.goldliond.top
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -11944,47 +11978,15 @@ proxies:
   cipher: auto
   name: 29|CN_speednode_0021
   network: tcp
-  port: 52235
-  server: dgyd1.pmxu.link
+  port: 50182
+  server: ISgGLf.gov.goldliond.top
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 20dec38e-0f37-359d-86e5-32c0ead42698
-- cipher: chacha20-ietf-poly1305
+  uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
+- alterId: 0
+  cipher: auto
   name: 29|CN_speednode_0022
-  password: ad9580dd-01e4-490d-b175-49b9616b4915
-  port: 19561
-  server: nc.t2.xiaomi-api.xyz
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0023
-  network: tcp
-  port: 20187
-  server: OdLtAt.gov.goldliond.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0024
-  network: tcp
-  port: 20187
-  server: vBAqb6.gov.goldliond.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0025
-  password: e41b8b00-d940-4006-80ff-bc7865b3b5e0
-  port: 53495
-  server: v3-js-jp.as9929.uk
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0026
   network: tcp
   port: 20187
   server: MrOMzP.gov.goldliond.top
@@ -11993,14 +11995,24 @@ proxies:
   type: vmess
   uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
 - cipher: aes-128-gcm
-  name: 29|CN_speednode_0027
+  name: 29|CN_speednode_0023
   password: e41b8b00-d940-4006-80ff-bc7865b3b5e0
   port: 19387
   server: v3-js-us.as9929.uk
   type: ss
 - alterId: 0
   cipher: auto
-  name: 29|CN_speednode_0028
+  name: 29|CN_speednode_0024
+  network: tcp
+  port: 50180
+  server: RrmsDv.gov.goldliond.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
+- alterId: 0
+  cipher: auto
+  name: 29|CN_speednode_0025
   network: ws
   port: 20012
   server: ddbcb0bb-0765-dacc-887b-bf8c113b6d02.xn--37qy2m7z0cohn.xn--6qq986b3xl
@@ -12015,66 +12027,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 29|CN_speednode_0029
-  network: ws
-  port: 20014
-  server: ddbcb0bb-0765-dacc-887b-bf8c113b6d02.xn--37qy2m7z0cohn.xn--6qq986b3xl
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2c715d12-69d4-468b-8c24-e631cf5aeb95
-  ws-opts:
-    headers:
-      Host: ddbcb0bb-0765-dacc-887b-bf8c113b6d02.xn--37qy2m7z0cohn.xn--6qq986b3xl
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0030
-  network: tcp
-  port: 50181
-  server: reFVbb.gov.goldliond.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0032
-  network: tcp
-  port: 20186
-  server: qLpxTO.gov.goldliond.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0033
-  network: tcp
-  port: 20188
-  server: k0dANI.gov.goldliond.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
-- alterId: 0
-  cipher: auto
-  name: 29|DE_speednode_0037
-  network: ws
-  port: 10000
-  server: 87.106.198.110
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 878982d4-ea53-11ee-a147-efc3e4cc2443
-  ws-opts:
-    headers:
-      host: 87.106.198.110
-    path: /vpnjantit
-- alterId: 0
-  cipher: auto
-  name: 29|DE_speednode_0043
+  name: 29|DE_speednode_0029
   network: ws
   port: 8080
   server: 168.119.130.204
@@ -12088,7 +12041,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 29|FR_speednode_0044
+  name: 29|DE_speednode_0032
+  network: ws
+  port: 10000
+  server: 87.106.198.110
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 878982d4-ea53-11ee-a147-efc3e4cc2443
+  ws-opts:
+    headers:
+      host: 87.106.198.110
+    path: /vpnjantit
+- alterId: 0
+  cipher: auto
+  name: 29|FR_speednode_0036
   network: ws
   port: 80
   server: 62.210.116.202
@@ -12100,27 +12067,9 @@ proxies:
     headers:
       host: 62.210.116.202
     path: /frfrfffvmn01N
-- alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - zula.ir
-    method: GET
-    path:
-    - /OUIpxwwmtpJGIWzraW7dl5
-  name: 29|FR_speednode_0045
-  network: http
-  port: 3586
-  server: 213.32.63.176
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: acba8460-6c85-4d67-8f74-5a51da5e8393
 - cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 29|HK_speednode_0053
+  name: 29|HK_speednode_0038
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -12130,24 +12079,11 @@ proxies:
   port: 443
   server: 47.76.185.99
   type: ss
-- cipher: aes-128-gcm
-  country: 🇭🇰 HK
-  delay: 438
-  name: 29|HK_speednode_0054
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    tls: false
-  port: 443
-  server: 1.65.218.52
-  type: ss
 - Ltd. - 6: None
   cipher: aes-128-gcm
   country: 🇸🇬 SG
   delay: 559
-  name: 29|HK_speednode_0055
+  name: 29|HK_speednode_0039
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -12159,121 +12095,109 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: 🇭🇰 HK
-  name: 29|HK_speednode_0057
+  delay: 438
+  name: 29|HK_speednode_0040
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
     host: ''
     mode: websocket
-    mux: true
-    path: ''
-    skip-cert-verify: true
     tls: false
   port: 443
-  server: 47.243.196.229
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 29|HK_speednode_0058
-  network: ws
-  port: 8080
-  server: 194.99.79.178
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
-  ws-opts:
-    headers:
-      Host: 194.99.79.178
-    path: /
-- cipher: aes-256-cfb
-  name: 29|JP_speednode_0059
-  password: amazonskr05
-  port: 443
-  server: 43.206.237.42
+  server: 1.65.218.52
   type: ss
 - cipher: aes-256-cfb
   country: 🇯🇵JP
   delay: 295
-  name: 29|JP_speednode_0060
+  name: 29|JP_speednode_0041
   password: amazonskr05
   port: 443
   server: 52.195.237.101
   type: ss
 - cipher: aes-256-cfb
-  name: 29|JP_speednode_0062
+  name: 29|JP_speednode_0042
   password: amazonskr05
   port: 443
   server: 54.199.15.70
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  name: 29|JP_speednode_0043
+  password: amazonskr05
+  port: 443
+  server: 18.183.180.49
+  type: ss
+- cipher: aes-256-cfb
+  name: 29|JP_speednode_0044
+  password: amazonskr05
+  port: 443
+  server: 13.230.190.100
+  type: ss
+- cipher: aes-256-cfb
+  name: 29|JP_speednode_0045
+  password: amazonskr05
+  port: 443
+  server: 18.183.228.15
+  type: ss
+- cipher: aes-256-cfb
+  name: 29|JP_speednode_0047
+  password: amazonskr05
+  port: 443
+  server: 52.195.225.184
+  type: ss
+- cipher: aes-256-cfb
+  name: 29|JP_speednode_0049
+  password: amazonskr05
+  port: 443
+  server: 52.195.10.194
+  type: ss
 - Inc. - 2: None
   cipher: aes-256-cfb
-  name: 29|JP_speednode_0063
+  name: 29|JP_speednode_0050
   password: amazonskr05
   port: 443
   server: 35.77.89.124
   type: ss
 - Inc. - 1: None
   cipher: aes-256-cfb
-  name: 29|JP_speednode_0064
+  name: 29|JP_speednode_0051
   password: amazonskr05
   port: 443
   server: 54.248.173.222
   type: ss
 - cipher: aes-256-cfb
-  name: 29|JP_speednode_0065
+  name: 29|KR_speednode_0054
   password: amazonskr05
   port: 443
-  server: 52.195.10.194
+  server: 13.125.31.113
   type: ss
 - cipher: aes-256-cfb
-  name: 29|KR_speednode_0071
+  name: 29|KR_speednode_0055
   password: amazonskr05
   port: 443
-  server: 13.125.19.50
+  server: 3.36.96.75
   type: ss
 - cipher: aes-256-cfb
-  name: 29|KR_speednode_0073
+  name: 29|KR_speednode_0056
   password: amazonskr05
   port: 443
-  server: 43.202.41.139
+  server: 43.201.110.81
   type: ss
 - cipher: aes-256-cfb
-  name: 29|KR_speednode_0074
-  password: amazonskr05
-  port: 443
-  server: 54.180.156.133
-  type: ss
-- cipher: aes-256-cfb
-  name: 29|KR_speednode_0075
-  password: amazonskr05
-  port: 443
-  server: 13.125.25.193
-  type: ss
-- Inc. - 2: None
-  cipher: aes-256-cfb
-  name: 29|KR_speednode_0076
-  password: amazonskr05
-  port: 443
-  server: 43.201.56.52
-  type: ss
-- cipher: aes-256-cfb
-  name: 29|KR_speednode_0077
+  name: 29|KR_speednode_0057
   password: amazonskr05
   port: 443
   server: 43.203.201.192
   type: ss
-- cipher: aes-256-gcm
-  name: 29|KZ_speednode_0078
-  password: q06CbkhVXx7XVv0D
-  port: 17038
-  server: 95.164.19.233
+- cipher: aes-256-cfb
+  name: 29|KR_speednode_0058
+  password: amazonskr05
+  port: 443
+  server: 54.180.156.133
   type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 29|LU_speednode_0081
+  name: 29|LU_speednode_0061
   network: ws
   port: 8080
   server: 87.120.204.200
@@ -12295,7 +12219,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 29|NL_speednode_0083
+  name: 29|NL_speednode_0063
   network: http
   port: 49585
   server: 159.223.211.229
@@ -12307,7 +12231,7 @@ proxies:
   uuid: 6d0f5e10-3d0e-4a0b-9566-202c66ced84f
 - alterId: 0
   cipher: auto
-  name: 29|PH_speednode_0084
+  name: 29|PH_speednode_0064
   network: ws
   port: 54321
   server: 38.46.29.88
@@ -12321,7 +12245,7 @@ proxies:
     path: /5bc2dc32
 - alterId: 0
   cipher: auto
-  name: 29|PH_speednode_0085
+  name: 29|PH_speednode_0065
   network: ws
   port: 16028
   server: 38.46.29.88
@@ -12333,7 +12257,7 @@ proxies:
     headers:
       Host: 38.46.29.88
     path: /a6057371
-- name: 29|SE_speednode_0088
+- name: 29|SE_speednode_0067
   network: ws
   password: 0b1371aa-649d-41dc-9126-338c87936500
   port: 443
@@ -12347,53 +12271,61 @@ proxies:
       Host: sourceforge.net
     path: /websocket
 - cipher: aes-256-cfb
-  country: 🏁 ZZ
-  name: 29|SG_speednode_0089
-  password: amazonskr05
-  port: 443
-  server: 13.250.63.15
-  type: ss
-- cipher: aes-256-cfb
-  name: 29|SG_speednode_0090
+  name: 29|SG_speednode_0068
   password: amazonskr05
   port: 443
   server: 3.0.50.219
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0069
+  password: amazonskr05
+  port: 443
+  server: 18.141.207.80
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 29|SG_speednode_0092
+  name: 29|SG_speednode_0072
   password: CXNqv+R0VBtFVUpX+1UialvRyQJhYBf20vI9Fu54x4E=
   port: 443
   server: 159.223.52.169
   type: ss
-- cipher: aes-256-cfb
-  name: 29|SG_speednode_0095
-  password: amazonskr05
-  port: 443
-  server: 13.229.184.181
-  type: ss
-- Inc. - 3: None
+- Inc. - 2: None
   cipher: aes-256-cfb
-  name: 29|US_speednode_0098
+  country: 🇺🇸US
+  delay: 691
+  name: 29|US_speednode_0073
   password: amazonskr05
   port: 443
-  server: 18.237.116.67
+  server: 35.89.8.123
   type: ss
 - cipher: aes-128-gcm
-  name: 29|US_speednode_0099
+  name: 29|US_speednode_0074
   password: Yc2CtrIz8L
   port: 30129
   server: 91.186.210.150
   type: ss
+- cipher: aes-128-gcm
+  name: 29|US_speednode_0075
+  password: Yc2CtrIz8L
+  port: 30129
+  server: 154.9.205.229
+  type: ss
 - cipher: aes-256-cfb
-  name: 29|US_speednode_0100
+  name: 29|US_speednode_0076
   password: amazonskr05
   port: 443
   server: 34.216.106.166
   type: ss
+- Inc. - 3: None
+  cipher: aes-256-cfb
+  name: 29|US_speednode_0080
+  password: amazonskr05
+  port: 443
+  server: 18.237.116.67
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 29|US_speednode_0101
+  name: 29|US_speednode_0082
   network: ws
   port: 60222
   server: 91.186.210.150
@@ -12405,27 +12337,50 @@ proxies:
     headers:
       Host: 91.186.210.150
     path: /vmess
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 2248
+  h2-opts: {}
+  http-opts: {}
+  name: 29|US_speednode_0086
+  network: ws
+  port: 80
+  server: 104.20.28.215
+  servername: newhk1.xn--mes53ddysu0o3gl.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+  ws-opts:
+    headers:
+      HOST: newhk1.xn--mes53ddysu0o3gl.top
+    path: /xn--mes53ddysu0o3gl
 - cipher: aes-128-gcm
-  name: 29|US_speednode_0103
+  name: 29|US_speednode_0088
   password: Yc2CtrIz8L
-  port: 30129
-  server: 154.9.205.229
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|US_speednode_0106
-  password: 3fbeb668f48414f6
-  port: 57456
-  server: 104.167.197.23
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|US_speednode_0110
-  password: 3fbeb668f48414f6
-  port: 57456
-  server: us.sptnk.space
+  port: 16899
+  server: 45.154.3.165
   type: ss
 - alterId: 0
   cipher: auto
-  name: 29|US_speednode_0120
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 29|US_speednode_0092
+  network: ws
+  port: 80
+  server: 104.20.30.205
+  servername: newsg1.xn--mes53ddysu0o3gl.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+  ws-opts:
+    headers:
+      HOST: newsg1.xn--mes53ddysu0o3gl.top
+    path: /xn--mes53ddysu0o3gl
+- alterId: 0
+  cipher: auto
+  name: 29|US_speednode_0094
   network: ws
   port: 443
   server: 34.85.198.89
@@ -12439,7 +12394,50 @@ proxies:
     path: /hlk
 - alterId: 0
   cipher: auto
-  name: 29|US_speednode_0121
+  name: 29|US_speednode_0097
+  network: ws
+  port: 443
+  server: 45.154.3.165
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 6f2d966b-095a-446b-d36e-7a49770fb7e4
+  ws-opts:
+    headers:
+      Host: 45.154.3.165
+    path: /ray
+- cipher: chacha20-ietf-poly1305
+  name: 29|US_speednode_0098
+  password: 3fbeb668f48414f6
+  port: 57456
+  server: 104.167.197.23
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 29|US_speednode_0099
+  network: ws
+  port: 8080
+  server: 91.199.82.78
+  servername: usma-12.trollfunny.net
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
+  ws-opts:
+    headers:
+      Host: None
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 29|US_speednode_0100
+  password: 3fbeb668f48414f6
+  port: 57456
+  server: us.sptnk.space
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 29|US_speednode_0101
   network: ws
   port: 1200
   server: 192.210.167.236
@@ -12451,15 +12449,9 @@ proxies:
     headers:
       Host: 192.210.167.236
     path: /207da2a6
-- cipher: aes-128-gcm
-  name: 29|US_speednode_0124
-  password: Yc2CtrIz8L
-  port: 16899
-  server: 45.154.3.165
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 29|US_speednode_0125
+  name: 29|US_speednode_0102
   network: ws
   port: 33164
   server: 205.234.200.104
@@ -12473,7 +12465,7 @@ proxies:
     path: /sd23dss
 - alterId: 0
   cipher: auto
-  name: 29|US_speednode_0126
+  name: 29|US_speednode_0103
   network: ws
   port: 443
   server: 104.164.223.55
@@ -12485,17 +12477,3 @@ proxies:
     headers:
       Host: 104.164.223.55
     path: /6a7cfe2b
-- alterId: 0
-  cipher: auto
-  name: 29|US_speednode_0127
-  network: ws
-  port: 443
-  server: 45.154.3.165
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 6f2d966b-095a-446b-d36e-7a49770fb7e4
-  ws-opts:
-    headers:
-      Host: 45.154.3.165
-    path: /ray

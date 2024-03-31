@@ -1,20 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 11,21|🇨🇳 中国 阿里云
-  network: ws
-  port: '2082'
-  server: 8.222.174.108
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: s1c.v2.v001sss.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '13,16,21,25,28|github.com/freefq - 广东省移动 7 #1'
+  name: '11,13,16,21,25,28|github.com/freefq - 广东省移动 7 #1'
   network: ws
   port: '20401'
   server: data-us-v1.shwjfkw.cn
@@ -56,6 +43,19 @@ proxies:
   uuid: 7c1d9869-ecac-4ca6-b7e7-ecb60f503078
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  name: 21|🇨🇳 中国 阿里云
+  network: ws
+  port: '2082'
+  server: 8.222.174.108
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: s1c.v2.v001sss.xyz
+    path: /
 - alterId: 64
   cipher: auto
   name: 25,27|香港|@ripaojiedian
@@ -90,10 +90,16 @@ proxies:
     headers:
       Host: data-jp-v1.usabooks.com.cn
     path: /debian
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0003
+  password: e41b8b00-d940-4006-80ff-bc7865b3b5e0
+  port: 10061
+  server: v3-js-hk.as9929.uk
+  type: ss
 - alterId: 0
   cipher: auto
   delay: 991
-  name: 29|CN_speednode_0006
+  name: 29|CN_speednode_0004
   network: tcp
   port: 26841
   server: gzyd.pmxu.link
@@ -101,16 +107,26 @@ proxies:
   tls: false
   type: vmess
   uuid: 32cd139b-237d-3574-bc52-64428e3e238d
-- alterId: 0
-  cipher: auto
+- cipher: aes-128-gcm
+  delay: 738
+  name: 29|CN_speednode_0005
+  password: e41b8b00-d940-4006-80ff-bc7865b3b5e0
+  port: 22466
+  server: v3-js-sg.as9929.uk
+  type: ss
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0006
+  password: e41b8b00-d940-4006-80ff-bc7865b3b5e0
+  port: 34936
+  server: v3-js-hk.as9929.uk
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
   name: 29|CN_speednode_0007
-  network: tcp
-  port: 20006
-  server: kr01.aikunapp.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: eb6c5021-a13a-4464-ba98-db52f47afaf0
+  password: e41b8b00-d940-4006-80ff-bc7865b3b5e0
+  port: 53495
+  server: v3-js-jp.as9929.uk
+  type: ss
 - alterId: 0
   cipher: auto
   name: 29|CN_speednode_0008
@@ -123,24 +139,24 @@ proxies:
   uuid: e9630109-04ef-394b-8f7f-1baee9f07532
 - alterId: 0
   cipher: auto
-  name: 29|CN_speednode_0010
+  name: 29|CN_speednode_0009
   network: tcp
-  port: 20182
-  server: I40ZUL.gov.goldliond.top
+  port: 50180
+  server: xnU92R.gov.goldliond.top
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
 - alterId: 0
   cipher: auto
-  name: 29|CN_speednode_0011
+  name: 29|CN_speednode_0010
   network: tcp
-  port: 20182
-  server: EyZzcc.gov.goldliond.top
+  port: 20006
+  server: kr01.aikunapp.com
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
+  uuid: eb6c5021-a13a-4464-ba98-db52f47afaf0
 - alterId: 0
   cipher: auto
   name: 29|CN_speednode_0012
@@ -151,38 +167,8 @@ proxies:
   tls: false
   type: vmess
   uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0013
-  network: tcp
-  port: 50180
-  server: RrmsDv.gov.goldliond.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0014
-  network: tcp
-  port: 50182
-  server: ISgGLf.gov.goldliond.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0015
-  network: tcp
-  port: 20003
-  server: shdxus.aikunapp.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: eb6c5021-a13a-4464-ba98-db52f47afaf0
 - cipher: aes-256-cfb
-  name: 29|CN_speednode_0016
+  name: 29|CN_speednode_0013
   obfs: http_simple
   obfs-param: 68e7b61610.download.windowsupdate.com
   password: QHPy2u
@@ -193,32 +179,53 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: 29|CN_speednode_0017
+  name: 29|CN_speednode_0014
   network: tcp
-  port: 50180
-  server: xnU92R.gov.goldliond.top
+  port: 20003
+  server: shdxus.aikunapp.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: eb6c5021-a13a-4464-ba98-db52f47afaf0
+- alterId: 0
+  cipher: auto
+  name: 29|CN_speednode_0015
+  network: tcp
+  port: 20182
+  server: EyZzcc.gov.goldliond.top
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
 - cipher: aes-256-gcm
-  name: 29|CN_speednode_0018
+  name: 29|CN_speednode_0016
   password: 453CFFAA-FBE4-42D5-92E0-856E3FCDFDC6
   port: 10038
   server: america.speed-mitce.top
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0019
-  password: 739f0fb8-ef76-43a6-8175-0a977188e85c
-  port: 19561
-  server: nc.t1.xiaomi-api.xyz
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0017
+  password: e41b8b00-d940-4006-80ff-bc7865b3b5e0
+  port: 29978
+  server: v3-js-sg.as9929.uk
   type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 29|CN_speednode_0019
+  network: tcp
+  port: 52235
+  server: dgyd1.pmxu.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 20dec38e-0f37-359d-86e5-32c0ead42698
 - alterId: 0
   cipher: auto
   name: 29|CN_speednode_0020
   network: tcp
-  port: 50184
-  server: XpHSLy.gov.goldliond.top
+  port: 50181
+  server: XNGCCU.gov.goldliond.top
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -227,47 +234,15 @@ proxies:
   cipher: auto
   name: 29|CN_speednode_0021
   network: tcp
-  port: 52235
-  server: dgyd1.pmxu.link
+  port: 50182
+  server: ISgGLf.gov.goldliond.top
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 20dec38e-0f37-359d-86e5-32c0ead42698
-- cipher: chacha20-ietf-poly1305
+  uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
+- alterId: 0
+  cipher: auto
   name: 29|CN_speednode_0022
-  password: ad9580dd-01e4-490d-b175-49b9616b4915
-  port: 19561
-  server: nc.t2.xiaomi-api.xyz
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0023
-  network: tcp
-  port: 20187
-  server: OdLtAt.gov.goldliond.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0024
-  network: tcp
-  port: 20187
-  server: vBAqb6.gov.goldliond.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0025
-  password: e41b8b00-d940-4006-80ff-bc7865b3b5e0
-  port: 53495
-  server: v3-js-jp.as9929.uk
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0026
   network: tcp
   port: 20187
   server: MrOMzP.gov.goldliond.top
@@ -276,14 +251,24 @@ proxies:
   type: vmess
   uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
 - cipher: aes-128-gcm
-  name: 29|CN_speednode_0027
+  name: 29|CN_speednode_0023
   password: e41b8b00-d940-4006-80ff-bc7865b3b5e0
   port: 19387
   server: v3-js-us.as9929.uk
   type: ss
 - alterId: 0
   cipher: auto
-  name: 29|CN_speednode_0028
+  name: 29|CN_speednode_0024
+  network: tcp
+  port: 50180
+  server: RrmsDv.gov.goldliond.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
+- alterId: 0
+  cipher: auto
+  name: 29|CN_speednode_0025
   network: ws
   port: 20012
   server: ddbcb0bb-0765-dacc-887b-bf8c113b6d02.xn--37qy2m7z0cohn.xn--6qq986b3xl
@@ -296,48 +281,3 @@ proxies:
     headers:
       Host: ddbcb0bb-0765-dacc-887b-bf8c113b6d02.xn--37qy2m7z0cohn.xn--6qq986b3xl
     path: /
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0029
-  network: ws
-  port: 20014
-  server: ddbcb0bb-0765-dacc-887b-bf8c113b6d02.xn--37qy2m7z0cohn.xn--6qq986b3xl
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2c715d12-69d4-468b-8c24-e631cf5aeb95
-  ws-opts:
-    headers:
-      Host: ddbcb0bb-0765-dacc-887b-bf8c113b6d02.xn--37qy2m7z0cohn.xn--6qq986b3xl
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0030
-  network: tcp
-  port: 50181
-  server: reFVbb.gov.goldliond.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0032
-  network: tcp
-  port: 20186
-  server: qLpxTO.gov.goldliond.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0033
-  network: tcp
-  port: 20188
-  server: k0dANI.gov.goldliond.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad
