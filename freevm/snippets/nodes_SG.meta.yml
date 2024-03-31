@@ -96,7 +96,7 @@ proxies:
   servername: sg04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: b85bb05f-3ff9-4afc-94c2-5f6e6e880797
+  uuid: 51022630-965b-4f8b-b9d7-a7975bc5cf3e
 - alterId: 0
   cipher: auto
   name: 12|🇸🇬新加坡05
@@ -106,7 +106,7 @@ proxies:
   servername: sg05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: b85bb05f-3ff9-4afc-94c2-5f6e6e880797
+  uuid: 51022630-965b-4f8b-b9d7-a7975bc5cf3e
 - alterId: 0
   cipher: auto
   name: 12|🇸🇬新加坡06
@@ -116,10 +116,10 @@ proxies:
   servername: sg06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: b85bb05f-3ff9-4afc-94c2-5f6e6e880797
+  uuid: 51022630-965b-4f8b-b9d7-a7975bc5cf3e
 - alterId: 0
   cipher: auto
-  name: 13,25|18,19|🔒 VM-WS-NONE 🇸🇬 SG-13.21...
+  name: 13,21,25|18,19|🔒 VM-WS-NONE 🇸🇬 SG-13.21...
   network: ws
   port: 14217
   server: 13.212.76.151
@@ -141,6 +141,44 @@ proxies:
     headers:
       Host: hostodo.galenet.online
     path: /hostodo
+- cipher: aes-256-cfb
+  name: 20|SG-13.213.46.196-100
+  password: amazonskr05
+  port: 443
+  server: 13.213.46.196
+  type: ss
+- cipher: aes-256-cfb
+  name: 20|🇸🇬SG-54.251.168.143-102
+  password: amazonskr05
+  port: 443
+  server: 54.251.168.143
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: 20|🇸🇬SG-159.223.94.156-106
+  network: ws
+  port: 80
+  server: 159.223.94.156
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
+  ws-headers:
+    Host: 159.223.94.156
+  ws-path: /anti13.zingfast.vn
+- alterId: 0
+  cipher: auto
+  name: 20|🇬SG-13.212.76.151-149
+  network: ws
+  port: 14217
+  server: 13.212.76.151
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f5948c85-5342-4e11-9a68-ef5fbb8556c7
+  ws-headers:
+    Host: 13.212.76.151
+  ws-path: /ow
 - alterId: 0
   cipher: auto
   name: 23|【BGP】新加坡 04 | 1x SG
@@ -150,7 +188,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: d2126857-29c9-4103-ad4e-db094dbff432
+  uuid: 55340bf3-9496-4e96-be8b-93a4f2baefc3
 - alterId: 0
   cipher: auto
   name: 23|【BGP】新加坡 05 | 1x SG
@@ -160,7 +198,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: d2126857-29c9-4103-ad4e-db094dbff432
+  uuid: 55340bf3-9496-4e96-be8b-93a4f2baefc3
 - alterId: 0
   cipher: auto
   name: 23|【BGP】新加坡 06 | 1x SG
@@ -170,15 +208,16 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: d2126857-29c9-4103-ad4e-db094dbff432
+  uuid: 55340bf3-9496-4e96-be8b-93a4f2baefc3
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 26|🇸🇬 狮城特殊|@ripaojiedian
+  name: 26,29|KR_speednode_0032
   password: amazonskr05
   port: 443
   server: 43.201.24.53
   tfo: false
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 28|🇸🇬新加坡 01
@@ -193,20 +232,14 @@ proxies:
       Host: gw.alicdn.com
     path: /CAT
 - cipher: aes-256-cfb
-  name: 29|SG_speednode_0068
+  country: 🏁 ZZ
+  name: 29|SG_speednode_0046
   password: amazonskr05
   port: 443
-  server: 3.0.50.219
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 29|SG_speednode_0069
-  password: amazonskr05
-  port: 443
-  server: 18.141.207.80
+  server: 13.250.63.15
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 29|SG_speednode_0072
+  name: 29|SG_speednode_0048
   password: CXNqv+R0VBtFVUpX+1UialvRyQJhYBf20vI9Fu54x4E=
   port: 443
   server: 159.223.52.169
