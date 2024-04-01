@@ -289,13 +289,17 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 1
   cipher: auto
-  name: 11,25|19|🇯🇵 日本 008
+  name: 11,20,21|🇯🇵 日本 V2CROSS.COM
   network: tcp
   port: '28783'
   server: tfu6i-g01.jp06-7c5a-vm0.entry.fr0307a.art
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: daa811f7-7e7e-3089-9361-d2de712e59b6
+  ws-headers:
+    Host: tfu6i-g01.jp06-7c5a-vm0.entry.fr0307a.art
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 12|🇯🇵日本04
@@ -305,7 +309,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: a0c34370-8ee1-44d2-926e-897df07f9f3a
+  uuid: 7f53783b-ec32-4b04-9129-5e1cff1bac0b
 - alterId: 0
   cipher: auto
   name: 12|🇯🇵日本05
@@ -315,7 +319,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: a0c34370-8ee1-44d2-926e-897df07f9f3a
+  uuid: 7f53783b-ec32-4b04-9129-5e1cff1bac0b
 - alterId: 0
   cipher: auto
   name: 12|🇯🇵日本06
@@ -325,7 +329,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: a0c34370-8ee1-44d2-926e-897df07f9f3a
+  uuid: 7f53783b-ec32-4b04-9129-5e1cff1bac0b
 - cipher: aes-256-cfb
   name: 18|TG频道:@hkaa0|日本_2
   password: amazonskr05
@@ -349,6 +353,38 @@ proxies:
   password: amazonskr05
   port: 443
   server: 13.231.154.132
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇯🇵 日本(欢迎订阅Youtube破解资源君) #8'
+  network: tcp
+  port: '3845'
+  server: 139.162.122.205
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 76d5c6e3-c74c-3406-b9e8-9859d0a71c56
+  ws-headers:
+    Host: 139.162.122.205
+  ws-path: /TS/recharge/tzUrl.html
+- alterId: 64
+  cipher: auto
+  name: 20|🇯🇵JP-54.199.233.160-114
+  network: ws
+  port: 153
+  server: 54.199.233.160
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f92834d1-64c0-3e72-bb02-d8e5f5694e4d
+  ws-headers:
+    Host: 8505782627.laowanxiang.com
+  ws-path: /api/v3/download.getFile
+- cipher: aes-256-cfb
+  name: 20|🇯🇵JP-54.199.83.239-177
+  password: doub.io
+  port: 2333
+  server: 54.199.83.239
   type: ss
 - alterId: 0
   cipher: auto
@@ -389,15 +425,6 @@ proxies:
     headers:
       Host: jp01-tls-vm0.entry.vm-pass.org
     path: /hls/cctv5phd.m3u8
-- alterId: 0
-  cipher: auto
-  name: '21|🇯🇵 日本(欢迎订阅Youtube破解资源君) #8'
-  network: tcp
-  port: '3845'
-  server: 139.162.122.205
-  tls: false
-  type: vmess
-  uuid: 76d5c6e3-c74c-3406-b9e8-9859d0a71c56
 - alterId: 1
   cipher: auto
   name: '21|🇯🇵 日本(欢迎订阅Youtube破解资源君) #9'
@@ -437,15 +464,6 @@ proxies:
     headers:
       Host: jp06-vm0.entry.ikuuu.casa
     path: /hls/cctv5phd.m3u8
-- alterId: 1
-  cipher: auto
-  name: 21|🇯🇵 日本 东京Amazon数据中心
-  network: tcp
-  port: '46482'
-  server: 3wihp-g01.jp05-6786-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: daa811f7-7e7e-3089-9361-d2de712e59b6
 - alterId: 0
   cipher: auto
   name: 23|【BGP】日本 04  | 1x JP
@@ -455,7 +473,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18f79d87-4b50-47f4-a786-8c6b14675140
+  uuid: 68f3db20-9c83-48a3-b019-e58ae8cff9ba
 - alterId: 0
   cipher: auto
   name: 23|【BGP】日本 05  | 1x JP
@@ -465,7 +483,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18f79d87-4b50-47f4-a786-8c6b14675140
+  uuid: 68f3db20-9c83-48a3-b019-e58ae8cff9ba
 - alterId: 0
   cipher: auto
   name: 23|【BGP】日本 06  | 1x JP
@@ -475,35 +493,43 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 18f79d87-4b50-47f4-a786-8c6b14675140
+  uuid: 68f3db20-9c83-48a3-b019-e58ae8cff9ba
 - alterId: 1
   cipher: auto
-  name: 25|19|日本 004
-  network: tcp
-  port: 46484
-  server: en7a5-g03.jp05-6786-vm0.entry.fr0307a.art
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: dd121fb6-3fbc-3a11-bf1d-5532a767af7e
-- alterId: 1
-  cipher: auto
-  name: 25|19|🇯🇵 日本 011
-  network: tcp
-  port: '21581'
-  server: b834o-g01.jp03-7d22-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: daa811f7-7e7e-3089-9361-d2de712e59b6
-- alterId: 1
-  cipher: auto
-  name: 25|19|🇯🇵 日本 012
+  name: 25|6,19|🇯🇵 日本 012
   network: tcp
   port: '449'
   server: h3qa5-g06.jp04-3771-vm0.entry.fr0307a.art
   tls: false
   type: vmess
   uuid: 2278146c-8fb0-3683-8300-342238f8a9d0
+- alterId: 1
+  cipher: auto
+  name: 25|19|日本 001
+  network: tcp
+  port: 21581
+  server: avido-g01.jp03-7d22-vm0.entry.fr0307a.art
+  servername: avido-g01.jp03-7d22-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 25,26,27|日本3|@ripaojiedian
+  network: ws
+  port: '8080'
+  server: 87.120.204.200
+  servername: jp-3.trollfunny.net
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 1
   cipher: auto
   name: 25|26|baipaovpn日本东京
@@ -668,6 +694,19 @@ proxies:
   port: 443
   server: 52.195.225.184
   type: ss
+- alterId: 1
+  cipher: auto
+  country: 🇯🇵JP
+  h2-opts: {}
+  http-opts: {}
+  name: 29|JP_speednode_0062
+  network: tcp
+  port: 444
+  server: qin5c-g01.jp04-3771-vm0.entry.fr0307a.art
+  servername: qin5c-g01.jp04-3771-vm0.entry.fr0307a.art
+  skip-cert-verify: true
+  type: vmess
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
 - cipher: aes-256-cfb
   name: 29|JP_speednode_0063
   password: amazonskr05
