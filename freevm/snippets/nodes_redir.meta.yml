@@ -588,7 +588,7 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: '3,6,7,14,17,21,25,28,30|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #5'
+  name: '3,6,7,11,14,17,21,25,28,30|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #5'
   network: ws
   port: 8880
   server: 94.140.0.110
@@ -628,7 +628,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '3,7,25,28,30|🇺🇸_US_美国->🇫🇷_FR_法国 #9'
+  name: '3,7,11,25,28,30|🇺🇸_US_美国->🇫🇷_FR_法国 #9'
   network: ws
   port: 2082
   server: 104.21.8.157
@@ -680,16 +680,29 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 14,25|19,29|🇺🇸_US_美国->🇬🇧_GB_英国_由快嘴科技...
+  name: 14|🇺🇸_US_美国->🇩🇪_DE_德国
   network: ws
-  port: 8880
-  server: cdn.vds-server.ir
-  tls: false
+  port: 443
+  server: cdn2_de.majutsu.top
+  tls: true
   type: vmess
-  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+  uuid: 61abbe9b-ac90-4dcc-99de-35e17f0ce847
   ws-opts:
     headers:
-      Host: cdn.vds-server.ir
+      Host: cdn2_de.majutsu.top
+    path: /acc
+- alterId: 0
+  cipher: auto
+  name: 21|🇺🇸 _US_美国->🇩🇪_DE_德国
+  network: ws
+  port: '80'
+  server: 104.21.225.104
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt5.ir
     path: /
 - alterId: 0
   cipher: auto
@@ -953,19 +966,6 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '21|🇺🇸 _US_美国->🇩🇪_DE_德国 #21'
-  network: ws
-  port: '80'
-  server: 104.21.225.99
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt5.ir
-    path: /
-- alterId: 0
-  cipher: auto
   name: '21|🇺🇸 _US_美国->🇩🇪_DE_德国 #22'
   network: ws
   port: '80'
@@ -983,6 +983,19 @@ proxies:
   network: ws
   port: '80'
   server: 104.21.225.126
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt5.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '21|🇺🇸 _US_美国->🇩🇪_DE_德国 #24'
+  network: ws
+  port: '80'
+  server: 104.21.225.55
   tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -1250,6 +1263,19 @@ proxies:
     headers:
       Host: a.prapt5.ir
     path: /
+- alterId: 0
+  cipher: auto
+  name: '21|🇺🇸 _US_美国->🇩🇪_DE_德国 #44'
+  network: ws
+  port: '80'
+  server: 104.21.232.61
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt5.ir
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: 24|_SG_->🇺🇸_US_美国
