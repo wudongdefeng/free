@@ -53,6 +53,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
+- alterId: 0
+  cipher: auto
+  name: 11,25|19|🇭🇰 香港 ThinkDream数据中心
+  network: ws
+  port: '2086'
+  server: 27.50.48.72
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
+  ws-opts:
+    headers:
+      Host: krcc1.topf6.com
+    path: /ws?ed=2048
 - alterId: 64
   cipher: auto
   name: 15|香港_【YouTube-VV科技】
@@ -364,26 +378,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|19|香港2 c
-  network: ws
-  port: '2053'
-  server: c.caobi.onflashdrive.app
-  servername: cf4.caobi.onflashdrive.app
-  tls: true
-  type: vmess
-  uuid: e8ad0181-6cdd-4e6f-83cf-f2984d484527
-  ws-opts:
-    headers:
-      Host: cf4.caobi.onflashdrive.app
-    path: /cf
-- alterId: 0
-  cipher: auto
-  name: 25,29|HK_speednode_0057
+  name: 25|19|HK_speednode_0057
   network: ws
   port: 8080
   server: 194.99.79.178
   servername: ''
-  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
@@ -393,10 +392,24 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 25,26,27,29|HK_speednode_0056
+  name: 25|19|香港4 c
   network: ws
-  port: 8080
+  port: '2053'
+  server: jb.caobi.onflashdrive.app
+  servername: cf7.caobi.onflashdrive.app
+  tls: true
+  type: vmess
+  uuid: e8ad0181-6cdd-4e6f-83cf-f2984d484527
+  ws-opts:
+    headers:
+      Host: cf7.caobi.onflashdrive.app
+    path: /cf
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 25,26,27|香港5|@ripaojiedian
+  network: ws
+  port: '8080'
   server: 194.99.79.178
   servername: hk-11.trollfunny.net
   skip-cert-verify: false
@@ -405,6 +418,8 @@ proxies:
   type: vmess
   uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 64
   cipher: auto
@@ -419,7 +434,7 @@ proxies:
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   delay: 297
-  name: 26,29|HK_speednode_0054
+  name: 26,29|HK_speednode_0010
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -435,7 +450,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 26,29|HK_speednode_0055
+  name: 26|🇭🇰 香港KT2|@ripaojiedian
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -443,6 +458,7 @@ proxies:
     mode: websocket
     mux: true
     path: ''
+    skip-cert-verify: true
     tls: false
   port: 443
   server: 8.210.33.152
@@ -514,33 +530,3 @@ proxies:
     headers:
       Host: hrgdvpn.flycdnedc55.vip
     path: /opt/video/images
-- Ltd. - 5: None
-  cipher: aes-128-gcm
-  country: SG
-  delay: 241
-  name: 29|HK_speednode_0052
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    tls: false
-  port: 443
-  server: 8.218.71.80
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 29|HK_speednode_0053
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: true
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 8.218.82.85
-  tfo: false
-  type: ss
