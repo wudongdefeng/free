@@ -1,17 +1,14 @@
 proxies:
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 11,13,21,25|18,29|🇸🇬_SG_新加坡->🇫🇷_FR_法国_由快嘴科...
-  network: ws
-  port: 2082
-  server: 8.222.174.108
+  name: 11,25,27|香港2|@ripaojiedian
+  network: tcp
+  port: '31778'
+  server: 120.232.242.118
+  servername: ''
   tls: false
   type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: s1c.v2.v001sss.xyz
-    path: /
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: '11,13,16,21,25,28|github.com/freefq - 广东省移动 7 #1'
@@ -26,6 +23,19 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
+- alterId: 0
+  cipher: auto
+  name: 13,21,25|18,29|🇸🇬_SG_新加坡->🇫🇷_FR_法国_由快嘴科...
+  network: ws
+  port: 2082
+  server: 8.222.174.108
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: s1c.v2.v001sss.xyz
+    path: /
 - alterId: 64
   cipher: auto
   name: 15|中国_【YouTube-VV科技】
@@ -133,10 +143,17 @@ proxies:
     headers:
       Host: data-jp-v1.usabooks.com.cn
     path: /debian
+- cipher: aes-128-gcm
+  delay: 1127
+  name: 29|CN_speednode_0006
+  password: e41b8b00-d940-4006-80ff-bc7865b3b5e0
+  port: 10061
+  server: v3-js-hk.as9929.uk
+  type: ss
 - alterId: 0
   cipher: auto
   delay: 1067
-  name: 29|CN_speednode_0001
+  name: 29|CN_speednode_0007
   network: tcp
   port: 20003
   server: shdxus.aikunapp.com
@@ -144,3 +161,33 @@ proxies:
   tls: false
   type: vmess
   uuid: eb6c5021-a13a-4464-ba98-db52f47afaf0
+- alterId: 0
+  cipher: auto
+  delay: 933
+  name: 29|CN_speednode_0008
+  network: tcp
+  port: 20006
+  server: kr01.aikunapp.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: eb6c5021-a13a-4464-ba98-db52f47afaf0
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0010
+  password: 2bfaafe5-d825-424e-bb6b-471c8f4daef3
+  port: 19581
+  server: nc.cm.xiaomi-api.xyz
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0011
+  password: 739f0fb8-ef76-43a6-8175-0a977188e85c
+  port: 19561
+  server: nc.t1.xiaomi-api.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 29|CN_speednode_0012
+  password: 34a547cd-0bfe-4905-9076-0d7c9a61f325
+  port: 29126
+  server: 101.91.164.138
+  type: ss
+  udp: true

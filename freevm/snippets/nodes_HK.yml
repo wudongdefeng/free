@@ -55,7 +55,7 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  name: 11,25|19|🇭🇰 香港 ThinkDream数据中心
+  name: 13,25|19|🇭🇰 香港 ThinkDream数据中心
   network: ws
   port: '2086'
   server: 27.50.48.72
@@ -378,13 +378,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|19|HK_speednode_0057
+  client-fingerprint: chrome
+  name: 25,29|HK_speednode_0027
   network: ws
   port: 8080
   server: 194.99.79.178
-  servername: ''
+  servername: hk-11.trollfunny.net
+  skip-cert-verify: false
+  tfo: false
   tls: true
   type: vmess
+  udp: true
   uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
   ws-opts:
     headers:
@@ -421,20 +425,9 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 64
-  cipher: auto
-  name: 25,27|香港2|@ripaojiedian
-  network: tcp
-  port: '31778'
-  server: 120.232.242.118
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  delay: 297
-  name: 26,29|HK_speednode_0010
+  name: 26|🇭🇰 香港KT|@ripaojiedian
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -530,3 +523,49 @@ proxies:
     headers:
       Host: hrgdvpn.flycdnedc55.vip
     path: /opt/video/images
+- Ltd. - 6: None
+  cipher: aes-128-gcm
+  delay: 1166
+  name: 29|HK_speednode_0024
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: /
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 8.218.196.35
+  type: ss
+- cipher: aes-128-gcm
+  name: 29|HK_speednode_0025
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: false
+    tls: false
+  port: 443
+  server: 47.76.185.99
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 29|HK_speednode_0026
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 8.218.82.85
+  tfo: false
+  type: ss
