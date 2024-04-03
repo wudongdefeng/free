@@ -30,18 +30,14 @@ proxies:
   uuid: 82447abf-dcb9-408a-9ca6-79e0a7698d08
 - alterId: 0
   cipher: chacha20-poly1305
-  name: 11,13,20,21,25|18|法国 OVH SAS
+  name: 11,13,21,25|18|法国 OVH SAS
   network: tcp
   port: '3586'
   server: 213.32.63.176
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: acba8460-6c85-4d67-8f74-5a51da5e8393
-  ws-headers:
-    Host: zula.ir
-  ws-path: /OUIpxwwmtpJGIWzraW7dl5
 - alterId: 64
   cipher: auto
   name: 15|法国_【YouTube-VV科技】
@@ -107,12 +103,6 @@ proxies:
     headers:
       Host: bl.shabijichang.com
     path: /
-- cipher: aes-256-gcm
-  name: 20|🇫🇷FR-193.243.147.128-178
-  password: 7BcLdsO1WweoGD0X
-  port: 40368
-  server: 193.243.147.128
-  type: ss
 - name: 24|_FR_国
   network: tcp
   password: telegram-id-directvpn
@@ -122,6 +112,26 @@ proxies:
   sni: trj.rollingnext.co.uk
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 25|19|🔒 VM-TCP-NA 🇫🇷 FR-162.19.25...
+  network: tcp
+  port: '44513'
+  server: 162.19.25.207
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4552bdb6-e008-43ac-926d-c6c6c5a6fc76
+- alterId: 0
+  cipher: auto
+  name: 25|19|🔒 VM-TCP-NA 🇫🇷 FR-141.94.23...
+  network: tcp
+  port: '8442'
+  server: 141.94.237.81
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 60df4ec6-7506-407e-998e-b1539fc0630f
 - alterId: 0
   cipher: auto
   name: 28|德国 黑森州法兰克福DigitalOcean数据中心
@@ -143,26 +153,18 @@ proxies:
   type: vmess
   uuid: a663bbab-4e9e-4080-b8ab-edd59fe1fdce
 - alterId: 0
-  cipher: chacha20-poly1305
+  cipher: auto
+  country: 🇫🇷FR
+  delay: 2170
+  h2-opts: {}
   http-opts:
-    headers:
-      Host:
-      - speedtest.net
     method: GET
     path:
     - /OUIpxwwmtpJGIWzraW7dl5
-  name: 29|FR_speednode_0024
+  name: 29|FR_speednode_0041
   network: http
   port: 3586
   server: max-ip.hiroman5445.ir
   skip-cert-verify: true
-  tls: false
   type: vmess
-  udp: true
-  uuid: f61875ea-a167-4c9f-9d2e-2ae3d104c267
-- cipher: aes-256-cfb
-  name: 29|FR_speednode_0025
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 163.172.64.22
-  type: ss
+  uuid: acba8460-6c85-4d67-8f74-5a51da5e8393
