@@ -114,23 +114,16 @@ proxies:
     headers:
       Host: www.ivpnpro.net
     path: /hls/cctv5phd.m3u8
-- alterId: 0
+- alterId: 64
   cipher: auto
-  client-fingerprint: chrome
-  name: 25,26,27|香港|@ripaojiedian
-  network: ws
-  port: '10163'
-  server: zf.lalayun.cyou
+  name: 25,27|香港|@ripaojiedian
+  network: tcp
+  port: '54437'
+  server: 183.236.51.59
   servername: ''
-  skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
-  uuid: b1553abe-6f1f-3288-bfc2-908b2f9fc4fc
-  ws-opts:
-    headers:
-      Host: hk.lalayunssl.xyz
-    path: /v2ray
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: 25,27|香港2|@ripaojiedian
@@ -154,23 +147,6 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 25,26,27|香港4|@ripaojiedian
-  network: ws
-  port: '443'
-  server: 35.201.203.106
-  servername: cfhk.393930.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      Host: cfhk.393930.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
   name: 25,26,27|香港5|@ripaojiedian
   network: ws
   port: '8080'
@@ -184,6 +160,34 @@ proxies:
   ws-opts:
     headers:
       Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 25|6|香港|@ripaojiedian
+  network: ws
+  port: '10163'
+  server: zf.lalayun.cyou
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1553abe-6f1f-3288-bfc2-908b2f9fc4fc
+  ws-opts:
+    headers:
+      Host: hk.lalayunssl.xyz
+    path: /v2ray
+- alterId: 0
+  cipher: auto
+  name: 25|6|香港4|@ripaojiedian
+  network: ws
+  port: '443'
+  server: 35.201.203.106
+  servername: cfhk.393930.xyz
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
     path: /
 - alterId: 0
   cipher: auto
@@ -211,6 +215,14 @@ proxies:
   server: 42.98.119.98
   tfo: false
   type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 26|🇭🇰 香港4|@ripaojiedian
+  password: a-wym4ovY4Yw
+  port: 81
+  server: 47.243.45.101
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇭🇰 香港6|@ripaojiedian
@@ -221,10 +233,10 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 26,29|HK_speednode_0021
+  name: 26|🇭🇰 香港7|@ripaojiedian
   password: a-wym4ovY4Yw
   port: 80
-  server: 1.65.205.246
+  server: 1.65.197.10
   tfo: false
   type: ss
 - alterId: 0
@@ -300,7 +312,7 @@ proxies:
       Host: hrgdvpn.flycdnedc55.vip
     path: /opt/video/images
 - cipher: aes-128-gcm
-  name: 29|HK_speednode_0022
+  name: 29|HK_speednode_0045
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -314,22 +326,21 @@ proxies:
   server: 47.76.185.99
   type: ss
 - cipher: aes-128-gcm
-  name: 29|HK_speednode_0023
+  country: SG
+  delay: 1821
+  name: 29|HK_speednode_0046
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
     host: ''
     mode: websocket
-    mux: true
-    path: /
-    skip-cert-verify: true
     tls: false
   port: 443
-  server: 42.98.119.98
+  server: 8.210.33.152
   type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 29|HK_speednode_0024
+  name: 29|HK_speednode_0047
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
@@ -342,4 +353,18 @@ proxies:
   port: 443
   server: 8.218.196.35
   tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  name: 29|HK_speednode_0058
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: /
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 42.98.119.98
   type: ss
