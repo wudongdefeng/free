@@ -96,7 +96,7 @@ proxies:
   servername: sg04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 41a26529-9f55-4f99-a08d-999f2d218386
+  uuid: 4385ddc7-8729-43e1-bd72-c162642a37de
 - alterId: 0
   cipher: auto
   name: 12|🇸🇬新加坡05
@@ -106,7 +106,7 @@ proxies:
   servername: sg05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 41a26529-9f55-4f99-a08d-999f2d218386
+  uuid: 4385ddc7-8729-43e1-bd72-c162642a37de
 - alterId: 0
   cipher: auto
   name: 12|🇸🇬新加坡06
@@ -116,7 +116,7 @@ proxies:
   servername: sg06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 41a26529-9f55-4f99-a08d-999f2d218386
+  uuid: 4385ddc7-8729-43e1-bd72-c162642a37de
 - alterId: 0
   cipher: auto
   name: '15,21|🇺🇸 美国 CloudFlare节点 #15'
@@ -163,9 +163,9 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 15,17,25,26|🇺🇸 美国5|@ripaojiedian
+  name: 15,17,25,26,27|美国4|@ripaojiedian
   network: ws
-  port: 2095
+  port: '2095'
   server: fcdn.flha.ru
   servername: ''
   skip-cert-verify: false
@@ -239,7 +239,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 2e8a8a16-5297-45a1-be12-9609fed9fee6
+  uuid: 8e8f2e62-083c-499e-b4ad-cf07fe3b3fc7
 - alterId: 0
   cipher: auto
   name: 23|【BGP】新加坡 05 | 1x SG
@@ -249,7 +249,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 2e8a8a16-5297-45a1-be12-9609fed9fee6
+  uuid: 8e8f2e62-083c-499e-b4ad-cf07fe3b3fc7
 - alterId: 0
   cipher: auto
   name: 23|【BGP】新加坡 06 | 1x SG
@@ -259,30 +259,21 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 2e8a8a16-5297-45a1-be12-9609fed9fee6
-- alterId: 0
-  cipher: auto
+  uuid: 8e8f2e62-083c-499e-b4ad-cf07fe3b3fc7
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 25,26,27|新加坡|@ripaojiedian
-  network: ws
-  port: '21021'
-  server: sg.lianjianode.cc
-  servername: ''
-  skip-cert-verify: false
+  name: 26|🇸🇬 新加坡|@ripaojiedian
+  password: 4feb33c2-cb06-4371-a572-243d47b789d9
+  port: 20009
+  server: ddns.olucloud.subapi.cc
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 44ceed0a-7421-4da0-b968-c30cb933a89d
-  ws-opts:
-    headers:
-      Host: sg1.luodi.xyz
-    path: /singapore
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 52.195.237.198
+  server: 54.71.116.112
   tfo: false
   type: ss
 - alterId: 0
@@ -298,3 +289,10 @@ proxies:
     headers:
       Host: gw.alicdn.com
     path: /CAT
+- cipher: aes-256-cfb
+  name: 29|SG_speednode_0189
+  password: amazonskr05
+  port: 443
+  server: 18.141.207.80
+  type: ss
+  udp: true
