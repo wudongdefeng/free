@@ -296,7 +296,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7108420d-7bd2-437b-a914-a52337388c6e
+  uuid: 6332244f-ac04-48e7-9a34-9fd1638b8e08
 - alterId: 0
   cipher: auto
   name: 12|🇯🇵日本05
@@ -306,7 +306,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7108420d-7bd2-437b-a914-a52337388c6e
+  uuid: 6332244f-ac04-48e7-9a34-9fd1638b8e08
 - alterId: 0
   cipher: auto
   name: 12|🇯🇵日本06
@@ -316,16 +316,52 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7108420d-7bd2-437b-a914-a52337388c6e
+  uuid: 6332244f-ac04-48e7-9a34-9fd1638b8e08
 - alterId: 0
   cipher: auto
-  name: '21|🇯🇵 日本(欢迎订阅Youtube破解资源君) #2'
+  name: '20,21|🇯🇵 日本(欢迎订阅Youtube破解资源君) #2'
   network: tcp
   port: '3845'
   server: 139.162.122.205
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 76d5c6e3-c74c-3406-b9e8-9859d0a71c56
+  ws-headers:
+    Host: 139.162.122.205
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|🇵JP-20.210.254.74-085
+  network: ws
+  port: 80
+  server: 20.210.254.74
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 12a1bf8b-8f39-4b06-82f5-3b6bd4d354f9
+  ws-headers:
+    Host: telelink.cc
+  ws-path: /index.php
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇺🇸 美国(欢迎订阅Youtube破解资源君) #9'
+  network: tcp
+  port: '4943'
+  server: 20.210.96.240
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 41cb5bed-957e-4b5e-adcb-de33ce13807b
+  ws-headers:
+    Host: 20.210.96.240
+  ws-path: /
+- cipher: aes-256-cfb
+  name: 20|🇯🇵JP-54.199.83.239-120
+  password: doub.io
+  port: 2333
+  server: 54.199.83.239
+  type: ss
 - alterId: 1
   cipher: auto
   name: '21|🇪🇺 欧洲(欢迎订阅Youtube破解资源君) #1'
@@ -348,7 +384,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 6a3ab681-f7d8-4bc1-aca1-9efbd8d46d52
+  uuid: 9b93064a-3e3a-4bff-9d0d-b17896be3f51
 - alterId: 0
   cipher: auto
   name: 23|【BGP】日本 05  | 1x JP
@@ -358,7 +394,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 6a3ab681-f7d8-4bc1-aca1-9efbd8d46d52
+  uuid: 9b93064a-3e3a-4bff-9d0d-b17896be3f51
 - alterId: 0
   cipher: auto
   name: 23|【BGP】日本 06  | 1x JP
@@ -368,17 +404,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 6a3ab681-f7d8-4bc1-aca1-9efbd8d46d52
-- alterId: 0
-  cipher: auto
-  name: 25,27|日本|@ripaojiedian
-  network: tcp
-  port: '30038'
-  server: 183.240.179.207
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e456d54e-fb49-42c2-ace7-0dd141fee5a6
+  uuid: 9b93064a-3e3a-4bff-9d0d-b17896be3f51
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -396,6 +422,22 @@ proxies:
     headers:
       Host: wtywwcrzjp5.yofnhkfc.xyz
     path: /video/9TfVEyku
+- alterId: 0
+  cipher: auto
+  name: 25,29|JP_speednode_0047
+  network: ws
+  port: 2052
+  server: 47.74.34.38
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 039fc4e4-92b0-489c-a7c3-d02d40eaa551
+  ws-opts:
+    headers:
+      Host: jpyouyou.mac2winer.cfd
+    path: /039fc4e4
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇯🇵 日本特殊|@ripaojiedian
@@ -508,18 +550,3 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: TG@ZDYZ2
-- alterId: 0
-  cipher: auto
-  name: 29|JP_speednode_0047
-  network: ws
-  port: 2052
-  server: 47.74.34.38
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 039fc4e4-92b0-489c-a7c3-d02d40eaa551
-  ws-opts:
-    headers:
-      Host: jpyouyou.mac2winer.cfd
-    path: /039fc4e4
