@@ -53,31 +53,48 @@ proxies:
   tls: false
   type: vmess
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
+- alterId: 2
+  cipher: auto
+  name: 20|HK-165.154.225.231-085
+  network: ws
+  port: 443
+  server: 165.154.225.231
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
+  ws-headers:
+    Host: 330hk02.fans8.xyz
+  ws-path: /ray
+- alterId: 2
+  cipher: auto
+  name: 20|🇰HK-165.154.225.176-086
+  network: ws
+  port: 443
+  server: 165.154.225.176
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
+  ws-headers:
+    Host: 0326hk01.fans8.xyz
+  ws-path: /ray
 - alterId: 1
   cipher: auto
   name: 21|🇭🇰 香港(欢迎订阅Youtube破解资源君)
   network: ws
   port: '38106'
-  server: ingress-i1.onebox6.org
+  server: 120.240.48.19
   tls: false
   type: vmess
   uuid: 79386685-16da-327c-9e14-aa6d702d86bc
   ws-opts:
     headers:
-      Host: www.ivpnpro.net
+      Host: ''
     path: /hls/cctv5phd.m3u8
 - alterId: 2
   cipher: auto
   name: '21|🇭🇰 香港(欢迎订阅Youtube破解资源君) #1'
-  network: tcp
-  port: '30104'
-  server: hk01.xniuniu888.club
-  tls: false
-  type: vmess
-  uuid: ef41958c-c145-3363-a332-20e9ec5e8a5c
-- alterId: 2
-  cipher: auto
-  name: '21|🇭🇰 香港(欢迎订阅Youtube破解资源君) #2'
   network: ws
   port: '443'
   server: 0326hk01.fans8.xyz
@@ -88,16 +105,19 @@ proxies:
     headers:
       Host: 0326hk01.fans8.xyz
     path: /ray
-- alterId: 64
+- alterId: 1
   cipher: auto
-  name: 25,27|香港2|@ripaojiedian
-  network: tcp
-  port: '41242'
-  server: 183.237.20.158
-  servername: ''
+  name: '21|🇭🇰 香港(欢迎订阅Youtube破解资源君) #2'
+  network: ws
+  port: '38106'
+  server: ingress-i1.onebox6.org
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
+  ws-opts:
+    headers:
+      Host: www.ivpnpro.net
+    path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -148,19 +168,6 @@ proxies:
   server: 172.67.198.153
   tfo: false
   type: ss
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 26,29|CN_speednode_0009
-  password: 92ee797d-5583-4f81-bb24-9be40469f0b3
-  port: 54100
-  server: 183.236.51.59
-  skip-cert-verify: false
-  sni: ru01.freeflyingcloud.xyz
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇭🇰 香港3|@ripaojiedian
