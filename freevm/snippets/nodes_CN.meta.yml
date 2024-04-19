@@ -1,6 +1,20 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: '11,13,15,16,21,25,28|github.com/freefq - 广东省移动 7 #1'
+  network: ws
+  port: '20401'
+  server: data-us-v1.shwjfkw.cn
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-us-v1.shwjfkw.cn
+    path: /debian
+- alterId: 0
+  cipher: auto
   name: 11,13,15,21,28|日本2|@ripaojiedian
   network: ws
   port: '20301'
@@ -13,19 +27,36 @@ proxies:
     headers:
       Host: data-jp-v1.usabooks.com.cn
     path: /debian
+- alterId: 64
+  cipher: auto
+  name: 11,20,25,27|香港|@ripaojiedian
+  network: tcp
+  port: '54437'
+  server: 183.236.51.59
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.59
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '11,13,14,15,16,21,25,28|github.com/freefq - 广东省移动 7 #1'
+  client-fingerprint: chrome
+  name: 11,25,26,27|香港7|@ripaojiedian
   network: ws
-  port: '20401'
-  server: data-us-v1.shwjfkw.cn
+  port: '20206'
+  server: data-hk-v1.usabooks.com.cn
   servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: b1478e24-4916-3abe-8f17-15931012ecbe
   ws-opts:
     headers:
-      Host: data-us-v1.shwjfkw.cn
+      Host: data-hk-v1.usabooks.com.cn
     path: /debian
 - alterId: 64
   cipher: auto
@@ -182,20 +213,6 @@ proxies:
   port: 30818
   server: wqfuinwqffq.dfcloud.xyz
   type: ss
-- alterId: 64
-  cipher: auto
-  name: 20,25,27|香港|@ripaojiedian
-  network: tcp
-  port: '54437'
-  server: 183.236.51.59
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.236.51.59
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: 20|🇨🇳CN-120.233.205.133-195
