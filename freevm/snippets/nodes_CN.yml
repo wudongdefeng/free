@@ -1,30 +1,7 @@
 proxies:
-- alterId: 64
-  cipher: auto
-  name: 11|广东省 移动
-  network: tcp
-  port: '41242'
-  server: 183.237.20.158
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 11,14,25|10|🇨🇳_CN_中国->🇭🇺_HU_匈牙利_20
-  network: ws
-  port: 46082
-  server: mmhu82.micloud.buzz
-  tls: false
-  type: vmess
-  uuid: 3bfbc47b-cb43-46ec-8036-ff83560a8b0e
-  ws-opts:
-    headers:
-      Host: mmhu82.micloud.buzz
-    path: /zh-cn
-- alterId: 0
-  cipher: auto
-  name: '13,15,16,21,28|github.com/freefq - 广东省移动 7 #1'
+  name: '11,13,15,16,21,28|github.com/freefq - 广东省移动 7 #1'
   network: ws
   port: '20401'
   server: data-us-v1.shwjfkw.cn
@@ -36,6 +13,20 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
+- alterId: 64
+  cipher: auto
+  name: 11,20,21,25,27|香港|@ripaojiedian
+  network: tcp
+  port: '54437'
+  server: 183.236.51.59
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.59
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 20|CN-116.162.172.161-033
@@ -202,20 +193,6 @@ proxies:
   ws-headers:
     Host: mmfi85.micloud.buzz
   ws-path: /zh-cn
-- alterId: 64
-  cipher: auto
-  name: 20,21,25,27|香港|@ripaojiedian
-  network: tcp
-  port: '54437'
-  server: 183.236.51.59
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.236.51.59
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: 21|🇨🇳 甘肃省兰州市 移动
@@ -229,20 +206,6 @@ proxies:
     headers:
       Host: hk.lalayunssl.xyz
     path: /v2ray
-- alterId: 0
-  cipher: auto
-  name: 25|9|baipaovpn中国
-  network: ws
-  port: '80'
-  server: 8.217.147.230
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 89d4fac6-0ef2-4855-92ce-f454b7154202
-  ws-opts:
-    headers:
-      Host: mix.tgdns68.vps666.onflashdrive.app
-    path: /TG@dns68公益节点
 - cipher: chacha20-ietf
   name: 29|CN_speednode_0004
   obfs: tls1.2_ticket_auth
