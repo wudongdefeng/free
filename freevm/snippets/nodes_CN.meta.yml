@@ -1,4 +1,28 @@
 proxies:
+- alterId: 64
+  cipher: auto
+  name: 11,25,27|香港2|@ripaojiedian
+  network: tcp
+  port: '40259'
+  server: 120.238.122.243
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 11,15,21,28|日本2|@ripaojiedian
+  network: ws
+  port: '20301'
+  server: data-jp-v1.usabooks.com.cn
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-jp-v1.usabooks.com.cn
+    path: /debian
 - alterId: 0
   cipher: auto
   name: '11,13,15,16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -16,7 +40,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11,13,21,25,26,27|香港7|@ripaojiedian
+  name: 13,21,25,26,27|香港7|@ripaojiedian
   network: ws
   port: '20206'
   server: data-hk-v1.usabooks.com.cn
@@ -49,69 +73,49 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   name: 29|CN_speednode_0007
-  password: QHPy2u
+  password: ayucloud1
   plugin: obfs
   plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
+    host: 47ed892290.download.windowsupdate.com
     mode: http
     skip-cert-verify: true
     tls: true
-  port: 9060
-  server: 231103level3.unclemanco.com
+  port: 9047
+  server: 231103level1.unclemanco.com
   type: ss
   udp: true
-- cipher: aes-128-gcm
+- alterId: 0
+  cipher: auto
   name: 29|CN_speednode_0008
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 803
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
+  network: tcp
+  port: 11035
+  server: dotu-sgv1.03ezhg0qsa.download
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ac1f3b35-1d03-3a85-beab-258d8f23edc6
+- alterId: 0
+  cipher: auto
   name: 29|CN_speednode_0009
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 9021
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
+  network: tcp
+  port: 11037
+  server: dotu-sgv1.03ezhg0qsa.download
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ac1f3b35-1d03-3a85-beab-258d8f23edc6
+- cipher: aes-256-gcm
   name: 29|CN_speednode_0010
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 926
-  server: 231103level2.unclemanco.com
+  password: afcc9a16-3cb4-4ef9-b89d-d58ac52e4e15
+  port: 22881
+  server: hk2.iepl.cooc.icu
   type: ss
-  udp: true
-- cipher: aes-128-gcm
+- cipher: aes-256-gcm
   name: 29|CN_speednode_0011
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 918
-  server: 231103level3.unclemanco.com
+  password: afcc9a16-3cb4-4ef9-b89d-d58ac52e4e15
+  port: 47100
+  server: jp1.iepl.cooc.icu
   type: ss
-  udp: true
 - LLC - 15: None
   cipher: chacha20-ietf
   country: 🇨🇳CN
@@ -125,421 +129,22 @@ proxies:
   protocol-param: 26272:09kp3qPzKiKRsAqm
   server: vip.basicnode.host
   type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0016
-  password: 0FbAIi3rHkEO5rYv
-  port: 10037
-  server: jp1.lvuy.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0017
-  password: 0FbAIi3rHkEO5rYv
-  port: 10058
-  server: jp4.lvuy.xyz
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0018
-  password: 1mj21sr
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 36454
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0019
-  password: ay2l23ud1
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 903
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0020
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 821
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0021
-  password: 0FbAIi3rHkEO5rYv
-  port: 10064
-  server: tw2.lvuy.xyz
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0022
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 911
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0023
-  password: 0FbAIi3rHkEO5rYv
-  port: 10044
-  server: sg1.lvuy.xyz
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0024
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 857
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 29|CN_speednode_0025
-  password: be348bb4-5a46-4ef9-9d82-d370e4191774
-  port: 22881
-  server: hk2.iepl.cooc.icu
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0026
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 820
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0027
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 9873
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0028
-  password: 1mj21sr
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 36452
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0029
-  password: 0FbAIi3rHkEO5rYv
-  port: 10077
-  server: tw4.lvuy.xyz
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0030
-  password: ayucjrsll
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 809
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 29|CN_speednode_0031
-  password: be348bb4-5a46-4ef9-9d82-d370e4191774
-  port: 47100
-  server: jp1.iepl.cooc.icu
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0032
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 910
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0033
-  password: 0FbAIi3rHkEO5rYv
-  port: 10046
-  server: sg3.lvuy.xyz
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0034
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 925
-  server: 231103level1.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0035
-  password: ay2loud1
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 906
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 29|CN_speednode_0036
-  password: be348bb4-5a46-4ef9-9d82-d370e4191774
-  port: 35109
-  server: tw1.iepl.cooc.icu
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0037
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 812
-  server: 231103level1.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 29|CN_speednode_0038
-  password: be348bb4-5a46-4ef9-9d82-d370e4191774
-  port: 35110
-  server: tw2.iepl.cooc.icu
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0039
-  password: ayucl12s1
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 837
-  server: 231103level1.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0040
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 924
-  server: 231103level1.unclemanco.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0042
-  password: 0FbAIi3rHkEO5rYv
-  port: 10048
-  server: kr2.lvuy.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0043
-  password: 0FbAIi3rHkEO5rYv
-  port: 10047
-  server: kr1.lvuy.xyz
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0044
-  password: dajkdkjda&dja*/?
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 37863
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0045
-  password: dajkdr&dja*/?
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 38011
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0046
-  password: 0FbAIi3rHkEO5rYv
-  port: 10050
-  server: in1.lvuy.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0047
-  password: 0FbAIi3rHkEO5rYv
-  port: 10043
-  server: us4.lvuy.xyz
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0048
-  password: be348bb4-5a46-4ef9-9d82-d370e4191774
-  port: 35613
-  server: th.iepl.cooc.icu
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0049
-  password: 0FbAIi3rHkEO5rYv
-  port: 10051
-  server: in2.lvuy.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0050
-  password: 0FbAIi3rHkEO5rYv
-  port: 10042
-  server: us3.lvuy.xyz
-  type: ss
-- cipher: aes-256-gcm
-  name: 29|CN_speednode_0051
-  password: be348bb4-5a46-4ef9-9d82-d370e4191774
-  port: 31881
-  server: usa1.iepl.cooc.icu
-  type: ss
-- cipher: aes-256-gcm
-  name: 29|CN_speednode_0052
-  password: be348bb4-5a46-4ef9-9d82-d370e4191774
-  port: 32881
-  server: usa2.iepl.cooc.icu
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0053
-  password: 0FbAIi3rHkEO5rYv
-  port: 10067
-  server: us5.lvuy.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0054
-  password: 0FbAIi3rHkEO5rYv
-  port: 10040
-  server: us1.lvuy.xyz
-  type: ss
-- cipher: aes-256-gcm
-  name: 29|CN_speednode_0055
-  password: be348bb4-5a46-4ef9-9d82-d370e4191774
-  port: 35106
-  server: sg2.iepl.cooc.icu
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0056
-  password: 0FbAIi3rHkEO5rYv
-  port: 10056
-  server: dibai1.lvuy.xyz
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0057
-  password: dadk2jat*/?
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 39201
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0058
-  password: 0FbAIi3rHkEO5rYv
-  port: 10075
-  server: us7.lvuy.xyz
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0059
-  password: dajkdkjdssa&dja*/?
-  plugin: obfs
-  plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 38002
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0060
-  password: 0FbAIi3rHkEO5rYv
-  port: 10055
-  server: xn1.lvuy.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0061
-  password: 0FbAIi3rHkEO5rYv
-  port: 10054
-  server: xn2.lvuy.xyz
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0062
-  password: be348bb4-5a46-4ef9-9d82-d370e4191774
-  port: 35607
-  server: ger1.iepl.cooc.icu
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 29|CN_speednode_0013
+  network: tcp
+  port: 11046
+  server: dotu-krv1.03ezhg0qsa.download
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ac1f3b35-1d03-3a85-beab-258d8f23edc6
 - alterId: 2
   cipher: auto
-  name: 29|CN_speednode_0063
+  name: 29|CN_speednode_0014
   network: ws
-  port: 23619
-  server: 19.v2-ray.cyou
+  port: 23617
+  server: 17.v2-ray.cyou
   skip-cert-vertify: true
   tls: false
   type: vmess
@@ -547,88 +152,42 @@ proxies:
   uuid: 3b2e3e4c-77e5-30b3-bb34-ff312517ab35
   ws-opts:
     headers:
-      host: 19.v2-ray.cyou
+      host: 17.v2-ray.cyou
     path: /
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0064
-  network: ws
-  port: 21021
-  server: sg.lianjianode.cc
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e472a610-a7de-4fce-befc-5c11c31a9246
-  ws-opts:
-    headers:
-      Host: sg1.luodi.xyz
-    path: /singapore
-- cipher: aes-256-gcm
-  name: 29|CN_speednode_0066
-  password: be348bb4-5a46-4ef9-9d82-d370e4191774
-  port: 35105
-  server: sg1.iepl.cooc.icu
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0067
-  password: 0FbAIi3rHkEO5rYv
-  port: 10057
-  server: dibai2.lvuy.xyz
-  type: ss
 - cipher: aes-128-gcm
-  name: 29|CN_speednode_0068
-  password: be348bb4-5a46-4ef9-9d82-d370e4191774
-  port: 35611
-  server: fr1.iepl.cooc.icu
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0069
+  name: 29|CN_speednode_0015
   password: QHPy2u
   plugin: obfs
   plugin-opts:
-    host: 20e8892242.download.windowsupdate.com
+    host: 47ed892290.download.windowsupdate.com
     mode: http
     skip-cert-verify: true
     tls: true
-  port: 816
+  port: 9044
   server: 231103level1.unclemanco.com
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0070
-  network: tcp
-  port: 11035
-  server: dotu-sgv1.03ezhg0qsa.download
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ac1f3b35-1d03-3a85-beab-258d8f23edc6
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0071
-  password: 0FbAIi3rHkEO5rYv
-  port: 10053
-  server: uk1.lvuy.xyz
+- cipher: aes-256-gcm
+  name: 29|CN_speednode_0016
+  password: afcc9a16-3cb4-4ef9-b89d-d58ac52e4e15
+  port: 32881
+  server: usa2.iepl.cooc.icu
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0072
-  network: tcp
-  port: 11037
-  server: dotu-sgv1.03ezhg0qsa.download
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ac1f3b35-1d03-3a85-beab-258d8f23edc6
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0074
-  password: be348bb4-5a46-4ef9-9d82-d370e4191774
-  port: 35612
-  server: ru.iepl.cooc.icu
+- cipher: aes-256-gcm
+  name: 29|CN_speednode_0017
+  password: afcc9a16-3cb4-4ef9-b89d-d58ac52e4e15
+  port: 31881
+  server: usa1.iepl.cooc.icu
+  type: ss
+- cipher: aes-256-gcm
+  name: 29|CN_speednode_0018
+  password: afcc9a16-3cb4-4ef9-b89d-d58ac52e4e15
+  port: 35105
+  server: sg1.iepl.cooc.icu
   type: ss
 - alterId: 2
   cipher: auto
-  name: 29|CN_speednode_0075
+  name: 29|CN_speednode_0019
   network: ws
   port: 23615
   server: 15.v2-ray.cyou
@@ -641,28 +200,82 @@ proxies:
     headers:
       host: 15.v2-ray.cyou
     path: /
-- alterId: 2
-  cipher: auto
-  name: 29|CN_speednode_0079
-  network: ws
-  port: 23614
-  server: 14.v2-ray.cyou
-  skip-cert-vertify: true
-  tls: false
-  type: vmess
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0020
+  password: fs23l/
+  plugin: obfs
+  plugin-opts:
+    host: 47ed892290.download.windowsupdate.com
+    mode: http
+    skip-cert-verify: true
+    tls: true
+  port: 2688
+  server: 231103level1.unclemanco.com
+  type: ss
   udp: true
-  uuid: 3b2e3e4c-77e5-30b3-bb34-ff312517ab35
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0021
+  password: dajsdkdkjda&dja*/?
+  plugin: obfs
+  plugin-opts:
+    host: 47ed892290.download.windowsupdate.com
+    mode: http
+    skip-cert-verify: true
+    tls: true
+  port: 2201
+  server: 231103level2.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0022
+  password: afcc9a16-3cb4-4ef9-b89d-d58ac52e4e15
+  port: 35611
+  server: fr1.iepl.cooc.icu
+  type: ss
+- client-fingerprint: random
+  name: 29|CN_speednode_0023
+  network: ws
+  port: 17630
+  server: 27.115.117.197
+  servername: toujiediansigema.666888.lol
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4f42d8f7-8beb-47e1-9465-8f390c6d658d
   ws-opts:
     headers:
-      host: 14.v2-ray.cyou
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0080
-  network: tcp
-  port: 11046
-  server: dotu-krv1.03ezhg0qsa.download
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ac1f3b35-1d03-3a85-beab-258d8f23edc6
+      Host: toujiediansigema.666888.lol
+    path: TG@mianfeicf
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0024
+  password: afcc9a16-3cb4-4ef9-b89d-d58ac52e4e15
+  port: 35612
+  server: ru.iepl.cooc.icu
+  type: ss
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0025
+  password: afcc9a16-3cb4-4ef9-b89d-d58ac52e4e15
+  port: 35102
+  server: kr2.iepl.cooc.icu
+  type: ss
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0026
+  password: dajkdkjdsa&dja*/?
+  plugin: obfs
+  plugin-opts:
+    host: 47ed892290.download.windowsupdate.com
+    mode: http
+    skip-cert-verify: true
+    tls: true
+  port: 37865
+  server: 231103level2.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0027
+  password: afcc9a16-3cb4-4ef9-b89d-d58ac52e4e15
+  port: 35101
+  server: kr1.iepl.cooc.icu
+  type: ss
