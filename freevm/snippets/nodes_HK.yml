@@ -55,7 +55,7 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  name: 11,25|9|baipaovpn香港
+  name: 11,21,25|9|baipaovpn香港
   network: ws
   port: '80'
   server: 8.210.3.24
@@ -67,6 +67,19 @@ proxies:
     headers:
       Host: needayhk1.renwox.xyz
     path: /needay?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 20|🇰HK-8.210.3.24-127
+  network: ws
+  port: 80
+  server: 8.210.3.24
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5d815dc6-a795-44ff-aeb6-7ee16a7a1c57
+  ws-headers:
+    Host: needayhk1.renwox.xyz
+  ws-path: /needay?ed=2048
 - alterId: 1
   cipher: auto
   name: 21|🇭🇰 香港(欢迎订阅Youtube破解资源君)
@@ -93,19 +106,6 @@ proxies:
     headers:
       Host: 421hk.fans8.xyz
     path: /ray
-- alterId: 0
-  cipher: auto
-  name: 21|🇭🇰 香港 腾讯云
-  network: ws
-  port: '443'
-  server: 43.154.96.33
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      Host: cfhk.393930.xyz
-    path: /
 - alterId: 64
   cipher: auto
   name: 25,27|香港|@ripaojiedian
@@ -116,23 +116,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
+- alterId: 64
   cipher: auto
-  client-fingerprint: chrome
-  name: 25,26,27|香港7|@ripaojiedian
-  network: ws
-  port: '20206'
-  server: data-hk-v1.usabooks.com.cn
+  name: 25,27|香港2|@ripaojiedian
+  network: tcp
+  port: '40259'
+  server: 120.238.122.243
   servername: ''
-  skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-hk-v1.usabooks.com.cn
-    path: /debian
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 26|🇭🇰 香港KT|@ripaojiedian
@@ -149,21 +142,6 @@ proxies:
   server: 172.67.198.153
   tfo: false
   type: ss
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  delay: 1356
-  name: 26,29|CN_speednode_0005
-  password: 09191dbf-e7f7-4e7d-b405-c4785ea992bf
-  port: 35601
-  server: 120.238.122.243
-  skip-cert-verify: true
-  sni: ftp.debian.org
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 28|🇭🇰HK-47.76.35.246-0787
