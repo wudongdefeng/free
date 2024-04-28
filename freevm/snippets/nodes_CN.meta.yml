@@ -1,11 +1,14 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 11,25|9|baipaovpn中国
+  client-fingerprint: chrome
+  name: 11,25,26,27|台湾|@ripaojiedian
   network: ws
   port: '80'
-  server: 8.219.112.75
+  server: 8.218.85.128
   servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: 5d815dc6-a795-44ff-aeb6-7ee16a7a1c57
@@ -13,6 +16,23 @@ proxies:
     headers:
       Host: tw1.renwox.xyz
     path: /needay?ed=2048
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 11,25,26,27|香港|@ripaojiedian
+  network: ws
+  port: '16632'
+  server: m.cnmjin.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
 - alterId: 64
   cipher: auto
   name: 13,21,25,27|香港2|@ripaojiedian
@@ -25,11 +45,90 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '13,21|🇨🇳 广东省广州市 移动 #1'
+  name: '21|🇨🇳 广东省广州市 移动 #1'
   network: tcp
   port: '41492'
   server: 120.232.242.117
-  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 25|9|baipaovpn中国
+  network: ws
+  port: '80'
+  server: 8.219.112.75
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d815dc6-a795-44ff-aeb6-7ee16a7a1c57
+  ws-opts:
+    headers:
+      Host: tw1.renwox.xyz
+    path: /needay?ed=2048
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0004
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: f478f13:54448
+    mode: tls
+  port: 2377
+  server: 221.215.48.116
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0005
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: f478f13:54448
+    mode: tls
+  port: 2377
+  server: 221.215.48.117
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0006
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: f478f13:54448
+    mode: tls
+  port: 2377
+  server: 221.215.48.118
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0007
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: ff5c0fb:30513
+    mode: tls
+  port: 2377
+  server: 221.215.48.68
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0008
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: ff5c0fb:30513
+    mode: tls
+  port: 2377
+  server: 120.241.46.100
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0009
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: ff5c0fb:30513
+    mode: tls
+  port: 2377
+  server: 120.241.46.106
+  type: ss
+  udp: true
