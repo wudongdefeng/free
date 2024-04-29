@@ -1,13 +1,4 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 11|广东省潮州市 移动
-  network: tcp
-  port: 35044
-  server: 183.240.188.59
-  tls: false
-  type: vmess
-  uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738
 - alterId: 64
   cipher: auto
   name: 11,13,21,25,27|香港2|@ripaojiedian
@@ -20,18 +11,40 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '13,15,16,21,28|github.com/freefq - 广东省移动 7 #1'
+  client-fingerprint: chrome
+  name: 11,25,26,27|香港7|@ripaojiedian
   network: ws
-  port: '20401'
-  server: data-us-v1.shwjfkw.cn
+  port: '20206'
+  server: data-hk-v1.usabooks.com.cn
   servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: b1478e24-4916-3abe-8f17-15931012ecbe
   ws-opts:
     headers:
-      Host: data-us-v1.shwjfkw.cn
+      Host: data-hk-v1.usabooks.com.cn
     path: /debian
+- alterId: 0
+  cipher: auto
+  name: 11,25,27|香港3|@ripaojiedian
+  network: tcp
+  port: '15606'
+  server: 183.240.255.91
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaad
+- alterId: 0
+  cipher: auto
+  name: 13|广东省潮州市 移动
+  network: tcp
+  port: 35044
+  server: 183.240.188.59
+  tls: false
+  type: vmess
+  uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -63,69 +76,63 @@ proxies:
     headers:
       Host: mix.tgdns68.vps666.onflashdrive.app
     path: /TG@dns68公益节点
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0004
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: f478f13:54448
-    mode: tls
-  port: 2377
-  server: 221.215.48.116
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
+- alterId: 2
+  cipher: auto
   name: 29|CN_speednode_0005
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: f478f13:54448
-    mode: tls
-  port: 2377
-  server: 221.215.48.117
-  type: ss
+  network: ws
+  port: 23613
+  server: 13.v2-ray.cyou
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
+  uuid: c0c1622d-9566-34e9-b5e6-79bdcd785668
+  ws-opts:
+    headers:
+      host: 13.v2-ray.cyou
+    path: /
+- alterId: 2
+  cipher: auto
   name: 29|CN_speednode_0006
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: f478f13:54448
-    mode: tls
-  port: 2377
-  server: 221.215.48.118
-  type: ss
+  network: ws
+  port: 23612
+  server: 12.v2-ray.cyou
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
+  uuid: c0c1622d-9566-34e9-b5e6-79bdcd785668
+  ws-opts:
+    headers:
+      host: 12.v2-ray.cyou
+    path: /
+- alterId: 2
+  cipher: auto
   name: 29|CN_speednode_0007
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: ff5c0fb:30513
-    mode: tls
-  port: 2377
-  server: 221.215.48.68
-  type: ss
+  network: ws
+  port: 23615
+  server: 15.v2-ray.cyou
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
+  uuid: c0c1622d-9566-34e9-b5e6-79bdcd785668
+  ws-opts:
+    headers:
+      host: 15.v2-ray.cyou
+    path: /
+- alterId: 2
+  cipher: auto
   name: 29|CN_speednode_0008
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: ff5c0fb:30513
-    mode: tls
-  port: 2377
-  server: 120.241.46.100
-  type: ss
+  network: ws
+  port: 23614
+  server: 14.v2-ray.cyou
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0009
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: ff5c0fb:30513
-    mode: tls
-  port: 2377
-  server: 120.241.46.106
-  type: ss
-  udp: true
+  uuid: c0c1622d-9566-34e9-b5e6-79bdcd785668
+  ws-opts:
+    headers:
+      host: 14.v2-ray.cyou
+    path: /
