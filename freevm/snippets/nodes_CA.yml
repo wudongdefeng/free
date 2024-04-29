@@ -96,14 +96,18 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 11,25|9|baipaovpn加拿大
-  network: tcp
-  port: '54126'
+  name: '11,25|9|baipaovpn加拿大 #2'
+  network: ws
+  port: '15638'
   server: 47.129.56.213
   servername: ''
   tls: false
   type: vmess
   uuid: 2062a5ca-a34e-47bf-9810-db91185f07fc
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 12|🇨🇦加拿大04
@@ -113,13 +117,13 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f804dc73-ef26-4f0f-b8af-5e6dcb6b891e
+  uuid: c4bdbf66-161d-4eb5-a422-76418d0c708d
 - alterId: 0
   cipher: auto
   country: CA
   h2-opts: {}
   http-opts: {}
-  name: 13,25,29|CA_speednode_0003
+  name: 13,25,29|CA_speednode_0002
   network: ws
   port: 443
   server: 158.51.123.111
@@ -164,7 +168,17 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 854d3b88-f92d-40a5-a6f5-624b459cfa35
+  uuid: a2e358a8-262d-44aa-8ec0-c40de10555b8
+- alterId: 0
+  cipher: auto
+  name: 25|9|baipaovpn加拿大
+  network: tcp
+  port: '54126'
+  server: 47.129.56.213
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2062a5ca-a34e-47bf-9810-db91185f07fc
 - alterId: 0
   cipher: auto
   name: '25|9|baipaovpn加拿大 #1'
@@ -181,21 +195,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '25|9|baipaovpn加拿大 #2'
-  network: ws
-  port: '15638'
-  server: 47.129.56.213
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2062a5ca-a34e-47bf-9810-db91185f07fc
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 29|CA_speednode_0002
+  name: 29|CA_speednode_0003
   network: ws
   port: 443
   server: 158.51.123.111
@@ -206,18 +206,4 @@ proxies:
   ws-opts:
     headers:
       Host: 158.51.123.111
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 29|CA_speednode_0004
-  network: ws
-  port: 443
-  server: 158.51.121.36
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 158.51.121.36
     path: /linkvws
