@@ -1,14 +1,21 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 11,25|9|baipaovpn广东省江门市
-  network: tcp
-  port: '35015'
-  server: 120.238.122.228
+  client-fingerprint: chrome
+  name: 11,25,26,27|香港|@ripaojiedian
+  network: ws
+  port: '16632'
+  server: m.cnmjin.net
   servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -26,3 +33,13 @@ proxies:
     headers:
       Host: data-hk-v1.usabooks.com.cn
     path: /debian
+- alterId: 0
+  cipher: auto
+  name: 25|9|baipaovpn广东省江门市
+  network: tcp
+  port: '35015'
+  server: 120.238.122.228
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738
