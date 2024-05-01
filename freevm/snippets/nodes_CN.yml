@@ -1,18 +1,25 @@
 proxies:
-- alterId: 64
-  cipher: auto
-  name: 11,25,27|香港2|@ripaojiedian
-  network: tcp
-  port: '40259'
-  server: 120.238.122.243
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11,25,26,27|香港7|@ripaojiedian
+  name: 11,13,21,25,26,27|香港|@ripaojiedian
+  network: ws
+  port: '16632'
+  server: m.cnmjin.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 11,21,25,26,27|香港7|@ripaojiedian
   network: ws
   port: '20206'
   server: data-hk-v1.usabooks.com.cn
@@ -28,7 +35,7 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: 13,20,21|🇨🇳 广东省佛山市 移动
+  name: 11,13,20,21|🇨🇳 广东省佛山市 移动
   network: tcp
   port: '15600'
   server: 183.232.199.28
@@ -42,34 +49,21 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  name: 13|广东省广州市 移动
+  name: 13,20,21|🇨🇳 广东省广州市 移动
   network: tcp
   port: '54437'
   server: 183.236.51.59
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 13,21,25,26,27|香港|@ripaojiedian
-  network: ws
-  port: '16632'
-  server: m.cnmjin.net
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
-  ws-opts:
-    headers:
-      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
-    path: /
+  ws-headers:
+    Host: 183.236.51.59
+  ws-path: /
 - alterId: 64
   cipher: auto
-  name: 13,20,21|🇨🇳 广东省广州市 移动
+  name: '13,20,21|🇨🇳 广东省广州市 移动 #1'
   network: tcp
   port: '41492'
   server: 120.232.242.117
@@ -175,7 +169,7 @@ proxies:
   ws-path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: 20|🇳CN-120.233.42.83-192
+  name: 20|🇨🇳CN-120.233.42.83-179
   network: ws
   port: 20401
   server: data-us-v1.shwjfkw.cn
@@ -187,19 +181,19 @@ proxies:
     Host: data-us-v1.shwjfkw.cn
   ws-path: /debian
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.160-193
+  name: 20|🇨🇳CN-120.238.122.159-180
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.159-196
+  name: 20|🇨🇳CN-120.238.122.160-183
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.160-197
+  name: 20|🇨🇳CN-120.238.122.159-184
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
@@ -210,35 +204,36 @@ proxies:
   port: 30818
   server: wqfuinwqffq.dfcloud.xyz
   type: ss
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 20|🇳CN-36.140.21.99-127
-  network: ws
-  port: 10163
-  server: zf.lalayun.cyou
+  name: 20,21,25,27|香港2|@ripaojiedian
+  network: tcp
+  port: '40259'
+  server: 120.238.122.243
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: b1553abe-6f1f-3288-bfc2-908b2f9fc4fc
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-headers:
-    Host: hk.lalayunssl.xyz
-  ws-path: /v2ray
-- alterId: 0
-  cipher: auto
-  name: 20|🇨🇳CN-120.233.204.126-134
-  network: ws
-  port: 16632
-  server: m.cnmjin.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
-  ws-headers:
-    Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    Host: 120.238.122.243
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20|🇳CN-220.205.37.42-148
+  name: 20|🇳CN-120.233.42.83-132
+  network: ws
+  port: 20206
+  server: data-hk-v1.usabooks.com.cn
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-headers:
+    Host: data-hk-v1.usabooks.com.cn
+  ws-path: /debian
+- alterId: 0
+  cipher: auto
+  name: 20|🇨🇳CN-116.162.172.120-153
   network: ws
   port: 16632
   server: yes.cnmjcn.net
@@ -251,7 +246,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20|🇨🇳CN-122.191.111.85-172
+  name: 20|🇨🇳CN-122.191.111.85-157
   network: ws
   port: 20301
   server: data-jp-v1.usabooks.com.cn
@@ -264,17 +259,17 @@ proxies:
   ws-path: /debian
 - alterId: 0
   cipher: auto
-  name: 21|🇨🇳 甘肃省兰州市 移动
+  name: 20|🇳CN-120.233.204.126-161
   network: ws
-  port: '10163'
-  server: zf.lalayun.cyou
+  port: 16632
+  server: m.cnmjin.net
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: b1553abe-6f1f-3288-bfc2-908b2f9fc4fc
-  ws-opts:
-    headers:
-      Host: hk.lalayunssl.xyz
-    path: /v2ray
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-headers:
+    Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 29|CN_speednode_0002
