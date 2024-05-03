@@ -1,6 +1,6 @@
 proxies:
 - cipher: aes-256-gcm
-  name: 1,20|🇨CA-23.162.200.215-009
+  name: 1|_CA_
   password: Y6R9pAtvxxzmGC
   port: 9090
   server: 23.162.200.215
@@ -109,37 +109,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 0e19287f-f904-4071-9003-503d984b6641
-- cipher: aes-256-gcm
-  name: 20|🇨🇦CA-198.57.27.225-038
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 198.57.27.225
-  type: ss
-- cipher: aes-256-gcm
-  name: 20|🇨🇦CA-198.57.27.225-039
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 198.57.27.225
-  type: ss
-- cipher: aes-256-gcm
-  name: 20|🇦CA-198.57.27.225-040
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 198.57.27.225
-  type: ss
-- cipher: aes-256-gcm
-  name: 20|🇨🇦CA-198.57.27.225-046
-  password: zDNVedRFPQexG9v
-  port: 6379
-  server: 198.57.27.225
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇦CA-134.195.196.178-114
-  password: G!yBwPWH3Vao
-  port: 803
-  server: 134.195.196.178
-  type: ss
+  uuid: 7abe5219-fd56-4c48-b340-7122f1c8323b
 - alterId: 0
   cipher: auto
   name: 23|【BGP】加拿大 02 | 1x CA
@@ -149,7 +119,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b3963509-498e-455a-b4d1-ae9f01395f97
+  uuid: a3481c70-c691-409e-9ee6-df3a716682c9
 - cipher: aes-256-gcm
   name: 29|CA_speednode_0004
   password: RexnBgU7EV5ADxG
@@ -157,3 +127,16 @@ proxies:
   server: 216.39.250.113
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 29|CA_speednode_0006
+  network: ws
+  port: 443
+  server: 23.162.200.227
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
