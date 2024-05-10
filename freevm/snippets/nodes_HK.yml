@@ -88,26 +88,6 @@ proxies:
     headers:
       Host: v2.zjd1.xyz
     path: /qjnnvws
-- alterId: 64
-  cipher: auto
-  name: 25,27|香港2|@ripaojiedian
-  network: tcp
-  port: '40259'
-  server: 120.238.122.243
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 25,27|香港3|@ripaojiedian
-  network: tcp
-  port: '8443'
-  server: 120.232.240.38
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 39ef8f5d-7286-41b0-9c11-c976925d2931
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 26|🇭🇰 香港KT|@ripaojiedian
@@ -126,7 +106,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 26|🇭🇰 香港|@ripaojiedian
+  name: 26,29|CN_speednode_0015
   password: bMxhj5PHRyXZbwvM
   port: 43430
   server: gd1-hk.fwcloud.cc
@@ -135,16 +115,16 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 26|🇮🇳 印度|@ripaojiedian
+  name: 26,29|US_speednode_0122
   password: MyYoZhfX
-  port: 44001
-  server: 183.240.255.91
-  skip-cert-verify: false
+  port: 443
+  server: 38.77.232.31
+  skip-cert-verify: true
   sni: 421421.xyz
   tfo: false
-  tls: false
+  tls: true
   type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  uuid: 7f14897d-154a-4d03-ad28-dad24f37513c
 - alterId: 0
   cipher: auto
   name: 28|🇭🇰HK-47.76.35.246-0787
@@ -217,3 +197,12 @@ proxies:
     headers:
       Host: hrgdvpn.flycdnedc55.vip
     path: /opt/video/images
+- cipher: aes-256-cfb
+  name: 29|HK_speednode_0035
+  obfs: tls1.2_ticket_auth
+  obfs-param: cloudfront.net
+  password: iFqnzSscN
+  port: 8083
+  protocol: origin
+  server: 150.107.46.21
+  type: ssr
