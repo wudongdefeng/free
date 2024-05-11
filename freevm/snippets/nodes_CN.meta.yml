@@ -1,18 +1,31 @@
 proxies:
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 11,25,27,29|CN_speednode_0003
+  name: 11,13,20,21,25,27|香港3|@ripaojiedian
   network: tcp
-  port: 51707
-  server: 183.236.51.59
+  port: '8443'
+  server: 120.232.240.38
   servername: ''
   skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 39ef8f5d-7286-41b0-9c11-c976925d2931
+  ws-headers:
+    Host: 120.232.240.38
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: '11,13|广东省广州市 移动 #3'
+  network: tcp
+  port: '41492'
+  server: 120.232.242.117
+  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 11,25,27|香港2|@ripaojiedian
+  name: 11,13,25,27|香港2|@ripaojiedian
   network: tcp
   port: '40259'
   server: 120.238.122.243
@@ -22,9 +35,9 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 11,20,21,25,27|台湾|@ripaojiedian
+  name: 11,13,20,21,25,27,29|CN_speednode_0005
   network: tcp
-  port: '21006'
+  port: 15603
   server: 183.232.199.61
   servername: ''
   skip-cert-verify: true
@@ -50,18 +63,14 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: 13,20,21,25,27|香港3|@ripaojiedian
+  name: '11,13|广东省佛山市 移动 #3'
   network: tcp
-  port: '8443'
-  server: 120.232.240.38
+  port: '21006'
+  server: 183.232.199.28
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: 39ef8f5d-7286-41b0-9c11-c976925d2931
-  ws-headers:
-    Host: 120.232.240.38
-  ws-path: /
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
   name: 20|🇨🇳CN-120.233.42.83-161
@@ -101,6 +110,20 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: 20,21,25,27|台湾|@ripaojiedian
+  network: tcp
+  port: '21006'
+  server: 183.232.199.61
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  ws-headers:
+    Host: 183.232.199.61
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: '20,21|🇨🇳 广东省佛山市 移动 #1'
   network: tcp
   port: '61001'
@@ -131,20 +154,6 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- alterId: 0
-  cipher: auto
-  name: 20,21,25,27,29|CN_speednode_0005
-  network: tcp
-  port: 15603
-  server: 183.232.199.61
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-  ws-headers:
-    Host: 183.232.199.61
-  ws-path: /
 - cipher: chacha20-ietf-poly1305
   name: 20,29|CN_speednode_0047
   password: peWQ2LOeVWb9qvOz
