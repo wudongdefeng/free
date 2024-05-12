@@ -231,20 +231,34 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 25,26,27|香港|@ripaojiedian
+  name: 25,26,27,29|US_speednode_0107
   network: ws
-  port: '2052'
+  port: 2052
   server: hk.wish.ml
   servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 4168440c-41a1-4671-a5b2-8abfe318e1bb
+  udp: true
+  uuid: 714fbc68-3302-4750-b03f-c7f417c9ef78
+  ws-headers:
+    Host: hk2.wish.ml
   ws-opts:
     headers:
       Host: hk2.wish.ml
     path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 25,27|香港3|@ripaojiedian
+  network: tcp
+  port: '8443'
+  server: 120.232.240.38
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 39ef8f5d-7286-41b0-9c11-c976925d2931
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -264,19 +278,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  customName: 16|香港8|@ripaojiedian
-  name: 25,27,29|CN_speednode_0035
+  name: 25,27|香港8|@ripaojiedian
   network: tcp
-  port: 15603
+  port: '15603'
   server: 183.232.199.61
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-  ws-headers:
-    Host: 183.232.199.61
-  ws-path: /
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 26|🇭🇰 香港KT|@ripaojiedian
