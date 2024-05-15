@@ -1,41 +1,17 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '11,13,15,16,21,28|github.com/freefq - 广东省移动 7 #1'
-  network: ws
-  port: '20401'
-  server: data-us-v1.shwjfkw.cn
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-us-v1.shwjfkw.cn
-    path: /debian
-- alterId: 0
-  cipher: auto
-  name: 11|广东省佛山市 移动
+  name: 11,13,21,25,27|日本2|@ripaojiedian
   network: tcp
-  port: '61001'
-  server: 183.232.199.61
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-- alterId: 0
-  cipher: auto
-  name: 11,13,21,25,27|香港6|@ripaojiedian
-  network: tcp
-  port: '15601'
-  server: 183.240.179.195
+  port: '61002'
+  server: 183.232.142.179
   servername: ''
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 64
   cipher: auto
-  name: 13,21|🇨🇳 广东省广州市 移动
+  name: 11,13,21|🇨🇳 广东省广州市 移动
   network: tcp
   port: '54437'
   server: 183.236.51.59
@@ -55,10 +31,24 @@ proxies:
   uuid: 39ef8f5d-7286-41b0-9c11-c976925d2931
 - alterId: 0
   cipher: auto
-  name: 13,21,25,27|日本2|@ripaojiedian
+  name: '13,15,16,21,28|github.com/freefq - 广东省移动 7 #1'
+  network: ws
+  port: '20401'
+  server: data-us-v1.shwjfkw.cn
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-us-v1.shwjfkw.cn
+    path: /debian
+- alterId: 0
+  cipher: auto
+  name: 13,21,25,27|香港6|@ripaojiedian
   network: tcp
-  port: '61002'
-  server: 183.232.142.179
+  port: '15601'
+  server: 183.240.179.195
   servername: ''
   tls: false
   type: vmess
@@ -84,9 +74,6 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  country: 🏁 ZZ
-  h2-opts: {}
-  http-opts: {}
   name: 29|CN_speednode_0004
   network: tcp
   port: 31778
@@ -96,8 +83,28 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- delay: 321
+- alterId: 0
+  cipher: auto
   name: 29|CN_speednode_0005
+  network: ''
+  port: 8443
+  server: 120.232.240.38
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 39ef8f5d-7286-41b0-9c11-c976925d2931
+- alterId: 64
+  cipher: auto
+  name: 29|CN_speednode_0006
+  network: tcp
+  port: 54100
+  server: 183.236.51.59
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- delay: 321
+  name: 29|CN_speednode_0007
   network: ws
   port: 443
   server: 103.44.255.27
@@ -109,47 +116,229 @@ proxies:
     headers:
       host: juzibaipiao.5112233.xyz
     path: /?ed=2048
-- alterId: 64
-  cipher: auto
-  name: 29|CN_speednode_0006
-  network: tcp
-  port: 54100
-  server: 183.236.51.59
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0007
-  network: ''
-  port: 8443
-  server: 120.232.240.38
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 39ef8f5d-7286-41b0-9c11-c976925d2931
-- name: 29|CN_speednode_0008
-  network: ws
-  port: 35628
-  server: 39.172.116.144
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      host: cfed.tgzdyz2.top
-    path: tg@zdyz2
-- name: 29|CN_speednode_0010
-  network: ws
-  port: 31558
-  server: 183.230.233.182
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      host: cfed.tgzdyz2.top
-    path: tg@zdyz2
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0008
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8101
+  server: cn01.mynode.me
+  type: ss
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0009
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8102
+  server: cn01.mynode.me
+  type: ss
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0010
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8104
+  server: cn02.mynode.me
+  type: ss
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0011
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8107
+  server: cn02.mynode.me
+  type: ss
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0012
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8115
+  server: cn03.mynode.me
+  type: ss
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0013
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8126
+  server: cn05.mynode.me
+  type: ss
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0014
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8120
+  server: cn04.mynode.me
+  type: ss
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0015
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8106
+  server: cn02.mynode.me
+  type: ss
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0016
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8201
+  server: cn06.mynode.me
+  type: ss
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0017
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8233
+  server: cn06.mynode.me
+  type: ss
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0018
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8108
+  server: cn02.mynode.me
+  type: ss
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0019
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8231
+  server: cn06.mynode.me
+  type: ss
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0020
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8103
+  server: cn01.mynode.me
+  type: ss
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0021
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8232
+  server: cn06.mynode.me
+  type: ss
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0022
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8109
+  server: cn02.mynode.me
+  type: ss
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0023
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8304
+  server: cn10.mynode.me
+  type: ss
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0024
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8302
+  server: cn10.mynode.me
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0025
+  password: dc15cb4a-3968-4522-a2ff-6f4089d0e34e
+  port: 30019
+  server: jp19.mmyjiedian.com
+  type: ss
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0026
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8305
+  server: cn10.mynode.me
+  type: ss
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0027
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8301
+  server: cn10.mynode.me
+  type: ss
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0028
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8207
+  server: cn07.mynode.me
+  type: ss
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0029
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8212
+  server: cn08.mynode.me
+  type: ss
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0030
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 18202-U55CR7ZN6ajm8UHB.download.microsoft.com
+    mode: http
+  port: 8211
+  server: cn08.mynode.me
+  type: ss
