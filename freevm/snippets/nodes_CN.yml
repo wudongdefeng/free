@@ -1,34 +1,34 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 11,25,27|日本2|@ripaojiedian
+  name: 11,20,21,25,27|日本2|@ripaojiedian
   network: tcp
   port: '61002'
   server: 183.232.142.179
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  ws-headers:
+    Host: 183.232.142.179
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 11|广东省 移动
-  network: ws
-  port: '20206'
-  server: data-hk-v1.usabooks.com.cn
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-hk-v1.usabooks.com.cn
-    path: /debian
-- alterId: 0
-  cipher: auto
-  name: 11,25,27|香港|@ripaojiedian
+  name: 11,25,27|香港3|@ripaojiedian
   network: tcp
-  port: '15603'
-  server: 183.240.179.195
+  port: '8443'
+  server: 120.232.240.38
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 39ef8f5d-7286-41b0-9c11-c976925d2931
+- alterId: 0
+  cipher: auto
+  name: 11|广东省佛山市 移动
+  network: tcp
+  port: '21006'
+  server: 183.232.199.61
   servername: ''
   tls: false
   type: vmess
@@ -47,6 +47,157 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 20,26|🇺🇸 美国5|@ripaojiedian
+  password: TNDSJfNv
+  port: 20344
+  server: 36.151.195.48
+  skip-cert-verify: true
+  sni: appsvs.shop
+  tfo: false
+  tls: false
+  type: trojan
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇪🇺 欧洲(欢迎订阅Youtube破解资源君) #9'
+  network: tcp
+  port: '12005'
+  server: bgpv2.ktyjsq.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6
+  ws-headers:
+    Host: bgpv2.ktyjsq.com
+  ws-path: /
+- cipher: aes-128-gcm
+  name: 20|🇨🇳CN-183.240.124.200-020
+  password: fcae85b5-baf0-4c5a-ba80-5f513e70512a
+  port: 44822
+  server: 183.240.124.200
+  type: ss
+- cipher: aes-128-gcm
+  name: 20|🇳CN-183.240.124.200-060
+  password: fcae85b5-baf0-4c5a-ba80-5f513e70512a
+  port: 44812
+  server: 183.240.124.200
+  type: ss
+- cipher: aes-128-gcm
+  name: 20|🇨🇳CN-183.240.124.200-099
+  password: fcae85b5-baf0-4c5a-ba80-5f513e70512a
+  port: 44823
+  server: 183.240.124.200
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|🇨🇳CN-120.233.42.83-170
+  network: ws
+  port: 20401
+  server: data-us-v1.shwjfkw.cn
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-headers:
+    Host: data-us-v1.shwjfkw.cn
+  ws-path: /debian
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇨🇳CN-120.238.122.160-171
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20003
+  server: service.ouluyun9803.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇨🇳CN-120.238.122.159-174
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 26667
+  server: service.ouluyun9803.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇨🇳CN-120.238.122.160-175
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20005
+  server: service.ouluyun9803.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇳CN-117.149.247.11-120
+  password: 8e949d75-3510-4678-8593-3c5032dd931a
+  port: 30818
+  server: wqfuinwqffq.dfcloud.xyz
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|🇳CN-120.233.42.83-136
+  network: ws
+  port: 20206
+  server: data-hk-v1.usabooks.com.cn
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-headers:
+    Host: data-hk-v1.usabooks.com.cn
+  ws-path: /debian
+- alterId: 0
+  cipher: auto
+  name: 20,21,25,27|香港|@ripaojiedian
+  network: tcp
+  port: '15603'
+  server: 183.240.179.195
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  ws-headers:
+    Host: 183.240.179.195
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇨🇳CN-119.23.104.213-147
+  password: a501c82c72d790b8
+  port: 8474
+  server: 119.23.104.213
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 21|🇨🇳 广东省 移动
+  network: ws
+  port: '20206'
+  server: data-hk-v1.usabooks.com.cn
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-hk-v1.usabooks.com.cn
+    path: /debian
+- alterId: 0
+  cipher: auto
+  name: 25|9|baipaovpn广东省
+  network: ws
+  port: '20206'
+  server: 120.233.42.83
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-hk-v1.usabooks.com.cn
+    path: /debian
+- alterId: 64
+  cipher: auto
+  name: 25|9|baipaovpn广东省广州市
+  network: tcp
+  port: '54437'
+  server: 183.236.51.59
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: 29|CN_speednode_0004
