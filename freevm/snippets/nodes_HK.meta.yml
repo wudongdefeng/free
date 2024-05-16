@@ -55,20 +55,7 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  name: 20|HK-210.3.159.224-110
-  network: ws
-  port: 12909
-  server: 210.3.159.224
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-headers:
-    Host: 210.3.159.224
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 21,25|0|-https://t.me/MrXbin-249
+  name: 11,25|0|-https://t.me/MrXbin-249
   network: ws
   port: 12909
   server: 210.3.159.224
@@ -89,14 +76,21 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: 25,27|香港3|@ripaojiedian
-  network: tcp
-  port: '8443'
-  server: 120.232.240.38
+  client-fingerprint: chrome
+  name: 25,26,27|香港2|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: hk.wish.ml
   servername: ''
-  tls: true
+  skip-cert-verify: false
+  tfo: false
+  tls: false
   type: vmess
-  uuid: 39ef8f5d-7286-41b0-9c11-c976925d2931
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  ws-opts:
+    headers:
+      Host: hk2.wish.ml
+    path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -126,6 +120,23 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  name: 25,26,27|香港7|@ripaojiedian
+  network: ws
+  port: '16632'
+  server: yes.cnmjcn.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: 25,27|香港8|@ripaojiedian
   network: tcp
   port: '15603'
@@ -150,6 +161,18 @@ proxies:
   server: 8.210.229.184
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 26|🇺🇸 美国5|@ripaojiedian
+  password: TNDSJfNv
+  port: 20344
+  server: 36.151.195.48
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: trojan
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
   name: 28|🇭🇰HK-47.76.35.246-0787
