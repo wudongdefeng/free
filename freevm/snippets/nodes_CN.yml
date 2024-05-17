@@ -15,34 +15,46 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 13,25,27|香港|@ripaojiedian
+  name: 13,20,21,25,27|香港|@ripaojiedian
   network: tcp
   port: '15603'
   server: 183.240.179.195
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  ws-headers:
+    Host: 183.240.179.195
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '13|广东省汕头市 移动 #1'
+  name: '13,20,21|🇨🇳 广东省汕头市 移动 #1'
   network: tcp
   port: '61002'
   server: 183.240.179.195
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  ws-headers:
+    Host: 183.240.179.195
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 13,25|9|baipaovpn广东省佛山市
+  name: 13,20,21,25|9|baipaovpn广东省佛山市
   network: tcp
   port: '21006'
   server: 183.232.199.28
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  ws-headers:
+    Host: 183.232.199.28
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '13,15,16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -103,7 +115,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 20|🇨🇳CN-120.233.42.83-177
+  name: 20|🇨🇳CN-120.233.42.83-153
   network: ws
   port: 20401
   server: data-us-v1.shwjfkw.cn
@@ -115,19 +127,19 @@ proxies:
     Host: data-us-v1.shwjfkw.cn
   ws-path: /debian
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.159-178
+  name: 20|🇳CN-120.238.122.159-154
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.159-181
+  name: 20|🇨🇳CN-120.238.122.159-157
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.159-182
+  name: 20|🇨🇳CN-120.238.122.160-158
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
@@ -140,100 +152,17 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 20,21,25,27|香港8|@ripaojiedian
-  network: tcp
-  port: '15603'
-  server: 183.232.199.61
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-  ws-headers:
-    Host: 183.232.199.61
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 20|🇨🇳CN-183.240.220.84-135
+  name: 20|🇨🇳CN-122.191.111.85-119
   network: ws
-  port: 16627
-  server: 183.240.220.84
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
-  ws-headers:
-    Host: 193.25.215.160
-  ws-path: /niuniu
-- alterId: 0
-  cipher: auto
-  name: 20|🇳CN-120.233.42.83-164
-  network: ws
-  port: 20207
-  server: 120.233.42.83
+  port: 20301
+  server: data-jp-v1.usabooks.com.cn
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: b1478e24-4916-3abe-8f17-15931012ecbe
   ws-headers:
-    Host: data-hk-v1.shwjfkw.cn
+    Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- alterId: 64
-  cipher: auto
-  name: 20,21|🇨🇳 广东省江门市 移动
-  network: tcp
-  port: '40259'
-  server: 120.238.122.243
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.238.122.243
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 20|🇨🇳CN-120.233.204.126-168
-  network: ws
-  port: 16632
-  server: m.cnmjin.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
-  ws-headers:
-    Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 21,25|10|🇨🇳_CN_中国->🇱🇺_LU_卢森堡_由快嘴科技提供...
-  network: ws
-  port: 16627
-  server: 183.240.220.84
-  tls: false
-  type: vmess
-  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
-  ws-opts:
-    headers:
-      Host: 193.25.215.160
-    path: /niuniu
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 21,25,26,27|香港5|@ripaojiedian
-  network: ws
-  port: '16632'
-  server: m.cnmjin.net
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
-  ws-opts:
-    headers:
-      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
-    path: /
 - alterId: 64
   cipher: auto
   name: 25|9|baipaovpn广东省江门市
