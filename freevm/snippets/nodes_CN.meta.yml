@@ -13,47 +13,29 @@ proxies:
   ws-headers:
     Host: 183.232.199.28
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 11|广东省 移动
-  network: ws
-  port: '20207'
-  server: 120.233.42.83
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: ''
-    path: /debian
 - alterId: 64
   cipher: auto
-  name: 11|广东省江门市 移动
+  name: '11,13|广东省广州市 移动 #1'
   network: tcp
-  port: '40259'
-  server: 120.238.122.243
+  port: '54437'
+  server: 183.236.51.59
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 11,13,20,21,25,27|香港|@ripaojiedian
+  name: 11,13,25,27|香港6|@ripaojiedian
   network: tcp
-  port: '15603'
+  port: '15601'
   server: 183.240.179.195
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-  ws-headers:
-    Host: 183.240.179.195
-  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '13,20,21|🇨🇳 广东省佛山市 移动 #2'
+  name: '11,13,20,21|🇨🇳 广东省佛山市 移动 #2'
   network: tcp
   port: '34998'
   server: 879xhl1.hsspr5bu1-tw02.my777999.top
@@ -67,18 +49,27 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '13,20,21|🇨🇳 广东省汕头市 移动 #1'
+  name: '11,13|广东省深圳市 移动 #1'
   network: tcp
-  port: '61002'
-  server: 183.240.179.195
-  servername: ''
-  skip-cert-verify: true
+  port: 61002
+  server: 183.232.142.179
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-  ws-headers:
-    Host: 183.240.179.195
-  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '11,13|广东省 移动 #1'
+  network: ws
+  port: '20206'
+  server: 120.233.42.83
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-hk-v1.usabooks.com.cn
+    path: /debian
 - alterId: 0
   cipher: auto
   name: '13,14,15,16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -232,6 +223,33 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
+- alterId: 0
+  cipher: auto
+  name: 20,21,25,27|香港|@ripaojiedian
+  network: tcp
+  port: '15603'
+  server: 183.240.179.195
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  ws-headers:
+    Host: 183.240.179.195
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇨🇳 广东省汕头市 移动 #1'
+  network: tcp
+  port: '61002'
+  server: 183.240.179.195
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  ws-headers:
+    Host: 183.240.179.195
+  ws-path: /
 - alterId: 64
   cipher: auto
   name: 25|9|baipaovpn广东省广州市
@@ -242,6 +260,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0002
+  password: ab106898-96fb-46b3-9de1-cfdceeaab04b
+  port: 16101
+  server: hk4.gauss.life
+  type: ss
 - alterId: 64
   cipher: auto
   country: 🏁 ZZ
@@ -256,16 +280,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   name: 29|CN_speednode_0004
-  network: ''
-  port: 8443
-  server: 120.232.240.38
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 39ef8f5d-7286-41b0-9c11-c976925d2931
+  password: ab106898-96fb-46b3-9de1-cfdceeaab04b
+  port: 16301
+  server: hk4.gauss.life
+  type: ss
 - alterId: 64
   cipher: auto
   name: 29|CN_speednode_0005
@@ -276,20 +296,37 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 29|CN_speednode_0006
-  network: ws
-  port: 35628
-  server: 39.172.116.144
-  servername: cfed.tgzdyz2.top
-  tls: true
-  type: vless
-  uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
-  ws-opts:
-    headers:
-      host: cfed.tgzdyz2.top
-    path: tg@zdyz2
-- delay: 321
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0006
+  password: ab106898-96fb-46b3-9de1-cfdceeaab04b
+  port: 16412
+  server: jp5.gauss.life
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: 29|CN_speednode_0007
+  password: ab106898-96fb-46b3-9de1-cfdceeaab04b
+  port: 16323
+  server: hk6.gauss.life
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0008
+  password: ab106898-96fb-46b3-9de1-cfdceeaab04b
+  port: 16423
+  server: jp6.gauss.life
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0009
+  password: ab106898-96fb-46b3-9de1-cfdceeaab04b
+  port: 16401
+  server: jp4.gauss.life
+  type: ss
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0010
+  password: ab106898-96fb-46b3-9de1-cfdceeaab04b
+  port: 16123
+  server: hk6.gauss.life
+  type: ss
+- name: 29|CN_speednode_0011
   network: ws
   port: 443
   server: 103.44.255.27
@@ -301,10 +338,16 @@ proxies:
     headers:
       host: juzibaipiao.5112233.xyz
     path: /?ed=2048
-- name: 29|CN_speednode_0008
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0012
+  password: ab106898-96fb-46b3-9de1-cfdceeaab04b
+  port: 16112
+  server: hk5.gauss.life
+  type: ss
+- name: 29|CN_speednode_0013
   network: ws
-  port: 31558
-  server: 183.230.233.182
+  port: 35628
+  server: 39.172.116.144
   servername: cfed.tgzdyz2.top
   tls: true
   type: vless
@@ -313,3 +356,29 @@ proxies:
     headers:
       host: cfed.tgzdyz2.top
     path: tg@zdyz2
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0014
+  password: ab106898-96fb-46b3-9de1-cfdceeaab04b
+  port: 16501
+  server: jp4.gauss.life
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0015
+  password: ab106898-96fb-46b3-9de1-cfdceeaab04b
+  port: 16512
+  server: jp5.gauss.life
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 29|CN_speednode_0016
+  network: ws
+  port: 20206
+  server: data-hk-v1.usabooks.com.cn
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-hk-v1.usabooks.com.cn
+    path: /debian
