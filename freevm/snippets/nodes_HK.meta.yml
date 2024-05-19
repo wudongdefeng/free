@@ -53,6 +53,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
+- alterId: 0
+  cipher: auto
+  name: 11|香港 环球全域电讯
+  network: ws
+  port: 12909
+  server: 210.3.159.224
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 64
   cipher: auto
   name: 20|HK-43.154.109.219-057
@@ -216,14 +230,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25,27|香港6|@ripaojiedian
-  network: tcp
-  port: '15601'
-  server: 183.240.179.195
+  client-fingerprint: chrome
+  name: 25,26,27|香港7|@ripaojiedian
+  network: ws
+  port: '16632'
+  server: yes.cnmjcn.net
   servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 25,27|香港8|@ripaojiedian
@@ -332,6 +353,19 @@ proxies:
     headers:
       Host: hrgdvpn.flycdnedc55.vip
     path: /opt/video/images
+- alterId: 64
+  cipher: auto
+  name: 29|HK_speednode_0110
+  network: ws
+  port: 443
+  server: 144.48.32.10
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.32011779.xyz
+    path: /path/182320181512
 - client-fingerprint: random
   name: 29|HK_speednode_0111
   network: ws
