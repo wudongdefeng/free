@@ -1,28 +1,28 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 11,13,15,21,28|日本2|@ripaojiedian
-  network: ws
-  port: '20301'
-  server: data-jp-v1.usabooks.com.cn
+  name: 11,25,27|香港3|@ripaojiedian
+  network: tcp
+  port: '8443'
+  server: 120.232.240.38
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-jp-v1.usabooks.com.cn
-    path: /debian
+  uuid: 39ef8f5d-7286-41b0-9c11-c976925d2931
 - alterId: 64
   cipher: auto
-  name: 11|广东省广州市 移动
+  name: '11,13,20,21|🇨🇳 广东省江门市 移动 #1'
   network: tcp
-  port: '54437'
-  server: 183.236.51.59
+  port: '40259'
+  server: 120.238.122.243
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.238.122.243
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '13,20,21|🇨🇳 广东省佛山市 移动 #1'
@@ -39,6 +39,20 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
+  name: 13,15,21,28|日本2|@ripaojiedian
+  network: ws
+  port: '20301'
+  server: data-jp-v1.usabooks.com.cn
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-jp-v1.usabooks.com.cn
+    path: /debian
+- alterId: 0
+  cipher: auto
   name: '13,20,21|🇨🇳 广东省佛山市 移动 #2'
   network: tcp
   port: '21006'
@@ -50,20 +64,6 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
   ws-headers:
     Host: 183.232.199.61
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  name: '13,20,21|🇨🇳 广东省江门市 移动 #1'
-  network: tcp
-  port: '40259'
-  server: 120.238.122.243
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.238.122.243
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -287,6 +287,16 @@ proxies:
     headers:
       Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
     path: /
+- alterId: 64
+  cipher: auto
+  name: '25|9|baipaovpn广东省广州市 #1'
+  network: tcp
+  port: '51707'
+  server: 183.236.51.59
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 29|CN_speednode_0002
