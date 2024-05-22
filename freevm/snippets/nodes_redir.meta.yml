@@ -15,18 +15,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,3,14,21,25,29|CN_speednode_0015
+  name: 1,3,14,20,21,25|10|🇨🇳_CN_中国->🇺🇸_US_美国_由快嘴科技提供：...
   network: tcp
   port: 30013
   server: 183.240.179.207
-  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4
+  ws-headers:
+    Host: 183.240.179.207
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '1,11,28|美国 CloudFlare节点 #23'
+  name: '1,28|美国 CloudFlare节点 #20'
   network: ws
   port: '2082'
   server: s1c.v2.v001sss.xyz
@@ -53,7 +55,8 @@ proxies:
     headers:
       host: in3.wish.ml
     path: /
-- name: 1,29|CN_speednode_0027
+- client-fingerprint: chrome
+  name: 1,29|CN_speednode_0031
   network: tcp
   password: TNDSJfNv
   port: 20344
@@ -121,7 +124,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '3,21|🇺🇸 美国 CloudFlare节点 #2'
+  name: 3,21|🇺🇸 _US_美国->🇺🇦_UA_乌克兰
   network: ws
   port: '80'
   server: 172.67.166.192
@@ -213,10 +216,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '7,14,25,28,30|🇺🇸_US_美国->🇫🇷_FR_法国 #7'
+  name: '7,11,14,25,28,30|🇺🇸_US_美国->🇫🇷_FR_法国 #7'
   network: ws
   port: 2082
   server: 172.67.130.140
+  servername: ''
   tls: false
   type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
