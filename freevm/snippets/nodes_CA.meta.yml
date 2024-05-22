@@ -96,14 +96,18 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '11,25|9|baipaovpn加拿大 #3'
-  network: tcp
-  port: '54126'
+  name: '11,25|9|baipaovpn加拿大 #2'
+  network: ws
+  port: '15638'
   server: 47.129.49.160
   servername: ''
   tls: false
   type: vmess
   uuid: 2062a5ca-a34e-47bf-9810-db91185f07fc
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 12|🇨🇦加拿大04
@@ -113,7 +117,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: ea841801-3736-4351-a6cf-d03b79e8a1fe
+  uuid: 5c7e6342-0584-4fef-9dc5-f2701d525c2f
 - alterId: 0
   cipher: auto
   name: 23|【BGP】加拿大 02 | 1x CA
@@ -123,7 +127,17 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 8486079d-9f2a-479a-946a-f30428d8a3c6
+  uuid: e606296a-8489-47e4-b8e9-1aa5c51c171d
+- alterId: 0
+  cipher: auto
+  name: '25|9|baipaovpn加拿大 #3'
+  network: tcp
+  port: '54126'
+  server: 47.129.49.160
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2062a5ca-a34e-47bf-9810-db91185f07fc
 - alterId: 0
   cipher: auto
   name: '25|9|baipaovpn加拿大 #1'
@@ -138,17 +152,3 @@ proxies:
     headers:
       Host: ''
     path: ''
-- alterId: 0
-  cipher: auto
-  name: '25|9|baipaovpn加拿大 #2'
-  network: ws
-  port: '15638'
-  server: 47.129.49.160
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2062a5ca-a34e-47bf-9810-db91185f07fc
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
