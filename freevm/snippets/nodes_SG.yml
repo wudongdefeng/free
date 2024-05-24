@@ -89,6 +89,20 @@ proxies:
     path: /chami
 - alterId: 0
   cipher: auto
+  name: 11|新加坡 DigitalOcean数据中心
+  network: ws
+  port: 99
+  server: 128.199.161.230
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: befd085a-91f7-4608-bc45-f40c1ac2f4b7
+  ws-opts:
+    headers:
+      Host: ''
+    path: /v2ray
+- alterId: 0
+  cipher: auto
   name: 15|新加坡(t.me/vvkj11)_1_35
   network: ws
   port: '2095'
@@ -203,20 +217,29 @@ proxies:
     headers:
       Host: gw.alicdn.com
     path: /CAT
-- alterId: 0
+- alterId: 64
   cipher: auto
-  country: 🇸🇬SG
-  h2-opts: {}
-  http-opts: {}
-  name: 29|SG_speednode_0113
+  name: 29|SG_speednode_0091
   network: ws
-  port: 80
-  server: 213.35.113.150
-  servername: dl.kgvn.garenanow.com
-  skip-cert-verify: true
+  port: 443
+  server: 14.128.63.197
+  tls: true
   type: vmess
-  uuid: eaf5e01b-f27d-44cf-94ae-87196143eef9
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     headers:
-      HOST: dl.kgvn.garenanow.com
-    path: /
+      Host: www.91937386.xyz
+    path: /path/182320181512
+- name: 29|SG_speednode_0092
+  network: ws
+  password: b84d16a244460e09
+  port: 3306
+  server: 5.44.249.44
+  skip-cert-verify: true
+  sni: n2.gladns.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: TG.WangCai_1
+    path: /gateway/connect
