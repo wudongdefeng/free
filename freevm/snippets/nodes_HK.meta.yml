@@ -66,6 +66,32 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 64
+  cipher: auto
+  name: '20,21|🇪🇺 欧洲(欢迎订阅Youtube破解资源君) #17'
+  network: tcp
+  port: '443'
+  server: 8.210.127.214
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5b00bd34-a2a7-4471-8b17-3f4768ac0330
+  ws-headers:
+    Host: 8.210.127.214
+  ws-path: /ws
+- alterId: 0
+  cipher: auto
+  name: 20|🇰HK-210.3.159.224-130
+  network: ws
+  port: 12909
+  server: 210.3.159.224
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-headers:
+    Host: 210.3.159.224
+  ws-path: /
 - alterId: 2
   cipher: auto
   name: 21|🇭🇰 香港(欢迎订阅Youtube破解资源君)
@@ -107,14 +133,21 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: 25,27|香港|@ripaojiedian
-  network: tcp
-  port: '15605'
-  server: 183.232.199.28
+  client-fingerprint: chrome
+  name: 25,26,27|香港2|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: hk.wish.ml
   servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  ws-opts:
+    headers:
+      Host: hk2.wish.ml
+    path: /
 - alterId: 0
   cipher: auto
   name: 25,27|香港6|@ripaojiedian
@@ -141,18 +174,6 @@ proxies:
   server: 172.67.124.123
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 26|🇺🇸 美国5|@ripaojiedian
-  password: TNDSJfNv
-  port: 20344
-  server: 36.151.195.48
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: trojan
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
   name: 28|🇭🇰HK-47.76.35.246-0787
