@@ -288,15 +288,18 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  cipher: chacha20-poly1305
-  name: 11|日本 KDDI
-  network: tcp
-  port: '39777'
-  server: 210.230.206.18
-  servername: ''
+  cipher: auto
+  name: 11,21|🇸🇪 瑞典 V2CROSS.COM
+  network: ws
+  port: '80'
+  server: www.hkbu.edu.hk
   tls: false
   type: vmess
-  uuid: fc78cd01-99ac-a085-cb84-69a60920129d
+  uuid: c0b05000-23dd-4de9-9041-ec130166ff1a
+  ws-opts:
+    headers:
+      Host: nmsl.kp
+    path: /aries?ed=2048
 - cipher: aes-256-cfb
   name: 20|JP-54.199.83.239-105
   password: doub.io
@@ -325,7 +328,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 5b9f7a94-b6ae-43e8-8cff-65d13d2534b1
+  uuid: 11faf43d-f2b8-4fd2-94ab-0fbaa1ebcdd1
 - alterId: 0
   cipher: auto
   name: 23|【BGP】日本 05  | 1x JP
@@ -335,7 +338,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 5b9f7a94-b6ae-43e8-8cff-65d13d2534b1
+  uuid: 11faf43d-f2b8-4fd2-94ab-0fbaa1ebcdd1
 - alterId: 0
   cipher: auto
   name: 23|【BGP】日本 06  | 1x JP
@@ -345,7 +348,27 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 5b9f7a94-b6ae-43e8-8cff-65d13d2534b1
+  uuid: 11faf43d-f2b8-4fd2-94ab-0fbaa1ebcdd1
+- alterId: 0
+  cipher: auto
+  name: 25,27|日本2|@ripaojiedian
+  network: tcp
+  port: '30038'
+  server: 183.240.179.207
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4
+- alterId: 0
+  cipher: auto
+  name: 25|9|baipaovpn日本
+  network: tcp
+  port: '39777'
+  server: 210.230.206.18
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fc78cd01-99ac-a085-cb84-69a60920129d
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇯🇵 日本特殊|@ripaojiedian
