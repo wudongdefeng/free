@@ -1,7 +1,51 @@
 proxies:
+- alterId: 64
+  cipher: auto
+  name: '11,13|广东省广州市 移动 #1'
+  network: tcp
+  port: '54437'
+  server: 183.236.51.59
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '11,20,21|🇨🇳 广东省汕头市 移动 #1'
+  name: 11,25,27|香港6|@ripaojiedian
+  network: tcp
+  port: '15611'
+  server: 183.232.170.47
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- alterId: 0
+  cipher: auto
+  name: 11|广东省 移动
+  network: ws
+  port: '16632'
+  server: 120.233.204.126
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d9a9d508-67e1-4929-8bea-8733d5a30c93
+  ws-opts:
+    headers:
+      Host: ee1683cb66f83a1d45e5fdf2e7bdc7dd.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 11,25,27|香港|@ripaojiedian
+  network: tcp
+  port: '15605'
+  server: 183.232.199.28
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- alterId: 0
+  cipher: auto
+  name: '13,20,21|🇨🇳 广东省汕头市 移动 #1'
   network: tcp
   port: '30127'
   server: 183.240.179.207
@@ -14,7 +58,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '11,13,21|🇨🇳 广东省深圳市 移动 #1'
+  name: '13,21|🇨🇳 广东省深圳市 移动 #1'
   network: ws
   port: '16632'
   server: 183.232.142.47
@@ -27,17 +71,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 11|广东省广州市 移动
-  network: tcp
-  port: '54437'
-  server: 183.236.51.59
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 11|广东省江门市 移动
+  name: 13|广东省江门市 移动
   network: tcp
   port: '40259'
   server: 120.238.122.243
@@ -45,51 +79,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 13,20,21,25,27|香港8|@ripaojiedian
-  network: tcp
-  port: '15603'
-  server: 183.232.199.61
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-  ws-headers:
-    Host: 183.232.199.61
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  name: '13,20,21|🇨🇳 广东省广州市 移动 #1'
-  network: tcp
-  port: '51707'
-  server: 183.236.51.59
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.236.51.59
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 13,21,25,26,27|香港5|@ripaojiedian
-  network: ws
-  port: '16632'
-  server: m.cnmjin.net
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
-  ws-opts:
-    headers:
-      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
-    path: /
 - alterId: 0
   cipher: auto
   name: 20|🇨🇳CN-120.233.42.83-243
@@ -207,6 +196,20 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: 20,21,25,27|香港8|@ripaojiedian
+  network: tcp
+  port: '15603'
+  server: 183.232.199.61
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  ws-headers:
+    Host: 183.232.199.61
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 20,21|🇨🇳 广东省汕头市 移动
   network: tcp
   port: '30038'
@@ -217,6 +220,19 @@ proxies:
   uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4
   ws-headers:
     Host: 183.240.179.207
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: '20,21|🇨🇳 广东省广州市 移动 #1'
+  network: tcp
+  port: '51707'
+  server: 183.236.51.59
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.59
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -290,6 +306,23 @@ proxies:
   network: ws
   port: '16632'
   server: yes.cnmjcn.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 21,25,26,27|香港5|@ripaojiedian
+  network: ws
+  port: '16632'
+  server: m.cnmjin.net
   servername: ''
   skip-cert-verify: false
   tfo: false
