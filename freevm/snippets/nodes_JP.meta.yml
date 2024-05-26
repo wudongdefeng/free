@@ -288,6 +288,16 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
+  cipher: chacha20-poly1305
+  name: 11|日本 KDDI
+  network: tcp
+  port: '39777'
+  server: 210.230.206.18
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fc78cd01-99ac-a085-cb84-69a60920129d
+- alterId: 0
   cipher: auto
   name: 20|JP-18.183.245.68-055
   network: ws
@@ -401,6 +411,34 @@ proxies:
   tls: true
   type: vmess
   uuid: 2b3cfb7e-1d09-486b-865d-b08b564b89f2
+- alterId: 0
+  cipher: auto
+  name: 25|9|baipaovpn日本
+  network: ws
+  port: '46515'
+  server: 146.56.44.165
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f0f067fe-8e6d-4d95-816b-601038fd5876
+  ws-opts:
+    headers:
+      Host: ''
+    path: /rongseven?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '25|9|baipaovpn日本 #1'
+  network: ws
+  port: '46515'
+  server: 146.56.44.165
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f0f067fe-8e6d-4d95-816b-601038fd5876
+  ws-opts:
+    headers:
+      Host: kr-seoul-oracle-b0566e.ip1.shop
+    path: /rongseven?ed=2048
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇯🇵 日本特殊|@ripaojiedian
