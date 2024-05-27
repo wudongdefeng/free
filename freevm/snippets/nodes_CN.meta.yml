@@ -1,17 +1,56 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 11,20,21|🇨🇳 广东省佛山市 移动
+  name: 11,15,28|日本2|@ripaojiedian
+  network: ws
+  port: '20301'
+  server: data-jp-v1.usabooks.com.cn
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-jp-v1.usabooks.com.cn
+    path: /debian
+- alterId: 0
+  cipher: auto
+  name: 11|广东省深圳市 移动
+  network: ws
+  port: '16632'
+  server: 183.232.142.47
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '11,13,20,21|🇨🇳 广东省佛山市 移动 #2'
   network: tcp
-  port: '15603'
-  server: 183.232.199.28
+  port: '21006'
+  server: 183.232.199.61
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
   ws-headers:
-    Host: 183.232.199.28
+    Host: 183.232.199.61
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 11,25,27|香港|@ripaojiedian
+  network: tcp
+  port: '15605'
+  server: 183.232.199.28
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
   name: 13,20,21,25,27|韩国3|@ripaojiedian
@@ -25,20 +64,6 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
   ws-headers:
     Host: 183.232.199.28
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '13,20,21|🇨🇳 广东省佛山市 移动 #2'
-  network: tcp
-  port: '21006'
-  server: 183.232.199.61
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-  ws-headers:
-    Host: 183.232.199.61
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -244,26 +269,25 @@ proxies:
   port: 30818
   server: wqfuinwqffq.dfcloud.xyz
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 20,21,25,27|台湾2|@ripaojiedian
-  network: tcp
-  port: '34999'
-  server: 90778990.okc94l-zleouxmco-tw01.my777999.top
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 6f81fa0c-2ee2-43f0-adce-5d14a6643ed4
-  ws-headers:
-    Host: 90778990.okc94l-zleouxmco-tw01.my777999.top
-  ws-path: /
 - cipher: chacha20-ietf-poly1305
   name: 20|🇨🇳CN-119.23.104.213-180
   password: a501c82c72d790b8
   port: 8474
   server: 119.23.104.213
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 20,21|🇨🇳 广东省佛山市 移动
+  network: tcp
+  port: '15603'
+  server: 183.232.199.28
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  ws-headers:
+    Host: 183.232.199.28
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 20,26|🇯🇵 日本2|@ripaojiedian
