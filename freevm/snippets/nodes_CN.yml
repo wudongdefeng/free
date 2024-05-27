@@ -1,45 +1,17 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 11|广东省深圳市 移动
-  network: ws
-  port: '16632'
-  server: 183.232.142.47
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
-  ws-opts:
-    headers:
-      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 11,29|CN_speednode_0020
+  name: 11,20,21|🇨🇳 广东省佛山市 移动
   network: tcp
-  port: 15600
-  server: 183.232.142.179
-  servername: ''
+  port: '15603'
+  server: 183.232.199.28
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 11,25,26,27|香港5|@ripaojiedian
-  network: ws
-  port: '16632'
-  server: m.cnmjin.net
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
-  ws-opts:
-    headers:
-      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
-    path: /
+  ws-headers:
+    Host: 183.232.199.28
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 13,20,21,25,27|韩国3|@ripaojiedian
@@ -292,19 +264,6 @@ proxies:
   port: 8474
   server: 119.23.104.213
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 20,21|🇨🇳 广东省佛山市 移动
-  network: tcp
-  port: '15603'
-  server: 183.232.199.28
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-  ws-headers:
-    Host: 183.232.199.28
-  ws-path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 20,26|🇯🇵 日本2|@ripaojiedian
@@ -411,6 +370,15 @@ proxies:
   port: 51690
   server: zy.02er.com
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 29|CN_speednode_0020
+  network: tcp
+  port: 15600
+  server: 183.232.142.179
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
   name: 29|CN_speednode_0021
