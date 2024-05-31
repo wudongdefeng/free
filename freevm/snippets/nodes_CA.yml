@@ -105,7 +105,17 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 11,13,21,25,29|CA_speednode_0005
+  name: 12|🇨🇦加拿大04
+  network: tcp
+  port: '36701'
+  server: free.2weradf.xyz
+  servername: ca04.abpilot.xyz
+  tls: true
+  type: vmess
+  uuid: 15e58606-13cb-4f37-a4a7-456bb28fc56c
+- alterId: 0
+  cipher: auto
+  name: 13,21,25,29|CA_speednode_0005
   network: ws
   port: 443
   server: 158.51.121.36
@@ -117,16 +127,44 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
+- cipher: aes-256-gcm
+  name: 20|🇦CA-85.208.108.58-118
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 85.208.108.58
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇦CA-198.57.27.225-124
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 198.57.27.225
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 12|🇨🇦加拿大04
-  network: tcp
-  port: '36701'
-  server: free.2weradf.xyz
-  servername: ca04.abpilot.xyz
+  name: 20|🇨🇦CA-158.51.121.36-248
+  network: ws
+  port: 443
+  server: 158.51.121.36
+  skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 2ff3be36-fe9d-46b5-8807-feeb61eff2ca
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    Host: 158.51.121.36
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 21|🇨🇦 加拿大 v2rayfree.eu.org
+  network: ws
+  port: '443'
+  server: 158.51.121.36
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 23|【BGP】加拿大 02 | 1x CA

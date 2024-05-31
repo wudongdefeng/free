@@ -1,14 +1,17 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '1,3,14|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  name: 1,3,14,20,21|🇺🇸 _CN_中国->🇺🇸_US_美国
   network: tcp
-  port: 30013
+  port: '30013'
   server: 183.240.179.207
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4
+  ws-headers:
+    Host: 183.240.179.207
+  ws-path: /
 - name: 1|_CN_->_US__2
   network: tcp
   password: TNDSJfNv
@@ -55,10 +58,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 3,14,21|🇺🇸 _US_美国->🇮🇳_IN_印度
+  name: 3,11,14,21|🇺🇸 _US_美国->🇮🇳_IN_印度
   network: ws
   port: '2052'
   server: 172.67.164.78
+  servername: ''
   tls: false
   type: vmess
   uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
@@ -68,10 +72,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '3|🇺🇸_US_美国->🇮🇳_IN_印度 #1'
+  name: '3,11,21|🇺🇸 _US_美国->🇮🇳_IN_印度 #1'
   network: ws
-  port: 2052
+  port: '2052'
   server: 104.17.156.224
+  servername: ''
   tls: false
   type: vmess
   uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
