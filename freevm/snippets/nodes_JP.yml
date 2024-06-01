@@ -289,31 +289,94 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 1
   cipher: auto
-  name: 11|日本 东京Amazon数据中心
+  name: 13,20,21|🇯🇵 日本 东京都亚马逊(Amazon)公司数据中心
   network: tcp
-  port: 11775
-  server: t45a7-g03.jp02-9a99-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: b37b7415-1608-3fcd-aa25-d9cc4aae5ded
-- alterId: 1
-  cipher: auto
-  name: 13|日本 东京都亚马逊(Amazon)公司数据中心
-  network: tcp
-  port: 28786
+  port: '28786'
   server: 7oi23-g04.jp06-7c5a-vm0.entry.fr0307a.art
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: e147ce52-2598-31b0-950d-6b12c306b360
+  ws-headers:
+    Host: 7oi23-g04.jp06-7c5a-vm0.entry.fr0307a.art
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 20,29|CN_speednode_0026
+  password: 6a8bf2a8-f100-4428-ac3f-ad8ea07e1361
+  port: 60033
+  server: 5.forlive.live
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 21|🇯🇵 日本(欢迎订阅Youtube破解资源君)
-  network: tcp
-  port: '26113'
-  server: 146.56.108.108
+  name: 20|🇵JP-20.222.106.239-123
+  network: ws
+  port: 80
+  server: 20.222.106.239
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 1071810b-8a51-4fba-de7f-1efe88c87ea8
+  uuid: 5f405152-88b2-4e5e-9091-b730e65e8983
+  ws-headers:
+    Host: tms.dingtalk.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|🇵JP-20.243.71.225-124
+  network: ws
+  port: 80
+  server: 20.243.71.225
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5f405152-88b2-4e5e-9091-b730e65e8983
+  ws-headers:
+    Host: tms.dingtalk.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|🇯🇵JP-20.243.69.62-150
+  network: ws
+  port: 80
+  server: 20.243.69.62
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5f405152-88b2-4e5e-9091-b730e65e8983
+  ws-headers:
+    Host: 20.243.69.62
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇺🇸 美国(欢迎订阅Youtube破解资源君) #28'
+  network: tcp
+  port: '11151'
+  server: 150.230.4.136
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 18ef8b86-5dfe-48a9-b4e4-b5f595f7e555
+  ws-headers:
+    Host: 150.230.4.136
+  ws-path: /
+- cipher: aes-256-cfb
+  name: 20|🇯🇵JP-54.199.83.239-182
+  password: doub.io
+  port: 2333
+  server: 54.199.83.239
+  type: ss
+- alterId: 1
+  cipher: auto
+  name: 20,21|🇯🇵 日本 东京Amazon数据中心
+  network: tcp
+  port: '11775'
+  server: t45a7-g03.jp02-9a99-vm0.entry.fr0307a.art
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b37b7415-1608-3fcd-aa25-d9cc4aae5ded
+  ws-headers:
+    Host: t45a7-g03.jp02-9a99-vm0.entry.fr0307a.art
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '21|🇯🇵 日本(欢迎订阅Youtube破解资源君) #1'
@@ -362,7 +425,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: f2d7406a-a326-46f0-a2e7-2dc8ce5e6bb2
+  uuid: 3c4ba4eb-3c18-473d-9eed-b57f10e47561
 - alterId: 0
   cipher: auto
   name: 23|【BGP】日本 05  | 1x JP
@@ -372,7 +435,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: f2d7406a-a326-46f0-a2e7-2dc8ce5e6bb2
+  uuid: 3c4ba4eb-3c18-473d-9eed-b57f10e47561
 - alterId: 0
   cipher: auto
   name: 23|【BGP】日本 06  | 1x JP
@@ -382,7 +445,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: f2d7406a-a326-46f0-a2e7-2dc8ce5e6bb2
+  uuid: 3c4ba4eb-3c18-473d-9eed-b57f10e47561
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇯🇵 日本4|@ripaojiedian
