@@ -3,31 +3,58 @@ proxies:
   cipher: auto
   name: 11|广东省佛山市 移动
   network: tcp
-  port: '21006'
-  server: 183.232.199.28
+  port: '61001'
+  server: 183.232.199.61
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- alterId: 64
+  cipher: auto
+  name: 11|广东省广州市 移动
+  network: tcp
+  port: '54437'
+  server: 183.236.51.59
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '11|广东省广州市 移动 #1'
+  network: tcp
+  port: '51707'
+  server: 183.236.51.59
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 11,25,27|香港5|@ripaojiedian
+  network: tcp
+  port: '15606'
+  server: 183.232.170.47
   servername: ''
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '11,20,21|🇨🇳 广东省佛山市 移动 #2'
+  name: 11,25,27,29|CN_speednode_0016
   network: tcp
-  port: '15601'
-  server: 183.232.199.28
-  skip-cert-verify: true
+  port: 15601
+  server: 183.232.199.61
+  servername: None
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-  ws-headers:
-    Host: 183.232.199.28
-  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 11,21|🇨🇳 广东省深圳市 移动
+  name: 11|广东省深圳市 移动
   network: ws
   port: '16632'
-  server: 183.232.142.47
+  server: m.cnmjin.net
+  servername: ''
   tls: false
   type: vmess
   uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
@@ -51,14 +78,18 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 13,29|CN_speednode_0015
+  name: 13,20,21,29|CN_speednode_0015
   network: tcp
   port: 15611
   server: 183.232.170.47
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  ws-headers:
+    Host: 183.232.170.47
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '13,15,16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -101,7 +132,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20|🇨🇳CN-120.233.42.83-257
+  name: 20|🇨🇳CN-120.233.42.83-240
   network: ws
   port: 20401
   server: data-us-v1.shwjfkw.cn
@@ -113,93 +144,52 @@ proxies:
     Host: data-us-v1.shwjfkw.cn
   ws-path: /debian
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.160-258
+  name: 20|🇨🇳CN-120.238.122.160-241
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.159-261
+  name: 20|🇳CN-120.238.122.160-244
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.160-262
+  name: 20|🇨🇳CN-120.238.122.159-245
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
   type: ss
 - alterId: 0
   cipher: auto
-  name: 20,25,27,29|CN_speednode_0016
+  name: 20,21|🇨🇳 广东省佛山市 移动
   network: tcp
-  port: 15601
-  server: 183.232.199.61
-  servername: None
+  port: '21006'
+  server: 183.232.199.28
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
   ws-headers:
-    Host: 183.232.199.61
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  name: '20,21|🇨🇳 广东省广州市 移动 #2'
-  network: tcp
-  port: '54437'
-  server: 183.236.51.59
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.236.51.59
+    Host: 183.232.199.28
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20,21,25,27|香港5|@ripaojiedian
+  name: '20,21|🇨🇳 广东省佛山市 移动 #1'
   network: tcp
-  port: '15606'
-  server: 183.232.170.47
-  servername: ''
+  port: '15601'
+  server: 183.232.199.28
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
   ws-headers:
-    Host: 183.232.170.47
+    Host: 183.232.199.28
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '20,21|🇨🇳 广东省佛山市 移动 #3'
-  network: tcp
-  port: '15603'
-  server: 183.232.199.61
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-  ws-headers:
-    Host: 183.232.199.61
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  name: '20,21|🇨🇳 广东省广州市 移动 #1'
-  network: tcp
-  port: '51707'
-  server: 183.236.51.59
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.236.51.59
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 20|🇨🇳CN-183.232.142.47-227
+  name: 20|🇳CN-183.232.142.47-211
   network: ws
   port: 16632
   server: 183.232.142.47
@@ -210,14 +200,19 @@ proxies:
   ws-headers:
     Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
   ws-path: /
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 20,26|🇸🇬 新加坡2|@ripaojiedian
-  password: fcf9cb7c-6bc9-406e-87c0-bd8b09d170ee
-  port: 32652
-  server: xiaonangua.lwjyj.com
-  tfo: false
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 21|🇨🇳 广东省深圳市 移动
+  network: ws
+  port: '16632'
+  server: 183.232.142.47
+  tls: false
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
 - client-fingerprint: random
   name: 29|CN_speednode_0007
   network: ws
