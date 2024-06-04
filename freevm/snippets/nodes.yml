@@ -15,7 +15,7 @@ proxies:
     path: /@irvpnn,@irvpnn,@irvpnn,@irvpnn?ed=80
 - alterId: 0
   cipher: auto
-  name: 1,3|🇷🇺_RU_俄罗斯联邦
+  name: 1,3,20|RU-46.17.45.199-001
   network: ws
   port: 54321
   server: eedp257bubu2wefy.lovebaipiao.net
@@ -23,10 +23,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 38a7f467-f1c8-4392-a6e9-0ed23e93775c
+  ws-headers:
+    Host: eedp257bubu2wefy.lovebaipiao.net
   ws-opts: {}
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 1,3,11,14,21|🇹🇷 _CN_中国->🇹🇷_TR_土耳其
+  name: 1,3,14,20,21|🇺🇸 美国 加州
   network: tcp
   port: '21991'
   server: x.y49t1kh1.5ebf71z0-tro1.my777999.top
@@ -34,9 +37,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 33aefd89-3285-4347-9083-6249711f02e9
+  ws-headers:
+    Host: x.y49t1kh1.5ebf71z0-tro1.my777999.top
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 1,3,14,21|🇨🇦 _CA_加拿大
+  name: 1,3,14,20,21|🇨🇦 _CA_加拿大
   network: tcp
   port: '443'
   server: ca-v2ray.ipracevpn.com
@@ -44,9 +50,12 @@ proxies:
   tls: true
   type: vmess
   uuid: e3ef2387-33aa-4c0f-86b5-008ee3bcb945
+  ws-headers:
+    Host: ca-v2ray.ipracevpn.com
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '1,3|🇷🇺_RU_俄罗斯联邦 #1'
+  name: 1,3,20|🇷🇺RU-46.17.45.199-004
   network: ws
   port: 54321
   server: eedp257bubu2wefy1.lovebaipiao.net
@@ -54,10 +63,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 38a7f467-f1c8-4392-a6e9-0ed23e93775c
+  ws-headers:
+    Host: eedp257bubu2wefy1.lovebaipiao.net
   ws-opts: {}
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '1,3|🇷🇺_RU_俄罗斯联邦 #2'
+  name: 1,3,20|🇷🇺RU-46.17.41.161-005
   network: ws
   port: 54321
   server: eedp257bubu2wefy2.lovebaipiao.net
@@ -65,10 +77,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 38a7f467-f1c8-4392-a6e9-0ed23e93775c
+  ws-headers:
+    Host: eedp257bubu2wefy2.lovebaipiao.net
   ws-opts: {}
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '1,3|🇺🇸_US_美国 #1'
+  name: 1,3,20|US-195.123.240.45-006
   network: ws
   port: 12947
   server: 195.123.240.45
@@ -76,7 +91,10 @@ proxies:
   tls: true
   type: vmess
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-headers:
+    Host: 195.123.240.45
   ws-opts: {}
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 1|_US_->_CA__1
@@ -102,7 +120,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '1,3,13,14,21|🇺🇸 _US_美国 #2'
+  name: 1,3,13,14,20,21|🇺🇦 乌克兰 v2rayfree.eu.org
   network: tcp
   port: '2083'
   server: kz-v2ray.ipracevpn.com
@@ -110,6 +128,9 @@ proxies:
   tls: true
   type: vmess
   uuid: 2595193e-3b5e-437e-8998-7be6dbfbed71
+  ws-headers:
+    Host: kz-v2ray.ipracevpn.com
+  ws-path: /
 - name: 1|_FR_
   network: tcp
   password: telegram-id-privatevpns
@@ -444,7 +465,7 @@ proxies:
     path: /video/Z7qdcrAGRw
 - alterId: 0
   cipher: auto
-  name: '6,21,28|🇨🇦_CA_加拿大 #10'
+  name: '6,28|🇨🇦_CA_加拿大 #10'
   network: ws
   port: 8080
   server: 108.181.23.161
@@ -601,7 +622,7 @@ proxies:
     path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
 - alterId: 0
   cipher: auto
-  name: '7,11,21,28,30|🇺🇸_US_美国->🇫🇷_FR_法国 #5'
+  name: '7,21,28,30|🇺🇸_US_美国->🇫🇷_FR_法国 #5'
   network: ws
   port: 2082
   server: 104.21.8.157
@@ -4509,45 +4530,9 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  name: '11,21|🇺🇸 美国 CloudFlare节点 #1'
+  name: '11,21|🇺🇸 美国 CloudFlare节点 #2'
   network: ws
-  port: '8080'
-  server: 172.67.185.64
-  tls: false
-  type: vmess
-  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-  ws-opts:
-    headers:
-      Host: oiictw.yydsii.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 11|乌克兰 V2CROSS.COM
-  network: tcp
-  port: '41352'
-  server: 141.105.130.89
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ac56511a-df0a-4ff8-87d6-a6819d7ad0fa
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #1'
-  network: ws
-  port: 80
-  server: cf.hy2.one
-  tls: false
-  type: vmess
-  uuid: 7054ee51-8542-4c7d-bfb6-bea7f1e044e3
-  ws-opts:
-    headers:
-      Host: hk07.hy-2.one
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #2'
-  network: ws
-  port: 80
+  port: '80'
   server: zula.ir
   tls: false
   type: vmess
@@ -4558,34 +4543,16 @@ proxies:
     path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
 - alterId: 0
   cipher: auto
-  name: '11,13,16,28|github.com/freefq - 印度  2 #1'
-  network: ws
-  port: 443
-  server: 202.78.162.5
+  name: 11|广东省佛山市 移动
+  network: tcp
+  port: '21006'
+  server: 183.232.199.61
   servername: ''
-  tls: true
+  tls: false
   type: vmess
-  uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea
-  ws-opts:
-    headers:
-      Host: irsoft.sytes.net
-    path: /@forwardv2ray
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: 11,13,16,21,28|美国测试节点
-  network: ws
-  port: '443'
-  server: gov.uk
-  servername: gov.uk
-  tls: true
-  type: vmess
-  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
-  ws-opts:
-    headers:
-      Host: zheshiscp.com
-    path: /77848824
-- alterId: 0
-  cipher: none
   name: 11|巴西圣保罗 CloudFlare节点
   network: ws
   port: '80'
@@ -4597,75 +4564,150 @@ proxies:
   ws-opts:
     headers:
       Host: De1.vmess.site.
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '11|美国 CloudFlare节点 #1'
+  network: ws
+  port: 2082
+  server: hsj108k.mm-cc.top
+  tls: false
+  type: vmess
+  uuid: 958aff36-100b-4fa3-8a47-e8709a270f60
+  ws-opts:
+    headers:
+      Host: sjyhk.mmaccc.top
+    path: /?ed=2048
+- alterId: 0
+  cipher: none
+  name: '11|美国 CloudFlare节点 #2'
+  network: ws
+  port: '80'
+  server: 172.67.171.49
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 10c580e4-f83b-42f1-8e6a-25fc8add4da7
+  ws-opts:
+    headers:
+      Host: No1.vmess.site.
     path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
+- alterId: 0
+  cipher: auto
+  name: '11|美国 CloudFlare节点 #3'
+  network: ws
+  port: 8080
+  server: 104.16.67.38
+  tls: false
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: square-snowflake-486a.beshir-beisel.workers.dev
+    path: /linde06.indiavideo.sbs/linkws
 - alterId: 0
   cipher: auto
   name: '11|美国 CloudFlare节点 #4'
   network: ws
-  port: 2086
-  server: kr01.appleid.bf
+  port: '8080'
+  server: 104.19.47.188
+  servername: ''
   tls: false
   type: vmess
-  uuid: 790c5972-e0ff-4b28-82a4-d4007dab6824
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
   ws-opts:
     headers:
-      Host: kr01.appleid.bf
-    path: /ws?ed=2048
+      Host: oiictw.yydsii.com
+    path: /?ed=2048&Telegram🇨🇳 @WangCai2
 - alterId: 0
   cipher: auto
-  name: '11|美国 CloudFlare节点 #5'
+  name: 11|乌克兰 V2CROSS.COM
   network: ws
-  port: 2053
-  server: cf.hy2.one
+  port: '443'
+  server: de2-full.privateip.net
   tls: true
   type: vmess
-  uuid: 7054ee51-8542-4c7d-bfb6-bea7f1e044e3
+  uuid: 9b12b685-9089-4f5e-bed4-ca060db7b979
   ws-opts:
     headers:
-      Host: wkl01.hy-2.sbs
+      Host: ''
+    path: /RACEVPN
+- alterId: 0
+  cipher: auto
+  name: 11|香港 环球全域电讯
+  network: ws
+  port: 12909
+  server: 210.3.159.224
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: 11|广东省中山市 广东移动中山市分公司
-  network: ws
-  port: '16632'
-  server: m.cnmjin.net
+  name: 11,27|香港|@ripaojiedian
+  network: tcp
+  port: '15607'
+  server: 183.232.199.61
   servername: ''
   tls: false
   type: vmess
-  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
-  ws-opts:
-    headers:
-      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
-    path: /
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: 11|广东省深圳市 移动
-  network: ws
-  port: '16632'
-  server: 183.232.142.47
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
-  ws-opts:
-    headers:
-      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: none
-  name: '11|美国 CloudFlare节点 #6'
+  name: 11|瑞典 V2CROSS.COM
   network: ws
   port: '80'
-  server: 172.67.71.160
+  server: www.hkbu.edu.hk
   servername: ''
   tls: false
   type: vmess
-  uuid: 47ce7333-79e4-4958-90f8-913a0ce8f8c1
+  uuid: c0b05000-23dd-4de9-9041-ec130166ff1a
   ws-opts:
     headers:
-      Host: dl3.127.0.0.1.arsha疯狂麦克斯传奇.angels蓝色.bursting.suonycars.buzz.
-    path: /vmess
+      Host: nmsl.kp
+    path: /aries?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 11,27|新加坡|@ripaojiedian
+  network: tcp
+  port: '37996'
+  server: 9898.fz-6-0-kcet8y0fd-so04.my777999.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 33aefd89-3285-4347-9083-6249711f02e9
+- alterId: 0
+  cipher: auto
+  name: 11,21|🇺🇸 美国 CloudFlare节点
+  network: ws
+  port: '8080'
+  server: 172.67.185.64
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    headers:
+      Host: oiictw.yydsii.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '11|美国 CloudFlare节点 #6'
+  network: ws
+  port: '2095'
+  server: russia.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4b05abf5-c68d-4ffc-915f-add2f3786dca
+  ws-opts:
+    headers:
+      Host: sssub.v2.001.ssrsub.com
+    path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
   name: '13,16,21,28|github.com/freefq - 美国CloudFla... #5'
@@ -4680,6 +4722,20 @@ proxies:
     headers:
       Host: server31.beheshtbaneh.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: '13,16,28|github.com/freefq - 印度  2 #1'
+  network: ws
+  port: 443
+  server: 202.78.162.5
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea
+  ws-opts:
+    headers:
+      Host: irsoft.sytes.net
+    path: /@forwardv2ray
 - alterId: 0
   cipher: auto
   name: '13,16,28|github.com/freefq - 印度  3 #1'
@@ -4749,6 +4805,20 @@ proxies:
     headers:
       Host: pendar.onthewifi.com
     path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 13,16,21,28|美国测试节点
+  network: ws
+  port: '443'
+  server: gov.uk
+  servername: gov.uk
+  tls: true
+  type: vmess
+  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+  ws-opts:
+    headers:
+      Host: zheshiscp.com
+    path: /77848824
 - alterId: 0
   cipher: auto
   name: '13,16,21,28|github.com/freefq - 美国CloudFla... #6'
@@ -5007,6 +5077,909 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 20|RELAY-104.18.203.232-000
+  network: ws
+  port: 2052
+  server: www.speedtest.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: dfa5c809-1021-4e51-8600-8f31f4e3907a
+  ws-headers:
+    Host: 2d.irvn.debian.6.6.1b1.8.fxp.debian.org.speedtest.net.列事列.abkon.cyou.
+  ws-path: /@irvpnn,@irvpnn,@irvpnn,@irvpnn?ed=80
+- alterId: 0
+  cipher: auto
+  name: 20|RELAY-172.67.159.232-007
+  network: ws
+  port: 2052
+  server: 172.67.159.232
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 8c8dabbc-93a6-44ad-b878-0d980fa249d1
+  ws-headers:
+    Host: ca-cfcdn.aikunapp.com
+  ws-path: /index?ed=2048
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 20,26|🇺🇸 美国5|@ripaojiedian
+  password: gkviEOYc
+  port: 4787
+  server: 36.151.195.48
+  skip-cert-verify: true
+  sni: gobchang.koreanbbq.link
+  tfo: false
+  tls: false
+  type: trojan
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  ws-path: h=%2Fapple
+- alterId: 0
+  cipher: auto
+  name: 20|RELAY-104.18.203.232-011
+  network: ws
+  port: 80
+  server: www.speedtest.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 31488365-7b6a-434a-8b7b-8f35012c6a22
+  ws-headers:
+    Host: Se2.vmess.site.
+  ws-path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
+- alterId: 0
+  cipher: auto
+  name: 20|🇦CA-158.51.121.36-012
+  network: ws
+  port: 443
+  server: 158.51.121.36
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    Host: 158.51.121.36
+  ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 20|🏁RELAY-172.67.144.186-013
+  network: ws
+  port: 2052
+  server: cdncdncdncdn.784654.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 8c8dabbc-93a6-44ad-b878-0d980fa249d1
+  ws-headers:
+    Host: ca-cfcdn.aikunapp.com
+  ws-path: /index?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 20|🏁RELAY-185.146.173.92-015
+  network: ws
+  port: 80
+  server: 185.146.173.92
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3a71b42c-66d2-44ad-8a80-668d4f4339ea
+  ws-headers:
+    Host: Nl2.vmess.site.
+  ws-path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
+- cipher: chacha20-ietf-poly1305
+  name: 20|JP-154.16.55.112-017
+  password: 25cb8cd7-800f-359e-81b5-a12863e2018d
+  port: 50118
+  server: iepl5.forlive.live
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20,21|🇰🇷 韩国(欢迎订阅Youtube破解资源君)
+  network: tcp
+  port: '10445'
+  server: sr.arthas.cf
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 09210ce3-0ea0-4748-822b-b9bba085880d
+  ws-headers:
+    Host: sr.arthas.cf
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|🇦🇶NOWHERE-0.0.0.0-046
+  network: ws
+  port: 80
+  server: chunchuan-02.aikala.shop
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: a9743604-42d9-44ad-b9b7-1175add3c491
+  ws-headers:
+    Host: '%7B%22Host%22:%22chunchuan-02.aikala.shop%22%7D'
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|🇦🇶NOWHERE-0.0.0.0-021
+  network: ws
+  port: 10086
+  server: mrmanh85.ga
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2367f7e7-8545-44de-9300-10243555bea8
+  ws-headers:
+    Host: mrmanh85.ga
+  ws-path: /mrm
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇺🇸 美国(欢迎订阅Youtube破解资源君) #1'
+  network: tcp
+  port: '23292'
+  server: 150.230.41.9
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 956c6c2f-bf54-4b87-fafd-4b767ca12750
+  ws-headers:
+    Host: 150.230.41.9
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇺🇸 美国(欢迎订阅Youtube破解资源君) #2'
+  network: tcp
+  port: '48193'
+  server: 138.2.117.173
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93bd64e5-c062-4a42-895b-b7edeb6cd071
+  ws-headers:
+    Host: 138.2.117.173
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|🇸US-54.224.34.30-030
+  network: ws
+  port: 443
+  server: xr-5.herokuapp.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 17af76e1-a5d7-41ab-ae87-b48f185075d1
+  ws-headers:
+    Host: xr-5.herokuapp.com
+  ws-path: /17af76e1-a5d7-41ab-ae87-b48f185075d1-vmess
+- alterId: 0
+  cipher: auto
+  name: 20|🇦🇶NOWHERE-0.0.0.0-031
+  network: ws
+  port: 443
+  server: tw.arthas.cf
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fc4ef5e0-38d3-4253-a855-6820169234cc
+  ws-headers:
+    Host: tw.arthas.cf
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20,21|🇪🇺 欧洲(欢迎订阅Youtube破解资源君)
+  network: tcp
+  port: '12205'
+  server: bgpv2.ktyjsq.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6
+  ws-headers:
+    Host: bgpv2.ktyjsq.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20,21|亚洲(欢迎订阅Youtube破解资源君)
+  network: tcp
+  port: '12224'
+  server: bgpv2.ktyjsq.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6
+  ws-headers:
+    Host: bgpv2.ktyjsq.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇪🇺 欧洲(欢迎订阅Youtube破解资源君) #2'
+  network: tcp
+  port: '12222'
+  server: bgpv2.ktyjsq.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6
+  ws-headers:
+    Host: bgpv2.ktyjsq.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|🇶NOWHERE-0.0.0.0-036
+  network: ws
+  port: 80
+  server: node.relay.az.naiun.pw
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 843bc7d0-3402-41ff-ba54-52f116b51266
+  ws-headers:
+    Host: node.free.usa.naiun.pw
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|🇦🇶NOWHERE-0.0.0.0-042
+  network: ws
+  port: 2096
+  server: v2ray.wefuckgfw.ga
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 17eacddf-0000-47dc-afe9-a52367225b84
+  ws-headers:
+    Host: v2ray.wefuckgfw.ga
+  ws-path: /H8VswtUJ/
+- alterId: 0
+  cipher: auto
+  name: '20,21|亚洲(欢迎订阅Youtube破解资源君) #3'
+  network: tcp
+  port: '12005'
+  server: bgpv2.ktyjsq.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6
+  ws-headers:
+    Host: bgpv2.ktyjsq.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|🇺🇸US-162.210.199.85-045
+  network: ws
+  port: 11263
+  server: sh.moonfree.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe
+  ws-headers:
+    Host: ocrb1.moonfree.top
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  name: 20|🇸US-15.197.192.55-052
+  network: ws
+  port: 15901
+  server: jplin003.xmrth-node.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e23a5542-8e62-3572-9afb-6640d61d91b1
+  ws-headers:
+    Host: www.baidu.com
+  ws-path: /index
+- alterId: 2
+  cipher: auto
+  name: 20|🇸US-15.197.192.55-053
+  network: ws
+  port: 15698
+  server: jplin005.xmrth-node.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e23a5542-8e62-3572-9afb-6640d61d91b1
+  ws-headers:
+    Host: www.baidu.com
+  ws-path: /index
+- alterId: 2
+  cipher: auto
+  name: 20|🇦🇶NOWHERE-0.0.0.0-059
+  network: ws
+  port: 443
+  server: 330tw.fans8.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa
+  ws-headers:
+    Host: 330tw.fans8.xyz
+  ws-path: /ray
+- alterId: 2
+  cipher: auto
+  name: 20|🇶NOWHERE-0.0.0.0-065
+  network: ws
+  port: 80
+  server: 527hk3.fans8.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa
+  ws-headers:
+    Host: 527hk3.fans8.xyz
+  ws-path: /ray
+- alterId: 2
+  cipher: auto
+  name: 20|🇦🇶NOWHERE-0.0.0.0-066
+  network: ws
+  port: 80
+  server: 527hk1.fans8.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa
+  ws-headers:
+    Host: 527hk1.fans8.xyz
+  ws-path: /ray
+- cipher: aes-128-gcm
+  name: 20|🇳CN-120.232.240.58-067
+  password: 843bc7d0-3402-41ff-ba54-52f116b51266
+  port: 45240
+  server: 120.232.240.58
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|🇨🇳CN-120.232.240.58-068
+  network: ws
+  port: 45239
+  server: 120.232.240.58
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 843bc7d0-3402-41ff-ba54-52f116b51266
+  ws-headers:
+    Host: 120.232.240.58
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇨🇳CN-120.232.240.58-069
+  password: 843bc7d0-3402-41ff-ba54-52f116b51266
+  port: 45251
+  server: 120.232.240.58
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|🇦🇶NOWHERE-0.0.0.0-071
+  network: ws
+  port: 443
+  server: v2ray3.bonds.id
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 014291fb-3808-4ae8-9303-e1f40d58bb4f
+  ws-headers:
+    Host: v2ray3.bonds.id
+  ws-path: /howdy
+- alterId: 0
+  cipher: auto
+  name: '20,21|亚洲(欢迎订阅Youtube破解资源君) #2'
+  network: tcp
+  port: '12223'
+  server: bgpv2.ktyjsq.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6
+  ws-headers:
+    Host: bgpv2.ktyjsq.com
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  name: 20|🇦🇶NOWHERE-0.0.0.0-081
+  network: ws
+  port: 38201
+  server: ingress-i1.onebox6.org
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
+  ws-headers:
+    Host: ingress-i1.onebox6.org
+  ws-path: /hls/cctv5phd.m3u8
+- alterId: 0
+  cipher: auto
+  name: 20|🇦🇶NOWHERE-0.0.0.0-078
+  network: ws
+  port: 563
+  server: f51e0a98-bc78-4ba2-ba51-74271731fa18.hk.node.touhou.place
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 77775b5f-507d-33a3-835b-cb016980d58c
+  ws-headers:
+    Host: f51e0a98-bc78-4ba2-ba51-74271731fa18.hk.node.touhou.place
+  ws-path: /ws
+- alterId: 2
+  cipher: auto
+  name: 20|🇺🇸US-15.197.192.55-079
+  network: ws
+  port: 16076
+  server: hkaz1.xmrth-node.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e23a5542-8e62-3572-9afb-6640d61d91b1
+  ws-headers:
+    Host: www.baidu.com
+  ws-path: /index
+- alterId: 0
+  cipher: auto
+  name: 20|🇦🇶NOWHERE-0.0.0.0-080
+  network: ws
+  port: 80
+  server: v1.goooodserver.ml
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3b5b288a-6422-4eee-ea53-e8e0edd80e09
+  ws-headers:
+    Host: v1.goooodserver.ml
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|🇰HK-8.210.36.107-082
+  network: ws
+  port: 80
+  server: 8.210.36.107
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 843bc7d0-3402-41ff-ba54-52f116b51266
+  ws-headers:
+    Host: node.free.usa.naiun.pw
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇱NL-185.242.86.156-154
+  password: 36ZCHeabUSfKjfQEvJ4HDV
+  port: 54170
+  server: 185.242.86.156
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|🇱🇺LU-202.78.162.5-163
+  network: ws
+  port: 443
+  server: 202.78.162.5
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677
+  ws-headers:
+    Host: pendar.onthewifi.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|🏁RELAY-172.64.80.1-157
+  network: ws
+  port: 8080
+  server: www.darkroom.lol
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-headers:
+    Host: www.darkroom.lol
+  ws-path: /
+- cipher: aes-256-gcm
+  name: 20|🇫🇷FR-193.243.147.128-158
+  password: 7BcLdsO1WweoGD0X
+  port: 40368
+  server: 193.243.147.128
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|🏁RELAY-172.67.161.114-159
+  network: ws
+  port: 8880
+  server: server31.beheshtbaneh.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
+  ws-headers:
+    Host: server31.beheshtbaneh.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|🇳CN-120.233.42.83-160
+  network: ws
+  port: 20401
+  server: data-us-v1.shwjfkw.cn
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-headers:
+    Host: data-us-v1.shwjfkw.cn
+  ws-path: /debian
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇨🇳CN-120.238.122.160-161
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20003
+  server: service.ouluyun9803.com
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|🏁RELAY-104.21.82.183-162
+  network: ws
+  port: 8880
+  server: 104.21.82.183
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
+  ws-headers:
+    Host: server26.beheshtbaneh.com
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇨🇳CN-120.238.122.159-164
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 26667
+  server: service.ouluyun9803.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇨🇳CN-120.238.122.159-165
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20005
+  server: service.ouluyun9803.com
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|🇦🇶FASTLY-151.101.64.144-166
+  network: ws
+  port: 443
+  server: gov.uk
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+  ws-headers:
+    Host: zheshiscp.com
+  ws-path: /77848824
+- alterId: 0
+  cipher: auto
+  name: 20|🇶NOWHERE-0.0.0.0-167
+  network: ws
+  port: 8880
+  server: server32.beheshtbaneh.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9
+  ws-headers:
+    Host: server32.beheshtbaneh.com
+  ws-path: /
+- cipher: aes-256-cfb
+  name: 20|SG-13.213.46.196-097
+  password: amazonskr05
+  port: 443
+  server: 13.213.46.196
+  type: ss
+- cipher: aes-256-cfb
+  name: 20|🇯🇵JP-54.199.83.239-098
+  password: doub.io
+  port: 2333
+  server: 54.199.83.239
+  type: ss
+- cipher: aes-256-cfb
+  name: 20|🇸🇬SG-54.251.168.143-099
+  password: amazonskr05
+  port: 443
+  server: 54.251.168.143
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇪DE-91.195.240.12-100
+  password: 8e949d75-3510-4678-8593-3c5032dd931a
+  port: 30818
+  server: wqfuinwqffq.dfcloud.xyz
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: 20|🇦🇶NOWHERE-0.0.0.0-101
+  network: ws
+  port: 2095
+  server: xt.ylks01.eu.org
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b710770a-fdaf-41fb-bbe4-68a6c41e2605
+  ws-headers:
+    Host: xt.ylks01.eu.org
+  ws-path: /blue
+- alterId: 64
+  cipher: auto
+  name: 20|🇦🇶NOWHERE-0.0.0.0-102
+  network: ws
+  port: 443
+  server: aaaa.wxx.gay
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8237ec34-143a-11ee-8019-000017022008
+  ws-headers:
+    Host: aaaa.wxx.gay
+  ws-path: /look
+- alterId: 64
+  cipher: auto
+  name: 20|🇸🇬SG-159.223.94.156-103
+  network: ws
+  port: 80
+  server: 159.223.94.156
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
+  ws-headers:
+    Host: 159.223.94.156
+  ws-path: /anti13.zingfast.vn
+- alterId: 64
+  cipher: auto
+  name: 20|🏁RELAY-172.67.219.34-104
+  network: ws
+  port: 443
+  server: hkd1.quickerlink.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3853a2ab-6bec-4503-89b9-d3cbcc6b69c9
+  ws-headers:
+    Host: hkd1.quickerlink.xyz
+  ws-path: /h6jr23x9h3lqiitg
+- cipher: aes-256-gcm
+  name: 20|🇱PL-51.77.53.200-105
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇵🇱PL-51.77.53.200-106
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇷FR-149.202.82.172-107
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇵🇱PL-51.77.53.200-108
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇷FR-149.202.82.172-110
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 149.202.82.172
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|🏁RELAY-172.67.185.64-111
+  network: ws
+  port: 8080
+  server: 172.67.185.64
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-headers:
+    Host: oiictw.yydsii.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20,21|🇺🇦 乌克兰 V2CROSS.COM
+  network: tcp
+  port: '41352'
+  server: 141.105.130.89
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ac56511a-df0a-4ff8-87d6-a6819d7ad0fa
+  ws-headers:
+    Host: 141.105.130.89
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|RELAY-172.67.144.87-114
+  network: ws
+  port: 80
+  server: cf.hy2.one
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7054ee51-8542-4c7d-bfb6-bea7f1e044e3
+  ws-headers:
+    Host: hk07.hy-2.one
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|🏁RELAY-172.67.204.84-115
+  network: ws
+  port: 80
+  server: zula.ir
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 1886c4a7-c395-4aee-a1a2-a816722f5d29
+  ws-headers:
+    Host: Pl2.vmess.site.
+  ws-path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
+- cipher: aes-256-gcm
+  name: 20|🇵🇱PL-51.77.53.200-151
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 51.77.53.200
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|RELAY-104.21.8.157-120
+  network: ws
+  port: 2082
+  server: 104.21.8.157
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-headers:
+    Host: s1c.v2.v001sss.xyz
+  ws-path: /
+- cipher: aes-256-gcm
+  name: 20|🇫🇷FR-149.202.82.172-122
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇱PL-51.77.53.200-125
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇵🇱PL-51.77.53.200-126
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇱PL-51.77.53.200-127
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 51.77.53.200
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|🏁RELAY-188.114.97.3-128
+  network: ws
+  port: 80
+  server: 188.114.97.3
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b25f8da6-54a2-49b3-bacf-8403b4c36556
+  ws-headers:
+    Host: De1.vmess.site.
+  ws-path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
+- cipher: aes-128-gcm
+  name: 20|🇧GB-212.102.53.197-129
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.197
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|🏁RELAY-104.21.70.242-130
+  network: ws
+  port: 2086
+  server: kr01.appleid.bf
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 790c5972-e0ff-4b28-82a4-d4007dab6824
+  ws-headers:
+    Host: kr01.appleid.bf
+  ws-path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 20|RELAY-172.67.144.87-133
+  network: ws
+  port: 2053
+  server: cf.hy2.one
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 7054ee51-8542-4c7d-bfb6-bea7f1e044e3
+  ws-headers:
+    Host: wkl01.hy-2.sbs
+  ws-path: /
+- cipher: aes-256-gcm
+  name: 20|🇫🇷FR-149.202.82.172-134
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇷FR-149.202.82.172-135
+  password: KixLvKzwjekG00rm
+  port: 5500
+  server: 149.202.82.172
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|🇳CN-120.232.153.74-136
+  network: ws
+  port: 16632
+  server: m.cnmjin.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-headers:
+    Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+  ws-path: /
+- cipher: aes-256-gcm
+  name: 20|🇱PL-51.77.53.200-137
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇫🇷FR-149.202.82.172-140
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 149.202.82.172
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇷FR-149.202.82.172-142
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 149.202.82.172
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|🇳CN-183.232.142.47-143
+  network: ws
+  port: 16632
+  server: 183.232.142.47
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-headers:
+    Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+  ws-path: /
+- cipher: aes-256-gcm
+  name: 20|🇷FR-149.202.82.172-144
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 149.202.82.172
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|🏁RELAY-172.67.71.160-145
+  network: ws
+  port: 80
+  server: 172.67.71.160
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 47ce7333-79e4-4958-90f8-913a0ce8f8c1
+  ws-headers:
+    Host: dl3.127.0.0.1.arsha.angels.bursting.suonycars.buzz.
+  ws-path: /vmess
+- alterId: 0
+  cipher: auto
   name: 21|🇷🇺 _RU_俄罗斯联邦
   network: ws
   port: '54321'
@@ -5046,15 +6019,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 21|🇰🇷 韩国(欢迎订阅Youtube破解资源君)
-  network: tcp
-  port: '10445'
-  server: sr.arthas.cf
-  tls: true
-  type: vmess
-  uuid: 09210ce3-0ea0-4748-822b-b9bba085880d
-- alterId: 0
-  cipher: auto
   name: '21|🇰🇷 韩国(欢迎订阅Youtube破解资源君) #1'
   network: ws
   port: '80'
@@ -5079,24 +6043,6 @@ proxies:
     headers:
       Host: mrmanh85.ga
     path: /mrm
-- alterId: 0
-  cipher: auto
-  name: '21|🇺🇸 美国(欢迎订阅Youtube破解资源君) #1'
-  network: tcp
-  port: '23292'
-  server: 150.230.41.9
-  tls: false
-  type: vmess
-  uuid: 956c6c2f-bf54-4b87-fafd-4b767ca12750
-- alterId: 0
-  cipher: auto
-  name: '21|🇺🇸 美国(欢迎订阅Youtube破解资源君) #2'
-  network: tcp
-  port: '48193'
-  server: 138.2.117.173
-  tls: false
-  type: vmess
-  uuid: 93bd64e5-c062-4a42-895b-b7edeb6cd071
 - alterId: 0
   cipher: auto
   name: '21|🇺🇸 美国(欢迎订阅Youtube破解资源君) #3'
@@ -5125,33 +6071,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 21|🇪🇺 欧洲(欢迎订阅Youtube破解资源君)
-  network: tcp
-  port: '12205'
-  server: bgpv2.ktyjsq.com
-  tls: false
-  type: vmess
-  uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6
-- alterId: 0
-  cipher: auto
-  name: 21|亚洲(欢迎订阅Youtube破解资源君)
-  network: tcp
-  port: '12224'
-  server: bgpv2.ktyjsq.com
-  tls: false
-  type: vmess
-  uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6
-- alterId: 0
-  cipher: auto
-  name: '21|🇪🇺 欧洲(欢迎订阅Youtube破解资源君) #2'
-  network: tcp
-  port: '12222'
-  server: bgpv2.ktyjsq.com
-  tls: false
-  type: vmess
-  uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6
-- alterId: 0
-  cipher: auto
   name: '21|🇪🇺 欧洲(欢迎订阅Youtube破解资源君) #3'
   network: ws
   port: '80'
@@ -5176,15 +6095,6 @@ proxies:
     headers:
       Host: v2ray.wefuckgfw.ga
     path: /H8VswtUJ/
-- alterId: 0
-  cipher: auto
-  name: '21|亚洲(欢迎订阅Youtube破解资源君) #3'
-  network: tcp
-  port: '12005'
-  server: bgpv2.ktyjsq.com
-  tls: false
-  type: vmess
-  uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6
 - alterId: 0
   cipher: auto
   name: '21|🇪🇺 欧洲(欢迎订阅Youtube破解资源君) #10'
@@ -5302,15 +6212,6 @@ proxies:
     headers:
       Host: v2ray3.bonds.id
     path: /howdy
-- alterId: 0
-  cipher: auto
-  name: '21|亚洲(欢迎订阅Youtube破解资源君) #2'
-  network: tcp
-  port: '12223'
-  server: bgpv2.ktyjsq.com
-  tls: false
-  type: vmess
-  uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6
 - alterId: 1
   cipher: auto
   name: '21|亚洲(欢迎订阅Youtube破解资源君) #4'
@@ -5482,17 +6383,17 @@ proxies:
     path: /h6jr23x9h3lqiitg
 - alterId: 0
   cipher: auto
-  name: 21|🇺🇸 美国 CloudFlare节点
+  name: '21|🇺🇸 美国 CloudFlare节点 #1'
   network: ws
   port: '80'
-  server: 172.67.171.49
+  server: cf.hy2.one
   tls: false
   type: vmess
-  uuid: 10c580e4-f83b-42f1-8e6a-25fc8add4da7
+  uuid: 7054ee51-8542-4c7d-bfb6-bea7f1e044e3
   ws-opts:
     headers:
-      Host: No1.vmess.site.
-    path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
+      Host: hk07.hy-2.one
+    path: /
 - alterId: 0
   cipher: auto
   name: 21|🇧🇷 巴西圣保罗 CloudFlare节点
@@ -5505,29 +6406,72 @@ proxies:
   ws-opts:
     headers:
       Host: De1.vmess.site.
+    path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
+- alterId: 0
+  cipher: auto
+  name: '21|🇺🇸 美国 CloudFlare节点 #4'
+  network: ws
+  port: '2086'
+  server: kr01.appleid.bf
+  tls: false
+  type: vmess
+  uuid: 790c5972-e0ff-4b28-82a4-d4007dab6824
+  ws-opts:
+    headers:
+      Host: kr01.appleid.bf
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '21|🇺🇸 美国 CloudFlare节点 #5'
+  network: ws
+  port: '2053'
+  server: cf.hy2.one
+  tls: true
+  type: vmess
+  uuid: 7054ee51-8542-4c7d-bfb6-bea7f1e044e3
+  ws-opts:
+    headers:
+      Host: wkl01.hy-2.sbs
     path: /
 - alterId: 0
   cipher: auto
-  name: '21|🇺🇸 美国 CloudFlare节点 #2'
+  name: 21|🇨🇳 广东省中山市 广东移动中山市分公司
   network: ws
-  port: '80'
-  server: cf3.ftclashcloud.site
+  port: '16632'
+  server: m.cnmjin.net
   tls: false
   type: vmess
-  uuid: 14391250-ec2a-4f8c-992a-9a0d6a30bb6f
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
   ws-opts:
     headers:
-      Host: mhyusa01.ftclashcloud.online
-    path: /ws?ed=2560
+      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
 - alterId: 0
   cipher: auto
-  name: 21|🇺🇸 美国 戴维逊大学
-  network: tcp
-  port: '54185'
-  server: 152.42.208.82
+  name: 21|🇨🇳 广东省深圳市 移动
+  network: ws
+  port: '16632'
+  server: 183.232.142.47
   tls: false
   type: vmess
-  uuid: ed5efa57-2ab8-4323-8ba4-7f383ae24ba1
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '21|🇺🇸 美国 CloudFlare节点 #6'
+  network: ws
+  port: '80'
+  server: 172.67.71.160
+  tls: false
+  type: vmess
+  uuid: 47ce7333-79e4-4958-90f8-913a0ce8f8c1
+  ws-opts:
+    headers:
+      Host: dl3.127.0.0.1.arsha疯狂麦克斯传奇.angels蓝色.bursting.suonycars.buzz.
+    path: /vmess
 - alterId: 0
   cipher: auto
   name: '24|_US__1 #1'
@@ -5659,19 +6603,6 @@ proxies:
   server: 172.67.124.123
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 26|🇺🇸 美国5|@ripaojiedian
-  password: gkviEOYc
-  port: 4787
-  server: 36.151.195.48
-  skip-cert-verify: true
-  sni: gobchang.koreanbbq.link
-  tfo: false
-  tls: false
-  type: trojan
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -5817,16 +6748,6 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 27|香港|@ripaojiedian
-  network: tcp
-  port: '15607'
-  server: 183.232.199.61
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-- alterId: 0
-  cipher: auto
   name: 27|香港2|@ripaojiedian
   network: tcp
   port: '15604'
@@ -5901,16 +6822,6 @@ proxies:
   network: tcp
   port: '38997'
   server: 8987-3i640t6rlj4n.zpveerb-jp03.my777999.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 33aefd89-3285-4347-9083-6249711f02e9
-- alterId: 0
-  cipher: auto
-  name: 27|新加坡|@ripaojiedian
-  network: tcp
-  port: '37996'
-  server: 9898.fz-6-0-kcet8y0fd-so04.my777999.top
   servername: ''
   tls: false
   type: vmess
@@ -7587,1520 +8498,58 @@ proxies:
     headers:
       Host: tw.appleid.bf
     path: /ws?ed=2048
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0005
-  password: 27j2Oi
-  port: 45534
-  server: pvcc01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0006
-  password: 27j2Oi
-  port: 45534
-  server: pvcc03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0007
-  password: 27j2Oi
-  port: 45534
-  server: pvcc06.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0008
-  password: 27j2Oi
-  port: 45534
-  server: pvcc04.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0009
-  password: 27j2Oi
-  port: 45534
-  server: pvcc05.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0010
-  password: 27j2Oi
-  port: 45534
-  server: zero04.graniterapids.com
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0011
-  password: 27j2Oi
-  port: 45534
-  server: zero01.graniterapids.com
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0012
-  password: 27j2Oi
-  port: 45534
-  server: zero02.graniterapids.com
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0013
-  password: 27j2Oi
-  port: 45534
-  server: zero05.graniterapids.com
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0014
-  password: 27j2Oi
-  port: 45534
-  server: zero06.graniterapids.com
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0015
-  password: 27j2Oi
-  port: 45534
-  server: tw02.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0016
-  password: 27j2Oi
-  port: 45534
-  server: tw01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0017
-  password: 27j2Oi
-  port: 45534
-  server: tw04.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0018
-  password: 27j2Oi
-  port: 45534
-  server: tw06.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0019
-  password: 27j2Oi
-  port: 45534
-  server: tw08.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0020
-  password: 27j2Oi
-  port: 45534
-  server: tw11.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0021
-  password: 27j2Oi
-  port: 45534
-  server: tw03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0022
-  password: 27j2Oi
-  port: 45534
-  server: tw13.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0023
-  password: 27j2Oi
-  port: 45534
-  server: tw12.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0024
-  password: 27j2Oi
-  port: 45534
-  server: in04.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0025
-  password: 27j2Oi
-  port: 45534
-  server: tw09.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0026
-  password: 27j2Oi
-  port: 45534
-  server: twgame04.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0027
-  password: 27j2Oi
-  port: 45534
-  server: tw14.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0028
-  password: 27j2Oi
-  port: 45534
-  server: twgame01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0029
-  password: 27j2Oi
-  port: 45534
-  server: tw05.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0030
-  password: 27j2Oi
-  port: 45534
-  server: twct03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0031
-  password: 27j2Oi
-  port: 45534
-  server: ca01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0032
-  password: 27j2Oi
-  port: 45534
-  server: twgame03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0033
-  password: 27j2Oi
-  port: 45534
-  server: twct04.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0034
-  password: 27j2Oi
-  port: 45534
-  server: twct01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0035
-  password: 27j2Oi
-  port: 45534
-  server: twct02.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0036
-  password: 27j2Oi
-  port: 45534
-  server: ca03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0037
-  password: 27j2Oi
-  port: 45534
-  server: ca02.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0038
-  password: 27j2Oi
-  port: 45534
-  server: ca04.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0039
-  password: 27j2Oi
-  port: 45534
-  server: twgame05.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0040
-  password: 27j2Oi
-  port: 45534
-  server: tw07.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0041
-  password: 27j2Oi
-  port: 45534
-  server: twgame02.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0042
-  password: 27j2Oi
-  port: 45534
-  server: twct08.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0043
-  password: 27j2Oi
-  port: 45534
-  server: twgame06.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0044
-  password: 27j2Oi
-  port: 45534
-  server: twct10.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0045
-  password: 27j2Oi
-  port: 45534
-  server: twct11.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0046
-  password: 27j2Oi
-  port: 45534
-  server: ca05.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0047
-  password: 27j2Oi
-  port: 45534
-  server: twct13.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0048
-  password: 27j2Oi
-  port: 45534
-  server: twct05.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0049
-  password: 27j2Oi
-  port: 45534
-  server: hr01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0050
-  password: 27j2Oi
-  port: 45534
-  server: twct12.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0051
-  password: 27j2Oi
-  port: 45534
-  server: twct06.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0052
-  password: 27j2Oi
-  port: 45534
-  server: hr04.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0053
-  password: 27j2Oi
-  port: 45534
-  server: twct09.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0054
-  password: 27j2Oi
-  port: 45534
-  server: hr05.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0055
-  password: 27j2Oi
-  port: 45534
-  server: hr06.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0056
-  password: 27j2Oi
-  port: 45534
-  server: hr03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0057
-  password: 27j2Oi
-  port: 45534
-  server: jp04.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0058
-  password: 27j2Oi
-  port: 45534
-  server: twct07.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0059
-  password: 27j2Oi
-  port: 45534
-  server: hr08.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0060
-  password: 27j2Oi
-  port: 45534
-  server: jp01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0061
-  password: 27j2Oi
-  port: 45534
-  server: in05.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0062
-  password: 27j2Oi
-  port: 45534
-  server: in03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0063
-  password: 27j2Oi
-  port: 45534
-  server: jp05.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0064
-  password: 27j2Oi
-  port: 45534
-  server: jp06.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0065
-  password: 27j2Oi
-  port: 45534
-  server: jp03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0066
-  password: 27j2Oi
-  port: 45534
-  server: jp10.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0067
-  password: 27j2Oi
-  port: 45534
-  server: hr02.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0068
-  password: 27j2Oi
-  port: 45534
-  server: jp07.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0069
-  password: 27j2Oi
-  port: 45534
-  server: jp08.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0070
-  password: 27j2Oi
-  port: 45534
-  server: jp09.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0071
-  password: 27j2Oi
-  port: 45534
-  server: au03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0072
-  password: 27j2Oi
-  port: 45534
-  server: au01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0073
-  password: 27j2Oi
-  port: 45534
-  server: au02.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0074
-  password: 27j2Oi
-  port: 45534
-  server: hk01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0075
-  password: 27j2Oi
-  port: 45534
-  server: au05.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0076
-  password: 27j2Oi
-  port: 45534
-  server: jp02.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0077
-  password: 27j2Oi
-  port: 45534
-  server: hk02.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0078
-  password: 27j2Oi
-  port: 45534
-  server: hk03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0079
-  password: 27j2Oi
-  port: 45534
-  server: kr02.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0080
-  password: 27j2Oi
-  port: 45534
-  server: fr02.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0081
-  password: 27j2Oi
-  port: 45534
-  server: fr05.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0082
-  password: 27j2Oi
-  port: 45534
-  server: kr01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0083
-  password: 27j2Oi
-  port: 45534
-  server: kr03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0084
-  password: 27j2Oi
-  port: 45534
-  server: hk10.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0085
-  password: 27j2Oi
-  port: 45534
-  server: sg02.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0086
-  password: 27j2Oi
-  port: 45534
-  server: kr06.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0087
-  password: 27j2Oi
-  port: 45534
-  server: hr07.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0088
-  password: 27j2Oi
-  port: 45534
-  server: sg03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0089
-  password: 27j2Oi
-  port: 45534
-  server: hk04.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0090
-  password: 27j2Oi
-  port: 45534
-  server: kr07.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0091
-  password: 27j2Oi
-  port: 45534
-  server: ir01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0092
-  password: 27j2Oi
-  port: 45534
-  server: sg05.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0093
-  password: 27j2Oi
-  port: 45534
-  server: ir02.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0094
-  password: 27j2Oi
-  port: 45534
-  server: hk06.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0095
-  password: 27j2Oi
-  port: 45534
-  server: fr04.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0096
-  password: 27j2Oi
-  port: 45534
-  server: ir03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0097
-  password: 27j2Oi
-  port: 45534
-  server: fr03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0098
-  password: 27j2Oi
-  port: 45534
-  server: sg06.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0099
-  password: 27j2Oi
-  port: 45534
-  server: kr05.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0100
-  password: 27j2Oi
-  port: 45534
-  server: ir04.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0101
-  password: 27j2Oi
-  port: 45534
-  server: fr01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0102
-  password: 27j2Oi
-  port: 45534
-  server: ir05.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0103
-  password: 27j2Oi
-  port: 45534
-  server: uk04.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0104
-  password: 27j2Oi
-  port: 45534
-  server: hr09.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0105
-  password: 27j2Oi
-  port: 45534
-  server: sg04.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0106
-  password: 27j2Oi
-  port: 45534
-  server: sg12.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0107
-  password: 27j2Oi
-  port: 45534
-  server: ams02.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0108
-  password: 27j2Oi
-  port: 45534
-  server: sg11.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0109
-  password: 27j2Oi
-  port: 45534
-  server: hk07.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0110
-  password: 27j2Oi
-  port: 45534
-  server: hk09.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0111
-  password: 27j2Oi
-  port: 45534
-  server: sg13.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0112
-  password: 27j2Oi
-  port: 45534
-  server: ams01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0113
-  password: 27j2Oi
-  port: 45534
-  server: hk05.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0114
-  password: 27j2Oi
-  port: 45534
-  server: sg17.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0115
-  password: 27j2Oi
-  port: 45534
-  server: sg18.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0116
-  password: 27j2Oi
-  port: 45534
-  server: sg10.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0117
-  password: 27j2Oi
-  port: 45534
-  server: kr04.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0118
-  password: 27j2Oi
-  port: 45534
-  server: sg09.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0119
-  password: 27j2Oi
-  port: 45534
-  server: ru01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0120
-  password: 27j2Oi
-  port: 45534
-  server: ru03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0121
-  password: 27j2Oi
-  port: 45534
-  server: ru06.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0122
-  password: 27j2Oi
-  port: 45534
-  server: sg14.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0123
-  password: 27j2Oi
-  port: 45534
-  server: ru02.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0124
-  password: 27j2Oi
-  port: 45534
-  server: ru05.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0125
-  password: 27j2Oi
-  port: 45534
-  server: sg16.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0126
-  password: 27j2Oi
-  port: 45534
-  server: sg07.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0127
-  password: 27j2Oi
-  port: 45534
-  server: uk03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0128
-  password: 27j2Oi
-  port: 45534
-  server: sgp01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0129
-  password: 27j2Oi
-  port: 45534
-  server: ru04.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0130
-  password: 27j2Oi
-  port: 45534
-  server: sgp02.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0131
-  password: 27j2Oi
-  port: 45534
-  server: sg19.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0132
-  password: 27j2Oi
-  port: 45534
-  server: sgp07.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0133
-  password: 27j2Oi
-  port: 45534
-  server: sg20.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0134
-  password: 27j2Oi
-  port: 45534
-  server: sgp11.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0135
-  password: 27j2Oi
-  port: 45534
-  server: sgp10.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0136
-  password: 27j2Oi
-  port: 45534
-  server: uk01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0137
-  password: 27j2Oi
-  port: 45534
-  server: uk02.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0138
-  password: 27j2Oi
-  port: 45534
-  server: sgp15.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0139
-  password: 27j2Oi
-  port: 45534
-  server: sg08.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0140
-  password: 27j2Oi
-  port: 45534
-  server: sgp05.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0141
-  password: 27j2Oi
-  port: 45534
-  server: sgp06.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0142
-  password: 27j2Oi
-  port: 45534
-  server: sgp04.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0143
-  password: 27j2Oi
-  port: 45534
-  server: jpid04.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0144
-  password: 27j2Oi
-  port: 45534
-  server: jpid01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0145
-  password: 27j2Oi
-  port: 45534
-  server: jpid06.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0146
-  password: 27j2Oi
-  port: 45534
-  server: sgp03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0147
-  password: 27j2Oi
-  port: 45534
-  server: sgp12.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0148
-  password: 27j2Oi
-  port: 45534
-  server: sgp09.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0149
-  password: 27j2Oi
-  port: 45534
-  server: sgp08.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0150
-  password: 27j2Oi
-  port: 45534
-  server: jp13.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0151
-  password: 27j2Oi
-  port: 45534
-  server: jpaz01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0152
-  password: 27j2Oi
-  port: 45534
-  server: jpaz03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0153
-  password: 27j2Oi
-  port: 45534
-  server: jpaz08.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0154
-  password: 27j2Oi
-  port: 45534
-  server: jpid08.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0155
-  password: 27j2Oi
-  port: 45534
-  server: jpaz06.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0156
-  password: 27j2Oi
-  port: 45534
-  server: jpaz07.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0157
-  password: 27j2Oi
-  port: 45534
-  server: jp16.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0158
-  password: 27j2Oi
-  port: 45534
-  server: sgp13.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0159
-  password: 27j2Oi
-  port: 45534
-  server: jpid02.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0160
-  password: 27j2Oi
-  port: 45534
-  server: sgp14.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0161
-  password: 27j2Oi
-  port: 45534
-  server: jpaz09.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0162
-  password: 27j2Oi
-  port: 45534
-  server: jp17.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0163
-  password: 27j2Oi
-  port: 45534
-  server: ge01.htz.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0164
-  password: 27j2Oi
-  port: 45534
-  server: ge03.htz.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0165
-  password: 27j2Oi
-  port: 45534
-  server: jpaz04.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0166
-  password: 27j2Oi
-  port: 45534
-  server: ge06.htz.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0167
-  password: 27j2Oi
-  port: 45534
-  server: ge05.htz.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0168
-  password: 27j2Oi
-  port: 45534
-  server: ge04.htz.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0169
-  password: 27j2Oi
-  port: 45534
-  server: kraz03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0170
-  password: 27j2Oi
-  port: 45534
-  server: jpid05.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0171
-  password: 27j2Oi
-  port: 45534
-  server: kraz04.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0172
-  password: 27j2Oi
-  port: 45534
-  server: kraz05.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0173
-  password: 27j2Oi
-  port: 45534
-  server: jp15.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0174
-  password: 27j2Oi
-  port: 45534
-  server: ge02.htz.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0175
-  password: 27j2Oi
-  port: 45534
-  server: jpaz02.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0176
-  password: 27j2Oi
-  port: 45534
-  server: kraz07.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0177
-  password: 27j2Oi
-  port: 45534
-  server: 211.99.97.3
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0178
-  password: 27j2Oi
-  port: 45534
-  server: kraz06.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0179
-  password: 27j2Oi
-  port: 45534
-  server: 211.99.97.4
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0180
-  password: 27j2Oi
-  port: 45534
-  server: 211.99.97.5
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0181
-  password: 27j2Oi
-  port: 45534
-  server: jpid07.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0182
-  password: 27j2Oi
-  port: 45534
-  server: kraz02.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0183
-  password: 27j2Oi
-  port: 45534
-  server: 211.99.97.8
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0184
-  password: 27j2Oi
-  port: 45534
-  server: 211.99.97.7
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0185
-  password: 27j2Oi
-  port: 45534
-  server: us08.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0186
-  password: 27j2Oi
-  port: 45534
-  server: us10.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0187
-  password: 27j2Oi
-  port: 45534
-  server: us01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0188
-  password: 27j2Oi
-  port: 45534
-  server: us07.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0189
-  password: 27j2Oi
-  port: 45534
-  server: kraz01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0190
-  password: 27j2Oi
-  port: 45534
-  server: 211.99.97.13
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0191
-  password: 27j2Oi
-  port: 45534
-  server: krsk01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0192
-  password: 27j2Oi
-  port: 45534
-  server: 211.99.97.10
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0193
-  password: 27j2Oi
-  port: 45534
-  server: 211.99.97.12
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0194
-  password: 27j2Oi
-  port: 45534
-  server: kr08.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0195
-  password: 27j2Oi
-  port: 45534
-  server: us06.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0196
-  password: 27j2Oi
-  port: 45534
-  server: kr09.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0197
-  password: 27j2Oi
-  port: 45534
-  server: 211.99.97.15
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0198
-  password: 27j2Oi
-  port: 45534
-  server: kr12.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0199
-  password: 27j2Oi
-  port: 45534
-  server: krgame04.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0200
-  password: 27j2Oi
-  port: 45534
-  server: kr11.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0201
-  password: 27j2Oi
-  port: 45534
-  server: us09.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0202
-  password: 27j2Oi
-  port: 45534
-  server: krgame01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0203
-  password: 27j2Oi
-  port: 45534
-  server: krgame02.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0204
-  password: 27j2Oi
-  port: 45534
-  server: us02.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0205
-  password: 27j2Oi
-  port: 45534
-  server: 211.99.97.9
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0206
-  password: 27j2Oi
-  port: 45534
-  server: 211.99.97.17
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0207
-  password: 27j2Oi
-  port: 45534
-  server: us05.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0208
-  password: 27j2Oi
-  port: 45534
-  server: us04.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0209
-  password: 27j2Oi
-  port: 45534
-  server: 211.99.97.14
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0210
-  password: 27j2Oi
-  port: 45534
-  server: 211.99.97.22
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0211
-  password: 27j2Oi
-  port: 45534
-  server: us03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0212
-  password: 27j2Oi
-  port: 45534
-  server: kr10.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0213
-  password: 27j2Oi
-  port: 45534
-  server: krgame05.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0214
-  password: 27j2Oi
-  port: 45534
-  server: sg26.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0215
-  password: 27j2Oi
-  port: 45534
-  server: krgame06.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0216
-  password: 27j2Oi
-  port: 45534
-  server: 211.99.97.16
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0217
-  password: 27j2Oi
-  port: 45534
-  server: 211.99.97.6
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0218
-  password: 27j2Oi
-  port: 45534
-  server: 211.99.97.11
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0219
-  password: 27j2Oi
-  port: 45534
-  server: 211.99.97.19
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0220
-  password: 27j2Oi
-  port: 45534
-  server: sg21.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0221
-  password: 27j2Oi
-  port: 45534
-  server: krgame03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0222
-  password: 27j2Oi
-  port: 45534
-  server: 211.99.97.20
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0223
-  password: 27j2Oi
-  port: 45534
-  server: sg22.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0224
-  password: 27j2Oi
-  port: 45534
-  server: sg25.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0225
-  password: 27j2Oi
-  port: 45534
-  server: 211.99.97.21
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0226
-  password: 27j2Oi
-  port: 45534
-  server: sg27.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0227
-  password: 27j2Oi
-  port: 45534
-  server: sg29.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0228
-  password: 27j2Oi
-  port: 45534
-  server: sg30.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0229
-  password: 27j2Oi
-  port: 45534
-  server: sghk01.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0230
-  password: 27j2Oi
-  port: 45534
-  server: sghk12.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0231
-  password: 27j2Oi
-  port: 45534
-  server: sghk09.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0232
-  password: 27j2Oi
-  port: 45534
-  server: sghk03.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0233
-  password: 27j2Oi
-  port: 45534
-  server: sghk06.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0234
-  password: 27j2Oi
-  port: 45534
-  server: sghk13.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0235
-  password: 27j2Oi
-  port: 45534
-  server: sghk07.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0236
-  password: 27j2Oi
-  port: 45534
-  server: sghk08.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0237
-  password: 27j2Oi
-  port: 45534
-  server: sg24.fjk.wtf
-  type: ss
-- cipher: aes-128-cfb
-  name: 29|CN_speednode_0238
-  password: 27j2Oi
-  port: 45534
-  server: sghk05.fjk.wtf
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0239
+  name: 29|CN_speednode_0005
   password: 33aefd89-3285-4347-9083-6249711f02e9
   port: 35997
   server: mwd-mfzj777rc1.x7kp-hk02.my777999.top
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0240
+  name: 29|CN_speednode_0006
   password: 33aefd89-3285-4347-9083-6249711f02e9
   port: 35998
   server: qs9.anpxrc7hk-l2mcmp7-hk01.my777999.top
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0241
+  name: 29|CN_speednode_0007
   password: 33aefd89-3285-4347-9083-6249711f02e9
   port: 38998
   server: 98899.xef9wvmj31-gc3qil6-jp02.my777999.top
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0242
+  name: 29|CN_speednode_0008
   password: 33aefd89-3285-4347-9083-6249711f02e9
   port: 32998
   server: fg5d.84bbo0t-olimkrx-kr02.my777999.top
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0243
+  name: 29|CN_speednode_0009
   password: 33aefd89-3285-4347-9083-6249711f02e9
   port: 32999
   server: gfoq.b4-h5a6gq7.h3w-kr01.my777999.top
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0244
+  name: 29|CN_speednode_0010
   password: 33aefd89-3285-4347-9083-6249711f02e9
   port: 33998
   server: 4349ufu.54jvd5y6ojams-us02.my777999.top
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0245
+  name: 29|CN_speednode_0011
   password: 33aefd89-3285-4347-9083-6249711f02e9
   port: 33999
   server: 7879va.xikv2dvn-3g5erg0-us01.my777999.top
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0246
-  network: tcp
-  port: 43002
-  server: 183.232.199.28
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-- alterId: 64
-  cipher: auto
-  name: 29|CN_speednode_0247
-  network: tcp
-  port: 51193
-  server: 183.238.202.173
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 29|CN_speednode_0248
-  network: tcp
-  port: 45001
-  server: 183.232.199.28
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-- name: 29|CN_speednode_0250
+- name: 29|CN_speednode_0013
   network: tcp
   password: TNDSJfNv
   port: 4603
   server: 36.151.195.48
   skip-cert-verify: true
   type: trojan
-- alterId: 64
-  cipher: auto
-  name: 29|ES_speednode_0253
-  network: ws
-  port: 443
-  server: 37.120.142.251
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.79284517.xyz
-    path: /path/341901080027
-- alterId: 64
-  cipher: auto
-  name: 29|FI_speednode_0254
-  network: ws
-  port: 443
-  server: 91.132.197.4
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.97751616.xyz
-    path: /path/341901080027
 - alterId: 1
   cipher: auto
-  name: 29|JP_speednode_0293
+  name: 29|JP_speednode_0047
   network: tcp
   port: 28788
   server: qzmdu-g06.jp06-7c5a-vm0.entry.fr0307a.art
@@ -9110,7 +8559,7 @@ proxies:
   uuid: c63472a3-b844-305f-9892-fe6bed02ffc7
 - alterId: 1
   cipher: auto
-  name: 29|JP_speednode_0294
+  name: 29|JP_speednode_0048
   network: tcp
   port: 21583
   server: 0sc4v-g03.jp03-7d22-vm0.entry.fr0307a.art
@@ -9120,7 +8569,7 @@ proxies:
   uuid: d8ffec7e-bdbc-3df9-9dea-0f44eba73ce0
 - alterId: 1
   cipher: auto
-  name: 29|JP_speednode_0295
+  name: 29|JP_speednode_0049
   network: tcp
   port: 21586
   server: bpv5y-g06.jp03-7d22-vm0.entry.fr0307a.art
@@ -9128,19 +8577,9 @@ proxies:
   tls: true
   type: vmess
   uuid: c63472a3-b844-305f-9892-fe6bed02ffc7
-- alterId: 1
-  cipher: auto
-  name: 29|JP_speednode_0296
-  network: tcp
-  port: 21583
-  server: fac7x-g03.jp01-0986-vm0.entry.fr0307a.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: d8ffec7e-bdbc-3df9-9dea-0f44eba73ce0
 - alterId: 64
   cipher: auto
-  name: 29|TW_speednode_0358
+  name: 29|TW_speednode_0110
   network: ws
   port: 30000
   server: 103.123.132.27
@@ -9151,46 +8590,4 @@ proxies:
   ws-opts:
     headers:
       Host: www.97254291.xyz
-    path: /path/341901080027
-- alterId: 64
-  cipher: auto
-  name: 29|US_speednode_0370
-  network: ws
-  port: 443
-  server: 107.148.0.160
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.82170330.xyz
-    path: /path/341901080027
-- alterId: 64
-  cipher: auto
-  name: 29|US_speednode_0371
-  network: ws
-  port: 31000
-  server: 142.171.79.69
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 7681a72f-5201-4aa8-b531-f297aa7ce3ea
-  ws-opts:
-    headers:
-      Host: www.88921440.xyz
-    path: /path/341901080027
-- alterId: 64
-  cipher: auto
-  name: 29|US_speednode_0372
-  network: ws
-  port: 443
-  server: 23.224.6.214
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.83263778.xyz
     path: /path/341901080027
