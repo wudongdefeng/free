@@ -41,7 +41,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '3,7,14,28,30|🇺🇸_US_美国->🇫🇷_FR_法国 #7'
+  name: '3,7,11,14,28,30|🇺🇸_US_美国->🇫🇷_FR_法国 #7'
   network: ws
   port: 2082
   server: 104.21.8.157
@@ -54,7 +54,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '3,11|美国 CloudFlare节点 #4'
+  name: '3|🇺🇸_US_美国 #2'
   network: ws
   port: 8080
   server: russia.com
@@ -67,10 +67,11 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: '3,21|🇺🇸 美国 CloudFlare节点 #3'
+  name: '3,11,21|🇺🇸 美国 CloudFlare节点 #3'
   network: ws
   port: '2095'
   server: russia.com
+  servername: ''
   tls: false
   type: vmess
   uuid: 4b05abf5-c68d-4ffc-915f-add2f3786dca
@@ -80,7 +81,7 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: '3,7,11,28,30|🇺🇸_US_美国->🇫🇷_FR_法国 #6'
+  name: '3,7,28,30|🇺🇸_US_美国->🇫🇷_FR_法国 #6'
   network: ws
   port: 2082
   server: 172.67.130.140
@@ -2049,16 +2050,30 @@ proxies:
   uuid: 37e3fe44-e63c-4988-cff7-d1a27f5f0c09
 - alterId: 0
   cipher: auto
-  name: '11,21|🇺🇸 美国 CloudFlare节点 #6'
+  name: 11|美国 CloudFlare节点
   network: ws
-  port: '2095'
-  server: onea.flha.ru
+  port: '80'
+  server: us3e-mmnnfr9dop0.v2freevpn.com
+  servername: ''
   tls: false
   type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
   ws-opts:
     headers:
-      Host: onea.flha.ru
+      Host: us3e-mmnnfr9dop0.v2freevpn.com
+    path: /v118-fccxmxm35
+- alterId: 0
+  cipher: auto
+  name: '11,21|🇺🇸 美国 CloudFlare节点 #5'
+  network: ws
+  port: '80'
+  server: zula.ir
+  tls: false
+  type: vmess
+  uuid: 1886c4a7-c395-4aee-a1a2-a816722f5d29
+  ws-opts:
+    headers:
+      Host: Pl2.vmess.site.
     path: /
 - alterId: 0
   cipher: auto
@@ -2076,32 +2091,17 @@ proxies:
     path: 4e63f0da
 - alterId: 0
   cipher: auto
-  name: '11|美国 CloudFlare节点 #2'
+  name: 11,21|🇺🇸 _US_美国->🇸🇪_SE_瑞典
   network: ws
   port: '80'
-  server: 172.67.171.49
-  servername: ''
+  server: www.speedtest.net
   tls: false
   type: vmess
-  uuid: 10c580e4-f83b-42f1-8e6a-25fc8add4da7
+  uuid: 31488365-7b6a-434a-8b7b-8f35012c6a22
   ws-opts:
     headers:
-      Host: No1.vmess.site.
+      Host: Se2.vmess.site.
     path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #5'
-  network: ws
-  port: '80'
-  server: us3e-mmnnfr9dop0.v2freevpn.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
-  ws-opts:
-    headers:
-      Host: us3e-mmnnfr9dop0.v2freevpn.com
-    path: /v118-fccxmxm35
 - alterId: 0
   cipher: auto
   name: '13,21|🇺🇸 美国 CloudFlare节点 #11'
@@ -2517,16 +2517,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '21|🇺🇸 美国 CloudFlare节点 #5'
+  name: '21|🇺🇸 美国 CloudFlare节点 #6'
   network: ws
-  port: '80'
-  server: zula.ir
+  port: '2095'
+  server: onea.flha.ru
   tls: false
   type: vmess
-  uuid: 1886c4a7-c395-4aee-a1a2-a816722f5d29
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
   ws-opts:
     headers:
-      Host: Pl2.vmess.site.
+      Host: onea.flha.ru
     path: /
 - alterId: 0
   cipher: auto
@@ -2598,14 +2598,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25,27|美国|@ripaojiedian
-  network: tcp
-  port: '40096'
-  server: 183.232.170.47
-  servername: ''
-  tls: false
+  client-fingerprint: chrome
+  name: 25,26,27|美国|@ripaojiedian
+  network: ws
+  port: '2053'
+  server: speed.renwox.xyz
+  servername: asxgek.renwox.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: true
   type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  uuid: 918dbe24-9db1-4d34-8c0e-e1ba8d2e2b5c
+  ws-opts:
+    headers:
+      Host: asxgek.renwox.xyz
+    path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -2621,8 +2628,25 @@ proxies:
   uuid: 3b99fe7d-a3e5-46c2-adee-7c9a8e40eb09
   ws-opts:
     headers:
-      Host: us3AJ8biuQx.fzbqfrse.xyz
-    path: /video/QXjZG5u4F2
+      Host: us2jdgv5GC7.fzbqfrse.xyz
+    path: /video/DDC4btA8wc/
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 25,26,27|美国3|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: hsj108k.mm-cc.top
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 912e72b1-91c9-42b1-b16f-c4a823171388
+  ws-opts:
+    headers:
+      Host: buylas.mmaccc.top
+    path: /Mboxx
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇺🇸 美国R|@ripaojiedian
@@ -3359,7 +3383,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 28|美国3|@ripaojiedian
+  name: '28|美国3|@ripaojiedian #1'
   network: tcp
   port: '3389'
   server: 139.59.24.215
