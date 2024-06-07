@@ -66,7 +66,7 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: '3,11,14,21|🇺🇸 _US_美国 #1'
+  name: '3,14,21|🇺🇸 _US_美国 #1'
   network: ws
   port: '8080'
   server: russia.com
@@ -2040,27 +2040,40 @@ proxies:
   uuid: 37e3fe44-e63c-4988-cff7-d1a27f5f0c09
 - alterId: 0
   cipher: auto
-  name: 11|美国 加利福尼亚
-  network: tcp
-  port: '3389'
-  server: 64.176.15.74
+  name: 11,21|🇺🇸 美国 CloudFlare节点
+  network: ws
+  port: '2052'
+  server: 172.67.144.201
   tls: false
   type: vmess
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+  uuid: 1d95edba-c8c7-4f0e-be25-5503fa31b509
+  ws-opts:
+    headers:
+      Host: ptdny.xyyjc.top
+    path: /
 - alterId: 0
   cipher: auto
   name: '11|美国 CloudFlare节点 #1'
   network: ws
-  port: '80'
-  server: 104.18.14.19
+  port: 2052
+  server: web.com
+  tls: false
+  type: vmess
+  uuid: a1ec3211-b1ff-4e53-a729-e5b7b55567eb
+  ws-opts:
+    headers:
+      Host: aliyun_hk1.cn2.free.hr
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 11|美国 加利福尼亚州洛杉矶PetaExpress
+  network: tcp
+  port: '41911'
+  server: 107.148.192.156
   servername: ''
   tls: false
   type: vmess
-  uuid: 4e63f0da-80ff-4b1e-8f68-80158ad0ff2a
-  ws-opts:
-    headers:
-      Host: thus-appliance-passenger-shoes.trycloudflare.com
-    path: 4e63f0da
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: '13,21|🇺🇸 美国 CloudFlare节点 #4'
@@ -2286,19 +2299,6 @@ proxies:
     headers:
       Host: ahdaeph8.com
     path: /ws
-- alterId: 0
-  cipher: auto
-  name: 21|🇺🇸 美国 CloudFlare节点
-  network: ws
-  port: '2052'
-  server: 172.67.144.201
-  tls: false
-  type: vmess
-  uuid: 1d95edba-c8c7-4f0e-be25-5503fa31b509
-  ws-opts:
-    headers:
-      Host: ptdny.xyyjc.top
-    path: /
 - alterId: 0
   cipher: auto
   name: '21|🇺🇸 美国 CloudFlare节点 #1'
