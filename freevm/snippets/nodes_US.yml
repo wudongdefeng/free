@@ -29,7 +29,7 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: '1,3,14,21|🇺🇸 _US_美国 #2'
+  name: '1,3,14,20,21|🇺🇸 _US_美国 #2'
   network: http
   port: '3389'
   server: 64.176.15.74
@@ -37,6 +37,9 @@ proxies:
   tls: false
   type: vmess
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+  ws-headers:
+    Host: 64.176.15.74
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 1|_US__4
@@ -79,11 +82,10 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: '3,11,21|🇺🇸 _US_美国 #3'
+  name: '3,21|🇺🇸 美国 CloudFlare节点 #1'
   network: ws
   port: '2095'
   server: russia.com
-  servername: ''
   tls: false
   type: vmess
   uuid: 4b05abf5-c68d-4ffc-915f-add2f3786dca
@@ -2040,7 +2042,7 @@ proxies:
   uuid: 37e3fe44-e63c-4988-cff7-d1a27f5f0c09
 - alterId: 0
   cipher: auto
-  name: 11,21|🇺🇸 美国 CloudFlare节点
+  name: 11|美国 CloudFlare节点
   network: ws
   port: '2052'
   server: 172.67.144.201
@@ -2053,30 +2055,50 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '11|美国 CloudFlare节点 #1'
+  name: 11|美国 德克萨斯州达拉斯Linode数据中心
   network: ws
-  port: 2052
-  server: web.com
-  tls: false
+  port: '443'
+  server: us2-full.privateip.net
+  tls: true
   type: vmess
-  uuid: a1ec3211-b1ff-4e53-a729-e5b7b55567eb
+  uuid: c9e7de6a-fde7-4cbe-8adf-081239a0143d
   ws-opts:
     headers:
-      Host: aliyun_hk1.cn2.free.hr
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 11|美国 加利福尼亚州洛杉矶PetaExpress
-  network: tcp
-  port: '41911'
-  server: 107.148.192.156
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+      Host: ''
+    path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: '13,21|🇺🇸 美国 CloudFlare节点 #4'
+  name: '11|美国 CloudFlare节点 #1'
+  network: ws
+  port: '2052'
+  server: 172.67.144.2
+  tls: false
+  type: vmess
+  uuid: 1d95edba-c8c7-4f0e-be25-5503fa31b509
+  ws-opts:
+    headers:
+      Host: ptdny.xyyjc.top
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 11,25,26,27|日本2|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: cfcdn3.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: bf475e6c-a607-415e-a7f7-45c889320633
+  ws-opts:
+    headers:
+      Host: wtywwcrzjp5.yofnhkfc.xyz
+    path: /video/9TfVEyku
+- alterId: 0
+  cipher: auto
+  name: '13,21|🇺🇸 美国 CloudFlare节点 #2'
   network: ws
   port: '2082'
   server: 172.67.144.12
@@ -2198,44 +2220,98 @@ proxies:
     headers:
       Host: data-hk-v1.shwjfkw.cn
     path: /debian
+- alterId: 4
+  cipher: auto
+  name: 20|US-104.166.135.10-033
+  network: ws
+  port: 443
+  server: 104.166.135.10
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  ws-headers:
+    Host: ahdaeph8.com
+  ws-path: /ws
+- alterId: 0
+  cipher: auto
+  name: 20|🇺🇸US-192.157.56.139-044
+  network: ws
+  port: 443
+  server: oz.moonfree.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9fbb6122-46e7-413b-b29d-749eef446c8d
+  ws-headers:
+    Host: oz.moonfree.top
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  name: 20|🇺🇸US-15.197.192.55-062
+  network: ws
+  port: 15698
+  server: jplin005.xmrth-node.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ff51ca4a-6050-3e26-a037-88b0dd62d138
+  ws-headers:
+    Host: www.baidu.com
+  ws-path: /index
+- alterId: 0
+  cipher: auto
+  name: 20|🇺🇸US-69.162.95.6-068
+  network: ws
+  port: 52340
+  server: gycd1.csccdd.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 1dc13504-e4ba-3c49-8e0b-6a3eb4e40335
+  ws-headers:
+    Host: gycd1.csccdd.xyz
+  ws-path: /index
+- cipher: aes-256-gcm
+  name: 20|🇸US-38.114.114.207-105
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 38.114.114.207
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇺🇸US-38.114.114.207-108
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 38.114.114.207
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: 20,21|🇺🇸 美国 加利福尼亚州洛杉矶PetaExpress
+  network: tcp
+  port: '41911'
+  server: 107.148.192.156
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 107.148.192.156
+  ws-path: /
+- cipher: aes-256-gcm
+  name: 20|🇸US-38.114.114.207-141
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 38.114.114.207
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇸US-38.110.1.43-155
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 38.110.1.43
+  type: ss
 - alterId: 0
   cipher: auto
   name: 21|🇺🇸 美国(油管:破解资源君2.0)
-  network: ws
-  port: '443'
-  server: vus4.0bad.com
-  tls: true
-  type: vmess
-  uuid: 927094d3-d678-4763-8591-e240d0bcae87
-  ws-opts:
-    headers:
-      Host: vus4.0bad.com
-    path: /chat
-- alterId: 0
-  cipher: auto
-  name: '21|🇺🇸 美国(油管:破解资源君2.0) #2'
-  network: tcp
-  port: '43956'
-  server: sg.guiqing.ml
-  tls: false
-  type: vmess
-  uuid: 91df6837-896d-45bc-ec6f-0fe4b792b369
-- alterId: 0
-  cipher: auto
-  name: '21|🇺🇸 美国(油管:破解资源君2.0) #3'
-  network: ws
-  port: '443'
-  server: mc.vpshax.ml
-  tls: true
-  type: vmess
-  uuid: 48ac743a-2d49-4191-b804-0c7fa7e01146
-  ws-opts:
-    headers:
-      Host: mc.vpshax.ml
-    path: /ejpevws
-- alterId: 0
-  cipher: auto
-  name: '21|🇺🇸 美国(油管:破解资源君2.0) #4'
   network: ws
   port: '443'
   server: lu1.gogogoo.cyou
@@ -2246,49 +2322,9 @@ proxies:
     headers:
       Host: lu1.gogogoo.cyou
     path: /go
-- alterId: 64
-  cipher: auto
-  name: '21|🇺🇸 美国(油管:破解资源君2.0) #5'
-  network: ws
-  port: '443'
-  server: app.ssfree.ru
-  tls: true
-  type: vmess
-  uuid: 4e6ff0ac-e616-11ec-acf4-000017022008
-  ws-opts:
-    headers:
-      Host: app.ssfree.ru
-    path: /getweather
-- alterId: 0
-  cipher: auto
-  name: '21|🇺🇸 美国(油管:破解资源君2.0) #7'
-  network: tcp
-  port: '29577'
-  server: 80.251.216.194
-  tls: false
-  type: vmess
-  uuid: f03691e4-8903-4f31-8095-ea54c4c2a3b5
-- alterId: 0
-  cipher: auto
-  name: '21|🇺🇸 美国(油管:破解资源君2.0) #9'
-  network: tcp
-  port: '29577'
-  server: 23.83.224.101
-  tls: false
-  type: vmess
-  uuid: f03691e4-8903-4f31-8095-ea54c4c2a3b5
-- alterId: 0
-  cipher: auto
-  name: '21|🇺🇸 美国(油管:破解资源君2.0) #11'
-  network: tcp
-  port: '26195'
-  server: 150.230.60.8
-  tls: false
-  type: vmess
-  uuid: 8c44be2e-2e16-4cf4-db1e-a1c8c61b7fd4
 - alterId: 4
   cipher: auto
-  name: '21|🇺🇸 美国(油管:破解资源君2.0) #12'
+  name: '21|🇺🇸 美国(油管:破解资源君2.0) #2'
   network: ws
   port: '443'
   server: 104.166.135.10
@@ -2301,50 +2337,33 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: '21|🇺🇸 美国 CloudFlare节点 #1'
+  name: '21|🇺🇸 美国(油管:破解资源君2.0) #4'
   network: ws
-  port: '2052'
-  server: 172.67.144.2
-  tls: false
+  port: '443'
+  server: 172.64.147.71
+  tls: true
   type: vmess
-  uuid: 1d95edba-c8c7-4f0e-be25-5503fa31b509
+  uuid: 80e098a1-f768-3dfb-b97f-6c3a5d34bcd8
   ws-opts:
     headers:
-      Host: ptdny.xyyjc.top
+      Host: 612.wweblog.pw
+    path: /xxX2
+- alterId: 0
+  cipher: auto
+  name: 21|🇺🇸 美国 CloudFlare节点
+  network: ws
+  port: '2052'
+  server: web.com
+  tls: false
+  type: vmess
+  uuid: a1ec3211-b1ff-4e53-a729-e5b7b55567eb
+  ws-opts:
+    headers:
+      Host: aliyun_hk1.cn2.free.hr
     path: /
 - alterId: 0
   cipher: auto
-  name: '21|🇺🇸 美国 CloudFlare节点 #2'
-  network: ws
-  port: '2082'
-  server: 104.16.199.6
-  tls: false
-  type: vmess
-  uuid: 0ff2af1f-4993-41a8-849f-0161cf33bce2
-  ws-opts:
-    headers:
-      Host: bx.chaozhijc.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 21,25,26,27|日本2|@ripaojiedian
-  network: ws
-  port: '2052'
-  server: cfcdn3.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: bf475e6c-a607-415e-a7f7-45c889320633
-  ws-opts:
-    headers:
-      Host: wtywwcrzjp5.yofnhkfc.xyz
-    path: /video/9TfVEyku
-- alterId: 0
-  cipher: auto
-  name: '21|🇺🇸 美国 CloudFlare节点 #5'
+  name: '21|🇺🇸 美国 CloudFlare节点 #3'
   network: ws
   port: '2082'
   server: chaoji2.chaozhijc.xyz
