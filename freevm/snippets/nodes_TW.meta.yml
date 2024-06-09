@@ -69,17 +69,28 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  name: 14,21|🇨🇳 _TW_台湾
+  name: 14|🇹🇼_TW_台湾
   network: ws
-  port: '12345'
+  port: 12345
   server: 35.229.236.201
   tls: false
   type: vmess
   uuid: 957c0034-9066-48a8-b824-5f6203298746
   ws-opts:
-    headers:
-      Host: ''
     path: /957c0034
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇨🇳 广东省 移动 #1'
+  network: tcp
+  port: '61017'
+  server: in06.dns2024.org
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9eac8830-5da5-3ee2-a4b2-b49598275623
+  ws-headers:
+    Host: in06.dns2024.org
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 28|🇹🇼台湾 01
