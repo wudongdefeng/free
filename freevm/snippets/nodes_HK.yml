@@ -81,14 +81,21 @@ proxies:
     path: /index
 - alterId: 0
   cipher: auto
-  name: 25,27|香港|@ripaojiedian
-  network: tcp
-  port: '45449'
-  server: xctransfer1st.cokecloud.top
+  client-fingerprint: chrome
+  name: 25,26,27|香港|@ripaojiedian
+  network: ws
+  port: '21949'
+  server: sui.forlive.live
   servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 9d9d01a5-1e0c-432e-818a-d26cd04314b5
+  uuid: 43893a1f-7b14-4a6d-b8e5-48810ba4d13a
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
 - alterId: 64
   cipher: auto
   name: 25,27|香港2|@ripaojiedian
@@ -112,9 +119,9 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 25,26,27|香港7|@ripaojiedian
+  name: 25,26,27,29|CN_speednode_0005
   network: ws
-  port: '16632'
+  port: 16632
   server: yes.cnmjcn.net
   servername: ''
   skip-cert-verify: false
@@ -132,29 +139,36 @@ proxies:
   password: a-wym4ovY4Yw
   plugin: v2ray-plugin
   plugin-opts:
-    host: h2.wagaga.online
+    host: a4.wagaga.online
     mode: websocket
     mux: true
     path: ''
     skip-cert-verify: false
     tls: true
   port: 443
-  server: 118.170.99.195
+  server: 172.67.114.125
   tfo: false
   type: ss
-- alterId: 64
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 26|🇺🇸 美国5|@ripaojiedian
+  name: 26|🇩🇪 德国|@ripaojiedian
   password: gkviEOYc
-  port: 50611
-  server: 183.232.139.22
-  skip-cert-verify: true
-  sni: id-full.privateip.net
+  port: 12307
+  server: 5.182.86.28
+  skip-cert-verify: false
   tfo: false
   tls: false
-  type: trojan
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  type: vmess
+  uuid: 9ad4e318-03fc-4e3b-e0ab-d86d2017de71
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 26|🇭🇰 香港8|@ripaojiedian
+  password: DBFBF690-3649-4791-8D51-EEE233C742FF
+  port: 18024
+  server: hk05-auto-console.suya.ink
+  tfo: false
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇭🇰 香港R|@ripaojiedian
