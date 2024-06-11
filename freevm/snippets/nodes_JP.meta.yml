@@ -289,16 +289,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 11|日本 V2CROSS.COM
-  network: tcp
-  port: 41001
-  server: bgroup.node2.v.nodelist-gfwairport2.top
-  tls: false
-  type: vmess
-  uuid: 2155145a-b1b5-443a-8977-670f6bd10f02
-- alterId: 0
-  cipher: auto
-  name: 11,13,21|🇯🇵 日本 东京Fastly节点
+  name: '13,21|🇯🇵 日本 东京Fastly节点 #1'
   network: ws
   port: '80'
   server: www.hkbu.edu.hk
@@ -312,35 +303,48 @@ proxies:
     path: /aries?ed=2048
 - alterId: 0
   cipher: auto
-  name: '20,21|🇪🇺 欧洲(油管:破解资源君2.0) #1'
-  network: tcp
-  port: '31372'
-  server: 43.128.253.82
-  skip-cert-verify: true
+  name: 21|🇯🇵 日本(油管:破解资源君2.0)
+  network: ws
+  port: '443'
+  server: vjp1.0bad.com
+  tls: true
+  type: vmess
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    headers:
+      Host: vjp1.0bad.com
+    path: /chat
+- alterId: 0
+  cipher: auto
+  name: '21|🇯🇵 日本(油管:破解资源君2.0) #1'
+  network: ws
+  port: '17013'
+  server: cn.zzv02.infonode.xyz
   tls: false
   type: vmess
-  uuid: 2a9056a7-bf92-40c8-f155-1e14aac9beba
-  ws-headers:
-    Host: 43.128.253.82
-  ws-path: /
-- cipher: aes-256-gcm
-  name: 20|🇯🇵JP-140.238.55.138-072
-  password: dd2575c1-4109-44df-be47-ed3a632342e9
-  port: 10014
-  server: 140.238.55.138
-  type: ss
-- cipher: aes-256-gcm
-  name: 20|🇵JP-141.147.171.105-112
-  password: dd2575c1-4109-44df-be47-ed3a632342e9
-  port: 10014
-  server: 141.147.171.105
-  type: ss
-- cipher: aes-256-cfb
-  name: 20|🇯🇵JP-54.199.83.239-141
-  password: doub.io
-  port: 2333
-  server: 54.199.83.239
-  type: ss
+  uuid: edac1153-eff4-3719-92a3-c7620ea00bd7
+  ws-opts:
+    headers:
+      Host: cn.zzv02.infonode.xyz
+    path: /v2ray
+- alterId: 0
+  cipher: auto
+  name: '21|🇯🇵 日本(油管:破解资源君2.0) #3'
+  network: tcp
+  port: '21365'
+  server: 146.56.45.173
+  tls: false
+  type: vmess
+  uuid: 49526417-e201-4949-8055-81b0fb264be5
+- alterId: 0
+  cipher: auto
+  name: 21|🇯🇵 日本 V2CROSS.COM
+  network: tcp
+  port: '41001'
+  server: bgroup.node2.v.nodelist-gfwairport2.top
+  tls: false
+  type: vmess
+  uuid: 2155145a-b1b5-443a-8977-670f6bd10f02
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
