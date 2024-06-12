@@ -1,14 +1,21 @@
 proxies:
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 11,25,27|香港2|@ripaojiedian
-  network: tcp
-  port: '51193'
-  server: 183.238.202.173
+  client-fingerprint: chrome
+  name: 11,25,26,27|韩国2|@ripaojiedian
+  network: ws
+  port: '32460'
+  server: sui.forlive.live
   servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: aee1713b-54f6-4377-ab22-a2edf8de2d25
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
 - alterId: 0
   cipher: auto
   name: '13,15,16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -165,6 +172,20 @@ proxies:
   uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
   ws-headers:
     Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20,21,25,27|台湾2|@ripaojiedian
+  network: tcp
+  port: '32012'
+  server: alm2.the-galgo.top
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3a988367-5daa-4beb-be62-aaba3e79534a
+  ws-headers:
+    Host: alm2.the-galgo.top
   ws-path: /
 - cipher: chacha20-ietf-poly1305
   name: 20|🇳CN-119.23.104.213-245
