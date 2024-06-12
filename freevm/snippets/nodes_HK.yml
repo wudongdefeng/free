@@ -55,13 +55,17 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  name: 21|🇭🇰 香港(油管:破解资源君2.0)
-  network: tcp
-  port: '18001'
-  server: yd1000-a.zc20200426.club
-  tls: false
+  name: 20|🇰HK-47.243.180.121-097
+  network: ws
+  port: 443
+  server: mixv4-27.194610.xyz
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b
+  uuid: e9bb0c5c-01c7-7907-c454-3b8b6d472b19
+  ws-headers:
+    Host: mixv4-27.194610.xyz
+  ws-path: /a185d5dc-c726-466c-98f2-ba494e63695f
 - alterId: 2
   cipher: auto
   name: '21|🇭🇰 香港(油管:破解资源君2.0) #1'
@@ -77,26 +81,6 @@ proxies:
     path: /ray
 - alterId: 64
   cipher: auto
-  name: 25,27|香港|@ripaojiedian
-  network: tcp
-  port: '55908'
-  server: 183.240.235.164
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 25,27|香港2|@ripaojiedian
-  network: tcp
-  port: '51193'
-  server: 183.238.202.173
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
   name: 25,27|香港6|@ripaojiedian
   network: tcp
   port: '50004'
@@ -105,6 +89,23 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 25,26,27,29|CN_speednode_0006
+  network: ws
+  port: 16632
+  server: m.cnmjin.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
+  ws-opts:
+    headers:
+      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
+    path: /
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 26|🇭🇰 香港KT|@ripaojiedian
@@ -121,19 +122,6 @@ proxies:
   server: 172.67.114.125
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 26|🇮🇳 印度|@ripaojiedian
-  password: B4SSRwua2N8Y5YK8yE0xcDexq3yz73lyDxqzpRZOFIp9ZRYeAXDO3AaTnO4pc0jDaZaDe
-  port: 28333
-  server: mineral.protocolbuffer.com
-  skip-cert-verify: false
-  sni: mineral.protocolbuffer.com
-  tfo: false
-  tls: false
-  type: trojan
-  uuid: 3a988367-5daa-4beb-be62-aaba3e79534a
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇭🇰 香港R|@ripaojiedian
