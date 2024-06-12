@@ -287,19 +287,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 11|日本 IPTELECOM
-  network: ws
-  port: 30000
-  server: 103.72.5.168
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.86972765.xyz
-    path: /path/191019072927
 - alterId: 0
   cipher: auto
   name: 20|JP-152.69.206.209-112
@@ -319,6 +306,19 @@ proxies:
   port: 2333
   server: 54.199.83.239
   type: ss
+- alterId: 64
+  cipher: auto
+  name: 20|🇵JP-103.72.5.168-153
+  network: ws
+  port: 30000
+  server: 103.72.5.168
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: www.86972765.xyz
+  ws-path: /path/191019072927
 - alterId: 0
   cipher: auto
   name: 21|🇯🇵 日本(油管:破解资源君2.0)
@@ -345,6 +345,19 @@ proxies:
     headers:
       Host: cn.zzv02.infonode.xyz
     path: /v2ray
+- alterId: 64
+  cipher: auto
+  name: 21|🇯🇵 日本 IPTELECOM
+  network: ws
+  port: '30000'
+  server: 103.72.5.168
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.86972765.xyz
+    path: /path/191019072927
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇯🇵 日本R|@ripaojiedian
