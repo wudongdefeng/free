@@ -1,18 +1,18 @@
 proxies:
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 13,21|🇨🇳 广东省揭阳市 移动
-  network: ws
-  port: '32460'
-  server: sui.forlive.live
+  name: 11,13,20,21,25,27|香港2|@ripaojiedian
+  network: tcp
+  port: '51193'
+  server: 183.238.202.173
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: aee1713b-54f6-4377-ab22-a2edf8de2d25
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.238.202.173
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '13,15,16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -363,20 +363,6 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: 20,21,25,27|香港2|@ripaojiedian
-  network: tcp
-  port: '51193'
-  server: 183.238.202.173
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.238.202.173
-  ws-path: /
-- alterId: 64
-  cipher: auto
   name: 20,21|🇨🇳 广东省广州市 移动
   network: tcp
   port: '40259'
@@ -401,3 +387,16 @@ proxies:
   ws-headers:
     Host: tms.dingtalk.com
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 21|🇨🇳 广东省揭阳市 移动
+  network: ws
+  port: '32460'
+  server: sui.forlive.live
+  tls: false
+  type: vmess
+  uuid: aee1713b-54f6-4377-ab22-a2edf8de2d25
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
