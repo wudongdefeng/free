@@ -1,7 +1,29 @@
 proxies:
+- name: 1|_CN_->_US__1
+  network: tcp
+  password: gkviEOYc
+  port: 50611
+  server: 183.232.139.22
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_DE__1
+  network: ws
+  port: 2095
+  server: 104.26.14.85
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3e540874-0730-452a-8b2e-e719b5d34470
+  ws-opts:
+    headers:
+      host: Yakuza.unique69.com
+    path: /@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za
 - grpc-opts:
     grpc-service-name: trojan
-  name: 1|_US_->_DE__1
+  name: 1|_US_->_DE__2
   network: grpc
   password: A9l6_eMgylRZu0YiSqunsQ
   port: 2096
@@ -10,31 +32,6 @@ proxies:
   sni: usa.iwontletgo.cloud
   type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: 2pxF1YL0obWgOVYsTfLJX3ihXJUp
-  name: 1|_SE_->_DE_
-  network: grpc
-  password: f91f38bb-72d5-4f3e-8311-1788986293f5
-  port: 443
-  server: 185.146.173.29
-  skip-cert-verify: true
-  sni: iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpnc.iran-mehr14.ir
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 1|_US_->_FR__1
-  network: ws
-  port: 2082
-  server: 104.21.8.157
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    path: /
 - alterId: 0
   cipher: auto
   name: 1|_US_->_AT_
@@ -49,31 +46,34 @@ proxies:
     headers:
       host: gulasch.online
     path: /
-- grpc-opts:
-    grpc-service-name: 2pxF1YL0obWgOVYsTfLJX3ihXJUp
-  name: 1|_US_->_DE__2
-  network: grpc
-  password: f91f38bb-72d5-4f3e-8311-1788986293f5
-  port: 443
-  server: 172.67.215.180
-  skip-cert-verify: true
-  sni: iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpnc.iran-mehr14.ir
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_FR__2
+  name: 1|_US_->_DE__3
   network: ws
-  port: 2082
-  server: 172.67.130.140
+  port: 2095
+  server: zula.ir
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  uuid: 3e540874-0730-452a-8b2e-e719b5d34470
   ws-opts:
     headers:
-      host: s1c.v2.v001sss.xyz
-    path: /
+      host: Yakuza.unique69.com
+    path: /@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za
+- cipher: chacha20-ietf-poly1305
+  name: 1,20|🇵JP-154.16.55.112-019
+  password: 54d73e4b-054d-4148-bab6-22646f4431a9
+  port: 60033
+  server: 5.forlive.live
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 1,26|🇺🇸 美国R|@ripaojiedian
+  password: hGkQ6915tD
+  port: 16058
+  server: 59.56.77.178
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: '6,28,30|🇺🇸_US_美国 #49'
@@ -155,7 +155,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '7,13,21,28,30|🇺🇸_US_美国->🇫🇷_FR_法国 #4'
+  name: '7,21,28,30|🇺🇸_US_美国->🇫🇷_FR_法国 #4'
   network: ws
   port: 2082
   server: 172.67.130.140
@@ -168,30 +168,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '14,21|🇺🇸 美国 CloudFlare节点 #4'
+  name: '14,21|🇺🇸 _US_美国 #2'
   network: ws
-  port: '2095'
-  server: zula.ir
+  port: '8880'
+  server: 104.19.21.24
   tls: false
   type: vmess
-  uuid: 3e540874-0730-452a-8b2e-e719b5d34470
+  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
   ws-opts:
     headers:
-      Host: Yakuza.unique69.com
-    path: /@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za
-- alterId: 0
-  cipher: auto
-  name: 14|🇺🇸_US_美国->🇬🇧_GB_英国
-  network: ws
-  port: 80
-  server: zula.ir
-  tls: false
-  type: vmess
-  uuid: da62a137-3611-4dd7-8523-b5266afe6fe5
-  ws-opts:
-    headers:
-      Host: Uk2.vmess.site.
-    path: /vmess @hopev2ray
+      Host: funk-england-indirect-gospel.trycloudflare.com
+    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
   name: '14,21|🇺🇸 _US_美国 #1'
@@ -205,6 +192,19 @@ proxies:
     headers:
       Host: dual-nothing-prep-exit.trycloudflare.com
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+- alterId: 0
+  cipher: auto
+  name: 14,21|🇺🇸 _US_美国->🇦🇹_AT_奥地利
+  network: ws
+  port: '80'
+  server: 172.67.193.67
+  tls: false
+  type: vmess
+  uuid: 408438b0-fe40-44de-af19-0e5e6bb750ce
+  ws-opts:
+    headers:
+      Host: gulasch.online
+    path: /
 - alterId: 0
   cipher: auto
   name: 24|_SG_->🇺🇸_US_美国
