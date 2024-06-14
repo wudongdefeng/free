@@ -69,29 +69,27 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  grpc-opts:
-    grpc-service-name: zhs
-  name: 11|台湾省桃园市 中华电信
+  name: 20|TW-1.162.173.61-181
   network: grpc
-  port: '8443'
+  port: 8443
   server: twbdis.mry.best
-  servername: twbdis.mry.best
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 9ee99637-376e-367a-9ba7-df1df9841f46
+  ws-headers:
+    Host: twbdis.mry.best
+  ws-path: zhs
 - alterId: 0
   cipher: auto
-  name: 20|🇹🇼TW-103.159.206.35-246
-  network: ws
-  port: 31945
-  server: 103.159.206.35
-  skip-cert-verify: true
+  name: 25,27|台湾2|@ripaojiedian
+  network: tcp
+  port: '32012'
+  server: alm2.the-galgo.top
+  servername: ''
   tls: false
   type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-headers:
-    Host: 103.159.206.35
-  ws-path: /
+  uuid: 3a988367-5daa-4beb-be62-aaba3e79534a
 - client-fingerprint: chrome
   name: 26|🇹🇼 台湾|@ripaojiedian
   network: ws
@@ -119,6 +117,20 @@ proxies:
     headers:
       Host: tw.appleid.bf
     path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 28|🇹🇼TW-103.159.206.35-0342
+  network: ws
+  port: 31945
+  server: 103.159.206.35
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 28|🇹🇼台湾 02
