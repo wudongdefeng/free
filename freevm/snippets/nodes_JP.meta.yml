@@ -289,20 +289,45 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 21|🇯🇵 日本(油管:破解资源君2.0)
-  network: ws
-  port: '443'
-  server: www.fewa.cf
-  tls: true
+  name: '20,21|🇺🇸 美国(油管:破解资源君2.0) #2'
+  network: tcp
+  port: '22222'
+  server: 150.230.99.46
+  skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 9fcf1e10-772c-ce80-d51f-62c708333c50
-  ws-opts:
-    headers:
-      Host: www.fewa.cf
-    path: /paths/
+  uuid: e6c55d36-022c-4ebc-b9c2-e1220a7184f4
+  ws-headers:
+    Host: 150.230.99.46
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|🇯🇵JP-152.69.206.209-145
+  network: ws
+  port: 1212
+  server: 152.69.206.209
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: fb908160-9697-4bfd-f5b7-f1fbc53e60fa
+  ws-headers:
+    Host: 152.69.206.209
+  ws-path: /
+- cipher: aes-256-cfb
+  name: 20|🇵JP-54.199.83.239-200
+  password: doub.io
+  port: 2333
+  server: 54.199.83.239
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇯🇵JP-62.106.70.74-207
+  password: 2c6c4d93-0368-472b-83fe-aed7d806da93
+  port: 19723
+  server: hkhw01.goodyun.buzz
+  type: ss
 - alterId: 1
   cipher: auto
-  name: '21|🇪🇺 欧洲(油管:破解资源君2.0) #28'
+  name: '21|🇪🇺 欧洲(油管:破解资源君2.0) #18'
   network: ws
   port: '668'
   server: jp06-vm5.entry.sdjighbiuodrfhgiuo.beauty
