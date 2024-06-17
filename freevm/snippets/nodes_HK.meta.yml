@@ -56,15 +56,58 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 11|香港 Amazon数据中心
+  network: ws
+  port: 80
+  server: hk01.rosemarytrustworthy.icu
+  tls: false
+  type: vmess
+  uuid: 4022f6b4-ab73-4147-9a00-ff0b4c4a09cb
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 20,21|🇭🇰 香港 Amazon数据中心
   network: tcp
-  port: 41001
+  port: '41001'
   server: bgroup.node4.v.nodelist-gfwairport2.top
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 2155145a-b1b5-443a-8977-670f6bd10f02
+  ws-headers:
+    Host: bgroup.node4.v.nodelist-gfwairport2.top
+  ws-path: /
 - alterId: 1
   cipher: auto
   name: 21|🇭🇰 香港(油管:破解资源君2.0)
+  network: ws
+  port: '38101'
+  server: ingress-i2.onebox6.org
+  tls: false
+  type: vmess
+  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
+  ws-opts:
+    headers:
+      Host: ingress-i2.onebox6.org
+    path: /hls/cctv5phd.m3u8
+- alterId: 1
+  cipher: auto
+  name: '21|🇭🇰 香港(油管:破解资源君2.0) #1'
+  network: ws
+  port: '50205'
+  server: data-hk-v2.shwjfkw.cn
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-hk-v2.shwjfkw.cn
+    path: /hls/cctv5phd.m3u8
+- alterId: 1
+  cipher: auto
+  name: '21|🇭🇰 香港(油管:破解资源君2.0) #3'
   network: ws
   port: '38101'
   server: ingress-i2.onebox6.org
