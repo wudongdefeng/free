@@ -1,7 +1,16 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: 11,13,20,21|🇨🇳 广东省 移动
+  name: 11|广东省广州市 移动
+  network: tcp
+  port: 35601
+  server: 120.232.153.40
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '13,20,21|🇨🇳 广东省 移动 #1'
   network: tcp
   port: '31778'
   server: 183.240.235.166
@@ -14,14 +23,18 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  name: 11,13,25,27|香港2|@ripaojiedian
+  name: 13,20,21,25,27|香港2|@ripaojiedian
   network: tcp
   port: '51193'
   server: 183.238.202.173
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.238.202.173
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '13,15,16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -38,7 +51,7 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: 20|🇨🇳CN-120.232.240.56-176
+  name: 20|🇨🇳CN-120.232.240.56-242
   network: ws
   port: 16928
   server: 120.232.240.56
@@ -174,7 +187,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20|🇨🇳CN-120.241.118.28-214
+  name: 20|🇨🇳CN-120.241.118.28-273
   network: ws
   port: 20401
   server: data-us-v1.shwjfkw.cn
@@ -186,70 +199,20 @@ proxies:
     Host: data-us-v1.shwjfkw.cn
   ws-path: /debian
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.159-215
+  name: 20|🇨🇳CN-120.238.122.159-274
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.160-218
+  name: 20|🇨🇳CN-120.238.122.160-277
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.159-219
+  name: 20|🇨🇳CN-120.238.122.159-278
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-119.23.104.213-156
-  password: a501c82c72d790b8
-  port: 8474
-  server: 119.23.104.213
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 20|🇳CN-218.204.179.120-171
-  network: ws
-  port: 16632
-  server: m.cnmjin.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
-  ws-headers:
-    Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 20,21,25,27|台湾|@ripaojiedian
-  network: tcp
-  port: '32011'
-  server: alm1.the-galgo.top
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: db3c11d8-ae65-40ff-a256-babee94056f6
-  ws-headers:
-    Host: alm1.the-galgo.top
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 21,25,26,27,29|NN_speednode_0063
-  network: ws
-  port: 16632
-  server: m.cnmjin.net
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b
-  ws-opts:
-    headers:
-      Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
-    path: /
