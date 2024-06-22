@@ -1,18 +1,22 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 1,3|🇨🇦_CA_加拿大
+  name: 1,3,20|RELAY-23.227.38.7-004
   network: ws
   port: 8080
   server: 23.227.38.7
   servername: luther-soon-uploaded-anxiety.trycloudflare.com
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  ws-headers:
+    Host: 23.227.38.7
   ws-opts: {}
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 1,3,20|RELAY-23.227.38.6-226
+  name: 1,3,20|🏁RELAY-23.227.38.6-009
   network: ws
   port: 2086
   server: 23.227.38.6
@@ -21,19 +25,23 @@ proxies:
   type: vmess
   uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
   ws-headers:
-    Host: ip002.freegradely.xyz
+    Host: 23.227.38.6
   ws-opts: {}
-  ws-path: 29eebb60-b27b-4a9d-bba5-947763d9205e-vm
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '1,3|🇨🇦_CA_加拿大 #2'
+  name: 1,3,20|RELAY-23.227.38.5-021
   network: ws
   port: 2086
   server: 23.227.38.5
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  ws-headers:
+    Host: 23.227.38.5
   ws-opts: {}
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '6,28|🇨🇦_CA_加拿大 #14'
@@ -144,9 +152,9 @@ proxies:
     path: 29eebb60-b27b-4a9d-bba5-947763d9205e-vm
 - alterId: 0
   cipher: auto
-  name: 14,21|🇺🇸 美国 CloudFlare公司CDN节点(shopif...
+  name: '14|🇨🇦_CA_加拿大 #10'
   network: ws
-  port: '2086'
+  port: 2086
   server: 23.227.38.6
   tls: false
   type: vmess
@@ -155,15 +163,9 @@ proxies:
     headers:
       Host: ip002.freegradely.xyz
     path: 29eebb60-b27b-4a9d-bba5-947763d9205e-vm
-- cipher: aes-256-gcm
-  name: 20|CA-23.162.200.181-202
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 23.162.200.181
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 20|🇨CA-23.162.200.227-207
+  name: 20|CA-23.162.200.227-179
   network: ws
   port: 443
   server: 23.162.200.227
@@ -174,28 +176,42 @@ proxies:
   ws-headers:
     Host: 23.162.200.227
   ws-path: /linkvws
-- cipher: aes-256-gcm
-  name: 20|🇨🇦CA-23.162.200.181-208
-  password: Y6R9pAtvxxzmGC
-  port: 9090
-  server: 23.162.200.181
-  type: ss
-- cipher: aes-256-gcm
-  name: 20|🇦CA-23.162.200.225-221
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 23.162.200.225
-  type: ss
 - alterId: 0
   cipher: auto
   name: 21|🇨🇦 _CA_加拿大
   network: ws
-  port: '8880'
-  server: 23.227.38.3
+  port: '8080'
+  server: 23.227.38.7
   tls: false
   type: vmess
-  uuid: d726eb31-0c9e-49f9-8968-59c06f4ea15c
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
   ws-opts:
     headers:
-      Host: remaining-criminal-douglas-idol.trycloudflare.com
-    path: d726eb31-0c9e-49f9-8968-59c06f4ea15c-vm
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '21|🇨🇦 _CA_加拿大 #1'
+  network: ws
+  port: '2086'
+  server: 23.227.38.6
+  tls: false
+  type: vmess
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '21|🇨🇦 _CA_加拿大 #2'
+  network: ws
+  port: '2086'
+  server: 23.227.38.5
+  tls: false
+  type: vmess
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
