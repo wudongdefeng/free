@@ -16,39 +16,31 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1,20|JP-154.16.55.112-018
+  name: 1|_CN_->_DE_
   password: 4c0e5766-0d17-318b-bff2-046c14cb27b5
   port: 60033
   server: 5.forlive.live
   type: ss
 - alterId: 0
   cipher: auto
-  name: 1,3,20|🏁RELAY-172.64.97.235-019
+  name: 1,3|🇺🇸_US_美国->🇨🇦_CA_加拿大
   network: ws
   port: 8080
   server: 172.64.97.235
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  ws-headers:
-    Host: 172.64.97.235
   ws-opts: {}
-  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 1,3,20|CN-120.232.240.56-022
+  name: 1,3|🇨🇳_CN_中国->🇺🇸_US_美国
   network: ws
   port: 16928
   server: 120.232.240.56
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
-  ws-headers:
-    Host: 120.232.240.56
   ws-opts: {}
-  ws-path: /
 - name: 1|_US_->_RU_
   network: grpc
   password: qj1Dz1CJmFQRhWr1SP80aA
@@ -138,7 +130,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '7,11,28,30|🇺🇸_US_美国->🇫🇷_FR_法国 #4'
+  name: '7,11,21,28,30|🇺🇸_US_美国->🇫🇷_FR_法国 #4'
   network: ws
   port: 2082
   server: 172.67.130.140
@@ -150,24 +142,6 @@ proxies:
     headers:
       Host: s1c.v2.v001sss.xyz
     path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 14,25,26,27,29|CN_speednode_0017
-  network: ws
-  port: 16928
-  server: 120.232.240.56
-  servername: ''
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
-  ws-opts:
-    headers:
-      Host: '%7B%22Host%22:%22193.25.215.160%22%7D'
-    path: /v2ray
 - alterId: 0
   cipher: auto
   name: 14|🇨🇳_CN_中国->🇨🇦_CA_加拿大
