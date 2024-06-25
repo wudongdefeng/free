@@ -359,37 +359,51 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 25,26|🇯🇵 日本4|@ripaojiedian
+  name: 25,26,27|日本3|@ripaojiedian
   network: ws
-  port: 46011
-  server: mmjp11.micloud.buzz
+  port: '443'
+  server: lin0502.hwcar.sbs
+  servername: linja05.hwcar.sbs
   skip-cert-verify: false
   tfo: false
+  tls: true
+  type: vmess
+  uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
+  ws-opts:
+    headers:
+      Host: linja05.hwcar.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 25,26,27|日本2|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: cfcdn3.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: c750f7b8-1080-4881-9d4f-7e74b2c56660
+  ws-opts:
+    headers:
+      Host: wtywwcrzjp5.yofnhkfc.xyz
+    path: /video/9TfVEyku
+- alterId: 0
+  cipher: auto
+  name: 25,27|日本4|@ripaojiedian
+  network: ws
+  port: '46011'
+  server: mmjp11.micloud.buzz
+  servername: ''
   tls: false
   type: vmess
   uuid: e0affd30-6517-4f32-a2bd-71faab70b40a
   ws-opts:
     headers:
-      Host: mmjp11.micloud.buzz
+      Host: ''
     path: /zh-cn
-- alterId: 0
-  cipher: auto
-  name: 25,27|日本5|@ripaojiedian
-  network: tcp
-  port: '49455'
-  server: 167.88.184.65
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 46dc80bd-4883-4021-8c37-f3c6d6c46a34
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本2|@ripaojiedian
-  password: 7385cf6a-6ba9-4de2-87bb-b7aac0e710b4
-  port: 50108
-  server: free-big.themars.top
-  tfo: false
-  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇯🇵 日本R|@ripaojiedian
