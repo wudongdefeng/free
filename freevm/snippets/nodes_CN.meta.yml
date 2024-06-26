@@ -1,11 +1,10 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: 1,3,11,14,20,21|🇨🇳 广东省 移动
+  name: 1,3,14,20,21|🇨🇳 广东省 移动
   network: tcp
   port: '41490'
   server: 183.240.235.166
-  servername: ''
   skip-cert-verify: true
   sni: ''
   tls: false
@@ -16,7 +15,7 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  name: '1,3,11,14,20,21|_CN_中国 #1'
+  name: '1,3,14,20,21|_CN_中国 #1'
   network: tcp
   port: '51707'
   server: 183.236.51.23
@@ -29,7 +28,7 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  name: 1,3,11,14,20,21,29|CN_speednode_0005
+  name: 1,3,14,20,21,29|CN_speednode_0005
   network: tcp
   port: 50582
   server: 120.232.153.27
@@ -42,10 +41,34 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  name: '11|广东省广州市 移动 #2'
+  name: 11,29|CN_speednode_0009
   network: tcp
-  port: '53942'
-  server: 120.232.153.40
+  port: 35972
+  server: 120.232.153.71
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
+- alterId: 64
+  cipher: auto
+  name: '11,13,20,21|🇨🇳 广东省 移动 #5'
+  network: tcp
+  port: '55908'
+  server: 183.240.235.164
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.240.235.164
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: '11|广东省广州市 移动 #1'
+  network: tcp
+  port: '54437'
+  server: 183.236.51.23
   servername: ''
   tls: false
   type: vmess
@@ -56,6 +79,7 @@ proxies:
   network: tcp
   port: 54882
   server: 183.240.235.162
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -64,6 +88,16 @@ proxies:
   ws-headers:
     Host: 183.240.235.162
   ws-path: /
+- alterId: 64
+  cipher: auto
+  name: '11|广东省广州市 移动 #2'
+  network: tcp
+  port: '34414'
+  server: 120.232.153.37
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: '13,20,21|🇨🇳 广东省 移动 #3'
@@ -90,19 +124,6 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-headers:
     Host: 120.232.153.27
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  name: '13,20,21|🇨🇳 广东省 移动 #5'
-  network: tcp
-  port: '55908'
-  server: 183.240.235.164
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.240.235.164
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -278,15 +299,6 @@ proxies:
     headers:
       Host: cfed.tgzdyz2.top
     path: TG%40ZDYZ2
-- alterId: 64
-  cipher: auto
-  name: 29|CN_speednode_0009
-  network: tcp
-  port: 35972
-  server: 120.232.153.71
-  skip-cert-verify: true
-  type: vmess
-  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
 - alterId: 64
   cipher: auto
   name: 29|CN_speednode_0030
