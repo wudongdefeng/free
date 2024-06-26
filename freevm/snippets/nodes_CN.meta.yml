@@ -1,11 +1,10 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: 1,3,11,14,20,21|🇨🇳 广东省 移动
+  name: '1,3,11,14,20,21|🇨🇳 广东省 移动 #1'
   network: tcp
   port: '41490'
   server: 183.240.235.166
-  servername: ''
   skip-cert-verify: true
   sni: ''
   tls: false
@@ -29,10 +28,11 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  name: 1,3,14,20,21,29|CN_speednode_0005
+  name: 1,3,11,14,20,21,29|CN_speednode_0005
   network: tcp
   port: 50582
   server: 120.232.153.27
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -42,9 +42,39 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  name: 11,29|CN_speednode_0030
+  name: 11|广东省 移动
   network: tcp
-  port: 54002
+  port: '34602'
+  server: 183.240.235.170
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 11|广东省广州市 移动
+  network: tcp
+  port: '53942'
+  server: 120.232.153.40
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 11,25,27|香港2|@ripaojiedian
+  network: tcp
+  port: '51193'
+  server: 183.238.202.173
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 11,29|CN_speednode_0023
+  network: tcp
+  port: 36002
   server: 183.240.235.162
   servername: ''
   skip-cert-verify: true
@@ -53,9 +83,9 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 11,29|CN_speednode_0029
+  name: 11,29|CN_speednode_0008
   network: tcp
-  port: 45020
+  port: 54100
   server: 183.236.51.23
   servername: ''
   skip-cert-verify: true
@@ -64,21 +94,30 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '11,13,20,21|🇨🇳 广东省 移动 #5'
+  name: '11|广东省广州市 移动 #2'
   network: tcp
-  port: '55908'
-  server: 183.240.235.164
+  port: '35601'
+  server: 120.232.153.40
   servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '13,20,21|🇨🇳 广东省 移动 #5'
+  network: tcp
+  port: '54565'
+  server: 183.238.202.173
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-headers:
-    Host: 183.240.235.164
+    Host: 183.238.202.173
   ws-path: /
 - alterId: 64
   cipher: auto
-  name: 11,13,20,21,29|CN_speednode_0019
+  name: 13,20,21,29|CN_speednode_0019
   network: tcp
   port: 54882
   server: 183.240.235.162
@@ -89,19 +128,6 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-headers:
     Host: 183.240.235.162
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  name: '13,20,21|🇨🇳 广东省 移动 #3'
-  network: tcp
-  port: '54565'
-  server: 183.238.202.173
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.238.202.173
   ws-path: /
 - alterId: 64
   cipher: auto
@@ -116,6 +142,19 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-headers:
     Host: 120.232.153.27
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: '13,20,21|🇨🇳 广东省 移动 #7'
+  network: tcp
+  port: '55908'
+  server: 183.240.235.164
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.240.235.164
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -139,52 +178,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇭🇰 香港(油管:破解资源君2.0) #8'
-  network: tcp
-  port: '18001'
-  server: 120.233.7.221
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d
-  ws-headers:
-    Host: sgaz.cf
-  ws-path: fe39d984
-- alterId: 0
-  cipher: auto
-  name: 20|🇳CN-36.139.154.17-079
-  network: ws
-  port: 45394
-  server: 36.139.154.17
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c030fd57-c96b-452d-84d4-fad02b86e467
-  ws-headers:
-    Host: 36.139.154.17
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 20|🇨🇳CN-157.255.129.205-085
-  network: ws
-  port: 30866
-  server: v6.heduian.online
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    Host: baidu.com
-  ws-path: /oooo
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-36.139.154.17-130
-  password: afd78a4e-b0ff-4e30-acd5-3a88ff6cac25
-  port: 45190
-  server: 36.139.154.17
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 20|🇨🇳CN-120.241.118.28-222
+  name: 20|🇨🇳CN-120.241.118.28-192
   network: ws
   port: 20401
   server: data-us-v1.shwjfkw.cn
@@ -196,71 +190,55 @@ proxies:
     Host: data-us-v1.shwjfkw.cn
   ws-path: /debian
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.159-223
+  name: 20|🇨🇳CN-120.238.122.159-193
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.159-226
+  name: 20|🇨🇳CN-120.238.122.160-196
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.159-227
+  name: 20|🇨🇳CN-120.238.122.159-197
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
   type: ss
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 20|🇨🇳CN-124.225.68.224-172
-  network: ws
-  port: 46016
-  server: mmsg16.micloud.buzz
+  name: 20,21,29|CN_speednode_0030
+  network: tcp
+  port: 54002
+  server: 183.240.235.162
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: e0affd30-6517-4f32-a2bd-71faab70b40a
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-headers:
-    Host: mmsg16.micloud.buzz
-  ws-path: /zh-cn
+    Host: 183.240.235.162
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.241.39.204-176
+  name: 20|🇳CN-120.241.39.204-130
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20014
   server: jp2.mhw7e2.online
   type: ss
 - alterId: 64
   cipher: auto
-  name: '20,21|🇨🇳 广东省 移动 #1'
+  name: 20,21,29|CN_speednode_0029
   network: tcp
-  port: '31778'
-  server: 183.240.235.166
+  port: 45020
+  server: 183.236.51.23
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-headers:
-    Host: 183.240.235.166
+    Host: 183.236.51.23
   ws-path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 21,25,26|🇸🇬 新加坡|@ripaojiedian
-  network: ws
-  port: 46016
-  server: mmsg16.micloud.buzz
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: e0affd30-6517-4f32-a2bd-71faab70b40a
-  ws-opts:
-    headers:
-      Host: mmsg16.micloud.buzz
-    path: /zh-cn
 - alterId: 0
   cipher: auto
   name: '28|日本2|@ripaojiedian #1'
@@ -300,24 +278,6 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
-- alterId: 64
-  cipher: auto
-  name: 29|CN_speednode_0023
-  network: tcp
-  port: 36002
-  server: 183.240.235.162
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 29|CN_speednode_0008
-  network: tcp
-  port: 54100
-  server: 183.236.51.23
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: 29|CN_speednode_0012
