@@ -74,21 +74,24 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 25,26,27|香港|@ripaojiedian
-  network: ws
-  port: '8080'
-  server: 103.75.117.204
-  servername: hk-1.trollfunny.net
-  skip-cert-verify: false
-  tfo: false
-  tls: true
+  name: 25,27|香港|@ripaojiedian
+  network: tcp
+  port: '14979'
+  server: 38.147.188.239
+  servername: ''
+  tls: false
   type: vmess
-  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
-  ws-opts:
-    headers:
-      Host: hk-1.trollfunny.net
-    path: /
+  uuid: 2919ef6f-b8d3-49ea-a32d-2f95d346e4cb
+- alterId: 0
+  cipher: auto
+  name: 25,27|香港2|@ripaojiedian
+  network: tcp
+  port: '32006'
+  server: alm1.the-galgo.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f01f4ecd-3d4b-44f2-9b9b-1438a5f40098
 - alterId: 64
   cipher: auto
   name: 25,27|香港3|@ripaojiedian
@@ -99,23 +102,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 25,26,27|香港5|@ripaojiedian
-  network: ws
-  port: '8443'
-  server: 104.19.48.0
-  servername: hk01.linkitnow.net
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 39135a39-e6ca-43df-a360-d859eea58d86
-  ws-opts:
-    headers:
-      Host: hk01.linkitnow.net
-    path: /
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 26|🇭🇰 香港KT|@ripaojiedian
@@ -130,14 +116,6 @@ proxies:
     tls: true
   port: 8443
   server: 36.232.6.20
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港6|@ripaojiedian
-  password: edfada05-5cb9-423a-9675-4b54c3201441
-  port: 61035
-  server: zz-hk6.dajuzi.shop
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -194,7 +172,7 @@ proxies:
   uuid: 1528295e-c497-43ac-a08d-c040662b9344
 - alterId: 0
   cipher: auto
-  name: '28|香港5|@ripaojiedian #1'
+  name: 28|香港5|@ripaojiedian
   network: ws
   port: '26925'
   server: 38.207.164.31
