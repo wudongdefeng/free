@@ -89,6 +89,16 @@ proxies:
     path: /chami
 - alterId: 0
   cipher: auto
+  name: 11|新加坡 Linode数据中心
+  network: tcp
+  port: '2083'
+  server: sg2-v2ray.ipracevpn.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 0eb76650-5dda-4466-a142-b2097b93c50a
+- alterId: 0
+  cipher: auto
   name: 20|SG-159.223.54.93-059
   network: ws
   port: 80
@@ -203,19 +213,23 @@ proxies:
     headers:
       Host: sg-balancer.tencent.best
     path: /mugua
-- client-fingerprint: chrome
-  name: 26|🇸🇬 新加坡|@ripaojiedian
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 25,26,27|新加坡3|@ripaojiedian
   network: ws
-  password: moist
-  port: 2096
-  server: 47.236.158.158
+  port: '2052'
+  server: cfcdn2.sanfencdn9.com
+  servername: ''
   skip-cert-verify: false
-  sni: trojan.freenods.sbs
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cd0eb936-9e1e-4730-989e-be43e7fcaf3e
   ws-opts:
     headers:
-      Host: trojan.freenods.sbs
-    path: /?ed=2560
+      Host: jpafzyhfsg3.yofnhkfc.xyz
+    path: /video/u4eCZTxW
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇸🇬 新加坡2|@ripaojiedian
@@ -229,7 +243,7 @@ proxies:
   name: 26|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 18.141.239.48
+  server: 52.221.223.215
   tfo: false
   type: ss
 - alterId: 0
