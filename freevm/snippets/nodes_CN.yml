@@ -15,27 +15,17 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
+  name: 11|广东省 移动
+  network: tcp
+  port: '54565'
+  server: 183.238.202.173
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
   name: 11|广东省广州市 移动
-  network: tcp
-  port: '42055'
-  server: 120.232.153.37
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '11|广东省广州市 移动 #1'
-  network: tcp
-  port: '34414'
-  server: 120.232.153.37
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '11|广东省广州市 移动 #2'
   network: tcp
   port: '54965'
   server: 120.232.153.71
@@ -43,23 +33,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 11,21,26,27|美国3|@ripaojiedian
-  network: ws
-  port: '16928'
-  server: 120.232.240.56
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
-  ws-opts:
-    headers:
-      Host: '%7B%22Host%22:%22193.25.215.160%22%7D'
-    path: /v2ray
 - alterId: 64
   cipher: auto
   name: '11,13,20,21|🇨🇳 广东省 移动 #9'
@@ -74,30 +47,20 @@ proxies:
   ws-headers:
     Host: 183.240.235.166
   ws-path: /
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: '11,13,20,21|🇨🇳 广东省广州市 移动 #4'
-  network: tcp
-  port: '51707'
-  server: 183.236.51.23
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.236.51.23
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  name: '11|广东省广州市 移动 #5'
-  network: tcp
-  port: '45020'
-  server: 183.236.51.23
+  name: '11,13,21|🇨🇳 广东省广州市 移动 #3'
+  network: ws
+  port: '16928'
+  server: 120.232.240.56
   servername: ''
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
+  ws-opts:
+    headers:
+      Host: ''
+    path: /v2ray
 - alterId: 0
   cipher: auto
   name: '13,20,21|🇨🇳 广东省 移动 #5'
@@ -139,20 +102,19 @@ proxies:
   ws-headers:
     Host: 120.232.153.27
   ws-path: /
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: '13,21|🇨🇳 广东省广州市 移动 #3'
-  network: ws
-  port: '16928'
-  server: 120.232.240.56
-  servername: ''
+  name: '13,20,21|🇨🇳 广东省广州市 移动 #4'
+  network: tcp
+  port: '51707'
+  server: 183.236.51.23
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
-  ws-opts:
-    headers:
-      Host: ''
-    path: /v2ray
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '13,20,21|🇨🇳 广东省 移动 #7'
@@ -426,6 +388,39 @@ proxies:
   port: 20014
   server: jp2.mhw7e2.online
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 21,26|🇯🇵 日本4|@ripaojiedian
+  network: ws
+  port: 46011
+  server: mmjp11.micloud.buzz
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: e0affd30-6517-4f32-a2bd-71faab70b40a
+  ws-opts:
+    headers:
+      Host: mmjp11.micloud.buzz
+    path: /zh-cn
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 21,26,27|美国3|@ripaojiedian
+  network: ws
+  port: '16928'
+  server: 120.232.240.56
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
+  ws-opts:
+    headers:
+      Host: '%7B%22Host%22:%22193.25.215.160%22%7D'
+    path: /v2ray
 - alterId: 0
   cipher: auto
   name: 28|日本2|@ripaojiedian
