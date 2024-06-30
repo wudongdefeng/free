@@ -1,11 +1,10 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: '1,3,11,13,20,21|🇨🇳 广东省 移动 #2'
+  name: '1,3,13,20,21|🇨🇳 广东省 移动 #2'
   network: tcp
   port: '36002'
   server: 183.240.235.162
-  servername: ''
   skip-cert-verify: true
   sni: ''
   tls: false
@@ -14,52 +13,64 @@ proxies:
   ws-headers:
     Host: 183.240.235.162
   ws-path: /
-- alterId: 64
-  cipher: auto
-  name: '11,13,14,20,21|🇨🇳 广东省 移动 #4'
-  network: tcp
-  port: '54882'
-  server: 183.240.235.162
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.240.235.162
-  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '11,13,16,21,28|github.com/freefq - 广东省移动 7 #1'
-  network: ws
-  port: '20401'
-  server: data-us-v1.shwjfkw.cn
-  servername: ''
-  tls: false
+  name: 11|广东省 移动
+  network: tcp
+  port: 3301
+  server: pro01.dns2024.org
+  tls: true
   type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-us-v1.shwjfkw.cn
-    path: /debian
+  uuid: 4b804301-23ce-378f-87df-af85f73c611f
 - alterId: 64
   cipher: auto
-  name: '11,13,20,21|🇨🇳 广东省广州市 移动 #1'
+  name: '11,13,20,21|🇨🇳 广东省广州市 移动 #2'
   network: tcp
-  port: '45020'
-  server: 183.236.51.23
+  port: '53942'
+  server: 120.232.153.40
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-headers:
-    Host: 183.236.51.23
+    Host: 120.232.153.40
   ws-path: /
 - alterId: 64
   cipher: auto
   name: '11|广东省广州市 移动 #1'
   network: tcp
-  port: '34002'
+  port: '35972'
+  server: 120.232.153.71
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
+- alterId: 64
+  cipher: auto
+  name: '11|广东省广州市 移动 #2'
+  network: tcp
+  port: '34414'
+  server: 120.232.153.37
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '11|广东省广州市 移动 #3'
+  network: tcp
+  port: '42055'
+  server: 120.232.153.37
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '11|广东省广州市 移动 #4'
+  network: tcp
+  port: '50582'
   server: 120.232.153.27
   servername: ''
   tls: false
@@ -67,10 +78,11 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 11,20,21|🇨🇳 广东省广州市 移动
+  name: '13,20,21|🇨🇳 广东省广州市 移动 #1'
   network: tcp
-  port: '54100'
+  port: '45020'
   server: 183.236.51.23
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -94,18 +106,31 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  name: '13,20,21|🇨🇳 广东省广州市 移动 #2'
+  name: '13,14,20,21|🇨🇳 广东省 移动 #4'
   network: tcp
-  port: '53942'
-  server: 120.232.153.40
-  servername: ''
+  port: '54882'
+  server: 183.240.235.162
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-headers:
-    Host: 120.232.153.40
+    Host: 183.240.235.162
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '13,16,21,28|github.com/freefq - 广东省移动 7 #1'
+  network: ws
+  port: '20401'
+  server: data-us-v1.shwjfkw.cn
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-us-v1.shwjfkw.cn
+    path: /debian
 - alterId: 0
   cipher: auto
   name: 20|🇳CN-112.64.98.133-054
@@ -280,6 +305,19 @@ proxies:
   port: 20005
   server: service.ouluyun9803.com
   type: ss
+- alterId: 64
+  cipher: auto
+  name: 20,21|🇨🇳 广东省广州市 移动
+  network: tcp
+  port: '54100'
+  server: 183.236.51.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
 - alterId: 64
   cipher: auto
   name: 20,21|🇨🇳 广东省 移动
