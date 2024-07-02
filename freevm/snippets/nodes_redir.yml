@@ -1,42 +1,54 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 1|_CN_->_SE_
+  name: 1,20|CN-183.233.187.156-001
   password: 99301d55-a41f-4919-986b-1435996533aa
   port: 20003
   server: deepf.hjkdsak2.com
   type: ss
 - alterId: 0
   cipher: auto
-  name: 1,3|🇺🇸_US_美国->🇨🇦_CA_加拿大
+  name: 1,3,20|RELAY-104.19.42.49-002
   network: ws
   port: 2086
   server: 104.19.42.49
+  skip-cert-verify: true
   sni: ip11.freegradely.xyz
   tls: false
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-headers:
+    Host: 104.19.42.49
   ws-opts: {}
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 1,3|🇺🇸_US_美国->🇨🇳_CN_中国
+  name: 1,3,20|RELAY-104.19.47.186-108
   network: ws
   port: 8080
   server: 104.19.47.186
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-headers:
+    Host: oiictw.yydsii.com
   ws-opts: {}
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '1,3|🇺🇸_US_美国->🇨🇦_CA_加拿大 #1'
+  name: 1,3,20|🏁RELAY-104.19.58.175-004
   network: ws
   port: 2052
   server: 104.19.58.175
+  skip-cert-verify: true
   sni: ''
   tls: false
   type: vmess
   uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  ws-headers:
+    Host: 104.19.58.175
   ws-opts: {}
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '6,28,30|🇺🇸_US_美国 #46'
@@ -142,7 +154,7 @@ proxies:
   ws-opts: {}
 - alterId: 64
   cipher: auto
-  name: 14,21,29|CN_speednode_0009
+  name: 14,29|CN_speednode_0009
   network: tcp
   port: 54002
   server: 183.240.235.162
@@ -192,13 +204,13 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: 21|🇺🇸 _US_美国->🇧🇷_BR_巴西
+  name: 21|🇺🇸 _US_美国->🇨🇦_CA_加拿大
   network: ws
-  port: '2052'
-  server: 104.18.37.248
+  port: '2086'
+  server: 104.19.42.49
   tls: false
   type: vmess
-  uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts:
     headers:
       Host: ''
@@ -208,7 +220,7 @@ proxies:
   name: 21|🇺🇸 _US_美国->🇨🇳_CN_中国
   network: ws
   port: '8080'
-  server: 104.19.47.16
+  server: 104.19.47.186
   tls: false
   type: vmess
   uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
@@ -218,91 +230,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 21|🇺🇸 _US_美国->🇨🇦_CA_加拿大
-  network: ws
-  port: '2086'
-  server: 104.19.47.65
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: '21|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #1'
   network: ws
-  port: '2086'
-  server: 104.18.57.111
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 21|🇺🇸 _CN_中国->🇺🇸_US_美国
-  network: ws
-  port: '16928'
-  server: 120.232.240.56
-  tls: false
-  type: vmess
-  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '21|🇺🇸 _US_美国->🇧🇷_BR_巴西 #1'
-  network: ws
   port: '2052'
-  server: p3.v2raybrasil.cloud
+  server: 104.19.58.175
   tls: false
   type: vmess
-  uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224
-  ws-opts:
-    headers:
-      Host: p3.v2raybrasil.cloud
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '21|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #2'
-  network: ws
-  port: '2086'
-  server: 104.19.57.4
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 21|🇺🇸 _US_美国->🇫🇷_FR_法国
-  network: ws
-  port: '2082'
-  server: 172.67.130.140
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '21|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #3'
-  network: ws
-  port: '2086'
-  server: 172.64.175.213
-  tls: false
-  type: vmess
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
   ws-opts:
     headers:
       Host: ''
