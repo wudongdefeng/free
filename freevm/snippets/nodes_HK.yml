@@ -53,9 +53,35 @@ proxies:
   tls: false
   type: vmess
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
-- alterId: 1
+- alterId: 0
+  cipher: auto
+  name: 20|HK-20.239.176.94-063
+  network: ws
+  port: 443
+  server: 20.239.176.94
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4adf9138-5aca-4a26-b217-335e72bb680d
+  ws-headers:
+    Host: 20.239.176.94
+  ws-path: /
+- alterId: 0
   cipher: auto
   name: 21|🇭🇰 香港(油管:破解资源君2.0)
+  network: ws
+  port: '80'
+  server: 152.69.193.245
+  tls: false
+  type: vmess
+  uuid: 6697776b-d009-413b-8708-822ee2e02515
+  ws-opts:
+    headers:
+      Host: 152.69.193.245
+    path: /
+- alterId: 1
+  cipher: auto
+  name: '21|🇭🇰 香港(油管:破解资源君2.0) #1'
   network: ws
   port: '38106'
   server: ingress-i2.iivvppnn.info
@@ -66,19 +92,19 @@ proxies:
     headers:
       Host: www.ivpnpro.net
     path: /hls/cctv5phd.m3u8
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: '21|🇭🇰 香港(油管:破解资源君2.0) #1'
+  name: '21|🇭🇰 香港(油管:破解资源君2.0) #2'
   network: ws
-  port: '80'
-  server: 9.vip341.xyz
+  port: '38701'
+  server: ingress-i1.onebox6.org
   tls: false
   type: vmess
-  uuid: 2f0415a4-9acd-3435-a780-e447a2ce79fb
+  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
   ws-opts:
     headers:
-      Host: 9.vip341.xyz
-    path: /ny
+      Host: ingress-i1.onebox6.org
+    path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
