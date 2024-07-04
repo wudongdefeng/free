@@ -69,23 +69,6 @@ proxies:
   uuid: e160d0ba-5b1a-448c-fcfb-35bfc5c2b1b5
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 25,26,27|台湾|@ripaojiedian
-  network: ws
-  port: '2052'
-  server: cfcdn1.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a
-  ws-opts:
-    headers:
-      Host: tw1bQiWSE4x.fzbqfrse.xyz
-    path: /video/GQ2qE5Us9g
-- alterId: 0
-  cipher: auto
   name: 28|🇹🇼台湾 01
   network: ws
   port: '443'
@@ -126,9 +109,16 @@ proxies:
     headers:
       Host: tw.appleid.bf
     path: /ws?ed=2048
-- cipher: chacha20-ietf-poly1305
-  name: 29|TW_speednode_0122
-  password: bb24b8e1-7a1d-49bc-a5f2-69dc5787ef2e
-  port: 22061
-  server: z3.moonriver.sbs
-  type: ss
+- name: 29|TW_speednode_0253
+  network: ws
+  port: 25775
+  server: 35.229.179.98
+  servername: go.jp980.cloudns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
+  ws-opts:
+    headers:
+      Host: go.jp980.cloudns.org
+    path: /?ed=2560
