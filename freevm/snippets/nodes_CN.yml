@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 1,26,29|CN_speednode_0027
+  name: 1,20,26,29|CN_speednode_0027
   password: hGkQ6915tD
   port: 15082
   server: 59.56.77.178
@@ -9,37 +9,58 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: '3,11,13,21,30|🇨🇳_CN_中国 #2'
+  name: '3,13,20,21,30|🇨🇳_CN_中国 #2'
   network: tcp
   port: 54882
   server: 183.240.235.162
-  servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.240.235.162
+  ws-path: /
 - alterId: 64
   cipher: auto
-  name: '11,13,21|🇨🇳 广东省广州市 移动 #1'
+  name: 11,14,20,21|🇨🇳 广东省 移动
   network: tcp
-  port: '54100'
-  server: 183.236.51.23
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '11,14|🇨🇳_CN_中国 #1'
-  network: tcp
-  port: 36002
+  port: '36002'
   server: 183.240.235.162
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.240.235.162
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 11|中国 阿里云
+  network: ws
+  port: 2082
+  server: 8.222.167.147
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 64
+  cipher: auto
+  name: '11|广东省 移动 #1'
+  network: tcp
+  port: '54565'
+  server: 183.238.202.173
+  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '11|广东省广州市 移动 #1'
+  name: 11|广东省广州市 移动
   network: tcp
-  port: '54437'
+  port: '45020'
   server: 183.236.51.23
   servername: ''
   tls: false
@@ -47,53 +68,72 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '11|广东省广州市 移动 #2'
-  network: tcp
-  port: '34002'
-  server: 120.232.153.27
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 13,21|🇨🇳 广东省广州市 移动
+  name: '13,20,21|🇨🇳 广东省广州市 移动 #3'
   network: tcp
   port: '35601'
   server: 120.232.153.40
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.232.153.40
+  ws-path: /
 - alterId: 64
   cipher: auto
-  name: '13,21|🇨🇳 广东省广州市 移动 #2'
+  name: '13,20,21|🇨🇳 广东省广州市 移动 #4'
+  network: tcp
+  port: '54100'
+  server: 183.236.51.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: '13,20,21|🇨🇳 广东省广州市 移动 #5'
   network: tcp
   port: '34414'
   server: 120.232.153.37
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.232.153.37
+  ws-path: /
 - alterId: 64
   cipher: auto
-  name: '13,21|🇨🇳 广东省 移动 #2'
+  name: '13,20,21|🇨🇳 广东省 移动 #4'
   network: tcp
   port: '32998'
   server: 183.240.235.164
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.240.235.164
+  ws-path: /
 - alterId: 64
   cipher: auto
-  name: '13,21|🇨🇳 广东省广州市 移动 #3'
+  name: '13,20,21|🇨🇳 广东省广州市 移动 #6'
   network: tcp
   port: '51707'
   server: 183.236.51.23
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '13,16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -108,6 +148,324 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-218.204.179.114-037
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 31187
+  server: zh01lv5tw05.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-218.204.179.114-038
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 33087
+  server: zh01lv5us03.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇳CN-112.29.210.163-040
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 50001
+  server: zh01lv3us03.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-218.204.179.114-045
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 11087
+  server: test3.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-183.232.167.99-048
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 11087
+  server: test1.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇳CN-218.204.179.114-049
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 34087
+  server: zh01lv5sgp04.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-218.204.179.114-050
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 34087
+  server: zh01lv5sgp05.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-218.204.179.114-051
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 50031
+  server: zh01lv3sgp03.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇳CN-183.232.167.99-052
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 50031
+  server: zh01lv3sgp02.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇳CN-183.232.167.99-055
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 50311
+  server: zh01lv3hk02.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-120.199.84.179-056
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 50311
+  server: zh01lv3hk03.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-183.232.167.99-060
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 50001
+  server: zh01lv3us01.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇳CN-183.232.167.99-061
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 33087
+  server: zh01lv5us01.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇳CN-218.204.179.114-062
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 33087
+  server: zh01lv5us04.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-183.232.167.99-067
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 50311
+  server: zh01lv3hk01.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-183.232.167.99-068
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 31087
+  server: zh01lv5hk06.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇳CN-218.204.179.114-070
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 33087
+  server: zh01lv5us05.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇳CN-218.204.179.114-072
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 50001
+  server: zh01lv3us02.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-218.204.179.114-073
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 33087
+  server: zh01lv5us02.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-183.232.167.99-074
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 35087
+  server: zh01lv5uk03.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-183.232.167.99-075
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 36087
+  server: zh01lv5ge03.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-183.232.167.99-076
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 50011
+  server: zh01lv3uk02.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-218.204.179.114-078
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 36087
+  server: zh01lv5ge02.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-218.204.179.114-079
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 50011
+  server: zh01lv3uk03.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇳CN-218.204.179.114-082
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 36087
+  server: zh01lv5ge05.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-183.232.167.99-083
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 50011
+  server: zh01lv3uk01.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-183.232.167.99-084
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 35087
+  server: zh01lv5uk01.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-218.204.179.114-088
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 36087
+  server: zh01lv5ge04.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-183.232.167.99-093
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 36087
+  server: zh01lv5ge01.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-218.204.179.114-096
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 35087
+  server: zh01lv5uk05.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇳CN-183.232.167.99-102
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 11087
+  server: zh01lv5hk01.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-183.232.167.99-103
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 31087
+  server: zh01lv5hk10.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇳CN-183.232.167.99-106
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 35087
+  server: zh01lv5uk02.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-183.232.167.99-108
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 11087
+  server: zh01lv5hk02.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-218.204.179.114-112
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 35087
+  server: zh01lv5uk04.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-183.232.167.99-115
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 31087
+  server: zh01lv5hk09.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-218.204.179.114-128
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 38087
+  server: zh01lv5in01.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-218.204.179.114-129
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 38087
+  server: zh01lv5in02.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇨🇳CN-183.232.167.99-130
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 38087
+  server: zh01lv5in03.feiguayun.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇳CN-183.232.167.99-134
+  password: 203a6578-5876-4a86-992d-262952d8b084
+  port: 50031
+  server: zh01lv3sgp01.feiguayun.xyz
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇪🇺 欧洲(油管:破解资源君2.0) #9'
+  network: tcp
+  port: '35010'
+  server: 36.133.220.166
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 92ae7550-f158-3725-b887-1666116c8db3
+  ws-headers:
+    Host: 36.133.220.166
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|🇨🇳CN-120.241.118.28-299
+  network: ws
+  port: 20401
+  server: data-us-v1.shwjfkw.cn
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-headers:
+    Host: data-us-v1.shwjfkw.cn
+  ws-path: /debian
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇨🇳CN-120.238.122.159-300
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20003
+  server: service.ouluyun9803.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇳CN-120.238.122.160-303
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 26667
+  server: service.ouluyun9803.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇳CN-120.238.122.160-304
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20005
+  server: service.ouluyun9803.com
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: '20,21|🇨🇳 广东省广州市 移动 #1'
+  network: tcp
+  port: '54437'
+  server: 183.236.51.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: '20,21|🇨🇳 广东省广州市 移动 #2'
+  network: tcp
+  port: '34002'
+  server: 120.232.153.27
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.232.153.27
+  ws-path: /
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 20,26|🇭🇰 香港|@ripaojiedian
+  password: 6743AB87-5912-4E9B-8AED-667F4B0EC14B
+  port: 18021
+  server: hk05-auto-console.suya.ink
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: '28|日本2|@ripaojiedian #1'
