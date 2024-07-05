@@ -3,26 +3,63 @@ proxies:
   cipher: auto
   name: 11|广东省广州市 移动
   network: tcp
-  port: '54437'
-  server: 183.236.51.23
+  port: '53942'
+  server: 120.232.153.40
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 11,20,21,25,27|香港2|@ripaojiedian
+  name: '11,14,20,21|🇨🇳 广东省 移动 #1'
   network: tcp
-  port: '31778'
-  server: 183.240.235.166
+  port: '36002'
+  server: 183.240.235.162
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.240.235.162
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: '11|广东省 移动 #1'
+  network: tcp
+  port: '32998'
+  server: 183.240.235.164
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '11,20,21|🇨🇳 广东省 移动 #2'
+  network: tcp
+  port: '54882'
+  server: 183.240.235.162
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-headers:
-    Host: 183.240.235.166
+    Host: 183.240.235.162
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '11,13,16,21,28|github.com/freefq - 广东省移动 7 #1'
+  network: ws
+  port: '20401'
+  server: data-us-v1.shwjfkw.cn
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-us-v1.shwjfkw.cn
+    path: /debian
 - alterId: 64
   cipher: auto
   name: '13,20,21|🇨🇳 广东省广州市 移动 #3'
@@ -50,33 +87,6 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-headers:
     Host: 120.232.153.40
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '13,16,21,28|github.com/freefq - 广东省移动 7 #1'
-  network: ws
-  port: '20401'
-  server: data-us-v1.shwjfkw.cn
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-us-v1.shwjfkw.cn
-    path: /debian
-- alterId: 64
-  cipher: auto
-  name: '14,20,21|🇨🇳 广东省 移动 #1'
-  network: tcp
-  port: '36002'
-  server: 183.240.235.162
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.240.235.162
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -124,6 +134,20 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
+  name: 20,21,25,27|香港2|@ripaojiedian
+  network: tcp
+  port: '31778'
+  server: 183.240.235.166
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.240.235.166
+  ws-path: /
+- alterId: 64
+  cipher: auto
   name: '20,21|🇨🇳 广东省广州市 移动 #1'
   network: tcp
   port: '54100'
@@ -134,19 +158,6 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-headers:
     Host: 183.236.51.23
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  name: '20,21|🇨🇳 广东省 移动 #2'
-  network: tcp
-  port: '54882'
-  server: 183.240.235.162
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.240.235.162
   ws-path: /
 - alterId: 0
   cipher: auto
