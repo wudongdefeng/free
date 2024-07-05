@@ -55,45 +55,6 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  name: '20,21|🇺🇸 美国(油管:破解资源君2.0) #12'
-  network: tcp
-  port: '12359'
-  server: 43.129.30.122
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f78921c4-5a97-47ed-db4c-e88b799e6581
-  ws-headers:
-    Host: 43.129.30.122
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 20|🇰HK-20.239.176.94-075
-  network: ws
-  port: 443
-  server: 20.239.176.94
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4adf9138-5aca-4a26-b217-335e72bb680d
-  ws-headers:
-    Host: 20.239.176.94
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '20,21|🇺🇸 美国(油管:破解资源君2.0) #19'
-  network: tcp
-  port: '15256'
-  server: 43.129.30.122
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 02ee559e-a1aa-427e-e42b-f97977795dbc
-  ws-headers:
-    Host: 43.129.30.122
-  ws-path: /
-- alterId: 0
-  cipher: auto
   name: 21|🇭🇰 香港(油管:破解资源君2.0)
   network: ws
   port: '80'
@@ -133,6 +94,16 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
+  name: 25,27|香港2|@ripaojiedian
+  network: tcp
+  port: '31778'
+  server: 183.240.235.166
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
   name: 25,27|香港3|@ripaojiedian
   network: tcp
   port: '50004'
@@ -165,6 +136,20 @@ proxies:
   server: hk05-auto-console.suya.ink
   tfo: false
   type: ss
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 26,29|CN_speednode_0033
+  password: GsKYmYOE
+  port: 1617
+  server: 223.113.54.154
+  skip-cert-verify: true
+  sni: ftp.debian.org
+  tfo: false
+  tls: false
+  type: trojan
+  udp: false
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇭🇰 香港R|@ripaojiedian
@@ -550,7 +535,8 @@ proxies:
     headers:
       Host: mositr.freenods.sbs
     path: /?ed=2560
-- alpn: '[http/1.1]'
+- alpn:
+  - http/1.1
   client-fingerprint: random
   name: 29|HK_speednode_0104
   network: ws
