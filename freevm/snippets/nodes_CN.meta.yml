@@ -9,7 +9,7 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: '3,13,20,21,30|🇨🇳_CN_中国 #2'
+  name: '3,11,13,20,21,30|🇨🇳_CN_中国 #2'
   network: tcp
   port: 54882
   server: 183.240.235.162
@@ -35,43 +35,27 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 11|广东省 移动
+  name: 11,29|CN_speednode_0018
   network: tcp
-  port: '41490'
+  port: 52908
+  server: 183.240.235.164
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 11,25,27|香港2|@ripaojiedian
+  network: tcp
+  port: '31778'
   server: 183.240.235.166
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '11|中国 阿里云 #1'
-  network: ws
-  port: 2082
-  server: 8.222.215.228
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: s1c.v2.v001sss.xyz
-    path: /
 - alterId: 64
   cipher: auto
-  name: 11,14,20,21|🇨🇳 广东省 移动
-  network: tcp
-  port: '36002'
-  server: 183.240.235.162
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.240.235.162
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  name: '11,13,20,21|🇨🇳 广东省广州市 移动 #3'
+  name: '13,20,21|🇨🇳 广东省广州市 移动 #3'
   network: tcp
   port: '35601'
   server: 120.232.153.40
@@ -85,25 +69,10 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  name: '11,13,20,21|🇨🇳 广东省广州市 移动 #4'
+  name: '13,20,21|🇨🇳 广东省广州市 移动 #4'
   network: tcp
   port: '54100'
   server: 183.236.51.23
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.236.51.23
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  name: '11,13,20,21|🇨🇳 广东省广州市 移动 #6'
-  network: tcp
-  port: '51707'
-  server: 183.236.51.23
-  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -139,6 +108,19 @@ proxies:
   ws-headers:
     Host: 183.240.235.164
   ws-path: /
+- alterId: 64
+  cipher: auto
+  name: '13,20,21|🇨🇳 广东省广州市 移动 #6'
+  network: tcp
+  port: '51707'
+  server: 183.236.51.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '13,16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -153,6 +135,19 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
+- alterId: 64
+  cipher: auto
+  name: 14,20,21|🇨🇳 广东省 移动
+  network: tcp
+  port: '36002'
+  server: 183.240.235.162
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.240.235.162
+  ws-path: /
 - cipher: aes-256-gcm
   name: 20|🇨🇳CN-218.204.179.114-037
   password: 203a6578-5876-4a86-992d-262952d8b084
@@ -464,12 +459,10 @@ proxies:
     Host: 120.232.153.27
   ws-path: /
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 20,26|🇭🇰 香港|@ripaojiedian
+  name: 20|🇨🇳CN-101.89.217.109-292
   password: 6743AB87-5912-4E9B-8AED-667F4B0EC14B
   port: 18021
   server: hk05-auto-console.suya.ink
-  tfo: false
   type: ss
 - alterId: 0
   cipher: auto
@@ -485,15 +478,6 @@ proxies:
     headers:
       Host: data-jp-v1.usabooks.com.cn
     path: /debian
-- alterId: 64
-  cipher: auto
-  name: 29|CN_speednode_0018
-  network: tcp
-  port: 52908
-  server: 183.240.235.164
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
   name: 29|CN_speednode_0019
   port: 7890
