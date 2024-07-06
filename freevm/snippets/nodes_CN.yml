@@ -9,37 +9,35 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: '3,13,30|🇨🇳_CN_中国 #2'
+  name: '3,13,20,21,30|🇨🇳_CN_中国 #2'
   network: tcp
   port: 54882
   server: 183.240.235.162
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.240.235.162
+  ws-path: /
 - alterId: 64
   cipher: auto
-  name: '11,13|广东省 移动 #4'
-  network: tcp
-  port: 51193
-  server: 183.238.202.173
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 13|广东省广州市 移动
+  name: 13,20,21|🇨🇳 广东省广州市 移动
   network: tcp
   port: '50582'
   server: 120.232.153.27
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.232.153.27
+  ws-path: /
 - alterId: 64
   cipher: auto
-  name: '13,20,21|🇨🇳 广东省 移动 #5'
+  name: '13,20,21|🇨🇳 广东省 移动 #1'
   network: tcp
   port: '32998'
   server: 183.240.235.164
@@ -53,27 +51,48 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  name: 13,25,27|香港2|@ripaojiedian
+  name: 13,20,21,25,27|香港2|@ripaojiedian
   network: tcp
   port: '31778'
   server: 183.240.235.166
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.240.235.166
+  ws-path: /
 - alterId: 64
   cipher: auto
-  name: '13|广东省广州市 移动 #1'
+  name: '13,20,21|🇨🇳 广东省 移动 #4'
+  network: tcp
+  port: '51193'
+  server: 183.238.202.173
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.238.202.173
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: '13,20,21|🇨🇳 广东省广州市 移动 #1'
   network: tcp
   port: '54100'
   server: 183.236.51.23
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
 - alterId: 64
   cipher: auto
-  name: '13,20,21|🇨🇳 广东省 移动 #2'
+  name: '13,20,21|🇨🇳 广东省 移动 #5'
   network: tcp
   port: '54565'
   server: 183.238.202.173
@@ -87,14 +106,18 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  name: '13|广东省广州市 移动 #2'
+  name: '13,20,21|🇨🇳 广东省广州市 移动 #2'
   network: tcp
   port: '45020'
   server: 183.236.51.23
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '13,16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -373,7 +396,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20|🇨🇳CN-120.241.118.28-415
+  name: 20|🇨🇳CN-120.241.118.28-334
   network: ws
   port: 20401
   server: data-us-v1.shwjfkw.cn
@@ -385,160 +408,23 @@ proxies:
     Host: data-us-v1.shwjfkw.cn
   ws-path: /debian
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.160-416
+  name: 20|🇨🇳CN-120.238.122.159-335
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.159-419
+  name: 20|🇨🇳CN-120.238.122.159-338
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.160-420
+  name: 20|🇳CN-120.238.122.160-339
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
   type: ss
-- alterId: 64
-  cipher: auto
-  name: '20,21|🇨🇳 广东省广州市 移动 #6'
-  network: tcp
-  port: '42055'
-  server: 120.232.153.37
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.232.153.37
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  name: '20,21|🇨🇳 广东省广州市 移动 #5'
-  network: tcp
-  port: '35601'
-  server: 120.232.153.40
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.232.153.40
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  name: '20,21|🇨🇳 广东省广州市 移动 #2'
-  network: tcp
-  port: '34414'
-  server: 120.232.153.37
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.232.153.37
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  name: '20,21|🇨🇳 广东省广州市 移动 #3'
-  network: tcp
-  port: '34002'
-  server: 120.232.153.27
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.232.153.27
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  name: 20,21,25,27|香港|@ripaojiedian
-  network: tcp
-  port: '45602'
-  server: 183.240.235.170
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.240.235.170
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  name: '20,21|🇨🇳 广东省 移动 #3'
-  network: tcp
-  port: '41490'
-  server: 183.240.235.166
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.240.235.166
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  name: '20,21|🇨🇳 广东省广州市 移动 #4'
-  network: tcp
-  port: '51707'
-  server: 183.236.51.23
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.236.51.23
-  ws-path: /
-- cipher: aes-128-gcm
-  name: 20|🇨🇳CN-112.17.33.62-373
-  password: 8958d8d4-56e2-4643-9a17-d92a231683d9
-  port: 18119
-  server: alibaba1.xn--z7x16bf6t.com
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '21|🇨🇳 中国 阿里云 #2'
-  network: ws
-  port: '2082'
-  server: 8.222.237.131
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: s1c.v2.v001sss.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '21|🇨🇳 中国 阿里云 #1'
-  network: ws
-  port: '2082'
-  server: 8.222.215.228
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: s1c.v2.v001sss.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '21|🇨🇳 中国 阿里云 #3'
-  network: ws
-  port: '2082'
-  server: 8.222.180.86
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: s1c.v2.v001sss.xyz
-    path: /
 - alterId: 0
   cipher: auto
   name: '28|日本2|@ripaojiedian #1'
