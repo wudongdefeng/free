@@ -55,20 +55,33 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  name: 20|🇰HK-20.239.88.144-113
+  name: 20|🇰HK-20.239.179.251-106
   network: ws
-  port: 80
-  server: 20.239.88.144
+  port: 50045
+  server: 20.239.179.251
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: e982184f-c6e0-4ba4-91cc-71eb6c702588
+  uuid: 9b61ff46-4c61-4b31-801a-f870d7a1de53
   ws-headers:
-    Host: nkpvpn.akamaized.net
-  ws-path: /nkpvpn.site
-- alterId: 2
+    Host: 20.239.179.251
+  ws-path: /
+- alterId: 1
   cipher: auto
   name: 21|🇭🇰 香港(油管:破解资源君2.0)
+  network: ws
+  port: '50205'
+  server: data-hk-v1.heisey.cn
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: tv.cctv.com
+    path: /hls/cctv5phd.m3u8
+- alterId: 2
+  cipher: auto
+  name: '21|🇭🇰 香港(油管:破解资源君2.0) #1'
   network: ws
   port: '80'
   server: 527hk1.fans8.xyz
@@ -79,6 +92,58 @@ proxies:
     headers:
       Host: 527hk1.fans8.xyz
     path: /ray
+- alterId: 0
+  cipher: auto
+  name: '21|🇭🇰 香港(油管:破解资源君2.0) #2'
+  network: ws
+  port: '443'
+  server: lc-hk03-direct01.lc-hk03.lc-node.com
+  tls: true
+  type: vmess
+  uuid: ec736482-173e-3eff-9114-b49df8056e7d
+  ws-opts:
+    headers:
+      Host: lc-hk03-direct01.lc-hk03.lc-node.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '21|亚洲(油管:破解资源君2.0) #4'
+  network: ws
+  port: '443'
+  server: lc-hk01-direct01.lc-hk01.lc-node.com
+  tls: true
+  type: vmess
+  uuid: ec736482-173e-3eff-9114-b49df8056e7d
+  ws-opts:
+    headers:
+      Host: lc-hk01-direct01.lc-hk01.lc-node.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '21|🇭🇰 香港(油管:破解资源君2.0) #4'
+  network: ws
+  port: '65083'
+  server: cn05.downloadmovie.cn
+  tls: false
+  type: vmess
+  uuid: 0253b574-8020-3186-a647-0267295ac9bb
+  ws-opts:
+    headers:
+      Host: cn05.downloadmovie.cn
+    path: /rocket
+- alterId: 0
+  cipher: auto
+  name: '21|🇭🇰 香港(油管:破解资源君2.0) #5'
+  network: ws
+  port: '65040'
+  server: cn02.downloadmovie.cn
+  tls: false
+  type: vmess
+  uuid: 0253b574-8020-3186-a647-0267295ac9bb
+  ws-opts:
+    headers:
+      Host: cn02.downloadmovie.cn
+    path: /rocket
 - alterId: 64
   cipher: auto
   name: 25,27|香港2|@ripaojiedian

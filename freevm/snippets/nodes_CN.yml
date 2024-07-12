@@ -16,27 +16,31 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 11,25,27|香港5|@ripaojiedian
+  name: '11,13,20,21|🇨🇳 广东省 移动 #1'
   network: tcp
-  port: '45972'
-  server: 120.232.153.71
+  port: '54565'
+  server: 183.238.202.173
   servername: ''
-  tls: false
-  type: vmess
-  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
-- alterId: 64
-  cipher: auto
-  name: '11|广东省广州市 移动 #1'
-  network: tcp
-  port: '54437'
-  server: 183.236.51.23
-  servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.238.202.173
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '13,20,21|🇨🇳 广东省 移动 #2'
+  name: '11|广东省 移动 #1'
+  network: tcp
+  port: '63090'
+  server: in06.dns2024.org
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8
+- alterId: 0
+  cipher: auto
+  name: 13,20,21|🇨🇳 广东省 移动
   network: tcp
   port: '30897'
   server: cctv.iepl02.yuntiair365.top
@@ -74,20 +78,6 @@ proxies:
   ws-headers:
     Host: 183.236.51.23
   ws-path: /
-- alterId: 64
-  cipher: auto
-  name: '13,20,21|🇨🇳 广东省 移动 #3'
-  network: tcp
-  port: '54565'
-  server: 183.238.202.173
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.238.202.173
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: '13,16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -111,22 +101,65 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-128-gcm
+  name: 20|🇨🇳CN-120.233.151.171-062
+  password: 18269676-71ae-476d-b6d3-26ca391424b9
+  port: 8070
+  server: 120.233.151.171
+  type: ss
+- cipher: aes-128-gcm
+  name: 20|🇨🇳CN-120.233.151.171-071
+  password: 18269676-71ae-476d-b6d3-26ca391424b9
+  port: 8060
+  server: 120.233.151.171
+  type: ss
+- cipher: aes-128-gcm
+  name: 20|🇳CN-120.233.151.171-073
+  password: 18269676-71ae-476d-b6d3-26ca391424b9
+  port: 8040
+  server: 120.233.151.171
+  type: ss
+- cipher: aes-128-gcm
+  name: 20|🇨🇳CN-120.233.151.171-100
+  password: 18269676-71ae-476d-b6d3-26ca391424b9
+  port: 8030
+  server: 120.233.151.171
+  type: ss
+- cipher: aes-128-gcm
+  name: 20|🇳CN-120.233.151.171-101
+  password: 18269676-71ae-476d-b6d3-26ca391424b9
+  port: 8050
+  server: 120.233.151.171
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '20,21|🇪🇺 欧洲(油管:破解资源君2.0) #5'
+  name: '20,21|亚洲(油管:破解资源君2.0) #3'
   network: tcp
-  port: '18007'
-  server: 120.233.7.221
+  port: '13001'
+  server: 120.197.130.126
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d
   ws-headers:
-    Host: 120.233.7.221
+    Host: 120.197.130.126
   ws-path: /
+- alterId: 1
+  cipher: auto
+  name: 20|🇨🇳CN-112.30.145.132-117
+  network: ws
+  port: 50205
+  server: data-hk-v1.heisey.cn
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-headers:
+    Host: tv.cctv.com
+  ws-path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: 20|🇨🇳CN-120.241.118.28-364
+  name: 20|🇨🇳CN-120.241.118.28-337
   network: ws
   port: 20401
   server: data-us-v1.shwjfkw.cn
@@ -138,41 +171,42 @@ proxies:
     Host: data-us-v1.shwjfkw.cn
   ws-path: /debian
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.160-365
+  name: 20|🇨🇳CN-120.238.122.159-338
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.160-368
+  name: 20|🇨🇳CN-120.238.122.160-341
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.159-369
+  name: 20|🇳CN-120.238.122.159-342
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
   type: ss
 - alterId: 64
   cipher: auto
-  name: 20,21|🇨🇳 广东省广州市 移动
+  name: 20,21,25,27|香港5|@ripaojiedian
   network: tcp
-  port: '45020'
-  server: 183.236.51.23
+  port: '45972'
+  server: 120.232.153.71
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
   ws-headers:
-    Host: 183.236.51.23
+    Host: 120.232.153.71
   ws-path: /
 - alterId: 64
   cipher: auto
   name: '20,21|🇨🇳 广东省广州市 移动 #1'
   network: tcp
-  port: '54100'
+  port: '54437'
   server: 183.236.51.23
   skip-cert-verify: true
   tls: false
