@@ -289,66 +289,68 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '20,21|🇺🇸 美国(油管:破解资源君2.0) #2'
-  network: tcp
-  port: '22222'
-  server: 150.230.99.46
+  name: 11|日本 东京vultr数据中心
+  network: ws
+  port: 45224
+  server: jd-rb5.yqh168.top
+  tls: false
+  type: vmess
+  uuid: 45d2fe72-545d-4014-aa48-65d47df93da2
+  ws-opts:
+    headers:
+      Host: www.bing.com
+    path: /websitego
+- alterId: 0
+  cipher: auto
+  name: 20|🇵JP-152.69.206.209-142
+  network: ws
+  port: 1212
+  server: 152.69.206.209
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: e6c55d36-022c-4ebc-b9c2-e1220a7184f4
+  uuid: fb908160-9697-4bfd-f5b7-f1fbc53e60fa
   ws-headers:
-    Host: 150.230.99.46
+    Host: 152.69.206.209
   ws-path: /
-- cipher: aes-256-gcm
-  name: 20|🇵JP-85.208.108.20-084
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 85.208.108.20
-  type: ss
-- cipher: aes-256-gcm
-  name: 20|🇵JP-85.208.108.20-091
-  password: zDNVedRFPQexG9v
-  port: 6379
-  server: 85.208.108.20
-  type: ss
-- cipher: aes-256-gcm
-  name: 20|🇵JP-85.208.108.20-102
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 85.208.108.20
-  type: ss
-- cipher: aes-256-gcm
-  name: 20|🇯🇵JP-85.208.108.20-108
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 85.208.108.20
-  type: ss
-- cipher: aes-256-gcm
-  name: 20|🇯🇵JP-85.208.108.20-109
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 85.208.108.20
+- alterId: 0
+  cipher: auto
+  name: 20|🇯🇵JP-152.69.193.245-096
+  network: ws
+  port: 80
+  server: 152.69.193.245
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 6697776b-d009-413b-8708-822ee2e02515
+  ws-headers:
+    Host: 152.69.193.245
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇵JP-89.31.126.171-075
+  password: G!yBwPWH3Vao
+  port: 800
+  server: 89.31.126.171
   type: ss
 - cipher: aes-256-cfb
-  name: 20|🇵JP-54.199.83.239-165
+  name: 20|🇵JP-54.199.83.239-161
   password: doub.io
   port: 2333
   server: 54.199.83.239
   type: ss
 - alterId: 0
   cipher: auto
-  name: 21|🇯🇵 日本(油管:破解资源君2.0)
+  name: '21|🇯🇵 日本(油管:破解资源君2.0) #1'
   network: ws
-  port: '443'
-  server: vjp3.0bad.com
-  tls: true
+  port: '12100'
+  server: freewaytunnel.dev
+  tls: false
   type: vmess
-  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  uuid: 3ba517b0-5a6d-3a9d-9e3e-3db1c49d706e
   ws-opts:
     headers:
-      Host: vjp3.0bad.com
-    path: /chat
+      Host: freewaytunnel.dev
+    path: /jp2
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome

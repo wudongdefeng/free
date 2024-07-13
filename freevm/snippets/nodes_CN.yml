@@ -18,31 +18,35 @@ proxies:
   cipher: auto
   name: 11|广东省广州市 移动
   network: tcp
-  port: '34002'
-  server: 120.232.153.27
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '11|广东省广州市 移动 #1'
-  network: tcp
-  port: '45020'
-  server: 183.236.51.23
+  port: '42055'
+  server: 120.232.153.37
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 11|广东省 移动
+  name: 11,20,21|🇨🇳 广东省 移动
   network: tcp
-  port: 63004
+  port: '63004'
   server: in06.dns2024.org
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8
+  ws-headers:
+    Host: in06.dns2024.org
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: '11|广东省广州市 移动 #1'
+  network: tcp
+  port: '54437'
+  server: 183.236.51.23
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: '13,16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -66,65 +70,48 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-128-gcm
-  name: 20|🇨🇳CN-120.233.151.171-062
-  password: 18269676-71ae-476d-b6d3-26ca391424b9
-  port: 8070
-  server: 120.233.151.171
-  type: ss
-- cipher: aes-128-gcm
-  name: 20|🇨🇳CN-120.233.151.171-071
-  password: 18269676-71ae-476d-b6d3-26ca391424b9
-  port: 8060
-  server: 120.233.151.171
-  type: ss
-- cipher: aes-128-gcm
-  name: 20|🇳CN-120.233.151.171-073
-  password: 18269676-71ae-476d-b6d3-26ca391424b9
-  port: 8040
-  server: 120.233.151.171
-  type: ss
-- cipher: aes-128-gcm
-  name: 20|🇨🇳CN-120.233.151.171-100
-  password: 18269676-71ae-476d-b6d3-26ca391424b9
-  port: 8030
-  server: 120.233.151.171
-  type: ss
-- cipher: aes-128-gcm
-  name: 20|🇳CN-120.233.151.171-101
-  password: 18269676-71ae-476d-b6d3-26ca391424b9
-  port: 8050
-  server: 120.233.151.171
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '20,21|亚洲(油管:破解资源君2.0) #3'
-  network: tcp
-  port: '13001'
-  server: 120.197.130.126
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d
-  ws-headers:
-    Host: 120.197.130.126
-  ws-path: /
 - alterId: 1
   cipher: auto
-  name: 20|🇨🇳CN-112.30.145.132-117
+  name: 20|🇳CN-120.241.118.28-099
   network: ws
   port: 50205
-  server: data-hk-v1.heisey.cn
+  server: data-hk-v2.shwjfkw.cn
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: b1478e24-4916-3abe-8f17-15931012ecbe
   ws-headers:
-    Host: tv.cctv.com
+    Host: data-hk-v2.shwjfkw.cn
   ws-path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: 20|🇨🇳CN-120.241.118.28-201
+  name: '20,21|🇭🇰 香港(油管:破解资源君2.0) #8'
+  network: tcp
+  port: '11301'
+  server: 36.139.115.52
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d
+  ws-headers:
+    Host: aweikeji-YouTube
+  ws-path: /hls/cctv5phd.m3u8
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇭🇰 香港(油管:破解资源君2.0) #9'
+  network: tcp
+  port: '11401'
+  server: 36.139.115.52
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d
+  ws-headers:
+    Host: 36.139.115.52
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|🇨🇳CN-120.241.118.28-295
   network: ws
   port: 20401
   server: data-us-v1.shwjfkw.cn
@@ -136,23 +123,49 @@ proxies:
     Host: data-us-v1.shwjfkw.cn
   ws-path: /debian
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.160-202
+  name: 20|🇨🇳CN-120.238.122.159-296
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.159-205
+  name: 20|🇨🇳CN-120.238.122.159-299
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.160-206
+  name: 20|🇳CN-120.238.122.159-300
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
   type: ss
+- alterId: 64
+  cipher: auto
+  name: 20,21|🇨🇳 广东省广州市 移动
+  network: tcp
+  port: '34002'
+  server: 120.232.153.27
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.232.153.27
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: '20,21|🇨🇳 广东省广州市 移动 #1'
+  network: tcp
+  port: '45020'
+  server: 183.236.51.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '28|日本2|@ripaojiedian #1'
