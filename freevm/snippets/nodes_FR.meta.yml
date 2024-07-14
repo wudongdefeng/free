@@ -20,17 +20,37 @@ proxies:
   type: vmess
   uuid: 82447abf-dcb9-408a-9ca6-79e0a7698d08
 - cipher: aes-256-gcm
-  name: 20|🇫🇷FR-193.243.147.128-332
+  name: 20|🇫🇷FR-193.243.147.128-383
   password: 7BcLdsO1WweoGD0X
   port: 40368
   server: 193.243.147.128
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇷FR-92.243.27.51-277
-  password: aSsoG8kTeefvH0s5A7tchH
-  port: 9802
-  server: paris.telegavpn.com
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|🇷FR-129.151.225.197-180
+  network: ws
+  port: 443
+  server: 110.724064.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b11208a0-d0b1-486d-95bb-7e88ed6012b9
+  ws-headers:
+    Host: 110.724064.xyz
+  ws-path: /nlpivws
+- alterId: 0
+  cipher: auto
+  name: 20|🇷FR-51.195.91.135-351
+  network: ws
+  port: 10000
+  server: 51.195.91.135
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cde36a6c-3c5e-11ef-bafd-eb0a0b341998
+  ws-headers:
+    Host: 51.195.91.135
+  ws-path: /vpnjantit
 - name: 24|_FR_国
   network: tcp
   password: telegram-id-directvpn
