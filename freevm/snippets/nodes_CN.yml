@@ -1,6 +1,6 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 1,20,29|CN_speednode_0021
+  name: 1,20|CN-59.56.77.178-023
   password: hGkQ6915tD
   port: 15082
   server: 59.56.77.178
@@ -14,25 +14,25 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '11,13,16,21,28|github.com/freefq - 广东省移动 7 #1'
-  network: ws
-  port: '20401'
-  server: data-us-v1.shwjfkw.cn
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-us-v1.shwjfkw.cn
-    path: /debian
 - alterId: 64
   cipher: auto
-  name: '13,20,21|🇨🇳 广东省广州市 移动 #1'
+  name: 11,20,21|🇨🇳 广东省广州市 移动
   network: tcp
-  port: '50582'
+  port: '35601'
+  server: 120.232.153.40
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.232.153.40
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: 13,20,21,29|CN_speednode_0043
+  network: tcp
+  port: 50582
   server: 120.232.153.27
   servername: ''
   skip-cert-verify: true
@@ -138,6 +138,20 @@ proxies:
   ws-headers:
     Host: 183.236.51.23
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '13,16,21,28|github.com/freefq - 广东省移动 7 #1'
+  network: ws
+  port: '20401'
+  server: data-us-v1.shwjfkw.cn
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-us-v1.shwjfkw.cn
+    path: /debian
 - alterId: 64
   cipher: auto
   name: '14|🇨🇳_CN_中国 #1'
@@ -219,7 +233,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 20,26|🇰🇷 韩国|@ripaojiedian
+  name: 20,26,29|CN_speednode_0049
   password: 6f3562c7-904f-417e-818b-dcd49b564078
   port: 30004
   server: gdyddx500.xiyunchen.cn
@@ -233,19 +247,6 @@ proxies:
   server: 123.88.148.9
   tfo: false
   type: ss
-- alterId: 64
-  cipher: auto
-  name: 20,21|🇨🇳 广东省广州市 移动
-  network: tcp
-  port: '35601'
-  server: 120.232.153.40
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.232.153.40
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: '28|日本2|@ripaojiedian #1'
@@ -262,32 +263,46 @@ proxies:
     path: /debian
 - alterId: 64
   cipher: auto
-  name: 29|CN_speednode_0016
+  name: 29|CN_speednode_0029
   network: tcp
-  port: 52908
-  server: 183.240.235.164
+  port: 31778
+  server: 183.236.49.87
   skip-cert-verify: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: -1
-  cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0018
-  password: 70747514-fb14-4f31-8390-e1f0453eff6d
-  port: 20019
-  server: kr1.mhw7e2.online
-  type: ss
-  udp: true
-- alterId: 64
+- alterId: 2
   cipher: auto
-  name: 29|CN_speednode_0020
-  network: tcp
-  port: 40002
-  server: 183.240.235.162
-  skip-cert-verify: true
+  name: 29|CN_speednode_0030
+  network: ws
+  port: 23612
+  server: 12.v2-ray.cyou
+  skip-cert-vertify: true
+  tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-ctr
-  name: 29|CN_speednode_0022
+  udp: true
+  uuid: b1a9282a-22a6-39b1-abd8-6ca4b73bb8c9
+  ws-opts:
+    headers:
+      Host: 12.v2-ray.cyou
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 29|CN_speednode_0031
+  network: ws
+  port: 23613
+  server: 13.v2-ray.cyou
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1a9282a-22a6-39b1-abd8-6ca4b73bb8c9
+  ws-opts:
+    headers:
+      Host: 13.v2-ray.cyou
+    path: /
+- alterId: -1
+  cipher: aes-256-ctr
+  name: 29|CN_speednode_0032
   password: JHe7ay97yuw8ue
   plugin: obfs
   plugin-opts:
@@ -296,3 +311,214 @@ proxies:
   port: 37041
   server: speedtest-rtc.xtspeeder002.xyz
   type: ss
+- alterId: 64
+  cipher: auto
+  name: 29|CN_speednode_0033
+  network: tcp
+  port: 32998
+  server: 120.237.79.157
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 2
+  cipher: auto
+  name: 29|CN_speednode_0034
+  network: ws
+  port: 23619
+  server: 19.v2-ray.cyou
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1a9282a-22a6-39b1-abd8-6ca4b73bb8c9
+  ws-opts:
+    headers:
+      Host: 19.v2-ray.cyou
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 29|CN_speednode_0036
+  network: tcp
+  port: 34965
+  server: 120.232.153.71
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 29|CN_speednode_0037
+  network: tcp
+  port: 40002
+  server: 183.236.49.92
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: -1
+  cipher: aes-128-gcm
+  name: 29|CN_speednode_0038
+  password: 40698818-1d50-429b-acfb-236653deb4f3
+  port: 10596
+  server: gd1.chuanping.wang
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 29|CN_speednode_0040
+  network: ws
+  port: 23611
+  server: 11.v2-ray.cyou
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1a9282a-22a6-39b1-abd8-6ca4b73bb8c9
+  ws-opts:
+    headers:
+      Host: 11.v2-ray.cyou
+    path: /
+- alterId: -1
+  cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0042
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20019
+  server: kr1.mhw7e2.online
+  type: ss
+  udp: true
+- alterId: -1
+  cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0044
+  password: a2014791-2c9c-4fcd-9359-80b3f2bb2e2e
+  port: 42010
+  server: dc3.forlive.live
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 29|CN_speednode_0045
+  network: ws
+  port: 23615
+  server: 15.v2-ray.cyou
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1a9282a-22a6-39b1-abd8-6ca4b73bb8c9
+  ws-opts:
+    headers:
+      Host: 15.v2-ray.cyou
+    path: /
+- cipher: aes-128-gcm
+  name: 29|CN_speednode_0046
+  password: 1de124fc-2e1b-47bf-a094-9e7494e87be6
+  port: 38922
+  server: agoogleyun3.xn--z7x16bf6t.com
+  type: ss
+  udp: true
+- alterId: 64
+  cipher: auto
+  name: 29|CN_speednode_0048
+  network: tcp
+  port: 54002
+  server: 183.236.49.92
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 2
+  cipher: auto
+  name: 29|CN_speednode_0052
+  network: ws
+  port: 23605
+  server: 5.v2-ray.cyou
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1a9282a-22a6-39b1-abd8-6ca4b73bb8c9
+  ws-opts:
+    headers:
+      Host: 5.v2-ray.cyou
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 29|CN_speednode_0053
+  network: ws
+  port: 23616
+  server: 16.v2-ray.cyou
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1a9282a-22a6-39b1-abd8-6ca4b73bb8c9
+  ws-opts:
+    headers:
+      Host: 16.v2-ray.cyou
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 29|CN_speednode_0054
+  network: ws
+  port: 23618
+  server: 18.v2-ray.cyou
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1a9282a-22a6-39b1-abd8-6ca4b73bb8c9
+  ws-opts:
+    headers:
+      Host: 18.v2-ray.cyou
+    path: /
+- alterId: -1
+  cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0055
+  password: e89ae2ed-304d-4b16-9e09-5bc7bca925e9
+  port: 50005
+  server: iepl2.forlive.live
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 29|CN_speednode_0057
+  network: tcp
+  port: 41381
+  server: z81.topzz.cc
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 655f6f7a-a288-39e1-9e82-b60cd4e81529
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0060
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20014
+  server: jp2.mhw7e2.online
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0062
+  password: a738e290-ee08-404c-99e3-caa5718868db
+  port: 27209
+  server: fs.xianyuwangzhi.top
+  type: ss
+  udp: true
+- alterId: 64
+  cipher: auto
+  name: 29|CN_speednode_0063
+  network: tcp
+  port: 51707
+  server: 183.236.51.23
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: 29|CN_speednode_0064
+  network: tcp
+  port: 39041
+  server: 183.238.202.173
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24

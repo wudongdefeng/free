@@ -80,6 +80,19 @@ proxies:
   ws-headers:
     Host: 61.222.202.140
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20,21|🇨🇳 广东省 移动
+  network: tcp
+  port: '63004'
+  server: in06.dns2024.org
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 6cf559be-8e10-3c59-ad8c-7345fa164ab8
+  ws-headers:
+    Host: in06.dns2024.org
+  ws-path: /
 - client-fingerprint: chrome
   name: 26|🇹🇼 台湾|@ripaojiedian
   network: ws
@@ -143,16 +156,17 @@ proxies:
     headers:
       Host: tw.appleid.bf
     path: /ws?ed=2048
-- name: 29|TW_speednode_0165
+- client-fingerprint: chrome
+  name: 29|TW_speednode_0216
   network: ws
-  port: 25775
-  server: 35.229.179.98
-  servername: go.jp980.cloudns.org
+  port: 23555
+  server: 211.72.156.12
+  servername: dns68.putata.eu.org
   tls: true
   type: vless
-  udp: true
-  uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
+  udp: false
+  uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
   ws-opts:
     headers:
-      Host: go.jp980.cloudns.org
-    path: /?ed=2560
+      Host: dns68.putata.eu.org
+    path: /?ed=2048
