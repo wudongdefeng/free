@@ -16,19 +16,23 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 11|广东省广州市 移动
+  name: 11,13,20,21|🇨🇳 广东省 移动
   network: tcp
-  port: '51707'
-  server: 183.236.51.23
+  port: '51193'
+  server: 183.238.202.173
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.238.202.173
+  ws-path: /
 - alterId: 64
   cipher: auto
-  name: '11|广东省广州市 移动 #1'
+  name: 11|广东省广州市 移动
   network: tcp
-  port: '35601'
+  port: '53942'
   server: 120.232.153.40
   servername: ''
   tls: false
@@ -36,40 +40,52 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '11|广东省广州市 移动 #2'
+  name: '11,20,21|🇨🇳 广东省广州市 移动 #2'
   network: tcp
   port: '45972'
   server: 120.232.153.71
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
+  ws-headers:
+    Host: 120.232.153.71
+  ws-path: /
 - alterId: 64
   cipher: auto
-  name: 11,13,25,27|美国2|@ripaojiedian
+  name: 11,13,20,21,25,27|美国2|@ripaojiedian
   network: tcp
   port: '42055'
   server: 120.232.153.37
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.232.153.37
+  ws-path: /
 - alterId: 64
   cipher: auto
-  name: '13|广东省广州市 移动 #4'
+  name: '11,13,20,21|🇨🇳 广东省广州市 移动 #4'
   network: tcp
   port: '54100'
   server: 183.236.51.23
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
 - alterId: 64
   cipher: auto
-  name: 13|广东省 移动
+  name: '11|广东省广州市 移动 #4'
   network: tcp
-  port: '51193'
-  server: 183.238.202.173
+  port: '34002'
+  server: 120.232.153.27
   servername: ''
   tls: false
   type: vmess
@@ -163,22 +179,56 @@ proxies:
     Host: 120.233.150.146
   ws-path: /rocket
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.159-223
+  name: 20|🇨🇳CN-120.238.122.160-327
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.160-226
+  name: 20|🇨🇳CN-120.238.122.159-330
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.160-227
+  name: 20|🇳CN-120.238.122.159-331
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: 20,21|🇨🇳 广东省广州市 移动
+  network: tcp
+  port: '51707'
+  server: 183.236.51.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: '20,21|🇨🇳 广东省广州市 移动 #1'
+  network: tcp
+  port: '35601'
+  server: 120.232.153.40
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.232.153.40
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇭🇰 香港6|@ripaojiedian
+  password: XoYrrEfZYxxHL3AI
+  port: 16985
+  server: a1.45s6e224gdr.shop
+  tfo: false
   type: ss
 - alterId: 0
   cipher: auto
