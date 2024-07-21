@@ -55,23 +55,57 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  name: 11,13,25,27|香港5|@ripaojiedian
+  name: 13,20,21,25,27|香港5|@ripaojiedian
   network: tcp
   port: '20003'
   server: shdxus.aikunapp.com
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: a45201e7-7a4a-41ad-b7e1-8cbac19234ef
-- alterId: 0
+  ws-headers:
+    Host: shdxus.aikunapp.com
+  ws-path: /
+- alterId: 1
   cipher: auto
-  name: 21|🇭🇰 香港(油管:破解资源君2.0)
-  network: tcp
-  port: '13002'
-  server: 120.197.130.126
+  name: 20|🇰HK-123.58.218.157-040
+  network: ws
+  port: 50207
+  server: data-hk-v1.shwjfkw.cn
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-headers:
+    Host: data-hk-v1.shwjfkw.cn
+  ws-path: /hls/cctv5phd.m3u8
+- alterId: 1
+  cipher: auto
+  name: 20|🇰HK-123.58.218.157-072
+  network: ws
+  port: 50205
+  server: data-hk-v2.shwjfkw.cn
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-headers:
+    Host: data-hk-v2.shwjfkw.cn
+  ws-path: /hls/cctv5phd.m3u8
+- alterId: 0
+  cipher: auto
+  name: 20|🇭🇰HK-123.58.218.157-330
+  network: ws
+  port: 20401
+  server: data-us-v1.shwjfkw.cn
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-headers:
+    Host: data-us-v1.shwjfkw.cn
+  ws-path: /debian
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -111,28 +145,6 @@ proxies:
   password: XoYrrEfZYxxHL3AI
   port: 46983
   server: kis7as.9sjd2dkesl2.shop
-  tfo: false
-  type: ss
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 26,29|US_speednode_0165
-  password: epDl3yFT5CNCKazFSqAxDOAyau3IXjxl63YcZSE0248BnZ7gOa8C9pYR3weSDR
-  port: 28342
-  server: okelvv.superpokemon.com
-  skip-cert-verify: true
-  sni: okelvv.superpokemon.com
-  tfo: false
-  tls: false
-  type: trojan
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港6|@ripaojiedian
-  password: XoYrrEfZYxxHL3AI
-  port: 16985
-  server: a1.45s6e224gdr.shop
   tfo: false
   type: ss
 - cipher: aes-256-cfb
