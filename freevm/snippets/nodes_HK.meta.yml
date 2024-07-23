@@ -53,24 +53,56 @@ proxies:
   tls: false
   type: vmess
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
+- alterId: 1
+  cipher: auto
+  name: 20|HK-123.58.218.157-137
+  network: ws
+  port: 50207
+  server: data-hk-v1.shwjfkw.cn
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-headers:
+    Host: data-hk-v1.shwjfkw.cn
+  ws-path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: 11|香港 特别行政区
+  name: 20,21|🇭🇰 香港 特别行政区
   network: tcp
-  port: 10010
+  port: '10010'
   server: xg1.tcity8.buzz
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 4ca1ed3c-b0d4-4872-b260-774fbe3021b0
-- alterId: 0
-  cipher: auto
-  name: 21|🇭🇰 香港(油管:破解资源君2.0)
-  network: tcp
-  port: '32001'
-  server: zc.9900.sd20211007.xyz
-  tls: false
-  type: vmess
-  uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b
+  ws-headers:
+    Host: xg1.tcity8.buzz
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇭🇰HK-38.207.154.30-237
+  password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b
+  port: 30401
+  server: tw03.jjjjjj.icu
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇭🇰HK-38.207.154.30-238
+  password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b
+  port: 10002
+  server: nn.auozzjs.lol
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇭🇰HK-38.207.154.30-239
+  password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b
+  port: 50003
+  server: bgp3.jjjjjj.icu
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇭🇰HK-38.207.154.30-241
+  password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b
+  port: 53251
+  server: hk15.jjjjjj.icu
+  type: ss
 - alterId: 0
   cipher: auto
   name: '21|🇭🇰 香港(油管:破解资源君2.0) #1'
@@ -125,15 +157,6 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: '21|🇭🇰 香港(油管:破解资源君2.0) #6'
-  network: tcp
-  port: '39999'
-  server: hkbn-home-a.zc20200426.club
-  tls: true
-  type: vmess
-  uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b
-- alterId: 0
-  cipher: auto
   name: 25,27|香港|@ripaojiedian
   network: tcp
   port: '63099'
@@ -168,20 +191,6 @@ proxies:
   server: 36.232.31.218
   tfo: false
   type: ss
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 26,29|US_speednode_0165
-  password: epDl3yFT5CNCKazFSqAxDOAyau3IXjxl63YcZSE0248BnZ7gOa8C9pYR3weSDR
-  port: 28342
-  server: okelvv.superpokemon.com
-  skip-cert-verify: true
-  sni: okelvv.superpokemon.com
-  tfo: false
-  tls: false
-  type: trojan
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇭🇰 香港R|@ripaojiedian
