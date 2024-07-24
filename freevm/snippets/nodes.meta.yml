@@ -9295,33 +9295,6 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 25,26,27|台湾2|@ripaojiedian
-  network: ws
-  port: '2052'
-  server: cfcdn1.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 78c40177-c364-480d-bd77-76e9d89f69b4
-  ws-opts:
-    headers:
-      Host: tw1bQiWSE4x.fzbqfrse.xyz
-    path: /video/GQ2qE5Us9g
-- alterId: 0
-  cipher: auto
-  name: 25,27|台湾3|@ripaojiedian
-  network: tcp
-  port: '3283'
-  server: tw99.jinkela2024vpn.xyz
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: e8e6f618-842c-33d4-9a9f-7827614a6bf9
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
   name: 25,26,27|日本2|@ripaojiedian
   network: ws
   port: '63011'
@@ -9338,23 +9311,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 25,26,27|日本3|@ripaojiedian
-  network: ws
-  port: '2052'
-  server: cfcdn3.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 78c40177-c364-480d-bd77-76e9d89f69b4
-  ws-opts:
-    headers:
-      Host: kvjqqknzjp6.yofnhkfc.xyz
-    path: /video/Zo98PYfE
-- alterId: 0
-  cipher: auto
   name: 25,27|韩国|@ripaojiedian
   network: tcp
   port: '63097'
@@ -9368,18 +9324,18 @@ proxies:
   client-fingerprint: chrome
   name: 25,26,27|新加坡|@ripaojiedian
   network: ws
-  port: '2052'
-  server: cfcdn2.sanfencdn9.com
+  port: '8443'
+  server: 54.179.130.50
   servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 78c40177-c364-480d-bd77-76e9d89f69b4
+  uuid: 4ca4e724-dd49-40a3-962d-1fa57369d705
   ws-opts:
     headers:
-      Host: 7nAi74jJsg1.yofnhkfc.xyz
-    path: /video/c9efxRCi
+      Host: ''
+    path: /helloword
 - alterId: 0
   cipher: auto
   name: '25|13|d*********g.com_2 #4'
@@ -9403,7 +9359,7 @@ proxies:
     skip-cert-verify: false
     tls: true
   port: 8443
-  server: 36.232.31.218
+  server: 36.232.48.74
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -9414,19 +9370,22 @@ proxies:
   server: 59.56.77.178
   tfo: false
   type: ss
-- cipher: chacha20-ietf
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 26,29|CN_speednode_0024
-  password: HuTaoCloud
-  plugin: obfs
-  plugin-opts:
-    host: 36a1a32505.microsoft.com
-    mode: http
-  port: 12556
-  server: cm1-tw.hutaonode3.top
+  name: 26|🇹🇼 台湾|@ripaojiedian
+  password: WcilR7WG
+  port: 33335
+  server: sha.lightssocks.com
   tfo: false
   type: ss
-  udp: true
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 26|🇯🇵 日本3|@ripaojiedian
+  password: WcilR7WG
+  port: 33337
+  server: zja.lightssocks.com
+  tfo: false
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇯🇵 日本R|@ripaojiedian
@@ -9448,7 +9407,7 @@ proxies:
   name: 26|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 34.219.154.160
+  server: 13.212.77.222
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -9456,7 +9415,7 @@ proxies:
   name: 26|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 13.212.34.140
+  server: 54.95.170.220
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -9473,6 +9432,14 @@ proxies:
   password: hGkQ6915tD
   port: 15614
   server: 59.56.77.178
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 26|🇮🇳 印度|@ripaojiedian
+  password: WcilR7WG
+  port: 33369
+  server: qha.lightssocks.com
   tfo: false
   type: ss
 - alterId: 0
@@ -11521,6 +11488,18 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: http
+  udp: true
+- cipher: chacha20-ietf
+  name: 29|CN_speednode_0024
+  password: HuTaoCloud
+  plugin: obfs
+  plugin-opts:
+    host: 36a1a32505.microsoft.com
+    mode: http
+  port: 12556
+  server: cm1-tw.hutaonode3.top
+  tfo: false
+  type: ss
   udp: true
 - alterId: -1
   client-fingerprint: chrome
