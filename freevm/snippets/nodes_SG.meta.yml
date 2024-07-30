@@ -95,19 +95,6 @@ proxies:
     path: /chami
 - alterId: 0
   cipher: auto
-  name: 13,21|🇸🇬 10|🇸🇬 新加坡2|@ripaojiedian
-  network: ws
-  port: '46016'
-  server: mmsg16.micloud.buzz
-  tls: false
-  type: vmess
-  uuid: f9b02d8c-b69b-435f-aa25-68393e5fb121
-  ws-opts:
-    headers:
-      Host: mmsg16.micloud.buzz
-    path: /zh-cn
-- alterId: 0
-  cipher: auto
   name: '20,21|🇸🇬 新加坡(油管:破解资源君2.0) #1'
   network: tcp
   port: '28475'
@@ -208,6 +195,19 @@ proxies:
     headers:
       Host: jgwxjp.jddsb.cf
     path: /cctv13/hd.m3u8
+- alterId: 0
+  cipher: auto
+  name: 21|🇸🇬 10|🇸🇬 新加坡2|@ripaojiedian
+  network: ws
+  port: '46016'
+  server: mmsg16.micloud.buzz
+  tls: false
+  type: vmess
+  uuid: f9b02d8c-b69b-435f-aa25-68393e5fb121
+  ws-opts:
+    headers:
+      Host: mmsg16.micloud.buzz
+    path: /zh-cn
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇸🇬 狮城特殊|@ripaojiedian
@@ -229,13 +229,14 @@ proxies:
     headers:
       Host: gw.alicdn.com
     path: /CAT
-- client-fingerprint: random
-  name: 29|SG_speednode_0135
+- client-fingerprint: chrome
+  name: 29|SG_speednode_0156
   network: ws
   port: 2087
   server: 47.236.10.182
   servername: mositr.freenods.sbs
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tfo: false
   tls: true
   type: vless
   udp: true
@@ -243,21 +244,8 @@ proxies:
   ws-opts:
     headers:
       Host: mositr.freenods.sbs
-    path: /?ed=2560
-- name: 29|SG_speednode_0136
-  network: ws
-  port: 2096
-  server: 47.236.10.182
-  servername: go.jp980.cloudns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
-  ws-opts:
-    headers:
-      Host: go.jp980.cloudns.org
-    path: /?ed=2560
-- name: 29|SG_speednode_0137
+    path: /?ed=2560fp=random
+- name: 29|SG_speednode_0153
   network: ws
   port: 2083
   server: 47.236.232.148
@@ -270,18 +258,68 @@ proxies:
     headers:
       Host: go.jp980.cloudns.org
     path: /?ed=2560
-- client-fingerprint: chrome
-  name: 29|SG_speednode_0138
+- name: 29|SG_speednode_0154
   network: ws
-  port: 40809
-  server: 43.156.143.198
-  servername: dns68.putata.eu.org
-  skip-cert-verify: true
+  port: 443
+  server: 47.236.130.95
+  servername: page-us-qg0.pages.dev
+  tls: true
+  type: vless
+  uuid: bd7d2c5c-86bc-4d5c-8c6b-a5c58981e68c
+  ws-opts:
+    headers:
+      Host: page-us-qg0.pages.dev
+    path: /
+- name: 29|SG_speednode_0155
+  network: ws
+  port: 2096
+  server: 47.236.202.91
+  servername: page-us-qg0.pages.dev
+  tls: true
+  type: vless
+  uuid: bd7d2c5c-86bc-4d5c-8c6b-a5c58981e68c
+  ws-opts:
+    headers:
+      Host: page-us-qg0.pages.dev
+    path: /
+- name: 29|SG_speednode_0157
+  network: ws
+  port: 443
+  server: 27.50.49.13
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
   ws-opts:
     headers:
-      Host: dns68.putata.eu.org
+      Host: juzibaipiao.5112233.xyz
     path: /?ed=2048
+- name: 29|SG_speednode_0158
+  network: ws
+  port: 443
+  server: 27.50.48.222
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /?ed=2048
+- name: 29|SG_speednode_0159
+  network: ws
+  password: moist
+  port: 443
+  server: 27.50.48.108
+  skip-cert-verify: true
+  sni: trojan.freenods.sbs
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: trojan.freenods.sbs
+    path: /

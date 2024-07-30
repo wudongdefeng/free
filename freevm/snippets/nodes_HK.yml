@@ -55,6 +55,20 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 64
   cipher: auto
+  name: 13,20,21,25,27|香港|@ripaojiedian
+  network: tcp
+  port: '42055'
+  server: 120.232.153.37
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.232.153.37
+  ws-path: /
+- alterId: 64
+  cipher: auto
   name: 13,20,21,25,27|香港2|@ripaojiedian
   network: tcp
   port: '45020'
@@ -83,34 +97,40 @@ proxies:
     headers:
       Host: mmhk01.micloud.buzz
     path: /zh-cn
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 13,21|🇭🇰 11|香港6|@ripaojiedian
-  network: ws
-  port: '2052'
-  server: 4.6bnw.top
+  name: 13,25,27|香港5|@ripaojiedian
+  network: tcp
+  port: '54104'
+  server: 183.236.51.23
   servername: ''
   tls: false
   type: vmess
-  uuid: b5abc4c0-b518-4195-88b4-57900f16fb65
-  ws-opts:
-    headers:
-      Host: hkbn.6bnw.top
-    path: /?ed=2560
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 13,21|🇭🇰 11|香港8|@ripaojiedian
-  network: ws
-  port: '2052'
-  server: cfcdn2.sanfencdn9.com
+  name: 13,25,27|香港7|@ripaojiedian
+  network: tcp
+  port: '29767'
+  server: svip.hongxingdl.vip
   servername: ''
   tls: false
   type: vmess
-  uuid: a223af01-b481-4abf-a305-60d60587d1e4
+  uuid: 01604cad-f37b-4f3d-84fe-165fb5d68bc4
+- alterId: 0
+  cipher: auto
+  name: 13,25,27|香港3|@ripaojiedian
+  network: ws
+  port: '46001'
+  server: mmhk01.micloud.buzz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f9b02d8c-b69b-435f-aa25-68393e5fb121
   ws-opts:
     headers:
-      Host: zifstzamhk1.yofnhkfc.xyz
-    path: /video/VuDFdktz
+      Host: ''
+    path: /zh-cn
 - alterId: 1
   cipher: auto
   name: 20|🇰HK-123.58.218.157-033
@@ -150,26 +170,32 @@ proxies:
     headers:
       Host: tv.cctv.com
     path: /hls/cctv5phd.m3u8
-- alterId: 64
-  cipher: auto
-  name: 25,27|香港5|@ripaojiedian
-  network: tcp
-  port: '54104'
-  server: 183.236.51.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 25,27|香港7|@ripaojiedian
-  network: tcp
-  port: '29767'
-  server: svip.hongxingdl.vip
-  servername: ''
+  name: 21|🇭🇰 11|香港6|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: 4.6bnw.top
   tls: false
   type: vmess
-  uuid: 01604cad-f37b-4f3d-84fe-165fb5d68bc4
+  uuid: b5abc4c0-b518-4195-88b4-57900f16fb65
+  ws-opts:
+    headers:
+      Host: hkbn.6bnw.top
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 21|🇭🇰 11|香港8|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: cfcdn2.sanfencdn9.com
+  tls: false
+  type: vmess
+  uuid: a223af01-b481-4abf-a305-60d60587d1e4
+  ws-opts:
+    headers:
+      Host: zifstzamhk1.yofnhkfc.xyz
+    path: /video/VuDFdktz
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 26|🇭🇰 香港KT|@ripaojiedian
@@ -290,10 +316,3 @@ proxies:
     headers:
       Host: hrgdvpn.flycdnedc55.vip
     path: /opt/video/images
-- cipher: aes-128-gcm
-  name: 29|HK_speednode_0098
-  password: a9294cae-282a-43a1-8c3f-867c8329c747
-  port: 34710
-  server: 34710.crelay.org
-  type: ss
-  udp: true
