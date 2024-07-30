@@ -19,24 +19,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 82447abf-dcb9-408a-9ca6-79e0a7698d08
-- cipher: aes-256-gcm
-  name: 20|🇫🇷FR-62.210.113.98-052
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 62.210.113.98
-  type: ss
-- cipher: aes-256-gcm
-  name: 20|🇫🇷FR-149.202.82.172-071
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 149.202.82.172
-  type: ss
-- cipher: aes-256-gcm
-  name: 20|🇫🇷FR-193.243.147.128-108
-  password: 7BcLdsO1WweoGD0X
-  port: 40368
-  server: 193.243.147.128
-  type: ss
+- alterId: 64
+  cipher: auto
+  name: 11|法国 OVH
+  network: ws
+  port: 30002
+  server: 51.77.79.4
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /path/340434130032
 - name: 24|_FR_国
   network: tcp
   password: telegram-id-directvpn
@@ -75,3 +70,33 @@ proxies:
   tls: false
   type: vmess
   uuid: a663bbab-4e9e-4080-b8ab-edd59fe1fdce
+- alterId: 64
+  cipher: auto
+  name: 29|FR_speednode_0084
+  network: ws
+  port: 30002
+  server: 51.77.79.4
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.32933418.xyz
+    path: /path/340434130032
+- alterId: 64
+  cipher: auto
+  name: 29|FR_speednode_0085
+  network: ws
+  port: 31004
+  server: 51.38.107.220
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.38026098.xyz
+    path: /path/340434130032
