@@ -1,6 +1,6 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 1|_SG_
+  name: 1,20|SG-54.179.87.28-020
   password: amazonskr05
   port: 443
   server: 54.179.87.28
@@ -97,14 +97,135 @@ proxies:
   cipher: auto
   name: 11|新加坡 DigitalOcean数据中心
   network: tcp
-  port: 57719
+  port: 49967
+  server: 178.128.52.114
+  tls: false
+  type: vmess
+  uuid: ead43e5c-197e-4ac9-e634-c7b807576bc7
+- alterId: 0
+  cipher: auto
+  name: 11,20,21|🇸🇬 新加坡 DigitalOcean数据中心
+  network: tcp
+  port: '57719'
   server: 188.166.222.203
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 302cc2e2-6b4c-4776-d5f0-10484303323e
+  ws-headers:
+    Host: 188.166.222.203
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇺🇸 美国(油管:破解资源君2.0) #8'
+  network: tcp
+  port: '16650'
+  server: 168.138.173.205
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d5b6afe6-5a45-498e-9d05-34a2397bef7e
+  ws-headers:
+    Host: 168.138.173.205
+  ws-path: /
+- alterId: 4
+  cipher: auto
+  name: 20|🇬SG-103.253.26.20-100
+  network: ws
+  port: 443
+  server: 103.253.26.20
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  ws-headers:
+    Host: zecjk.com
+  ws-path: /ws
+- alterId: 0
+  cipher: auto
+  name: 20|🇸🇬SG-8.214.33.158-114
+  network: ws
+  port: 80
+  server: 8.214.33.158
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef
+  ws-headers:
+    Host: 8.214.33.158
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20,21|🇯🇵 日本(油管:破解资源君2.0)
+  network: tcp
+  port: '32933'
+  server: 43.156.30.239
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 05eae5d7-f61e-40c4-ec86-3fa74335bcb4
+  ws-headers:
+    Host: 43.156.30.239
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇬SG-81.90.189.152-127
+  password: G!yBwPWH3Vao
+  port: 801
+  server: 81.90.189.152
+  type: ss
+- cipher: aes-256-cfb
+  name: 20|🇸🇬SG-13.213.46.196-148
+  password: amazonskr05
+  port: 443
+  server: 13.213.46.196
+  type: ss
+- cipher: aes-256-cfb
+  name: 20|🇸🇬SG-54.251.168.143-150
+  password: amazonskr05
+  port: 443
+  server: 54.251.168.143
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: 20|🇸🇬SG-159.223.94.156-154
+  network: ws
+  port: 80
+  server: 159.223.94.156
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
+  ws-headers:
+    Host: 159.223.94.156
+  ws-path: /anti13.zingfast.vn
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇬SG-167.172.65.242-182
+  password: kYUODvhwH1CzvZnH0JmgvL
+  port: 3127
+  server: 167.172.65.242
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇬SG-188.166.222.203-187
+  password: b15tpFGZj4yosF8kTMVI2b
+  port: 3127
+  server: 188.166.222.203
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20,21|🇨🇳 湖北省武汉市 移动
+  network: tcp
+  port: '15074'
+  server: 15074.kuaiyin02.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+  ws-headers:
+    Host: 15074.kuaiyin02.top
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 26|🇸🇬 新加坡2|@ripaojiedian
+  name: 20,26|🇸🇬 新加坡2|@ripaojiedian
   password: 4e079290-392b-4e4b-bdc4-f0a1f56ae841
   port: 19410
   server: sg10.51feitu.com
@@ -112,10 +233,18 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 26|🇸🇬 狮城特殊|@ripaojiedian
+  name: 20,26|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 13.229.87.253
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 20,26|🇰🇷 韩国特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 52.221.255.249
   tfo: false
   type: ss
 - alterId: 0
