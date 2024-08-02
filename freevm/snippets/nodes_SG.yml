@@ -95,22 +95,26 @@ proxies:
     path: /chami
 - alterId: 0
   cipher: auto
-  name: 11|新加坡 Digital Ocean数据中心
+  name: 11|新加坡 DigitalOcean数据中心
   network: tcp
-  port: 17501
+  port: 34877
+  server: 174.138.22.178
+  tls: false
+  type: vmess
+  uuid: 5dff2767-0026-4c1d-c8aa-11cd10a9e943
+- alterId: 0
+  cipher: auto
+  name: 11,20,21|🇸🇬 新加坡 Digital Ocean数据中心
+  network: tcp
+  port: '17501'
   server: 165.22.106.189
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: e3226fd5-3fd3-4c6b-bd93-7dece22e92dc
-- alterId: 0
-  cipher: auto
-  name: 11|新加坡 DigitalOcean数据中心
-  network: tcp
-  port: 41008
-  server: 128.199.80.121
-  tls: false
-  type: vmess
-  uuid: e08eae1e-5f46-4dc7-e3ec-8772ee04cf84
+  ws-headers:
+    Host: 165.22.106.189
+  ws-path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -130,20 +134,65 @@ proxies:
     path: /video/u4eCZTxW
 - alterId: 0
   cipher: auto
-  name: '20,21|🇪🇺 欧洲(油管:破解资源君2.0) #11'
+  name: '20,21|🇸🇬 新加坡(油管:破解资源君2.0) #1'
   network: tcp
-  port: '28475'
-  server: 47.241.220.160
+  port: '11816'
+  server: 69.161.221.157
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 5b00ad6f-bc33-4946-8a32-b7e59620e935
+  uuid: db465612-a1eb-46a3-bdf5-33697132d115
   ws-headers:
-    Host: 47.241.220.160
+    Host: 69.161.221.157
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '20,21|🇪🇺 欧洲(油管:破解资源君2.0) #32'
+  name: 20,21|🇯🇵 日本(油管:破解资源君2.0)
+  network: tcp
+  port: '32933'
+  server: 43.156.30.239
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 05eae5d7-f61e-40c4-ec86-3fa74335bcb4
+  ws-headers:
+    Host: YouTube-aweikeji
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|🇸🇬SG-8.214.33.158-035
+  network: ws
+  port: 80
+  server: 8.214.33.158
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef
+  ws-headers:
+    Host: 8.214.33.158
+  ws-path: /
+- alterId: 4
+  cipher: auto
+  name: 20|🇸🇬SG-103.253.26.20-037
+  network: ws
+  port: 443
+  server: 103.253.26.20
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  ws-headers:
+    Host: zecjk.com
+  ws-path: /ws
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇬SG-81.90.189.152-066
+  password: G!yBwPWH3Vao
+  port: 805
+  server: 81.90.189.152
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇪🇺 欧洲(油管:破解资源君2.0) #8'
   network: tcp
   port: '30839'
   server: 129.150.51.215
@@ -155,20 +204,20 @@ proxies:
     Host: 129.150.51.215
   ws-path: /
 - cipher: aes-256-cfb
-  name: 20|🇸🇬SG-13.213.46.196-175
+  name: 20|🇸🇬SG-13.213.46.196-129
   password: amazonskr05
   port: 443
   server: 13.213.46.196
   type: ss
 - cipher: aes-256-cfb
-  name: 20|🇸🇬SG-54.251.168.143-177
+  name: 20|🇸🇬SG-54.251.168.143-131
   password: amazonskr05
   port: 443
   server: 54.251.168.143
   type: ss
 - alterId: 64
   cipher: auto
-  name: 20|🇸🇬SG-159.223.94.156-181
+  name: 20|🇸🇬SG-159.223.94.156-135
   network: ws
   port: 80
   server: 159.223.94.156
@@ -179,6 +228,43 @@ proxies:
   ws-headers:
     Host: 159.223.94.156
   ws-path: /anti13.zingfast.vn
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇬SG-206.189.155.159-146
+  password: uuoDkmHD5EfUgeSjJdA8p2
+  port: 20037
+  server: 206.189.155.159
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇸🇬SG-128.199.80.121-156
+  password: 7tpdfUHJqGahV0yM9SLvNw
+  port: 3127
+  server: 128.199.80.121
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇬SG-165.22.106.189-162
+  password: h3i1hJqkKwBKqNeXz4PAuC
+  port: 3127
+  server: 165.22.106.189
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20,21|🇸🇬 新加坡 DigitalOcean数据中心
+  network: tcp
+  port: '41008'
+  server: 128.199.80.121
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e08eae1e-5f46-4dc7-e3ec-8772ee04cf84
+  ws-headers:
+    Host: 128.199.80.121
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇬SG-174.138.22.178-216
+  password: OhlI4luYnHk8Yo10lBX6ND
+  port: 54475
+  server: 174.138.22.178
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 20,26|🇸🇬 狮城特殊|@ripaojiedian
@@ -195,6 +281,32 @@ proxies:
   server: 54.255.211.19
   tfo: false
   type: ss
+- alterId: 4
+  cipher: auto
+  name: '21|🇪🇺 欧洲(油管:破解资源君2.0) #3'
+  network: ws
+  port: '443'
+  server: zecjk.com
+  tls: true
+  type: vmess
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  ws-opts:
+    headers:
+      Host: zecjk.com
+    path: /ws
+- alterId: 0
+  cipher: auto
+  name: '21|🇸🇬 新加坡(油管:破解资源君2.0) #2'
+  network: ws
+  port: '38701'
+  server: in-sg-1.onebox6.org
+  tls: false
+  type: vmess
+  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
+  ws-opts:
+    headers:
+      Host: www.ivpnpro.net
+    path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
   name: 28|🇸🇬新加坡 01
