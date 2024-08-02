@@ -55,14 +55,18 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  name: 13,21,25,27|香港|@ripaojiedian
+  name: 13,20,21,25,27|香港|@ripaojiedian
   network: tcp
   port: '29767'
   server: iepl.hongxingdl.vip
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 47205b34-a0d2-462a-b603-438f62ad8027
+  ws-headers:
+    Host: iepl.hongxingdl.vip
+  ws-path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -81,14 +85,18 @@ proxies:
     path: /zh-cn
 - alterId: 64
   cipher: auto
-  name: 13,21,25,27|香港5|@ripaojiedian
+  name: 13,20,21,25,27|香港5|@ripaojiedian
   network: tcp
   port: '54104'
   server: 183.236.51.23
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -120,36 +128,69 @@ proxies:
     headers:
       Host: ''
     path: /zh-cn
-- alterId: 64
+- alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 26,29|FR_speednode_0083
-  password: 2bf3db70-359e-11ef-93fe-1239d0255272
-  port: 443
-  server: fr1.test3.net
+  name: '20,21|🇪🇺 欧洲(油管:破解资源君2.0) #3'
+  network: tcp
+  port: '38071'
+  server: 40.83.112.144
   skip-cert-verify: true
-  sni: namasha.com
-  tfo: false
   tls: false
-  type: trojan
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  type: vmess
+  uuid: 3e45d2a3-4afe-493e-c959-8607ef562dc1
+  ws-headers:
+    Host: 40.83.112.144
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港2|@ripaojiedian
-  password: 356cd62f-a0ea-4630-8d67-847b6f2b3321
-  port: 40023
-  server: gg01.6bnw.top
-  tfo: false
+  name: 20|🇭🇰HK-62.216.92.167-066
+  password: G!yBwPWH3Vao
+  port: 810
+  server: 62.216.92.167
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇪🇺 欧洲(油管:破解资源君2.0) #31'
+  network: tcp
+  port: '23702'
+  server: 43.154.190.154
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: a4d1a670-b727-4f2e-f392-9794215e54ac
+  ws-headers:
+    Host: 43.154.190.154
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇭🇰HK-62.216.92.167-081
+  password: G!yBwPWH3Vao
+  port: 812
+  server: 62.216.92.167
   type: ss
 - cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港7|@ripaojiedian
-  password: 356cd62f-a0ea-4630-8d67-847b6f2b3321
-  port: 36993
-  server: aa01gg.sssyun.xyz
-  tfo: false
+  name: 20|🇰HK-62.216.92.167-110
+  password: G!yBwPWH3Vao
+  port: 804
+  server: 62.216.92.167
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇭🇰HK-62.216.92.167-119
+  password: G!yBwPWH3Vao
+  port: 808
+  server: 62.216.92.167
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|🇭🇰HK-123.58.218.157-167
+  network: ws
+  port: 20401
+  server: data-us-v1.shwjfkw.cn
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-headers:
+    Host: data-us-v1.shwjfkw.cn
+  ws-path: /debian
 - alterId: 0
   cipher: auto
   name: 28|🇭🇰HK-47.76.35.246-0787
