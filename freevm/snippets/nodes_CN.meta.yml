@@ -1,6 +1,6 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 1,20|CN-59.56.77.178-023
+  name: 1|_CN_
   password: hGkQ6915tD
   port: 15082
   server: 59.56.77.178
@@ -11,6 +11,25 @@ proxies:
   network: tcp
   port: 54882
   server: 183.240.235.162
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 11,13,21,25,27|香港5|@ripaojiedian
+  network: tcp
+  port: '54104'
+  server: 183.236.51.23
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '11|广东省广州市 移动 #1'
+  network: tcp
+  port: 45020
+  server: 183.236.51.23
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -37,89 +56,6 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.159-168
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 20003
-  server: service.ouluyun9803.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.159-171
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 26667
-  server: service.ouluyun9803.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.159-172
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 20005
-  server: service.ouluyun9803.com
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 20|🇨🇳CN-120.232.63.122-333
-  network: ws
-  port: 46001
-  server: mmhk01.micloud.buzz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f9b02d8c-b69b-435f-aa25-68393e5fb121
-  ws-headers:
-    Host: mmhk01.micloud.buzz
-  ws-path: /zh-cn
-- alterId: 64
-  cipher: auto
-  name: 20,21|🇭🇰 11|香港2|@ripaojiedian
-  network: tcp
-  port: '45020'
-  server: 183.236.51.23
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.236.51.23
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 20,21|🇭🇰 11|香港6|@ripaojiedian
-  network: tcp
-  port: '33575'
-  server: xctransfer1st.cokecloud.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 1de8f496-378f-4979-ba17-500fd9fee228
-  ws-headers:
-    Host: xctransfer1st.cokecloud.top
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 20,21|🇭🇰 11|香港7|@ripaojiedian
-  network: tcp
-  port: '60066'
-  server: hk0069.alibabaokz.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 38571ca6-6692-4559-b901-0bc5826b7661
-  ws-headers:
-    Host: hk0069.alibabaokz.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 20|🇳CN-14.29.224.190-337
-  network: ws
-  port: 46011
-  server: mmjp11.micloud.buzz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f9b02d8c-b69b-435f-aa25-68393e5fb121
-  ws-headers:
-    Host: mmjp11.micloud.buzz
-  ws-path: /zh-cn
 - alterId: 0
   cipher: auto
   name: '28|日本2|@ripaojiedian #1'
