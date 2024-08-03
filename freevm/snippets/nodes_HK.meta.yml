@@ -55,17 +55,21 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  name: 13,20,21|🇭🇰 11|香港|@ripaojiedian
-  network: tcp
-  port: '29767'
-  server: iepl.hongxingdl.vip
-  skip-cert-verify: true
+  client-fingerprint: chrome
+  name: 11,13,25,26,27|香港6|@ripaojiedian
+  network: ws
+  port: '50185'
+  server: hkt1.hkg.hypernat.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 47205b34-a0d2-462a-b603-438f62ad8027
-  ws-headers:
-    Host: iepl.hongxingdl.vip
-  ws-path: /
+  uuid: 273a61f5-03b5-4449-9d18-7e914d3808c4
+  ws-opts:
+    headers:
+      Host: hkt1.hkg.hypernat.com
+    path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -82,33 +86,16 @@ proxies:
     headers:
       Host: mmhk01.micloud.buzz
     path: /zh-cn
-- alterId: 64
-  cipher: auto
-  name: 13,20,21,25,27|香港5|@ripaojiedian
-  network: tcp
-  port: '54104'
-  server: 183.236.51.23
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.236.51.23
-  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 13,21|🇭🇰 10,11|香港6|@ripaojiedian
-  network: ws
-  port: '2052'
-  server: v4.yydspp.cc
+  name: 13,25,27|香港7|@ripaojiedian
+  network: tcp
+  port: '10184'
+  server: 36.139.183.164
+  servername: ''
   tls: false
   type: vmess
-  uuid: 4929f0ca-2793-4aa3-b2d0-7445447097f6
-  ws-opts:
-    headers:
-      Host: oiichk.yydsii.com
-    path: /
+  uuid: 273a61f5-03b5-4449-9d18-7e914d3808c4
 - alterId: 0
   cipher: auto
   name: 13,25,27|香港3|@ripaojiedian
@@ -123,33 +110,6 @@ proxies:
     headers:
       Host: ''
     path: /zh-cn
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 13,25,26,27|香港6|@ripaojiedian
-  network: ws
-  port: '50185'
-  server: hkt1.hkg.hypernat.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 273a61f5-03b5-4449-9d18-7e914d3808c4
-  ws-opts:
-    headers:
-      Host: hkt1.hkg.hypernat.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 13,25,27|香港7|@ripaojiedian
-  network: tcp
-  port: '10184'
-  server: 36.139.183.164
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 273a61f5-03b5-4449-9d18-7e914d3808c4
 - alterId: 0
   cipher: auto
   name: '20,21|🇪🇺 欧洲(油管:破解资源君2.0) #10'
@@ -202,6 +162,19 @@ proxies:
   ws-headers:
     Host: data-us-v1.shwjfkw.cn
   ws-path: /debian
+- alterId: 0
+  cipher: auto
+  name: 21|🇭🇰 10,11|香港6|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: v4.yydspp.cc
+  tls: false
+  type: vmess
+  uuid: 4929f0ca-2793-4aa3-b2d0-7445447097f6
+  ws-opts:
+    headers:
+      Host: oiichk.yydsii.com
+    path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇭🇰 香港10|@ripaojiedian
