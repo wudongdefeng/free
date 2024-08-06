@@ -55,25 +55,6 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  name: 11|香港 UCloud
-  network: tcp
-  port: 8630
-  server: 165.154.42.70
-  tls: false
-  type: vmess
-  uuid: bbd53cb5-8e06-4e90-d436-0ed9cdd7a1e8
-- alterId: 64
-  cipher: auto
-  name: 13,21,25,27|香港5|@ripaojiedian
-  network: tcp
-  port: '54104'
-  server: 183.236.51.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
   name: 21|🇭🇰 香港(油管:破解资源君2.0)
   network: ws
   port: '120'
@@ -85,22 +66,36 @@ proxies:
     headers:
       Host: hgc.sharecentre.xyz
     path: /nj
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 26|🇭🇰 香港|@ripaojiedian
-  password: ef1cf445-e1b6-4536-ab3c-8aa1bb0dff11
-  port: 39301
-  server: aa01gg.sssyun.xyz
+  name: 25,26|🇭🇰 香港|@ripaojiedian
+  network: ws
+  port: 46001
+  server: mmhk01.micloud.buzz
+  skip-cert-verify: false
   tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港2|@ripaojiedian
-  password: ef1cf445-e1b6-4536-ab3c-8aa1bb0dff11
-  port: 19527
-  server: aa01gg.sssyun.xyz
-  tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81
+  ws-opts:
+    headers:
+      Host: mmhk01.micloud.buzz
+    path: /zh-cn
+- alterId: 0
+  cipher: auto
+  name: 25,27|香港|@ripaojiedian
+  network: ws
+  port: '46001'
+  server: mmhk01.micloud.buzz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81
+  ws-opts:
+    headers:
+      Host: ''
+    path: /zh-cn
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -141,7 +136,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 28|香港|@ripaojiedian
+  name: '28|香港|@ripaojiedian #1'
   network: tcp
   port: '41492'
   server: 120.232.242.126
