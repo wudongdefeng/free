@@ -129,14 +129,18 @@ proxies:
   uuid: d9dc506b-9bcf-497e-ea11-53c369e2b343
 - alterId: 64
   cipher: auto
-  name: '10,21|🇪🇺 欧洲(油管:破解资源君) #50'
+  name: '10,20,21|🇪🇺 欧洲(油管:破解资源君) #50'
   network: tcp
   port: '20081'
   server: 138.2.44.211
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 593b8525-0c48-4b0f-d9af-2d73a9148973
+  ws-headers:
+    Host: 138.2.44.211
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 10|日本_121320043
@@ -289,16 +293,16 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 11|日本 东京都Amazon数据中心
+  name: 11|日本 东京都亚马逊(Amazon)公司数据中心
   network: ws
   port: 80
-  server: jp01.thomasina.buzz
+  server: jp03.thomasina.buzz
   tls: false
   type: vmess
   uuid: d2b1dfb1-3751-4b62-b2c2-cc234a15adb7
   ws-opts:
     headers:
-      Host: jp01.thomasina.buzz
+      Host: jp03.thomasina.buzz
     path: /
 - alterId: 64
   cipher: auto
@@ -320,7 +324,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13,25,26,27|日本6|@ripaojiedian
+  name: 13,21,25,26,27|日本6|@ripaojiedian
   network: ws
   port: '80'
   server: cfcdn3.sanfencdn9.com
@@ -348,15 +352,182 @@ proxies:
     headers:
       Host: ''
     path: /zh-cn
+- cipher: aes-256-gcm
+  name: 20|JP-45.251.241.90-030
+  password: cYmUyqhIbL
+  port: 55547
+  server: 45.251.241.90
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 21|🇯🇵 日本(油管:破解资源君)
-  network: tcp
-  port: '22109'
-  server: 45.129.10.6
+  name: 20|🇯🇵JP-150.230.197.142-049
+  network: ws
+  port: 2052
+  server: 150.230.197.142
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 4a3436bf-286a-4bdf-eeb8-a8b65579db75
+  uuid: c77e9b35-0fdc-4b8b-fe91-e9be523586dd
+  ws-headers:
+    Host: 150.230.197.142
+  ws-path: /A
+- alterId: 64
+  cipher: auto
+  name: '20,21|🇯🇵 日本(油管:破解资源君) #3'
+  network: tcp
+  port: '27384'
+  server: 140.83.34.234
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: da463c52-34e4-4ace-f08e-c7cdfdf68d86
+  ws-headers:
+    Host: 140.83.34.234
+  ws-path: /
+- cipher: aes-256-gcm
+  name: 20|🇯🇵JP-85.208.108.93-073
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 85.208.108.93
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇪🇺 欧洲(油管:破解资源君) #33'
+  network: tcp
+  port: '55843'
+  server: 43.128.231.83
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 8fab08bb-11e7-4158-c7c6-d81257126697
+  ws-headers:
+    Host: 43.128.231.83
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇪🇺 欧洲(油管:破解资源君) #35'
+  network: tcp
+  port: '20908'
+  server: 206.190.237.176
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9d56fb2f-cdc7-4adc-a9dd-abbee73a699c
+  ws-headers:
+    Host: 206.190.237.176
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇪🇺 欧洲(油管:破解资源君) #48'
+  network: tcp
+  port: '20572'
+  server: 140.83.55.83
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f8d19650-ea7a-45b6-d0b6-a72dc17ccb31
+  ws-headers:
+    Host: bilibili.com
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: '20,21|🇪🇺 欧洲(油管:破解资源君) #49'
+  network: tcp
+  port: '50303'
+  server: 140.83.34.234
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f8e1bb84-f0f2-41c5-e2bf-34c17b528e45
+  ws-headers:
+    Host: 140.83.34.234
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇪🇺 欧洲(油管:破解资源君) #53'
+  network: tcp
+  port: '443'
+  server: 132.145.113.238
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 84b1b846-748c-45ca-839e-4e21f9acc6c5
+  ws-headers:
+    Host: 132.145.113.238
+  ws-path: /
+- cipher: aes-256-gcm
+  name: 20|🇵JP-45.251.241.90-140
+  password: vFAtbvpgT3
+  port: 55016
+  server: 45.251.241.90
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇺🇸 美国(油管:破解资源君) #16'
+  network: tcp
+  port: '50752'
+  server: 138.2.22.234
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: df61271a-f9b0-49b1-9177-0211bba2e396
+  ws-headers:
+    Host: 138.2.22.234
+  ws-path: /
+- cipher: aes-256-cfb
+  name: 20|🇯🇵JP-54.199.83.239-185
+  password: doub.io
+  port: 2333
+  server: 54.199.83.239
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇯🇵JP-185.172.113.182-212
+  password: G!yBwPWH3Vao
+  port: 801
+  server: 185.172.113.182
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|🇵JP-18.183.225.11-254
+  network: ws
+  port: 80
+  server: jp01.thomasina.buzz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d2b1dfb1-3751-4b62-b2c2-cc234a15adb7
+  ws-headers:
+    Host: jp01.thomasina.buzz
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: 20|🇵JP-137.220.130.58-403
+  network: ws
+  port: 30000
+  server: 137.220.130.58
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: www.68703921.xyz
+  ws-path: /path/011410073331
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 20,26|🇰🇷 韩国特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 3.112.220.140
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 20,26|🇸🇬 狮城特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 18.183.186.14
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: '21|🇯🇵 日本(油管:破解资源君) #1'
@@ -383,31 +554,19 @@ proxies:
     headers:
       Host: ''
     path: /update
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: '21|🇯🇵 日本(油管:破解资源君) #3'
-  network: tcp
-  port: '27384'
-  server: 140.83.34.234
+  name: 21|🇯🇵 日本 东京都Amazon数据中心
+  network: ws
+  port: '80'
+  server: jp01.thomasina.buzz
   tls: false
   type: vmess
-  uuid: da463c52-34e4-4ace-f08e-c7cdfdf68d86
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本4|@ripaojiedian
-  password: 3632bd90-d85e-42ef-a2b3-36393ae88c17
-  port: 49207
-  server: aa01gg.sssyun.xyz
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 47.128.150.72
-  tfo: false
-  type: ss
+  uuid: d2b1dfb1-3751-4b62-b2c2-cc234a15adb7
+  ws-opts:
+    headers:
+      Host: jp01.thomasina.buzz
+    path: /
 - alterId: 0
   cipher: auto
   name: 28|🇯🇵JP-152.69.197.74-3356
