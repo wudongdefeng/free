@@ -18,8 +18,18 @@ proxies:
   cipher: auto
   name: 11|广东省广州市 移动
   network: tcp
-  port: '42055'
-  server: 120.232.153.37
+  port: '45972'
+  server: 120.232.153.71
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
+- alterId: 64
+  cipher: auto
+  name: 11,21|🇨🇳 广东省广州市 移动
+  network: tcp
+  port: '45020'
+  server: 183.236.51.23
   servername: ''
   tls: false
   type: vmess
@@ -27,10 +37,10 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11,13,21,25,26|🇭🇺 匈牙利|@ripaojiedian
+  name: 11,13,21,25,26|🇭🇰 香港2|@ripaojiedian
   network: ws
-  port: 46082
-  server: mmhu82.micloud.buzz
+  port: 46001
+  server: mmhk01.micloud.buzz
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -38,7 +48,21 @@ proxies:
   uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81
   ws-opts:
     headers:
-      Host: mmhu82.micloud.buzz
+      Host: mmhk01.micloud.buzz
+    path: /zh-cn
+- alterId: 0
+  cipher: auto
+  name: 11,13,25,27|德国|@ripaojiedian
+  network: ws
+  port: '46092'
+  server: mmde92.micloud.buzz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81
+  ws-opts:
+    headers:
+      Host: ''
     path: /zh-cn
 - alterId: 0
   cipher: auto
@@ -54,15 +78,6 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
-- alterId: 64
-  cipher: auto
-  name: 21|🇨🇳 广东省广州市 移动
-  network: tcp
-  port: '45020'
-  server: 183.236.51.23
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 28|日本2|@ripaojiedian
