@@ -129,14 +129,18 @@ proxies:
   uuid: d9dc506b-9bcf-497e-ea11-53c369e2b343
 - alterId: 0
   cipher: auto
-  name: '10,21|🇺🇸 美国(油管:破解资源君) #15'
+  name: '10,20,21|🇺🇸 美国(油管:破解资源君) #15'
   network: tcp
   port: '20081'
   server: 138.2.44.211
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 593b8525-0c48-4b0f-d9af-2d73a9148973
+  ws-headers:
+    Host: 138.2.44.211
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 10|日本_121320043
@@ -289,40 +293,6 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 13,21,25,26,29|CN_speednode_0035
-  network: ws
-  port: 46011
-  server: mmjp11.micloud.buzz
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81
-  ws-opts:
-    headers:
-      Host: mmjp11.micloud.buzz
-    path: /zh-cn
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 13,21,25,26,27|日本4|@ripaojiedian
-  network: ws
-  port: '80'
-  server: cfcdn3.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 409fe654-65e4-4fce-ac9a-faaff3d334ec
-  ws-opts:
-    headers:
-      Host: oA5FSz9Tjp1.yofnhkfc.xyz
-    path: /video/P7EExoE2
-- alterId: 0
-  cipher: auto
   name: 13,25,27|日本5|@ripaojiedian
   network: ws
   port: '46011'
@@ -337,6 +307,107 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
+  name: 20,21|亚洲(油管:破解资源君)
+  network: kcp
+  port: '21916'
+  server: 150.230.197.142
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 0dbc415f-1b45-48e5-faf9-bf6c054a60ec
+  ws-headers:
+    Host: 150.230.197.142
+  ws-path: pOXseg2J5G423432saddccSSDdfsfsd
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇯🇵JP-89.31.126.150-047
+  password: G!yBwPWH3Vao
+  port: 812
+  server: 89.31.126.150
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇵JP-45.66.134.176-048
+  password: G!yBwPWH3Vao
+  port: 811
+  server: 45.66.134.176
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇯🇵JP-185.172.113.101-050
+  password: G!yBwPWH3Vao
+  port: 808
+  server: 185.172.113.101
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇪🇺 欧洲(油管:破解资源君) #2'
+  network: tcp
+  port: '21365'
+  server: 168.138.207.66
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 905f99b1-e7ba-45e0-ae4d-b0ffdf0ad245
+  ws-headers:
+    Host: 168.138.207.66
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇪🇺 欧洲(油管:破解资源君) #28'
+  network: tcp
+  port: '55843'
+  server: 43.128.231.83
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 8fab08bb-11e7-4158-c7c6-d81257126697
+  ws-headers:
+    Host: 43.128.231.83
+  ws-path: /
+- cipher: aes-256-gcm
+  name: 20|🇵JP-85.208.108.94-084
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 85.208.108.94
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇯🇵JP-85.208.108.21-085
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 85.208.108.21
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇵JP-85.208.108.21-086
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 85.208.108.21
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇵JP-85.208.108.21-087
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 85.208.108.21
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇵JP-85.208.108.21-088
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 85.208.108.21
+  type: ss
+- cipher: aes-256-cfb
+  name: 20|🇯🇵JP-54.199.83.239-197
+  password: doub.io
+  port: 2333
+  server: 54.199.83.239
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 20,26|🇰🇷 韩国特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 52.197.150.228
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
   name: 21|🇯🇵 日本(油管:破解资源君)
   network: ws
   port: '2052'
@@ -348,49 +419,6 @@ proxies:
     headers:
       Host: ''
     path: /update
-- alterId: 0
-  cipher: auto
-  name: 21|🇰🇷 韩国(油管:破解资源君)
-  network: tcp
-  port: '37121'
-  server: m4.40010010.xyz
-  tls: true
-  type: vmess
-  uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5
-- alterId: 64
-  cipher: auto
-  name: '21|🇯🇵 日本(油管:破解资源君) #4'
-  network: tcp
-  port: '41954'
-  server: 146.56.167.249
-  tls: false
-  type: vmess
-  uuid: 0a1d4a77-7cd3-488a-cb62-ddda2d8dea3a
-- alterId: 0
-  cipher: auto
-  name: '21|🇯🇵 日本(油管:破解资源君) #3'
-  network: tcp
-  port: '19570'
-  server: 146.56.184.242
-  tls: false
-  type: vmess
-  uuid: 70a998e0-ba0b-4994-af50-8deed58cdbd9
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本2|@ripaojiedian
-  password: 305ee3f1-b224-40e8-8a1c-b5f66c4ef40f
-  port: 40019
-  server: gg01.6bnw.top
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 13.229.87.253
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: 28|🇯🇵JP-152.69.197.74-3356
