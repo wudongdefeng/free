@@ -1,6 +1,6 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 1,20|CN-59.56.77.178-023
+  name: 1|_CN_
   password: hGkQ6915tD
   port: 15082
   server: 59.56.77.178
@@ -16,31 +16,39 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 11,13,20,21,25,27|香港5|@ripaojiedian
+  name: 11|广东省 移动
   network: tcp
-  port: '54104'
-  server: 183.236.51.23
+  port: '54565'
+  server: 183.238.202.173
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.236.51.23
-  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: 11|广东省广州市 移动
+  network: tcp
+  port: '45020'
+  server: 183.236.51.23
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 11,13,25,27|日本5|@ripaojiedian
+  client-fingerprint: chrome
+  name: 11,13,21,25,26|🇭🇰 香港6|@ripaojiedian
   network: ws
-  port: '46011'
-  server: mmjp11.micloud.buzz
-  servername: ''
+  port: 46001
+  server: mmhk01.micloud.buzz
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81
   ws-opts:
     headers:
-      Host: ''
+      Host: mmhk01.micloud.buzz
     path: /zh-cn
 - alterId: 0
   cipher: auto
@@ -56,129 +64,6 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
-- alterId: 0
-  cipher: auto
-  name: 20|🇨🇳CN-120.240.55.137-113
-  network: ws
-  port: 38201
-  server: 120.240.55.137
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
-  ws-headers:
-    Host: aweikeji-YouTube
-  ws-path: /hls/cctv5phd.m3u8
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.160-189
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 20003
-  server: service.ouluyun9803.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.160-192
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 26667
-  server: service.ouluyun9803.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.159-193
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 20005
-  server: service.ouluyun9803.com
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 20|🇨🇳CN-14.29.224.190-300
-  network: ws
-  port: 46001
-  server: mmhk01.micloud.buzz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81
-  ws-headers:
-    Host: mmhk01.micloud.buzz
-  ws-path: /zh-cn
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 20,26|🇭🇰 香港2|@ripaojiedian
-  password: 305ee3f1-b224-40e8-8a1c-b5f66c4ef40f
-  port: 36993
-  server: aa01gg.sssyun.xyz
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 20|🇨🇳CN-36.139.183.164-282
-  network: ws
-  port: 10184
-  server: 36.139.183.164
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbf73243-836e-4994-9d66-bc8b311a4491
-  ws-headers:
-    Host: 36.139.183.164
-  ws-path: /name
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 20,26|🇭🇰 香港7|@ripaojiedian
-  password: 305ee3f1-b224-40e8-8a1c-b5f66c4ef40f
-  port: 39201
-  server: aa01gg.sssyun.xyz
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 20,26|🇹🇼 台湾|@ripaojiedian
-  password: 305ee3f1-b224-40e8-8a1c-b5f66c4ef40f
-  port: 40018
-  server: gg01.6bnw.top
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 20,26|🇯🇵 日本2|@ripaojiedian
-  password: 305ee3f1-b224-40e8-8a1c-b5f66c4ef40f
-  port: 40019
-  server: gg01.6bnw.top
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 20|🇨🇳CN-14.29.224.190-302
-  network: ws
-  port: 46011
-  server: mmjp11.micloud.buzz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81
-  ws-headers:
-    Host: mmjp11.micloud.buzz
-  ws-path: /zh-cn
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 20,26|🇸🇬 新加坡|@ripaojiedian
-  password: 305ee3f1-b224-40e8-8a1c-b5f66c4ef40f
-  port: 40014
-  server: gg01.6bnw.top
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 20|🇳CN-14.29.224.190-303
-  network: ws
-  port: 46092
-  server: mmde92.micloud.buzz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81
-  ws-headers:
-    Host: mmde92.micloud.buzz
-  ws-path: /zh-cn
 - alterId: 0
   cipher: auto
   name: 28|日本2|@ripaojiedian
