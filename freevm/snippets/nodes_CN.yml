@@ -14,6 +14,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 11,13,20,21,25,27|香港5|@ripaojiedian
+  network: tcp
+  port: '54104'
+  server: 183.236.51.23
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -42,47 +56,26 @@ proxies:
     Host: aweikeji-YouTube
   ws-path: /hls/cctv5phd.m3u8
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.159-189
+  name: 20|🇨🇳CN-120.238.122.160-189
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.159-192
+  name: 20|🇳CN-120.238.122.160-192
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.160-193
+  name: 20|🇳CN-120.238.122.159-193
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
   type: ss
-- alterId: 64
-  cipher: auto
-  name: 20,21|🇨🇳 广东省广州市 移动
-  network: tcp
-  port: '35601'
-  server: 120.232.153.40
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.232.153.40
-  ws-path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 20,26|🇭🇰 香港2|@ripaojiedian
-  password: 305ee3f1-b224-40e8-8a1c-b5f66c4ef40f
-  port: 36993
-  server: aa01gg.sssyun.xyz
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 20|🇨🇳CN-14.29.224.190-352
+  name: 20|🇨🇳CN-14.29.224.190-300
   network: ws
   port: 46001
   server: mmhk01.micloud.buzz
@@ -95,28 +88,15 @@ proxies:
   ws-path: /zh-cn
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 20,26|🇭🇰 香港7|@ripaojiedian
+  name: 20,26|🇭🇰 香港2|@ripaojiedian
   password: 305ee3f1-b224-40e8-8a1c-b5f66c4ef40f
-  port: 39201
+  port: 36993
   server: aa01gg.sssyun.xyz
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: 20|🇳CN-14.29.224.190-245
-  network: ws
-  port: 46082
-  server: mmhu82.micloud.buzz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81
-  ws-headers:
-    Host: mmhu82.micloud.buzz
-  ws-path: /zh-cn
-- alterId: 0
-  cipher: auto
-  name: 20|🇨🇳CN-36.139.183.164-334
+  name: 20|🇨🇳CN-36.139.183.164-282
   network: ws
   port: 10184
   server: 36.139.183.164
@@ -127,6 +107,14 @@ proxies:
   ws-headers:
     Host: 36.139.183.164
   ws-path: /name
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇭🇰 香港7|@ripaojiedian
+  password: 305ee3f1-b224-40e8-8a1c-b5f66c4ef40f
+  port: 39201
+  server: aa01gg.sssyun.xyz
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 20,26|🇹🇼 台湾|@ripaojiedian
@@ -145,7 +133,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 20|🇨🇳CN-14.29.224.190-354
+  name: 20|🇨🇳CN-14.29.224.190-302
   network: ws
   port: 46011
   server: mmjp11.micloud.buzz
@@ -166,7 +154,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 20|🇳CN-14.29.224.190-355
+  name: 20|🇳CN-14.29.224.190-303
   network: ws
   port: 46092
   server: mmde92.micloud.buzz
@@ -177,19 +165,6 @@ proxies:
   ws-headers:
     Host: mmde92.micloud.buzz
   ws-path: /zh-cn
-- alterId: 0
-  cipher: auto
-  name: '21|🇨🇳 广东省广州市 电信 #1'
-  network: ws
-  port: '46082'
-  server: mmhu82.micloud.buzz
-  tls: false
-  type: vmess
-  uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81
-  ws-opts:
-    headers:
-      Host: mmhu82.micloud.buzz
-    path: /zh-cn
 - alterId: 0
   cipher: auto
   name: 28|日本2|@ripaojiedian
