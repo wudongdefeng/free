@@ -95,17 +95,21 @@ proxies:
     path: /chami
 - alterId: 0
   cipher: auto
-  name: 21|🇸🇬 新加坡 DigitalOcean数据中心
-  network: tcp
-  port: '55201'
-  server: 178.128.208.5
+  name: 11|新加坡 Amazon数据中心
+  network: ws
+  port: 80
+  server: sg03.thomasina.buzz
   tls: false
   type: vmess
-  uuid: 14d4aeba-e194-4075-be78-ee681b06005d
+  uuid: e3dd1fbb-06ad-4467-8e02-bb8e9287ffa8
+  ws-opts:
+    headers:
+      Host: sg03.thomasina.buzz
+    path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 25,26,27|新加坡|@ripaojiedian
+  name: 13,25,26,27|新加坡|@ripaojiedian
   network: ws
   port: '2052'
   server: cfcdn2.sanfencdn9.com
@@ -119,6 +123,15 @@ proxies:
     headers:
       Host: 7nAi74jJsg1.yofnhkfc.xyz
     path: /video/c9efxRCi
+- alterId: 0
+  cipher: auto
+  name: 21|🇸🇬 新加坡 DigitalOcean数据中心
+  network: tcp
+  port: '55201'
+  server: 178.128.208.5
+  tls: false
+  type: vmess
+  uuid: 14d4aeba-e194-4075-be78-ee681b06005d
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇸🇬 新加坡2|@ripaojiedian
