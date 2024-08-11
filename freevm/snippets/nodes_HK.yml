@@ -71,14 +71,18 @@ proxies:
     path: /zh-cn
 - alterId: 64
   cipher: auto
-  name: 13,21,25,27|香港5|@ripaojiedian
+  name: 13,20,21,25,27|香港5|@ripaojiedian
   network: tcp
   port: '54104'
   server: 183.236.51.23
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 13,25,27|香港6|@ripaojiedian
@@ -95,41 +99,17 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: '21|🇺🇸 美国(油管:破解资源君2.0) #14'
+  name: '20,21|🇺🇸 美国(油管:破解资源君2.0) #14'
   network: tcp
   port: '38838'
   server: 47.242.187.154
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 383e161c-7fff-4a6f-f8f5-08c303e5429b
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港2|@ripaojiedian
-  password: 713366e0-20b8-4d5d-be5d-988317e086c7
-  port: 40023
-  server: gg01.6bnw.top
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港3|@ripaojiedian
-  password: 713366e0-20b8-4d5d-be5d-988317e086c7
-  port: 19527
-  server: aa01gg.sssyun.xyz
-  tfo: false
-  type: ss
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本|@ripaojiedian
-  password: yEnxJlVC
-  port: 51012
-  server: 183.232.139.24
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: trojan
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 47.242.187.154
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 28|🇭🇰HK-47.76.35.246-0787
