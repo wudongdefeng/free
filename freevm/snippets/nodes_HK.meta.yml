@@ -55,13 +55,10 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 13,21,25,26|🇭🇰 香港6|@ripaojiedian
+  name: 13,21|🇭🇰 11|香港6|@ripaojiedian
   network: ws
-  port: 46001
+  port: '46001'
   server: mmhk01.micloud.buzz
-  skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81
@@ -150,34 +147,36 @@ proxies:
     headers:
       Host: data-hk-v1.shwjfkw.cn
     path: /hls/cctv5phd.m3u8
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 26,29|CN_speednode_0035
+  password: 52baa7b8-4653-3591-b4fa-2de75970306f
+  port: 11215
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z268.hongkongnode.top
+  tfo: false
+  tls: false
+  type: trojan
+  udp: false
+  uuid: 8a25aadb-e034-43d0-a253-90c8077398f1
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇭🇰 香港2|@ripaojiedian
-  password: 713366e0-20b8-4d5d-be5d-988317e086c7
-  port: 40023
+  password: bd76eeb6-0c0a-44ea-b177-a8742e72029f
+  port: 40012
   server: gg01.6bnw.top
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇭🇰 香港3|@ripaojiedian
-  password: 713366e0-20b8-4d5d-be5d-988317e086c7
-  port: 19527
-  server: aa01gg.sssyun.xyz
+  password: bd76eeb6-0c0a-44ea-b177-a8742e72029f
+  port: 40011
+  server: gg01.6bnw.top
   tfo: false
   type: ss
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本|@ripaojiedian
-  password: yEnxJlVC
-  port: 51012
-  server: 183.232.139.24
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: trojan
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 28|🇭🇰HK-47.76.35.246-0787
@@ -250,11 +249,24 @@ proxies:
     headers:
       Host: hrgdvpn.flycdnedc55.vip
     path: /opt/video/images
-- client-fingerprint: randomized
-  name: 29|HK_speednode_0098
+- name: 29|HK_speednode_0086
   network: ws
-  port: 11417
-  server: 183.178.22.246
+  password: CMLiu
+  port: 2083
+  server: 47.76.33.40
+  skip-cert-verify: true
+  sni: aliorg.filegear-sg.me
+  type: trojan
+  udp: false
+  ws-opts:
+    headers:
+      Host: aliorg.filegear-sg.me
+    path: /?ed=2048
+- client-fingerprint: randomized
+  name: 29|HK_speednode_0087
+  network: ws
+  port: 35002
+  server: 58.176.229.127
   servername: dns68.putata.eu.org
   skip-cert-verify: false
   tls: true
@@ -265,7 +277,36 @@ proxies:
     headers:
       Host: dns68.putata.eu.org
     path: /?ed=2048
-- name: 29|HK_speednode_0099
+- client-fingerprint: randomized
+  name: 29|HK_speednode_0088
+  network: ws
+  port: 2053
+  server: 47.76.225.255
+  servername: dns68.putata.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
+  ws-opts:
+    headers:
+      Host: dns68.putata.eu.org
+    path: /?ed=2048
+- name: 29|HK_speednode_0089
+  network: ws
+  port: 2053
+  server: 47.243.90.180
+  servername: page-us-qg0.pages.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: bd7d2c5c-86bc-4d5c-8c6b-a5c58981e68c
+  ws-opts:
+    headers:
+      Host: page-us-qg0.pages.dev
+    path: /
+- name: 29|HK_speednode_0090
   network: ws
   port: 12346
   server: 8.210.142.146
@@ -279,18 +320,60 @@ proxies:
     headers:
       Host: zhongkui.pages.dev
     path: /?end=
-- client-fingerprint: randomized
-  name: 29|HK_speednode_0100
+- name: 29|HK_speednode_0091
   network: ws
-  port: 35002
-  server: 58.176.229.127
-  servername: edgetunnel-free.pages.dev
+  password: CMLiu
+  port: 34237
+  server: 154.204.56.238
+  skip-cert-verify: true
+  sni: aliorg.filegear-sg.me
+  type: trojan
+  udp: false
+  ws-opts:
+    headers:
+      Host: aliorg.filegear-sg.me
+    path: /?ed=2048
+- name: 29|HK_speednode_0097
+  network: ws
+  port: 443
+  server: 202.81.231.150
+  servername: ch.ylks.xyz
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: de44b044-8f90-4e18-b742-16591667ff96
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
   ws-opts:
     headers:
-      Host: edgetunnel-free.pages.dev
+      Host: ch.ylks.xyz
+    path: /
+- client-fingerprint: randomized
+  name: 29|HK_speednode_0096
+  network: ws
+  port: 11417
+  server: 183.178.22.246
+  servername: dns68.putata.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
+  ws-opts:
+    headers:
+      Host: dns68.putata.eu.org
     path: /?ed=2048
+- client-fingerprint: chrome
+  name: 29|HK_speednode_0098
+  network: ws
+  port: 34987
+  server: 8.210.13.126
+  servername: a.ssll.gay
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: Telegram🇨🇳 @WangCai_8 /?ed=2048
