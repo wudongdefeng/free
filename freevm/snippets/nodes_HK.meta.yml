@@ -55,14 +55,18 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 64
   cipher: auto
-  name: 13,21,25,27|香港5|@ripaojiedian
+  name: 13,20,21,25,27|香港5|@ripaojiedian
   network: tcp
   port: '54104'
   server: 183.236.51.23
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 13,25,27|香港6|@ripaojiedian
@@ -79,22 +83,30 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: 21|🇭🇰 香港(油管:破解资源君2.0)
-  network: tcp
-  port: '39999'
-  server: hkbn-home-a.zc20200426.club
-  tls: true
-  type: vmess
-  uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b
-- alterId: 0
-  cipher: auto
-  name: '21|🇺🇸 美国(油管:破解资源君2.0) #4'
+  name: '20,21|🇺🇸 美国(油管:破解资源君2.0) #4'
   network: tcp
   port: '38838'
   server: 47.242.187.154
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 383e161c-7fff-4a6f-f8f5-08c303e5429b
+  ws-headers:
+    Host: 47.242.187.154
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|🇰HK-20.205.111.107-149
+  network: ws
+  port: 59619
+  server: 20.205.111.107
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: a8804a03-be3f-43b9-ef7f-8acbdf39cbe3
+  ws-headers:
+    Host: 20.205.111.107
+  ws-path: /
 - alterId: 1
   cipher: auto
   name: '21|🇭🇰 香港(油管:破解资源君2.0) #2'
@@ -147,35 +159,6 @@ proxies:
     headers:
       Host: mmhk01.micloud.buzz
     path: /zh-cn
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本|@ripaojiedian
-  password: yEnxJlVC
-  port: 51012
-  server: 183.232.139.24
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  tfo: false
-  tls: false
-  type: trojan
-  uuid: 8a25aadb-e034-43d0-a253-90c8077398f1
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港2|@ripaojiedian
-  password: bd76eeb6-0c0a-44ea-b177-a8742e72029f
-  port: 40012
-  server: gg01.6bnw.top
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港3|@ripaojiedian
-  password: bd76eeb6-0c0a-44ea-b177-a8742e72029f
-  port: 40011
-  server: gg01.6bnw.top
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: 28|🇭🇰HK-47.76.35.246-0787
