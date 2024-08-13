@@ -87,24 +87,32 @@ proxies:
     path: /zh-cn
 - alterId: 64
   cipher: auto
-  name: 13,21,25,27|香港5|@ripaojiedian
+  name: 13,20,21,25,27|香港5|@ripaojiedian
   network: tcp
   port: '54104'
   server: 183.236.51.23
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 13,21,25,27|香港8|@ripaojiedian
+  name: 13,20,21,25,27|香港8|@ripaojiedian
   network: tcp
   port: '44815'
   server: ambxxid02hk.dorabbb.top
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 9ab3ef7a-2348-4452-8e4a-548fc8a980d9
+  ws-headers:
+    Host: ambxxid02hk.dorabbb.top
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 13,25,27|香港2|@ripaojiedian
@@ -135,22 +143,69 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: 21|🇭🇰 香港(油管:破解资源君2.0)
+  name: 20,21|🇭🇰 香港(油管:破解资源君2.0)
   network: tcp
   port: '38838'
   server: 47.242.187.154
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 383e161c-7fff-4a6f-f8f5-08c303e5429b
+  ws-headers:
+    Host: 47.242.187.154
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '21|🇭🇰 香港(油管:破解资源君2.0) #3'
+  name: '20,21|🇭🇰 香港(油管:破解资源君2.0) #3'
   network: tcp
   port: '553'
   server: v2nodep-hk5.hkss.online
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 6ebeed01-2767-334c-ab37-33b5dfe53cb4
+  ws-headers:
+    Host: v2nodep-hk5.hkss.online
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  name: '20,21|🇭🇰 香港(油管:破解资源君2.0) #8'
+  network: tcp
+  port: '443'
+  server: v2node6.hkss.online
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 6ebeed01-2767-334c-ab37-33b5dfe53cb4
+  ws-headers:
+    Host: YouTube-aweikeji
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇪🇺 欧洲(油管:破解资源君2.0) #10'
+  network: tcp
+  port: '23702'
+  server: 43.154.190.154
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: a4d1a670-b727-4f2e-f392-9794215e54ac
+  ws-headers:
+    Host: 43.154.190.154
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|HK-103.30.78.3-300
+  network: ws
+  port: 47408
+  server: 103.30.78.3
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4a54a45e-4af9-49a2-bc9d-dacf925e986a
+  ws-headers:
+    Host: 103.30.78.3
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '21|🇭🇰 香港(油管:破解资源君2.0) #4'
@@ -164,15 +219,6 @@ proxies:
     headers:
       Host: ingress-i1.onebox6.org
     path: /hls/cctv5phd.m3u8
-- alterId: 2
-  cipher: auto
-  name: '21|🇭🇰 香港(油管:破解资源君2.0) #8'
-  network: tcp
-  port: '443'
-  server: v2node6.hkss.online
-  tls: false
-  type: vmess
-  uuid: 6ebeed01-2767-334c-ab37-33b5dfe53cb4
 - alterId: 0
   cipher: auto
   name: '21|🇭🇰 香港(油管:破解资源君2.0) #6'
@@ -212,35 +258,6 @@ proxies:
     headers:
       Host: 120.233.150.146
     path: /rocket
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 26|🇯🇵 日本|@ripaojiedian
-  password: yEnxJlVC
-  port: 33609
-  server: 36.151.195.51
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  tfo: false
-  tls: false
-  type: trojan
-  uuid: 9ab3ef7a-2348-4452-8e4a-548fc8a980d9
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港6|@ripaojiedian
-  password: 309f6157-8f68-488c-a6a8-b0f5d7106088
-  port: 19527
-  server: aa01gg.sssyun.xyz
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港7|@ripaojiedian
-  password: 309f6157-8f68-488c-a6a8-b0f5d7106088
-  port: 39301
-  server: aa01gg.sssyun.xyz
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: 28|🇭🇰HK-47.76.35.246-0787
