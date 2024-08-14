@@ -16,6 +16,20 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
+  name: 11|广东省深圳市 电信
+  network: ws
+  port: '46092'
+  server: mmde92.micloud.buzz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81
+  ws-opts:
+    headers:
+      Host: mmde92.micloud.buzz
+    path: /zh-cn
+- alterId: 0
+  cipher: auto
   name: '16,21,28|github.com/freefq - 广东省移动 7 #1'
   network: ws
   port: '20401'
@@ -30,9 +44,22 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: '20,21|🇪🇺 欧洲(油管:破解资源君2.0) #14'
+  name: 20|🇨🇳CN-120.233.29.189-092
+  network: ws
+  port: 65039
+  server: 120.233.29.189
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 0253b574-8020-3186-a647-0267295ac9bb
+  ws-headers:
+    Host: 120.233.29.189
+  ws-path: /rocket
+- alterId: 0
+  cipher: auto
+  name: '20,21|亚洲(油管:破解资源君2.0) #1'
   network: tcp
-  port: '13102'
+  port: '13003'
   server: 120.197.130.126
   skip-cert-verify: true
   tls: false
@@ -41,36 +68,29 @@ proxies:
   ws-headers:
     Host: 120.197.130.126
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 20|🇨🇳CN-120.233.150.146-066
-  network: ws
-  port: 65031
-  server: 120.233.150.146
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 0253b574-8020-3186-a647-0267295ac9bb
-  ws-headers:
-    Host: 120.233.150.146
-  ws-path: /rocket
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.160-151
+  name: 20|🇳CN-120.238.122.159-174
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨CN-120.238.122.159-154
+  name: 20|🇳CN-120.238.122.159-188
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.159-155
+  name: 20|🇳CN-120.238.122.159-137
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇳CN-14.215.169.69-190
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20014
+  server: jp2.mhw7e2.online
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
