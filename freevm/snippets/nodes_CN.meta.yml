@@ -1,6 +1,6 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 1|_CN_
+  name: 1,20|CN-59.56.77.178-023
   password: hGkQ6915tD
   port: 15082
   server: 59.56.77.178
@@ -11,6 +11,53 @@ proxies:
   network: tcp
   port: 54882
   server: 183.240.235.162
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 11|广东省广州市 移动
+  network: tcp
+  port: '45020'
+  server: 183.236.51.23
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 11,13,20,21,25,27|香港5|@ripaojiedian
+  network: tcp
+  port: '54104'
+  server: 183.236.51.23
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 11|广东省深圳市 电信
+  network: ws
+  port: '46016'
+  server: mmsg16.micloud.buzz
+  tls: false
+  type: vmess
+  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
+  ws-opts:
+    headers:
+      Host: mmsg16.micloud.buzz
+    path: /zh-cn
+- alterId: 64
+  cipher: auto
+  name: '11|广东省广州市 移动 #2'
+  network: tcp
+  port: '42055'
+  server: 120.232.153.37
+  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -28,28 +75,121 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
-- alterId: 64
+- cipher: aes-128-gcm
+  name: 20|🇨🇳CN-120.233.24.238-036
+  password: 9d7dbacfbd2d308e4ded7c6434770bc3
+  port: 7414
+  server: 120.233.24.238
+  type: ss
+- cipher: aes-128-gcm
+  name: 20|🇨🇳CN-183.232.158.67-037
+  password: 24ffe5a4c321e0b926dc335a91c2d78a
+  port: 8765
+  server: 183.232.158.67
+  type: ss
+- alterId: 2
   cipher: auto
-  name: 21|🇨🇳 广东省广州市 移动
-  network: tcp
-  port: '45020'
-  server: 183.236.51.23
+  name: 20|🇳CN-120.241.177.122-042
+  network: ws
+  port: 53251
+  server: tl5.tifa.pro
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 295e27fe-b368-374e-b471-8a6b48ee20e3
+  ws-headers:
+    Host: jp1.tifa.pro
+  ws-path: /user
 - alterId: 0
   cipher: auto
-  name: 21|🇨🇳 广东省深圳市 电信
+  name: 20|🇨🇳CN-120.240.55.137-095
   network: ws
-  port: '46016'
-  server: mmsg16.micloud.buzz
+  port: 38201
+  server: 120.240.55.137
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
+  ws-headers:
+    Host: aweikeji-YouTube
+  ws-path: /hls/cctv5phd.m3u8
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇨🇳CN-120.238.122.160-143
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20003
+  server: service.ouluyun9803.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇳CN-120.238.122.159-146
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 26667
+  server: service.ouluyun9803.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇳CN-120.238.122.160-147
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20005
+  server: service.ouluyun9803.com
+  type: ss
+- cipher: aes-256-gcm
+  name: 20|🇳CN-36.138.176.212-182
+  password: 2affd0c1-a5b4-4c1c-8800-fb2f866626e7
+  port: 47082
+  server: zzh2.gouersu.top
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|🇳CN-14.116.147.248-314
+  network: ws
+  port: 46001
+  server: mmhk01.micloud.buzz
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
-  ws-opts:
-    headers:
-      Host: mmsg16.micloud.buzz
-    path: /zh-cn
+  ws-headers:
+    Host: mmhk01.micloud.buzz
+  ws-path: /zh-cn
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇭🇰 香港2|@ripaojiedian
+  password: adf1fbfc-6276-4478-9a08-0fca1da2edda
+  port: 36993
+  server: 6bhz.6bnw.top
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇭🇰 香港3|@ripaojiedian
+  password: adf1fbfc-6276-4478-9a08-0fca1da2edda
+  port: 40012
+  server: gg01.6bnw.top
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇹🇼 台湾2|@ripaojiedian
+  password: adf1fbfc-6276-4478-9a08-0fca1da2edda
+  port: 39201
+  server: 6bhz.6bnw.top
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇯🇵 日本2|@ripaojiedian
+  password: adf1fbfc-6276-4478-9a08-0fca1da2edda
+  port: 19529
+  server: 6bhz.6bnw.top
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇸🇬 新加坡|@ripaojiedian
+  password: adf1fbfc-6276-4478-9a08-0fca1da2edda
+  port: 40014
+  server: gg01.6bnw.top
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 28|日本2|@ripaojiedian
