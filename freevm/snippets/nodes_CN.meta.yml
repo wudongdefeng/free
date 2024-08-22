@@ -16,17 +16,42 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 11,21|🇭🇰 11|香港|@ripaojiedian
+  name: 11|广东省深圳市 电信
   network: ws
   port: '46001'
   server: mmhk01.micloud.buzz
+  servername: ''
   tls: false
   type: vmess
-  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
+  uuid: 58ffeca7-7e75-417f-bbac-7b1041ce616d
   ws-opts:
     headers:
-      Host: mmhk01.micloud.buzz
+      Host: ''
     path: /zh-cn
+- alterId: 64
+  cipher: auto
+  name: 11|广东省广州市 移动
+  network: tcp
+  port: '35601'
+  server: 120.232.153.40
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 11,13,20,21,25,27|香港|@ripaojiedian
+  network: tcp
+  port: '40890'
+  server: 183.238.90.3
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.238.90.3
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -57,15 +82,15 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 20,26|🇭🇰 香港5|@ripaojiedian
-  password: llyEnxJlVC
-  port: 54104
-  server: 183.236.51.23
-  skip-cert-verify: false
-  sni: www.zitian.cn
+  name: 20,26,29|CN_speednode_0039
+  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
+  port: 12064
+  server: cn2.cdn.xfltd-cdn.top
+  skip-cert-verify: true
+  sni: cdn.alibaba.com
   tfo: false
   tls: false
-  type: vmess
+  type: trojan
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-path: h=%2F%3Fed%3D2048
 - alterId: 0
@@ -113,26 +138,32 @@ proxies:
     Host: 183.240.209.8
   ws-path: /
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.160-204
+  name: 20|🇨🇳CN-120.238.122.160-164
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.159-167
+  name: 20|🇨🇳CN-120.238.122.160-167
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.160-213
+  name: 20|🇳CN-120.238.122.160-168
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
   type: ss
+- cipher: aes-256-gcm
+  name: 20|🇳CN-36.138.176.212-183
+  password: 2affd0c1-a5b4-4c1c-8800-fb2f866626e7
+  port: 47082
+  server: zzh2.gouersu.top
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 20|🇳CN-14.116.147.248-331
+  name: 20|🇨🇳CN-14.116.147.248-199
   network: ws
   port: 46001
   server: mmhk01.micloud.buzz
@@ -143,6 +174,75 @@ proxies:
   ws-headers:
     Host: mmhk01.micloud.buzz
   ws-path: /zh-cn
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 20,26|🇹🇼 台湾3|@ripaojiedian
+  password: e9e3ecc0-df97-4664-9051-74e4a8dcfa54
+  port: 28995
+  server: gzyd5-1.piaomiaoxu.net
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇹🇼 台湾4|@ripaojiedian
+  password: f9b15148-7fd1-41c6-bd7e-b30e04c4699c
+  port: 32207
+  server: 6bhz.6bnw.top
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇯🇵 日本|@ripaojiedian
+  password: f9b15148-7fd1-41c6-bd7e-b30e04c4699c
+  port: 39202
+  server: 6bhz.6bnw.top
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇸🇬 新加坡|@ripaojiedian
+  password: f9b15148-7fd1-41c6-bd7e-b30e04c4699c
+  port: 40014
+  server: gg01.6bnw.top
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 20,26|🇸🇬 新加坡2|@ripaojiedian
+  password: 2affd0c1-a5b4-4c1c-8800-fb2f866626e7
+  port: 47086
+  server: zzh2.gouersu.top
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 20,26|🇻🇳 越南|@ripaojiedian
+  password: hGkQ6915tD
+  port: 15083
+  server: 59.56.77.225
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 20,26|🇯🇵 日本R|@ripaojiedian
+  password: hGkQ6915tD
+  port: 15084
+  server: 59.56.77.225
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 21|🇨🇳 广东省深圳市 电信
+  network: ws
+  port: '46001'
+  server: mmhk01.micloud.buzz
+  tls: false
+  type: vmess
+  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
+  ws-opts:
+    headers:
+      Host: mmhk01.micloud.buzz
+    path: /zh-cn
 - alterId: 0
   cipher: auto
   name: '28|日本2|@ripaojiedian #1'
@@ -158,7 +258,7 @@ proxies:
       Host: data-jp-v1.usabooks.com.cn
     path: /debian
 - cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0008
+  name: 29|CN_speednode_0013
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20001
   server: hk1.mhw7e2.online
