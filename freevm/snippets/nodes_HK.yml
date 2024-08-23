@@ -1,32 +1,42 @@
 proxies:
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 13,21|🇭🇰 10,11|香港2|@ripaojiedian
-  network: ws
-  port: '2052'
-  server: 22.6bnw.top
+  name: 13,20,21,25,27|香港|@ripaojiedian
+  network: tcp
+  port: '40890'
+  server: 183.238.90.3
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.238.90.3
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: 13,20,21,25,27|香港5|@ripaojiedian
+  network: tcp
+  port: '54104'
+  server: 183.236.51.23
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  name: 13,25,27|香港7|@ripaojiedian
+  network: tcp
+  port: '51000'
+  server: iepl2.airtcp.vip
   servername: ''
   tls: false
   type: vmess
-  uuid: f9b15148-7fd1-41c6-bd7e-b30e04c4699c
-  ws-opts:
-    headers:
-      Host: hkbn.6bnw.top
-    path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 13,21|🇭🇰 10,11|香港3|@ripaojiedian
-  network: ws
-  port: '2052'
-  server: 33.6bnw.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f9b15148-7fd1-41c6-bd7e-b30e04c4699c
-  ws-opts:
-    headers:
-      Host: hkbn.6bnw.top
-    path: /?ed=2560
+  uuid: 242eaf22-2c23-3181-a643-5e39bef2e08a
 - alterId: 0
   cipher: auto
   name: '20,21|🇪🇺 欧洲(油管:破解资源君2.0) #1'
@@ -97,16 +107,32 @@ proxies:
     headers:
       Host: 18.167.20.169
     path: /
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 25,27|香港7|@ripaojiedian
-  network: tcp
-  port: '51000'
-  server: iepl2.airtcp.vip
-  servername: ''
+  name: 21|🇭🇰 10,11|香港2|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: 22.6bnw.top
   tls: false
   type: vmess
-  uuid: 242eaf22-2c23-3181-a643-5e39bef2e08a
+  uuid: f9b15148-7fd1-41c6-bd7e-b30e04c4699c
+  ws-opts:
+    headers:
+      Host: hkbn.6bnw.top
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 21|🇭🇰 10,11|香港3|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: 33.6bnw.top
+  tls: false
+  type: vmess
+  uuid: f9b15148-7fd1-41c6-bd7e-b30e04c4699c
+  ws-opts:
+    headers:
+      Host: hkbn.6bnw.top
+    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇭🇰 香港2|@ripaojiedian
