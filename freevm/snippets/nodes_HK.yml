@@ -29,14 +29,18 @@ proxies:
   ws-path: /
 - alterId: 2
   cipher: auto
-  name: 13,25,27|香港7|@ripaojiedian
+  name: 13,20,21,25,27|香港7|@ripaojiedian
   network: tcp
   port: '51000'
   server: iepl2.airtcp.vip
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 242eaf22-2c23-3181-a643-5e39bef2e08a
+  ws-headers:
+    Host: iepl2.airtcp.vip
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '20,21|🇪🇺 欧洲(油管:破解资源君2.0) #1'
@@ -63,24 +67,6 @@ proxies:
   ws-headers:
     Host: 18.167.20.169
   ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇭🇰HK-18.162.196.193-156
-  password: ef72f9da-87ee-42d1-aced-3c1930dab000
-  port: 50210
-  server: jp01.ssyhi.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇰HK-18.162.196.193-165
-  password: ef72f9da-87ee-42d1-aced-3c1930dab000
-  port: 50252
-  server: hk13.ssyhi.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇭🇰HK-18.162.196.193-205
-  password: ef72f9da-87ee-42d1-aced-3c1930dab000
-  port: 50203
-  server: hk04.ssyhi.xyz
-  type: ss
 - alterId: 0
   cipher: auto
   name: 21|🇭🇰 香港(油管:破解资源君2.0)
@@ -107,48 +93,6 @@ proxies:
     headers:
       Host: 18.167.20.169
     path: /
-- alterId: 0
-  cipher: auto
-  name: 21|🇭🇰 10,11|香港2|@ripaojiedian
-  network: ws
-  port: '2052'
-  server: 22.6bnw.top
-  tls: false
-  type: vmess
-  uuid: f9b15148-7fd1-41c6-bd7e-b30e04c4699c
-  ws-opts:
-    headers:
-      Host: hkbn.6bnw.top
-    path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 21|🇭🇰 10,11|香港3|@ripaojiedian
-  network: ws
-  port: '2052'
-  server: 33.6bnw.top
-  tls: false
-  type: vmess
-  uuid: f9b15148-7fd1-41c6-bd7e-b30e04c4699c
-  ws-opts:
-    headers:
-      Host: hkbn.6bnw.top
-    path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港2|@ripaojiedian
-  password: cefe8a8f-7d88-4973-bcd2-fbf023d5e1c8
-  port: 36993
-  server: 6bhz.6bnw.top
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港6|@ripaojiedian
-  password: cefe8a8f-7d88-4973-bcd2-fbf023d5e1c8
-  port: 29527
-  server: 6bhz.6bnw.top
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: 28|🇭🇰HK-47.76.35.246-0787
