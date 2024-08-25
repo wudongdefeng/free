@@ -16,14 +16,42 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 11|广东省广州市 移动
+  name: 11,13,20,21,25,27|香港|@ripaojiedian
   network: tcp
-  port: '35601'
-  server: 120.232.153.40
+  port: '45020'
+  server: 183.236.51.23
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: '11|广东省广州市 移动 #1'
+  network: tcp
+  port: '42055'
+  server: 120.232.153.37
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 11|广东省深圳市 电信
+  network: ws
+  port: '46001'
+  server: mmhk01.micloud.buzz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
+  ws-opts:
+    headers:
+      Host: ''
+    path: /zh-cn
 - alterId: 0
   cipher: auto
   name: '16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -71,30 +99,6 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 20,26|🇭🇰 香港2|@ripaojiedian
-  password: 09c601f1-cb28-4ec7-8a09-f2fef77151e1
-  port: 36993
-  server: 6bhz.6bnw.top
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 20,26|🇭🇰 香港6|@ripaojiedian
-  password: 09c601f1-cb28-4ec7-8a09-f2fef77151e1
-  port: 40012
-  server: gg01.6bnw.top
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 20,26|🇹🇼 台湾|@ripaojiedian
-  password: 09c601f1-cb28-4ec7-8a09-f2fef77151e1
-  port: 40018
-  server: gg01.6bnw.top
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
   name: 20,26|🇯🇵 日本|@ripaojiedian
   password: 36fdc73d-0bff-4d66-9759-e81c63de16b6
   port: 10809
@@ -103,34 +107,10 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 20,26|🇯🇵 日本2|@ripaojiedian
-  password: 09c601f1-cb28-4ec7-8a09-f2fef77151e1
-  port: 40020
-  server: gg01.6bnw.top
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
   name: 20,26|🇸🇬 新加坡|@ripaojiedian
-  password: 3f41b92f-9188-431c-be29-a7e5de2722dc
-  port: 38424
-  server: gzyd5-1.piaomiaoxu.net
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 20,26|🇸🇬 新加坡2|@ripaojiedian
-  password: 09c601f1-cb28-4ec7-8a09-f2fef77151e1
+  password: 0ecee8bb-9fff-40f4-9f51-72edf4d82862
   port: 39204
   server: 6bhz.6bnw.top
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 20,26|🇺🇸 美国3|@ripaojiedian
-  password: 2affd0c1-a5b4-4c1c-8800-fb2f866626e7
-  port: 47084
-  server: zzh2.gouersu.top
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -138,14 +118,6 @@ proxies:
   name: 20,26|🇻🇳 越南|@ripaojiedian
   password: hGkQ6915tD
   port: 15083
-  server: 59.56.77.225
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 20,26|🇯🇵 日本R|@ripaojiedian
-  password: hGkQ6915tD
-  port: 15084
   server: 59.56.77.225
   tfo: false
   type: ss
