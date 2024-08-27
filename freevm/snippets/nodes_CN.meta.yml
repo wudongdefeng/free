@@ -14,6 +14,30 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 11|广东省广州市 移动
+  network: tcp
+  port: '42055'
+  server: 120.232.153.37
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 11,13,20,21,25,27|香港5|@ripaojiedian
+  network: tcp
+  port: '54104'
+  server: 183.236.51.23
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -81,16 +105,32 @@ proxies:
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.159-149
+  name: 20|🇨🇳CN-120.238.122.160-162
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.159-150
+  name: 20|🇳CN-120.238.122.160-150
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇭🇰 香港2|@ripaojiedian
+  password: 36935806-0524-4023-8ce0-9048bb0d3e63
+  port: 36993
+  server: 6bhz.6bnw.top
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇭🇰 香港3|@ripaojiedian
+  password: 36935806-0524-4023-8ce0-9048bb0d3e63
+  port: 39301
+  server: 6bhz.6bnw.top
+  tfo: false
   type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
@@ -108,19 +148,38 @@ proxies:
   server: yd1.qianggewangluo.buzz
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 20|🇨🇳CN-58.63.250.33-279
-  network: ws
-  port: 43422
-  server: laf-gd5.vip.cdn.lafsel.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 80131c57-65b4-3cee-b773-5f0984423a04
-  ws-headers:
-    Host: la.fa-5.jp.lafsel.xyz
-  ws-path: /lanfan2.vip.m3u8
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇹🇼 台湾2|@ripaojiedian
+  password: 36935806-0524-4023-8ce0-9048bb0d3e63
+  port: 32207
+  server: 6bhz.6bnw.top
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇯🇵 日本3|@ripaojiedian
+  password: 36935806-0524-4023-8ce0-9048bb0d3e63
+  port: 49207
+  server: 6bhz.6bnw.top
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇰🇷 韩国|@ripaojiedian
+  password: 36e029bb-fceb-425e-b92d-3e4e0c1100b6
+  port: 60103
+  server: happy.alicenetwork.cloud
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇸🇬 新加坡|@ripaojiedian
+  password: 36935806-0524-4023-8ce0-9048bb0d3e63
+  port: 39505
+  server: 6bhz.6bnw.top
+  tfo: false
+  type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 20,26|🇺🇸 美国3|@ripaojiedian
