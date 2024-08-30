@@ -14,34 +14,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 11,13,20,21,25,27|香港5|@ripaojiedian
-  network: tcp
-  port: '54104'
-  server: 183.236.51.23
+  name: 11|广东省深圳市 电信
+  network: ws
+  port: '46001'
+  server: mmhk01.micloud.buzz
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.236.51.23
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  name: 11,13,20,21,25,27|香港|@ripaojiedian
-  network: tcp
-  port: '45020'
-  server: 183.236.51.23
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.236.51.23
-  ws-path: /
+  uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81
+  ws-opts:
+    headers:
+      Host: ''
+    path: /zh-cn
 - alterId: 0
   cipher: auto
   name: '16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -58,7 +44,7 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: 20|🇳CN-120.232.208.211-058
+  name: 20|🇳CN-120.232.208.212-058
   network: ws
   port: 12888
   server: sg-sin-krn-v2.node.inforun.work
@@ -89,28 +75,49 @@ proxies:
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.160-130
+  name: 20|🇳CN-120.238.122.159-130
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.160-131
+  name: 20|🇳CN-120.238.122.160-158
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 20,26|🇸🇬 新加坡4|@ripaojiedian
+  name: 20,26|🇹🇼 台湾|@ripaojiedian
   password: 4b1b1e13-1e02-4b73-848a-e99cefab6f55
-  port: 40013
+  port: 40018
+  server: gg01.6bnw.top
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇭🇰 香港3|@ripaojiedian
+  password: 4b1b1e13-1e02-4b73-848a-e99cefab6f55
+  port: 40012
   server: gg01.6bnw.top
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: 20|🇨🇳CN-120.241.47.235-333
+  name: 20|🇨🇳CN-111.62.241.253-280
+  network: ws
+  port: 5101
+  server: v1.cdn.ddnschiyun.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 94850168-ba31-47f8-82e1-0666648fc7bc
+  ws-headers:
+    Host: v1.cdn.ddnschiyun.xyz
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20|🇨🇳CN-120.241.47.235-281
   network: ws
   port: 5201
   server: ovhsg.v4.ddnsjifeng.xyz
@@ -129,51 +136,9 @@ proxies:
   server: yd1.qianggewangluo.buzz
   tfo: false
   type: ss
-- alterId: 64
-  cipher: auto
-  name: 20,21|🇨🇳 广东省广州市 移动
-  network: tcp
-  port: '35601'
-  server: 120.232.153.40
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.232.153.40
-  ws-path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 20,26|🇭🇰 香港3|@ripaojiedian
-  password: 4b1b1e13-1e02-4b73-848a-e99cefab6f55
-  port: 40012
-  server: gg01.6bnw.top
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 20|🇨🇳CN-120.226.28.221-332
-  network: ws
-  port: 5101
-  server: v1.cdn.ddnschiyun.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 94850168-ba31-47f8-82e1-0666648fc7bc
-  ws-headers:
-    Host: v1.cdn.ddnschiyun.xyz
-  ws-path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 20,26|🇹🇼 台湾|@ripaojiedian
-  password: 4b1b1e13-1e02-4b73-848a-e99cefab6f55
-  port: 40018
-  server: gg01.6bnw.top
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 20|🇨🇳CN-120.226.28.221-334
+  name: 20|🇨🇳CN-111.62.241.253-282
   network: ws
   port: 5601
   server: v1.cdn.ddnschiyun.xyz
@@ -194,7 +159,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 20|🇳CN-120.226.28.221-335
+  name: 20|🇳CN-111.62.241.253-283
   network: ws
   port: 5501
   server: v1.cdn.ddnschiyun.xyz
@@ -211,6 +176,14 @@ proxies:
   password: fbebeaa2-e5e3-40fa-8a29-83e88ffd0fcd
   port: 29440
   server: zf.1010520.shop
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇸🇬 新加坡4|@ripaojiedian
+  password: 4b1b1e13-1e02-4b73-848a-e99cefab6f55
+  port: 40013
+  server: gg01.6bnw.top
   tfo: false
   type: ss
 - alterId: 0
