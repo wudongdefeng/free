@@ -1,19 +1,67 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 1|_SG_
+  name: 1,20|SG-54.179.87.28-020
   password: amazonskr05
   port: 443
   server: 54.179.87.28
   type: ss
+- cipher: aes-256-gcm
+  name: 20|🇸🇬SG-20.24.188.114-032
+  password: d218e51a-258f-43d2-8ce3-c8872611bf28
+  port: 8080
+  server: 20.24.188.114
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '21|🇪🇺 欧洲(油管:破解资源君2.0) #18'
+  name: '20,21|🇪🇺 欧洲(油管:破解资源君2.0) #18'
   network: tcp
   port: '42424'
   server: 139.180.140.20
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: a3d12a2a-d6b3-4248-bb5d-0c5759f9606d
+  ws-headers:
+    Host: 139.180.140.20
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '20,21|🇪🇺 欧洲(油管:破解资源君2.0) #12'
+  network: tcp
+  port: '38941'
+  server: 139.59.244.143
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3dc5c1c9-7d8c-432e-daff-4422103a7918
+  ws-headers:
+    Host: 139.59.244.143
+  ws-path: /
+- cipher: aes-256-cfb
+  name: 20|🇸🇬SG-13.213.46.196-227
+  password: amazonskr05
+  port: 443
+  server: 13.213.46.196
+  type: ss
+- cipher: aes-256-cfb
+  name: 20|🇸🇬SG-54.251.168.143-229
+  password: amazonskr05
+  port: 443
+  server: 54.251.168.143
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: 20|🇸🇬SG-159.223.94.156-233
+  network: ws
+  port: 80
+  server: 159.223.94.156
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
+  ws-headers:
+    Host: 159.223.94.156
+  ws-path: /anti13.zingfast.vn
 - alterId: 0
   cipher: auto
   name: '21|🇸🇬 新加坡(油管:破解资源君2.0) #1'
@@ -27,15 +75,6 @@ proxies:
     headers:
       Host: YouTube-aweikeji
     path: /cctv13/hd.m3u8
-- alterId: 0
-  cipher: auto
-  name: '21|🇸🇬 新加坡(油管:破解资源君2.0) #3'
-  network: tcp
-  port: '36679'
-  server: 3.sg.zz.xxxxx.x-t-fuckword.network
-  tls: false
-  type: vmess
-  uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5
 - alterId: 0
   cipher: auto
   name: '21|🇸🇬 新加坡(油管:破解资源君2.0) #4'
@@ -77,41 +116,30 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: 21|🇸🇬 10,11|新加坡3|@ripaojiedian
+  name: 21|🇸🇬 俄罗斯 新西伯利亚JustHost
   network: ws
-  port: '2082'
-  server: 22.6bnw.top
+  port: '40045'
+  server: 45.130.146.81
   tls: false
   type: vmess
-  uuid: 4b1b1e13-1e02-4b73-848a-e99cefab6f55
+  uuid: 1cbb8f04-b0cc-4520-8b17-ed412f457b9f
   ws-opts:
     headers:
-      Host: aksg.6bnw.top
-    path: /cctv?ed=2048
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 26|🇸🇬 新加坡|@ripaojiedian
-  password: 4570a030-b583-417f-9478-98e20d792956
-  port: 50231
-  server: microsoft-dbefd6b2.nbaqz0v1meo0k3d-sg.fcnode.net
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 26|🇸🇬 新加坡2|@ripaojiedian
-  password: 5a88940e-e7f8-475b-8157-35863345eccf
-  port: 40014
-  server: hzhz2.sssyun.xyz
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 26|🇸🇬 狮城特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 13.112.106.148
-  tfo: false
-  type: ss
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '21|🇸🇬 俄罗斯 新西伯利亚JustHost #1'
+  network: ws
+  port: '40045'
+  server: sgp.cdn-sgp.xyz
+  tls: false
+  type: vmess
+  uuid: f50389b3-b3fa-43f6-803a-c04e45b1d565
+  ws-opts:
+    headers:
+      Host: sgp.cdn-sgp.xyz
+    path: /
 - alterId: 0
   cipher: auto
   name: 28|🇸🇬新加坡 01
