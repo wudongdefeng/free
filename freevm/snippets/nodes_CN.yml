@@ -14,30 +14,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
+- alterId: 0
   cipher: auto
   name: 11|广东省广州市 移动
   network: tcp
-  port: '35601'
-  server: 120.232.153.40
-  servername: ''
+  port: 38407
+  server: MI.HUY.OVH
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 11,20,21|🇨🇳 广东省广州市 移动
-  network: tcp
-  port: '54104'
-  server: 183.236.51.23
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.236.51.23
-  ws-path: /
+  uuid: 254831d6-b1b9-470b-9931-e739397e3927
 - alterId: 0
   cipher: auto
   name: '16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -54,7 +39,20 @@ proxies:
     path: /debian
 - alterId: 64
   cipher: auto
-  name: 20|🇨🇳CN-119.36.161.40-040
+  name: 20|🇨🇳CN-42.186.175.8-050
+  network: ws
+  port: 443
+  server: 42.186.175.8
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: www.93147341.xyz
+  ws-path: /path/323127100515
+- alterId: 64
+  cipher: auto
+  name: 20|🇳CN-119.36.161.40-144
   network: ws
   port: 443
   server: 119.36.161.40
@@ -65,37 +63,50 @@ proxies:
   ws-headers:
     Host: www.25055502.xyz
   ws-path: /path/323127100515
-- alterId: 0
-  cipher: auto
-  name: 20|🇨🇳CN-120.240.55.137-191
-  network: ws
-  port: 38201
-  server: 120.240.55.137
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
-  ws-headers:
-    Host: 120.240.55.137
-  ws-path: /hls/cctv5phd.m3u8
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.160-215
+  name: 20|🇳CN-120.238.122.159-243
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.159-218
+  name: 20|🇳CN-120.238.122.159-229
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.159-219
+  name: 20|🇳CN-120.238.122.160-191
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
   type: ss
+- alterId: 64
+  cipher: auto
+  name: 20,21|🇨🇳 广东省广州市 移动
+  network: tcp
+  port: '35601'
+  server: 120.232.153.40
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.232.153.40
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: '20,21|🇨🇳 广东省广州市 移动 #1'
+  network: tcp
+  port: '54104'
+  server: 183.236.51.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 20,26|🇭🇰 香港5|@ripaojiedian
