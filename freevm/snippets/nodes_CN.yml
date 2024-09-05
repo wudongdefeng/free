@@ -14,16 +14,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 11|广东省广州市 移动
+  name: 11,20,21|🇨🇳 广东省广州市 移动
   network: tcp
-  port: '35601'
-  server: 120.232.153.40
-  servername: ''
+  port: '38412'
+  server: MI.HUY.OVH
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 2d3a27f0-6c7c-4a6b-8e96-04ba7d0658cc
+  ws-headers:
+    Host: MI.HUY.OVH
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -147,6 +150,19 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: 20,21|🇺🇸 11|美国3|@ripaojiedian
+  network: tcp
+  port: '19358'
+  server: bvip.hongxingdl.vip
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c8c638a2-93f5-49a0-92eb-b5db91a3fa08
+  ws-headers:
+    Host: bvip.hongxingdl.vip
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: '28|日本2|@ripaojiedian #1'
   network: ws
   port: '20301'
@@ -161,7 +177,7 @@ proxies:
     path: /debian
 - alterId: 64
   cipher: auto
-  name: 29|CN_speednode_0014
+  name: 29|CN_speednode_0012
   network: tcp
   port: 54882
   server: 183.236.48.163
