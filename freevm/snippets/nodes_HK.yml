@@ -1,14 +1,25 @@
 proxies:
+- alterId: 64
+  cipher: auto
+  name: 13,20,21,25,27|香港|@ripaojiedian
+  network: tcp
+  port: '45020'
+  server: 183.236.51.23
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 13,21,25,26,27|香港2|@ripaojiedian
+  name: 13,21|🇭🇰 10,11|香港2|@ripaojiedian
   network: ws
   port: '30068'
   server: 220.246.57.161
   servername: ''
-  skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   uuid: 1cbb8f04-b0cc-4520-8b17-ed412f457b9f
@@ -18,14 +29,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 13,21,25,26,27|香港3|@ripaojiedian
+  name: 13,21|🇭🇰 10,11|香港3|@ripaojiedian
   network: ws
   port: '10001'
   server: 62.72.163.54
   servername: ''
-  skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   uuid: 3dddcee7-2cb3-4260-81da-83d8b926840f
@@ -137,22 +145,6 @@ proxies:
   ws-headers:
     Host: 62.72.163.54
   ws-path: /
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 20,26|🇭🇰 香港7|@ripaojiedian
-  password: 3a690709-5011-4a6c-ab62-da2fb5291233
-  port: 50203
-  server: microsoft-af1f5ba4.nbaqz0v1meo0k3d-hk.fcnode.net
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 20,26|🇭🇰 香港8|@ripaojiedian
-  password: 3a690709-5011-4a6c-ab62-da2fb5291233
-  port: 50208
-  server: microsoft-af1f5ba4.nbaqz0v1meo0k3d-hk.fcnode.net
-  tfo: false
-  type: ss
 - alterId: 1
   cipher: auto
   name: '21|🇭🇰 香港(油管:破解资源君2.0) #2'
@@ -218,6 +210,14 @@ proxies:
     headers:
       Host: 18.167.20.169
     path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇭🇰 香港2|@ripaojiedian
+  password: d3f674e2-b985-49d2-8654-4b8d53e20217
+  port: 59096
+  server: gdyddx500.xiyunchen.cn
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 28|🇭🇰HK-47.76.35.246-0787
@@ -254,7 +254,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '28|香港2|@ripaojiedian #1'
+  name: 28|香港2|@ripaojiedian
   network: tcp
   port: '44805'
   server: hkjcdn03.dorabbb.top
