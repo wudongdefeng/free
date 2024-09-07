@@ -1,22 +1,8 @@
 proxies:
-- alterId: 64
-  cipher: auto
-  name: 13,20,21,25,27|香港|@ripaojiedian
-  network: tcp
-  port: '45020'
-  server: 183.236.51.23
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.236.51.23
-  ws-path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13,25,26,27|香港5|@ripaojiedian
+  name: 13,21,25,26,27|香港5|@ripaojiedian
   network: ws
   port: '10001'
   server: 62.72.163.54
@@ -32,14 +18,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 13,25,27|香港8|@ripaojiedian
-  network: tcp
-  port: '13008'
-  server: 45.78.25.158
-  servername: ''
-  tls: false
+  client-fingerprint: chrome
+  name: 13,21,25,26,27|香港7|@ripaojiedian
+  network: ws
+  port: '54433'
+  server: 103.255.209.108
+  servername: hk2.aisupermall.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
   type: vmess
-  uuid: a074c66e-1107-475c-8bc7-9de7ef6620ed
+  uuid: e24840f7-83c2-4730-98df-bf852ecbd2d3
+  ws-opts:
+    headers:
+      Host: unknown
+    path: /axsxzA
 - alterId: 0
   cipher: auto
   name: 20|🇰HK-18.167.20.169-065
@@ -66,6 +59,35 @@ proxies:
   ws-headers:
     Host: node.inforun.work
   ws-path: /je5x3pBN1vez3NQudNkB
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 20,26|🇭🇰 香港3|@ripaojiedian
+  password: 2509f9e7-93a6-4ac3-bd34-df62e809371d
+  port: 50203
+  server: microsoft-766685bb.nbaqz0v1meo0k3d-hk.fcnode.net
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|🇭🇰HK-62.72.163.54-399
+  network: ws
+  port: 10001
+  server: 62.72.163.54
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: fddb5ca7-cad2-4635-b86a-dfb5c5b9e446
+  ws-headers:
+    Host: 62.72.163.54
+  ws-path: /
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 20,26|🇹🇼 台湾|@ripaojiedian
+  password: 2509f9e7-93a6-4ac3-bd34-df62e809371d
+  port: 50223
+  server: microsoft-766685bb.nbaqz0v1meo0k3d-tw.fcnode.net
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: '21|🇭🇰 香港(油管:破解资源君2.0) #1'
@@ -131,14 +153,6 @@ proxies:
     headers:
       Host: v9-vn.tiktokcdn.com
     path: /4g.mkvn.net
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港3|@ripaojiedian
-  password: 2509f9e7-93a6-4ac3-bd34-df62e809371d
-  port: 50203
-  server: microsoft-766685bb.nbaqz0v1meo0k3d-hk.fcnode.net
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: 28|🇭🇰HK-47.76.35.246-0787
