@@ -1,4 +1,17 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 11|香港 电讯盈科有限公司
+  network: ws
+  port: 30068
+  server: 220.246.57.203
+  tls: false
+  type: vmess
+  uuid: 92d6b986-9160-4319-a616-a2a7f4bceaeb
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
 - alterId: 64
   cipher: auto
   name: 13,20,21,25,27|香港|@ripaojiedian
@@ -15,46 +28,55 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 13,21|🇭🇰 10,11|香港5|@ripaojiedian
+  client-fingerprint: chrome
+  name: 13,25,26,27|香港5|@ripaojiedian
   network: ws
-  port: '10001'
-  server: 62.72.163.54
+  port: '80'
+  server: 157.254.22.109
   servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: fddb5ca7-cad2-4635-b86a-dfb5c5b9e446
+  uuid: 2d9a81f6-e86e-48e6-9646-b3b1325f8d61
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: syjsq.hk5.flyidc.top
+    path: /syjsq/data
 - alterId: 0
   cipher: auto
-  name: 13,21|🇭🇰 10,11|香港7|@ripaojiedian
+  client-fingerprint: chrome
+  name: 13,25,26,27|香港7|@ripaojiedian
   network: ws
-  port: '54433'
-  server: 103.255.209.108
-  servername: hk2.aisupermall.com
-  tls: true
-  type: vmess
-  uuid: e24840f7-83c2-4730-98df-bf852ecbd2d3
-  ws-opts:
-    headers:
-      Host: unknown
-    path: /axsxzA
-- alterId: 0
-  cipher: auto
-  name: 13,20,21|🇭🇰 11|香港8|@ripaojiedian
-  network: tcp
-  port: '13008'
-  server: 45.78.25.158
+  port: '80'
+  server: 18.162.141.165
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: a074c66e-1107-475c-8bc7-9de7ef6620ed
-  ws-headers:
-    Host: 45.78.25.158
-  ws-path: /
+  uuid: 2d9a81f6-e86e-48e6-9646-b3b1325f8d61
+  ws-opts:
+    headers:
+      Host: syjsq.hk1.flyidc.top
+    path: /syjsq/data
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13,25,26,27|香港8|@ripaojiedian
+  network: ws
+  port: '80'
+  server: 16.163.143.214
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 2d9a81f6-e86e-48e6-9646-b3b1325f8d61
+  ws-opts:
+    headers:
+      Host: syjsq.hk2.flyidc.top
+    path: /syjsq/data
 - alterId: 0
   cipher: auto
   name: 20|🇰HK-18.167.20.169-121
@@ -80,6 +102,19 @@ proxies:
   uuid: fddb5ca7-cad2-4635-b86a-dfb5c5b9e446
   ws-headers:
     Host: 62.72.163.54
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20,21|🇭🇰 11|香港8|@ripaojiedian
+  network: tcp
+  port: '13008'
+  server: 45.78.25.158
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: a074c66e-1107-475c-8bc7-9de7ef6620ed
+  ws-headers:
+    Host: 45.78.25.158
   ws-path: /
 - alterId: 1
   cipher: auto
@@ -109,55 +144,30 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 25,26,27|香港5|@ripaojiedian
+  name: 21|🇭🇰 10,11|香港5|@ripaojiedian
   network: ws
-  port: '80'
-  server: 157.254.22.109
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
+  port: '10001'
+  server: 62.72.163.54
   tls: false
   type: vmess
-  uuid: 2d9a81f6-e86e-48e6-9646-b3b1325f8d61
+  uuid: fddb5ca7-cad2-4635-b86a-dfb5c5b9e446
   ws-opts:
     headers:
-      Host: syjsq.hk5.flyidc.top
-    path: /syjsq/data
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 25,26,27|香港7|@ripaojiedian
+  name: 21|🇭🇰 10,11|香港7|@ripaojiedian
   network: ws
-  port: '80'
-  server: 18.162.141.165
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
+  port: '54433'
+  server: 103.255.209.108
+  tls: true
   type: vmess
-  uuid: 2d9a81f6-e86e-48e6-9646-b3b1325f8d61
+  uuid: e24840f7-83c2-4730-98df-bf852ecbd2d3
   ws-opts:
     headers:
-      Host: syjsq.hk1.flyidc.top
-    path: /syjsq/data
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 25,26,27|香港8|@ripaojiedian
-  network: ws
-  port: '80'
-  server: 16.163.143.214
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 2d9a81f6-e86e-48e6-9646-b3b1325f8d61
-  ws-opts:
-    headers:
-      Host: syjsq.hk2.flyidc.top
-    path: /syjsq/data
+      Host: unknown
+    path: /axsxzA
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 26|🇭🇰 香港3|@ripaojiedian
