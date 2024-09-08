@@ -1,18 +1,22 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 13,25,27|日本|@ripaojiedian
+  name: 13,20,21,25,27|日本|@ripaojiedian
   network: tcp
   port: '11767'
   server: 212.50.255.109
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 7269ac36-82da-43f9-86b8-ea57bef8f1e7
+  ws-headers:
+    Host: 212.50.255.109
+  ws-path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13,25,26,27|日本3|@ripaojiedian
+  name: 13,21,25,26,27|日本3|@ripaojiedian
   network: ws
   port: '80'
   server: 103.238.129.205
@@ -51,40 +55,27 @@ proxies:
   port: 2333
   server: 54.199.83.239
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 20|JP-153.122.173.187-322
-  network: ws
-  port: 30001
-  server: jpgmo02.naizi.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 63b37069-ade8-4d4c-a6dc-1161df539069
-  ws-headers:
-    Host: www.python.org
-  ws-path: /nishidashabi
-- alterId: 0
-  cipher: auto
-  name: 21|🇯🇵 10,11|日本2|@ripaojiedian
-  network: ws
-  port: '30001'
-  server: jpgmo02.naizi.vip
-  tls: true
-  type: vmess
-  uuid: 63b37069-ade8-4d4c-a6dc-1161df539069
-  ws-opts:
-    headers:
-      Host: www.python.org
-    path: /nishidashabi
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 26|🇯🇵 日本2|@ripaojiedian
+  name: 20,26|🇯🇵 日本2|@ripaojiedian
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|🇯🇵JP-103.238.129.205-325
+  network: ws
+  port: 80
+  server: 103.238.129.205
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2d9a81f6-e86e-48e6-9646-b3b1325f8d61
+  ws-headers:
+    Host: syjsq.jp2.flyidc.top
+  ws-path: /syjsq/data
 - alterId: 0
   cipher: auto
   name: 28|🇯🇵JP-152.69.197.74-3356
