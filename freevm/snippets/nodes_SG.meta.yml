@@ -7,7 +7,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 13,25,27|新加坡|@ripaojiedian
+  name: 13,21,25,27|新加坡|@ripaojiedian
   network: tcp
   port: '17575'
   server: relay.gz.flyidc.top
@@ -37,19 +37,6 @@ proxies:
     headers:
       Host: in-sg-1.onebox6.org
     path: /hls/cctv5phd.m3u8
-- alterId: 0
-  cipher: auto
-  name: 21|🇸🇬 10,11|新加坡|@ripaojiedian
-  network: ws
-  port: '80'
-  server: 18.141.188.80
-  tls: false
-  type: vmess
-  uuid: 2d9a81f6-e86e-48e6-9646-b3b1325f8d61
-  ws-opts:
-    headers:
-      Host: syjsq.sg1.flyidc.top
-    path: /syjsq/data
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 26|🇸🇬 狮城特殊|@ripaojiedian
@@ -71,3 +58,16 @@ proxies:
     headers:
       Host: gw.alicdn.com
     path: /CAT
+- name: 29|SG_speednode_0259
+  network: ws
+  password: b84d16a244460e09
+  port: 3306
+  server: 5.44.249.42
+  skip-cert-verify: true
+  sni: TG.WangCai2
+  type: trojan
+  udp: false
+  ws-opts:
+    headers:
+      Host: TG.WangCai_1
+    path: /gateway/connect
