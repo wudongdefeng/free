@@ -16,24 +16,18 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 11|广东省广州市 移动
+  name: 11,20,21|🇨🇳 广东省广州市 移动
   network: tcp
   port: '42055'
   server: 120.232.153.37
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '11|广东省广州市 移动 #1'
-  network: tcp
-  port: '54104'
-  server: 183.236.51.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.232.153.37
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -107,13 +101,13 @@ proxies:
   server: 117.164.185.220
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.159-243
+  name: 20|🇨🇳CN-120.238.122.159-196
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.160-199
+  name: 20|🇳CN-120.238.122.159-241
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
@@ -124,11 +118,17 @@ proxies:
   port: 20005
   server: service.ouluyun9803.com
   type: ss
+- cipher: aes-128-gcm
+  name: 20|🇨CN-116.162.172.53-236
+  password: 3bc10fe9-624a-4bea-bd94-5b8a10026bc8
+  port: 37011
+  server: esst.idyllic.love
+  type: ss
 - alterId: 64
   cipher: auto
-  name: 20,21|🇭🇰 11|香港|@ripaojiedian
+  name: '20,21|🇨🇳 广东省广州市 移动 #1'
   network: tcp
-  port: '45020'
+  port: '54104'
   server: 183.236.51.23
   skip-cert-verify: true
   tls: false
@@ -139,59 +139,52 @@ proxies:
   ws-path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 20,26|🇭🇰 香港2|@ripaojiedian
-  password: 63b37069-ade8-4d4c-a6dc-1161df539069
-  port: 1342
-  server: gdyddx500.xiyunchen.cn
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 20,21|🇭🇰 11|香港3|@ripaojiedian
-  network: tcp
-  port: '16431'
-  server: relay.gz.flyidc.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 2d9a81f6-e86e-48e6-9646-b3b1325f8d61
-  ws-headers:
-    Host: relay.gz.flyidc.top
-  ws-path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
   name: 20,26|🇭🇰 香港6|@ripaojiedian
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20001
   server: hk1.mhw7e2.online
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 20,21|🇯🇵 11|日本3|@ripaojiedian
-  network: tcp
-  port: '16718'
-  server: relay.gz.flyidc.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 2d9a81f6-e86e-48e6-9646-b3b1325f8d61
-  ws-headers:
-    Host: relay.gz.flyidc.top
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 20,21|🇸🇬 11|新加坡|@ripaojiedian
-  network: tcp
-  port: '17575'
-  server: relay.gz.flyidc.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 2d9a81f6-e86e-48e6-9646-b3b1325f8d61
-  ws-headers:
-    Host: relay.gz.flyidc.top
-  ws-path: /
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 20,26|🇸🇬 新加坡2|@ripaojiedian
+  password: 45c4d39d-9f8d-4188-96bf-dedd1f8fac38
+  port: 11016
+  server: group-south-01.nutbit-node.lat
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 20,26|🇭🇰 香港|@ripaojiedian
+  password: 45c4d39d-9f8d-4188-96bf-dedd1f8fac38
+  port: 11003
+  server: group-south-01.nutbit-node.lat
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇭🇰 香港2|@ripaojiedian
+  password: 63b37069-ade8-4d4c-a6dc-1161df539069
+  port: 1342
+  server: gdyddx500.xiyunchen.cn
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 20,26|🇹🇼 台湾|@ripaojiedian
+  password: 45c4d39d-9f8d-4188-96bf-dedd1f8fac38
+  port: 11010
+  server: group-south-01.nutbit-node.lat
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 20,26|🇯🇵 日本2|@ripaojiedian
+  password: 45c4d39d-9f8d-4188-96bf-dedd1f8fac38
+  port: 11024
+  server: group-east-01.nutbit-node.lat
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 28|日本2|@ripaojiedian
