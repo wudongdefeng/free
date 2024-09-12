@@ -1,18 +1,22 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 13,25,27|香港3|@ripaojiedian
+  name: 13,20,21,25,27|香港3|@ripaojiedian
   network: tcp
   port: '44806'
   server: ambxxic01hk.dorabbb.top
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: fe9333e9-c864-41ea-8076-a0df85cc50de
+  ws-headers:
+    Host: ambxxic01hk.dorabbb.top
+  ws-path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 13,25,26,27|香港5|@ripaojiedian
+  name: 13,21,25,26,27|香港5|@ripaojiedian
   network: ws
   port: '80'
   server: 38.207.142.31
@@ -52,12 +56,19 @@ proxies:
   ws-headers:
     Host: edge.cjhh.mom
   ws-path: /je5x3pBN1vez3NQudNkB
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇰HK-119.237.242.124-225
-  password: c4d5cfd7-45e7-3296-befa-12db5a2de771
-  port: 50118
-  server: iepl5.forlive.live
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 20|HK-38.207.142.31-389
+  network: ws
+  port: 80
+  server: 38.207.142.31
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2d9a81f6-e86e-48e6-9646-b3b1325f8d61
+  ws-headers:
+    Host: syjsq.hk6.flyidc.top
+  ws-path: /syjsq/data
 - alterId: 0
   cipher: auto
   name: 21|🇭🇰 香港(油管:破解资源君2.0)
@@ -136,22 +147,6 @@ proxies:
     headers:
       Host: fr.2121999.xyz
     path: /
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 52.221.193.173
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港R|@ripaojiedian
-  password: hGkQ6915tD
-  port: 16088
-  server: 103.161.255.195
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: 28|🇭🇰HK-47.76.35.246-0787
