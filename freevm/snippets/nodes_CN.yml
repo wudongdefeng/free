@@ -1,6 +1,6 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 1|_CN_
+  name: 1,20|CN-59.56.77.178-023
   password: hGkQ6915tD
   port: 15082
   server: 59.56.77.178
@@ -18,22 +18,26 @@ proxies:
   cipher: auto
   name: 11|广东省广州市 移动
   network: tcp
-  port: '54104'
-  server: 183.236.51.23
+  port: '42055'
+  server: 120.232.153.37
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 11,21|🇨🇳 广东省广州市 移动
+  name: 11,20,21|🇨🇳 广东省广州市 移动
   network: tcp
-  port: '35601'
-  server: 120.232.153.40
+  port: '54104'
+  server: 183.236.51.23
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -48,15 +52,159 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
+- alterId: 0
+  cipher: auto
+  name: 20|🇨🇳CN-120.232.208.211-029
+  network: ws
+  port: 12888
+  server: sg-sin-krn-v2.node.inforun.work
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b46e5bfe-739c-4026-91fd-686209ce6d85
+  ws-headers:
+    Host: cdn.savoy.click
+  ws-path: /je5x3pBN1vez3NQudNkB
+- alterId: 0
+  cipher: auto
+  name: 20|🇨🇳CN-120.241.29.165-038
+  network: ws
+  port: 39918
+  server: zduwg-1047-v2-1.hkg-r-kcd-b.jd.cjhh.lol
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fbc2efb0-786a-4074-81ea-8ab12ca5422c
+  ws-headers:
+    Host: cdn.cjhh.lol
+  ws-path: /je5x3pBN1vez3NQudNkB
+- alterId: 2
+  cipher: auto
+  name: 20|🇳CN-36.158.205.29-077
+  network: ws
+  port: 30866
+  server: v29.heduian.online
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-headers:
+    Host: v29.heduian.online
+  ws-path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 20|🇨CN-36.158.205.29-081
+  network: ws
+  port: 30866
+  server: v4.heduian.online
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-headers:
+    Host: baidu.com
+  ws-path: /oooo
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇨🇳CN-120.238.122.160-172
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20003
+  server: service.ouluyun9803.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇳CN-120.238.122.159-190
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 26667
+  server: service.ouluyun9803.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇳CN-120.238.122.159-176
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20005
+  server: service.ouluyun9803.com
+  type: ss
 - alterId: 64
   cipher: auto
-  name: '21|🇨🇳 广东省广州市 移动 #1'
+  name: '20,21|🇨🇳 广东省广州市 移动 #1'
   network: tcp
-  port: '45020'
-  server: 183.236.51.23
+  port: '35601'
+  server: 120.232.153.40
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.232.153.40
+  ws-path: /
+- cipher: aes-128-gcm
+  name: 20|🇳CN-116.162.172.53-246
+  password: c79acaa5-1fff-4026-adf7-a87974ab7a1a
+  port: 37020
+  server: esst.idyllic.love
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇭🇰 香港2|@ripaojiedian
+  password: 63b37069-ade8-4d4c-a6dc-1161df539069
+  port: 1342
+  server: gdyddx500.xiyunchen.cn
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇭🇰 香港7|@ripaojiedian
+  password: ce19c839-49d3-4b65-bd5d-201862ead65b
+  port: 40000
+  server: cname-heyck2gkxig6ajkp.bestruisleipa.com
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇭🇰 香港8|@ripaojiedian
+  password: ce19c839-49d3-4b65-bd5d-201862ead65b
+  port: 40000
+  server: cnamepc01-drwtbltc3xwmfzhd.coffeehouse.wiki
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 20,26|🇭🇰 香港R|@ripaojiedian
+  password: hGkQ6915tD
+  port: 16088
+  server: 103.161.255.195
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇹🇼 台湾|@ripaojiedian
+  password: ce19c839-49d3-4b65-bd5d-201862ead65b
+  port: 40040
+  server: cnamepc02-tdkdep2xnpmwi4ga.coffeehouse.wiki
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇯🇵 日本3|@ripaojiedian
+  password: ce19c839-49d3-4b65-bd5d-201862ead65b
+  port: 40060
+  server: cnamepc03-ndtabspegg7plp3p.coffeehouse.wiki
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 20,26|🇯🇵 日本R|@ripaojiedian
+  password: hGkQ6915tD
+  port: 15084
+  server: 103.161.255.195
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇸🇬 新加坡|@ripaojiedian
+  password: ce19c839-49d3-4b65-bd5d-201862ead65b
+  port: 40050
+  server: cnamepc01-drwtbltc3xwmfzhd.coffeehouse.wiki
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 28|日本2|@ripaojiedian
