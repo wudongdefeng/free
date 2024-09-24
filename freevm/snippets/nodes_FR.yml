@@ -1,23 +1,75 @@
 proxies:
 - cipher: aes-256-gcm
-  name: 20|🇫🇷FR-193.243.147.128-123
+  name: 20|🇷FR-193.243.147.128-241
   password: 7BcLdsO1WweoGD0X
   port: 40368
   server: 193.243.147.128
   type: ss
 - alterId: 0
   cipher: auto
-  name: 20|🇷FR-146.59.55.50-154
+  name: 21|🇫🇷 法国(油管:破解资源君2.0)
   network: ws
-  port: 443
-  server: 146.59.55.50
-  skip-cert-verify: true
-  tls: true
+  port: '80'
+  server: fr-2-1.transit.freework.cyou
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    Host: o.metuji.com
-  ws-path: /linkvws
+  uuid: 1fc88a9a-762f-42b5-abff-8539548f6707
+  ws-opts:
+    headers:
+      Host: www.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '21|🇫🇷 法国(油管:破解资源君2.0) #1'
+  network: ws
+  port: '80'
+  server: fr-1-1.transit.freework.cyou
+  tls: false
+  type: vmess
+  uuid: 1fc88a9a-762f-42b5-abff-8539548f6707
+  ws-opts:
+    headers:
+      Host: www.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '21|🇫🇷 法国(油管:破解资源君2.0) #2'
+  network: ws
+  port: '10000'
+  server: hd-fr.transit.freework.cyou
+  tls: false
+  type: vmess
+  uuid: 1fc88a9a-762f-42b5-abff-8539548f6707
+  ws-opts:
+    headers:
+      Host: hd-fr.transit.freework.cyou
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '21|🇫🇷 法国(油管:破解资源君2.0) #3'
+  network: ws
+  port: '10000'
+  server: hz-fr.transit.freework.cyou
+  tls: false
+  type: vmess
+  uuid: 1fc88a9a-762f-42b5-abff-8539548f6707
+  ws-opts:
+    headers:
+      Host: hz-fr.transit.freework.cyou
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '21|🇫🇷 法国(油管:破解资源君2.0) #4'
+  network: ws
+  port: '10000'
+  server: hn-fr.transit.freework.cyou
+  tls: false
+  type: vmess
+  uuid: 1fc88a9a-762f-42b5-abff-8539548f6707
+  ws-opts:
+    headers:
+      Host: hn-fr.transit.freework.cyou
+    path: /
 - name: 24|_FR_国
   network: tcp
   password: telegram-id-directvpn
@@ -56,3 +108,22 @@ proxies:
   tls: false
   type: vmess
   uuid: a663bbab-4e9e-4080-b8ab-edd59fe1fdce
+- alpn:
+  - http/1.1
+  alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 29|FR_speednode_0163
+  network: ws
+  port: 443
+  server: 146.59.55.50
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: o.metuji.com
+    path: /linkvws
