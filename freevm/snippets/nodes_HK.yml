@@ -1,24 +1,32 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 13,25,27|香港4|@ripaojiedian
+  name: 13,20,21,25,27|香港4|@ripaojiedian
   network: tcp
   port: '51194'
   server: 38.147.189.7
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 11f686f6-77fb-4ba0-a7c2-70c5f11ca804
+  ws-headers:
+    Host: 38.147.189.7
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 13,25,27|香港7|@ripaojiedian
+  name: 13,20,21,25,27|香港7|@ripaojiedian
   network: tcp
   port: '44801'
   server: ambxxic01hk.dorabbb.top
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: a98edd9d-1e4f-4e12-9c54-6c3814b49aba
+  ws-headers:
+    Host: ambxxic01hk.dorabbb.top
+  ws-path: /
 - alterId: 32
   cipher: auto
   name: 20|🇰HK-43.134.199.221-105
@@ -45,12 +53,6 @@ proxies:
   ws-headers:
     Host: 104.208.97.160
   ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇰HK-119.237.242.124-265
-  password: 25cb8cd7-800f-359e-81b5-a12863e2018d
-  port: 50118
-  server: iepl5.forlive.live
-  type: ss
 - alterId: 0
   cipher: auto
   name: '21|🇭🇰 香港(油管:破解资源君2.0) #1'
@@ -155,14 +157,6 @@ proxies:
     headers:
       Host: hk7.fkfirewall.top
     path: /run
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 26|🇭🇰 香港6|@ripaojiedian
-  password: asd123456
-  port: 8388
-  server: 103.36.90.194
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: 28|🇭🇰HK-47.76.35.246-0787
