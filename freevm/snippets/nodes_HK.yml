@@ -1,24 +1,32 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 13,25,27|香港|@ripaojiedian
+  name: 13,20,21,25,27|香港|@ripaojiedian
   network: tcp
   port: '22201'
   server: 149.104.15.209
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: f022200b-43e0-4e41-8e89-df369cf1d93b
+  ws-headers:
+    Host: 149.104.15.209
+  ws-path: /
 - alterId: 64
   cipher: auto
-  name: 13,25,27|香港3|@ripaojiedian
+  name: 13,20,21,25,27|香港3|@ripaojiedian
   network: tcp
   port: '52908'
   server: 120.237.79.157
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.237.79.157
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 13,20,21,25,27|香港4|@ripaojiedian
@@ -59,6 +67,19 @@ proxies:
   ws-headers:
     Host: 43.154.34.49
   ws-path: /
+- alterId: 64
+  cipher: auto
+  name: 20|🇰HK-134.122.135.89-321
+  network: ws
+  port: 48888
+  server: 134.122.135.89
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: www.79102825.xyz
+  ws-path: /path/351212081517
 - alterId: 0
   cipher: auto
   name: '21|🇭🇰 香港(油管:破解资源君2.0) #1'
