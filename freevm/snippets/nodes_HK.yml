@@ -1,18 +1,21 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 13,20,21|🇭🇰 14|香港|@ripaojiedian
-  network: tcp
-  port: '22201'
-  server: 149.104.15.209
+  client-fingerprint: chrome
+  name: 11,13,21,25,26,27|香港5|@ripaojiedian
+  network: ws
+  port: '16301'
+  server: 220.246.57.32
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: f022200b-43e0-4e41-8e89-df369cf1d93b
-  ws-headers:
-    Host: 149.104.15.209
-  ws-path: /
+  uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 13,20,21,25,27|香港2|@ripaojiedian
@@ -27,20 +30,37 @@ proxies:
   ws-headers:
     Host: ambxxic01hk.dorabbb.top
   ws-path: /
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 13,20,21|🇭🇰 14|香港4|@ripaojiedian
+  name: 13,20,21,25,27|香港3|@ripaojiedian
   network: tcp
-  port: '51194'
-  server: 38.147.189.7
+  port: '52908'
+  server: 120.237.79.157
   servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 11f686f6-77fb-4ba0-a7c2-70c5f11ca804
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-headers:
-    Host: 38.147.189.7
+    Host: 120.237.79.157
   ws-path: /
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 13,25,26,27|香港6|@ripaojiedian
+  network: ws
+  port: '30001'
+  server: 134.122.184.63
+  servername: www.36224588.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.36224588.xyz
+    path: /path/351212081517
 - alterId: 32
   cipher: auto
   name: 20|🇰HK-43.134.199.221-111
@@ -73,6 +93,32 @@ proxies:
   ws-headers:
     Host: 220.246.57.32
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20,21|🇭🇰 14|香港|@ripaojiedian
+  network: tcp
+  port: '22201'
+  server: 149.104.15.209
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f022200b-43e0-4e41-8e89-df369cf1d93b
+  ws-headers:
+    Host: 149.104.15.209
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 20,21|🇭🇰 14|香港4|@ripaojiedian
+  network: tcp
+  port: '51194'
+  server: 38.147.189.7
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 11f686f6-77fb-4ba0-a7c2-70c5f11ca804
+  ws-headers:
+    Host: 38.147.189.7
+  ws-path: /
 - alterId: 64
   cipher: auto
   name: 20|🇰HK-134.122.135.89-312
@@ -86,50 +132,6 @@ proxies:
   ws-headers:
     Host: www.79102825.xyz
   ws-path: /path/351212081517
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 21,25,26,27|香港5|@ripaojiedian
-  network: ws
-  port: '16301'
-  server: 220.246.57.32
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 25,27|香港4|@ripaojiedian
-  network: tcp
-  port: '35601'
-  server: 120.232.153.40
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 25,26,27|香港6|@ripaojiedian
-  network: ws
-  port: '30001'
-  server: 134.122.184.63
-  servername: www.36224588.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.36224588.xyz
-    path: /path/351212081517
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 26|🇭🇰 香港|@ripaojiedian
