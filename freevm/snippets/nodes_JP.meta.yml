@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 13,20,21,25,27|日本2|@ripaojiedian
+  name: 13,20,21|🇯🇵 14|日本2|@ripaojiedian
   network: tcp
   port: '50577'
   server: 45.159.50.44
@@ -15,14 +15,11 @@ proxies:
   ws-path: /
 - alterId: 64
   cipher: auto
-  client-fingerprint: chrome
-  name: 13,21,25,26,27|日本4|@ripaojiedian
+  name: 13,21|🇯🇵 13,14|日本4|@ripaojiedian
   network: ws
   port: '48888'
   server: 134.122.135.89
   servername: www.79102825.xyz
-  skip-cert-verify: false
-  tfo: false
   tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -88,19 +85,22 @@ proxies:
     headers:
       Host: sg1.3320.top
     path: /
-- client-fingerprint: chrome
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
   name: 26|🇯🇵 日本|@ripaojiedian
-  network: ws
-  password: moist
-  port: 1443
-  server: 140.238.56.153
-  skip-cert-verify: false
-  sni: trojan.freenods.sbs
-  type: trojan
-  ws-opts:
-    headers:
-      Host: trojan.freenods.sbs
-    path: /?ed=2560
+  password: 6007a3c9-eaa3-442f-b9fe-825b0926b1d9
+  port: 49494
+  server: jp.zhongguoliantong.shop
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 26|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 13.213.56.182
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 28|🇯🇵JP-152.69.197.74-3356
