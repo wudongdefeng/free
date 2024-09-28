@@ -14,30 +14,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 11|广东省广州市 移动
-  network: tcp
-  port: '42055'
-  server: 120.232.153.37
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 11,13,20,21,25,27|香港4|@ripaojiedian
-  network: tcp
-  port: '35601'
-  server: 120.232.153.40
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.232.153.40
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: '16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -146,19 +122,19 @@ proxies:
     Host: sgarm.ptuu.ml
   ws-path: /ray
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.159-135
+  name: 20|🇳CN-120.238.122.159-243
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.160-192
+  name: 20|🇳CN-120.238.122.160-138
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.159-139
+  name: 20|🇳CN-120.238.122.160-139
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
@@ -169,40 +145,41 @@ proxies:
   port: 10714
   server: yidong1.liulangdiqiu.life
   type: ss
+- alterId: 64
+  cipher: auto
+  name: 20,21|🇨🇳 广东省广州市 移动
+  network: tcp
+  port: '42055'
+  server: 120.232.153.37
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.232.153.37
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-122.195.189.15-164
+  name: 20|🇨🇳CN-122.195.189.15-168
   password: dd29d7ad-5fda-4f64-a57e-716ca6010e65
-  port: 10709
-  server: yidong1.liulangdiqiu.life
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-122.195.189.15-165
-  password: dd29d7ad-5fda-4f64-a57e-716ca6010e65
-  port: 10719
+  port: 10703
   server: 122.195.189.15
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-122.195.189.15-181
+  name: 20|🇳CN-122.195.189.15-193
   password: dd29d7ad-5fda-4f64-a57e-716ca6010e65
-  port: 10714
+  port: 10710
   server: 122.195.189.15
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-14.215.169.69-184
-  password: 70747514-fb14-4f31-8390-e1f0453eff6d
-  port: 20001
-  server: hk1.mhw7e2.online
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-122.195.189.15-234
+  name: 20|🇨🇳CN-122.195.189.15-220
   password: dd29d7ad-5fda-4f64-a57e-716ca6010e65
-  port: 10706
+  port: 10722
   server: 122.195.189.15
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-122.195.189.15-238
+  name: 20|🇨🇳CN-122.195.189.15-241
   password: dd29d7ad-5fda-4f64-a57e-716ca6010e65
-  port: 10718
+  port: 10723
   server: 122.195.189.15
   type: ss
 - cipher: aes-256-cfb
@@ -213,6 +190,15 @@ proxies:
   server: 103.161.255.195
   tfo: false
   type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26,29|CN_speednode_0026
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20024
+  server: sg1.mhw7e2.online
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 28|日本2|@ripaojiedian
