@@ -1,6 +1,6 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 1|_CN_
+  name: 1,20|CN-59.56.77.178-023
   password: hGkQ6915tD
   port: 15082
   server: 59.56.77.178
@@ -16,14 +16,18 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 11,13,21,25,27|香港4|@ripaojiedian
+  name: 11,13,20,21,25,27|香港4|@ripaojiedian
   network: tcp
   port: '35601'
   server: 120.232.153.40
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.232.153.40
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -38,24 +42,64 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 21|🇨🇳 广东省广州市 移动
-  network: tcp
-  port: '58831'
-  server: 120.232.153.27
+  client-fingerprint: chrome
+  name: 20,26,29|CN_speednode_0024
+  password: 0b0387b8-5258-386b-8744-dcacb2320d94
+  port: 22238
+  server: wduzpt.gxcvbmj.xyz
+  skip-cert-verify: false
+  sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+  tfo: false
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
+  udp: true
+  uuid: 6ea392c2-0636-3d4f-a6a2-f38a76e216d3
+- alterId: 0
   cipher: auto
-  name: '21|🇨🇳 广东省广州市 移动 #1'
-  network: tcp
-  port: '45020'
-  server: 183.236.51.23
-  tls: false
+  name: 20|🇳CN-210.75.24.220-058
+  network: ws
+  port: 443
+  server: 210.75.24.220
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: bd5ee249-fe7b-4669-a6d9-b3f5eecb98e6
+  ws-headers:
+    Host: jparm.fineyoo.cf
+  ws-path: /123
+- alterId: 0
+  cipher: auto
+  name: 20|🇨🇳CN-210.75.24.222-074
+  network: ws
+  port: 443
+  server: 210.75.24.222
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1bbf1ef7-3056-4160-9cab-491e024de705
+  ws-headers:
+    Host: sgamd.ptuu.ga
+  ws-path: /123
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇨🇳CN-120.238.122.159-110
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20003
+  server: service.ouluyun9803.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇳CN-120.238.122.160-113
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 26667
+  server: service.ouluyun9803.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇨🇳CN-120.238.122.160-257
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20005
+  server: service.ouluyun9803.com
+  type: ss
 - alterId: 0
   cipher: auto
   name: 28|日本2|@ripaojiedian
