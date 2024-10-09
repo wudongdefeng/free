@@ -1,4 +1,10 @@
 proxies:
+- cipher: aes-256-cfb
+  name: 1,20|CN-59.56.77.178-023
+  password: hGkQ6915tD
+  port: 15082
+  server: 59.56.77.178
+  type: ss
 - alterId: 64
   cipher: auto
   name: '3,30|🇨🇳_CN_中国 #1'
@@ -10,7 +16,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 11|广东省广州市 移动
+  name: 13|广东省广州市 移动
   network: tcp
   port: '42055'
   server: 120.232.153.37
@@ -20,7 +26,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '11|广东省广州市 移动 #1'
+  name: '13|广东省广州市 移动 #1'
   network: tcp
   port: '58831'
   server: 120.232.153.27
@@ -28,20 +34,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 13,20,21,25,27|香港2|@ripaojiedian
-  network: tcp
-  port: '44806'
-  server: ambxxic01hk.dorabbb.top
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 21c7fe70-62f4-492a-8ff5-882edee63b15
-  ws-headers:
-    Host: ambxxic01hk.dorabbb.top
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: '16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -56,12 +48,6 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
-- cipher: aes-256-cfb
-  name: 20|CN-59.56.77.178-023
-  password: hGkQ6915tD
-  port: 15082
-  server: 59.56.77.178
-  type: ss
 - alterId: 0
   cipher: auto
   name: 20|🇳CN-120.241.65.134-031
@@ -700,6 +686,20 @@ proxies:
   server: zf.egfu.cn
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 20,21,25,27|香港2|@ripaojiedian
+  network: tcp
+  port: '44806'
+  server: ambxxic01hk.dorabbb.top
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 21c7fe70-62f4-492a-8ff5-882edee63b15
+  ws-headers:
+    Host: ambxxic01hk.dorabbb.top
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 28|日本2|@ripaojiedian
