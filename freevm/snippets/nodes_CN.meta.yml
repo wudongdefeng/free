@@ -16,17 +16,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 11,25,27|美国2|@ripaojiedian
-  network: tcp
-  port: '43526'
-  server: 120.232.153.40
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
-- alterId: 64
-  cipher: auto
-  name: 13,20,21,25,27|德国|@ripaojiedian
+  name: 11,13,20,21,25,27|德国|@ripaojiedian
   network: tcp
   port: '43526'
   server: 120.232.153.71
@@ -287,23 +277,37 @@ proxies:
     Host: 221.131.165.72
   ws-path: /
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇳CN-120.238.122.159-162
+  name: 20|🇳CN-120.238.122.160-216
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20003
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.160-244
+  name: 20|🇨🇳CN-120.238.122.159-165
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 26667
   server: service.ouluyun9803.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇳CN-120.238.122.160-166
+  name: 20|🇳CN-120.238.122.159-166
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   port: 20005
   server: service.ouluyun9803.com
   type: ss
+- alterId: 64
+  cipher: auto
+  name: 20,21,25,27|美国2|@ripaojiedian
+  network: tcp
+  port: '43526'
+  server: 120.232.153.40
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+  ws-headers:
+    Host: 120.232.153.40
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 28|日本2|@ripaojiedian
