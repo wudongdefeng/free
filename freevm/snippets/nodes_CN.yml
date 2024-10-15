@@ -14,9 +14,23 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 11,20,21,25,27|香港6|@ripaojiedian
+  network: tcp
+  port: '12960'
+  server: z3.fragranceninja.com
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-headers:
+    Host: z3.fragranceninja.com
+  ws-path: /
 - alterId: 64
   cipher: auto
-  name: '11,13,20,21|🇨🇳 广东省广州市 移动 #1'
+  name: '13,20,21|🇨🇳 广东省广州市 移动 #1'
   network: tcp
   port: '35601'
   server: 120.232.153.40
@@ -27,20 +41,6 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-headers:
     Host: 120.232.153.40
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  name: 13,20,21,25,27|德国|@ripaojiedian
-  network: tcp
-  port: '43526'
-  server: 120.232.153.71
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
-  ws-headers:
-    Host: 120.232.153.71
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -74,19 +74,19 @@ proxies:
   port: 20005
   server: service.ouluyun9803.com
   type: ss
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 20,21,25,27|香港6|@ripaojiedian
+  name: 20,21,25,27|德国|@ripaojiedian
   network: tcp
-  port: '12960'
-  server: z3.fragranceninja.com
+  port: '43526'
+  server: 120.232.153.71
   servername: ''
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
   ws-headers:
-    Host: z3.fragranceninja.com
+    Host: 120.232.153.71
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -102,167 +102,170 @@ proxies:
     headers:
       Host: data-jp-v1.usabooks.com.cn
     path: /debian
-- alterId: -1
-  cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 29|CN_speednode_0010
-  obfs: plain
-  obfs-param: 8195986416.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40202
-  protocol: auth_aes128_md5
-  protocol-param: 86416:SlZFuy
-  server: 95b1cd85a0968ff2.cdn.jiashule.com
-  type: ssr
-  udp: true
-- alterId: -1
-  cipher: aes-128-gcm
-  name: 29|CN_speednode_0013
-  password: 26f959e3-1a5e-3b3d-b4cd-fe04c80902bd
-  port: 10004
-  server: cdn.node1.lilisi.link
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0001
+  password: adb64f15-6d91-4950-824b-915f1842c1ca
+  port: 40000
+  server: soonhk.soon.guru
   type: ss
-- alterId: -1
-  cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0014
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0002
+  password: d700df9b-e5a4-4104-9fde-31d28b376f38
+  port: 34338
+  server: gy.666666222.shop
+  type: ss
+- cipher: aes-256-gcm
+  name: 29|CN_speednode_0003
+  password: 3fdb7547-29ca-42ee-986c-dfde8e9eb246
+  port: 55268
+  server: hk01.acxylm.top
+  type: ss
+- cipher: aes-256-gcm
+  name: 29|CN_speednode_0004
+  password: 3fdb7547-29ca-42ee-986c-dfde8e9eb246
+  port: 43466
+  server: hk05.acxylm.top
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0005
+  password: d700df9b-e5a4-4104-9fde-31d28b376f38
+  port: 20008
+  server: gy.666666222.shop
+  type: ss
+- cipher: aes-256-gcm
+  name: 29|CN_speednode_0006
+  password: 3fdb7547-29ca-42ee-986c-dfde8e9eb246
+  port: 49890
+  server: hk06.bfyrek.top
+  type: ss
+- cipher: aes-256-gcm
+  name: 29|CN_speednode_0007
+  password: 3fdb7547-29ca-42ee-986c-dfde8e9eb246
+  port: 31452
+  server: hk03.acxylm.top
+  type: ss
+- cipher: aes-256-gcm
+  name: 29|CN_speednode_0008
+  password: 3fdb7547-29ca-42ee-986c-dfde8e9eb246
+  port: 10473
+  server: hk02.acxylm.top
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0009
   password: 5409bf78-b122-4b9b-9050-da36576f5bbc
   port: 34676
   server: tg_mfbpn03.52cloud.us.kg
   type: ss
-- alterId: -1
-  cipher: chacha20-ietf
-  name: 29|CN_speednode_0015
-  obfs: plain
-  obfs-param: 83f38107560.windows.net
-  password: 4wMNkIVsgybXfA2u
-  port: 6246
-  protocol: auth_aes128_sha1
-  protocol-param: 107560:cztSoV
-  server: air.sr.hk.yunti-relay02.com
-  type: ssr
-- alterId: -1
-  cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0016
-  password: 5409bf78-b122-4b9b-9050-da36576f5bbc
-  port: 25991
-  server: tg_mfbpn03.52cloud.us.kg
+- cipher: aes-256-gcm
+  name: 29|CN_speednode_0010
+  password: 3fdb7547-29ca-42ee-986c-dfde8e9eb246
+  port: 20177
+  server: hk04.acxylm.top
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0011
+  password: 0d26245c-8019-3746-ab2e-54a1a0d502a8
+  port: 50101
+  server: iepl1.forlive.live
   type: ss
 - cipher: aes-128-gcm
+  name: 29|CN_speednode_0012
+  password: a77f18ea-c88a-402c-85e9-27e1dafbc900
+  port: 34702
+  server: 34702.crelay.org
+  type: ss
+- cipher: aes-256-gcm
+  name: 29|CN_speednode_0014
+  password: 3fdb7547-29ca-42ee-986c-dfde8e9eb246
+  port: 36605
+  server: hk07.bfyrek.top
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0015
+  password: 91e654f2-faa6-43b0-aa30-4ade9fa7a46e
+  port: 31738
+  server: gdcub.yunnode.win
+  type: ss
+- cipher: aes-256-gcm
+  name: 29|CN_speednode_0016
+  password: 3fdb7547-29ca-42ee-986c-dfde8e9eb246
+  port: 43787
+  server: jp02.acxylm.top
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: 29|CN_speednode_0017
-  password: 26f959e3-1a5e-3b3d-b4cd-fe04c80902bd
-  port: 10005
-  server: cdn.node1.lilisi.link
-  type: ss
-- alterId: -1
-  cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 29|CN_speednode_0019
-  obfs: plain
-  obfs-param: 8195986416.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40207
-  protocol: auth_aes128_md5
-  protocol-param: 86416:SlZFuy
-  server: 95b1cd85a0968ff2.cdn.jiashule.com
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0020
-  password: 2baf288e-73ab-4598-a47d-0277f04e8fc0
-  port: 35631
-  server: gdcub.yunnode.win
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0021
-  password: 7bc1e0f9-ca04-4321-b609-df05409b9715
-  port: 31675
-  server: gdcub.yunnode.win
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0022
-  password: 2baf288e-73ab-4598-a47d-0277f04e8fc0
-  port: 35635
-  server: gdcub.yunnode.win
-  type: ss
-- alterId: -1
-  cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 29|CN_speednode_0023
-  obfs: plain
-  obfs-param: 8195986416.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40238
-  protocol: auth_aes128_md5
-  protocol-param: 86416:SlZFuy
-  server: 28b09af269781f9b.cdn.jiashule.com
-  type: ssr
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0024
-  password: ed1eb6c7-1615-476a-8fd3-d6a488a9adde
-  port: 22225
-  server: cs2.ni8.me
-  type: ss
-  udp: true
-- alterId: -1
-  cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0025
   password: 5409bf78-b122-4b9b-9050-da36576f5bbc
   port: 53935
   server: tg_mfbpn03.52cloud.us.kg
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0026
-  password: 2baf288e-73ab-4598-a47d-0277f04e8fc0
-  port: 35636
+  name: 29|CN_speednode_0018
+  password: 1ba5e853-f386-4b1c-a1b2-0844406551d8
+  port: 12642
   server: gdcub.yunnode.win
   type: ss
-- alterId: -1
-  cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 29|CN_speednode_0028
-  obfs: plain
-  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 41227
-  protocol: auth_aes128_md5
-  protocol-param: 74592:o4fbeopsgcf
-  server: 95b1cd85a0968ff2.cdn.jiashule.com
-  type: ssr
-  udp: true
-- cipher: rc4-md5
-  name: 29|CN_speednode_0030
-  obfs: plain
-  obfs-param: 8195986416.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40236
-  protocol: auth_aes128_md5
-  protocol-param: 86416:SlZFuy
-  server: 28b09af269781f9b.cdn.jiashule.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 29|CN_speednode_0032
-  password: 2LF2EhWMqnlf0kRi
-  port: 23961
-  server: 221.181.185.71
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0033
-  password: 2baf288e-73ab-4598-a47d-0277f04e8fc0
+  name: 29|CN_speednode_0019
+  password: 91e654f2-faa6-43b0-aa30-4ade9fa7a46e
+  port: 31632
+  server: gdcub.yunnode.win
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0020
+  password: 1ba5e853-f386-4b1c-a1b2-0844406551d8
+  port: 35632
+  server: gdcub.yunnode.win
+  type: ss
+- cipher: aes-256-gcm
+  name: 29|CN_speednode_0021
+  password: 3fdb7547-29ca-42ee-986c-dfde8e9eb246
+  port: 55504
+  server: de03.acxylm.top
+  type: ss
+- cipher: aes-256-gcm
+  name: 29|CN_speednode_0022
+  password: 3fdb7547-29ca-42ee-986c-dfde8e9eb246
+  port: 48465
+  server: hl.acxylm.top
+  type: ss
+- cipher: aes-256-gcm
+  name: 29|CN_speednode_0024
+  password: 3fdb7547-29ca-42ee-986c-dfde8e9eb246
+  port: 61287
+  server: fr03.acxylm.top
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0025
+  password: adb64f15-6d91-4950-824b-915f1842c1ca
+  port: 40011
+  server: soonfrk.soon.guru
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0027
+  password: 91e654f2-faa6-43b0-aa30-4ade9fa7a46e
+  port: 31650
+  server: gdcub.yunnode.win
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0028
+  password: 1ba5e853-f386-4b1c-a1b2-0844406551d8
   port: 35532
   server: gdcub.yunnode.win
   type: ss
-- cipher: aes-256-cfb
-  name: 29|CN_speednode_0034
-  password: UomcSobsfu2SwwCn
-  port: 23278
-  server: 221.181.185.71
-  type: ss
-  udp: true
 - alterId: 64
   cipher: auto
-  name: 29|CN_speednode_0036
+  name: 29|CN_speednode_0029
+  network: tcp
+  port: 33288
+  server: 183.236.48.166
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 29|CN_speednode_0030
   network: tcp
   port: 33288
   server: 183.236.48.161
@@ -271,18 +274,27 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: -1
-  cipher: aes-256-cfb
-  name: 29|CN_speednode_0038
-  password: JN8psKoncqaqS4ul
-  port: 22064
-  server: 221.181.185.71
+- cipher: aes-256-gcm
+  name: 29|CN_speednode_0031
+  password: 3fdb7547-29ca-42ee-986c-dfde8e9eb246
+  port: 27684
+  server: de01.acxylm.top
   type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0039
-  password: ed1eb6c7-1615-476a-8fd3-d6a488a9adde
-  port: 16943
-  server: cs2.ni8.me
+  name: 29|CN_speednode_0032
+  password: 5dintl8xQTfgKcmxMf0dCK
+  port: 36766
+  server: 141.98.234.195
   type: ss
-  udp: true
+- cipher: aes-256-gcm
+  name: 29|CN_speednode_0033
+  password: 3fdb7547-29ca-42ee-986c-dfde8e9eb246
+  port: 55645
+  server: du.acxylm.top
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 29|CN_speednode_0034
+  password: 1ba5e853-f386-4b1c-a1b2-0844406551d8
+  port: 35634
+  server: gdcub.yunnode.win
+  type: ss
