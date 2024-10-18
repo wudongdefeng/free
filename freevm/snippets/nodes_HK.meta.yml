@@ -1,16 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '11,13|香港 电讯盈科有限公司 #2'
-  network: tcp
-  port: '30251'
-  server: 1.65.205.116
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9e88a10b-655c-5120-89d0-408634169561
-- alterId: 0
-  cipher: auto
   name: 13,20,21,25,27|香港4|@ripaojiedian
   network: tcp
   port: '30251'
@@ -23,6 +13,26 @@ proxies:
   ws-headers:
     Host: hkt2.bika.hk
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '13|香港 电讯盈科有限公司 #1'
+  network: tcp
+  port: '30251'
+  server: 1.65.205.116
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9e88a10b-655c-5120-89d0-408634169561
+- alterId: 0
+  cipher: auto
+  name: 25,27|香港5|@ripaojiedian
+  network: tcp
+  port: '2902'
+  server: 143.92.42.65
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇭🇰 香港2|@ripaojiedian
@@ -127,3 +137,31 @@ proxies:
     headers:
       Host: hrgdvpn.flycdnedc55.vip
     path: /opt/video/images
+- name: 29|HK_speednode_0057
+  network: ws
+  packet-encoding: xudp
+  port: 443
+  server: 37.123.196.76
+  servername: sgp.cmail.f5.si
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 435ffb8e-90ab-4611-eda2-7f95907cc9e5
+  ws-opts:
+    headers:
+      Host: sgp.cmail.f5.si
+    path: /bing
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: 29|HK_speednode_0058
+  network: tcp
+  packet-encoding: xudp
+  port: 443
+  server: pq.hkt1.yydjc.top
+  servername: download.globals-download.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: dbd09021-e676-423e-bffe-d86507df5c19
