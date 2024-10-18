@@ -1,30 +1,4 @@
 proxies:
-- alterId: 1
-  cipher: auto
-  name: 20|HK-5.188.33.172-101
-  network: ws
-  port: 443
-  server: 5.188.33.172
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    Host: 5.188.33.172
-  ws-path: linkvws
-- alterId: 1
-  cipher: auto
-  name: 21|🇭🇰 香港 G Core Lab
-  network: ws
-  port: '443'
-  server: 5.188.33.172
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 5.188.33.172
-    path: linkvws
 - alterId: 0
   cipher: auto
   name: 25,27|香港4|@ripaojiedian
@@ -35,6 +9,29 @@ proxies:
   tls: false
   type: vmess
   uuid: 9e88a10b-655c-5120-89d0-408634169561
+- alterId: 0
+  cipher: auto
+  name: 25,27|香港5|@ripaojiedian
+  network: tcp
+  port: '2902'
+  server: 143.92.42.65
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 26,29|US_speednode_0036
+  password: 1131668a-07ca-34e5-895b-f1721ea42fc7
+  port: 443
+  server: 35.93.203.243
+  skip-cert-verify: true
+  sni: akamai.cdn.steampipe.steamcontent.com
+  tfo: false
+  tls: false
+  type: trojan
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇭🇰 香港2|@ripaojiedian
@@ -49,6 +46,14 @@ proxies:
   password: 0143905a-7f2d-4f95-a2d6-9947d4017bcd
   port: 39301
   server: hzhz1.sssyun.xyz
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 26|🇭🇰 香港6|@ripaojiedian
+  password: b1bfb546-0259-44f0-8c9a-8b8702618df9
+  port: 11001
+  server: 183.240.255.75
   tfo: false
   type: ss
 - cipher: aes-256-cfb
