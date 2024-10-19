@@ -7,7 +7,7 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: 3|🇨🇳_CN_中国
+  name: '3,30|🇨🇳_CN_中国 #1'
   network: tcp
   port: 54882
   server: 183.240.235.162
@@ -16,7 +16,30 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 11,14|🇨🇳_CN_中国->🇫🇷_FR_法国
+  name: 11,20,21|🇨🇳 广东省广州市 移动
+  network: tcp
+  port: '45020'
+  server: 183.236.51.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: 11,13,25,27|德国|@ripaojiedian
+  network: tcp
+  port: '43526'
+  server: 120.232.153.71
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 64
+  cipher: auto
+  name: 13,14|🇨🇳_CN_中国->🇫🇷_FR_法国
   network: tcp
   port: '46665'
   server: 120.237.79.157
@@ -25,23 +48,13 @@ proxies:
   uuid: 3ac820af-becb-45d7-9e7a-e33d02961bb3
 - alterId: 64
   cipher: auto
-  name: 11|广东省广州市 移动
+  name: '13|广东省广州市 移动 #2'
   network: tcp
   port: '58831'
   server: 183.236.48.163
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 11,25,27|德国|@ripaojiedian
-  network: tcp
-  port: '43526'
-  server: 120.232.153.71
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
 - alterId: 0
   cipher: auto
   name: '16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -101,19 +114,6 @@ proxies:
   server: gdcub.yunnode.win
   tfo: false
   type: ss
-- alterId: 64
-  cipher: auto
-  name: 20,21|🇨🇳 广东省广州市 移动
-  network: tcp
-  port: '45020'
-  server: 183.236.51.23
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.236.51.23
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: 28|日本2|@ripaojiedian
@@ -128,99 +128,15 @@ proxies:
     headers:
       Host: data-jp-v1.usabooks.com.cn
     path: /debian
-- cipher: chacha20-ietf-poly1305
+- alterId: 64
+  cipher: auto
   name: 29|CN_speednode_0001
-  password: 54f4e2f4-f0e1-4a15-a0cf-3a3234ab58fb
-  port: 11001
-  server: 183.232.229.165
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0002
-  password: 8ec33727-26e0-41e2-8d0a-d1b0c3408c05
-  port: 34711
-  server: 34711.crelay.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0003
-  password: fa0ab4e7-de98-4367-96eb-046df801ddb5
-  port: 31632
-  server: gdcub.yunnode.win
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0004
-  password: 8ecfe87a-47db-4510-abb8-11a94dff5825
-  port: 35632
-  server: gdcub.yunnode.win
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0005
-  password: 8ecfe87a-47db-4510-abb8-11a94dff5825
-  port: 35635
-  server: gdcub.yunnode.win
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0006
-  password: 8ec33727-26e0-41e2-8d0a-d1b0c3408c05
-  port: 34710
-  server: 34710.crelay.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0007
-  password: 5409bf78-b122-4b9b-9050-da36576f5bbc
-  port: 53935
-  server: tg_mfbpn03.52cloud.us.kg
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0008
-  password: 8ec33727-26e0-41e2-8d0a-d1b0c3408c05
-  port: 34716
-  server: 34716.crelay.org
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0009
-  password: 8ec33727-26e0-41e2-8d0a-d1b0c3408c05
-  port: 34713
-  server: 34713.crelay.org
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0010
-  password: 8ec33727-26e0-41e2-8d0a-d1b0c3408c05
-  port: 34707
-  server: 34707.crelay.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0011
-  password: 8ecfe87a-47db-4510-abb8-11a94dff5825
-  port: 12642
-  server: gdcub.yunnode.win
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0012
-  password: fa0ab4e7-de98-4367-96eb-046df801ddb5
-  port: 31650
-  server: gdcub.yunnode.win
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0013
-  password: 8ec33727-26e0-41e2-8d0a-d1b0c3408c05
-  port: 34719
-  server: 34719.crelay.org
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0014
-  password: 8ec33727-26e0-41e2-8d0a-d1b0c3408c05
-  port: 34723
-  server: 34723.crelay.org
-  type: ss
-- cipher: aes-128-gcm
-  name: 29|CN_speednode_0015
-  password: 8ec33727-26e0-41e2-8d0a-d1b0c3408c05
-  port: 34722
-  server: 34722.crelay.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 29|CN_speednode_0016
-  password: 5409bf78-b122-4b9b-9050-da36576f5bbc
-  port: 25991
-  server: tg_mfbpn03.52cloud.us.kg
-  type: ss
+  network: tcp
+  port: 52112
+  server: 183.236.51.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  version: '2'
