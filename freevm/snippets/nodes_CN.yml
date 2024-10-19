@@ -16,23 +16,37 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 11,21|🇨🇳 广东省 移动
+  name: 11,25,27|德国|@ripaojiedian
   network: tcp
-  port: '39041'
-  server: 183.238.202.173
+  port: '43526'
+  server: 120.232.153.71
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
+- alterId: 64
+  cipher: auto
+  name: '11|广东省广州市 移动 #1'
+  network: tcp
+  port: '33288'
+  server: 183.236.48.161
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '13,21|🇨🇳 广东省广州市 移动 #2'
+  name: 13,20,21|🇨🇳 广东省广州市 移动
   network: tcp
   port: '45020'
   server: 183.236.51.23
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '16,21,28|github.com/freefq - 广东省移动 7 #1'
@@ -47,24 +61,51 @@ proxies:
     headers:
       Host: data-us-v1.shwjfkw.cn
     path: /debian
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇳CN-120.238.122.159-007
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20003
+  server: service.ouluyun9803.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇳CN-120.238.122.160-010
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 26667
+  server: service.ouluyun9803.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇳CN-120.238.122.160-082
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20005
+  server: service.ouluyun9803.com
+  type: ss
 - alterId: 64
   cipher: auto
-  name: 21,29|CN_speednode_0006
+  name: 20,21|🇨🇳 广东省 移动
   network: tcp
-  port: 33288
-  server: 183.236.48.166
+  port: '39041'
+  server: 183.238.202.173
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '21|🇨🇳 广东省广州市 移动 #3'
-  network: tcp
-  port: '33288'
-  server: 183.236.48.161
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: trojan.burgerip.co.uk
+  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 20|🇳CN-111.4.88.181-120
+  password: 0143905a-7f2d-4f95-a2d6-9947d4017bcd
+  port: 40015
+  server: hzhz2.sssyun.xyz
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 20,26|🇻🇳 越南2|@ripaojiedian
+  password: 07c1e8da-045d-4814-a8f0-c60040fa3588
+  port: 31660
+  server: gdcub.yunnode.win
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 28|日本2|@ripaojiedian
@@ -103,5 +144,13 @@ proxies:
   network: tcp
   port: 52112
   server: 183.236.51.23
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 29|CN_speednode_0006
+  network: tcp
+  port: 33288
+  server: 183.236.48.166
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
