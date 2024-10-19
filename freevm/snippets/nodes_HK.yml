@@ -1,7 +1,16 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 11,25,27|香港4|@ripaojiedian
+  name: '11,13,21|🇭🇰 香港 电讯盈科有限公司 #1'
+  network: tcp
+  port: '30251'
+  server: 1.65.205.116
+  tls: false
+  type: vmess
+  uuid: 9e88a10b-655c-5120-89d0-408634169561
+- alterId: 0
+  cipher: auto
+  name: 21,25,27|香港4|@ripaojiedian
   network: tcp
   port: '30251'
   server: hkt2.bika.hk
@@ -9,19 +18,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 9e88a10b-655c-5120-89d0-408634169561
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 13,20,21|🇭🇰 香港 电讯盈科有限公司
-  network: tcp
-  port: '30251'
-  server: 1.65.205.116
+  client-fingerprint: chrome
+  name: 26,29|US_speednode_0154
+  password: ca5333cc-60bb-37a6-9084-1fd38120063f
+  port: 443
+  server: 35.93.203.243
   skip-cert-verify: true
+  sni: steampipe.akamaized.net
+  tfo: false
   tls: false
-  type: vmess
-  uuid: 9e88a10b-655c-5120-89d0-408634169561
-  ws-headers:
-    Host: 1.65.205.116
-  ws-path: /
+  type: trojan
+  udp: true
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 26|🇭🇰 香港3|@ripaojiedian
