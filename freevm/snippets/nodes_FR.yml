@@ -1,17 +1,4 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 13,21|🇫🇷 法国 OVH
-  network: ws
-  port: '443'
-  server: 51.77.20.137
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: tilebani.com
-    path: /linkvws
 - cipher: aes-256-gcm
   name: 20|🇷FR-193.243.147.128-067
   password: 7BcLdsO1WweoGD0X
@@ -47,6 +34,19 @@ proxies:
   ws-path: h=%2F%3Fed%3D2560
 - alterId: 0
   cipher: auto
+  name: 20,21|🇺🇸 美国 v2rayfree.eu.org
+  network: tcp
+  port: '44513'
+  server: 162.19.25.207
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4552bdb6-e008-43ac-926d-c6c6c5a6fc76
+  ws-headers:
+    Host: 162.19.25.207
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 20|🇫🇷FR-51.77.20.137-126
   network: ws
   port: 443
@@ -58,6 +58,19 @@ proxies:
   ws-headers:
     Host: tilebani.com
   ws-path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 21|🇫🇷 法国 OVH
+  network: ws
+  port: '443'
+  server: 51.77.20.137
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: tilebani.com
+    path: /linkvws
 - name: 24|_FR_国
   network: tcp
   password: telegram-id-directvpn
